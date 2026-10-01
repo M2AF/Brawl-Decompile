@@ -1,0 +1,73 @@
+--- before
++++ after
+@@ -37837,20 +37837,26 @@
+ 
+ void updateRanks(float deltaFrame)
+ {
++  u32 *new_var2;
+   stKartData *data = (stKartData *) m_stageData;
++  stKartData *new_var;
++  int new_var3;
++  stKartRecord *new_var4;
+   if (data)
+   {
+     m_bgState = 10;
+     bool allOnFinalLap = true;
++    new_var = data;
+     __alloca(data->m_kartNum * (sizeof(int)));
++    new_var3 = 10;
+     {
+       u8 i = 0;
+-      u8 kartNum = data->m_kartNum;
++      u8 kartNum = new_var->m_kartNum;
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+         kart->m_rank = 0;
+-        if (kart->m_lap < 10)
++        if (kart->m_lap < new_var3)
+         {
+           allOnFinalLap = false;
+         }
+@@ -37891,29 +37897,36 @@
+         {
+           u8 j = 0;
+           u8 otherNum = data->m_kartNum;
++          new_var2 = &kart->m_checkpoint;
+           for (; j != otherNum; j++)
+           {
+             if (i != j)
+             {
+               stKartRecord *other = &m_karts[j];
+               bool isBehind = false;
+-              if (kart->m_lap < other->m_lap)
++              if (kart->m_lap < (&m_karts[j])->m_lap)
+               {
+                 isBehind = true;
+               }
+               else
+-                if (kart->m_lap == other->m_lap)
++                if (kart->m_lap == (&m_karts[j])->m_lap)
+               {
+-                if (kart->m_checkpoint < other->m_checkpoint)
++                if ((*new_var2) < (&m_karts[j])->m_checkpoint)
+                 {
+                   isBehind = true;
++                  if (1)
++                  {
++                  }
+                 }
+                 else
+-                  if (kart->m_checkpoint == other->m_checkpoint)
+                 {
+-                  if (kart->m_distance < other->m_distance)
++                  new_var4 = kart;
++                  if ((*new_var2) == (&m_karts[j])->m_checkpoint)
++                  {
++                    if (new_var4->m_distance < (&m_karts[j])->m_distance)
+                   {
+                     isBehind = true;
++                    }
+                   }
+                 }
+               }

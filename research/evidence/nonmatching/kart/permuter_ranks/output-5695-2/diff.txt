@@ -1,0 +1,19 @@
+--- before
++++ after
+@@ -37844,7 +37844,7 @@
+     bool allOnFinalLap = true;
+     __alloca(data->m_kartNum * (sizeof(int)));
+     {
+-      u8 i = 0;
++      u8 i;
+       u8 kartNum = data->m_kartNum;
+       for (; i != kartNum; i++)
+       {
+@@ -37858,6 +37858,7 @@
+         {
+           if (m_warningState == 10)
+           {
++            i = 0;
+             m_warningState = 0;
+           }
+           m_bgState = 9;

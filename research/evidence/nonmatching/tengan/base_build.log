@@ -1,0 +1,25 @@
+[1/2] SPLIT config\RSBE01_01\config.yml
+ WARN Alignment for mo_fighter/ft_marth/ft_marth_status_uniq_process_special_hi.cpp .data expected 8, but starts at 4:0x00005584
+[2/2] RUN configure.py
+[1/4] SPLIT config\RSBE01_01\config.yml
+ WARN Alignment for mo_fighter/ft_marth/ft_marth_status_uniq_process_special_hi.cpp .data expected 8, but starts at 4:0x00005584
+[2/4] RUN configure.py
+[1/11] LINK build\RSBE01_01\st_tengan\st_tengan.preplf
+[2/11] LINK build\RSBE01_01\st_tengan\st_tengan.plf
+[3/11] MWCC build\RSBE01_01\src\mo_stage\st_tengan\gr_tengan.o
+[4/11] REL
+[5/11] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[6/11] REPORT
+[7/11] PROGRESS
+Progress:
+  All: 1.36% matched, 1.16% linked (521 / 4405 files)
+    Code: 215744 / 15833548 bytes (2860 / 92523 functions)
+    Data: 836476 / 5667468 bytes (14.76%)
+  DOL: 1.37% matched, 0.85% linked (65 / 1722 files)
+    Code: 57172 / 4170064 bytes (511 / 14278 functions)
+    Data: 6720 / 1724104 bytes (0.39%)
+  Modules: 1.36% matched, 1.27% linked (456 / 2683 files)
+    Code: 158572 / 11663484 bytes (2349 / 78245 functions)
+    Data: 829756 / 3943364 bytes (21.04%)

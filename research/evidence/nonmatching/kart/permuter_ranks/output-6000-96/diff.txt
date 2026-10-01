@@ -1,0 +1,36 @@
+--- before
++++ after
+@@ -37842,7 +37842,7 @@
+   {
+     m_bgState = 10;
+     bool allOnFinalLap = true;
+-    __alloca(data->m_kartNum * (sizeof(int)));
++    __alloca((0, data->m_kartNum * (sizeof(int))));
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
+@@ -37862,7 +37862,7 @@
+           }
+           m_bgState = 9;
+         }
+-        if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true))
++        if ((90 < kart->m_checkpoint) && (kart->m_isRacing == true))
+         {
+           m_bgState = 8;
+         }
+@@ -37911,9 +37911,15 @@
+                 else
+                   if (kart->m_checkpoint == other->m_checkpoint)
+                 {
++                  if ((!i) && (!i))
++                  {
++                  }
+                   if (kart->m_distance < other->m_distance)
+                   {
+                     isBehind = true;
++                    if ((kart && kart) && kart)
++                    {
++                    }
+                   }
+                 }
+               }

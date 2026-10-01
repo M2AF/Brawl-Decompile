@@ -1,0 +1,237 @@
+target 54 funcs, candidate 54 funcs
+MATCH create__11stDxYorsterFv      create__11stDxYorsterFv
+MATCH __dt__11stDxYorsterFv        __dt__11stDxYorsterFv
+MATCH loading__11stDxYorsterFv     loading__11stDxYorsterFv
+MATCH createObj__11stDxYorsterFv   createObj__11stDxYorsterFv
+MATCH fn_76_400__11stDxYorsterFi   fn_76_400__11stDxYorsterFi
+MATCH setStageData__6GroundFPv     setStageData__6GroundFPv
+MATCH fn_76_4FC__13grDxYorsterBgFP5Vec3f fn_76_4FC__13grDxYorsterBgFP5Vec3f
+MATCH fn_76_504__13grDxYorsterBgFPb fn_76_504__13grDxYorsterBgFPb
+MATCH fn_76_50C__13grDxYorsterBgFPb fn_76_50C__13grDxYorsterBgFPb
+DIFF  fn_76_514__11stDxYorsterFi   fn_76_514__11stDxYorsterFi
+    --- target
+    +++ cand
+    @@ -3,3 +3,3 @@
+     lis     r5,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	...data.0
+     cmpwi   r4,2
+    @@ -7,3 +7,3 @@
+     addi    r5,r5,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	...data.0
+     stw     r31,28(r1)
+MATCH fn_76_618__11stDxYorsterFv   fn_76_618__11stDxYorsterFv
+MATCH fn_76_6E0__19grDxYorsterBlockPosFP5Vec3f fn_76_6E0__19grDxYorsterBlockPosFP5Vec3f
+MATCH fn_76_6E8__19grDxYorsterBlockPosFPUc fn_76_6E8__19grDxYorsterBlockPosFPUc
+MATCH fn_76_6F0__11stDxYorsterFi   fn_76_6F0__11stDxYorsterFi
+MATCH fn_76_854__16grDxYorsterBlockFi fn_76_854__16grDxYorsterBlockFi
+MATCH fn_76_85C__16grDxYorsterBlockFP5Vec3f fn_76_85C__16grDxYorsterBlockFP5Vec3f
+MATCH fn_76_864__16grDxYorsterBlockFPUc fn_76_864__16grDxYorsterBlockFPUc
+MATCH fn_76_86C__16grDxYorsterBlockFPb fn_76_86C__16grDxYorsterBlockFPb
+MATCH update__11stDxYorsterFf      startFighterEvent__5StageFv
+DIFF  startFighterEvent__5StageFv  initializeFighterAttackRatio__5StageFv
+    --- target
+    +++ cand
+    @@ -1 +1,2 @@
+    +li      r3,0
+     blr
+MATCH initializeFighterAttackRatio__5StageFv helperStarWarp__5StageFv
+MATCH helperStarWarp__5StageFv     isSimpleBossBattleMode__5StageFv
+MATCH isSimpleBossBattleMode__5StageFv isBossBattleMode__5StageFv
+DIFF  isBossBattleMode__5StageFv   isCameraLocked__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,0
+    +li      r3,1
+     blr
+DIFF  isCameraLocked__5StageFv     notifyTimmingGameStart__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1 @@
+    -li      r3,1
+     blr
+DIFF  notifyTimmingGameStart__5StageFv getFrameRuleTime__5StageFv
+    --- target
+    +++ cand
+    @@ -1 +1,2 @@
+    +lfs     f1,400(r3)
+     blr
+DIFF  getFrameRuleTime__5StageFv   setFrameRuleTime__5StageFf
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -lfs     f1,400(r3)
+    +stfs    f1,400(r3)
+     blr
+DIFF  setFrameRuleTime__5StageFf   isNextStepBgmEqualNowStepBgmFromFlag__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -stfs    f1,400(r3)
+    +li      r3,0
+     blr
+DIFF  isNextStepBgmEqualNowStepBgmFromFlag__5StageFv getBgmPlayOffsetFrame__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,5 @@
+    -li      r3,0
+    +lis     r3,0
+    +R_PPC_ADDR16_HA
+    +lfs     f1,0(r3)
+    +R_PPC_ADDR16_LO
+     blr
+MATCH getBgmPlayOffsetFrame__5StageFv getBgmVolume__5StageFv
+DIFF  getBgmVolume__5StageFv       setBgmChange__5StageFfbUl
+    --- target
+    +++ cand
+    @@ -1,5 +1,4 @@
+    -lis     r3,0
+    -R_PPC_ADDR16_HA
+    -lfs     f1,0(r3)
+    -R_PPC_ADDR16_LO
+    +stb     r4,388(r3)
+    +stw     r5,392(r3)
+    +stfs    f1,396(r3)
+     blr
+DIFF  setBgmChange__5StageFfbUl    getBgmChangeID__5StageFPUlPf
+    --- target
+    +++ cand
+    @@ -1,4 +1,5 @@
+    -stb     r4,388(r3)
+    -stw     r5,392(r3)
+    -stfs    f1,396(r3)
+    +lwz     r0,392(r3)
+    +stw     r0,0(r4)
+    +lfs     f0,396(r3)
+    +stfs    f0,0(r5)
+     blr
+DIFF  getBgmChangeID__5StageFPUlPf isBgmChange__5StageFv
+    --- target
+    +++ cand
+    @@ -1,5 +1,2 @@
+    -lwz     r0,392(r3)
+    -stw     r0,0(r4)
+    -lfs     f0,396(r3)
+    -stfs    f0,0(r5)
+    +lbz     r3,388(r3)
+     blr
+DIFF  isBgmChange__5StageFv        getBgmOptionID__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -lbz     r3,388(r3)
+    +li      r3,0
+     blr
+MATCH getBgmOptionID__5StageFv     getNowStepBgmID__5StageFv
+MATCH getNowStepBgmID__5StageFv    getBgmID__5StageFv
+MATCH getBgmID__5StageFv           getBgmID__5StageCFv
+DIFF  getBgmID__5StageCFv          appearanceFighterLocal__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1 @@
+    -li      r3,0
+     blr
+DIFF  appearanceFighterLocal__5StageFv getScrollDir__5StageFP5Vec3f
+    --- target
+    +++ cand
+    @@ -1 +1,9 @@
+    +lis     r5,0
+    +R_PPC_ADDR16_HA
+    +li      r3,0
+    +lfs     f0,0(r5)
+    +R_PPC_ADDR16_LO
+    +stfs    f0,0(r4)
+    +stfs    f0,4(r4)
+    +stfs    f0,8(r4)
+     blr
+DIFF  getScrollDir__5StageFP5Vec3f getDefaultLightSetIndex__5StageFv
+    --- target
+    +++ cand
+    @@ -1,9 +1,2 @@
+    -lis     r5,0
+    -R_PPC_ADDR16_HA
+    -li      r3,0
+    -lfs     f0,0(r5)
+    -R_PPC_ADDR16_LO
+    -stfs    f0,0(r4)
+    -stfs    f0,4(r4)
+    -stfs    f0,8(r4)
+    +li      r3,20
+     blr
+DIFF  getDefaultLightSetIndex__5StageFv getAIRange__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,20
+    +addi    r3,r3,104
+     blr
+DIFF  getAIRange__5StageFv         isAdventureStage__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -addi    r3,r3,104
+    +li      r3,0
+     blr
+MATCH isAdventureStage__5StageFv   getPokeTrainerDrawLayer__5StageFv
+DIFF  getPokeTrainerDrawLayer__5StageFv getPokeTrainerPositionZ__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,5 @@
+    -li      r3,0
+    +lis     r3,0
+    +R_PPC_ADDR16_HA
+    +lfs     f1,0(r3)
+    +R_PPC_ADDR16_LO
+     blr
+DIFF  getPokeTrainerPositionZ__5StageFv getPokeTrainerPointData__5StageFPii
+    --- target
+    +++ cand
+    @@ -1,5 +1 @@
+    -lis     r3,0
+    -R_PPC_ADDR16_HA
+    -lfs     f1,0(r3)
+    -R_PPC_ADDR16_LO
+     blr
+DIFF  getPokeTrainerPointData__5StageFPii getPokeTrainerPointNum__5StageFv
+    --- target
+    +++ cand
+    @@ -1 +1,2 @@
+    +li      r3,0
+     blr
+DIFF  getPokeTrainerPointNum__5StageFv isReStartSamePoint__7stMeleeFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,0
+    +li      r3,1
+     blr
+DIFF  isReStartSamePoint__7stMeleeFv getWind2ndOnlyData__7stMeleeFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,1
+    +lwz     r3,456(r3)
+     blr
+DIFF  getWind2ndOnlyData__7stMeleeFv isBamperVector__11stDxYorsterFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -lwz     r3,456(r3)
+    +li      r3,1
+     blr
+DIFF  isBamperVector__11stDxYorsterFv update__11stDxYorsterFf
+    --- target
+    +++ cand
+    @@ -1,2 +1 @@
+    -li      r3,1
+     blr
+MATCH __sinit_\st_dxyorster_cpp    __sinit_\st_dxyorster_cpp
+MATCH __dt__33stClassInfoImpl<42,11stDxYorster>Fv __dt__33stClassInfoImpl<42,11stDxYorster>Fv
+MATCH create__33stClassInfoImpl<42,11stDxYorster>Fv create__33stClassInfoImpl<42,11stDxYorster>Fv
+MATCH preload__33stClassInfoImpl<42,11stDxYorster>Fv preload__33stClassInfoImpl<42,11stDxYorster>Fv
+.data: target 1072 bytes, candidate 1072 bytes, same bytes
+.rodata: target 8 bytes, candidate 8 bytes, same bytes
+.bss: target 16 bytes, candidate 16 bytes, same bytes
+.ctors: target 4 bytes, candidate 4 bytes, same bytes

@@ -1,0 +1,57 @@
+{
+  "checkout": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex4",
+  "head": "91b54385f845dc67e09239f49d5261833573cc39",
+  "branch": "codex/stages",
+  "unit": "mo_stage/st_heal/st_heal"
+}
+SAME create__6stHealFv                        create__6stHealFv                             29 29
+SAME __dt__6stHealFv                          __dt__6stHealFv                               27 27
+SAME loading__6stHealFv                       loading__6stHealFv                            2 2
+SAME createObj__6stHealFv                     createObj__6stHealFv                          310 310
+SAME compareFigureOrder__FPCvPCv              compareFigureOrder__FPCvPCv                   4 4
+SAME update__6stHealFf                        update__6stHealFf                             430 430
+SAME isEventEnd__6stHealFiPiPi                isEventEnd__6stHealFiPiPi                     6 6
+SAME startFighterEvent__5StageFv              startFighterEvent__5StageFv                   1 1
+SAME initializeFighterAttackRatio__5StageFv   initializeFighterAttackRatio__5StageFv        2 2
+SAME helperStarWarp__5StageFv                 helperStarWarp__5StageFv                      2 2
+SAME isSimpleBossBattleMode__5StageFv         isSimpleBossBattleMode__5StageFv              2 2
+SAME isBossBattleMode__5StageFv               isBossBattleMode__5StageFv                    2 2
+SAME isCameraLocked__5StageFv                 isCameraLocked__5StageFv                      2 2
+SAME notifyTimmingGameStart__5StageFv         notifyTimmingGameStart__5StageFv              1 1
+SAME getFrameRuleTime__5StageFv               getFrameRuleTime__5StageFv                    2 2
+SAME setFrameRuleTime__5StageFf               setFrameRuleTime__5StageFf                    2 2
+SAME isNextStepBgmEqualNowStepBgmFromFlag__5StageFv isNextStepBgmEqualNowStepBgmFromFlag__5StageFv 2 2
+SAME getBgmPlayOffsetFrame__5StageFv          getBgmPlayOffsetFrame__5StageFv               3 3
+SAME getBgmVolume__5StageFv                   getBgmVolume__5StageFv                        3 3
+SAME setBgmChange__5StageFfbUl                setBgmChange__5StageFfbUl                     4 4
+SAME getBgmChangeID__5StageFPUlPf             getBgmChangeID__5StageFPUlPf                  5 5
+SAME isBgmChange__5StageFv                    isBgmChange__5StageFv                         2 2
+SAME getBgmOptionID__5StageFv                 getBgmOptionID__5StageFv                      2 2
+SAME getNowStepBgmID__5StageFv                getNowStepBgmID__5StageFv                     2 2
+SAME getBgmID__5StageFv                       getBgmID__5StageFv                            2 2
+SAME getBgmID__5StageCFv                      getBgmID__5StageCFv                           2 2
+SAME appearanceFighterLocal__5StageFv         appearanceFighterLocal__5StageFv              1 1
+SAME getScrollDir__5StageFP5Vec3f             getScrollDir__5StageFP5Vec3f                  7 7
+SAME getDefaultLightSetIndex__5StageFv        getDefaultLightSetIndex__5StageFv             2 2
+SAME getAIRange__5StageFv                     getAIRange__5StageFv                          2 2
+SAME isAdventureStage__5StageFv               isAdventureStage__5StageFv                    2 2
+SAME getPokeTrainerDrawLayer__5StageFv        getPokeTrainerDrawLayer__5StageFv             2 2
+SAME getPokeTrainerPositionZ__5StageFv        getPokeTrainerPositionZ__5StageFv             3 3
+SAME getPokeTrainerPointData__5StageFPii      getPokeTrainerPointData__5StageFPii           1 1
+SAME getPokeTrainerPointNum__5StageFv         getPokeTrainerPointNum__5StageFv              2 2
+SAME isReStartSamePoint__7stMeleeFv           isReStartSamePoint__7stMeleeFv                2 2
+SAME getWind2ndOnlyData__7stMeleeFv           getWind2ndOnlyData__7stMeleeFv                2 2
+SAME __sinit_\st_heal_cpp                     __sinit_\st_heal_cpp                          34 34
+SAME __dt__27stClassInfoImpl<54,6stHeal>Fv    __dt__27stClassInfoImpl<54,6stHeal>Fv         29 29
+SAME create__27stClassInfoImpl<54,6stHeal>Fv  create__27stClassInfoImpl<54,6stHeal>Fv       30 30
+SAME preload__27stClassInfoImpl<54,6stHeal>Fv preload__27stClassInfoImpl<54,6stHeal>Fv      1 1
+Candidate-only functions (often unreferenced weak inlines the linker strips): setStageData__6GroundFPv, setGimmickData__9grGimmickFPv
+SAME section .rodata: target 20 bytes, candidate 20 bytes
+SAME section .data: target 1104 bytes, candidate 1104 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 41/41. Section contents match. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py st_heal mo_stage/st_heal/st_heal
+Original: 14312 c5e0b6cf84f676e01b240c59d4b6f31e14cc16eb
+Source probe: 14312 c5e0b6cf84f676e01b240c59d4b6f31e14cc16eb
+Full REL byte match: True
+PASS: full-REL probe for st_heal (mo_stage/st_heal/st_heal)

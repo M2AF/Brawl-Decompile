@@ -1,0 +1,28 @@
+{
+  "checkout": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex5",
+  "head": "e5b5e9e01be67c9576aa4d796193b3915f517094",
+  "branch": "codex/finish",
+  "unit": "mo_stage/st_tengan/gr_tengan_floor"
+}
+SAME create__13grTenganFloorFiPCcPCc          create__13grTenganFloorFiPCcPCc               65 65
+SAME __dt__13grTenganFloorFv                  __dt__13grTenganFloorFv                       22 22
+SAME update__13grTenganFloorFf                update__13grTenganFloorFf                     29 29
+SAME updateFloor__13grTenganFloorFf           updateFloor__13grTenganFloorFf                208 208
+DIFF updateVisibility__13grTenganFloorFf      updateVisibility__13grTenganFloorFf           11 12
+    --- target
+    +++ candidate
+    @@ -10,2 +10,3 @@
+     mtctr   r12
+     bctr
+    +blr
+SAME lbl_60_6D28                              setInitializeInfo__6GroundFi                  1 1
+SAME changeAnimation__13grTenganFloorFUlbbPf  changeAnimation__13grTenganFloorFUlbbPf       274 274
+Candidate-only functions (often unreferenced weak inlines the linker strips): setMdlIndex__6GroundFi, getStageData__6GroundFv, adventureEventGetItem__6GroundFiP13stTriggerData, getInitializeInfo__6GroundFi, setInitializeFlag__6GroundFv, disableCalcCollision__6GroundFv, enableCalcCollision__6GroundFv, isEnableCalcCollision__6GroundFv, getMdlIndex__6GroundFv, initStageData__6GroundFv, setStageData__6GroundFPv, getModelCount__6GroundFv, getTransparencyFlag__9grGimmickFv, getGimmickData__9grGimmickFv, setGimmickData__9grGimmickFPv, setKind__13grTenganFloorFUc, setEventFlags__13grTenganFloorFPUc, setEventTime__13grTenganFloorFPf
+SAME section .rodata: target 16 bytes, candidate 16 bytes
+DIFF section .data: target 544 bytes, candidate 680 bytes
+Instruction diagnostics: 6/7. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py st_tengan mo_stage/st_tengan/gr_tengan_floor
+Original: 57504 839c8054988ecf7f32862da78fc429daea8833b1
+Source probe: 57504 839c8054988ecf7f32862da78fc429daea8833b1
+Full REL byte match: True
+PASS: full-REL probe for st_tengan (mo_stage/st_tengan/gr_tengan_floor)

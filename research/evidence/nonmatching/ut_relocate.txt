@@ -1,0 +1,73 @@
+Unit: sora/ut/ut_relocate
+Best attempt: src/sora/ut/ut_relocate.cpp at branch rsbe01_01-support bc88679 (upstream source; no tried variant scored better)
+
+Compile command:
+build\tools\sjiswrap.exe build\compilers\GC\3.0a5.2\mwcceppc.exe -nodefaults -proc gekko -align powerpc -enum int -fp hardware -Cpp_exceptions off -O4,p -inline auto -pragma "cats off" -pragma "warn_notinlined off" -maxerrors 1 -nosyspath -RTTI off -fp_contract off -str reuse -enc SJIS -i include -i build/RSBE01_01/include -DBUILD_VERSION=2 -DVERSION_RSBE01_01 -DMATCHING -Iinclude -Iinclude/lib/PowerPC_EABI_Support/Runtime/Inc -Iinclude/lib/BrawlHeaders/Brawl/Include -Iinclude/lib/BrawlHeaders/nw4r/include -Iinclude/lib/BrawlHeaders/OpenRVL/include -Iinclude/lib/BrawlHeaders/OpenRVL/include/MetroTRK -Iinclude/lib/BrawlHeaders/OpenRVL/include/revolution -Iinclude/lib/BrawlHeaders/OpenRVL/include/RVLFaceLib -Iinclude/lib/BrawlHeaders/OpenRVL/include/stl -Iinclude/lib/BrawlHeaders/utils/include -RTTI on -ipa file -lang=c++ -MMD -c src\sora\ut\ut_relocate.cpp -o build\RSBE01_01\src\sora\ut
+
+Compiler: GC/3.0a5.2 mwcceppc.exe sha256 bfa9fd1794736e0aaa937ad8786956b2bc5cd7fddcc6fe20af45798812e1918d
+
+== resolveReference__10utRelocateFPC10utRelocate: DIFF
+--- target
++++ candidate
+@@ -8,5 +8,5 @@
+ mr      r30,r4
+ li      r31,0
+-li      r26,0
++li      r25,0
+ lis     r28,0
+ R_PPC_ADDR16_HA
+@@ -20,17 +20,17 @@
+ lwz     r0,44(r29)
+ lwz     r4,48(r29)
+-add     r3,r0,r26
++add     r3,r0,r25
+ lwz     r0,4(r3)
+ add     r22,r4,r0
+ cmpwi   r22,0
+ beq <addr>
+-lwz     r24,12(r30)
++lwz     r23,12(r30)
+ li      r27,0
+-li      r25,0
++li      r24,0
+ b <addr>
+-lwz     r23,40(r30)
++lwz     r26,40(r30)
+ mr      r4,r22
+ lwz     r5,48(r30)
+-add     r3,r23,r25
++add     r3,r26,r24
+ lwz     r0,4(r3)
+ add     r3,r5,r0
+@@ -41,13 +41,13 @@
+ slwi    r0,r27,3
+ lwz     r3,32(r30)
+-lwzx    r0,r23,r0
+-add     r27,r3,r0
++lwzx    r0,r26,r0
++add     r23,r3,r0
+ b <addr>
+-addi    r25,r25,8
++addi    r24,r24,8
+ addi    r27,r27,1
+-cmplw   r27,r24
++cmplw   r27,r23
+ blt <addr>
+-li      r27,0
+-cmpwi   r27,0
++li      r23,0
++cmpwi   r23,0
+ bne <addr>
+ mr      r4,r22
+@@ -59,8 +59,8 @@
+ mr      r3,r29
+ mr      r4,r22
+-mr      r5,r27
++mr      r5,r23
+ bl <addr>
+ R_PPC_REL24	locateExtern__10utRelocateFPCcPv
+-addi    r26,r26,8
++addi    r25,r25,8
+ addi    r31,r31,1
+ lwz     r0,16(r29)
+candidate-only: []

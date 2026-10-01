@@ -1,0 +1,152 @@
+.include "macros.inc"
+.file "auto_fn_8031D108_text"
+
+# 0x80008C6C..0x80008C74 | size: 0x8
+.section extab, "a"
+.balign 4
+
+# extab:0x0 | 0x80008C6C | size: 0x8
+.obj "@etb_80008C6C", local
+.hidden "@etb_80008C6C"
+/*
+ * Flag values:
+ * Has Elf Vector: Yes
+ * Large Frame: Yes
+ * Has Frame Pointer: No
+ * Saved CR: No
+ * Saved GPR range: r30-r31
+ */
+	.4byte 0x100A0000
+	.4byte 0x00000000
+.endobj "@etb_80008C6C"
+
+# 0x8000BBD8..0x8000BBE4 | size: 0xC
+.section extabindex, "a"
+.balign 4
+
+# extabindex:0x0 | 0x8000BBD8 | size: 0xC
+.obj "@eti_8000BBD8", local
+.hidden "@eti_8000BBD8"
+	.4byte fn_8031D108
+	.4byte 0x000001A8
+	.4byte "@etb_80008C6C"
+.endobj "@eti_8000BBD8"
+
+# 0x8031D108..0x8031D2B0 | size: 0x1A8
+.text
+.balign 4
+
+# .text:0x0 | 0x8031D108 | size: 0x1A8
+.fn fn_8031D108, global
+/* 8031D108 00312E88  54 2B 07 3E */	clrlwi r11, r1, 28
+/* 8031D10C 00312E8C  7C 2C 0B 78 */	mr r12, r1
+/* 8031D110 00312E90  21 6B FF 80 */	subfic r11, r11, -0x80
+/* 8031D114 00312E94  7C 21 59 6E */	stwux r1, r1, r11
+/* 8031D118 00312E98  7C 08 02 A6 */	mflr r0
+/* 8031D11C 00312E9C  90 0C 00 04 */	stw r0, 0x4(r12)
+/* 8031D120 00312EA0  93 EC FF FC */	stw r31, -0x4(r12)
+/* 8031D124 00312EA4  7C 9F 23 78 */	mr r31, r4
+/* 8031D128 00312EA8  93 CC FF F8 */	stw r30, -0x8(r12)
+/* 8031D12C 00312EAC  7C 7E 1B 78 */	mr r30, r3
+/* 8031D130 00312EB0  C0 43 00 30 */	lfs f2, 0x30(r3)
+/* 8031D134 00312EB4  C0 63 00 34 */	lfs f3, 0x34(r3)
+/* 8031D138 00312EB8  FC 00 10 50 */	fneg f0, f2
+/* 8031D13C 00312EBC  C0 23 00 38 */	lfs f1, 0x38(r3)
+/* 8031D140 00312EC0  EC 63 00 F2 */	fmuls f3, f3, f3
+/* 8031D144 00312EC4  D0 01 00 20 */	stfs f0, 0x20(r1)
+/* 8031D148 00312EC8  EC 42 18 BA */	fmadds f2, f2, f2, f3
+/* 8031D14C 00312ECC  C0 03 00 34 */	lfs f0, 0x34(r3)
+/* 8031D150 00312ED0  FC 00 00 50 */	fneg f0, f0
+/* 8031D154 00312ED4  EC 21 10 7A */	fmadds f1, f1, f1, f2
+/* 8031D158 00312ED8  D0 01 00 24 */	stfs f0, 0x24(r1)
+/* 8031D15C 00312EDC  C0 03 00 38 */	lfs f0, 0x38(r3)
+/* 8031D160 00312EE0  FC 00 00 50 */	fneg f0, f0
+/* 8031D164 00312EE4  D0 01 00 28 */	stfs f0, 0x28(r1)
+/* 8031D168 00312EE8  C0 03 00 3C */	lfs f0, 0x3c(r3)
+/* 8031D16C 00312EEC  FC 00 00 50 */	fneg f0, f0
+/* 8031D170 00312EF0  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 8031D174 00312EF4  C0 03 00 50 */	lfs f0, 0x50(r3)
+/* 8031D178 00312EF8  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 8031D17C 00312EFC  4C 40 13 82 */	cror eq, lt, eq
+/* 8031D180 00312F00  40 82 00 2C */	bne .L_8031D1AC
+/* 8031D184 00312F04  3C 60 80 48 */	lis r3, lbl_804864F0@ha
+/* 8031D188 00312F08  38 63 64 F0 */	addi r3, r3, lbl_804864F0@l
+/* 8031D18C 00312F0C  C0 63 00 10 */	lfs f3, 0x10(r3)
+/* 8031D190 00312F10  C0 43 00 14 */	lfs f2, 0x14(r3)
+/* 8031D194 00312F14  C0 23 00 18 */	lfs f1, 0x18(r3)
+/* 8031D198 00312F18  C0 03 00 1C */	lfs f0, 0x1c(r3)
+/* 8031D19C 00312F1C  D0 61 00 20 */	stfs f3, 0x20(r1)
+/* 8031D1A0 00312F20  D0 41 00 24 */	stfs f2, 0x24(r1)
+/* 8031D1A4 00312F24  D0 21 00 28 */	stfs f1, 0x28(r1)
+/* 8031D1A8 00312F28  D0 01 00 2C */	stfs f0, 0x2c(r1)
+.L_8031D1AC:
+/* 8031D1AC 00312F2C  7F C3 F3 78 */	mr r3, r30
+/* 8031D1B0 00312F30  38 81 00 20 */	addi r4, r1, 0x20
+/* 8031D1B4 00312F34  38 A1 00 30 */	addi r5, r1, 0x30
+/* 8031D1B8 00312F38  48 00 05 79 */	bl fn_8031D730
+/* 8031D1BC 00312F3C  7F C3 F3 78 */	mr r3, r30
+/* 8031D1C0 00312F40  38 81 00 30 */	addi r4, r1, 0x30
+/* 8031D1C4 00312F44  48 00 07 39 */	bl fn_8031D8FC
+/* 8031D1C8 00312F48  80 7E 00 68 */	lwz r3, 0x68(r30)
+/* 8031D1CC 00312F4C  C0 1E 00 50 */	lfs f0, 0x50(r30)
+/* 8031D1D0 00312F50  C0 23 00 04 */	lfs f1, 0x4(r3)
+/* 8031D1D4 00312F54  C0 43 00 00 */	lfs f2, 0x0(r3)
+/* 8031D1D8 00312F58  EC 61 00 72 */	fmuls f3, f1, f1
+/* 8031D1DC 00312F5C  C0 23 00 08 */	lfs f1, 0x8(r3)
+/* 8031D1E0 00312F60  EC 42 18 BA */	fmadds f2, f2, f2, f3
+/* 8031D1E4 00312F64  EC 81 10 7A */	fmadds f4, f1, f1, f2
+/* 8031D1E8 00312F68  FC 04 00 40 */	fcmpo cr0, f4, f0
+/* 8031D1EC 00312F6C  4C 40 13 82 */	cror eq, lt, eq
+/* 8031D1F0 00312F70  40 82 00 A0 */	bne .L_8031D290
+/* 8031D1F4 00312F74  C0 02 B3 D8 */	lfs f0, lbl_805A46F8@sda21(r0)
+/* 8031D1F8 00312F78  FC 04 00 40 */	fcmpo cr0, f4, f0
+/* 8031D1FC 00312F7C  4C 40 13 82 */	cror eq, lt, eq
+/* 8031D200 00312F80  40 82 00 14 */	bne .L_8031D214
+/* 8031D204 00312F84  3C 00 7F 80 */	lis r0, 0x7f80
+/* 8031D208 00312F88  90 01 00 10 */	stw r0, 0x10(r1)
+/* 8031D20C 00312F8C  C0 41 00 10 */	lfs f2, 0x10(r1)
+/* 8031D210 00312F90  48 00 00 24 */	b .L_8031D234
+.L_8031D214:
+/* 8031D214 00312F94  FC 20 20 34 */	frsqrte f1, f4
+/* 8031D218 00312F98  C0 42 B3 DC */	lfs f2, lbl_805A46FC@sda21(r0)
+/* 8031D21C 00312F9C  C0 02 B3 E0 */	lfs f0, lbl_805A4700@sda21(r0)
+/* 8031D220 00312FA0  FC 60 08 18 */	frsp f3, f1
+/* 8031D224 00312FA4  EC 24 00 F2 */	fmuls f1, f4, f3
+/* 8031D228 00312FA8  EC 42 00 F2 */	fmuls f2, f2, f3
+/* 8031D22C 00312FAC  EC 03 00 7C */	fnmsubs f0, f3, f1, f0
+/* 8031D230 00312FB0  EC 42 00 32 */	fmuls f2, f2, f0
+.L_8031D234:
+/* 8031D234 00312FB4  C0 22 B3 E4 */	lfs f1, lbl_805A4704@sda21(r0)
+/* 8031D238 00312FB8  3C 60 01 00 */	lis r3, 0x100
+/* 8031D23C 00312FBC  C0 02 B3 DC */	lfs f0, lbl_805A46FC@sda21(r0)
+/* 8031D240 00312FC0  EC 21 10 24 */	fdivs f1, f1, f2
+/* 8031D244 00312FC4  D0 3F 00 20 */	stfs f1, 0x20(r31)
+/* 8031D248 00312FC8  C0 21 00 20 */	lfs f1, 0x20(r1)
+/* 8031D24C 00312FCC  D0 3F 00 00 */	stfs f1, 0x0(r31)
+/* 8031D250 00312FD0  C0 21 00 24 */	lfs f1, 0x24(r1)
+/* 8031D254 00312FD4  D0 3F 00 04 */	stfs f1, 0x4(r31)
+/* 8031D258 00312FD8  C0 21 00 28 */	lfs f1, 0x28(r1)
+/* 8031D25C 00312FDC  D0 3F 00 08 */	stfs f1, 0x8(r31)
+/* 8031D260 00312FE0  C0 21 00 2C */	lfs f1, 0x2c(r1)
+/* 8031D264 00312FE4  D0 3F 00 0C */	stfs f1, 0xc(r31)
+/* 8031D268 00312FE8  C0 21 00 40 */	lfs f1, 0x40(r1)
+/* 8031D26C 00312FEC  D0 3F 00 10 */	stfs f1, 0x10(r31)
+/* 8031D270 00312FF0  C0 21 00 44 */	lfs f1, 0x44(r1)
+/* 8031D274 00312FF4  D0 3F 00 14 */	stfs f1, 0x14(r31)
+/* 8031D278 00312FF8  C0 21 00 48 */	lfs f1, 0x48(r1)
+/* 8031D27C 00312FFC  D0 3F 00 18 */	stfs f1, 0x18(r31)
+/* 8031D280 00313000  C0 21 00 4C */	lfs f1, 0x4c(r1)
+/* 8031D284 00313004  D0 3F 00 1C */	stfs f1, 0x1c(r31)
+/* 8031D288 00313008  D0 1F 00 24 */	stfs f0, 0x24(r31)
+/* 8031D28C 0031300C  48 00 00 08 */	b .L_8031D294
+.L_8031D290:
+/* 8031D290 00313010  38 60 00 00 */	li r3, 0x0
+.L_8031D294:
+/* 8031D294 00313014  81 41 00 00 */	lwz r10, 0x0(r1)
+/* 8031D298 00313018  80 0A 00 04 */	lwz r0, 0x4(r10)
+/* 8031D29C 0031301C  83 EA FF FC */	lwz r31, -0x4(r10)
+/* 8031D2A0 00313020  83 CA FF F8 */	lwz r30, -0x8(r10)
+/* 8031D2A4 00313024  7C 08 03 A6 */	mtlr r0
+/* 8031D2A8 00313028  7D 41 53 78 */	mr r1, r10
+/* 8031D2AC 0031302C  4E 80 00 20 */	blr
+.endfn fn_8031D108

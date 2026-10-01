@@ -1,0 +1,84 @@
+--- before
++++ after
+@@ -37835,6 +37835,16 @@
+ 
+ 
+ 
++inline const int inline_fn()
++{
++  return false;
++}
++
++inline int inline_fn2(u8 arg0, u8 arg1)
++{
++  return arg0 != arg1;
++}
++
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
+@@ -37846,13 +37856,13 @@
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
+-      for (; i != kartNum; i++)
++      for (; inline_fn2(i, kartNum); i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+         kart->m_rank = 0;
+         if (kart->m_lap < 10)
+         {
+-          allOnFinalLap = false;
++          allOnFinalLap = inline_fn();
+         }
+         if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))
+         {
+@@ -37872,7 +37882,7 @@
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
+-      for (; i != kartNum; i++)
++      for (; inline_fn2(i, kartNum); i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+         if (allOnFinalLap == true)
+@@ -37885,18 +37895,18 @@
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
+-      for (; i != kartNum; i++)
++      for (; inline_fn2(i, kartNum); i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+         {
+           u8 j = 0;
+           u8 otherNum = data->m_kartNum;
+-          for (; j != otherNum; j++)
++          for (; inline_fn2(j, otherNum); j++)
+           {
+-            if (i != j)
++            if (inline_fn2(i, j))
+             {
+               stKartRecord *other = &m_karts[j];
+-              bool isBehind = false;
++              bool isBehind = inline_fn();
+               if (kart->m_lap < other->m_lap)
+               {
+                 isBehind = true;
+@@ -37928,13 +37938,13 @@
+       }
+ 
+     }
+-    if ((m_isZoomedOut == true) && (m_warningState != 0))
++    if ((m_isZoomedOut == true) && inline_fn2(m_warningState, 0))
+     {
+       zoomInCamera();
+-      m_isZoomedOut = false;
++      m_isZoomedOut = inline_fn();
+     }
+     else
+-      if ((m_isZoomedOut == false) && (m_warningState == 0))
++      if ((m_isZoomedOut == inline_fn()) && (0 == m_warningState))
+     {
+       zoomOutCamera(225.0f, 275.0f);
+       m_isZoomedOut = true;

@@ -1,0 +1,16 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+DIFF fn_78_A4                                 __ct__9stDxOnettFv                            65 74
+DIFF fn_78_250                                createObj__9stDxOnettFv                       164 165
+DIFF fn_78_680                                createKanban__9stDxOnettFi                    82 81
+DIFF fn_78_CD0                                createBeltConveyors__9stDxOnettFv             91 103
+DIFF fn_78_E3C                                update__9stDxOnettFf                          79 80
+DIFF fn_78_F78                                updateCameraBounds__9stDxOnettFf              23 23
+DIFF fn_78_FD4                                updateCars__9stDxOnettFf                      85 86
+DIFF fn_78_1128                               updateKanban__9stDxOnettFf                    58 56
+DIFF fn_78_1214                               chooseCar__9stDxOnettFUl                      145 145
+DIFF fn_78_156C                               (missing)                                     2 -
+Candidate-only functions (often unreferenced weak inlines the linker strips): __ct__5Vec3fFv, __ct__17stDxOnettObject84Fv
+SAME section .rodata: target 88 bytes, candidate 88 bytes
+SAME section .data: target 1352 bytes, candidate 1352 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 61/71. Section contents match. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

@@ -1,0 +1,81 @@
+{
+  "name": "st_tengan/mo_stage/st_tengan/gr_tengan_bg",
+  "measures": {
+    "fuzzy_match_percent": 100.0,
+    "total_code": "560",
+    "matched_code": "560",
+    "matched_code_percent": 100.0,
+    "total_data": "792",
+    "matched_data": "792",
+    "matched_data_percent": 100.0,
+    "total_functions": 3,
+    "matched_functions": 3,
+    "matched_functions_percent": 100.0,
+    "complete_code": "560",
+    "complete_code_percent": 100.0,
+    "complete_data": "792",
+    "complete_data_percent": 100.0,
+    "total_units": 1,
+    "complete_units": 1
+  },
+  "sections": [
+    {
+      "name": ".data",
+      "size": "792",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "virtual_address": "2744"
+      }
+    },
+    {
+      "name": ".text",
+      "size": "560",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "virtual_address": "26044"
+      }
+    }
+  ],
+  "functions": [
+    {
+      "name": "create__10grTenganBgFiPCcPCc",
+      "size": "208",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTenganBg::create(int, const char*, const char*)",
+        "virtual_address": "26044"
+      },
+      "address": "0"
+    },
+    {
+      "name": "__dt__10grTenganBgFv",
+      "size": "88",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTenganBg::~grTenganBg()",
+        "virtual_address": "26252"
+      },
+      "address": "208"
+    },
+    {
+      "name": "update__10grTenganBgFf",
+      "size": "264",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTenganBg::update(float)",
+        "virtual_address": "26340"
+      },
+      "address": "296"
+    }
+  ],
+  "metadata": {
+    "complete": true,
+    "module_name": "st_tengan",
+    "module_id": 60,
+    "source_path": "src/mo_stage/st_tengan/gr_tengan_bg.cpp",
+    "progress_categories": [
+      "modules"
+    ],
+    "auto_generated": false
+  }
+}

@@ -1,0 +1,114 @@
+.include "macros.inc"
+.file "auto_fn_8030ACF8_text"
+
+# 0x800088F8..0x80008900 | size: 0x8
+.section extab, "a"
+.balign 4
+
+# extab:0x0 | 0x800088F8 | size: 0x8
+.obj "@etb_800088F8", local
+.hidden "@etb_800088F8"
+/*
+ * Flag values:
+ * Has Elf Vector: No
+ * Large Frame: Yes
+ * Has Frame Pointer: No
+ * Saved CR: No
+ * Saved GPR range: r25-r31
+ */
+	.4byte 0x38080000
+	.4byte 0x00000000
+.endobj "@etb_800088F8"
+
+# 0x8000B854..0x8000B860 | size: 0xC
+.section extabindex, "a"
+.balign 4
+
+# extabindex:0x0 | 0x8000B854 | size: 0xC
+.obj "@eti_8000B854", local
+.hidden "@eti_8000B854"
+	.4byte fn_8030ACF8
+	.4byte 0x0000010C
+	.4byte "@etb_800088F8"
+.endobj "@eti_8000B854"
+
+# 0x8030ACF8..0x8030AE04 | size: 0x10C
+.text
+.balign 4
+
+# .text:0x0 | 0x8030ACF8 | size: 0x10C
+.fn fn_8030ACF8, global
+/* 8030ACF8 00300A78  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 8030ACFC 00300A7C  7C 08 02 A6 */	mflr r0
+/* 8030AD00 00300A80  90 01 00 34 */	stw r0, 0x34(r1)
+/* 8030AD04 00300A84  BF 21 00 14 */	stmw r25, 0x14(r1)
+/* 8030AD08 00300A88  7C 7B 1B 78 */	mr r27, r3
+/* 8030AD0C 00300A8C  7C BC 2B 78 */	mr r28, r5
+/* 8030AD10 00300A90  7C DD 33 78 */	mr r29, r6
+/* 8030AD14 00300A94  7C F9 3B 78 */	mr r25, r7
+/* 8030AD18 00300A98  7D 1E 43 78 */	mr r30, r8
+/* 8030AD1C 00300A9C  7D 3F 4B 78 */	mr r31, r9
+/* 8030AD20 00300AA0  80 83 00 04 */	lwz r4, 0x4(r3)
+/* 8030AD24 00300AA4  80 03 00 08 */	lwz r0, 0x8(r3)
+/* 8030AD28 00300AA8  3B 44 00 02 */	addi r26, r4, 0x2
+/* 8030AD2C 00300AAC  54 00 00 BE */	clrlwi r0, r0, 2
+/* 8030AD30 00300AB0  7C 00 D0 00 */	cmpw r0, r26
+/* 8030AD34 00300AB4  40 80 00 20 */	bge .L_8030AD54
+/* 8030AD38 00300AB8  54 00 08 3C */	slwi r0, r0, 1
+/* 8030AD3C 00300ABC  7F 44 D3 78 */	mr r4, r26
+/* 8030AD40 00300AC0  7C 1A 00 00 */	cmpw r26, r0
+/* 8030AD44 00300AC4  40 80 00 08 */	bge .L_8030AD4C
+/* 8030AD48 00300AC8  7C 04 03 78 */	mr r4, r0
+.L_8030AD4C:
+/* 8030AD4C 00300ACC  38 A0 00 04 */	li r5, 0x4
+/* 8030AD50 00300AD0  4B F7 20 45 */	bl fn_8027CD94
+.L_8030AD54:
+/* 8030AD54 00300AD4  38 1A FF FD */	subi r0, r26, 0x3
+/* 8030AD58 00300AD8  80 7B 00 00 */	lwz r3, 0x0(r27)
+/* 8030AD5C 00300ADC  54 00 10 3A */	slwi r0, r0, 2
+/* 8030AD60 00300AE0  93 5B 00 04 */	stw r26, 0x4(r27)
+/* 8030AD64 00300AE4  7C 83 02 14 */	add r4, r3, r0
+/* 8030AD68 00300AE8  48 00 00 18 */	b .L_8030AD80
+.L_8030AD6C:
+/* 8030AD6C 00300AEC  A0 04 00 00 */	lhz r0, 0x0(r4)
+/* 8030AD70 00300AF0  B0 04 00 08 */	sth r0, 0x8(r4)
+/* 8030AD74 00300AF4  A0 04 00 02 */	lhz r0, 0x2(r4)
+/* 8030AD78 00300AF8  B0 04 00 0A */	sth r0, 0xa(r4)
+/* 8030AD7C 00300AFC  38 84 FF FC */	subi r4, r4, 0x4
+.L_8030AD80:
+/* 8030AD80 00300B00  A0 04 00 00 */	lhz r0, 0x0(r4)
+/* 8030AD84 00300B04  7C 19 00 40 */	cmplw r25, r0
+/* 8030AD88 00300B08  40 81 FF E4 */	ble .L_8030AD6C
+/* 8030AD8C 00300B0C  B3 84 00 0A */	sth r28, 0xa(r4)
+/* 8030AD90 00300B10  B3 24 00 08 */	sth r25, 0x8(r4)
+/* 8030AD94 00300B14  80 1B 00 00 */	lwz r0, 0x0(r27)
+/* 8030AD98 00300B18  7C 00 20 50 */	subf r0, r0, r4
+/* 8030AD9C 00300B1C  7C 00 16 70 */	srawi r0, r0, 2
+/* 8030ADA0 00300B20  7C 60 01 94 */	addze r3, r0
+/* 8030ADA4 00300B24  38 03 00 02 */	addi r0, r3, 0x2
+/* 8030ADA8 00300B28  B0 1F 00 00 */	sth r0, 0x0(r31)
+/* 8030ADAC 00300B2C  48 00 00 18 */	b .L_8030ADC4
+.L_8030ADB0:
+/* 8030ADB0 00300B30  A0 04 00 00 */	lhz r0, 0x0(r4)
+/* 8030ADB4 00300B34  B0 04 00 04 */	sth r0, 0x4(r4)
+/* 8030ADB8 00300B38  A0 04 00 02 */	lhz r0, 0x2(r4)
+/* 8030ADBC 00300B3C  B0 04 00 06 */	sth r0, 0x6(r4)
+/* 8030ADC0 00300B40  38 84 FF FC */	subi r4, r4, 0x4
+.L_8030ADC4:
+/* 8030ADC4 00300B44  A0 04 00 00 */	lhz r0, 0x0(r4)
+/* 8030ADC8 00300B48  7C 1D 00 40 */	cmplw r29, r0
+/* 8030ADCC 00300B4C  41 80 FF E4 */	blt .L_8030ADB0
+/* 8030ADD0 00300B50  B3 A4 00 04 */	sth r29, 0x4(r4)
+/* 8030ADD4 00300B54  B3 84 00 06 */	sth r28, 0x6(r4)
+/* 8030ADD8 00300B58  80 1B 00 00 */	lwz r0, 0x0(r27)
+/* 8030ADDC 00300B5C  7C 00 20 50 */	subf r0, r0, r4
+/* 8030ADE0 00300B60  7C 00 16 70 */	srawi r0, r0, 2
+/* 8030ADE4 00300B64  7C 60 01 94 */	addze r3, r0
+/* 8030ADE8 00300B68  38 03 00 01 */	addi r0, r3, 0x1
+/* 8030ADEC 00300B6C  B0 1E 00 00 */	sth r0, 0x0(r30)
+/* 8030ADF0 00300B70  BB 21 00 14 */	lmw r25, 0x14(r1)
+/* 8030ADF4 00300B74  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 8030ADF8 00300B78  7C 08 03 A6 */	mtlr r0
+/* 8030ADFC 00300B7C  38 21 00 30 */	addi r1, r1, 0x30
+/* 8030AE00 00300B80  4E 80 00 20 */	blr
+.endfn fn_8030ACF8

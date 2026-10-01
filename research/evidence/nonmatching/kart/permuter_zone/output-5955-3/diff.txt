@@ -1,0 +1,64 @@
+--- before
++++ after
+@@ -37883,6 +37883,9 @@
+ 
+ int getZoneLightSetIndex(Vec3f *pos)
+ {
++  float new_var3;
++  float new_var;
++  float new_var2;
+   if (pos == 0)
+   {
+     return 0x14;
+@@ -37901,6 +37904,7 @@
+   {
+     return 0x14;
+   }
++  new_var = y;
+   if ((x > 21.0f) && (x < 45.0f))
+   {
+     return 0x14;
+@@ -37909,28 +37913,29 @@
+   {
+     return 0x14;
+   }
+-  if (((x >= (-250.0f)) && (x <= (-100.0f))) && (y <= 25.0f))
++  if (((x >= (-250.0f)) && (x <= (-100.0f))) && (new_var <= 25.0f))
+   {
+     return 0x15;
+   }
+   if ((x >= (-100.0f)) && (x <= (-45.0f)))
+   {
+-    if (y <= 25.0f)
++    if (new_var <= 25.0f)
+     {
+       return 0x15;
+     }
+-    if (y <= (25.0f + (15.0f * clamp((x - (-100.0f)) / 55.0f, 0.0f, 1.0f))))
++    new_var3 = (x - (-100.0f)) / 55.0f;
++    if (new_var <= (25.0f + (15.0f * clamp(new_var3, 0.0f, 1.0f))))
+     {
+       return 0x15;
+     }
+   }
+-  if (((x >= (-21.0f)) && (x <= 21.0f)) && (y <= 50.0f))
++  if (((x >= (new_var2 = -21.0f)) && (x <= 21.0f)) && (y <= 50.0f))
+   {
+     return 0x15;
+   }
+   if ((x >= 45.0f) && (x <= 100.0f))
+   {
+-    if (y <= 25.0f)
++    if (new_var <= 25.0f)
+     {
+       return 0x15;
+     }
+@@ -37939,7 +37944,7 @@
+       return 0x15;
+     }
+   }
+-  if (((x >= 100.0f) && (x <= 250.0f)) && (y <= 25.0f))
++  if (((x >= 100.0f) && (x <= 250.0f)) && (new_var <= 25.0f))
+   {
+     return 0x15;
+   }

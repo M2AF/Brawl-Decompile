@@ -1,0 +1,65 @@
+.include "macros.inc"
+.file "auto_03_80304A14_text"
+
+# 0x80304A14..0x80304AE0 | size: 0xCC
+.text
+.balign 4
+
+# .text:0x0 | 0x80304A14 | size: 0x60
+.fn fn_80304A14, global
+/* 80304A14 002FA794  C0 23 00 0C */	lfs f1, 0xc(r3)
+/* 80304A18 002FA798  C0 04 00 0C */	lfs f0, 0xc(r4)
+/* 80304A1C 002FA79C  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80304A20 002FA7A0  7C C0 00 26 */	mfcr r6
+/* 80304A24 002FA7A4  C0 23 00 08 */	lfs f1, 0x8(r3)
+/* 80304A28 002FA7A8  C0 04 00 08 */	lfs f0, 0x8(r4)
+/* 80304A2C 002FA7AC  54 C6 0F FE */	srwi r6, r6, 31
+/* 80304A30 002FA7B0  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80304A34 002FA7B4  7C 00 00 26 */	mfcr r0
+/* 80304A38 002FA7B8  C0 23 00 00 */	lfs f1, 0x0(r3)
+/* 80304A3C 002FA7BC  C0 04 00 00 */	lfs f0, 0x0(r4)
+/* 80304A40 002FA7C0  54 05 17 BC */	rlwinm r5, r0, 2, 30, 30
+/* 80304A44 002FA7C4  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80304A48 002FA7C8  7C 00 00 26 */	mfcr r0
+/* 80304A4C 002FA7CC  C0 23 00 04 */	lfs f1, 0x4(r3)
+/* 80304A50 002FA7D0  C0 04 00 04 */	lfs f0, 0x4(r4)
+/* 80304A54 002FA7D4  54 03 27 38 */	rlwinm r3, r0, 4, 28, 28
+/* 80304A58 002FA7D8  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 80304A5C 002FA7DC  7C 00 00 26 */	mfcr r0
+/* 80304A60 002FA7E0  54 00 1F 7A */	rlwinm r0, r0, 3, 29, 29
+/* 80304A64 002FA7E4  7C 60 03 78 */	or r0, r3, r0
+/* 80304A68 002FA7E8  7C A0 03 78 */	or r0, r5, r0
+/* 80304A6C 002FA7EC  7C C3 03 78 */	or r3, r6, r0
+/* 80304A70 002FA7F0  4E 80 00 20 */	blr
+.endfn fn_80304A14
+
+# .text:0x60 | 0x80304A74 | size: 0x6C
+.fn fn_80304A74, global
+/* 80304A74 002FA7F4  C0 C5 00 04 */	lfs f6, 0x4(r5)
+/* 80304A78 002FA7F8  C0 44 00 04 */	lfs f2, 0x4(r4)
+/* 80304A7C 002FA7FC  C0 24 00 14 */	lfs f1, 0x14(r4)
+/* 80304A80 002FA800  EC A6 00 B2 */	fmuls f5, f6, f2
+/* 80304A84 002FA804  C0 04 00 24 */	lfs f0, 0x24(r4)
+/* 80304A88 002FA808  EC 66 00 72 */	fmuls f3, f6, f1
+/* 80304A8C 002FA80C  C0 E5 00 00 */	lfs f7, 0x0(r5)
+/* 80304A90 002FA810  EC 26 00 32 */	fmuls f1, f6, f0
+/* 80304A94 002FA814  C0 84 00 00 */	lfs f4, 0x0(r4)
+/* 80304A98 002FA818  EC C7 29 3A */	fmadds f6, f7, f4, f5
+/* 80304A9C 002FA81C  C0 44 00 10 */	lfs f2, 0x10(r4)
+/* 80304AA0 002FA820  C0 04 00 20 */	lfs f0, 0x20(r4)
+/* 80304AA4 002FA824  EC 87 18 BA */	fmadds f4, f7, f2, f3
+/* 80304AA8 002FA828  C1 05 00 08 */	lfs f8, 0x8(r5)
+/* 80304AAC 002FA82C  EC 47 08 3A */	fmadds f2, f7, f0, f1
+/* 80304AB0 002FA830  C0 A4 00 08 */	lfs f5, 0x8(r4)
+/* 80304AB4 002FA834  C0 64 00 18 */	lfs f3, 0x18(r4)
+/* 80304AB8 002FA838  C0 24 00 28 */	lfs f1, 0x28(r4)
+/* 80304ABC 002FA83C  EC A8 31 7A */	fmadds f5, f8, f5, f6
+/* 80304AC0 002FA840  EC 68 20 FA */	fmadds f3, f8, f3, f4
+/* 80304AC4 002FA844  C0 02 B2 A4 */	lfs f0, lbl_805A45C4@sda21(r0)
+/* 80304AC8 002FA848  EC 28 10 7A */	fmadds f1, f8, f1, f2
+/* 80304ACC 002FA84C  D0 A3 00 00 */	stfs f5, 0x0(r3)
+/* 80304AD0 002FA850  D0 63 00 04 */	stfs f3, 0x4(r3)
+/* 80304AD4 002FA854  D0 23 00 08 */	stfs f1, 0x8(r3)
+/* 80304AD8 002FA858  D0 03 00 0C */	stfs f0, 0xc(r3)
+/* 80304ADC 002FA85C  4E 80 00 20 */	blr
+.endfn fn_80304A74

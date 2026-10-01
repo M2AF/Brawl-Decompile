@@ -1,0 +1,528 @@
+target 54 funcs, candidate 53 funcs
+DIFF  fn_77_70                     create__10stDxGardenFv
+    --- target
+    +++ cand
+    @@ -19,6 +19,6 @@
+     lis     r4,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	__vt__10stDxGarden
+     li      r0,0
+     addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	__vt__10stDxGarden
+     addi    r3,r31,476
+DIFF  fn_77_E8                     __dt__10stDxGardenFv
+    --- target
+    +++ cand
+    @@ -11,5 +11,5 @@
+     lis     r4,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	__vt__10stDxGarden
+     addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	__vt__10stDxGarden
+     cmpwi   r0,0
+MATCH fn_77_16C                    loading__10stDxGardenFv
+MATCH fn_77_174                    createObj__10stDxGardenFv
+MATCH fn_77_3CC                    fn_77_3CC__10stDxGardenFi
+MATCH fn_77_478                    setStageData__6GroundFPv
+MATCH fn_77_480                    fn_77_480__10stDxGardenFi
+MATCH fn_77_52C                    fn_77_52C__10stDxGardenFi
+DIFF  fn_77_5D8                    fn_77_5D8__10stDxGardenFi
+    --- target
+    +++ cand
+    @@ -3,3 +3,3 @@
+     lis     r5,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	...data.0
+     cmpwi   r4,9
+    @@ -7,3 +7,3 @@
+     addi    r5,r5,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	...data.0
+     stw     r31,28(r1)
+MATCH fn_77_6D0                    fn_77_6D0__14grDxGardenLampFi
+MATCH fn_77_6D8                    fn_77_6D8__10stDxGardenFi
+MATCH fn_77_79C                    fn_77_79C__16grDxGardenSuimenFP5Vec3f
+DIFF  fn_77_7A4                    fn_77_7A4__10stDxGardenFi
+    --- target
+    +++ cand
+    @@ -3,3 +3,3 @@
+     lis     r5,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	...data.0
+     cmplwi  r4,10
+    @@ -7,3 +7,3 @@
+     addi    r5,r5,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	...data.0
+     stw     r31,12(r1)
+    @@ -13,6 +13,6 @@
+     lis     r3,0
+    -R_PPC_ADDR16_HA	jumptable_77_data_188
+    +R_PPC_ADDR16_HA
+     slwi    r0,r4,2
+     addi    r3,r3,0
+    -R_PPC_ADDR16_LO	jumptable_77_data_188
+    +R_PPC_ADDR16_LO
+     lwzx    r3,r3,r0
+DIFF  fn_77_8C4                    fn_77_8C4__10stDxGardenFv
+    --- target
+    +++ cand
+    @@ -5,5 +5,5 @@
+     lis     r31,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	...rodata.0
+     addi    r31,r31,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	...rodata.0
+     stw     r30,24(r1)
+DIFF  fn_77_9A4                    update__10stDxGardenFf
+    --- target
+    +++ cand
+    @@ -8,5 +8,5 @@
+     lis     r31,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	...rodata.0
+     addi    r31,r31,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	...rodata.0
+     stw     r30,8(r1)
+MATCH fn_77_AAC                    fn_77_AAC__10stDxGardenFf
+DIFF  fn_77_B08                    fn_77_B08__10stDxGardenFf
+    --- target
+    +++ cand
+    @@ -2,3 +2,3 @@
+     lis     r4,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	...rodata.0
+     mr      r7,r3
+    @@ -6,3 +6,3 @@
+     addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	...rodata.0
+     beqlr
+    @@ -37 +37,2 @@
+     R_PPC_REL24
+    +blr
+MATCH fn_77_B90                    startFighterEvent__5StageFv
+DIFF  fn_77_B94                    initializeFighterAttackRatio__5StageFv
+    --- target
+    +++ cand
+    @@ -1 +1,2 @@
+    +li      r3,0
+     blr
+MATCH fn_77_B98                    helperStarWarp__5StageFv
+MATCH fn_77_BA0                    isSimpleBossBattleMode__5StageFv
+MATCH fn_77_BA8                    isBossBattleMode__5StageFv
+DIFF  fn_77_BB0                    isCameraLocked__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,0
+    +li      r3,1
+     blr
+DIFF  fn_77_BB8                    notifyTimmingGameStart__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1 @@
+    -li      r3,1
+     blr
+DIFF  fn_77_BC0                    getFrameRuleTime__5StageFv
+    --- target
+    +++ cand
+    @@ -1 +1,2 @@
+    +lfs     f1,400(r3)
+     blr
+DIFF  fn_77_BC4                    setFrameRuleTime__5StageFf
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -lfs     f1,400(r3)
+    +stfs    f1,400(r3)
+     blr
+DIFF  fn_77_BCC                    isNextStepBgmEqualNowStepBgmFromFlag__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -stfs    f1,400(r3)
+    +li      r3,0
+     blr
+DIFF  fn_77_BD4                    getBgmPlayOffsetFrame__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,5 @@
+    -li      r3,0
+    +lis     r3,0
+    +R_PPC_ADDR16_HA
+    +lfs     f1,0(r3)
+    +R_PPC_ADDR16_LO
+     blr
+MATCH fn_77_BDC                    getBgmVolume__5StageFv
+DIFF  fn_77_BE8                    setBgmChange__5StageFfbUl
+    --- target
+    +++ cand
+    @@ -1,5 +1,4 @@
+    -lis     r3,0
+    -R_PPC_ADDR16_HA
+    -lfs     f1,0(r3)
+    -R_PPC_ADDR16_LO
+    +stb     r4,388(r3)
+    +stw     r5,392(r3)
+    +stfs    f1,396(r3)
+     blr
+DIFF  fn_77_BF4                    getBgmChangeID__5StageFPUlPf
+    --- target
+    +++ cand
+    @@ -1,4 +1,5 @@
+    -stb     r4,388(r3)
+    -stw     r5,392(r3)
+    -stfs    f1,396(r3)
+    +lwz     r0,392(r3)
+    +stw     r0,0(r4)
+    +lfs     f0,396(r3)
+    +stfs    f0,0(r5)
+     blr
+DIFF  fn_77_C04                    isBgmChange__5StageFv
+    --- target
+    +++ cand
+    @@ -1,5 +1,2 @@
+    -lwz     r0,392(r3)
+    -stw     r0,0(r4)
+    -lfs     f0,396(r3)
+    -stfs    f0,0(r5)
+    +lbz     r3,388(r3)
+     blr
+DIFF  fn_77_C18                    getBgmOptionID__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -lbz     r3,388(r3)
+    +li      r3,0
+     blr
+MATCH fn_77_C20                    getNowStepBgmID__5StageFv
+MATCH fn_77_C28                    getBgmID__5StageFv
+MATCH fn_77_C30                    getBgmID__5StageCFv
+DIFF  fn_77_C38                    appearanceFighterLocal__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1 @@
+    -li      r3,0
+     blr
+DIFF  fn_77_C40                    getScrollDir__5StageFP5Vec3f
+    --- target
+    +++ cand
+    @@ -1 +1,9 @@
+    +lis     r5,0
+    +R_PPC_ADDR16_HA
+    +li      r3,0
+    +lfs     f0,0(r5)
+    +R_PPC_ADDR16_LO
+    +stfs    f0,0(r4)
+    +stfs    f0,4(r4)
+    +stfs    f0,8(r4)
+     blr
+DIFF  fn_77_C44                    getDefaultLightSetIndex__5StageFv
+    --- target
+    +++ cand
+    @@ -1,9 +1,2 @@
+    -lis     r5,0
+    -R_PPC_ADDR16_HA
+    -li      r3,0
+    -lfs     f0,0(r5)
+    -R_PPC_ADDR16_LO
+    -stfs    f0,0(r4)
+    -stfs    f0,4(r4)
+    -stfs    f0,8(r4)
+    +li      r3,20
+     blr
+DIFF  fn_77_C60                    getAIRange__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,20
+    +addi    r3,r3,104
+     blr
+DIFF  fn_77_C68                    isAdventureStage__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -addi    r3,r3,104
+    +li      r3,0
+     blr
+MATCH fn_77_C70                    getPokeTrainerDrawLayer__5StageFv
+DIFF  fn_77_C78                    getPokeTrainerPositionZ__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,5 @@
+    -li      r3,0
+    +lis     r3,0
+    +R_PPC_ADDR16_HA
+    +lfs     f1,0(r3)
+    +R_PPC_ADDR16_LO
+     blr
+DIFF  fn_77_C80                    getPokeTrainerPointData__5StageFPii
+    --- target
+    +++ cand
+    @@ -1,5 +1 @@
+    -lis     r3,0
+    -R_PPC_ADDR16_HA
+    -lfs     f1,0(r3)
+    -R_PPC_ADDR16_LO
+     blr
+DIFF  fn_77_C8C                    getPokeTrainerPointNum__5StageFv
+    --- target
+    +++ cand
+    @@ -1 +1,2 @@
+    +li      r3,0
+     blr
+DIFF  fn_77_C90                    isReStartSamePoint__7stMeleeFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,0
+    +li      r3,1
+     blr
+DIFF  fn_77_C98                    getWind2ndOnlyData__7stMeleeFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,1
+    +lwz     r3,456(r3)
+     blr
+DIFF  fn_77_CA0                    getFinalTechniqColor__10stDxGardenFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,12 @@
+    -lwz     r3,456(r3)
+    +stwu    r1,-16(r1)
+    +li      r5,20
+    +li      r4,0
+    +li      r3,4
+    +li      r0,125
+    +stb     r5,8(r1)
+    +stb     r4,9(r1)
+    +stb     r3,10(r1)
+    +stb     r0,11(r1)
+    +lwz     r3,8(r1)
+    +addi    r1,r1,16
+     blr
+MATCH fn_77_CA8                    isBamperVector__10stDxGardenFv
+DIFF  fn_77_CB0                    __sinit_\st_dxgarden_cpp
+    --- target
+    +++ cand
+    @@ -1,3 +1,39 @@
+    -lis     r3,5120
+    -addi    r3,r3,1149
+    +stwu    r1,-16(r1)
+    +mflr    r0
+    +stw     r0,20(r1)
+    +stw     r31,12(r1)
+    +lis     r31,0
+    +R_PPC_ADDR16_HA	bss_loc_14__10stDxGarden
+    +addi    r3,r31,0
+    +R_PPC_ADDR16_LO	bss_loc_14__10stDxGarden
+    +bl <addr>
+    +R_PPC_REL24	__ct__11stClassInfoFv
+    +lis     r5,0
+    +R_PPC_ADDR16_HA	__vt__32stClassInfoImpl<43,10stDxGarden>
+    +addi    r3,r31,0
+    +R_PPC_ADDR16_LO	bss_loc_14__10stDxGarden
+    +addi    r5,r5,0
+    +R_PPC_ADDR16_LO	__vt__32stClassInfoImpl<43,10stDxGarden>
+    +li      r4,43
+    +stw     r5,0(r31)
+    +R_PPC_ADDR16_LO	bss_loc_14__10stDxGarden
+    +mr      r5,r3
+    +bl <addr>
+    +R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+    +lis     r4,0
+    +R_PPC_ADDR16_HA	__dt__32stClassInfoImpl<43,10stDxGarden>Fv
+    +lis     r5,0
+    +R_PPC_ADDR16_HA
+    +addi    r3,r31,0
+    +R_PPC_ADDR16_LO	bss_loc_14__10stDxGarden
+    +addi    r4,r4,0
+    +R_PPC_ADDR16_LO	__dt__32stClassInfoImpl<43,10stDxGarden>Fv
+    +addi    r5,r5,0
+    +R_PPC_ADDR16_LO
+    +bl <addr>
+    +R_PPC_REL24	__register_global_object
+    +lwz     r0,20(r1)
+    +lwz     r31,12(r1)
+    +mtlr    r0
+    +addi    r1,r1,16
+     blr
+DIFF  fn_77_CBC                    __dt__32stClassInfoImpl<43,10stDxGarden>Fv
+    --- target
+    +++ cand
+    @@ -2,36 +2,31 @@
+     mflr    r0
+    +cmpwi   r3,0
+     stw     r0,20(r1)
+     stw     r31,12(r1)
+    -lis     r31,0
+    -R_PPC_ADDR16_HA
+    -addi    r3,r31,0
+    -R_PPC_ADDR16_LO
+    -bl <addr>
+    -R_PPC_REL24	__ct__11stClassInfoFv
+    -lis     r5,0
+    -R_PPC_ADDR16_HA
+    -addi    r3,r31,0
+    -R_PPC_ADDR16_LO
+    -addi    r5,r5,0
+    -R_PPC_ADDR16_LO
+    +mr      r31,r4
+    +stw     r30,8(r1)
+    +mr      r30,r3
+    +beq     d2cFv+0x58>
+    +lis     r6,0
+    +R_PPC_ADDR16_HA	__vt__32stClassInfoImpl<43,10stDxGarden>
+     li      r4,43
+    -stw     r5,0(r31)
+    -R_PPC_ADDR16_LO
+    -mr      r5,r3
+    -bl <addr>
+    +addi    r6,r6,0
+    +R_PPC_ADDR16_LO	__vt__32stClassInfoImpl<43,10stDxGarden>
+    +li      r5,0
+    +stw     r6,0(r3)
+    +bl      d0cFv+0x38>
+     R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+    -lis     r4,0
+    -R_PPC_ADDR16_HA
+    -lis     r5,0
+    -R_PPC_ADDR16_HA
+    -addi    r3,r31,0
+    -R_PPC_ADDR16_LO
+    -addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    -addi    r5,r5,0
+    -R_PPC_ADDR16_LO
+    -bl <addr>
+    -R_PPC_REL24	__register_global_object
+    +mr      r3,r30
+    +li      r4,0
+    +bl      d18Fv+0x44>
+    +R_PPC_REL24	__dt__11stClassInfoFv
+    +cmpwi   r31,0
+    +ble     d2cFv+0x58>
+    +mr      r3,r30
+    +bl      d28Fv+0x54>
+    +R_PPC_REL24	__dl__FPv
+    +mr      r3,r30
+    +lwz     r31,12(r1)
+    +lwz     r30,8(r1)
+     lwz     r0,20(r1)
+    -lwz     r31,12(r1)
+     mtlr    r0
+DIFF  fn_77_D20                    create__32stClassInfoImpl<43,10stDxGarden>Fv
+    --- target
+    +++ cand
+    @@ -2,30 +2,33 @@
+     mflr    r0
+    -cmpwi   r3,0
+    +li      r3,508
+    +li      r4,15
+     stw     r0,20(r1)
+     stw     r31,12(r1)
+    -mr      r31,r4
+    -stw     r30,8(r1)
+    -mr      r30,r3
+    -beq <addr>
+    -lis     r6,0
+    +bl      d60Fv+0x18>
+    +R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+    +cmpwi   r3,0
+    +mr      r31,r3
+    +beq     da8Fv+0x60>
+    +lis     r4,0
+     R_PPC_ADDR16_HA
+    -li      r4,43
+    -addi    r6,r6,0
+    +li      r5,43
+    +addi    r4,r4,0
+     R_PPC_ADDR16_LO
+    -li      r5,0
+    -stw     r6,0(r3)
+    -bl <addr>
+    -R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+    -mr      r3,r30
+    +bl      d7cFv+0x34>
+    +R_PPC_REL24	__ct__7stMeleeFPCcQ26Stages11srStageKind
+    +lis     r4,0
+    +R_PPC_ADDR16_HA	__vt__10stDxGarden
+    +li      r0,0
+    +addi    r4,r4,0
+    +R_PPC_ADDR16_LO	__vt__10stDxGarden
+    +addi    r3,r31,476
+    +stw     r4,60(r31)
+     li      r4,0
+    -bl <addr>
+    -R_PPC_REL24	__dt__11stClassInfoFv
+    -cmpwi   r31,0
+    -ble <addr>
+    -mr      r3,r30
+    -bl <addr>
+    -R_PPC_REL24	__dl__FPv
+    -mr      r3,r30
+    +li      r5,24
+    +stw     r0,504(r31)
+    +stw     r0,500(r31)
+    +bl      da4Fv+0x5c>
+    +R_PPC_REL24	memset
+    +mr      r3,r31
+     lwz     r31,12(r1)
+    -lwz     r30,8(r1)
+     lwz     r0,20(r1)
+DIFF  fn_77_D94                    preload__32stClassInfoImpl<43,10stDxGarden>Fv
+    --- target
+    +++ cand
+    @@ -1,37 +1 @@
+    -stwu    r1,-16(r1)
+    -mflr    r0
+    -li      r3,508
+    -li      r4,15
+    -stw     r0,20(r1)
+    -stw     r31,12(r1)
+    -bl <addr>
+    -R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+    -cmpwi   r3,0
+    -mr      r31,r3
+    -beq <addr>
+    -lis     r4,0
+    -R_PPC_ADDR16_HA
+    -li      r5,43
+    -addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    -bl <addr>
+    -R_PPC_REL24	__ct__7stMeleeFPCcQ26Stages11srStageKind
+    -lis     r4,0
+    -R_PPC_ADDR16_HA
+    -li      r0,0
+    -addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    -addi    r3,r31,476
+    -stw     r4,60(r31)
+    -li      r4,0
+    -li      r5,24
+    -stw     r0,504(r31)
+    -stw     r0,500(r31)
+    -bl <addr>
+    -R_PPC_REL24	memset
+    -mr      r3,r31
+    -lwz     r31,12(r1)
+    -lwz     r0,20(r1)
+    -mtlr    r0
+    -addi    r1,r1,16
+     blr
+DIFF  fn_77_E0C                    -
+    --- target
+    +++ cand
+    @@ -1 +0,0 @@
+    -blr
+.data: target 1320 bytes, candidate 1320 bytes, same bytes
+.rodata: target 40 bytes, candidate 36 bytes, DIFFERENT
+.bss: target 16 bytes, candidate 16 bytes, same bytes
+.ctors: target 4 bytes, candidate 4 bytes, same bytes

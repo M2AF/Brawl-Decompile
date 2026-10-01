@@ -1,0 +1,61 @@
+--- before
++++ after
+@@ -37835,12 +37835,17 @@
+ 
+ 
+ 
++inline int inline_fn(u8 arg0)
++{
++  return arg0 == true;
++}
++
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
+   if (data)
+   {
+-    m_bgState = 10;
++    m_bgState = (unsigned int) 10;
+     bool allOnFinalLap = true;
+     __alloca(data->m_kartNum * (sizeof(int)));
+     {
+@@ -37854,7 +37859,7 @@
+         {
+           allOnFinalLap = false;
+         }
+-        if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))
++        if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && inline_fn(kart->m_isRacing))
+         {
+           if (m_warningState == 10)
+           {
+@@ -37862,7 +37867,7 @@
+           }
+           m_bgState = 9;
+         }
+-        if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true))
++        if ((kart->m_checkpoint > 90) && inline_fn(kart->m_isRacing))
+         {
+           m_bgState = 8;
+         }
+@@ -37875,8 +37880,11 @@
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+-        if (allOnFinalLap == true)
++        if (inline_fn(allOnFinalLap))
+         {
++          if (((!true) && (!true)) && (!true))
++          {
++          }
+           kart->m_lap -= 10;
+         }
+       }
+@@ -37917,7 +37925,7 @@
+                   }
+                 }
+               }
+-              if (isBehind == true)
++              if (inline_fn(isBehind))
+               {
+                 kart->m_rank++;
+               }

@@ -1,0 +1,69 @@
+Unit: sora/mt/mt_vector_old
+Best attempt: src/sora/mt/mt_vector_old.cpp at branch rsbe01_01-support bc88679 (upstream source; no tried variant scored better)
+
+Compile command:
+build\tools\sjiswrap.exe build\compilers\GC\3.0a5.2\mwcceppc.exe -nodefaults -proc gekko -align powerpc -enum int -fp hardware -Cpp_exceptions off -O4,p -inline auto -pragma "cats off" -pragma "warn_notinlined off" -maxerrors 1 -nosyspath -RTTI off -fp_contract off -str reuse -enc SJIS -i include -i build/RSBE01_01/include -DBUILD_VERSION=2 -DVERSION_RSBE01_01 -DMATCHING -Iinclude -Iinclude/lib/PowerPC_EABI_Support/Runtime/Inc -Iinclude/lib/BrawlHeaders/Brawl/Include -Iinclude/lib/BrawlHeaders/nw4r/include -Iinclude/lib/BrawlHeaders/OpenRVL/include -Iinclude/lib/BrawlHeaders/OpenRVL/include/MetroTRK -Iinclude/lib/BrawlHeaders/OpenRVL/include/revolution -Iinclude/lib/BrawlHeaders/OpenRVL/include/RVLFaceLib -Iinclude/lib/BrawlHeaders/OpenRVL/include/stl -Iinclude/lib/BrawlHeaders/utils/include -RTTI on -ipa file -lang=c++ -MMD -c src\sora\mt\mt_vector_old.cpp -o build\RSBE01_01\src\sora\mt
+
+Compiler: GC/3.0a5.2 mwcceppc.exe sha256 bfa9fd1794736e0aaa937ad8786956b2bc5cd7fddcc6fe20af45798812e1918d
+
+== vlRotateFix__FP5Vec3fQ212vlRotateAxis4Enumf: DIFF
+--- target
++++ candidate
+@@ -18,5 +18,5 @@
+ R_PPC_REL24	cos
+ cmpwi   r31,3
+-frsp    f5,f1
++frsp    f2,f1
+ beq <addr>
+ bge <addr>
+@@ -30,32 +30,32 @@
+ lfs     f1,4(r30)
+ lfs     f0,8(r30)
+-fmuls   f3,f1,f5
+-lfs     f4,0(r30)
+-fmuls   f2,f0,f31
++fmuls   f3,f1,f2
++lfs     f5,0(r30)
++fmuls   f4,f0,f31
+ fmuls   f1,f1,f31
+-fmuls   f0,f0,f5
+-fsubs   f6,f3,f2
++fmuls   f0,f0,f2
++fsubs   f6,f3,f4
+ fadds   f7,f1,f0
+ b <addr>
+ lfs     f0,8(r30)
+-lfs     f4,0(r30)
+-fmuls   f2,f0,f31
++lfs     f1,0(r30)
++fmuls   f4,f0,f2
+ lfs     f6,4(r30)
+-fmuls   f1,f0,f5
+-fmuls   f0,f4,f31
+-fmuls   f3,f4,f5
+-fsubs   f7,f1,f0
+-fadds   f4,f3,f2
++fmuls   f5,f1,f31
++fmuls   f3,f0,f31
++fmuls   f0,f1,f2
++fsubs   f7,f4,f5
++fadds   f5,f0,f3
+ b <addr>
+ lfs     f1,0(r30)
+ lfs     f0,4(r30)
+-fmuls   f3,f1,f5
++fmuls   f3,f1,f2
+ lfs     f7,8(r30)
+-fmuls   f2,f0,f31
++fmuls   f4,f0,f31
+ fmuls   f1,f1,f31
+-fmuls   f0,f0,f5
+-fsubs   f4,f3,f2
++fmuls   f0,f0,f2
++fsubs   f5,f3,f4
+ fadds   f6,f1,f0
+-stfs    f4,0(r30)
++stfs    f5,0(r30)
+ mr      r3,r30
+ stfs    f6,4(r30)
+candidate-only: []

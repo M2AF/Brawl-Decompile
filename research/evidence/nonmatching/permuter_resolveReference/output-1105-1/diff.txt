@@ -1,0 +1,26 @@
+--- before
++++ after
+@@ -1957,16 +1957,19 @@
+ 
+ void resolveReference(const utRelocate *other)
+ {
+-  s32 i;
+-  for (i = 0; i < m_hdr.nImports; i++)
++  unsigned long i;
++  char *new_var2;
++  u32 new_var;
++  new_var = m_hdr.nImports;
++  for (i = 0; m_hdr.nImports > i; i++)
+   {
+-    const char *importName = getImportName(i, m_hdr.nImports);
++    const char *importName = getImportName(i, new_var);
+     if (importName)
+     {
+       void *addr = (void *) other->getPublicAddress(importName);
+       if (!addr)
+       {
+-        OSReport("utRelocate: not found symbol! ->[%s] \n", importName);
++ do { OSReport(new_var2 = "utRelocate: not found symbol! ->[%s] \n", importName); } while (0);
+       }
+       locateExtern(importName, addr);
+     }

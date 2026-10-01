@@ -1,0 +1,86 @@
+target 29 funcs, candidate 31 funcs
+MATCH create__9grNewporkFiPCcPCc   create__9grNewporkFiPCcPCc
+MATCH setMdlIndex__6GroundFi       setMdlIndex__6GroundFi
+MATCH __dt__9grNewporkFv           __dt__9grNewporkFv
+DIFF  setupAttack__9grNewporkFfP5Vec3fUlb setupAttack__9grNewporkFfP5Vec3fUlb
+    --- target
+    +++ cand
+    @@ -9,3 +9,3 @@
+     lis     r30,0
+    -R_PPC_ADDR16_HA	soundEvents__24@unnamed@gr_newpork_cpp@
+    +R_PPC_ADDR16_HA	...data.0
+     mr      r28,r3
+    @@ -14,3 +14,3 @@
+     addi    r30,r30,0
+    -R_PPC_ADDR16_LO	soundEvents__24@unnamed@gr_newpork_cpp@
+    +R_PPC_ADDR16_LO	...data.0
+     bl <addr>
+MATCH playAppearSE__9grNewporkFv   playAppearSE__9grNewporkFv
+MATCH playDisappearSE__9grNewporkFv playDisappearSE__9grNewporkFv
+MATCH playAttackSE__9grNewporkFv   playAttackSE__9grNewporkFv
+MATCH playLoopSE__9grNewporkFv     playLoopSE__9grNewporkFv
+MATCH stopLoopSE__9grNewporkFv     stopLoopSE__9grNewporkFv
+MATCH setupCitySound__9grNewporkFv setupCitySound__9grNewporkFv
+MATCH playRandomCitySE__9grNewporkFv playRandomCitySE__9grNewporkFv
+MATCH playCitySE2__9grNewporkFv    playCitySE2__9grNewporkFv
+MATCH playCitySE3__9grNewporkFv    playCitySE3__9grNewporkFv
+MATCH setupBreakSound__9grNewporkFv setupBreakSound__9grNewporkFv
+MATCH playBreakSE__9grNewporkFv    playBreakSE__9grNewporkFv
+MATCH stopBreakSE__9grNewporkFv    stopBreakSE__9grNewporkFv
+MATCH adventureEventGetItem__6GroundFiP13stTriggerData adventureEventGetItem__6GroundFiP13stTriggerData
+MATCH getInitializeInfo__6GroundFi getInitializeInfo__6GroundFi
+MATCH setInitializeInfo__6GroundFi setInitializeInfo__6GroundFi
+MATCH setInitializeFlag__6GroundFv setInitializeFlag__6GroundFv
+MATCH disableCalcCollision__6GroundFv disableCalcCollision__6GroundFv
+MATCH enableCalcCollision__6GroundFv enableCalcCollision__6GroundFv
+MATCH isEnableCalcCollision__6GroundFv isEnableCalcCollision__6GroundFv
+MATCH getMdlIndex__6GroundFv       getMdlIndex__6GroundFv
+MATCH initStageData__6GroundFv     initStageData__6GroundFv
+MATCH getStageData__6GroundFv      getStageData__6GroundFv
+DIFF  getModelCount__6GroundFv     setStageData__6GroundFPv
+    --- target
+    +++ cand
+    @@ -1,8 +1,2 @@
+    -lwz     r0,64(r3)
+    -cmpwi   r0,0
+    -beq <addr>
+    -addi    r3,r3,64
+    -b <addr>
+    -R_PPC_REL24	GetResMdlNumEntries__Q34nw4r3g3d7ResFileCFv
+    -li      r3,0
+    +stw     r4,96(r3)
+     blr
+DIFF  getTransparencyFlag__9grGimmickFv getModelCount__6GroundFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,8 @@
+    -lbz     r3,225(r3)
+    +lwz     r0,64(r3)
+    +cmpwi   r0,0
+    +beq <addr>
+    +addi    r3,r3,64
+    +b <addr>
+    +R_PPC_REL24	GetResMdlNumEntries__Q34nw4r3g3d7ResFileCFv
+    +li      r3,0
+     blr
+DIFF  getGimmickData__9grGimmickFv getTransparencyFlag__9grGimmickFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -lwz     r3,188(r3)
+    +lbz     r3,225(r3)
+     blr
+DIFF  -                            getGimmickData__9grGimmickFv
+    --- target
+    +++ cand
+    @@ -0,0 +1,2 @@
+    +lwz     r3,188(r3)
+    +blr
+DIFF  -                            setGimmickData__9grGimmickFPv
+    --- target
+    +++ cand
+    @@ -0,0 +1,2 @@
+    +stw     r4,188(r3)
+    +blr
+.data: target 1968 bytes, candidate 1968 bytes, same bytes
+.rodata: target 8 bytes, candidate 8 bytes, same bytes

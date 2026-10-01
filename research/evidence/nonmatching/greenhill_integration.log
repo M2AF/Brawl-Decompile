@@ -1,0 +1,102 @@
+[1/2] SPLIT config\RSBE01_01\config.yml
+ INFO Loading config\RSBE01_01\config.yml
+ INFO Loading and analyzing 127 modules (using 16 threads)
+ INFO Initial analysis completed in 44.906s (found 92523 functions)
+ INFO Rebuilding relocations and splitting
+ WARN module{name=ft_marth id=106}: Alignment for mo_fighter/ft_marth/ft_marth_status_uniq_process_special_hi.cpp .data expected 8, but starts at 4:0x00005584
+ INFO Splitting completed in 5.160s (wrote 4404 objects)
+ INFO Total time: 50.567s
+[2/2] RUN configure.py
+[1/9] MWCC build\RSBE01_01\src\mo_stage\st_greenhill\st_greenhill.o
+[2/9] LINK build\RSBE01_01\st_greenhill\st_greenhill.preplf
+[3/9] LINK build\RSBE01_01\st_greenhill\st_greenhill.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\st_greenhill_cpp' is either not a global 
+#   symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_rodata_0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_rodata_4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_1C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_30' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_C8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_DC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_408' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_414' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_440' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_448' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_470' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_480' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_4A0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_4A8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_4C0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_4E4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_508' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_data_520' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_72_bss_8' is either not a global symbol or doesn't 
+#   exist.  Ignored.
+[4/9] REL
+ INFO Loading 127 modules
+ INFO Symbol resolution completed in 0.160s (resolved 228353 symbols)
+ INFO RELs written in 0.233s
+ INFO Total time: 0.567s
+[5/9] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[6/9] REPORT
+ INFO Loading project .
+ INFO Generating report for 4404 units (using 16 threads)
+ INFO Report generated in 11.873s
+ INFO Writing to build\RSBE01_01\report.json
+[7/9] PROGRESS
+Progress:
+  All: 1.36% matched, 1.16% linked (521 / 4404 files)
+    Code: 215116 / 15833548 bytes (2839 / 92523 functions)
+    Data: 836476 / 5667468 bytes (14.76%)
+  DOL: 1.37% matched, 0.85% linked (65 / 1722 files)
+    Code: 57172 / 4170064 bytes (511 / 14278 functions)
+    Data: 6720 / 1724104 bytes (0.39%)
+  Modules: 1.35% matched, 1.27% linked (456 / 2682 files)
+    Code: 157944 / 11663484 bytes (2328 / 78245 functions)
+    Data: 829756 / 3943364 bytes (21.04%)

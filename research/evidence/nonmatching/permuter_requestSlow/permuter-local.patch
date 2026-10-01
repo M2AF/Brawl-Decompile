@@ -1,0 +1,19 @@
+diff --git a/src/preprocess.py b/src/preprocess.py
+index 8447a80..960f45a 100644
+--- a/src/preprocess.py
++++ b/src/preprocess.py
+@@ -1,8 +1,14 @@
+ from typing import List
++import shutil
+ import subprocess
+ 
+ 
+ def preprocess(filename: str, cpp_args: List[str] = []) -> str:
++    # Local experiment patch: no C preprocessor on this Windows host. Inputs are
++    # already fully preprocessed with mwcceppc -E, so pass them through unchanged.
++    if shutil.which("cpp") is None:
++        with open(filename, encoding="utf-8") as f:
++            return f.read()
+     return subprocess.check_output(
+         ["cpp"] + cpp_args + ["-P", "-nostdinc", "-DPERMUTER", filename],
+         universal_newlines=True,

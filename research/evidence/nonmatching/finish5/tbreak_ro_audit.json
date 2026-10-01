@@ -1,0 +1,9 @@
+{
+  "object_prefix_equal": true,
+  "object_padding": "00000000",
+  "linked_ro_equal": true,
+  "linked_ro_sizes": [
+    164,
+    164
+  ]
+}

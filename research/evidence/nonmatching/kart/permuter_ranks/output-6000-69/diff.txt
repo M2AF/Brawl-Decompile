@@ -1,0 +1,28 @@
+--- before
++++ after
+@@ -37841,6 +37841,7 @@
+   if (data)
+   {
+     m_bgState = 10;
++ do { } while (0);
+     bool allOnFinalLap = true;
+     __alloca(data->m_kartNum * (sizeof(int)));
+     {
+@@ -37854,7 +37855,7 @@
+         {
+           allOnFinalLap = false;
+         }
+-        if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))
++        if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < ((0, 40)))) && (kart->m_isRacing == true))
+         {
+           if (m_warningState == 10)
+           {
+@@ -37893,7 +37894,7 @@
+           u8 otherNum = data->m_kartNum;
+           for (; j != otherNum; j++)
+           {
+-            if (i != j)
++            if ((i & 0xFFu) != j)
+             {
+               stKartRecord *other = &m_karts[j];
+               bool isBehind = false;

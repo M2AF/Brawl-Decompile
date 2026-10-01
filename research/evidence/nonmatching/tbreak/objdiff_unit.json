@@ -1,0 +1,648 @@
+{
+  "name": "st_tbreak/mo_stage/st_tbreak/st_tbreak",
+  "measures": {
+    "fuzzy_match_percent": 91.73855,
+    "total_code": "6900",
+    "matched_code": "1736",
+    "matched_code_percent": 25.159422,
+    "total_data": "3500",
+    "matched_data": "4",
+    "matched_data_percent": 0.114285715,
+    "total_functions": 58,
+    "matched_functions": 56,
+    "matched_functions_percent": 96.55172,
+    "total_units": 1
+  },
+  "sections": [
+    {
+      "name": ".bss",
+      "size": "32",
+      "metadata": {
+        "virtual_address": "8"
+      }
+    },
+    {
+      "name": ".ctors",
+      "size": "4",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "virtual_address": "0"
+      }
+    },
+    {
+      "name": ".data",
+      "size": "3304",
+      "fuzzy_match_percent": 43.26188,
+      "metadata": {
+        "virtual_address": "0"
+      }
+    },
+    {
+      "name": ".rodata",
+      "size": "160",
+      "fuzzy_match_percent": 98.101265,
+      "metadata": {
+        "virtual_address": "0"
+      }
+    },
+    {
+      "name": ".text",
+      "size": "6900",
+      "fuzzy_match_percent": 91.73855,
+      "metadata": {
+        "virtual_address": "112"
+      }
+    }
+  ],
+  "functions": [
+    {
+      "name": "create__13stTargetBreakFv",
+      "size": "52",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "stTargetBreak::create()",
+        "virtual_address": "112"
+      },
+      "address": "0"
+    },
+    {
+      "name": "__ct__13stTargetBreakFv",
+      "size": "200",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "stTargetBreak::stTargetBreak()",
+        "virtual_address": "164"
+      },
+      "address": "52"
+    },
+    {
+      "name": "__dt__13stTargetBreakFv",
+      "size": "200",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "stTargetBreak::~stTargetBreak()",
+        "virtual_address": "364"
+      },
+      "address": "252"
+    },
+    {
+      "name": "loading__13stTargetBreakFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "stTargetBreak::loading()",
+        "virtual_address": "564"
+      },
+      "address": "452"
+    },
+    {
+      "name": "createObj__13stTargetBreakFv",
+      "size": "3404",
+      "fuzzy_match_percent": 88.78966,
+      "metadata": {
+        "demangled_name": "stTargetBreak::createObj()",
+        "virtual_address": "572"
+      },
+      "address": "460"
+    },
+    {
+      "name": "setStageData__6GroundFPv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::setStageData(void*)",
+        "virtual_address": "3976"
+      },
+      "address": "3864"
+    },
+    {
+      "name": "setMdlIndex__6GroundFi",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::setMdlIndex(int)",
+        "virtual_address": "3984"
+      },
+      "address": "3872"
+    },
+    {
+      "name": "setGimmickData__9grGimmickFPv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grGimmick::setGimmickData(void*)",
+        "virtual_address": "3992"
+      },
+      "address": "3880"
+    },
+    {
+      "name": "update__13stTargetBreakFf",
+      "size": "1760",
+      "fuzzy_match_percent": 89.29318,
+      "metadata": {
+        "demangled_name": "stTargetBreak::update(float)",
+        "virtual_address": "4000"
+      },
+      "address": "3888"
+    },
+    {
+      "name": "createItems__13stTargetBreakFv",
+      "size": "296",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "stTargetBreak::createItems()",
+        "virtual_address": "5760"
+      },
+      "address": "5648"
+    },
+    {
+      "name": "adventureEventGetItem__6GroundFiP13stTriggerData",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::adventureEventGetItem(int, stTriggerData*)",
+        "virtual_address": "6056"
+      },
+      "address": "5944"
+    },
+    {
+      "name": "getInitializeInfo__6GroundFi",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::getInitializeInfo(int)",
+        "virtual_address": "6064"
+      },
+      "address": "5952"
+    },
+    {
+      "name": "setInitializeInfo__6GroundFi",
+      "size": "4",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::setInitializeInfo(int)",
+        "virtual_address": "6072"
+      },
+      "address": "5960"
+    },
+    {
+      "name": "disableCalcCollision__6GroundFv",
+      "size": "16",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::disableCalcCollision()",
+        "virtual_address": "6076"
+      },
+      "address": "5964"
+    },
+    {
+      "name": "enableCalcCollision__6GroundFv",
+      "size": "16",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::enableCalcCollision()",
+        "virtual_address": "6092"
+      },
+      "address": "5980"
+    },
+    {
+      "name": "isEnableCalcCollision__6GroundFv",
+      "size": "12",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::isEnableCalcCollision()",
+        "virtual_address": "6108"
+      },
+      "address": "5996"
+    },
+    {
+      "name": "getMdlIndex__6GroundFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::getMdlIndex()",
+        "virtual_address": "6120"
+      },
+      "address": "6008"
+    },
+    {
+      "name": "initStageData__6GroundFv",
+      "size": "4",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::initStageData()",
+        "virtual_address": "6128"
+      },
+      "address": "6016"
+    },
+    {
+      "name": "getStageData__6GroundFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::getStageData()",
+        "virtual_address": "6132"
+      },
+      "address": "6020"
+    },
+    {
+      "name": "getModelCount__6GroundFv",
+      "size": "28",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::getModelCount()",
+        "virtual_address": "6140"
+      },
+      "address": "6028"
+    },
+    {
+      "name": "getTransparencyFlag__9grGimmickFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grGimmick::getTransparencyFlag()",
+        "virtual_address": "6168"
+      },
+      "address": "6056"
+    },
+    {
+      "name": "getGimmickData__9grGimmickFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grGimmick::getGimmickData()",
+        "virtual_address": "6176"
+      },
+      "address": "6064"
+    },
+    {
+      "name": "setMotionOff__26grGimmickTargetBreakSpringFv",
+      "size": "156",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grGimmickTargetBreakSpring::setMotionOff()",
+        "virtual_address": "6184"
+      },
+      "address": "6072"
+    },
+    {
+      "name": "__dt__26grGimmickTargetBreakSpringFv",
+      "size": "88",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grGimmickTargetBreakSpring::~grGimmickTargetBreakSpring()",
+        "virtual_address": "6340"
+      },
+      "address": "6228"
+    },
+    {
+      "name": "startFighterEvent__5StageFv",
+      "size": "4",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::startFighterEvent()",
+        "virtual_address": "6428"
+      },
+      "address": "6316"
+    },
+    {
+      "name": "initializeFighterAttackRatio__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::initializeFighterAttackRatio()",
+        "virtual_address": "6432"
+      },
+      "address": "6320"
+    },
+    {
+      "name": "helperStarWarp__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::helperStarWarp()",
+        "virtual_address": "6440"
+      },
+      "address": "6328"
+    },
+    {
+      "name": "isSimpleBossBattleMode__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::isSimpleBossBattleMode()",
+        "virtual_address": "6448"
+      },
+      "address": "6336"
+    },
+    {
+      "name": "isBossBattleMode__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::isBossBattleMode()",
+        "virtual_address": "6456"
+      },
+      "address": "6344"
+    },
+    {
+      "name": "isCameraLocked__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::isCameraLocked()",
+        "virtual_address": "6464"
+      },
+      "address": "6352"
+    },
+    {
+      "name": "notifyTimmingGameStart__5StageFv",
+      "size": "4",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::notifyTimmingGameStart()",
+        "virtual_address": "6472"
+      },
+      "address": "6360"
+    },
+    {
+      "name": "getFrameRuleTime__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::getFrameRuleTime()",
+        "virtual_address": "6476"
+      },
+      "address": "6364"
+    },
+    {
+      "name": "setFrameRuleTime__5StageFf",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::setFrameRuleTime(float)",
+        "virtual_address": "6484"
+      },
+      "address": "6372"
+    },
+    {
+      "name": "isNextStepBgmEqualNowStepBgmFromFlag__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::isNextStepBgmEqualNowStepBgmFromFlag()",
+        "virtual_address": "6492"
+      },
+      "address": "6380"
+    },
+    {
+      "name": "getBgmPlayOffsetFrame__5StageFv",
+      "size": "12",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::getBgmPlayOffsetFrame()",
+        "virtual_address": "6500"
+      },
+      "address": "6388"
+    },
+    {
+      "name": "getBgmVolume__5StageFv",
+      "size": "12",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::getBgmVolume()",
+        "virtual_address": "6512"
+      },
+      "address": "6400"
+    },
+    {
+      "name": "setBgmChange__5StageFfbUl",
+      "size": "16",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::setBgmChange(float, bool, unsigned long)",
+        "virtual_address": "6524"
+      },
+      "address": "6412"
+    },
+    {
+      "name": "getBgmChangeID__5StageFPUlPf",
+      "size": "20",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::getBgmChangeID(unsigned long*, float*)",
+        "virtual_address": "6540"
+      },
+      "address": "6428"
+    },
+    {
+      "name": "isBgmChange__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::isBgmChange()",
+        "virtual_address": "6560"
+      },
+      "address": "6448"
+    },
+    {
+      "name": "getBgmOptionID__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::getBgmOptionID()",
+        "virtual_address": "6568"
+      },
+      "address": "6456"
+    },
+    {
+      "name": "getNowStepBgmID__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::getNowStepBgmID()",
+        "virtual_address": "6576"
+      },
+      "address": "6464"
+    },
+    {
+      "name": "getBgmID__5StageCFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::getBgmID() const",
+        "virtual_address": "6584"
+      },
+      "address": "6472"
+    },
+    {
+      "name": "appearanceFighterLocal__5StageFv",
+      "size": "4",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::appearanceFighterLocal()",
+        "virtual_address": "6592"
+      },
+      "address": "6480"
+    },
+    {
+      "name": "getScrollDir__5StageFP5Vec3f",
+      "size": "28",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::getScrollDir(Vec3f*)",
+        "virtual_address": "6596"
+      },
+      "address": "6484"
+    },
+    {
+      "name": "getDefaultLightSetIndex__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::getDefaultLightSetIndex()",
+        "virtual_address": "6624"
+      },
+      "address": "6512"
+    },
+    {
+      "name": "getAIRange__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::getAIRange()",
+        "virtual_address": "6632"
+      },
+      "address": "6520"
+    },
+    {
+      "name": "isAdventureStage__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::isAdventureStage()",
+        "virtual_address": "6640"
+      },
+      "address": "6528"
+    },
+    {
+      "name": "getPokeTrainerDrawLayer__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::getPokeTrainerDrawLayer()",
+        "virtual_address": "6648"
+      },
+      "address": "6536"
+    },
+    {
+      "name": "getPokeTrainerPositionZ__5StageFv",
+      "size": "12",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::getPokeTrainerPositionZ()",
+        "virtual_address": "6656"
+      },
+      "address": "6544"
+    },
+    {
+      "name": "getPokeTrainerPointData__5StageFPii",
+      "size": "4",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::getPokeTrainerPointData(int*, int)",
+        "virtual_address": "6668"
+      },
+      "address": "6556"
+    },
+    {
+      "name": "getPokeTrainerPointNum__5StageFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Stage::getPokeTrainerPointNum()",
+        "virtual_address": "6672"
+      },
+      "address": "6560"
+    },
+    {
+      "name": "getWind2ndOnlyData__7stMeleeFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "stMelee::getWind2ndOnlyData()",
+        "virtual_address": "6680"
+      },
+      "address": "6568"
+    },
+    {
+      "name": "isReStartSamePoint__13stTargetBreakFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "stTargetBreak::isReStartSamePoint()",
+        "virtual_address": "6688"
+      },
+      "address": "6576"
+    },
+    {
+      "name": "getBgmID__13stTargetBreakFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "stTargetBreak::getBgmID()",
+        "virtual_address": "6696"
+      },
+      "address": "6584"
+    },
+    {
+      "name": "__sinit_\\st_tbreak_cpp",
+      "size": "136",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "virtual_address": "6704"
+      },
+      "address": "6592"
+    },
+    {
+      "name": "__dt__35stClassInfoImpl<56,13stTargetBreak>Fv",
+      "size": "116",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "stClassInfoImpl<56, stTargetBreak>::~stClassInfoImpl()",
+        "virtual_address": "6840"
+      },
+      "address": "6728"
+    },
+    {
+      "name": "create__35stClassInfoImpl<56,13stTargetBreak>Fv",
+      "size": "52",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "stClassInfoImpl<56, stTargetBreak>::create()",
+        "virtual_address": "6956"
+      },
+      "address": "6844"
+    },
+    {
+      "name": "preload__35stClassInfoImpl<56,13stTargetBreak>Fv",
+      "size": "4",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "stClassInfoImpl<56, stTargetBreak>::preload()",
+        "virtual_address": "7008"
+      },
+      "address": "6896"
+    }
+  ],
+  "metadata": {
+    "complete": false,
+    "module_name": "st_tbreak",
+    "module_id": 89,
+    "source_path": "src/mo_stage/st_tbreak/st_tbreak.cpp",
+    "progress_categories": [
+      "modules"
+    ],
+    "auto_generated": false
+  }
+}

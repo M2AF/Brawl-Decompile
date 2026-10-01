@@ -1,0 +1,21 @@
+# Local RSBE01_01 target; community semantic name is provisional.
+# research\analysis\asm\auto_03_80043B18_text.s
+.fn fn_80043F6C, global
+/* 80043F6C 00039CEC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80043F70 00039CF0  7C 08 02 A6 */	mflr r0
+/* 80043F74 00039CF4  2C 03 00 00 */	cmpwi r3, 0x0
+/* 80043F78 00039CF8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80043F7C 00039CFC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 80043F80 00039D00  7C 7F 1B 78 */	mr r31, r3
+/* 80043F84 00039D04  41 82 00 10 */	beq .L_80043F94
+/* 80043F88 00039D08  2C 04 00 00 */	cmpwi r4, 0x0
+/* 80043F8C 00039D0C  40 81 00 08 */	ble .L_80043F94
+/* 80043F90 00039D10  4B FC 89 39 */	bl fn_8000C8C8
+.L_80043F94:
+/* 80043F94 00039D14  7F E3 FB 78 */	mr r3, r31
+/* 80043F98 00039D18  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 80043F9C 00039D1C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80043FA0 00039D20  7C 08 03 A6 */	mtlr r0
+/* 80043FA4 00039D24  38 21 00 10 */	addi r1, r1, 0x10
+/* 80043FA8 00039D28  4E 80 00 20 */	blr
+.endfn fn_80043F6C

@@ -1,0 +1,42 @@
+Unit: sora/gf/gf_slow_manager
+Best attempt: src/sora/gf/gf_slow_manager.cpp at branch rsbe01_01-support bc88679 (upstream source; no tried variant scored better)
+
+Compile command:
+build\tools\sjiswrap.exe build\compilers\GC\3.0a5.2\mwcceppc.exe -nodefaults -proc gekko -align powerpc -enum int -fp hardware -Cpp_exceptions off -O4,p -inline auto -pragma "cats off" -pragma "warn_notinlined off" -maxerrors 1 -nosyspath -RTTI off -fp_contract off -str reuse -enc SJIS -i include -i build/RSBE01_01/include -DBUILD_VERSION=2 -DVERSION_RSBE01_01 -DMATCHING -Iinclude -Iinclude/lib/PowerPC_EABI_Support/Runtime/Inc -Iinclude/lib/BrawlHeaders/Brawl/Include -Iinclude/lib/BrawlHeaders/nw4r/include -Iinclude/lib/BrawlHeaders/OpenRVL/include -Iinclude/lib/BrawlHeaders/OpenRVL/include/MetroTRK -Iinclude/lib/BrawlHeaders/OpenRVL/include/revolution -Iinclude/lib/BrawlHeaders/OpenRVL/include/RVLFaceLib -Iinclude/lib/BrawlHeaders/OpenRVL/include/stl -Iinclude/lib/BrawlHeaders/utils/include -RTTI on -ipa file -lang=c++ -MMD -c src\sora\gf\gf_slow_manager.cpp -o build\RSBE01_01\src\sora\gf
+
+Compiler: GC/3.0a5.2 mwcceppc.exe sha256 bfa9fd1794736e0aaa937ad8786956b2bc5cd7fddcc6fe20af45798812e1918d
+
+== requestSlow__13gfSlowManagerFUc: DIFF
+--- target
++++ candidate
+@@ -4,22 +4,22 @@
+ addi    r6,r6,0
+ R_PPC_ADDR16_LO	s_gfSlowManager
+-li      r4,255
++li      r5,255
+ li      r8,0
+ mtctr   r0
+ rlwinm  r0,r8,1,23,30
+-lbzx    r5,r6,r0
++lbzx    r4,r6,r0
+ add     r7,r6,r0
+-cmpwi   r5,0
++cmpwi   r4,0
+ bne <addr>
+ li      r0,1
+-mr      r4,r8
+-rlwimi  r5,r0,0,24,31
++mr      r5,r8
++rlwimi  r4,r0,0,24,31
+ stb     r0,0(0)
+ R_PPC_EMB_SDA21	s_needsUpdate
+-stb     r5,0(r7)
++stb     r4,0(r7)
+ stb     r3,1(r7)
+ b <addr>
+ addi    r8,r8,1
+ bdnz <addr>
+-slwi    r3,r4,24
++slwi    r3,r5,24
+ blr
+candidate-only: []

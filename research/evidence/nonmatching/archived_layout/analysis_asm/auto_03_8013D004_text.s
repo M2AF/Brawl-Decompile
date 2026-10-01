@@ -1,0 +1,34 @@
+.include "macros.inc"
+.file "auto_03_8013D004_text"
+
+# 0x8013D004..0x8013D050 | size: 0x4C
+.text
+.balign 4
+
+# .text:0x0 | 0x8013D004 | size: 0x40
+.fn fn_8013D004, global
+/* 8013D004 00132D84  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8013D008 00132D88  7C 08 02 A6 */	mflr r0
+/* 8013D00C 00132D8C  2C 03 00 00 */	cmpwi r3, 0x0
+/* 8013D010 00132D90  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8013D014 00132D94  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8013D018 00132D98  7C 7F 1B 78 */	mr r31, r3
+/* 8013D01C 00132D9C  41 82 00 10 */	beq .L_8013D02C
+/* 8013D020 00132DA0  2C 04 00 00 */	cmpwi r4, 0x0
+/* 8013D024 00132DA4  40 81 00 08 */	ble .L_8013D02C
+/* 8013D028 00132DA8  4B EC F8 A1 */	bl fn_8000C8C8
+.L_8013D02C:
+/* 8013D02C 00132DAC  7F E3 FB 78 */	mr r3, r31
+/* 8013D030 00132DB0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8013D034 00132DB4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8013D038 00132DB8  7C 08 03 A6 */	mtlr r0
+/* 8013D03C 00132DBC  38 21 00 10 */	addi r1, r1, 0x10
+/* 8013D040 00132DC0  4E 80 00 20 */	blr
+.endfn fn_8013D004
+
+# .text:0x40 | 0x8013D044 | size: 0xC
+.fn fn_8013D044, global
+/* 8013D044 00132DC4  90 83 00 00 */	stw r4, 0x0(r3)
+/* 8013D048 00132DC8  90 A3 00 04 */	stw r5, 0x4(r3)
+/* 8013D04C 00132DCC  4E 80 00 20 */	blr
+.endfn fn_8013D044

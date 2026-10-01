@@ -1,0 +1,61 @@
+--- before
++++ after
+@@ -37835,14 +37835,21 @@
+ 
+ 
+ 
++inline u32 inline_fn(stKartRecord *arg0)
++{
++  return arg0->m_checkpoint;
++}
++
+ void updateRanks(float deltaFrame)
+ {
++  stKartRecord *new_var;
+   stKartData *data = (stKartData *) m_stageData;
++  int new_var2;
+   if (data)
+   {
+     m_bgState = 10;
+     bool allOnFinalLap = true;
+-    __alloca(data->m_kartNum * (sizeof(int)));
++    __alloca((data->m_kartNum * (sizeof(int))) & 0xFFFFFFFFFFFFFFFF);
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
+@@ -37862,9 +37869,11 @@
+           }
+           m_bgState = 9;
+         }
+-        if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true))
++        new_var = kart;
++        if ((inline_fn(kart) > 90) && (new_var->m_isRacing == true))
+         {
+-          m_bgState = 8;
++          new_var2 = 8;
++          m_bgState = new_var2;
+         }
+       }
+ 
+@@ -37904,16 +37913,19 @@
+               else
+                 if (kart->m_lap == other->m_lap)
+               {
+-                if (kart->m_checkpoint < other->m_checkpoint)
++                if (1)
++                {
++                  if (inline_fn(kart) < inline_fn(other))
+                 {
+                   isBehind = true;
+                 }
+                 else
+-                  if (kart->m_checkpoint == other->m_checkpoint)
++                    if (inline_fn(kart) == inline_fn(other))
+                 {
+                   if (kart->m_distance < other->m_distance)
+                   {
+                     isBehind = true;
++                    }
+                   }
+                 }
+               }

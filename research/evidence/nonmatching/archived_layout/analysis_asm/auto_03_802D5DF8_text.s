@@ -1,0 +1,109 @@
+.include "macros.inc"
+.file "auto_03_802D5DF8_text"
+
+# 0x802D5DF8..0x802D5F28 | size: 0x130
+.text
+.balign 4
+
+# .text:0x0 | 0x802D5DF8 | size: 0x24
+.fn fn_802D5DF8, global
+/* 802D5DF8 002CBB78  3C 80 80 48 */	lis r4, lbl_804877E8@ha
+/* 802D5DFC 002CBB7C  38 A0 00 01 */	li r5, 0x1
+/* 802D5E00 002CBB80  38 84 77 E8 */	addi r4, r4, lbl_804877E8@l
+/* 802D5E04 002CBB84  38 00 00 00 */	li r0, 0x0
+/* 802D5E08 002CBB88  B0 A3 00 06 */	sth r5, 0x6(r3)
+/* 802D5E0C 002CBB8C  90 03 00 08 */	stw r0, 0x8(r3)
+/* 802D5E10 002CBB90  D0 23 00 0C */	stfs f1, 0xc(r3)
+/* 802D5E14 002CBB94  90 83 00 00 */	stw r4, 0x0(r3)
+/* 802D5E18 002CBB98  4E 80 00 20 */	blr
+.endfn fn_802D5DF8
+
+# .text:0x24 | 0x802D5E1C | size: 0x8
+.fn fn_802D5E1C, global
+/* 802D5E1C 002CBB9C  38 60 00 04 */	li r3, 0x4
+/* 802D5E20 002CBBA0  4E 80 00 20 */	blr
+.endfn fn_802D5E1C
+
+# .text:0x2C | 0x802D5E24 | size: 0x18
+.fn fn_802D5E24, global
+/* 802D5E24 002CBBA4  C0 02 AE 40 */	lfs f0, lbl_805A4160@sda21(r0)
+/* 802D5E28 002CBBA8  D0 05 00 0C */	stfs f0, 0xc(r5)
+/* 802D5E2C 002CBBAC  D0 05 00 08 */	stfs f0, 0x8(r5)
+/* 802D5E30 002CBBB0  D0 05 00 04 */	stfs f0, 0x4(r5)
+/* 802D5E34 002CBBB4  D0 05 00 00 */	stfs f0, 0x0(r5)
+/* 802D5E38 002CBBB8  4E 80 00 20 */	blr
+.endfn fn_802D5E24
+
+# .text:0x44 | 0x802D5E3C | size: 0xCC
+.fn fn_802D5E3C, global
+/* 802D5E3C 002CBBBC  34 65 FF FF */	subic. r3, r5, 0x1
+/* 802D5E40 002CBBC0  C0 02 AE 40 */	lfs f0, lbl_805A4160@sda21(r0)
+/* 802D5E44 002CBBC4  38 63 00 01 */	addi r3, r3, 0x1
+/* 802D5E48 002CBBC8  4D 80 00 20 */	bltlr
+/* 802D5E4C 002CBBCC  54 60 E8 FF */	srwi. r0, r3, 3
+/* 802D5E50 002CBBD0  7C 09 03 A6 */	mtctr r0
+/* 802D5E54 002CBBD4  41 82 00 94 */	beq .L_802D5EE8
+.L_802D5E58:
+/* 802D5E58 002CBBD8  D0 06 00 0C */	stfs f0, 0xc(r6)
+/* 802D5E5C 002CBBDC  D0 06 00 08 */	stfs f0, 0x8(r6)
+/* 802D5E60 002CBBE0  D0 06 00 04 */	stfs f0, 0x4(r6)
+/* 802D5E64 002CBBE4  D0 06 00 00 */	stfs f0, 0x0(r6)
+/* 802D5E68 002CBBE8  D0 06 00 1C */	stfs f0, 0x1c(r6)
+/* 802D5E6C 002CBBEC  D0 06 00 18 */	stfs f0, 0x18(r6)
+/* 802D5E70 002CBBF0  D0 06 00 14 */	stfs f0, 0x14(r6)
+/* 802D5E74 002CBBF4  D0 06 00 10 */	stfs f0, 0x10(r6)
+/* 802D5E78 002CBBF8  D0 06 00 2C */	stfs f0, 0x2c(r6)
+/* 802D5E7C 002CBBFC  D0 06 00 28 */	stfs f0, 0x28(r6)
+/* 802D5E80 002CBC00  D0 06 00 24 */	stfs f0, 0x24(r6)
+/* 802D5E84 002CBC04  D0 06 00 20 */	stfs f0, 0x20(r6)
+/* 802D5E88 002CBC08  D0 06 00 3C */	stfs f0, 0x3c(r6)
+/* 802D5E8C 002CBC0C  D0 06 00 38 */	stfs f0, 0x38(r6)
+/* 802D5E90 002CBC10  D0 06 00 34 */	stfs f0, 0x34(r6)
+/* 802D5E94 002CBC14  D0 06 00 30 */	stfs f0, 0x30(r6)
+/* 802D5E98 002CBC18  D0 06 00 4C */	stfs f0, 0x4c(r6)
+/* 802D5E9C 002CBC1C  D0 06 00 48 */	stfs f0, 0x48(r6)
+/* 802D5EA0 002CBC20  D0 06 00 44 */	stfs f0, 0x44(r6)
+/* 802D5EA4 002CBC24  D0 06 00 40 */	stfs f0, 0x40(r6)
+/* 802D5EA8 002CBC28  D0 06 00 5C */	stfs f0, 0x5c(r6)
+/* 802D5EAC 002CBC2C  D0 06 00 58 */	stfs f0, 0x58(r6)
+/* 802D5EB0 002CBC30  D0 06 00 54 */	stfs f0, 0x54(r6)
+/* 802D5EB4 002CBC34  D0 06 00 50 */	stfs f0, 0x50(r6)
+/* 802D5EB8 002CBC38  D0 06 00 6C */	stfs f0, 0x6c(r6)
+/* 802D5EBC 002CBC3C  D0 06 00 68 */	stfs f0, 0x68(r6)
+/* 802D5EC0 002CBC40  D0 06 00 64 */	stfs f0, 0x64(r6)
+/* 802D5EC4 002CBC44  D0 06 00 60 */	stfs f0, 0x60(r6)
+/* 802D5EC8 002CBC48  D0 06 00 7C */	stfs f0, 0x7c(r6)
+/* 802D5ECC 002CBC4C  D0 06 00 78 */	stfs f0, 0x78(r6)
+/* 802D5ED0 002CBC50  D0 06 00 74 */	stfs f0, 0x74(r6)
+/* 802D5ED4 002CBC54  D0 06 00 70 */	stfs f0, 0x70(r6)
+/* 802D5ED8 002CBC58  38 C6 00 80 */	addi r6, r6, 0x80
+/* 802D5EDC 002CBC5C  42 00 FF 7C */	bdnz .L_802D5E58
+/* 802D5EE0 002CBC60  70 63 00 07 */	andi. r3, r3, 0x7
+/* 802D5EE4 002CBC64  4D 82 00 20 */	beqlr
+.L_802D5EE8:
+/* 802D5EE8 002CBC68  7C 69 03 A6 */	mtctr r3
+.L_802D5EEC:
+/* 802D5EEC 002CBC6C  D0 06 00 0C */	stfs f0, 0xc(r6)
+/* 802D5EF0 002CBC70  D0 06 00 08 */	stfs f0, 0x8(r6)
+/* 802D5EF4 002CBC74  D0 06 00 04 */	stfs f0, 0x4(r6)
+/* 802D5EF8 002CBC78  D0 06 00 00 */	stfs f0, 0x0(r6)
+/* 802D5EFC 002CBC7C  38 C6 00 10 */	addi r6, r6, 0x10
+/* 802D5F00 002CBC80  42 00 FF EC */	bdnz .L_802D5EEC
+/* 802D5F04 002CBC84  4E 80 00 20 */	blr
+.endfn fn_802D5E3C
+
+# .text:0x110 | 0x802D5F08 | size: 0x18
+.fn fn_802D5F08, global
+/* 802D5F08 002CBC88  C0 02 AE 40 */	lfs f0, lbl_805A4160@sda21(r0)
+/* 802D5F0C 002CBC8C  D0 04 00 0C */	stfs f0, 0xc(r4)
+/* 802D5F10 002CBC90  D0 04 00 08 */	stfs f0, 0x8(r4)
+/* 802D5F14 002CBC94  D0 04 00 04 */	stfs f0, 0x4(r4)
+/* 802D5F18 002CBC98  D0 04 00 00 */	stfs f0, 0x0(r4)
+/* 802D5F1C 002CBC9C  4E 80 00 20 */	blr
+.endfn fn_802D5F08
+
+# .text:0x128 | 0x802D5F20 | size: 0x8
+.fn fn_802D5F20, global
+/* 802D5F20 002CBCA0  38 60 00 01 */	li r3, 0x1
+/* 802D5F24 002CBCA4  4E 80 00 20 */	blr
+.endfn fn_802D5F20

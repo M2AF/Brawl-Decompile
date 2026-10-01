@@ -1,0 +1,24 @@
+REL module ID: 45
+REL version: 3
+Original section count: 16
+
+Sections:
+      Name | Type       | Size       | File Off   | Index     
+     .text | code       | 0xA80      | 0xCC       | 1         
+    .ctors | rodata     | 0x8        | 0xB4C      | 2         
+    .dtors | rodata     | 0xC        | 0xB54      | 3         
+   .rodata | rodata     | 0x14       | 0xB60      | 4         
+     .data | data       | 0x1EE0     | 0xB80      | 5         
+      .bss | bss        | 0x18       | 0x0        | 6         
+
+Discovered symbols:
+   Section | Address    | Size       | Name      
+     .text | 0x0        | 0x1C       | __register_global_object
+     .text | 0x1C       | 0x54       | __destroy_global_chain
+     .text | 0x9E4      | 0x48       | _prolog   
+     .text | 0xA2C      | 0x48       | _epilog   
+     .text | 0xA74      | 0xC        | _unresolved
+    .ctors | 0x0        | ?          | _ctors    
+    .dtors | 0x0        | ?          | _dtors    
+    .dtors | 0x0        | 0x4        | __destroy_global_chain_reference
+      .bss | 0x0        | 0x4        | __global_destructor_chain

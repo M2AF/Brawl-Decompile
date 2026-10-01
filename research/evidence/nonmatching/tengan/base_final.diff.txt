@@ -1,0 +1,23 @@
+MATCH create__8grTenganFiPCcPCc
+MATCH setMdlIndex__6GroundFi
+MATCH __ct__8grTenganFPCc
+MATCH __dt__8grTenganFv
+MATCH update__8grTenganFf
+MATCH setTgtNode__8grTenganFPCc
+MATCH getTgtNode__8grTenganFv
+MATCH adventureEventGetItem__6GroundFiP13stTriggerData
+MATCH getInitializeInfo__6GroundFi
+MATCH setInitializeInfo__6GroundFi
+MATCH setInitializeFlag__6GroundFv
+MATCH disableCalcCollision__6GroundFv
+MATCH enableCalcCollision__6GroundFv
+MATCH isEnableCalcCollision__6GroundFv
+MATCH getMdlIndex__6GroundFv
+MATCH initStageData__6GroundFv
+MATCH getStageData__6GroundFv
+MATCH getModelCount__6GroundFv
+MATCH getTransparencyFlag__9grGimmickFv
+MATCH getGimmickData__9grGimmickFv
+MATCH setGimmickData__9grGimmickFPv
+Instruction comparison: 21 / 21
+Extra emitted functions: setStageData__6GroundFPv

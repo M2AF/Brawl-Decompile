@@ -1,0 +1,55 @@
+.include "macros.inc"
+.file "auto_03_802AF764_text"
+
+# 0x802AF764..0x802AF7D0 | size: 0x6C
+.text
+.balign 4
+
+# .text:0x0 | 0x802AF764 | size: 0x18
+.fn fn_802AF764, global
+/* 802AF764 002A54E4  88 03 00 78 */	lbz r0, 0x78(r3)
+/* 802AF768 002A54E8  7C 00 07 75 */	extsb. r0, r0
+/* 802AF76C 002A54EC  41 82 00 08 */	beq .L_802AF774
+/* 802AF770 002A54F0  48 00 22 FC */	b fn_802B1A6C
+.L_802AF774:
+/* 802AF774 002A54F4  38 63 00 30 */	addi r3, r3, 0x30
+/* 802AF778 002A54F8  48 04 D0 AC */	b fn_802FC824
+.endfn fn_802AF764
+
+# .text:0x18 | 0x802AF77C | size: 0x18
+.fn fn_802AF77C, global
+/* 802AF77C 002A54FC  88 03 00 78 */	lbz r0, 0x78(r3)
+/* 802AF780 002A5500  7C 00 07 75 */	extsb. r0, r0
+/* 802AF784 002A5504  41 82 00 08 */	beq .L_802AF78C
+/* 802AF788 002A5508  48 00 23 80 */	b fn_802B1B08
+.L_802AF78C:
+/* 802AF78C 002A550C  38 63 00 30 */	addi r3, r3, 0x30
+/* 802AF790 002A5510  48 04 D1 F8 */	b fn_802FC988
+.endfn fn_802AF77C
+
+# .text:0x30 | 0x802AF794 | size: 0x14
+.fn fn_802AF794, global
+/* 802AF794 002A5514  88 03 00 78 */	lbz r0, 0x78(r3)
+/* 802AF798 002A5518  7C 00 07 75 */	extsb. r0, r0
+/* 802AF79C 002A551C  4D 82 00 20 */	beqlr
+/* 802AF7A0 002A5520  48 00 32 44 */	b fn_802B29E4
+/* 802AF7A4 002A5524  4E 80 00 20 */	blr
+.endfn fn_802AF794
+
+# .text:0x44 | 0x802AF7A8 | size: 0x14
+.fn fn_802AF7A8, global
+/* 802AF7A8 002A5528  88 03 00 78 */	lbz r0, 0x78(r3)
+/* 802AF7AC 002A552C  7C 00 07 75 */	extsb. r0, r0
+/* 802AF7B0 002A5530  4D 82 00 20 */	beqlr
+/* 802AF7B4 002A5534  48 00 32 70 */	b fn_802B2A24
+/* 802AF7B8 002A5538  4E 80 00 20 */	blr
+.endfn fn_802AF7A8
+
+# .text:0x58 | 0x802AF7BC | size: 0x14
+.fn fn_802AF7BC, global
+/* 802AF7BC 002A553C  88 03 00 78 */	lbz r0, 0x78(r3)
+/* 802AF7C0 002A5540  7C 00 07 75 */	extsb. r0, r0
+/* 802AF7C4 002A5544  4D 82 00 20 */	beqlr
+/* 802AF7C8 002A5548  48 00 32 A0 */	b fn_802B2A68
+/* 802AF7CC 002A554C  4E 80 00 20 */	blr
+.endfn fn_802AF7BC

@@ -1,0 +1,47 @@
+[1/1] RUN configure.py
+[1/8] MWCC build\RSBE01_01\src\mo_stage\st_tengan\gr_tengan.o
+[2/8] LINK build\RSBE01_01\st_tengan\st_tengan.preplf
+[3/8] LINK build\RSBE01_01\st_tengan\st_tengan.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_60_data_838' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_60_data_A08' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_60_data_A14' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_60_data_A40' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_60_data_A4C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_60_data_A70' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_60_data_A7C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_60_data_A98' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_60_data_AA0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+[4/8] REL
+[5/8] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[6/8] REPORT
+[7/8] PROGRESS
+Progress:
+  All: 1.36% matched, 1.16% linked (522 / 4407 files)
+    Code: 215744 / 15833548 bytes (2860 / 92523 functions)
+    Data: 836476 / 5667468 bytes (14.76%)
+  DOL: 1.37% matched, 0.85% linked (65 / 1722 files)
+    Code: 57172 / 4170064 bytes (511 / 14278 functions)
+    Data: 6720 / 1724104 bytes (0.39%)
+  Modules: 1.36% matched, 1.28% linked (457 / 2685 files)
+    Code: 158572 / 11663484 bytes (2349 / 78245 functions)
+    Data: 829756 / 3943364 bytes (21.04%)

@@ -1,0 +1,45 @@
+# Local RSBE01_01 target; community semantic name is provisional.
+# research\analysis\asm\auto_03_8003FD5C_text.s
+.fn fn_8003FD5C, global
+/* 8003FD5C 00035ADC  C0 02 84 50 */	lfs f0, lbl_805A1770@sda21(r0)
+/* 8003FD60 00035AE0  3C 00 00 80 */	lis r0, 0x80
+/* 8003FD64 00035AE4  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8003FD68 00035AE8  EC 00 00 72 */	fmuls f0, f0, f1
+/* 8003FD6C 00035AEC  FC 00 00 1E */	fctiwz f0, f0
+/* 8003FD70 00035AF0  D8 01 00 08 */	stfd f0, 0x8(r1)
+/* 8003FD74 00035AF4  80 61 00 0C */	lwz r3, 0xc(r1)
+/* 8003FD78 00035AF8  3C 63 00 40 */	addis r3, r3, 0x40
+/* 8003FD7C 00035AFC  54 63 02 3E */	clrlwi r3, r3, 8
+/* 8003FD80 00035B00  7C 03 00 00 */	cmpw r3, r0
+/* 8003FD84 00035B04  40 81 00 0C */	ble .L_8003FD90
+/* 8003FD88 00035B08  3C 00 01 00 */	lis r0, 0x100
+/* 8003FD8C 00035B0C  7C 63 00 50 */	subf r3, r3, r0
+.L_8003FD90:
+/* 8003FD90 00035B10  3C 63 FF C0 */	subis r3, r3, 0x40
+/* 8003FD94 00035B14  3C 00 43 30 */	lis r0, 0x4330
+/* 8003FD98 00035B18  6C 63 80 00 */	xoris r3, r3, 0x8000
+/* 8003FD9C 00035B1C  90 01 00 10 */	stw r0, 0x10(r1)
+/* 8003FDA0 00035B20  C8 42 84 70 */	lfd f2, lbl_805A1790@sda21(r0)
+/* 8003FDA4 00035B24  90 61 00 14 */	stw r3, 0x14(r1)
+/* 8003FDA8 00035B28  C0 02 84 54 */	lfs f0, lbl_805A1774@sda21(r0)
+/* 8003FDAC 00035B2C  C8 21 00 10 */	lfd f1, 0x10(r1)
+/* 8003FDB0 00035B30  C0 82 84 68 */	lfs f4, lbl_805A1788@sda21(r0)
+/* 8003FDB4 00035B34  EC A1 10 28 */	fsubs f5, f1, f2
+/* 8003FDB8 00035B38  C0 62 84 64 */	lfs f3, lbl_805A1784@sda21(r0)
+/* 8003FDBC 00035B3C  C0 42 84 60 */	lfs f2, lbl_805A1780@sda21(r0)
+/* 8003FDC0 00035B40  C0 22 84 5C */	lfs f1, lbl_805A177C@sda21(r0)
+/* 8003FDC4 00035B44  EC C0 01 72 */	fmuls f6, f0, f5
+/* 8003FDC8 00035B48  C0 02 84 58 */	lfs f0, lbl_805A1778@sda21(r0)
+/* 8003FDCC 00035B4C  EC A6 01 B2 */	fmuls f5, f6, f6
+/* 8003FDD0 00035B50  EC 84 01 72 */	fmuls f4, f4, f5
+/* 8003FDD4 00035B54  EC 63 20 2A */	fadds f3, f3, f4
+/* 8003FDD8 00035B58  EC 65 00 F2 */	fmuls f3, f5, f3
+/* 8003FDDC 00035B5C  EC 42 18 2A */	fadds f2, f2, f3
+/* 8003FDE0 00035B60  EC 45 00 B2 */	fmuls f2, f5, f2
+/* 8003FDE4 00035B64  EC 21 10 2A */	fadds f1, f1, f2
+/* 8003FDE8 00035B68  EC 25 00 72 */	fmuls f1, f5, f1
+/* 8003FDEC 00035B6C  EC 00 08 2A */	fadds f0, f0, f1
+/* 8003FDF0 00035B70  EC 26 00 32 */	fmuls f1, f6, f0
+/* 8003FDF4 00035B74  38 21 00 20 */	addi r1, r1, 0x20
+/* 8003FDF8 00035B78  4E 80 00 20 */	blr
+.endfn fn_8003FD5C

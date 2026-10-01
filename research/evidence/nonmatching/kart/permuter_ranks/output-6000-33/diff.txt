@@ -1,0 +1,35 @@
+--- before
++++ after
+@@ -37856,7 +37856,7 @@
+         }
+         if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))
+         {
+-          if (m_warningState == 10)
++          if (10 == m_warningState)
+           {
+             m_warningState = 0;
+           }
+@@ -37871,7 +37871,7 @@
+     }
+     {
+       u8 i = 0;
+-      u8 kartNum = data->m_kartNum;
++      unsigned int kartNum = data->m_kartNum;
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+@@ -37899,7 +37899,14 @@
+               bool isBehind = false;
+               if (kart->m_lap < other->m_lap)
+               {
++                if (otherNum || kart->m_isRacing)
++                {
+                 isBehind = true;
++                }
++                else
++                {
++                  isBehind = true;
++                }
+               }
+               else
+                 if (kart->m_lap == other->m_lap)

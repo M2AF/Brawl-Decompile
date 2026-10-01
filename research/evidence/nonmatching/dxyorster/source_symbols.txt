@@ -1,0 +1,225 @@
+
+build/RSBE01_01/src/mo_stage/st_dxyorster/st_dxyorster.o:     file format elf32-powerpc
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 st_dxyorster.cpp
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .ctors	00000000 .ctors
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l     O .bss	0000000c @11087
+00000000 l     O .data	0000000e @11500
+00000000 l       .data	00000000 ...data.0
+00000010 l     O .data	0000000e @11501
+00000020 l     O .data	0000000d @11507
+00000030 l     O .data	00000012 @11508
+00000044 l     O .data	00000001 @11528
+00000048 l     O .data	00000011 @11529
+0000005c l     O .data	00000011 @11530
+00000070 l     O .data	00000015 @11534
+00000088 l     O .data	00000014 @11535
+0000009c l     O .data	00000015 @11548
+000000b4 l     O .data	00000011 @11549
+00000000 l     O .rodata	00000004 @11575
+00000004 l     O .rodata	00000004 @11577
+000002f4 l     O .data	0000000c @11158
+00000300 l     O .data	00000024 @11159
+00000330 l     O .data	00000008 @11160
+00000338 l     O .data	0000001c @11161
+00000360 l     O .data	00000010 @11162
+00000370 l     O .data	00000014 @11163
+00000390 l     O .data	00000006 @11164
+00000398 l     O .data	0000000c @11165
+000003b0 l     O .data	00000007 @11223
+00000914 l     F .text	00000064 __sinit_\st_dxyorster_cpp
+000003d4 l     O .data	00000021 @11409
+000003f8 l     O .data	0000000c @11410
+00000410 l     O .data	0000000c @11411
+0000000c g     O .bss	00000004 bss_loc_14__11stDxYorster
+00000428  w    O .data	0000000c @STRING@__ct__11stDxYorsterFv
+000000c8 g     O .data	0000022c __vt__11stDxYorster
+00000000 g     F .text	00000090 create__11stDxYorsterFv
+00000000         *UND*	00000000 __nw__FUlQ25Heaps8HeapType
+00000000         *UND*	00000000 __ct__7stMeleeFPCcQ26Stages11srStageKind
+00000000         *UND*	00000000 memset
+00000090 g     F .text	0000006c __dt__11stDxYorsterFv
+00000000         *UND*	00000000 releaseArchive__15stCommonGimmickFv
+00000000         *UND*	00000000 __dt__7stMeleeFv
+00000000         *UND*	00000000 __dl__FPv
+000000fc g     F .text	00000008 loading__11stDxYorsterFv
+00000104 g     F .text	0000028c createObj__11stDxYorsterFv
+00000000         *UND*	00000000 createCollision__5StageFP9gfArchiveiP6Ground
+00000000         *UND*	00000000 testStageParamInit__5StageFP9gfArchivei
+00000000         *UND*	00000000 getData__9gfArchiveF11ARCNodeTypeiUs
+00000000         *UND*	00000000 createStagePositions__5StageFPQ34nw4r3g3d7ResFile
+00000000         *UND*	00000000 createStagePositions__5StageFv
+00000000         *UND*	00000000 loadStageAttrParam__5StageFP9gfArchivei
+00000000         *UND*	00000000 registScnAnim__5StageFPQ34nw4r3g3d11ResFileDataUl
+00000000         *UND*	00000000 initPosPokeTrainer__5StageFii
+00000390 g     F .text	000000f0 fn_76_400__11stDxYorsterFi
+00000000         *UND*	00000000 fn_76_C9C
+00000000         *UND*	00000000 addGround__5StageFP6Ground
+00000480  w    F .text	00000008 setStageData__6GroundFPv
+00000488  w    F .text	00000008 fn_76_4FC__13grDxYorsterBgFP5Vec3f
+00000490  w    F .text	00000008 fn_76_504__13grDxYorsterBgFPb
+00000498  w    F .text	00000008 fn_76_50C__13grDxYorsterBgFPb
+000004a0 g     F .text	000000fc fn_76_514__11stDxYorsterFi
+00000000         *UND*	00000000 fn_76_B00
+0000059c g     F .text	000000c8 fn_76_618__11stDxYorsterFv
+00000000         *UND*	00000000 fn_76_19F8
+00000664  w    F .text	00000008 fn_76_6E0__19grDxYorsterBlockPosFP5Vec3f
+0000066c  w    F .text	00000008 fn_76_6E8__19grDxYorsterBlockPosFPUc
+00000674 g     F .text	00000164 fn_76_6F0__11stDxYorsterFi
+00000000         *UND*	00000000 fn_76_1140
+000007d8  w    F .text	00000008 fn_76_854__16grDxYorsterBlockFi
+000007e0  w    F .text	00000008 fn_76_85C__16grDxYorsterBlockFP5Vec3f
+000007e8  w    F .text	00000008 fn_76_864__16grDxYorsterBlockFPUc
+000007f0  w    F .text	00000008 fn_76_86C__16grDxYorsterBlockFPb
+000007f8  w    F .text	00000004 startFighterEvent__5StageFv
+000007fc  w    F .text	00000008 initializeFighterAttackRatio__5StageFv
+00000804  w    F .text	00000008 helperStarWarp__5StageFv
+0000080c  w    F .text	00000008 isSimpleBossBattleMode__5StageFv
+00000814  w    F .text	00000008 isBossBattleMode__5StageFv
+0000081c  w    F .text	00000008 isCameraLocked__5StageFv
+00000824  w    F .text	00000004 notifyTimmingGameStart__5StageFv
+00000828  w    F .text	00000008 getFrameRuleTime__5StageFv
+00000830  w    F .text	00000008 setFrameRuleTime__5StageFf
+00000838  w    F .text	00000008 isNextStepBgmEqualNowStepBgmFromFlag__5StageFv
+00000840  w    F .text	0000000c getBgmPlayOffsetFrame__5StageFv
+0000084c  w    F .text	0000000c getBgmVolume__5StageFv
+00000858  w    F .text	00000010 setBgmChange__5StageFfbUl
+00000868  w    F .text	00000014 getBgmChangeID__5StageFPUlPf
+0000087c  w    F .text	00000008 isBgmChange__5StageFv
+00000884  w    F .text	00000008 getBgmOptionID__5StageFv
+0000088c  w    F .text	00000008 getNowStepBgmID__5StageFv
+00000894  w    F .text	00000008 getBgmID__5StageFv
+0000089c  w    F .text	00000008 getBgmID__5StageCFv
+000008a4  w    F .text	00000004 appearanceFighterLocal__5StageFv
+000008a8  w    F .text	0000001c getScrollDir__5StageFP5Vec3f
+000008c4  w    F .text	00000008 getDefaultLightSetIndex__5StageFv
+000008cc  w    F .text	00000008 getAIRange__5StageFv
+000008d4  w    F .text	00000008 isAdventureStage__5StageFv
+000008dc  w    F .text	00000008 getPokeTrainerDrawLayer__5StageFv
+000008e4  w    F .text	0000000c getPokeTrainerPositionZ__5StageFv
+000008f0  w    F .text	00000004 getPokeTrainerPointData__5StageFPii
+000008f4  w    F .text	00000008 getPokeTrainerPointNum__5StageFv
+000008fc  w    F .text	00000008 isReStartSamePoint__7stMeleeFv
+00000904  w    F .text	00000008 getWind2ndOnlyData__7stMeleeFv
+0000090c  w    F .text	00000008 isBamperVector__11stDxYorsterFv
+00000328  w    O .data	00000008 __RTTI__11stDxYorster
+00000000         *UND*	00000000 init__6gfTaskFv
+00000000         *UND*	00000000 processDebug__6gfTaskFv
+00000000         *UND*	00000000 renderXlu__6gfTaskFv
+00000000         *UND*	00000000 renderOpa__6gfTaskFv
+00000000         *UND*	00000000 processGameProc__6gfTaskFv
+00000000         *UND*	00000000 processEffect__6gfTaskFv
+00000000         *UND*	00000000 processCamera__6gfTaskFv
+00000000         *UND*	00000000 processHit__6gfTaskFv
+00000000         *UND*	00000000 processCatch__6gfTaskFv
+00000000         *UND*	00000000 processCollision__6gfTaskFv
+00000000         *UND*	00000000 processPreCollision__6gfTaskFv
+00000000         *UND*	00000000 processFixPosition__6gfTaskFv
+00000000         *UND*	00000000 processPreMapCorrection__6gfTaskFv
+00000000         *UND*	00000000 processDefault__6gfTaskFv
+00000000         *UND*	00000000 setVision__5StageFUc
+00000000         *UND*	00000000 getIteamDropStatus__5StageFv
+00000000         *UND*	00000000 getAcidHeight__5StageFv
+00000000         *UND*	00000000 getMagmaHeight__5StageFv
+00000000         *UND*	00000000 getZonePos__5StageFP5Vec3f
+00000000         *UND*	00000000 getZoneState__5StageFv
+00000000         *UND*	00000000 setStageInEffectInit__5StageFv
+00000000         *UND*	00000000 setStageOutEffectInit__5StageFv
+00000000         *UND*	00000000 stAdventureEventGetItem__5StageFi6itKindiii
+00000000         *UND*	00000000 getDestroyBossParamCommon__5StageFUl
+00000000         *UND*	00000000 notifyEventInfoGo__5StageFv
+00000000         *UND*	00000000 notifyEventInfoReady__5StageFv
+00000000         *UND*	00000000 getBamperVector__5StageFP5Vec3f
+00000000         *UND*	00000000 getMadeinAiData__5StageFv
+00000000         *UND*	00000000 isStartAppearTimming__5StageFv
+00000000         *UND*	00000000 isAppear__5StageFv
+00000000         *UND*	00000000 restoreMotionSubRatio__5StageFi
+00000000         *UND*	00000000 saveMotionSubRatio__5StageFi
+00000000         *UND*	00000000 setMotionSubRatio__5StageFff
+00000000         *UND*	00000000 restoreMotionRatio__5StageFi
+00000000         *UND*	00000000 saveMotionRatio__5StageFi
+00000000         *UND*	00000000 setMotionRatio__5StageFff
+00000000         *UND*	00000000 getFinalTechniqColor__5StageFv
+00000000         *UND*	00000000 forceStopAppear__5StageFv
+00000000         *UND*	00000000 getAppearTask__5StageFv
+00000000         *UND*	00000000 endAppear__5StageFv
+00000000         *UND*	00000000 setAppearKind__5StageFUc
+00000000         *UND*	00000000 startAppear__5StageFv
+00000000         *UND*	00000000 getLucarioFinalTechniquePosition__5StageFP5Vec3f
+00000000         *UND*	00000000 setDevilScrool__5StageFff
+00000000         *UND*	00000000 isDevil__5StageFv
+00000000         *UND*	00000000 disableDevil__5StageFv
+00000000         *UND*	00000000 enableDevil__5StageFv
+00000000         *UND*	00000000 isEventEnd__5StageFiPiPi
+00000000         *UND*	00000000 isEnd__5StageFv
+00000000         *UND*	00000000 getEnableZ__5StageFv
+00000000         *UND*	00000000 getEnemyDeadEffectSizeRate__5StageFv
+00000000         *UND*	00000000 getFighterDeadEffectSizeRate__5StageFv
+00000000         *UND*	00000000 getPokeTrainerPos__5StageFP5Vec3fP5Vec3fUl
+00000000         *UND*	00000000 getPokeTrainerPosCount__5StageFv
+00000000         *UND*	00000000 getKirifudaModelType__5StageFUl
+00000000         *UND*	00000000 getKirifudaScale__5StageFP5Vec3fUl
+00000000         *UND*	00000000 getKirifudaAngle__5StageFUl
+00000000         *UND*	00000000 getKirifudaPos__5StageFP5Vec3fUl
+00000000         *UND*	00000000 getRandItemPos__5StageFP5Vec3f
+00000000         *UND*	00000000 getItemPos__5StageFP5Vec3fP5Vec3fUl
+00000000         *UND*	00000000 getItemPosCount__5StageFv
+00000000         *UND*	00000000 getPokeTrainerStartPos__5StageFP5Vec3fUl
+00000000         *UND*	00000000 removeLocalData__5StageFv
+00000000         *UND*	00000000 entryLocalData__5StageFv
+00000000         *UND*	00000000 isLoadLocalData__5StageFv
+00000000         *UND*	00000000 startLoadLocalData__5StageFv
+00000000         *UND*	00000000 initCameraParam__5StageFv
+00000000         *UND*	00000000 clearCameraParam__5StageFv
+00000000         *UND*	00000000 getZoneLightSetIndex__5StageFv
+00000000         *UND*	00000000 debugCollision__5StageFv
+00000000         *UND*	00000000 updateStagePositions__5StageFv
+00000000         *UND*	00000000 process__5StageFv
+00000000         *UND*	00000000 renderDebugPositions__5StageFv
+00000000         *UND*	00000000 closeStage__5StageFv
+00000000         *UND*	00000000 initializeStage__5StageFv
+00000000         *UND*	00000000 getAdvRadarData__5StageFPP9gfArchivePP9gfArchive
+00000000         *UND*	00000000 getEnemyPac__5StageFPP9gfArchivePP9gfArchivePP9gfArchivePP9gfArchive6emKind
+00000000         *UND*	00000000 getItemPacEnemyFigure__5StageFPP9gfArchive
+00000000         *UND*	00000000 getItemPac__5StageFPP9gfArchivePP9gfArchive6itKindi
+00000000         *UND*	00000000 createObjPokeTrainer__5StageFP9gfArchiveiPCcP5Vec3fP5Vec3f
+00000000         *UND*	00000000 renderDebug__5StageFv
+00000000         *UND*	00000000 renderPre__5StageFv
+00000000         *UND*	00000000 processEnd__5StageFv
+00000000         *UND*	00000000 processFixCamera__5StageFv
+00000000         *UND*	00000000 processMapCorrection__5StageFv
+00000000         *UND*	00000000 processAnim__5StageFv
+00000000         *UND*	00000000 setChangeSceneNumber__7stMeleeFl
+00000000         *UND*	00000000 resetChangeScene__7stMeleeFv
+00000000         *UND*	00000000 checkChangeScene__7stMeleeFv
+00000000         *UND*	00000000 resetCameraLimitRange__7stMeleeFv
+00000000         *UND*	00000000 setCameraLimitRange__7stMeleeFffff
+00000000         *UND*	00000000 update__7stMeleeFf
+00000000         *UND*	00000000 updateWind2ndOnly__7stMeleeFv
+00000000         *UND*	00000000 createWind2ndOnly__7stMeleeFv
+00000000         *UND*	00000000 getFighterReStartPos__7stMeleeFP5Vec3fi
+00000000         *UND*	00000000 getFighterStartPos__7stMeleeFP5Vec3fi
+00000000         *UND*	00000000 getItemGenPac__7stMeleeFPP9gfArchive
+00000000         *UND*	00000000 processUpdate__7stMeleeFv
+00000000         *UND*	00000000 processBegin__7stMeleeFv
+00000358  w    O .data	00000008 __RTTI__7stMelee
+00000388  w    O .data	00000008 __RTTI__15stCommonGimmick
+000003a8  w    O .data	00000008 __RTTI__5Stage
+000003b8  w    O .data	00000008 __RTTI__6gfTask
+000003c0  w    O .data	00000014 __vt__33stClassInfoImpl<42,11stDxYorster>
+00000000         *UND*	00000000 __ct__11stClassInfoFv
+00000000         *UND*	00000000 setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+00000978  w    F .text	00000074 __dt__33stClassInfoImpl<42,11stDxYorster>Fv
+00000000         *UND*	00000000 __register_global_object
+00000000         *UND*	00000000 __dt__11stClassInfoFv
+00000408  w    O .data	00000008 __RTTI__33stClassInfoImpl<42,11stDxYorster>
+000009ec  w    F .text	00000090 create__33stClassInfoImpl<42,11stDxYorster>Fv
+00000a7c  w    F .text	00000004 preload__33stClassInfoImpl<42,11stDxYorster>Fv
+00000420  w    O .data	00000008 __RTTI__11stClassInfo
+
+

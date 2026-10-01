@@ -1,0 +1,13 @@
+--- before
++++ after
+@@ -37840,9 +37840,9 @@
+   stKartData *data = (stKartData *) m_stageData;
+   if (data)
+   {
++    __alloca(data->m_kartNum * (sizeof(int)));
+     m_bgState = 10;
+     bool allOnFinalLap = true;
+-    __alloca(data->m_kartNum * (sizeof(int)));
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;

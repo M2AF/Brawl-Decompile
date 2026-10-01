@@ -1,0 +1,345 @@
+Sections:
+	.init       type:code align:4
+	extab       type:rodata align:32
+	extabindex  type:rodata align:32
+	.text       type:code align:32
+	.ctors      type:rodata align:32
+	.dtors      type:rodata align:32
+	.rodata     type:rodata align:32
+	.data       type:data align:32
+	.bss        type:bss align:128
+	.sdata      type:data align:32
+	.sbss       type:bss align:16
+	.sdata2     type:rodata align:16
+	.sbss2      type:bss align:32
+
+sora/sr/sr_getappname.cpp:
+	.text       start:0x8000C860 end:0x8000C8A4
+	.data       start:0x80420680 end:0x80420690
+
+sora/sr/sr_common.cpp:
+	.text       start:0x8000C8A4 end:0x8000C8E0
+	.sdata      start:0x8059C420 end:0x8059C428
+
+sora/sr/sr_revision.cpp:
+	.text       start:0x8000C8E0 end:0x8000C8E8
+
+sora/main.cpp:
+	.text       start:0x8000C8E8 end:0x8000C960
+
+sora/gf/gf_3d_scene_event.cpp:
+	.text       start:0x80010C9C end:0x80010D38
+
+sora/gf/gf_3d_scene_light_resource.cpp:
+	.text       start:0x80010D38 end:0x80010D5C
+
+sora/gf/gf_archive_load_thread.cpp:
+	.text       start:0x800134C0 end:0x800134C4
+	.data       start:0x804208B0 end:0x804208F0
+	.sdata      start:0x8059C468 end:0x8059C478
+
+sora/gf/gf_archive_file.cpp:
+	.text       start:0x80016408 end:0x8001643C
+
+sora/gf/gf_archive_db.cpp:
+	.text       start:0x8001643C end:0x80016688
+
+sora/gf/gf_archive_manager.cpp:
+	.text       start:0x80016688 end:0x800167C4
+	.sbss       start:0x8059FFA0 end:0x8059FFA4
+
+sora/gf/gf_camera_controller.cpp:
+	.text       start:0x8001A3A4 end:0x8001A3AC
+	.data       start:0x80420B88 end:0x80420BA0
+	.sdata      start:0x8059C4F8 end:0x8059C500
+
+sora/gf/gf_callback.cpp:
+	.text       start:0x8001A3AC end:0x8001A48C
+
+sora/gf/gf_decomp.cpp:
+	.text       start:0x8001A48C end:0x8001A5C0
+
+sora/gf/gf_error_manager.cpp:
+	.text       start:0x8001AF08 end:0x8001B574
+	.sdata      start:0x8059C500 end:0x8059C508
+	.sbss       start:0x8059FFD0 end:0x8059FFD4
+	.sdata2     start:0x805A1480 end:0x805A14B0
+
+sora/gf/gf_error_check.cpp:
+	.text       start:0x8001B574 end:0x8001B784
+	.ctors      start:0x804064EC end:0x804064F0
+	.data       start:0x80420BA0 end:0x80420C28
+	.bss        start:0x804948E8 end:0x80494900
+	.sdata      start:0x8059C508 end:0x8059C520
+
+sora/gf/gf_file_io_handle.cpp:
+	.text       start:0x80020B38 end:0x80022054
+
+sora/gf/gf_file_io_request.cpp:
+	.text       start:0x80022054 end:0x80022490
+
+sora/gf/gf_gameframe_counter.cpp:
+	.text       start:0x800241B4 end:0x800242DC
+
+sora/gf/gf_keep_fb.cpp:
+	.text       start:0x80024D6C end:0x80024E50
+
+sora/gf/gf_memory_util.cpp:
+	.text       start:0x80026474 end:0x80026478
+
+sora/gf/gf_pad_queue.cpp:
+	.text       start:0x8002B700 end:0x8002B9C4
+
+sora/gf/gf_pad_thread.cpp:
+	.text       start:0x8002B9C4 end:0x8002BAB0
+	.data       start:0x80422E88 end:0x80422EA8
+	.sdata2     start:0x805A1550 end:0x805A1560
+
+sora/gf/gf_task.cpp:
+	.text       start:0x8002D8B8 end:0x8002E09C
+	.data       start:0x80422EC8 end:0x80422F6C
+	.sdata      start:0x8059C668 end:0x8059C670
+
+sora/gf/gf_task_scheduler.cpp:
+	.text       start:0x8002E09C end:0x8002F188
+	.sbss       start:0x805A0068 end:0x805A006C
+
+sora/gf/gf_thread.cpp:
+	.text       start:0x8002F5B8 end:0x8002F6F4
+
+sora/gf/gf_shutdown_manager.cpp:
+	.text       start:0x80030340 end:0x80030548
+	.ctors      start:0x804064FC end:0x80406500
+	.bss        start:0x80495390 end:0x804953A0
+
+sora/gf/gf_slow_manager.cpp:
+	.text       start:0x80033160 end:0x800334E4
+	.bss        start:0x804953B0 end:0x804953D0
+	.sdata      start:0x8059C690 end:0x8059C698
+	.sbss       start:0x805A0080 end:0x805A0088
+	.sdata2     start:0x805A15E0 end:0x805A15F0
+
+sora/gf/gf_system_callback.cpp:
+	.text       start:0x80038684 end:0x800387AC
+	.ctors      start:0x80406508 end:0x8040650C
+	.sbss       start:0x805A00A0 end:0x805A00A8
+
+sora/gf/gf_capture_util.cpp:
+	.text       start:0x800387AC end:0x80038890
+	.data       start:0x80423518 end:0x80423550
+	.sdata      start:0x8059C6B0 end:0x8059C6B8
+
+sora/gf/gf_monitor.cpp:
+	.text       start:0x8003D794 end:0x8003D864
+	.data       start:0x8042ADD0 end:0x8042AE08
+	.sdata      start:0x8059C780 end:0x8059C788
+
+sora/gf/gf_resource_loader.cpp:
+	.text       start:0x8003D864 end:0x8003DB08
+
+sora/mt/mt_vector_old.cpp:
+	.text       start:0x8003E244 end:0x8003E35C
+
+sora/mt/mt_prng.cpp:
+	.text       start:0x8003FABC end:0x8003FD5C
+	.ctors      start:0x80406510 end:0x80406514
+	.data       start:0x8042AE50 end:0x8042AE6C
+	.sbss       start:0x805A00B8 end:0x805A00C0
+	.sdata2     start:0x805A1748 end:0x805A176C
+
+sora/mt/mt_trig.cpp:
+	.text       start:0x8003FD5C end:0x8003FFC4
+	.sdata2     start:0x805A1770 end:0x805A179C
+
+sora/mt/mt_prng_log.cpp:
+	.text       start:0x8004392C end:0x80043B18
+	.ctors      start:0x80406514 end:0x80406518
+	.bss        start:0x804977A8 end:0x804977C0
+
+sora/st/module.cpp:
+	.text       start:0x80043B18 end:0x80043B6C
+	.data       start:0x8042AEB0 end:0x8042B598
+
+sora/ut/ut_nw.cpp:
+	.text       start:0x80043B6C end:0x80043E1C
+	.sdata2     start:0x805A17E0 end:0x805A17E8
+
+sora/ut/ut_relocate.cpp:
+	.text       start:0x80043E1C end:0x80044214
+	.data       start:0x8042B598 end:0x8042B5FC
+
+sora/ut/ut_list.cpp:
+	.text       start:0x800448F8 end:0x80044AD0
+
+sora/ip/ip_human.cpp:
+	.text       start:0x80048118 end:0x80048548
+	.data       start:0x8042B810 end:0x8042B858
+	.sdata      start:0x8059C7E0 end:0x8059C800
+	.sdata2     start:0x805A17F8 end:0x805A1818
+
+sora/ip/ip_network_producer.cpp:
+	.text       start:0x8004AE14 end:0x8004AFB4
+	.sbss       start:0x805A00D8 end:0x805A00E0
+
+sora/ef/ef_screen_handle.cpp:
+	.text       start:0x8005E5C8 end:0x8005E5E8
+
+sora/ec/ec_trace_mgr.cpp:
+	.text       start:0x80065458 end:0x80065B60
+	.sdata2     start:0x805A1988 end:0x805A1990
+
+sora/snd/snd_init_thread.cpp:
+	.text       start:0x800797AC end:0x800798E8
+	.data       start:0x80454550 end:0x80454580
+	.sdata      start:0x8059DB80 end:0x8059DB88
+
+sora/mv/mv_THPAudioDecode.cpp:
+	.text       start:0x8007B0B4 end:0x8007B4A4
+	.sbss       start:0x805A01E0 end:0x805A01E4
+
+sora/mv/mv_THPRead.cpp:
+	.text       start:0x8007E0EC end:0x8007E3A4
+	.sbss       start:0x805A0200 end:0x805A0204
+
+sora/cm/cm_controller_default.cpp:
+	.text       start:0x8009F560 end:0x8009F564
+	.data       start:0x80454CC0 end:0x80454CD0
+
+sora/cm/cm_controller_menu_fixed.cpp:
+	.text       start:0x800A68C0 end:0x800A6A78
+	.data       start:0x80454ED8 end:0x80454F10
+	.sdata      start:0x8059DEB8 end:0x8059DEC0
+	.sdata2     start:0x805A2048 end:0x805A2058
+
+sora/cm/cm_controller_melee_fixed.cpp:
+	.text       start:0x800AA998 end:0x800AA9F8
+	.data       start:0x80455000 end:0x80455038
+	.sdata      start:0x8059DEE8 end:0x8059DEF0
+
+sora/cm/cm_stage_param.cpp:
+	.text       start:0x800AC9B8 end:0x800AC9DC
+	.sdata2     start:0x805A21D8 end:0x805A21E8
+
+sora/ty/ty_fig_listmng.cpp:
+	.text       start:0x800AC9DC end:0x800AD808
+	.data       start:0x80455120 end:0x80455180
+
+sora/if/if_wifipr_task.cpp:
+	.text       start:0x800FD110 end:0x800FD1F8
+	.data       start:0x8045C678 end:0x8045C708
+	.sdata      start:0x8059E4E8 end:0x8059E4F0
+
+sora/if/if_adv_task.cpp:
+	.text       start:0x80107EC4 end:0x80108014
+	.data       start:0x8045D070 end:0x8045D0F8
+	.sdata      start:0x8059E5F0 end:0x8059E5F8
+
+sora/if/if_stgedit.cpp:
+	.text       start:0x8010EFD4 end:0x8010F310
+	.data       start:0x8045D810 end:0x8045D840
+	.sdata      start:0x8059E690 end:0x8059E6A0
+	.sdata2     start:0x805A28C8 end:0x805A28E8
+
+sora/gr/collision/gr_collision_shape.cpp:
+	.sdata2     start:0x805A2A20 end:0x805A2A2C
+
+sora/gr/collision/gr_collision_data.cpp:
+	.text       start:0x80110720 end:0x80110748
+
+sora/gr/collision/gr_collision_handle.cpp:
+	.text       start:0x801122E4 end:0x8011234C
+
+sora/gr/collision/gr_collision_shape_rhombus.cpp:
+	.text       start:0x80132B64 end:0x801330B8
+	.data       start:0x8045DA88 end:0x8045DAEC
+
+sora/gr/collision/gr_collision_shape_circle.cpp:
+	.text       start:0x801330B8 end:0x8013344C
+	.data       start:0x8045DAF0 end:0x8045DB54
+	.sdata2     start:0x805A2A30 end:0x805A2A3C
+
+sora/gr/gr_path.cpp:
+	.text       start:0x80139570 end:0x80139658
+
+sora/ac/ac_cmd_interpreter.cpp:
+	.text       start:0x80139658 end:0x8013CA1C
+	.rodata     start:0x80409520 end:0x8040964C
+	.data       start:0x8045DD78 end:0x8045DDF0
+	.sdata      start:0x8059E6D0 end:0x8059E6F0
+	.sdata2     start:0x805A2AA8 end:0x805A2AC0
+
+sora/ac/ac_anim_cmd_impl.cpp:
+	.text       start:0x8013CA1C end:0x8013CF04
+	.data       start:0x8045DDF0 end:0x8045DF78
+	.sdata      start:0x8059E6F0 end:0x8059E718
+
+sora/ac/ac_null.cpp:
+	.text       start:0x8013CF04 end:0x8013D004
+	.ctors      start:0x80406554 end:0x80406558
+	.rodata     start:0x80409650 end:0x8040965C
+	.data       start:0x8045DF78 end:0x8045DFD0
+	.bss        start:0x8049EA10 end:0x8049EA20
+	.sdata      start:0x8059E718 end:0x8059E720
+	.sbss       start:0x805A0370 end:0x805A0380
+
+sora/ft/ft_system.cpp:
+	.text       start:0x8013D004 end:0x8013D078
+	.ctors      start:0x80406558 end:0x8040655C
+	.bss        start:0x8049EA20 end:0x8049EA30
+	.sbss       start:0x805A0380 end:0x805A0388
+
+sora/nt/nt_report.cpp:
+	.text       start:0x8013D078 end:0x8013D490
+	.ctors      start:0x8040655C end:0x80406560
+	.data       start:0x8045DFD0 end:0x8045E000
+	.bss        start:0x8049EA30 end:0x8049EBA8
+	.sdata2     start:0x805A2AC0 end:0x805A2AC4
+
+sora/nt/nt_send.cpp:
+	.text       start:0x8013D490 end:0x8013D8A8
+	.data       start:0x8045E000 end:0x8045E018
+	.sbss       start:0x805A0388 end:0x805A038C
+
+sora/nt/nt_offline.cpp:
+	.text       start:0x8014C004 end:0x8014C180
+	.data       start:0x80460D40 end:0x80460D4C
+
+sora/nt/d_net_connect.cpp:
+	.text       start:0x8014CC40 end:0x8014CD5C
+	.data       start:0x80460DC8 end:0x80460E00
+
+sora/nt/nt_etc_dwc.cpp:
+	.text       start:0x80150614 end:0x80150CE4
+	.data       start:0x80461070 end:0x804610F8
+	.bss        start:0x8049ECE0 end:0x8049ECF8
+	.sdata      start:0x8059E7E8 end:0x8059E7F0
+
+sora/nt/nt_etc_so.cpp:
+	.text       start:0x80150CE4 end:0x801510F4
+	.data       start:0x804610F8 end:0x80461108
+
+sora/ad/ad_static_data.cpp:
+	.text       start:0x8015B09C end:0x8015B0E0
+	.data       start:0x804621C0 end:0x804629C8
+
+sora/st/st_data_container.cpp:
+	.text       start:0x8015BAB0 end:0x8015BBF4
+	.data       start:0x80462C08 end:0x80462C78
+	.sdata      start:0x8059E848 end:0x8059E858
+
+sora/st/st_data_container_multi.cpp:
+	.text       start:0x8015BBF4 end:0x8015BF9C
+	.ctors      start:0x80406578 end:0x8040657C
+	.data       start:0x80462C78 end:0x80462CC0
+	.sdata      start:0x8059E858 end:0x8059E860
+	.sbss       start:0x805A0470 end:0x805A0474
+
+sora/st/st_data_container_magic.cpp:
+	.sdata      start:0x8059E860 end:0x8059E864
+
+Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
+	.text       start:0x803F1A08 end:0x803F1A78
+	.ctors      start:0x804064E0 end:0x804064E4 rename:.ctors$10
+	.dtors      start:0x804067E0 end:0x804067E4 rename:.dtors$10
+	.dtors      start:0x804067E4 end:0x804067E8 rename:.dtors$15
+	.sdata      start:0x8059FF48 end:0x8059FF50

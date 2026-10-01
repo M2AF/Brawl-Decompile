@@ -1,0 +1,50 @@
+--- before
++++ after
+@@ -37835,6 +37835,11 @@
+ 
+ 
+ 
++inline u32 inline_fn(stKartRecord *arg0)
++{
++  return arg0->m_checkpoint;
++}
++
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
+@@ -37854,7 +37859,7 @@
+         {
+           allOnFinalLap = false;
+         }
+-        if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))
++        if (((kart->m_checkpoint > 20) && (inline_fn(kart) < 40)) && (kart->m_isRacing == true))
+         {
+           if (m_warningState == 10)
+           {
+@@ -37904,7 +37909,7 @@
+               else
+                 if (kart->m_lap == other->m_lap)
+               {
+-                if (kart->m_checkpoint < other->m_checkpoint)
++                if (kart->m_checkpoint < inline_fn(other))
+                 {
+                   isBehind = true;
+                 }
+@@ -37919,7 +37924,7 @@
+               }
+               if (isBehind == true)
+               {
+-                kart->m_rank++;
++ do { kart->m_rank++; } while (0);
+               }
+             }
+           }
+@@ -37928,7 +37933,7 @@
+       }
+ 
+     }
+-    if ((m_isZoomedOut == true) && (m_warningState != 0))
++    if ((m_isZoomedOut == true) && ((0, m_warningState != 0)))
+     {
+       zoomInCamera();
+       m_isZoomedOut = false;

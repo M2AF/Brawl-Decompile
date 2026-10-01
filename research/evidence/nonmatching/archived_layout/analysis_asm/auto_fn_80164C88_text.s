@@ -1,0 +1,54 @@
+.include "macros.inc"
+.file "auto_fn_80164C88_text"
+
+# 0x80164C88..0x80164D20 | size: 0x98
+.text
+.balign 4
+
+# .text:0x0 | 0x80164C88 | size: 0x98
+.fn fn_80164C88, global
+/* 80164C88 0015AA08  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80164C8C 0015AA0C  7C 08 02 A6 */	mflr r0
+/* 80164C90 0015AA10  3C C0 80 46 */	lis r6, lbl_80465240@ha
+/* 80164C94 0015AA14  3C A0 80 46 */	lis r5, lbl_80465484@ha
+/* 80164C98 0015AA18  3C 80 80 46 */	lis r4, lbl_804653EC@ha
+/* 80164C9C 0015AA1C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80164CA0 0015AA20  3C 60 80 4A */	lis r3, lbl_8049EDD8@ha
+/* 80164CA4 0015AA24  38 C6 52 40 */	addi r6, r6, lbl_80465240@l
+/* 80164CA8 0015AA28  38 A5 54 84 */	addi r5, r5, lbl_80465484@l
+/* 80164CAC 0015AA2C  38 84 53 EC */	addi r4, r4, lbl_804653EC@l
+/* 80164CB0 0015AA30  38 63 ED D8 */	addi r3, r3, lbl_8049EDD8@l
+/* 80164CB4 0015AA34  90 CD C0 A0 */	stw r6, lbl_805A04C0@sda21(r0)
+/* 80164CB8 0015AA38  38 63 00 10 */	addi r3, r3, 0x10
+/* 80164CBC 0015AA3C  90 AD C0 A4 */	stw r5, lbl_805A04C4@sda21(r0)
+/* 80164CC0 0015AA40  90 8D C0 A8 */	stw r4, lbl_805A04C8@sda21(r0)
+/* 80164CC4 0015AA44  48 00 B5 61 */	bl fn_80170224
+/* 80164CC8 0015AA48  88 0D A4 54 */	lbz r0, lbl_8059E874@sda21(r0)
+/* 80164CCC 0015AA4C  2C 00 00 00 */	cmpwi r0, 0x0
+/* 80164CD0 0015AA50  41 82 00 14 */	beq .L_80164CE4
+/* 80164CD4 0015AA54  38 00 00 00 */	li r0, 0x0
+/* 80164CD8 0015AA58  80 6D A4 50 */	lwz r3, lbl_8059E870@sda21(r0)
+/* 80164CDC 0015AA5C  98 0D A4 54 */	stb r0, lbl_8059E874@sda21(r0)
+/* 80164CE0 0015AA60  48 07 18 AD */	bl OSRegisterVersion
+.L_80164CE4:
+/* 80164CE4 0015AA64  3C C0 80 4A */	lis r6, lbl_8049EDD8@ha
+/* 80164CE8 0015AA68  38 00 00 00 */	li r0, 0x0
+/* 80164CEC 0015AA6C  38 66 ED D8 */	addi r3, r6, lbl_8049EDD8@l
+/* 80164CF0 0015AA70  3C 80 80 16 */	lis r4, fn_80164738@ha
+/* 80164CF4 0015AA74  3C A0 80 4A */	lis r5, lbl_8049EDC8@ha
+/* 80164CF8 0015AA78  90 06 ED D8 */	stw r0, lbl_8049EDD8@l(r6)
+/* 80164CFC 0015AA7C  38 84 47 38 */	addi r4, r4, fn_80164738@l
+/* 80164D00 0015AA80  90 03 50 14 */	stw r0, 0x5014(r3)
+/* 80164D04 0015AA84  38 A5 ED C8 */	addi r5, r5, lbl_8049EDC8@l
+/* 80164D08 0015AA88  98 03 50 64 */	stb r0, 0x5064(r3)
+/* 80164D0C 0015AA8C  48 28 BA 19 */	bl __register_global_object
+/* 80164D10 0015AA90  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 80164D14 0015AA94  7C 08 03 A6 */	mtlr r0
+/* 80164D18 0015AA98  38 21 00 10 */	addi r1, r1, 0x10
+/* 80164D1C 0015AA9C  4E 80 00 20 */	blr
+.endfn fn_80164C88
+
+# 0x80406594..0x80406598 | size: 0x4
+.section .ctors, "a"
+.balign 4
+	.4byte fn_80164C88

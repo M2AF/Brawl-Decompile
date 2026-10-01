@@ -1,0 +1,50 @@
+.include "macros.inc"
+.file "auto_fn_80162104_text"
+
+# 0x80162104..0x80162188 | size: 0x84
+.text
+.balign 4
+
+# .text:0x0 | 0x80162104 | size: 0x84
+.fn fn_80162104, global
+/* 80162104 00157E84  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 80162108 00157E88  7C 08 02 A6 */	mflr r0
+/* 8016210C 00157E8C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 80162110 00157E90  88 0D C0 98 */	lbz r0, lbl_805A04B8@sda21(r0)
+/* 80162114 00157E94  7C 00 07 75 */	extsb. r0, r0
+/* 80162118 00157E98  40 82 00 2C */	bne .L_80162144
+/* 8016211C 00157E9C  38 6D C0 90 */	li r3, lbl_805A04B0@sda21
+/* 80162120 00157EA0  4B FF A4 09 */	bl fn_8015C528
+/* 80162124 00157EA4  3C 80 80 16 */	lis r4, fn_8015C538@ha
+/* 80162128 00157EA8  3C A0 80 4A */	lis r5, lbl_8049EDB0@ha
+/* 8016212C 00157EAC  38 84 C5 38 */	addi r4, r4, fn_8015C538@l
+/* 80162130 00157EB0  38 6D C0 90 */	li r3, lbl_805A04B0@sda21
+/* 80162134 00157EB4  38 A5 ED B0 */	addi r5, r5, lbl_8049EDB0@l
+/* 80162138 00157EB8  48 28 E5 ED */	bl __register_global_object
+/* 8016213C 00157EBC  38 00 00 01 */	li r0, 0x1
+/* 80162140 00157EC0  98 0D C0 98 */	stb r0, lbl_805A04B8@sda21(r0)
+.L_80162144:
+/* 80162144 00157EC4  88 0D C0 99 */	lbz r0, lbl_805A04B9@sda21(r0)
+/* 80162148 00157EC8  7C 00 07 75 */	extsb. r0, r0
+/* 8016214C 00157ECC  40 82 00 2C */	bne .L_80162178
+/* 80162150 00157ED0  38 6D C0 94 */	li r3, lbl_805A04B4@sda21
+/* 80162154 00157ED4  4B FF A7 3D */	bl fn_8015C890
+/* 80162158 00157ED8  3C 80 80 16 */	lis r4, fn_8015C8A0@ha
+/* 8016215C 00157EDC  3C A0 80 4A */	lis r5, lbl_8049EDBC@ha
+/* 80162160 00157EE0  38 84 C8 A0 */	addi r4, r4, fn_8015C8A0@l
+/* 80162164 00157EE4  38 6D C0 94 */	li r3, lbl_805A04B4@sda21
+/* 80162168 00157EE8  38 A5 ED BC */	addi r5, r5, lbl_8049EDBC@l
+/* 8016216C 00157EEC  48 28 E5 B9 */	bl __register_global_object
+/* 80162170 00157EF0  38 00 00 01 */	li r0, 0x1
+/* 80162174 00157EF4  98 0D C0 99 */	stb r0, lbl_805A04B9@sda21(r0)
+.L_80162178:
+/* 80162178 00157EF8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8016217C 00157EFC  7C 08 03 A6 */	mtlr r0
+/* 80162180 00157F00  38 21 00 10 */	addi r1, r1, 0x10
+/* 80162184 00157F04  4E 80 00 20 */	blr
+.endfn fn_80162104
+
+# 0x80406590..0x80406594 | size: 0x4
+.section .ctors, "a"
+.balign 4
+	.4byte fn_80162104

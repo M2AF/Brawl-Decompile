@@ -1,0 +1,4574 @@
+.include "macros.inc"
+.file "auto_00_00000070_text"
+
+# 0x00000070..0x0000407C | size: 0x400C
+.text
+.balign 4
+
+# .text:0x0 | 0x70 | size: 0x34
+.fn fn_53_70, global
+00000070 stwu r1, -0x10(r1)
+00000074 mflr r0
+00000078 li r3, 0x608
+0000007C li r4, 0xf
+00000080 stw r0, 0x14(r1)
+00000084 bl __nw__FUlQ25Heaps8HeapType
+00000088 cmpwi r3, 0x0
+0000008C beq .L_00000094
+00000090 bl fn_53_A4
+.L_00000094:
+00000094 lwz r0, 0x14(r1)
+00000098 mtlr r0
+0000009C addi r1, r1, 0x10
+000000A0 blr
+.endfn fn_53_70
+
+# .text:0x34 | 0xA4 | size: 0x234
+.fn fn_53_A4, global
+000000A4 stwu r1, -0x20(r1)
+000000A8 mflr r0
+000000AC lis r4, lbl_53_data_38@ha
+000000B0 li r5, 0x33
+000000B4 stw r0, 0x24(r1)
+000000B8 addi r4, r4, lbl_53_data_38@l
+000000BC stw r31, 0x1c(r1)
+000000C0 stw r30, 0x18(r1)
+000000C4 stw r29, 0x14(r1)
+000000C8 mr r29, r3
+000000CC bl __ct__7stMeleeFPCcQ26Stages11srStageKind
+000000D0 lis r3, lbl_53_data_378@ha
+000000D4 lis r31, lbl_53_data_0@ha
+000000D8 addi r3, r3, lbl_53_data_378@l
+000000DC li r30, 0x0
+000000E0 stw r3, 0x3c(r29)
+000000E4 addi r3, r29, 0x2e0
+000000E8 li r4, 0x0
+000000EC li r5, 0x1
+000000F0 lwz r0, lbl_53_data_0@l(r31)
+000000F4 stw r0, 0x22c(r29)
+000000F8 stw r30, 0x230(r29)
+000000FC bl fn_8009ED40
+00000100 lwz r0, lbl_53_data_0@l(r31)
+00000104 addi r3, r29, 0x42c
+00000108 li r4, 0x0
+0000010C li r5, 0x1
+00000110 stw r0, 0x364(r29)
+00000114 stw r30, 0x368(r29)
+00000118 lwz r0, lbl_53_data_0@l(r31)
+0000011C stw r0, 0x38c(r29)
+00000120 stw r30, 0x390(r29)
+00000124 lwz r0, lbl_53_data_0@l(r31)
+00000128 stw r0, 0x418(r29)
+0000012C stw r30, 0x41c(r29)
+00000130 bl fn_8009ED40
+00000134 lwz r0, lbl_53_data_0@l(r31)
+00000138 addi r3, r29, 0x4c0
+0000013C li r4, 0x0
+00000140 li r5, 0x1
+00000144 stw r0, 0x4b4(r29)
+00000148 stw r30, 0x4b8(r29)
+0000014C bl fn_8009ED40
+00000150 addi r3, r29, 0x544
+00000154 li r4, 0x0
+00000158 li r5, 0x1
+0000015C bl fn_8009ED40
+00000160 addi r3, r29, 0x5c8
+00000164 bl __ct__14snd3DGeneratorFv
+00000168 addi r3, r29, 0x5e4
+0000016C bl __ct__14snd3DGeneratorFv
+00000170 addi r3, r29, 0x5fc
+00000174 bl __ct__14snd3DGeneratorFv
+00000178 li r0, -0x1
+0000017C stw r30, 0x1d8(r29)
+00000180 addi r3, r29, 0x234
+00000184 stb r0, 0x604(r29)
+00000188 stw r30, 0x1dc(r29)
+0000018C stw r30, 0x1e0(r29)
+00000190 stw r30, 0x1e4(r29)
+00000194 stw r30, 0x1e8(r29)
+00000198 stw r30, 0x1ec(r29)
+0000019C stw r30, 0x1f0(r29)
+000001A0 stw r30, 0x1f4(r29)
+000001A4 stw r30, 0x1f8(r29)
+000001A8 stw r30, 0x1fc(r29)
+000001AC stw r30, 0x200(r29)
+000001B0 stw r30, 0x204(r29)
+000001B4 stw r30, 0x208(r29)
+000001B8 stw r30, 0x20c(r29)
+000001BC stw r30, 0x210(r29)
+000001C0 stw r30, 0x214(r29)
+000001C4 stw r30, 0x218(r29)
+000001C8 stw r30, 0x21c(r29)
+000001CC stw r30, 0x220(r29)
+000001D0 stw r30, 0x224(r29)
+000001D4 stb r30, 0x228(r29)
+000001D8 stb r30, 0x229(r29)
+000001DC bl setIdentity__6MatrixFv
+000001E0 addi r3, r29, 0x264
+000001E4 bl setIdentity__6MatrixFv
+000001E8 addi r3, r29, 0x294
+000001EC bl setIdentity__6MatrixFv
+000001F0 lis r31, lbl_53_rodata_0@ha
+000001F4 stw r30, 0x2c4(r29)
+000001F8 lfs f0, lbl_53_rodata_0@l(r31)
+000001FC addi r3, r29, 0x398
+00000200 stw r30, 0x2c8(r29)
+00000204 stw r30, 0x2cc(r29)
+00000208 stfs f0, 0x2d0(r29)
+0000020C stfs f0, 0x2d4(r29)
+00000210 stfs f0, 0x2d8(r29)
+00000214 stfs f0, 0x2dc(r29)
+00000218 stfs f0, 0x36c(r29)
+0000021C stb r30, 0x370(r29)
+00000220 stb r30, 0x371(r29)
+00000224 stb r30, 0x372(r29)
+00000228 stb r30, 0x373(r29)
+0000022C stb r30, 0x374(r29)
+00000230 stb r30, 0x375(r29)
+00000234 stfs f0, 0x378(r29)
+00000238 stfs f0, 0x37c(r29)
+0000023C stfs f0, 0x380(r29)
+00000240 stw r30, 0x384(r29)
+00000244 stb r30, 0x388(r29)
+00000248 stb r30, 0x389(r29)
+0000024C stfs f0, 0x394(r29)
+00000250 bl setIdentity__6MatrixFv
+00000254 addi r3, r29, 0x3c8
+00000258 bl setIdentity__6MatrixFv
+0000025C lfs f0, lbl_53_rodata_0@l(r31)
+00000260 mr r3, r29
+00000264 stw r30, 0x3f8(r29)
+00000268 stfs f0, 0x3fc(r29)
+0000026C stfs f0, 0x400(r29)
+00000270 stfs f0, 0x404(r29)
+00000274 stfs f0, 0x408(r29)
+00000278 stw r30, 0x40c(r29)
+0000027C stfs f0, 0x410(r29)
+00000280 stb r30, 0x414(r29)
+00000284 stfs f0, 0x420(r29)
+00000288 stw r30, 0x424(r29)
+0000028C stw r30, 0x428(r29)
+00000290 stb r30, 0x4b0(r29)
+00000294 stfs f0, 0x4bc(r29)
+00000298 stw r30, 0x5d0(r29)
+0000029C stw r30, 0x5d4(r29)
+000002A0 stfs f0, 0x5d8(r29)
+000002A4 stw r30, 0x5dc(r29)
+000002A8 stw r30, 0x5e0(r29)
+000002AC stw r30, 0x5ec(r29)
+000002B0 stw r30, 0x5f0(r29)
+000002B4 stb r30, 0x5f4(r29)
+000002B8 stw r30, 0x5f8(r29)
+000002BC lwz r31, 0x1c(r1)
+000002C0 lwz r30, 0x18(r1)
+000002C4 lwz r29, 0x14(r1)
+000002C8 lwz r0, 0x24(r1)
+000002CC mtlr r0
+000002D0 addi r1, r1, 0x20
+000002D4 blr
+.endfn fn_53_A4
+
+# .text:0x268 | 0x2D8 | size: 0xC0
+.fn fn_53_2D8, global
+000002D8 stwu r1, -0x10(r1)
+000002DC mflr r0
+000002E0 cmpwi r3, 0x0
+000002E4 stw r0, 0x14(r1)
+000002E8 stw r31, 0xc(r1)
+000002EC mr r31, r4
+000002F0 stw r30, 0x8(r1)
+000002F4 mr r30, r3
+000002F8 beq .L_0000037C
+000002FC lis r4, lbl_53_data_378@ha
+00000300 addi r4, r4, lbl_53_data_378@l
+00000304 stw r4, 0x3c(r3)
+00000308 bl releaseArchive__15stCommonGimmickFv
+0000030C addi r3, r30, 0x5fc
+00000310 li r4, -0x1
+00000314 bl __dt__14snd3DGeneratorFv
+00000318 addi r3, r30, 0x5e4
+0000031C li r4, -0x1
+00000320 bl __dt__14snd3DGeneratorFv
+00000324 addi r3, r30, 0x5c8
+00000328 li r4, -0x1
+0000032C bl __dt__14snd3DGeneratorFv
+00000330 addi r3, r30, 0x544
+00000334 li r4, -0x1
+00000338 bl fn_8009EE60
+0000033C addi r3, r30, 0x4c0
+00000340 li r4, -0x1
+00000344 bl fn_8009EE60
+00000348 addi r3, r30, 0x42c
+0000034C li r4, -0x1
+00000350 bl fn_8009EE60
+00000354 addi r3, r30, 0x2e0
+00000358 li r4, -0x1
+0000035C bl fn_8009EE60
+00000360 mr r3, r30
+00000364 li r4, 0x0
+00000368 bl __dt__7stMeleeFv
+0000036C cmpwi r31, 0x0
+00000370 ble .L_0000037C
+00000374 mr r3, r30
+00000378 bl __dl__FPv
+.L_0000037C:
+0000037C mr r3, r30
+00000380 lwz r31, 0xc(r1)
+00000384 lwz r30, 0x8(r1)
+00000388 lwz r0, 0x14(r1)
+0000038C mtlr r0
+00000390 addi r1, r1, 0x10
+00000394 blr
+.endfn fn_53_2D8
+
+# .text:0x328 | 0x398 | size: 0x8
+.fn fn_53_398, global
+00000398 li r3, 0x1
+0000039C blr
+.endfn fn_53_398
+
+# .text:0x330 | 0x3A0 | size: 0xE74
+.fn fn_53_3A0, global
+000003A0 stwu r1, -0x130(r1)
+000003A4 mflr r0
+000003A8 stw r0, 0x134(r1)
+000003AC addi r11, r1, 0x130
+000003B0 bl _savegpr_27
+000003B4 lis r28, lbl_53_rodata_0@ha
+000003B8 lis r29, lbl_53_data_0@ha
+000003BC lwz r4, 0x1a0(r3)
+000003C0 mr r27, r3
+000003C4 addi r28, r28, lbl_53_rodata_0@l
+000003C8 addi r29, r29, lbl_53_data_0@l
+000003CC li r5, 0xa
+000003D0 bl testStageParamInit__5StageFP9gfArchivei
+000003D4 lwz r4, 0x1a0(r27)
+000003D8 mr r3, r27
+000003DC li r5, 0x14
+000003E0 li r6, 0x34
+000003E4 bl testStageDataInit__5StageFP9gfArchiveii
+000003E8 addi r0, r29, 0x4
+000003EC addi r4, r29, 0x40
+000003F0 stw r0, 0x1d8(r27)
+000003F4 addi r5, r29, 0x44
+000003F8 li r3, 0x0
+000003FC bl create__7grOldinFiPCcPCc
+00000400 cmpwi r3, 0x0
+00000404 stw r3, 0x1dc(r27)
+00000408 mr r4, r3
+0000040C beq .L_00000460
+00000410 mr r3, r27
+00000414 bl addGround__5StageFP6Ground
+00000418 lwz r3, 0x1dc(r27)
+0000041C li r5, 0x0
+00000420 lwz r4, 0x1a0(r27)
+00000424 li r6, 0x0
+00000428 lwz r12, 0x3c(r3)
+0000042C lwz r12, 0x9c(r12)
+00000430 mtctr r12
+00000434 bctrl
+00000438 lwz r3, 0x1dc(r27)
+0000043C lwz r4, 0x9c(r27)
+00000440 lwz r12, 0x3c(r3)
+00000444 lwz r12, 0xa4(r12)
+00000448 mtctr r12
+0000044C bctrl
+00000450 lwz r3, 0x1dc(r27)
+00000454 bl initializeEntity__8grMadeinFv
+00000458 lwz r3, 0x1dc(r27)
+0000045C bl startEntityAutoLoop__8grMadeinFv
+.L_00000460:
+00000460 addi r4, r29, 0x40
+00000464 addi r5, r29, 0x54
+00000468 li r3, 0xb
+0000046C bl create__7grOldinFiPCcPCc
+00000470 cmpwi r3, 0x0
+00000474 stw r3, 0x1e0(r27)
+00000478 mr r4, r3
+0000047C beq .L_000004D0
+00000480 mr r3, r27
+00000484 bl addGround__5StageFP6Ground
+00000488 lwz r3, 0x1e0(r27)
+0000048C li r5, 0x0
+00000490 lwz r4, 0x1a0(r27)
+00000494 li r6, 0x0
+00000498 lwz r12, 0x3c(r3)
+0000049C lwz r12, 0x9c(r12)
+000004A0 mtctr r12
+000004A4 bctrl
+000004A8 lwz r3, 0x1e0(r27)
+000004AC lwz r4, 0x9c(r27)
+000004B0 lwz r12, 0x3c(r3)
+000004B4 lwz r12, 0xa4(r12)
+000004B8 mtctr r12
+000004BC bctrl
+000004C0 lwz r3, 0x1e0(r27)
+000004C4 bl initializeEntity__8grMadeinFv
+000004C8 lwz r3, 0x1e0(r27)
+000004CC bl startEntityAutoLoop__8grMadeinFv
+.L_000004D0:
+000004D0 addi r4, r29, 0x40
+000004D4 addi r5, r29, 0x68
+000004D8 li r3, 0x1
+000004DC bl create__7grOldinFiPCcPCc
+000004E0 cmpwi r3, 0x0
+000004E4 stw r3, 0x1e4(r27)
+000004E8 mr r4, r3
+000004EC beq .L_0000062C
+000004F0 mr r3, r27
+000004F4 bl addGround__5StageFP6Ground
+000004F8 lwz r3, 0x1e4(r27)
+000004FC li r5, 0x0
+00000500 lwz r4, 0x1a0(r27)
+00000504 li r6, 0x0
+00000508 lwz r12, 0x3c(r3)
+0000050C lwz r12, 0x9c(r12)
+00000510 mtctr r12
+00000514 bctrl
+00000518 lwz r3, 0x1e4(r27)
+0000051C lwz r4, 0x9c(r27)
+00000520 lwz r12, 0x3c(r3)
+00000524 lwz r12, 0xa4(r12)
+00000528 mtctr r12
+0000052C bctrl
+00000530 lwz r3, 0x1e4(r27)
+00000534 bl initializeEntity__8grMadeinFv
+00000538 lwz r3, 0x1e4(r27)
+0000053C addi r5, r29, 0x78
+00000540 li r4, 0x0
+00000544 lwz r12, 0x3c(r3)
+00000548 lwz r12, 0xc4(r12)
+0000054C mtctr r12
+00000550 bctrl
+00000554 stw r3, 0x218(r27)
+00000558 addi r5, r29, 0x88
+0000055C lwz r3, 0x1e4(r27)
+00000560 li r4, 0x0
+00000564 lwz r12, 0x3c(r3)
+00000568 lwz r12, 0xc4(r12)
+0000056C mtctr r12
+00000570 bctrl
+00000574 stw r3, 0x21c(r27)
+00000578 addi r5, r29, 0x98
+0000057C lwz r3, 0x1e4(r27)
+00000580 li r4, 0x0
+00000584 lwz r12, 0x3c(r3)
+00000588 lwz r12, 0xc4(r12)
+0000058C mtctr r12
+00000590 bctrl
+00000594 stw r3, 0x220(r27)
+00000598 addi r4, r29, 0x40
+0000059C addi r5, r29, 0xa8
+000005A0 li r3, 0x7
+000005A4 bl create__7grOldinFiPCcPCc
+000005A8 cmpwi r3, 0x0
+000005AC stw r3, 0x214(r27)
+000005B0 mr r4, r3
+000005B4 beq .L_0000062C
+000005B8 mr r3, r27
+000005BC bl addGround__5StageFP6Ground
+000005C0 lwz r3, 0x214(r27)
+000005C4 li r5, 0x0
+000005C8 lwz r4, 0x1a0(r27)
+000005CC li r6, 0x0
+000005D0 lwz r12, 0x3c(r3)
+000005D4 lwz r12, 0x9c(r12)
+000005D8 mtctr r12
+000005DC bctrl
+000005E0 lwz r3, 0x214(r27)
+000005E4 lwz r4, 0x9c(r27)
+000005E8 lwz r12, 0x3c(r3)
+000005EC lwz r12, 0xa4(r12)
+000005F0 mtctr r12
+000005F4 bctrl
+000005F8 mr r3, r27
+000005FC bl fn_53_3DAC
+00000600 lwz r3, 0x214(r27)
+00000604 bl initializeEntity__8grMadeinFv
+00000608 lfs f2, 0x4(r28)
+0000060C addi r4, r1, 0xcc
+00000610 lfs f1, 0x8(r28)
+00000614 lfs f0, 0x0(r28)
+00000618 stfs f2, 0xcc(r1)
+0000061C stfs f1, 0xd0(r1)
+00000620 stfs f0, 0xd4(r1)
+00000624 lwz r3, 0x214(r27)
+00000628 bl setPos__9grGimmickFP5Vec3f
+.L_0000062C:
+0000062C addi r4, r29, 0x40
+00000630 addi r5, r29, 0xb8
+00000634 li r3, 0x9
+00000638 bl create__7grOldinFiPCcPCc
+0000063C cmpwi r3, 0x0
+00000640 stw r3, 0x1ec(r27)
+00000644 mr r4, r3
+00000648 beq .L_000006B4
+0000064C mr r3, r27
+00000650 bl addGround__5StageFP6Ground
+00000654 lwz r3, 0x1ec(r27)
+00000658 li r5, 0x0
+0000065C lwz r4, 0x1a0(r27)
+00000660 li r6, 0x0
+00000664 lwz r12, 0x3c(r3)
+00000668 lwz r12, 0x9c(r12)
+0000066C mtctr r12
+00000670 bctrl
+00000674 lwz r3, 0x1ec(r27)
+00000678 lwz r4, 0x9c(r27)
+0000067C lwz r12, 0x3c(r3)
+00000680 lwz r12, 0xa4(r12)
+00000684 mtctr r12
+00000688 bctrl
+0000068C lwz r3, 0x1ec(r27)
+00000690 bl initializeEntity__8grMadeinFv
+00000694 lwz r3, 0x1ec(r27)
+00000698 addi r5, r29, 0xc8
+0000069C li r4, 0x0
+000006A0 lwz r12, 0x3c(r3)
+000006A4 lwz r12, 0xc4(r12)
+000006A8 mtctr r12
+000006AC bctrl
+000006B0 stw r3, 0x224(r27)
+.L_000006B4:
+000006B4 addi r4, r29, 0x40
+000006B8 addi r5, r29, 0xd4
+000006BC li r3, 0xa
+000006C0 bl create__7grOldinFiPCcPCc
+000006C4 cmpwi r3, 0x0
+000006C8 stw r3, 0x1e8(r27)
+000006CC mr r4, r3
+000006D0 beq .L_00000724
+000006D4 mr r3, r27
+000006D8 bl addGround__5StageFP6Ground
+000006DC lwz r3, 0x1e8(r27)
+000006E0 li r5, 0x0
+000006E4 lwz r4, 0x1a0(r27)
+000006E8 li r6, 0x0
+000006EC lwz r12, 0x3c(r3)
+000006F0 lwz r12, 0x9c(r12)
+000006F4 mtctr r12
+000006F8 bctrl
+000006FC lwz r3, 0x1e8(r27)
+00000700 lwz r4, 0x9c(r27)
+00000704 lwz r12, 0x3c(r3)
+00000708 lwz r12, 0xa4(r12)
+0000070C mtctr r12
+00000710 bctrl
+00000714 lwz r3, 0x1e8(r27)
+00000718 bl initializeEntity__8grMadeinFv
+0000071C lwz r3, 0x1e8(r27)
+00000720 bl startEntityAutoLoop__8grMadeinFv
+.L_00000724:
+00000724 addi r4, r29, 0x40
+00000728 addi r5, r29, 0xe8
+0000072C li r3, 0x8
+00000730 bl create__7grOldinFiPCcPCc
+00000734 cmpwi r3, 0x0
+00000738 stw r3, 0x1f0(r27)
+0000073C mr r4, r3
+00000740 beq .L_0000078C
+00000744 mr r3, r27
+00000748 bl addGround__5StageFP6Ground
+0000074C lwz r3, 0x1f0(r27)
+00000750 li r5, 0x0
+00000754 lwz r4, 0x1a0(r27)
+00000758 li r6, 0x0
+0000075C lwz r12, 0x3c(r3)
+00000760 lwz r12, 0x9c(r12)
+00000764 mtctr r12
+00000768 bctrl
+0000076C lwz r3, 0x1f0(r27)
+00000770 lwz r4, 0x9c(r27)
+00000774 lwz r12, 0x3c(r3)
+00000778 lwz r12, 0xa4(r12)
+0000077C mtctr r12
+00000780 bctrl
+00000784 lwz r3, 0x1f0(r27)
+00000788 bl initializeEntity__8grMadeinFv
+.L_0000078C:
+0000078C addi r4, r29, 0x40
+00000790 addi r5, r29, 0xfc
+00000794 li r3, 0x2
+00000798 bl create__7grOldinFiPCcPCc
+0000079C cmpwi r3, 0x0
+000007A0 stw r3, 0x1f4(r27)
+000007A4 mr r4, r3
+000007A8 beq .L_000008E8
+000007AC mr r3, r27
+000007B0 bl addGround__5StageFP6Ground
+000007B4 lwz r3, 0x1f4(r27)
+000007B8 li r5, 0x0
+000007BC lwz r4, 0x1a0(r27)
+000007C0 li r6, 0x0
+000007C4 lwz r12, 0x3c(r3)
+000007C8 lwz r12, 0x9c(r12)
+000007CC mtctr r12
+000007D0 bctrl
+000007D4 lwz r3, 0x1f4(r27)
+000007D8 lwz r4, 0x9c(r27)
+000007DC lwz r12, 0x3c(r3)
+000007E0 lwz r12, 0xa4(r12)
+000007E4 mtctr r12
+000007E8 bctrl
+000007EC lwz r3, 0x1f4(r27)
+000007F0 bl fn_27_279FA4
+000007F4 lwz r3, 0x1f4(r27)
+000007F8 li r4, 0x0
+000007FC lwz r12, 0x3c(r3)
+00000800 lwz r12, 0x74(r12)
+00000804 mtctr r12
+00000808 bctrl
+0000080C lwz r3, 0x1f4(r27)
+00000810 li r4, 0x0
+00000814 bl setEnableCollisionStatus__6GroundFb
+00000818 lwz r3, 0x1f4(r27)
+0000081C addi r5, r29, 0x10c
+00000820 li r4, 0x0
+00000824 lwz r12, 0x3c(r3)
+00000828 lwz r12, 0xc4(r12)
+0000082C mtctr r12
+00000830 bctrl
+00000834 stw r3, 0x3f8(r27)
+00000838 addi r4, r29, 0x40
+0000083C addi r5, r29, 0x124
+00000840 li r3, 0x7
+00000844 bl create__7grOldinFiPCcPCc
+00000848 cmpwi r3, 0x0
+0000084C stw r3, 0x20c(r27)
+00000850 mr r4, r3
+00000854 beq .L_000008E8
+00000858 mr r3, r27
+0000085C bl addGround__5StageFP6Ground
+00000860 lwz r3, 0x20c(r27)
+00000864 li r5, 0x0
+00000868 lwz r4, 0x1a0(r27)
+0000086C li r6, 0x0
+00000870 lwz r12, 0x3c(r3)
+00000874 lwz r12, 0x9c(r12)
+00000878 mtctr r12
+0000087C bctrl
+00000880 lwz r3, 0x20c(r27)
+00000884 lwz r4, 0x9c(r27)
+00000888 lwz r12, 0x3c(r3)
+0000088C lwz r12, 0xa4(r12)
+00000890 mtctr r12
+00000894 bctrl
+00000898 lfs f3, 0x0(r28)
+0000089C addi r4, r1, 0xc0
+000008A0 lfs f2, 0xc(r28)
+000008A4 addi r5, r1, 0xb4
+000008A8 lfs f0, 0x10(r28)
+000008AC li r6, 0x1
+000008B0 stfs f3, 0xc0(r1)
+000008B4 li r7, 0x0
+000008B8 lfs f1, 0x14(r28)
+000008BC stfs f3, 0xc4(r1)
+000008C0 stfs f3, 0xc8(r1)
+000008C4 stfs f2, 0xb4(r1)
+000008C8 stfs f0, 0xb8(r1)
+000008CC stfs f3, 0xbc(r1)
+000008D0 lwz r3, 0x20c(r27)
+000008D4 bl setHitPoint__8grMadeinFfP5Vec3fP5Vec3fbi
+000008D8 lwz r3, 0x20c(r27)
+000008DC bl initializeEntity__8grMadeinFv
+000008E0 lwz r3, 0x20c(r27)
+000008E4 bl fn_27_279FA4
+.L_000008E8:
+000008E8 addi r4, r29, 0x40
+000008EC addi r5, r29, 0x13c
+000008F0 li r3, 0x4
+000008F4 bl create__7grOldinFiPCcPCc
+000008F8 cmpwi r3, 0x0
+000008FC stw r3, 0x1f8(r27)
+00000900 mr r4, r3
+00000904 beq .L_00000A60
+00000908 mr r3, r27
+0000090C bl addGround__5StageFP6Ground
+00000910 lwz r3, 0x1f8(r27)
+00000914 li r5, 0x0
+00000918 lwz r4, 0x1a0(r27)
+0000091C li r6, 0x0
+00000920 lwz r12, 0x3c(r3)
+00000924 lwz r12, 0x9c(r12)
+00000928 mtctr r12
+0000092C bctrl
+00000930 lwz r3, 0x1f8(r27)
+00000934 lwz r4, 0x9c(r27)
+00000938 lwz r12, 0x3c(r3)
+0000093C lwz r12, 0xa4(r12)
+00000940 mtctr r12
+00000944 bctrl
+00000948 lwz r3, 0x1f8(r27)
+0000094C bl startEntityAutoLoop__8grMadeinFv
+00000950 lwz r3, 0x1f8(r27)
+00000954 bl fn_27_279FA4
+00000958 lwz r3, 0x1f8(r27)
+0000095C li r4, 0x0
+00000960 lwz r12, 0x3c(r3)
+00000964 lwz r12, 0x74(r12)
+00000968 mtctr r12
+0000096C bctrl
+00000970 lwz r3, 0x1f8(r27)
+00000974 li r4, 0x0
+00000978 bl setEnableCollisionStatus__6GroundFb
+0000097C lwz r3, 0x1f8(r27)
+00000980 lfs f1, 0x18(r28)
+00000984 lwz r12, 0x3c(r3)
+00000988 lwz r12, 0x10c(r12)
+0000098C mtctr r12
+00000990 bctrl
+00000994 addi r4, r29, 0x40
+00000998 addi r5, r29, 0x124
+0000099C li r3, 0x7
+000009A0 bl create__7grOldinFiPCcPCc
+000009A4 cmpwi r3, 0x0
+000009A8 stw r3, 0x204(r27)
+000009AC mr r4, r3
+000009B0 beq .L_00000A60
+000009B4 mr r3, r27
+000009B8 bl addGround__5StageFP6Ground
+000009BC lwz r3, 0x204(r27)
+000009C0 li r5, 0x0
+000009C4 lwz r4, 0x1a0(r27)
+000009C8 li r6, 0x0
+000009CC lwz r12, 0x3c(r3)
+000009D0 lwz r12, 0x9c(r12)
+000009D4 mtctr r12
+000009D8 bctrl
+000009DC lwz r3, 0x204(r27)
+000009E0 lwz r4, 0x9c(r27)
+000009E4 lwz r12, 0x3c(r3)
+000009E8 lwz r12, 0xa4(r12)
+000009EC mtctr r12
+000009F0 bctrl
+000009F4 lfs f1, 0x1c(r28)
+000009F8 addi r4, r1, 0xa8
+000009FC lfs f0, 0x20(r28)
+00000A00 addi r5, r1, 0x9c
+00000A04 lfs f3, 0x0(r28)
+00000A08 li r6, 0x1
+00000A0C stfs f1, 0x378(r27)
+00000A10 li r7, 0x0
+00000A14 lfs f2, 0x24(r28)
+00000A18 stfs f0, 0x37c(r27)
+00000A1C lfs f0, 0x28(r28)
+00000A20 stfs f3, 0x380(r27)
+00000A24 lfs f1, 0x2c(r28)
+00000A28 stfs f3, 0xa8(r1)
+00000A2C stfs f3, 0xac(r1)
+00000A30 stfs f3, 0xb0(r1)
+00000A34 stfs f2, 0x9c(r1)
+00000A38 stfs f0, 0xa0(r1)
+00000A3C stfs f3, 0xa4(r1)
+00000A40 lwz r3, 0x204(r27)
+00000A44 bl setHitPoint__8grMadeinFfP5Vec3fP5Vec3fbi
+00000A48 lwz r3, 0x204(r27)
+00000A4C bl initializeEntity__8grMadeinFv
+00000A50 lwz r3, 0x204(r27)
+00000A54 bl startEntity__8grMadeinFv
+00000A58 lwz r3, 0x204(r27)
+00000A5C bl fn_27_279FA4
+.L_00000A60:
+00000A60 addi r4, r29, 0x40
+00000A64 addi r5, r29, 0x150
+00000A68 li r3, 0x5
+00000A6C bl create__7grOldinFiPCcPCc
+00000A70 cmpwi r3, 0x0
+00000A74 stw r3, 0x1fc(r27)
+00000A78 mr r4, r3
+00000A7C beq .L_00000C50
+00000A80 mr r3, r27
+00000A84 bl addGround__5StageFP6Ground
+00000A88 lwz r3, 0x1fc(r27)
+00000A8C li r5, 0x0
+00000A90 lwz r4, 0x1a0(r27)
+00000A94 li r6, 0x0
+00000A98 lwz r12, 0x3c(r3)
+00000A9C lwz r12, 0x9c(r12)
+00000AA0 mtctr r12
+00000AA4 bctrl
+00000AA8 lwz r3, 0x1fc(r27)
+00000AAC lwz r4, 0x9c(r27)
+00000AB0 lwz r12, 0x3c(r3)
+00000AB4 lwz r12, 0xa4(r12)
+00000AB8 mtctr r12
+00000ABC bctrl
+00000AC0 lwz r3, 0x1fc(r27)
+00000AC4 addi r5, r29, 0x164
+00000AC8 li r4, 0x0
+00000ACC lwz r12, 0x3c(r3)
+00000AD0 lwz r12, 0xc4(r12)
+00000AD4 mtctr r12
+00000AD8 bctrl
+00000ADC stw r3, 0x2c4(r27)
+00000AE0 addi r5, r29, 0x180
+00000AE4 lwz r3, 0x1fc(r27)
+00000AE8 li r4, 0x0
+00000AEC lwz r12, 0x3c(r3)
+00000AF0 lwz r12, 0xc4(r12)
+00000AF4 mtctr r12
+00000AF8 bctrl
+00000AFC stw r3, 0x2c8(r27)
+00000B00 addi r5, r29, 0x180
+00000B04 lwz r3, 0x1fc(r27)
+00000B08 li r4, 0x0
+00000B0C lwz r12, 0x3c(r3)
+00000B10 lwz r12, 0xc4(r12)
+00000B14 mtctr r12
+00000B18 bctrl
+00000B1C stw r3, 0x2cc(r27)
+00000B20 lwz r3, 0x1fc(r27)
+00000B24 bl fn_27_279FA4
+00000B28 lwz r3, 0x1fc(r27)
+00000B2C li r4, 0x0
+00000B30 lwz r12, 0x3c(r3)
+00000B34 lwz r12, 0x74(r12)
+00000B38 mtctr r12
+00000B3C bctrl
+00000B40 lwz r3, 0x1fc(r27)
+00000B44 li r4, 0x0
+00000B48 bl setEnableCollisionStatus__6GroundFb
+00000B4C lwz r3, 0x1fc(r27)
+00000B50 lfs f1, 0x18(r28)
+00000B54 lwz r12, 0x3c(r3)
+00000B58 lwz r12, 0x10c(r12)
+00000B5C mtctr r12
+00000B60 bctrl
+00000B64 addi r4, r29, 0x40
+00000B68 addi r5, r29, 0x19c
+00000B6C li r3, 0x7
+00000B70 bl create__7grOldinFiPCcPCc
+00000B74 cmpwi r3, 0x0
+00000B78 stw r3, 0x208(r27)
+00000B7C mr r4, r3
+00000B80 beq .L_00000C50
+00000B84 mr r3, r27
+00000B88 bl addGround__5StageFP6Ground
+00000B8C lwz r3, 0x208(r27)
+00000B90 li r5, 0x0
+00000B94 lwz r4, 0x1a0(r27)
+00000B98 li r6, 0x0
+00000B9C lwz r12, 0x3c(r3)
+00000BA0 lwz r12, 0x9c(r12)
+00000BA4 mtctr r12
+00000BA8 bctrl
+00000BAC lwz r3, 0x208(r27)
+00000BB0 lwz r4, 0x9c(r27)
+00000BB4 lwz r12, 0x3c(r3)
+00000BB8 lwz r12, 0xa4(r12)
+00000BBC mtctr r12
+00000BC0 bctrl
+00000BC4 lfs f3, 0x34(r28)
+00000BC8 addi r4, r1, 0x90
+00000BCC lfs f2, 0x0(r28)
+00000BD0 addi r5, r1, 0x84
+00000BD4 lfs f1, 0x30(r28)
+00000BD8 li r6, 0x1
+00000BDC lfs f0, 0x38(r28)
+00000BE0 li r7, 0x0
+00000BE4 stfs f1, 0x90(r1)
+00000BE8 lfs f1, 0x28(r28)
+00000BEC stfs f3, 0x94(r1)
+00000BF0 stfs f2, 0x98(r1)
+00000BF4 stfs f0, 0x84(r1)
+00000BF8 stfs f3, 0x88(r1)
+00000BFC stfs f2, 0x8c(r1)
+00000C00 lwz r3, 0x208(r27)
+00000C04 bl setHitPoint__8grMadeinFfP5Vec3fP5Vec3fbi
+00000C08 lfs f2, 0x20(r28)
+00000C0C mr r3, r27
+00000C10 lfs f1, 0x3c(r28)
+00000C14 addi r4, r1, 0x78
+00000C18 lfs f0, 0x0(r28)
+00000C1C stfs f2, 0x2d0(r27)
+00000C20 stfs f1, 0x2d4(r27)
+00000C24 stfs f0, 0x2d8(r27)
+00000C28 stfs f0, 0x78(r1)
+00000C2C stfs f0, 0x7c(r1)
+00000C30 stfs f0, 0x80(r1)
+00000C34 bl fn_53_3B7C
+00000C38 lwz r3, 0x208(r27)
+00000C3C bl initializeEntity__8grMadeinFv
+00000C40 lwz r3, 0x208(r27)
+00000C44 bl startEntity__8grMadeinFv
+00000C48 lwz r3, 0x208(r27)
+00000C4C bl fn_27_279FA4
+.L_00000C50:
+00000C50 addi r4, r29, 0x40
+00000C54 addi r5, r29, 0x1b4
+00000C58 li r3, 0x6
+00000C5C bl create__7grOldinFiPCcPCc
+00000C60 cmpwi r3, 0x0
+00000C64 stw r3, 0x200(r27)
+00000C68 mr r4, r3
+00000C6C beq .L_00000D90
+00000C70 mr r3, r27
+00000C74 bl addGround__5StageFP6Ground
+00000C78 lwz r3, 0x200(r27)
+00000C7C li r5, 0x0
+00000C80 lwz r4, 0x1a0(r27)
+00000C84 li r6, 0x0
+00000C88 lwz r12, 0x3c(r3)
+00000C8C lwz r12, 0x9c(r12)
+00000C90 mtctr r12
+00000C94 bctrl
+00000C98 lwz r3, 0x200(r27)
+00000C9C lwz r4, 0x9c(r27)
+00000CA0 lwz r12, 0x3c(r3)
+00000CA4 lwz r12, 0xa4(r12)
+00000CA8 mtctr r12
+00000CAC bctrl
+00000CB0 lwz r3, 0x200(r27)
+00000CB4 bl fn_27_279FA4
+00000CB8 lwz r3, 0x200(r27)
+00000CBC li r4, 0x0
+00000CC0 lwz r12, 0x3c(r3)
+00000CC4 lwz r12, 0x74(r12)
+00000CC8 mtctr r12
+00000CCC bctrl
+00000CD0 lwz r3, 0x200(r27)
+00000CD4 li r4, 0x0
+00000CD8 bl setEnableCollisionStatus__6GroundFb
+00000CDC lwz r3, 0x200(r27)
+00000CE0 addi r5, r29, 0x1c0
+00000CE4 li r4, 0x0
+00000CE8 lwz r12, 0x3c(r3)
+00000CEC lwz r12, 0xc4(r12)
+00000CF0 mtctr r12
+00000CF4 bctrl
+00000CF8 stw r3, 0x424(r27)
+00000CFC addi r4, r29, 0x40
+00000D00 addi r5, r29, 0x1d4
+00000D04 li r3, 0x7
+00000D08 bl create__7grOldinFiPCcPCc
+00000D0C cmpwi r3, 0x0
+00000D10 stw r3, 0x210(r27)
+00000D14 mr r4, r3
+00000D18 beq .L_00000D90
+00000D1C mr r3, r27
+00000D20 bl addGround__5StageFP6Ground
+00000D24 lwz r3, 0x210(r27)
+00000D28 li r5, 0x0
+00000D2C lwz r4, 0x1a0(r27)
+00000D30 li r6, 0x0
+00000D34 lwz r12, 0x3c(r3)
+00000D38 lwz r12, 0x9c(r12)
+00000D3C mtctr r12
+00000D40 bctrl
+00000D44 lwz r3, 0x210(r27)
+00000D48 lwz r4, 0x9c(r27)
+00000D4C lwz r12, 0x3c(r3)
+00000D50 lwz r12, 0xa4(r12)
+00000D54 mtctr r12
+00000D58 bctrl
+00000D5C lfs f0, 0x0(r28)
+00000D60 mr r3, r27
+00000D64 addi r4, r1, 0x6c
+00000D68 stfs f0, 0x6c(r1)
+00000D6C stfs f0, 0x70(r1)
+00000D70 stfs f0, 0x74(r1)
+00000D74 bl fn_53_3CA0
+00000D78 lwz r3, 0x210(r27)
+00000D7C bl initializeEntity__8grMadeinFv
+00000D80 lwz r3, 0x210(r27)
+00000D84 bl startEntity__8grMadeinFv
+00000D88 lwz r3, 0x210(r27)
+00000D8C bl fn_27_279FA4
+.L_00000D90:
+00000D90 lwz r4, 0x1a0(r27)
+00000D94 mr r3, r27
+00000D98 li r5, 0x2
+00000D9C li r6, 0x0
+00000DA0 bl createCollision__5StageFP9gfArchiveiP6Ground
+00000DA4 mr r3, r27
+00000DA8 li r4, 0x0
+00000DAC bl fn_53_3EC4
+00000DB0 lwz r12, 0x3c(r27)
+00000DB4 mr r3, r27
+00000DB8 lwz r12, 0xc4(r12)
+00000DBC mtctr r12
+00000DC0 bctrl
+00000DC4 lis r4, 0x1
+00000DC8 lwz r3, 0x1a0(r27)
+00000DCC subi r0, r4, 0x2
+00000DD0 li r5, 0x64
+00000DD4 li r4, 0x2
+00000DD8 clrlwi r6, r0, 16
+00000DDC bl getData__9gfArchiveF11ARCNodeTypeiUs
+00000DE0 cmpwi r3, 0x0
+00000DE4 beq .L_00000DFC
+00000DE8 stw r3, 0x8(r1)
+00000DEC mr r3, r27
+00000DF0 addi r4, r1, 0x8
+00000DF4 bl createStagePositions__5StageFPQ34nw4r3g3d7ResFile
+00000DF8 b .L_00000E04
+.L_00000DFC:
+00000DFC mr r3, r27
+00000E00 bl createStagePositions__5StageFv
+.L_00000E04:
+00000E04 lwz r12, 0x3c(r27)
+00000E08 mr r3, r27
+00000E0C lwz r12, 0x1f4(r12)
+00000E10 mtctr r12
+00000E14 bctrl
+00000E18 lis r4, 0x1
+00000E1C lwz r3, 0x1a0(r27)
+00000E20 subi r0, r4, 0x2
+00000E24 li r5, 0x0
+00000E28 li r4, 0x5
+00000E2C clrlwi r6, r0, 16
+00000E30 bl getData__9gfArchiveF11ARCNodeTypeiUs
+00000E34 mr r4, r3
+00000E38 mr r3, r27
+00000E3C li r5, 0x0
+00000E40 bl registScnAnim__5StageFPQ34nw4r3g3d11ResFileDataUl
+00000E44 addi r3, r27, 0x2e0
+00000E48 bl fn_8009F1FC
+00000E4C addi r3, r27, 0x42c
+00000E50 bl fn_8009F1FC
+00000E54 addi r3, r27, 0x4c0
+00000E58 bl fn_8009F1FC
+00000E5C addi r3, r27, 0x544
+00000E60 bl fn_8009F1FC
+00000E64 lwz r0, 0x0(r29)
+00000E68 li r30, 0x0
+00000E6C li r31, 0x1
+00000E70 lwz r3, 0x1fc(r27)
+00000E74 stw r0, 0x364(r27)
+00000E78 li r4, 0x0
+00000E7C stw r30, 0x368(r27)
+00000E80 stb r31, 0x370(r27)
+00000E84 stb r30, 0x371(r27)
+00000E88 stb r30, 0x229(r27)
+00000E8C lwz r12, 0x3c(r3)
+00000E90 lwz r12, 0x74(r12)
+00000E94 mtctr r12
+00000E98 bctrl
+00000E9C lwz r3, 0x1fc(r27)
+00000EA0 li r4, 0x0
+00000EA4 bl setEnableCollisionStatus__6GroundFb
+00000EA8 lwz r3, 0x1fc(r27)
+00000EAC lfs f1, 0x0(r28)
+00000EB0 lwz r3, 0xd4(r3)
+00000EB4 lfs f0, 0x40(r28)
+00000EB8 stfs f1, 0x5c(r3)
+00000EBC stfs f0, 0x6c(r3)
+00000EC0 stfs f1, 0x7c(r3)
+00000EC4 lwz r3, 0x208(r27)
+00000EC8 stfs f1, 0x3c(r1)
+00000ECC lwz r3, 0xd4(r3)
+00000ED0 stfs f0, 0x40(r1)
+00000ED4 stfs f1, 0x5c(r3)
+00000ED8 stfs f0, 0x6c(r3)
+00000EDC stfs f1, 0x7c(r3)
+00000EE0 stfs f1, 0x44(r1)
+00000EE4 lwz r3, 0x208(r27)
+00000EE8 stfs f1, 0x48(r1)
+00000EEC stfs f0, 0x4c(r1)
+00000EF0 stfs f1, 0x50(r1)
+00000EF4 bl endEntity__8grMadeinFv
+00000EF8 lwz r3, 0x1f8(r27)
+00000EFC li r4, 0x0
+00000F00 lwz r12, 0x3c(r3)
+00000F04 lwz r12, 0x74(r12)
+00000F08 mtctr r12
+00000F0C bctrl
+00000F10 lwz r3, 0x1f8(r27)
+00000F14 li r4, 0x0
+00000F18 bl setEnableCollisionStatus__6GroundFb
+00000F1C lwz r3, 0x1f8(r27)
+00000F20 lfs f1, 0x0(r28)
+00000F24 lwz r3, 0xd4(r3)
+00000F28 lfs f0, 0x40(r28)
+00000F2C stfs f1, 0x5c(r3)
+00000F30 stfs f0, 0x6c(r3)
+00000F34 stfs f1, 0x7c(r3)
+00000F38 lwz r3, 0x204(r27)
+00000F3C stfs f1, 0x54(r1)
+00000F40 lwz r3, 0xd4(r3)
+00000F44 stfs f0, 0x58(r1)
+00000F48 stfs f1, 0x5c(r3)
+00000F4C stfs f0, 0x6c(r3)
+00000F50 stfs f1, 0x7c(r3)
+00000F54 stfs f1, 0x5c(r1)
+00000F58 lwz r3, 0x204(r27)
+00000F5C stfs f1, 0x60(r1)
+00000F60 stfs f0, 0x64(r1)
+00000F64 stfs f1, 0x68(r1)
+00000F68 bl endEntity__8grMadeinFv
+00000F6C lwz r0, 0x2e8(r27)
+00000F70 rlwimi r0, r31, 29, 0, 2
+00000F74 stb r30, 0x388(r27)
+00000F78 li r4, 0x0
+00000F7C lwz r3, 0x1f4(r27)
+00000F80 stw r0, 0x2e8(r27)
+00000F84 stb r30, 0x389(r27)
+00000F88 lwz r12, 0x3c(r3)
+00000F8C lwz r12, 0x74(r12)
+00000F90 mtctr r12
+00000F94 bctrl
+00000F98 lwz r3, 0x1f4(r27)
+00000F9C li r4, 0x0
+00000FA0 bl setEnableCollisionStatus__6GroundFb
+00000FA4 lwz r3, 0x1f4(r27)
+00000FA8 lfs f1, 0x0(r28)
+00000FAC lwz r3, 0xd4(r3)
+00000FB0 lfs f0, 0x40(r28)
+00000FB4 stfs f1, 0x5c(r3)
+00000FB8 stfs f0, 0x6c(r3)
+00000FBC stfs f1, 0x7c(r3)
+00000FC0 lwz r3, 0x20c(r27)
+00000FC4 stfs f1, 0x24(r1)
+00000FC8 lwz r3, 0xd4(r3)
+00000FCC stfs f0, 0x28(r1)
+00000FD0 stfs f1, 0x5c(r3)
+00000FD4 stfs f0, 0x6c(r3)
+00000FD8 stfs f1, 0x7c(r3)
+00000FDC stfs f1, 0x2c(r1)
+00000FE0 lwz r3, 0x20c(r27)
+00000FE4 stfs f1, 0x30(r1)
+00000FE8 stfs f0, 0x34(r1)
+00000FEC stfs f1, 0x38(r1)
+00000FF0 bl endEntity__8grMadeinFv
+00000FF4 lwz r5, 0x1d8(r27)
+00000FF8 li r4, 0x0
+00000FFC lwz r3, 0x200(r27)
+00001000 lfs f0, 0x28(r5)
+00001004 stfs f0, 0x3fc(r27)
+00001008 stw r30, 0x40c(r27)
+0000100C stb r30, 0x414(r27)
+00001010 lwz r12, 0x3c(r3)
+00001014 lwz r12, 0x74(r12)
+00001018 mtctr r12
+0000101C bctrl
+00001020 lwz r3, 0x200(r27)
+00001024 li r4, 0x0
+00001028 bl setEnableCollisionStatus__6GroundFb
+0000102C lwz r3, 0x200(r27)
+00001030 lfs f1, 0x0(r28)
+00001034 lwz r3, 0xd4(r3)
+00001038 lfs f0, 0x40(r28)
+0000103C stfs f1, 0x5c(r3)
+00001040 stfs f0, 0x6c(r3)
+00001044 stfs f1, 0x7c(r3)
+00001048 lwz r3, 0x210(r27)
+0000104C stfs f1, 0xc(r1)
+00001050 lwz r3, 0xd4(r3)
+00001054 stfs f0, 0x10(r1)
+00001058 stfs f1, 0x5c(r3)
+0000105C stfs f0, 0x6c(r3)
+00001060 stfs f1, 0x7c(r3)
+00001064 lwz r0, 0x434(r27)
+00001068 rlwimi r0, r31, 29, 0, 2
+0000106C stfs f1, 0x14(r1)
+00001070 lwz r3, 0x1e4(r27)
+00001074 stfs f1, 0x18(r1)
+00001078 stfs f0, 0x1c(r1)
+0000107C stfs f1, 0x20(r1)
+00001080 stw r0, 0x434(r27)
+00001084 stb r30, 0x4b0(r27)
+00001088 bl startEntity__8grMadeinFv
+0000108C lwz r3, 0x1e4(r27)
+00001090 li r4, 0x1
+00001094 bl setEnableCollisionStatus__6GroundFb
+00001098 lwz r3, 0x1e4(r27)
+0000109C lwz r3, 0x48(r3)
+000010A0 lwz r30, 0x0(r3)
+000010A4 cmpwi r30, 0x0
+000010A8 beq .L_000010D4
+000010AC mr r3, r30
+000010B0 bl getFrameCount__16gfModelAnimationFd
+000010B4 lis r0, 0x4330
+000010B8 stw r3, 0x10c(r1)
+000010BC lfd f1, 0x48(r28)
+000010C0 mr r3, r30
+000010C4 stw r0, 0x108(r1)
+000010C8 lfd f0, 0x108(r1)
+000010CC fsubs f1, f0, f1
+000010D0 bl setFrame__16gfModelAnimationFd
+.L_000010D4:
+000010D4 lwz r3, 0x1e4(r27)
+000010D8 lfs f1, 0x0(r28)
+000010DC lwz r12, 0x3c(r3)
+000010E0 lwz r12, 0x10c(r12)
+000010E4 mtctr r12
+000010E8 bctrl
+000010EC lwz r3, 0x1e8(r27)
+000010F0 li r4, 0x1
+000010F4 lwz r12, 0x3c(r3)
+000010F8 lwz r12, 0x74(r12)
+000010FC mtctr r12
+00001100 bctrl
+00001104 addi r3, r1, 0xd8
+00001108 bl setIdentity__6MatrixFv
+0000110C lwz r3, 0x1e4(r27)
+00001110 addi r4, r1, 0xd8
+00001114 li r5, 0x1
+00001118 bl fn_27_279FC8
+0000111C lwz r3, 0x1f0(r27)
+00001120 addi r4, r1, 0xd8
+00001124 li r5, 0x1
+00001128 bl fn_27_279FC8
+0000112C lwz r3, 0x4c8(r27)
+00001130 li r28, 0x1
+00001134 lwz r0, 0x54c(r27)
+00001138 rlwimi r3, r28, 29, 0, 2
+0000113C rlwimi r0, r28, 29, 0, 2
+00001140 stw r3, 0x4c8(r27)
+00001144 lwz r4, 0x1a0(r27)
+00001148 mr r3, r27
+0000114C stw r0, 0x54c(r27)
+00001150 li r5, 0x1e
+00001154 bl loadStageAttrParam__5StageFP9gfArchivei
+00001158 mr r3, r27
+0000115C li r4, 0x2
+00001160 li r5, 0x0
+00001164 bl initPosPokeTrainer__5StageFii
+00001168 lwz r12, 0x3c(r27)
+0000116C mr r3, r27
+00001170 addi r6, r29, 0x1e8
+00001174 li r5, 0x65
+00001178 lwz r12, 0x68(r12)
+0000117C li r8, 0x0
+00001180 lwz r4, 0x1a0(r27)
+00001184 lwz r7, 0xbc(r27)
+00001188 mtctr r12
+0000118C bctrl
+00001190 lwz r12, 0x3c(r27)
+00001194 mr r3, r27
+00001198 lwz r4, 0xbc(r27)
+0000119C addi r6, r29, 0x1f8
+000011A0 lwz r12, 0x68(r12)
+000011A4 li r5, 0x66
+000011A8 addi r7, r4, 0x18
+000011AC lwz r4, 0x1a0(r27)
+000011B0 li r8, 0x0
+000011B4 mtctr r12
+000011B8 bctrl
+000011BC li r4, 0x0
+000011C0 lis r3, g_GameGlobal@ha
+000011C4 stb r4, 0x374(r27)
+000011C8 stb r4, 0x375(r27)
+000011CC lwz r3, g_GameGlobal@l(r3)
+000011D0 lwz r3, 0x8(r3)
+000011D4 lbz r0, 0x8(r3)
+000011D8 extrwi r0, r0, 6, 24
+000011DC cmplwi r0, 0x7
+000011E0 bne .L_000011F8
+000011E4 lbz r0, 0x10(r3)
+000011E8 clrlwi r0, r0, 25
+000011EC cmpwi r0, 0x18
+000011F0 bne .L_000011F8
+000011F4 mr r4, r28
+.L_000011F8:
+000011F8 stb r4, 0x228(r27)
+000011FC addi r11, r1, 0x130
+00001200 bl _restgpr_27
+00001204 lwz r0, 0x134(r1)
+00001208 mtlr r0
+0000120C addi r1, r1, 0x130
+00001210 blr
+.endfn fn_53_3A0
+
+# .text:0x11A4 | 0x1214 | size: 0x8
+# Ground::setStageData(void*)
+.fn setStageData__6GroundFPv, global
+00001214 stw r4, 0x60(r3)
+00001218 blr
+.endfn setStageData__6GroundFPv
+
+# .text:0x11AC | 0x121C | size: 0x80
+.fn fn_53_121C, global
+0000121C stwu r1, -0x20(r1)
+00001220 mflr r0
+00001224 lis r4, g_aiMgr@ha
+00001228 stw r0, 0x24(r1)
+0000122C stfd f31, 0x18(r1)
+00001230 fmr f31, f1
+00001234 stw r31, 0x14(r1)
+00001238 mr r31, r3
+0000123C lwz r3, g_aiMgr@l(r4)
+00001240 li r4, 0x0
+00001244 bl fn_27_1F290C
+00001248 fmr f1, f31
+0000124C mr r3, r31
+00001250 bl fn_53_1E88
+00001254 fmr f1, f31
+00001258 mr r3, r31
+0000125C bl fn_53_159C
+00001260 fmr f1, f31
+00001264 mr r3, r31
+00001268 bl fn_53_242C
+0000126C fmr f1, f31
+00001270 mr r3, r31
+00001274 bl fn_53_2E0C
+00001278 fmr f1, f31
+0000127C mr r3, r31
+00001280 bl fn_53_3370
+00001284 lwz r0, 0x24(r1)
+00001288 lfd f31, 0x18(r1)
+0000128C lwz r31, 0x14(r1)
+00001290 mtlr r0
+00001294 addi r1, r1, 0x20
+00001298 blr
+.endfn fn_53_121C
+
+# .text:0x122C | 0x129C | size: 0x300
+.fn fn_53_129C, global
+0000129C stwu r1, -0x90(r1)
+000012A0 mflr r0
+000012A4 stw r0, 0x94(r1)
+000012A8 addi r11, r1, 0x90
+000012AC bl _savegpr_25
+000012B0 cmpwi r5, 0x0
+000012B4 lis r31, lbl_53_rodata_0@ha
+000012B8 mr r28, r3
+000012BC mr r29, r4
+000012C0 mr r30, r5
+000012C4 addi r31, r31, lbl_53_rodata_0@l
+000012C8 beq .L_00001338
+000012CC li r0, 0x1
+000012D0 lis r4, lbl_53_data_0@ha
+000012D4 stb r0, 0x229(r3)
+000012D8 li r25, 0x0
+000012DC lwz r0, lbl_53_data_0@l(r4)
+000012E0 stw r0, 0x22c(r3)
+000012E4 stw r25, 0x230(r3)
+000012E8 lwz r3, 0x208(r3)
+000012EC bl startEntity__8grMadeinFv
+000012F0 lwz r3, 0x204(r28)
+000012F4 bl startEntity__8grMadeinFv
+000012F8 lfs f0, 0x0(r31)
+000012FC stfs f0, 0x2dc(r28)
+00001300 bl randf__Fv
+00001304 lfs f0, 0x50(r31)
+00001308 mr r3, r28
+0000130C lfs f2, 0x54(r31)
+00001310 li r4, 0x1bb1
+00001314 fmuls f3, f0, f1
+00001318 lfs f0, 0x58(r31)
+0000131C stw r25, 0x5d4(r28)
+00001320 lfs f1, 0x0(r31)
+00001324 fsubs f2, f2, f3
+00001328 fadds f0, f0, f2
+0000132C stfs f0, 0x5d8(r28)
+00001330 bl playSeBasic__7stMeleeF5SndIDf
+00001334 stw r3, 0x5dc(r28)
+.L_00001338:
+00001338 lwz r25, 0x0(r29)
+0000133C li r4, 0x1
+00001340 lwz r26, 0x4(r29)
+00001344 lwz r27, 0x8(r29)
+00001348 lwz r12, 0xc(r29)
+0000134C lwz r11, 0x10(r29)
+00001350 lwz r10, 0x14(r29)
+00001354 lwz r9, 0x18(r29)
+00001358 lwz r8, 0x1c(r29)
+0000135C lwz r7, 0x20(r29)
+00001360 lwz r6, 0x24(r29)
+00001364 lwz r5, 0x28(r29)
+00001368 lwz r0, 0x2c(r29)
+0000136C stw r25, 0x264(r28)
+00001370 lwz r3, 0x1fc(r28)
+00001374 stw r26, 0x268(r28)
+00001378 stw r27, 0x26c(r28)
+0000137C stw r12, 0x270(r28)
+00001380 stw r11, 0x274(r28)
+00001384 stw r10, 0x278(r28)
+00001388 stw r9, 0x27c(r28)
+0000138C stw r8, 0x280(r28)
+00001390 stw r7, 0x284(r28)
+00001394 stw r6, 0x288(r28)
+00001398 stw r5, 0x28c(r28)
+0000139C stw r0, 0x290(r28)
+000013A0 stw r25, 0x294(r28)
+000013A4 stw r26, 0x298(r28)
+000013A8 stw r27, 0x29c(r28)
+000013AC stw r12, 0x2a0(r28)
+000013B0 stw r11, 0x2a4(r28)
+000013B4 stw r10, 0x2a8(r28)
+000013B8 stw r9, 0x2ac(r28)
+000013BC stw r8, 0x2b0(r28)
+000013C0 stw r7, 0x2b4(r28)
+000013C4 stw r6, 0x2b8(r28)
+000013C8 stw r5, 0x2bc(r28)
+000013CC stw r0, 0x2c0(r28)
+000013D0 lwz r12, 0x3c(r3)
+000013D4 lwz r12, 0x74(r12)
+000013D8 mtctr r12
+000013DC bctrl
+000013E0 lwz r3, 0x1fc(r28)
+000013E4 addi r4, r28, 0x264
+000013E8 li r5, 0x0
+000013EC bl fn_27_279FC8
+000013F0 lwz r3, 0x1fc(r28)
+000013F4 lwz r3, 0x48(r3)
+000013F8 lwz r3, 0x0(r3)
+000013FC cmpwi r3, 0x0
+00001400 beq .L_00001414
+00001404 lfs f1, 0x0(r31)
+00001408 bl setFrame__16gfModelAnimationFd
+0000140C li r0, 0x0
+00001410 stw r0, 0x5d0(r28)
+.L_00001414:
+00001414 lwz r4, 0x264(r28)
+00001418 addi r3, r1, 0x38
+0000141C lwz r0, 0x268(r28)
+00001420 stw r4, 0x38(r1)
+00001424 stw r0, 0x3c(r1)
+00001428 lwz r4, 0x26c(r28)
+0000142C lwz r0, 0x270(r28)
+00001430 stw r4, 0x40(r1)
+00001434 stw r0, 0x44(r1)
+00001438 lwz r4, 0x274(r28)
+0000143C lwz r0, 0x278(r28)
+00001440 stw r4, 0x48(r1)
+00001444 stw r0, 0x4c(r1)
+00001448 lwz r4, 0x27c(r28)
+0000144C lwz r0, 0x280(r28)
+00001450 stw r4, 0x50(r1)
+00001454 stw r0, 0x54(r1)
+00001458 lwz r4, 0x284(r28)
+0000145C lwz r0, 0x288(r28)
+00001460 stw r4, 0x58(r1)
+00001464 stw r0, 0x5c(r1)
+00001468 lwz r4, 0x28c(r28)
+0000146C lwz r0, 0x290(r28)
+00001470 stw r4, 0x60(r1)
+00001474 stw r0, 0x64(r1)
+00001478 lfs f1, 0x2d0(r28)
+0000147C lfs f2, 0x2d4(r28)
+00001480 lfs f3, 0x2d8(r28)
+00001484 bl fn_8003F074
+00001488 lwz r3, 0x208(r28)
+0000148C addi r4, r1, 0x38
+00001490 li r5, 0x0
+00001494 bl fn_27_279FC8
+00001498 lwz r3, 0x1f8(r28)
+0000149C li r4, 0x1
+000014A0 lwz r12, 0x3c(r3)
+000014A4 lwz r12, 0x74(r12)
+000014A8 mtctr r12
+000014AC bctrl
+000014B0 lwz r3, 0x1f8(r28)
+000014B4 addi r4, r28, 0x264
+000014B8 li r5, 0x0
+000014BC bl fn_27_279FC8
+000014C0 lwz r4, 0x264(r28)
+000014C4 addi r3, r1, 0x8
+000014C8 lwz r0, 0x268(r28)
+000014CC stw r4, 0x8(r1)
+000014D0 stw r0, 0xc(r1)
+000014D4 lwz r4, 0x26c(r28)
+000014D8 lwz r0, 0x270(r28)
+000014DC stw r4, 0x10(r1)
+000014E0 stw r0, 0x14(r1)
+000014E4 lwz r4, 0x274(r28)
+000014E8 lwz r0, 0x278(r28)
+000014EC stw r4, 0x18(r1)
+000014F0 stw r0, 0x1c(r1)
+000014F4 lwz r4, 0x27c(r28)
+000014F8 lwz r0, 0x280(r28)
+000014FC stw r4, 0x20(r1)
+00001500 stw r0, 0x24(r1)
+00001504 lwz r4, 0x284(r28)
+00001508 lwz r0, 0x288(r28)
+0000150C stw r4, 0x28(r1)
+00001510 stw r0, 0x2c(r1)
+00001514 lwz r4, 0x28c(r28)
+00001518 lwz r0, 0x290(r28)
+0000151C stw r4, 0x30(r1)
+00001520 stw r0, 0x34(r1)
+00001524 lfs f1, 0x378(r28)
+00001528 lfs f2, 0x37c(r28)
+0000152C lfs f3, 0x380(r28)
+00001530 bl fn_8003F074
+00001534 lwz r3, 0x204(r28)
+00001538 addi r4, r1, 0x8
+0000153C li r5, 0x0
+00001540 bl fn_27_279FC8
+00001544 cmpwi r30, 0x0
+00001548 beq .L_00001584
+0000154C li r0, 0x0
+00001550 lwz r3, 0x1f8(r28)
+00001554 stw r0, 0x384(r28)
+00001558 li r4, 0x0
+0000155C bl setMotion__8grMadeinFUl
+00001560 lwz r3, 0x1f8(r28)
+00001564 bl startEntityAutoLoop__8grMadeinFv
+00001568 lwz r3, 0x1f8(r28)
+0000156C lwz r3, 0x48(r3)
+00001570 lwz r3, 0x0(r3)
+00001574 cmpwi r3, 0x0
+00001578 beq .L_00001584
+0000157C lfs f1, 0x0(r31)
+00001580 bl setFrame__16gfModelAnimationFd
+.L_00001584:
+00001584 addi r11, r1, 0x90
+00001588 bl _restgpr_25
+0000158C lwz r0, 0x94(r1)
+00001590 mtlr r0
+00001594 addi r1, r1, 0x90
+00001598 blr
+.endfn fn_53_129C
+
+# .text:0x152C | 0x159C | size: 0x8EC
+.fn fn_53_159C, global
+0000159C stwu r1, -0x160(r1)
+000015A0 mflr r0
+000015A4 stw r0, 0x164(r1)
+000015A8 stfd f31, 0x150(r1)
+000015AC psq_st f31, 0x158(r1), 0, qr0
+000015B0 stfd f30, 0x140(r1)
+000015B4 psq_st f30, 0x148(r1), 0, qr0
+000015B8 fmr f31, f1
+000015BC stw r31, 0x13c(r1)
+000015C0 lis r31, lbl_53_data_0@ha
+000015C4 addi r31, r31, lbl_53_data_0@l
+000015C8 stw r30, 0x138(r1)
+000015CC lis r30, lbl_53_rodata_0@ha
+000015D0 addi r30, r30, lbl_53_rodata_0@l
+000015D4 stw r29, 0x134(r1)
+000015D8 mr r29, r3
+000015DC stw r28, 0x130(r1)
+000015E0 lbz r0, 0x229(r3)
+000015E4 cmpwi r0, 0x0
+000015E8 beq .L_00001E58
+000015EC lfs f2, 0x5d8(r3)
+000015F0 lfs f0, 0x0(r30)
+000015F4 fsubs f1, f2, f1
+000015F8 fcmpo cr0, f1, f0
+000015FC stfs f1, 0x5d8(r3)
+00001600 cror eq, lt, eq
+00001604 bne .L_00001670
+00001608 bl randf__Fv
+0000160C lfs f0, 0x50(r30)
+00001610 li r0, 0x0
+00001614 lfs f2, 0x54(r30)
+00001618 li r3, 0x3
+0000161C fmuls f1, f0, f1
+00001620 lfs f0, 0x58(r30)
+00001624 stw r0, 0x5d4(r29)
+00001628 fsubs f1, f2, f1
+0000162C fadds f0, f0, f1
+00001630 stfs f0, 0x5d8(r29)
+00001634 bl randi__Fl
+00001638 cmplwi r3, 0x2
+0000163C mr r4, r3
+00001640 blt .L_00001648
+00001644 li r4, 0x2
+.L_00001648:
+00001648 addi r3, r29, 0x5c8
+0000164C addi r4, r4, 0x1bb6
+00001650 li r5, -0x1
+00001654 li r6, 0x0
+00001658 li r7, -0x1
+0000165C bl playSE__14snd3DGeneratorF5SndIDiii
+00001660 stw r3, 0x5d4(r29)
+00001664 addi r3, r31, 0x22c
+00001668 crclr cr1eq
+0000166C bl OSReport
+.L_00001670:
+00001670 lwz r0, 0x230(r29)
+00001674 cmpwi r0, 0x2e1
+00001678 beq .L_000016C8
+0000167C bge .L_00001698
+00001680 cmpwi r0, 0x0
+00001684 beq .L_000016A4
+00001688 blt .L_00001E58
+0000168C cmpwi r0, 0x2e0
+00001690 bge .L_000016B4
+00001694 b .L_00001E58
+.L_00001698:
+00001698 cmpwi r0, 0x38d
+0000169C beq .L_000016C8
+000016A0 b .L_00001E58
+.L_000016A4:
+000016A4 lwz r3, 0x208(r31)
+000016A8 li r0, 0x2e0
+000016AC stw r3, 0x22c(r29)
+000016B0 stw r0, 0x230(r29)
+.L_000016B4:
+000016B4 lwz r3, 0x20c(r31)
+000016B8 li r0, 0x2e1
+000016BC stw r3, 0x22c(r29)
+000016C0 stw r0, 0x230(r29)
+000016C4 b .L_00001E58
+.L_000016C8:
+000016C8 lwz r3, 0x1fc(r29)
+000016CC addi r4, r29, 0x294
+000016D0 lwz r6, 0x2c4(r29)
+000016D4 li r5, 0x0
+000016D8 lwz r12, 0x3c(r3)
+000016DC lwz r12, 0xd0(r12)
+000016E0 mtctr r12
+000016E4 bctrl
+000016E8 lfs f0, 0x2c0(r29)
+000016EC addi r3, r29, 0x5c8
+000016F0 lfs f1, 0x2b0(r29)
+000016F4 addi r4, r1, 0x88
+000016F8 lfs f2, 0x2a0(r29)
+000016FC stfs f2, 0x88(r1)
+00001700 stfs f1, 0x8c(r1)
+00001704 stfs f0, 0x90(r1)
+00001708 bl setPos__14snd3DGeneratorFP5Vec3f
+0000170C addi r3, r29, 0x2e0
+00001710 addi r4, r1, 0x88
+00001714 bl fn_8009EF8C
+00001718 lfs f0, 0x5c(r30)
+0000171C lfs f1, 0x88(r1)
+00001720 fcmpo cr0, f0, f1
+00001724 cror eq, lt, eq
+00001728 bne .L_0000174C
+0000172C lfs f0, 0x60(r30)
+00001730 fcmpo cr0, f1, f0
+00001734 cror eq, lt, eq
+00001738 bne .L_0000174C
+0000173C lwz r0, 0x2e8(r29)
+00001740 clrlwi r0, r0, 6
+00001744 stw r0, 0x2e8(r29)
+00001748 b .L_0000175C
+.L_0000174C:
+0000174C lwz r0, 0x2e8(r29)
+00001750 li r3, 0x1
+00001754 rlwimi r0, r3, 29, 0, 2
+00001758 stw r0, 0x2e8(r29)
+.L_0000175C:
+0000175C lfs f1, 0x8c(r1)
+00001760 lfs f0, 0x88(r1)
+00001764 stfs f1, 0x24(r1)
+00001768 stfs f0, 0x20(r1)
+0000176C stfs f0, 0x18(r1)
+00001770 stfs f1, 0x1c(r1)
+00001774 lbz r0, 0x370(r29)
+00001778 cmpwi r0, 0x0
+0000177C beq .L_00001788
+00001780 lfs f4, 0x64(r30)
+00001784 b .L_0000178C
+.L_00001788:
+00001788 lfs f4, 0x3c(r30)
+.L_0000178C:
+0000178C frsp f1, f4
+00001790 lfs f3, 0x54(r30)
+00001794 lfs f2, 0x20(r1)
+00001798 lfs f0, 0x24(r1)
+0000179C fsubs f1, f2, f1
+000017A0 stfs f4, 0x10(r1)
+000017A4 fsubs f0, f0, f3
+000017A8 stfs f3, 0x14(r1)
+000017AC stfs f1, 0x20(r1)
+000017B0 stfs f0, 0x24(r1)
+000017B4 lbz r0, 0x370(r29)
+000017B8 cmpwi r0, 0x0
+000017BC beq .L_000017C8
+000017C0 lfs f4, 0x3c(r30)
+000017C4 b .L_000017CC
+.L_000017C8:
+000017C8 lfs f4, 0x64(r30)
+.L_000017CC:
+000017CC frsp f1, f4
+000017D0 lfs f3, 0x68(r30)
+000017D4 lfs f2, 0x18(r1)
+000017D8 lis r3, g_aiMgr@ha
+000017DC lfs f0, 0x1c(r1)
+000017E0 addi r4, r1, 0x20
+000017E4 fadds f1, f2, f1
+000017E8 stfs f4, 0x8(r1)
+000017EC fadds f0, f0, f3
+000017F0 lwz r3, g_aiMgr@l(r3)
+000017F4 stfs f3, 0xc(r1)
+000017F8 addi r5, r1, 0x18
+000017FC stfs f1, 0x18(r1)
+00001800 li r6, -0x1
+00001804 li r7, 0x0
+00001808 li r8, 0x0
+0000180C stfs f0, 0x1c(r1)
+00001810 bl setDangerZone__5aiMgrFP5Vec2fP5Vec2fibb
+00001814 lwz r4, 0x294(r29)
+00001818 addi r3, r1, 0xf8
+0000181C lwz r0, 0x298(r29)
+00001820 stw r4, 0xf8(r1)
+00001824 stw r0, 0xfc(r1)
+00001828 lwz r4, 0x29c(r29)
+0000182C lwz r0, 0x2a0(r29)
+00001830 stw r4, 0x100(r1)
+00001834 stw r0, 0x104(r1)
+00001838 lwz r4, 0x2a4(r29)
+0000183C lwz r0, 0x2a8(r29)
+00001840 stw r4, 0x108(r1)
+00001844 stw r0, 0x10c(r1)
+00001848 lwz r4, 0x2ac(r29)
+0000184C lwz r0, 0x2b0(r29)
+00001850 stw r4, 0x110(r1)
+00001854 stw r0, 0x114(r1)
+00001858 lwz r4, 0x2b4(r29)
+0000185C lwz r0, 0x2b8(r29)
+00001860 stw r4, 0x118(r1)
+00001864 stw r0, 0x11c(r1)
+00001868 lwz r4, 0x2bc(r29)
+0000186C lwz r0, 0x2c0(r29)
+00001870 stw r4, 0x120(r1)
+00001874 stw r0, 0x124(r1)
+00001878 lfs f1, 0x2d0(r29)
+0000187C lfs f2, 0x2d4(r29)
+00001880 lfs f3, 0x2d8(r29)
+00001884 bl fn_8003F074
+00001888 lwz r3, 0x208(r29)
+0000188C addi r4, r1, 0xf8
+00001890 li r5, 0x0
+00001894 bl fn_27_279FC8
+00001898 lbz r0, 0x373(r29)
+0000189C cmplwi r0, 0x1
+000018A0 bne .L_000019F0
+000018A4 lbz r0, 0x414(r29)
+000018A8 cmpwi r0, 0x0
+000018AC bne .L_000019F0
+000018B0 lbz r0, 0x370(r29)
+000018B4 lfs f0, 0x2c0(r29)
+000018B8 lfs f1, 0x2b0(r29)
+000018BC cmplwi r0, 0x1
+000018C0 lfs f2, 0x2a0(r29)
+000018C4 stfs f1, 0x80(r1)
+000018C8 stfs f2, 0x7c(r1)
+000018CC stfs f0, 0x84(r1)
+000018D0 bne .L_000018F4
+000018D4 lfs f0, 0x6c(r30)
+000018D8 fcmpo cr0, f0, f2
+000018DC cror eq, lt, eq
+000018E0 bne .L_000018F4
+000018E4 lfs f0, 0x70(r30)
+000018E8 fcmpo cr0, f2, f0
+000018EC cror eq, lt, eq
+000018F0 beq .L_00001920
+.L_000018F4:
+000018F4 cmpwi r0, 0x0
+000018F8 bne .L_000019F0
+000018FC lfs f0, 0x50(r30)
+00001900 lfs f1, 0x7c(r1)
+00001904 fcmpo cr0, f0, f1
+00001908 cror eq, lt, eq
+0000190C bne .L_000019F0
+00001910 lfs f0, 0x74(r30)
+00001914 fcmpo cr0, f1, f0
+00001918 cror eq, lt, eq
+0000191C bne .L_000019F0
+.L_00001920:
+00001920 li r0, 0x1
+00001924 lfs f0, 0x0(r30)
+00001928 stb r0, 0x414(r29)
+0000192C li r6, 0x0
+00001930 lwz r3, 0x294(r29)
+00001934 addi r4, r1, 0x98
+00001938 lwz r7, 0x0(r31)
+0000193C li r5, 0x0
+00001940 lwz r0, 0x298(r29)
+00001944 stw r7, 0x418(r29)
+00001948 stw r6, 0x41c(r29)
+0000194C stw r3, 0x98(r1)
+00001950 stw r0, 0x9c(r1)
+00001954 lwz r3, 0x29c(r29)
+00001958 lwz r0, 0x2a0(r29)
+0000195C stfs f0, 0x5c(r1)
+00001960 stw r0, 0xa4(r1)
+00001964 stw r3, 0xa0(r1)
+00001968 lfs f1, 0xa4(r1)
+0000196C lwz r3, 0x2a4(r29)
+00001970 lwz r0, 0x2a8(r29)
+00001974 stfs f1, 0x58(r1)
+00001978 stw r3, 0xa8(r1)
+0000197C stw r0, 0xac(r1)
+00001980 lwz r3, 0x2ac(r29)
+00001984 lwz r0, 0x2b0(r29)
+00001988 stw r3, 0xb0(r1)
+0000198C stw r0, 0xb4(r1)
+00001990 lwz r3, 0x2b4(r29)
+00001994 lwz r0, 0x2b8(r29)
+00001998 stw r3, 0xb8(r1)
+0000199C stw r0, 0xbc(r1)
+000019A0 lwz r3, 0x2bc(r29)
+000019A4 lwz r0, 0x2c0(r29)
+000019A8 stw r0, 0xc4(r1)
+000019AC lfs f2, 0xc4(r1)
+000019B0 stw r3, 0xc0(r1)
+000019B4 stfs f1, 0xa4(r1)
+000019B8 stfs f0, 0xb4(r1)
+000019BC stfs f2, 0xc4(r1)
+000019C0 stfs f2, 0x60(r1)
+000019C4 lwz r3, 0x200(r29)
+000019C8 bl fn_27_279FC8
+000019CC lwz r3, 0x200(r29)
+000019D0 lwz r3, 0x48(r3)
+000019D4 lwz r3, 0x0(r3)
+000019D8 cmpwi r3, 0x0
+000019DC beq .L_000019E8
+000019E0 lfs f1, 0x0(r30)
+000019E4 bl setFrame__16gfModelAnimationFd
+.L_000019E8:
+000019E8 li r0, 0x0
+000019EC stb r0, 0x373(r29)
+.L_000019F0:
+000019F0 lwz r3, 0x1f8(r29)
+000019F4 addi r4, r29, 0x294
+000019F8 li r5, 0x0
+000019FC bl fn_27_279FC8
+00001A00 lwz r4, 0x294(r29)
+00001A04 addi r3, r1, 0xc8
+00001A08 lwz r0, 0x298(r29)
+00001A0C stw r4, 0xc8(r1)
+00001A10 stw r0, 0xcc(r1)
+00001A14 lwz r4, 0x29c(r29)
+00001A18 lwz r0, 0x2a0(r29)
+00001A1C stw r4, 0xd0(r1)
+00001A20 stw r0, 0xd4(r1)
+00001A24 lwz r4, 0x2a4(r29)
+00001A28 lwz r0, 0x2a8(r29)
+00001A2C stw r4, 0xd8(r1)
+00001A30 stw r0, 0xdc(r1)
+00001A34 lwz r4, 0x2ac(r29)
+00001A38 lwz r0, 0x2b0(r29)
+00001A3C stw r4, 0xe0(r1)
+00001A40 stw r0, 0xe4(r1)
+00001A44 lwz r4, 0x2b4(r29)
+00001A48 lwz r0, 0x2b8(r29)
+00001A4C stw r4, 0xe8(r1)
+00001A50 stw r0, 0xec(r1)
+00001A54 lwz r4, 0x2bc(r29)
+00001A58 lwz r0, 0x2c0(r29)
+00001A5C stw r4, 0xf0(r1)
+00001A60 stw r0, 0xf4(r1)
+00001A64 lfs f1, 0x378(r29)
+00001A68 lfs f2, 0x37c(r29)
+00001A6C lfs f3, 0x380(r29)
+00001A70 bl fn_8003F074
+00001A74 lwz r3, 0x204(r29)
+00001A78 addi r4, r1, 0xc8
+00001A7C li r5, 0x0
+00001A80 bl fn_27_279FC8
+00001A84 lwz r5, 0x204(r29)
+00001A88 lbz r0, 0x16c(r5)
+00001A8C extrwi. r0, r0, 1, 27
+00001A90 bne .L_00001AA4
+00001A94 lwz r3, 0x208(r29)
+00001A98 lbz r0, 0x16c(r3)
+00001A9C extrwi. r0, r0, 1, 27
+00001AA0 beq .L_00001B68
+.L_00001AA4:
+00001AA4 lbz r3, 0x16c(r5)
+00001AA8 li r0, 0x1
+00001AAC li r4, 0x1
+00001AB0 rlwinm r3, r3, 0, 28, 26
+00001AB4 stb r3, 0x16c(r5)
+00001AB8 lwz r5, 0x208(r29)
+00001ABC lbz r3, 0x16c(r5)
+00001AC0 rlwinm r3, r3, 0, 28, 26
+00001AC4 stb r3, 0x16c(r5)
+00001AC8 stw r0, 0x384(r29)
+00001ACC lwz r3, 0x1f8(r29)
+00001AD0 bl setMotion__8grMadeinFUl
+00001AD4 lwz r3, 0x1f8(r29)
+00001AD8 lwz r3, 0x48(r3)
+00001ADC lwz r3, 0x0(r3)
+00001AE0 cmpwi r3, 0x0
+00001AE4 beq .L_00001AF0
+00001AE8 lfs f1, 0x0(r30)
+00001AEC bl setFrame__16gfModelAnimationFd
+.L_00001AF0:
+00001AF0 lwz r3, 0x204(r29)
+00001AF4 lfs f1, 0x0(r30)
+00001AF8 lwz r3, 0xd4(r3)
+00001AFC lfs f0, 0x40(r30)
+00001B00 stfs f1, 0x5c(r3)
+00001B04 stfs f0, 0x6c(r3)
+00001B08 stfs f1, 0x7c(r3)
+00001B0C stfs f1, 0x64(r1)
+00001B10 lwz r3, 0x204(r29)
+00001B14 stfs f0, 0x68(r1)
+00001B18 stfs f1, 0x6c(r1)
+00001B1C bl endEntity__8grMadeinFv
+00001B20 lwz r3, 0x208(r29)
+00001B24 bl endEntity__8grMadeinFv
+00001B28 lfs f0, 0x78(r30)
+00001B2C li r3, 0x2
+00001B30 stfs f0, 0x2dc(r29)
+00001B34 bl randi__Fl
+00001B38 cmplwi r3, 0x1
+00001B3C mr r4, r3
+00001B40 blt .L_00001B48
+00001B44 li r4, 0x1
+.L_00001B48:
+00001B48 addi r3, r29, 0x5c8
+00001B4C addi r4, r4, 0x1bb9
+00001B50 li r5, -0x1
+00001B54 li r6, 0x0
+00001B58 li r7, -0x1
+00001B5C bl playSE__14snd3DGeneratorF5SndIDiii
+00001B60 stw r3, 0x5e0(r29)
+00001B64 b .L_00001C44
+.L_00001B68:
+00001B68 lwz r3, 0x1f8(r29)
+00001B6C lwz r3, 0x48(r3)
+00001B70 lwz r28, 0x0(r3)
+00001B74 cmpwi r28, 0x0
+00001B78 beq .L_00001C0C
+00001B7C mr r3, r28
+00001B80 bl getFrameCount__16gfModelAnimationFd
+00001B84 lis r0, 0x4330
+00001B88 stw r3, 0x12c(r1)
+00001B8C lfd f1, 0x48(r30)
+00001B90 mr r3, r28
+00001B94 stw r0, 0x128(r1)
+00001B98 lfd f0, 0x128(r1)
+00001B9C fsubs f30, f0, f1
+00001BA0 bl getFrame__16gfModelAnimationFd
+00001BA4 fcmpo cr0, f1, f30
+00001BA8 cror eq, gt, eq
+00001BAC bne .L_00001C0C
+00001BB0 lwz r3, 0x384(r29)
+00001BB4 addi r0, r3, 0x1
+00001BB8 cmplwi r0, 0x1
+00001BBC stw r0, 0x384(r29)
+00001BC0 bgt .L_00001BD4
+00001BC4 lfs f1, 0x0(r30)
+00001BC8 mr r3, r28
+00001BCC bl setFrame__16gfModelAnimationFd
+00001BD0 b .L_00001C0C
+.L_00001BD4:
+00001BD4 li r0, 0x0
+00001BD8 lwz r3, 0x1f8(r29)
+00001BDC stw r0, 0x384(r29)
+00001BE0 li r4, 0x0
+00001BE4 bl setMotion__8grMadeinFUl
+00001BE8 lwz r3, 0x1f8(r29)
+00001BEC bl startEntityAutoLoop__8grMadeinFv
+00001BF0 lwz r3, 0x1f8(r29)
+00001BF4 lwz r3, 0x48(r3)
+00001BF8 lwz r3, 0x0(r3)
+00001BFC cmpwi r3, 0x0
+00001C00 beq .L_00001C0C
+00001C04 lfs f1, 0x0(r30)
+00001C08 bl setFrame__16gfModelAnimationFd
+.L_00001C0C:
+00001C0C lfs f1, 0x0(r30)
+00001C10 lfs f0, 0x2dc(r29)
+00001C14 fcmpo cr0, f1, f0
+00001C18 bge .L_00001C44
+00001C1C fsubs f0, f0, f31
+00001C20 fcmpo cr0, f0, f1
+00001C24 stfs f0, 0x2dc(r29)
+00001C28 cror eq, lt, eq
+00001C2C bne .L_00001C44
+00001C30 stfs f1, 0x2dc(r29)
+00001C34 lwz r3, 0x204(r29)
+00001C38 bl startEntity__8grMadeinFv
+00001C3C lwz r3, 0x208(r29)
+00001C40 bl startEntity__8grMadeinFv
+.L_00001C44:
+00001C44 lfs f3, 0x2a0(r29)
+00001C48 lfs f0, 0x7c(r30)
+00001C4C fabs f4, f3
+00001C50 lfs f1, 0x2c0(r29)
+00001C54 lfs f2, 0x2b0(r29)
+00001C58 frsp f4, f4
+00001C5C stfs f3, 0x70(r1)
+00001C60 stfs f2, 0x74(r1)
+00001C64 fcmpo cr0, f4, f0
+00001C68 stfs f1, 0x78(r1)
+00001C6C bge .L_00001D38
+00001C70 lwz r3, 0x1fc(r29)
+00001C74 lwz r3, 0x48(r3)
+00001C78 lwz r28, 0x0(r3)
+00001C7C cmpwi r28, 0x0
+00001C80 beq .L_00001D24
+00001C84 mr r3, r28
+00001C88 bl getFrame__16gfModelAnimationFd
+00001C8C fmr f31, f1
+00001C90 mr r3, r28
+00001C94 bl getFrameCount__16gfModelAnimationFd
+00001C98 lis r0, 0x4330
+00001C9C stw r3, 0x12c(r1)
+00001CA0 lfd f2, 0x48(r30)
+00001CA4 stw r0, 0x128(r1)
+00001CA8 lfs f0, 0x34(r30)
+00001CAC lfd f1, 0x128(r1)
+00001CB0 fsubs f1, f1, f2
+00001CB4 fsubs f0, f1, f0
+00001CB8 fcmpo cr0, f31, f0
+00001CBC cror eq, gt, eq
+00001CC0 bne .L_00001CD8
+00001CC4 mr r3, r29
+00001CC8 addi r4, r29, 0x294
+00001CCC li r5, 0x0
+00001CD0 bl fn_53_129C
+00001CD4 b .L_00001D24
+.L_00001CD8:
+00001CD8 lwz r4, 0x5d0(r29)
+00001CDC addi r3, r31, 0x210
+00001CE0 slwi r0, r4, 2
+00001CE4 lfsx f0, r3, r0
+00001CE8 fcmpo cr0, f0, f31
+00001CEC cror eq, lt, eq
+00001CF0 bne .L_00001D24
+00001CF4 addi r3, r29, 0x5c8
+00001CF8 addi r4, r4, 0x1bb2
+00001CFC li r5, -0x1
+00001D00 li r6, 0x0
+00001D04 li r7, -0x1
+00001D08 bl playSE__14snd3DGeneratorF5SndIDiii
+00001D0C lwz r5, 0x5d0(r29)
+00001D10 addi r4, r1, 0x70
+00001D14 li r3, 0x3
+00001D18 addi r0, r5, 0x1
+00001D1C stw r0, 0x5d0(r29)
+00001D20 bl cmReqQuake__FiP5Vec3f
+.L_00001D24:
+00001D24 lwz r3, 0x224(r31)
+00001D28 li r0, 0x38d
+00001D2C stw r3, 0x22c(r29)
+00001D30 stw r0, 0x230(r29)
+00001D34 b .L_00001E58
+.L_00001D38:
+00001D38 li r0, 0x0
+00001D3C lwz r3, 0x1fc(r29)
+00001D40 stb r0, 0x229(r29)
+00001D44 li r4, 0x0
+00001D48 lwz r12, 0x3c(r3)
+00001D4C lwz r12, 0x74(r12)
+00001D50 mtctr r12
+00001D54 bctrl
+00001D58 lwz r3, 0x1fc(r29)
+00001D5C li r4, 0x0
+00001D60 bl setEnableCollisionStatus__6GroundFb
+00001D64 lwz r3, 0x1fc(r29)
+00001D68 lfs f1, 0x0(r30)
+00001D6C lwz r3, 0xd4(r3)
+00001D70 lfs f0, 0x40(r30)
+00001D74 stfs f1, 0x5c(r3)
+00001D78 stfs f0, 0x6c(r3)
+00001D7C stfs f1, 0x7c(r3)
+00001D80 lwz r3, 0x208(r29)
+00001D84 stfs f1, 0x28(r1)
+00001D88 lwz r3, 0xd4(r3)
+00001D8C stfs f0, 0x2c(r1)
+00001D90 stfs f1, 0x5c(r3)
+00001D94 stfs f0, 0x6c(r3)
+00001D98 stfs f1, 0x7c(r3)
+00001D9C stfs f1, 0x30(r1)
+00001DA0 lwz r3, 0x208(r29)
+00001DA4 stfs f1, 0x34(r1)
+00001DA8 stfs f0, 0x38(r1)
+00001DAC stfs f1, 0x3c(r1)
+00001DB0 bl endEntity__8grMadeinFv
+00001DB4 lwz r3, 0x1f8(r29)
+00001DB8 li r4, 0x0
+00001DBC lwz r12, 0x3c(r3)
+00001DC0 lwz r12, 0x74(r12)
+00001DC4 mtctr r12
+00001DC8 bctrl
+00001DCC lwz r3, 0x1f8(r29)
+00001DD0 li r4, 0x0
+00001DD4 bl setEnableCollisionStatus__6GroundFb
+00001DD8 lwz r3, 0x1f8(r29)
+00001DDC lfs f1, 0x0(r30)
+00001DE0 lwz r3, 0xd4(r3)
+00001DE4 lfs f0, 0x40(r30)
+00001DE8 stfs f1, 0x5c(r3)
+00001DEC stfs f0, 0x6c(r3)
+00001DF0 stfs f1, 0x7c(r3)
+00001DF4 lwz r3, 0x204(r29)
+00001DF8 stfs f1, 0x40(r1)
+00001DFC lwz r3, 0xd4(r3)
+00001E00 stfs f0, 0x44(r1)
+00001E04 stfs f1, 0x5c(r3)
+00001E08 stfs f0, 0x6c(r3)
+00001E0C stfs f1, 0x7c(r3)
+00001E10 stfs f1, 0x48(r1)
+00001E14 lwz r3, 0x204(r29)
+00001E18 stfs f1, 0x4c(r1)
+00001E1C stfs f0, 0x50(r1)
+00001E20 stfs f1, 0x54(r1)
+00001E24 bl endEntity__8grMadeinFv
+00001E28 lwz r0, 0x2e8(r29)
+00001E2C li r3, 0x1
+00001E30 rlwimi r0, r3, 29, 0, 2
+00001E34 lwz r4, 0x5dc(r29)
+00001E38 stw r0, 0x2e8(r29)
+00001E3C mr r3, r29
+00001E40 lfs f1, 0x80(r30)
+00001E44 bl stopSeBasic__7stMeleeFif
+00001E48 lwz r3, 0x228(r31)
+00001E4C li r0, 0x398
+00001E50 stw r3, 0x22c(r29)
+00001E54 stw r0, 0x230(r29)
+.L_00001E58:
+00001E58 psq_l f31, 0x158(r1), 0, qr0
+00001E5C lfd f31, 0x150(r1)
+00001E60 psq_l f30, 0x148(r1), 0, qr0
+00001E64 lfd f30, 0x140(r1)
+00001E68 lwz r31, 0x13c(r1)
+00001E6C lwz r30, 0x138(r1)
+00001E70 lwz r29, 0x134(r1)
+00001E74 lwz r0, 0x164(r1)
+00001E78 lwz r28, 0x130(r1)
+00001E7C mtlr r0
+00001E80 addi r1, r1, 0x160
+00001E84 blr
+.endfn fn_53_159C
+
+# .text:0x1E18 | 0x1E88 | size: 0x5A4
+.fn fn_53_1E88, global
+00001E88 stwu r1, -0x60(r1)
+00001E8C mflr r0
+00001E90 stw r0, 0x64(r1)
+00001E94 stfd f31, 0x50(r1)
+00001E98 psq_st f31, 0x58(r1), 0, qr0
+00001E9C stfd f30, 0x40(r1)
+00001EA0 psq_st f30, 0x48(r1), 0, qr0
+00001EA4 addi r11, r1, 0x40
+00001EA8 bl _savegpr_25
+00001EAC lbz r0, 0x228(r3)
+00001EB0 lis r30, lbl_53_rodata_0@ha
+00001EB4 lis r31, lbl_53_data_0@ha
+00001EB8 fmr f31, f1
+00001EBC cmpwi r0, 0x0
+00001EC0 mr r29, r3
+00001EC4 addi r30, r30, lbl_53_rodata_0@l
+00001EC8 addi r31, r31, lbl_53_data_0@l
+00001ECC bne .L_00002404
+00001ED0 lwz r0, 0x368(r3)
+00001ED4 cmpwi r0, 0x3d5
+00001ED8 beq .L_0000201C
+00001EDC bge .L_00001F10
+00001EE0 cmpwi r0, 0x3bf
+00001EE4 beq .L_00001F9C
+00001EE8 bge .L_00001F04
+00001EEC cmpwi r0, 0x3ab
+00001EF0 beq .L_00001F50
+00001EF4 bge .L_00002404
+00001EF8 cmpwi r0, 0x0
+00001EFC beq .L_00001F40
+00001F00 b .L_00002404
+.L_00001F04:
+00001F04 cmpwi r0, 0x3cb
+00001F08 beq .L_00001FEC
+00001F0C b .L_00002404
+.L_00001F10:
+00001F10 cmpwi r0, 0x479
+00001F14 beq .L_000023B4
+00001F18 bge .L_00001F34
+00001F1C cmpwi r0, 0x474
+00001F20 beq .L_0000236C
+00001F24 bge .L_00002404
+00001F28 cmpwi r0, 0x3ed
+00001F2C beq .L_000020C0
+00001F30 b .L_00002404
+.L_00001F34:
+00001F34 cmpwi r0, 0x489
+00001F38 beq .L_000023B4
+00001F3C b .L_00002404
+.L_00001F40:
+00001F40 lwz r4, 0x24c(r31)
+00001F44 li r0, 0x3ab
+00001F48 stw r4, 0x364(r3)
+00001F4C stw r0, 0x368(r3)
+.L_00001F50:
+00001F50 lwz r4, 0x1d8(r3)
+00001F54 lfs f0, 0x0(r4)
+00001F58 stfs f0, 0x36c(r3)
+.L_00001F5C:
+00001F5C bl randf__Fv
+00001F60 lfs f0, 0x34(r30)
+00001F64 lwz r3, 0x1d8(r29)
+00001F68 fmuls f1, f0, f1
+00001F6C lfs f0, 0xc(r3)
+00001F70 fcmpo cr0, f0, f1
+00001F74 blt .L_00001FEC
+00001F78 b .L_00001F9C
+.L_00001F7C:
+00001F7C lfs f0, 0x36c(r29)
+00001F80 li r0, 0x3bf
+00001F84 fsubs f0, f0, f31
+00001F88 stfs f0, 0x36c(r29)
+00001F8C lwz r3, 0x250(r31)
+00001F90 stw r3, 0x364(r29)
+00001F94 stw r0, 0x368(r29)
+00001F98 b .L_00002404
+.L_00001F9C:
+00001F9C lfs f1, 0x0(r30)
+00001FA0 lfs f0, 0x36c(r29)
+00001FA4 fcmpo cr0, f1, f0
+00001FA8 blt .L_00001F7C
+00001FAC lwz r3, 0x1d8(r29)
+00001FB0 lfs f1, 0x8(r3)
+00001FB4 lfs f0, 0x4(r3)
+00001FB8 fsubs f30, f1, f0
+00001FBC bl randf__Fv
+00001FC0 lwz r3, 0x1d8(r29)
+00001FC4 fmuls f1, f30, f1
+00001FC8 lfs f0, 0x4(r3)
+00001FCC fadds f0, f0, f1
+00001FD0 stfs f0, 0x36c(r29)
+00001FD4 b .L_00001F5C
+.L_00001FD8:
+00001FD8 lwz r3, 0x254(r31)
+00001FDC li r0, 0x3cb
+00001FE0 stw r3, 0x364(r29)
+00001FE4 stw r0, 0x368(r29)
+00001FE8 b .L_00002404
+.L_00001FEC:
+00001FEC lbz r0, 0x4b0(r29)
+00001FF0 cmpwi r0, 0x0
+00001FF4 bne .L_00001FD8
+00001FF8 b .L_0000201C
+.L_00001FFC:
+00001FFC lfs f0, 0x36c(r29)
+00002000 li r0, 0x3d5
+00002004 fsubs f0, f0, f31
+00002008 stfs f0, 0x36c(r29)
+0000200C lwz r3, 0x258(r31)
+00002010 stw r3, 0x364(r29)
+00002014 stw r0, 0x368(r29)
+00002018 b .L_00002404
+.L_0000201C:
+0000201C lwz r3, 0x1d8(r29)
+00002020 lfs f0, 0x36c(r29)
+00002024 lfs f1, 0x10(r3)
+00002028 fcmpo cr0, f1, f0
+0000202C blt .L_00001FFC
+00002030 lbz r3, 0x370(r29)
+00002034 lbz r0, 0x371(r29)
+00002038 cmplw r3, r0
+0000203C bne .L_00002050
+00002040 cntlzw r0, r3
+00002044 srwi r0, r0, 5
+00002048 stb r0, 0x370(r29)
+0000204C b .L_00002078
+.L_00002050:
+00002050 stb r3, 0x371(r29)
+00002054 bl randf__Fv
+00002058 lfs f2, 0x34(r30)
+0000205C lfs f0, 0x80(r30)
+00002060 fmuls f1, f2, f1
+00002064 fcmpo cr0, f1, f0
+00002068 cror eq, lt, eq
+0000206C mfcr r0
+00002070 extrwi r0, r0, 1, 2
+00002074 stb r0, 0x370(r29)
+.L_00002078:
+00002078 lbz r0, 0x370(r29)
+0000207C mr r3, r29
+00002080 li r4, 0x1bb0
+00002084 cmpwi r0, 0x0
+00002088 beq .L_00002094
+0000208C lfs f1, 0x84(r30)
+00002090 b .L_00002098
+.L_00002094:
+00002094 lfs f1, 0x88(r30)
+.L_00002098:
+00002098 bl playSeBasic__7stMeleeF5SndIDf
+0000209C b .L_000020C0
+.L_000020A0:
+000020A0 lfs f0, 0x36c(r29)
+000020A4 li r0, 0x3ed
+000020A8 fsubs f0, f0, f31
+000020AC stfs f0, 0x36c(r29)
+000020B0 lwz r3, 0x25c(r31)
+000020B4 stw r3, 0x364(r29)
+000020B8 stw r0, 0x368(r29)
+000020BC b .L_00002404
+.L_000020C0:
+000020C0 lfs f1, 0x0(r30)
+000020C4 lfs f0, 0x36c(r29)
+000020C8 fcmpo cr0, f1, f0
+000020CC blt .L_000020A0
+000020D0 lwz r3, 0x1d8(r29)
+000020D4 lfs f2, 0x14(r3)
+000020D8 lfs f0, 0x18(r3)
+000020DC lfs f1, 0x1c(r3)
+000020E0 fadds f2, f2, f0
+000020E4 lfs f0, 0x20(r3)
+000020E8 fadds f1, f1, f2
+000020EC fadds f30, f0, f1
+000020F0 bl randf__Fv
+000020F4 lwz r3, 0x1d8(r29)
+000020F8 fmuls f1, f30, f1
+000020FC lfs f0, 0x14(r3)
+00002100 fcmpo cr0, f1, f0
+00002104 cror eq, lt, eq
+00002108 bne .L_00002118
+0000210C li r0, 0x0
+00002110 stb r0, 0x372(r29)
+00002114 b .L_00002160
+.L_00002118:
+00002118 fsubs f1, f1, f0
+0000211C lfs f0, 0x18(r3)
+00002120 fcmpo cr0, f1, f0
+00002124 cror eq, lt, eq
+00002128 bne .L_00002138
+0000212C li r0, 0x1
+00002130 stb r0, 0x372(r29)
+00002134 b .L_00002160
+.L_00002138:
+00002138 fsubs f1, f1, f0
+0000213C lfs f0, 0x1c(r3)
+00002140 fcmpo cr0, f1, f0
+00002144 cror eq, lt, eq
+00002148 bne .L_00002158
+0000214C li r0, 0x0
+00002150 stb r0, 0x372(r29)
+00002154 b .L_00002160
+.L_00002158:
+00002158 li r0, 0x1
+0000215C stb r0, 0x372(r29)
+.L_00002160:
+00002160 lbz r3, 0x374(r29)
+00002164 cmpwi r3, 0x0
+00002168 bne .L_00002188
+0000216C lbz r0, 0x375(r29)
+00002170 cmpwi r0, 0x0
+00002174 bne .L_00002188
+00002178 li r0, 0x1
+0000217C stb r0, 0x374(r29)
+00002180 stb r0, 0x373(r29)
+00002184 b .L_000021B8
+.L_00002188:
+00002188 stb r3, 0x375(r29)
+0000218C bl randf__Fv
+00002190 lfs f0, 0x68(r30)
+00002194 lwz r3, 0x1d8(r29)
+00002198 fmuls f1, f0, f1
+0000219C lfs f0, 0x24(r3)
+000021A0 fcmpo cr0, f1, f0
+000021A4 cror eq, lt, eq
+000021A8 mfcr r0
+000021AC extrwi r0, r0, 1, 2
+000021B0 stb r0, 0x374(r29)
+000021B4 stb r0, 0x373(r29)
+.L_000021B8:
+000021B8 addi r3, r29, 0x234
+000021BC bl setIdentity__6MatrixFv
+000021C0 lbz r0, 0x370(r29)
+000021C4 cmpwi r0, 0x0
+000021C8 beq .L_000021EC
+000021CC lfs f1, 0x8c(r30)
+000021D0 addi r3, r29, 0x234
+000021D4 bl fn_8003E918
+000021D8 lwz r3, 0x208(r29)
+000021DC lfs f1, 0x90(r30)
+000021E0 lwz r3, 0x14c(r3)
+000021E4 bl fn_27_263984
+000021E8 b .L_000021FC
+.L_000021EC:
+000021EC lwz r3, 0x208(r29)
+000021F0 lfs f1, 0x34(r30)
+000021F4 lwz r3, 0x14c(r3)
+000021F8 bl fn_27_263984
+.L_000021FC:
+000021FC lfs f2, 0x0(r30)
+00002200 addi r3, r29, 0x234
+00002204 lfs f1, 0x94(r30)
+00002208 fmr f3, f2
+0000220C stfs f2, 0xc(r1)
+00002210 stfs f1, 0x8(r1)
+00002214 stfs f2, 0x10(r1)
+00002218 bl fn_8003F074
+0000221C lbz r0, 0x372(r29)
+00002220 cmpwi r0, 0x0
+00002224 beq .L_00002340
+00002228 lwz r25, 0x234(r29)
+0000222C li r4, 0x1
+00002230 lwz r26, 0x238(r29)
+00002234 li r0, 0x0
+00002238 lwz r27, 0x23c(r29)
+0000223C lwz r28, 0x240(r29)
+00002240 lwz r12, 0x244(r29)
+00002244 lwz r11, 0x248(r29)
+00002248 lwz r10, 0x24c(r29)
+0000224C lwz r9, 0x250(r29)
+00002250 lwz r8, 0x254(r29)
+00002254 lwz r7, 0x258(r29)
+00002258 lwz r6, 0x25c(r29)
+0000225C lwz r5, 0x260(r29)
+00002260 stw r25, 0x398(r29)
+00002264 lwz r3, 0x1f4(r29)
+00002268 stw r26, 0x39c(r29)
+0000226C stw r27, 0x3a0(r29)
+00002270 stw r28, 0x3a4(r29)
+00002274 stw r12, 0x3a8(r29)
+00002278 stw r11, 0x3ac(r29)
+0000227C stw r10, 0x3b0(r29)
+00002280 stw r9, 0x3b4(r29)
+00002284 stw r8, 0x3b8(r29)
+00002288 stw r7, 0x3bc(r29)
+0000228C stw r6, 0x3c0(r29)
+00002290 stw r5, 0x3c4(r29)
+00002294 stw r25, 0x3c8(r29)
+00002298 stw r26, 0x3cc(r29)
+0000229C stw r27, 0x3d0(r29)
+000022A0 stw r28, 0x3d4(r29)
+000022A4 stw r12, 0x3d8(r29)
+000022A8 stw r11, 0x3dc(r29)
+000022AC stw r10, 0x3e0(r29)
+000022B0 stw r9, 0x3e4(r29)
+000022B4 stw r8, 0x3e8(r29)
+000022B8 stw r7, 0x3ec(r29)
+000022BC stw r6, 0x3f0(r29)
+000022C0 stw r5, 0x3f4(r29)
+000022C4 stb r4, 0x388(r29)
+000022C8 lwz r4, 0x0(r31)
+000022CC stw r4, 0x38c(r29)
+000022D0 stw r0, 0x390(r29)
+000022D4 bl startEntity__8grMadeinFv
+000022D8 lwz r3, 0x1f4(r29)
+000022DC li r4, 0x1
+000022E0 lwz r12, 0x3c(r3)
+000022E4 lwz r12, 0x74(r12)
+000022E8 mtctr r12
+000022EC bctrl
+000022F0 lwz r3, 0x20c(r29)
+000022F4 bl startEntity__8grMadeinFv
+000022F8 lwz r3, 0x1f4(r29)
+000022FC addi r4, r29, 0x398
+00002300 li r5, 0x0
+00002304 bl fn_27_279FC8
+00002308 lwz r3, 0x1f4(r29)
+0000230C li r4, 0x0
+00002310 bl setMotion__8grMadeinFUl
+00002314 lwz r3, 0x1f4(r29)
+00002318 lwz r3, 0x48(r3)
+0000231C lwz r3, 0x0(r3)
+00002320 cmpwi r3, 0x0
+00002324 beq .L_00002330
+00002328 lfs f1, 0x0(r30)
+0000232C bl setFrame__16gfModelAnimationFd
+.L_00002330:
+00002330 lwz r3, 0x20c(r29)
+00002334 addi r4, r29, 0x398
+00002338 li r5, 0x0
+0000233C bl fn_27_279FC8
+.L_00002340:
+00002340 lfs f0, 0x98(r30)
+00002344 stfs f0, 0x394(r29)
+00002348 b .L_0000236C
+.L_0000234C:
+0000234C lfs f0, 0x394(r29)
+00002350 li r0, 0x474
+00002354 fsubs f0, f0, f31
+00002358 stfs f0, 0x394(r29)
+0000235C lwz r3, 0x260(r31)
+00002360 stw r3, 0x364(r29)
+00002364 stw r0, 0x368(r29)
+00002368 b .L_00002404
+.L_0000236C:
+0000236C lfs f1, 0x0(r30)
+00002370 lfs f0, 0x394(r29)
+00002374 fcmpo cr0, f1, f0
+00002378 blt .L_0000234C
+0000237C mr r3, r29
+00002380 addi r4, r29, 0x234
+00002384 li r5, 0x1
+00002388 bl fn_53_129C
+0000238C lwz r3, 0x264(r31)
+00002390 li r0, 0x479
+00002394 stw r3, 0x364(r29)
+00002398 stw r0, 0x368(r29)
+0000239C b .L_00002404
+.L_000023A0:
+000023A0 lwz r4, 0x268(r31)
+000023A4 li r0, 0x489
+000023A8 stw r4, 0x364(r3)
+000023AC stw r0, 0x368(r3)
+000023B0 b .L_00002404
+.L_000023B4:
+000023B4 lbz r0, 0x229(r3)
+000023B8 cmpwi r0, 0x0
+000023BC bne .L_000023A0
+000023C0 lbz r0, 0x372(r3)
+000023C4 cmpwi r0, 0x0
+000023C8 beq .L_000023D8
+000023CC lbz r0, 0x388(r3)
+000023D0 cmpwi r0, 0x0
+000023D4 bne .L_000023A0
+.L_000023D8:
+000023D8 lwz r3, 0x1d8(r3)
+000023DC lfs f1, 0x8(r3)
+000023E0 lfs f0, 0x4(r3)
+000023E4 fsubs f30, f1, f0
+000023E8 bl randf__Fv
+000023EC lwz r3, 0x1d8(r29)
+000023F0 fmuls f1, f30, f1
+000023F4 lfs f0, 0x4(r3)
+000023F8 fadds f0, f0, f1
+000023FC stfs f0, 0x36c(r29)
+00002400 b .L_00001F5C
+.L_00002404:
+00002404 psq_l f31, 0x58(r1), 0, qr0
+00002408 lfd f31, 0x50(r1)
+0000240C psq_l f30, 0x48(r1), 0, qr0
+00002410 addi r11, r1, 0x40
+00002414 lfd f30, 0x40(r1)
+00002418 bl _restgpr_25
+0000241C lwz r0, 0x64(r1)
+00002420 mtlr r0
+00002424 addi r1, r1, 0x60
+00002428 blr
+.endfn fn_53_1E88
+
+# .text:0x23BC | 0x242C | size: 0x9E0
+.fn fn_53_242C, global
+0000242C stwu r1, -0x110(r1)
+00002430 mflr r0
+00002434 stw r0, 0x114(r1)
+00002438 stfd f31, 0x100(r1)
+0000243C psq_st f31, 0x108(r1), 0, qr0
+00002440 stfd f30, 0xf0(r1)
+00002444 psq_st f30, 0xf8(r1), 0, qr0
+00002448 addi r11, r1, 0xf0
+0000244C bl _savegpr_27
+00002450 lbz r0, 0x388(r3)
+00002454 lis r30, lbl_53_rodata_0@ha
+00002458 lis r31, lbl_53_data_0@ha
+0000245C fmr f31, f1
+00002460 cmpwi r0, 0x0
+00002464 mr r29, r3
+00002468 addi r30, r30, lbl_53_rodata_0@l
+0000246C addi r31, r31, lbl_53_data_0@l
+00002470 beq .L_00002DE4
+00002474 lwz r3, 0x1f4(r3)
+00002478 addi r4, r29, 0x3c8
+0000247C lwz r6, 0x3f8(r29)
+00002480 li r5, 0x0
+00002484 lwz r12, 0x3c(r3)
+00002488 lwz r12, 0xd0(r12)
+0000248C mtctr r12
+00002490 bctrl
+00002494 lfs f0, 0x3f4(r29)
+00002498 addi r3, r29, 0x5fc
+0000249C lfs f1, 0x3e4(r29)
+000024A0 addi r4, r1, 0x8c
+000024A4 lfs f2, 0x3d4(r29)
+000024A8 stfs f2, 0x8c(r1)
+000024AC stfs f1, 0x90(r1)
+000024B0 stfs f0, 0x94(r1)
+000024B4 bl setPos__14snd3DGeneratorFP5Vec3f
+000024B8 lwz r0, 0x390(r29)
+000024BC cmpwi r0, 0x55b
+000024C0 beq .L_00002908
+000024C4 bge .L_00002514
+000024C8 cmpwi r0, 0x52a
+000024CC beq .L_00002588
+000024D0 bge .L_000024FC
+000024D4 cmpwi r0, 0x4da
+000024D8 beq .L_00002560
+000024DC bge .L_000024EC
+000024E0 cmpwi r0, 0x0
+000024E4 beq .L_00002550
+000024E8 b .L_00002DE4
+.L_000024EC:
+000024EC cmpwi r0, 0x4dc
+000024F0 beq .L_00002588
+000024F4 bge .L_00002DE4
+000024F8 b .L_00002574
+.L_000024FC:
+000024FC cmpwi r0, 0x54f
+00002500 beq .L_00002908
+00002504 bge .L_00002DE4
+00002508 cmpwi r0, 0x540
+0000250C beq .L_000028A0
+00002510 b .L_00002DE4
+.L_00002514:
+00002514 cmpwi r0, 0x5a2
+00002518 beq .L_00002B4C
+0000251C bge .L_00002538
+00002520 cmpwi r0, 0x58e
+00002524 beq .L_00002B4C
+00002528 bge .L_00002DE4
+0000252C cmpwi r0, 0x569
+00002530 beq .L_00002A58
+00002534 b .L_00002DE4
+.L_00002538:
+00002538 cmpwi r0, 0x5cd
+0000253C beq .L_00002CAC
+00002540 bge .L_00002DE4
+00002544 cmpwi r0, 0x5b8
+00002548 beq .L_00002CAC
+0000254C b .L_00002DE4
+.L_00002550:
+00002550 lwz r3, 0x26c(r31)
+00002554 li r0, 0x4da
+00002558 stw r3, 0x38c(r29)
+0000255C stw r0, 0x390(r29)
+.L_00002560:
+00002560 lwz r3, 0x270(r31)
+00002564 li r0, 0x4db
+00002568 stw r3, 0x38c(r29)
+0000256C stw r0, 0x390(r29)
+00002570 b .L_00002DE4
+.L_00002574:
+00002574 lwz r3, 0x274(r31)
+00002578 li r0, 0x4dc
+0000257C stw r3, 0x38c(r29)
+00002580 stw r0, 0x390(r29)
+00002584 b .L_00002DE4
+.L_00002588:
+00002588 lwz r4, 0x20c(r29)
+0000258C lbz r3, 0x16c(r4)
+00002590 extrwi. r0, r3, 1, 27
+00002594 beq .L_000025BC
+00002598 rlwinm r0, r3, 0, 28, 26
+0000259C addi r3, r29, 0x5fc
+000025A0 stb r0, 0x16c(r4)
+000025A4 li r4, 0x1bc2
+000025A8 li r5, -0x1
+000025AC li r6, 0x0
+000025B0 li r7, -0x1
+000025B4 bl playSE__14snd3DGeneratorF5SndIDiii
+000025B8 b .L_00002838
+.L_000025BC:
+000025BC lfs f2, 0x3e4(r29)
+000025C0 lfs f0, 0x4(r30)
+000025C4 lfs f1, 0x3f4(r29)
+000025C8 lfs f3, 0x3d4(r29)
+000025CC fcmpo cr0, f0, f2
+000025D0 stfs f3, 0x80(r1)
+000025D4 stfs f2, 0x84(r1)
+000025D8 stfs f1, 0x88(r1)
+000025DC cror eq, lt, eq
+000025E0 bne .L_000026F0
+000025E4 lfd f0, 0xa0(r30)
+000025E8 fcmpo cr0, f0, f3
+000025EC cror eq, lt, eq
+000025F0 bne .L_000026F0
+000025F4 lfs f0, 0xa8(r30)
+000025F8 fcmpo cr0, f3, f0
+000025FC cror eq, lt, eq
+00002600 bne .L_000026F0
+00002604 lfs f0, 0xac(r30)
+00002608 addi r3, r1, 0x80
+0000260C lfs f1, 0x0(r30)
+00002610 addi r4, r1, 0x74
+00002614 fadds f2, f2, f0
+00002618 lfs f0, 0xb0(r30)
+0000261C stfs f1, 0x88(r1)
+00002620 addi r5, r1, 0x68
+00002624 addi r6, r1, 0x5c
+00002628 li r7, 0x0
+0000262C stfs f2, 0x84(r1)
+00002630 li r8, 0x0
+00002634 li r9, 0x0
+00002638 li r10, 0x1
+0000263C stfs f1, 0x74(r1)
+00002640 stfs f0, 0x78(r1)
+00002644 stfs f1, 0x7c(r1)
+00002648 bl stRayCheck__FP5Vec3fP5Vec3fP5Vec3fP5Vec3fbP11grCollisionbUc
+0000264C cmpwi r3, 0x0
+00002650 bne .L_000026E8
+00002654 lbz r0, 0x389(r29)
+00002658 cmpwi r0, 0x0
+0000265C beq .L_000026F0
+00002660 lbz r0, 0x370(r29)
+00002664 cmplwi r0, 0x1
+00002668 bne .L_00002680
+0000266C lfs f1, 0x0(r30)
+00002670 lfs f0, 0x80(r1)
+00002674 fcmpo cr0, f1, f0
+00002678 cror eq, lt, eq
+0000267C beq .L_0000269C
+.L_00002680:
+00002680 cmpwi r0, 0x0
+00002684 bne .L_000026CC
+00002688 lfs f1, 0x80(r1)
+0000268C lfs f0, 0x0(r30)
+00002690 fcmpo cr0, f1, f0
+00002694 cror eq, lt, eq
+00002698 bne .L_000026CC
+.L_0000269C:
+0000269C lfs f1, 0x0(r30)
+000026A0 addi r3, r29, 0x5fc
+000026A4 lfs f0, 0x34(r30)
+000026A8 li r4, 0x1bc2
+000026AC stfs f1, 0x400(r29)
+000026B0 li r5, -0x1
+000026B4 li r6, 0x0
+000026B8 li r7, -0x1
+000026BC stfs f0, 0x404(r29)
+000026C0 stfs f1, 0x408(r29)
+000026C4 bl playSE__14snd3DGeneratorF5SndIDiii
+000026C8 b .L_00002AF8
+.L_000026CC:
+000026CC addi r3, r29, 0x5fc
+000026D0 li r4, 0x1bc2
+000026D4 li r5, -0x1
+000026D8 li r6, 0x0
+000026DC li r7, -0x1
+000026E0 bl playSE__14snd3DGeneratorF5SndIDiii
+000026E4 b .L_00002A18
+.L_000026E8:
+000026E8 li r0, 0x1
+000026EC stb r0, 0x389(r29)
+.L_000026F0:
+000026F0 lwz r3, 0x20c(r29)
+000026F4 addi r4, r29, 0x3c8
+000026F8 li r5, 0x0
+000026FC bl fn_27_279FC8
+00002700 lfs f3, 0x3d4(r29)
+00002704 lfs f1, 0x3f4(r29)
+00002708 fabs f4, f3
+0000270C stfs f3, 0x50(r1)
+00002710 lfs f2, 0x3e4(r29)
+00002714 lfs f0, 0x7c(r30)
+00002718 frsp f3, f4
+0000271C stfs f2, 0x54(r1)
+00002720 stfs f1, 0x58(r1)
+00002724 fcmpo cr0, f3, f0
+00002728 bge .L_00002D44
+0000272C lwz r3, 0x1f4(r29)
+00002730 lwz r3, 0x48(r3)
+00002734 lwz r27, 0x0(r3)
+00002738 cmpwi r27, 0x0
+0000273C beq .L_00002824
+00002740 mr r3, r27
+00002744 bl getFrameCount__16gfModelAnimationFd
+00002748 lis r0, 0x4330
+0000274C stw r3, 0xcc(r1)
+00002750 lfd f1, 0x48(r30)
+00002754 mr r3, r27
+00002758 stw r0, 0xc8(r1)
+0000275C lfd f0, 0xc8(r1)
+00002760 fsubs f30, f0, f1
+00002764 bl getFrame__16gfModelAnimationFd
+00002768 fcmpo cr0, f1, f30
+0000276C cror eq, gt, eq
+00002770 bne .L_00002824
+00002774 lwz r28, 0x3c8(r29)
+00002778 lwz r27, 0x3cc(r29)
+0000277C lwz r12, 0x3d0(r29)
+00002780 lwz r11, 0x3d4(r29)
+00002784 lwz r10, 0x3d8(r29)
+00002788 lwz r9, 0x3dc(r29)
+0000278C lwz r8, 0x3e0(r29)
+00002790 lwz r7, 0x3e4(r29)
+00002794 lwz r6, 0x3e8(r29)
+00002798 lwz r5, 0x3ec(r29)
+0000279C lwz r4, 0x3f0(r29)
+000027A0 lwz r0, 0x3f4(r29)
+000027A4 stw r28, 0x398(r29)
+000027A8 lwz r3, 0x20c(r29)
+000027AC stw r27, 0x39c(r29)
+000027B0 stw r12, 0x3a0(r29)
+000027B4 stw r11, 0x3a4(r29)
+000027B8 stw r10, 0x3a8(r29)
+000027BC stw r9, 0x3ac(r29)
+000027C0 stw r8, 0x3b0(r29)
+000027C4 stw r7, 0x3b4(r29)
+000027C8 stw r6, 0x3b8(r29)
+000027CC stw r5, 0x3bc(r29)
+000027D0 stw r4, 0x3c0(r29)
+000027D4 stw r0, 0x3c4(r29)
+000027D8 bl startEntity__8grMadeinFv
+000027DC lwz r3, 0x1f4(r29)
+000027E0 addi r4, r29, 0x398
+000027E4 li r5, 0x0
+000027E8 bl fn_27_279FC8
+000027EC lwz r3, 0x1f4(r29)
+000027F0 li r4, 0x0
+000027F4 bl setMotion__8grMadeinFUl
+000027F8 lwz r3, 0x1f4(r29)
+000027FC lwz r3, 0x48(r3)
+00002800 lwz r3, 0x0(r3)
+00002804 cmpwi r3, 0x0
+00002808 beq .L_00002814
+0000280C lfs f1, 0x0(r30)
+00002810 bl setFrame__16gfModelAnimationFd
+.L_00002814:
+00002814 lwz r3, 0x20c(r29)
+00002818 addi r4, r29, 0x398
+0000281C li r5, 0x0
+00002820 bl fn_27_279FC8
+.L_00002824:
+00002824 lwz r3, 0x278(r31)
+00002828 li r0, 0x52a
+0000282C stw r3, 0x38c(r29)
+00002830 stw r0, 0x390(r29)
+00002834 b .L_00002DE4
+.L_00002838:
+00002838 lwz r3, 0x20c(r29)
+0000283C lfs f0, 0x3fc(r29)
+00002840 lwz r4, 0x160(r3)
+00002844 lfs f1, 0x28(r4)
+00002848 fsubs f0, f0, f1
+0000284C stfs f0, 0x3fc(r29)
+00002850 bl endEntity__8grMadeinFv
+00002854 lfs f1, 0x3fc(r29)
+00002858 lfs f0, 0x0(r30)
+0000285C fcmpo cr0, f1, f0
+00002860 cror eq, lt, eq
+00002864 beq .L_00002A18
+00002868 lfs f0, 0xc(r30)
+0000286C li r4, 0x1
+00002870 lwz r3, 0x1f4(r29)
+00002874 stfs f0, 0x410(r29)
+00002878 bl fn_27_279228
+0000287C b .L_000028A0
+.L_00002880:
+00002880 lfs f0, 0x410(r29)
+00002884 li r0, 0x540
+00002888 fsubs f0, f0, f31
+0000288C stfs f0, 0x410(r29)
+00002890 lwz r3, 0x27c(r31)
+00002894 stw r3, 0x38c(r29)
+00002898 stw r0, 0x390(r29)
+0000289C b .L_00002DE4
+.L_000028A0:
+000028A0 lfs f1, 0x0(r30)
+000028A4 lfs f0, 0x410(r29)
+000028A8 fcmpo cr0, f1, f0
+000028AC blt .L_00002880
+000028B0 lwz r3, 0x1f4(r29)
+000028B4 li r4, 0x0
+000028B8 bl fn_27_279228
+000028BC lwz r3, 0x1f4(r29)
+000028C0 addi r4, r29, 0x3c8
+000028C4 li r5, 0x0
+000028C8 bl fn_27_279FC8
+000028CC lwz r3, 0x1f4(r29)
+000028D0 li r4, 0x2
+000028D4 bl setMotion__8grMadeinFUl
+000028D8 lwz r3, 0x1f4(r29)
+000028DC lwz r3, 0x48(r3)
+000028E0 lwz r3, 0x0(r3)
+000028E4 cmpwi r3, 0x0
+000028E8 beq .L_000028F4
+000028EC lfs f1, 0x0(r30)
+000028F0 bl setFrame__16gfModelAnimationFd
+.L_000028F4:
+000028F4 lwz r3, 0x280(r31)
+000028F8 li r0, 0x54f
+000028FC stw r3, 0x38c(r29)
+00002900 stw r0, 0x390(r29)
+00002904 b .L_00002DE4
+.L_00002908:
+00002908 lwz r3, 0x1f4(r29)
+0000290C lwz r3, 0x48(r3)
+00002910 lwz r27, 0x0(r3)
+00002914 cmpwi r27, 0x0
+00002918 beq .L_00002A04
+0000291C mr r3, r27
+00002920 bl getFrameCount__16gfModelAnimationFd
+00002924 lis r0, 0x4330
+00002928 stw r3, 0xcc(r1)
+0000292C lfd f1, 0x48(r30)
+00002930 mr r3, r27
+00002934 stw r0, 0xc8(r1)
+00002938 lfd f0, 0xc8(r1)
+0000293C fsubs f30, f0, f1
+00002940 bl getFrame__16gfModelAnimationFd
+00002944 fcmpo cr0, f1, f30
+00002948 cror eq, gt, eq
+0000294C bne .L_00002A04
+00002950 lwz r27, 0x3c8(r29)
+00002954 lwz r28, 0x3cc(r29)
+00002958 lwz r12, 0x3d0(r29)
+0000295C lwz r11, 0x3d4(r29)
+00002960 lwz r10, 0x3d8(r29)
+00002964 lwz r9, 0x3dc(r29)
+00002968 lwz r8, 0x3e0(r29)
+0000296C lwz r7, 0x3e4(r29)
+00002970 lwz r6, 0x3e8(r29)
+00002974 lwz r5, 0x3ec(r29)
+00002978 lwz r4, 0x3f0(r29)
+0000297C lwz r0, 0x3f4(r29)
+00002980 stw r27, 0x398(r29)
+00002984 lwz r3, 0x20c(r29)
+00002988 stw r28, 0x39c(r29)
+0000298C stw r12, 0x3a0(r29)
+00002990 stw r11, 0x3a4(r29)
+00002994 stw r10, 0x3a8(r29)
+00002998 stw r9, 0x3ac(r29)
+0000299C stw r8, 0x3b0(r29)
+000029A0 stw r7, 0x3b4(r29)
+000029A4 stw r6, 0x3b8(r29)
+000029A8 stw r5, 0x3bc(r29)
+000029AC stw r4, 0x3c0(r29)
+000029B0 stw r0, 0x3c4(r29)
+000029B4 bl startEntity__8grMadeinFv
+000029B8 lwz r3, 0x1f4(r29)
+000029BC addi r4, r29, 0x398
+000029C0 li r5, 0x0
+000029C4 bl fn_27_279FC8
+000029C8 lwz r3, 0x1f4(r29)
+000029CC li r4, 0x0
+000029D0 bl setMotion__8grMadeinFUl
+000029D4 lwz r3, 0x1f4(r29)
+000029D8 lwz r3, 0x48(r3)
+000029DC lwz r3, 0x0(r3)
+000029E0 cmpwi r3, 0x0
+000029E4 beq .L_000029F0
+000029E8 lfs f1, 0x0(r30)
+000029EC bl setFrame__16gfModelAnimationFd
+.L_000029F0:
+000029F0 lwz r3, 0x20c(r29)
+000029F4 addi r4, r29, 0x398
+000029F8 li r5, 0x0
+000029FC bl fn_27_279FC8
+00002A00 b .L_00002588
+.L_00002A04:
+00002A04 lwz r3, 0x284(r31)
+00002A08 li r0, 0x55b
+00002A0C stw r3, 0x38c(r29)
+00002A10 stw r0, 0x390(r29)
+00002A14 b .L_00002DE4
+.L_00002A18:
+00002A18 lwz r3, 0x20c(r29)
+00002A1C bl endEntity__8grMadeinFv
+00002A20 lfs f0, 0xc(r30)
+00002A24 li r4, 0x1
+00002A28 lwz r3, 0x1f4(r29)
+00002A2C stfs f0, 0x410(r29)
+00002A30 bl fn_27_279228
+00002A34 b .L_00002A58
+.L_00002A38:
+00002A38 lfs f0, 0x410(r29)
+00002A3C li r0, 0x569
+00002A40 fsubs f0, f0, f31
+00002A44 stfs f0, 0x410(r29)
+00002A48 lwz r3, 0x288(r31)
+00002A4C stw r3, 0x38c(r29)
+00002A50 stw r0, 0x390(r29)
+00002A54 b .L_00002DE4
+.L_00002A58:
+00002A58 lfs f1, 0x0(r30)
+00002A5C lfs f0, 0x410(r29)
+00002A60 fcmpo cr0, f1, f0
+00002A64 blt .L_00002A38
+00002A68 lwz r3, 0x1f4(r29)
+00002A6C li r4, 0x0
+00002A70 bl fn_27_279228
+00002A74 lfs f2, 0x1c(r30)
+00002A78 li r3, 0x8
+00002A7C lfs f1, 0xb4(r30)
+00002A80 lfs f0, 0xac(r30)
+00002A84 stfs f2, 0x400(r29)
+00002A88 stfs f1, 0x404(r29)
+00002A8C stfs f0, 0x408(r29)
+00002A90 bl randi__Fl
+00002A94 cmplwi r3, 0x7
+00002A98 blt .L_00002AA0
+00002A9C li r3, 0x7
+.L_00002AA0:
+00002AA0 clrlwi. r0, r3, 31
+00002AA4 beq .L_00002AB0
+00002AA8 lfs f30, 0xb8(r30)
+00002AAC b .L_00002AB4
+.L_00002AB0:
+00002AB0 lfs f30, 0xbc(r30)
+.L_00002AB4:
+00002AB4 bl randf__Fv
+00002AB8 lfs f0, 0xac(r30)
+00002ABC addi r3, r1, 0x98
+00002AC0 lfs f2, 0x34(r30)
+00002AC4 fmuls f1, f0, f1
+00002AC8 lfs f0, 0xc0(r30)
+00002ACC fsubs f1, f2, f1
+00002AD0 fmuls f0, f0, f1
+00002AD4 fadds f30, f30, f0
+00002AD8 bl setIdentity__6MatrixFv
+00002ADC fmr f1, f30
+00002AE0 addi r3, r1, 0x98
+00002AE4 bl fn_8003E918
+00002AE8 addi r3, r29, 0x3c8
+00002AEC addi r4, r1, 0x98
+00002AF0 mr r5, r3
+00002AF4 bl mul__6MatrixCFPC6MatrixP6Matrix
+.L_00002AF8:
+00002AF8 lwz r3, 0x20c(r29)
+00002AFC bl endEntity__8grMadeinFv
+00002B00 lwz r3, 0x1f4(r29)
+00002B04 addi r4, r29, 0x3c8
+00002B08 li r5, 0x0
+00002B0C bl fn_27_279FC8
+00002B10 lwz r3, 0x1f4(r29)
+00002B14 li r4, 0x3
+00002B18 bl setMotion__8grMadeinFUl
+00002B1C lwz r3, 0x1f4(r29)
+00002B20 lwz r3, 0x48(r3)
+00002B24 lwz r3, 0x0(r3)
+00002B28 cmpwi r3, 0x0
+00002B2C beq .L_00002B38
+00002B30 lfs f1, 0x0(r30)
+00002B34 bl setFrame__16gfModelAnimationFd
+.L_00002B38:
+00002B38 lwz r3, 0x28c(r31)
+00002B3C li r0, 0x58e
+00002B40 stw r3, 0x38c(r29)
+00002B44 stw r0, 0x390(r29)
+00002B48 b .L_00002DE4
+.L_00002B4C:
+00002B4C lfs f1, 0x400(r29)
+00002B50 addi r3, r29, 0x3c8
+00002B54 lfs f0, 0x404(r29)
+00002B58 lfs f2, 0x408(r29)
+00002B5C fadds f1, f1, f0
+00002B60 lfs f3, 0x0(r30)
+00002B64 stfs f2, 0x48(r1)
+00002B68 stfs f1, 0x44(r1)
+00002B6C stfs f3, 0x4c(r1)
+00002B70 bl fn_8003F074
+00002B74 lfs f1, 0xc4(r30)
+00002B78 addi r4, r29, 0x3c8
+00002B7C lfs f0, 0xc8(r30)
+00002B80 li r5, 0x0
+00002B84 fmuls f3, f1, f31
+00002B88 lfs f2, 0x400(r29)
+00002B8C fmuls f1, f0, f31
+00002B90 lfs f0, 0x408(r29)
+00002B94 lwz r3, 0x1f4(r29)
+00002B98 fmuls f2, f2, f3
+00002B9C fsubs f0, f0, f1
+00002BA0 stfs f2, 0x400(r29)
+00002BA4 stfs f0, 0x408(r29)
+00002BA8 bl fn_27_279FC8
+00002BAC lwz r3, 0x1f4(r29)
+00002BB0 lwz r3, 0x48(r3)
+00002BB4 lwz r27, 0x0(r3)
+00002BB8 cmpwi r27, 0x0
+00002BBC beq .L_00002BF4
+00002BC0 mr r3, r27
+00002BC4 bl getFrameCount__16gfModelAnimationFd
+00002BC8 lis r0, 0x4330
+00002BCC stw r3, 0xcc(r1)
+00002BD0 lfd f1, 0x48(r30)
+00002BD4 mr r3, r27
+00002BD8 stw r0, 0xc8(r1)
+00002BDC lfd f0, 0xc8(r1)
+00002BE0 fsubs f30, f0, f1
+00002BE4 bl getFrame__16gfModelAnimationFd
+00002BE8 fcmpo cr0, f1, f30
+00002BEC cror eq, gt, eq
+00002BF0 beq .L_00002C08
+.L_00002BF4:
+00002BF4 lwz r3, 0x290(r31)
+00002BF8 li r0, 0x5a2
+00002BFC stw r3, 0x38c(r29)
+00002C00 stw r0, 0x390(r29)
+00002C04 b .L_00002DE4
+.L_00002C08:
+00002C08 lfs f1, 0x400(r29)
+00002C0C addi r3, r29, 0x3c8
+00002C10 lfs f0, 0x404(r29)
+00002C14 lfs f2, 0x408(r29)
+00002C18 fadds f1, f1, f0
+00002C1C lfs f3, 0x0(r30)
+00002C20 stfs f2, 0x3c(r1)
+00002C24 stfs f1, 0x38(r1)
+00002C28 stfs f3, 0x40(r1)
+00002C2C bl fn_8003F074
+00002C30 lfs f1, 0xc4(r30)
+00002C34 addi r4, r29, 0x3c8
+00002C38 lfs f0, 0xc8(r30)
+00002C3C li r5, 0x0
+00002C40 fmuls f3, f1, f31
+00002C44 lfs f2, 0x400(r29)
+00002C48 fmuls f1, f0, f31
+00002C4C lfs f0, 0x408(r29)
+00002C50 lwz r3, 0x1f4(r29)
+00002C54 fmuls f2, f2, f3
+00002C58 fsubs f0, f0, f1
+00002C5C stfs f2, 0x400(r29)
+00002C60 stfs f0, 0x408(r29)
+00002C64 bl fn_27_279FC8
+00002C68 lwz r3, 0x1f4(r29)
+00002C6C li r4, 0x4
+00002C70 bl setMotion__8grMadeinFUl
+00002C74 lwz r3, 0x1f4(r29)
+00002C78 lwz r3, 0x48(r3)
+00002C7C lwz r3, 0x0(r3)
+00002C80 cmpwi r3, 0x0
+00002C84 beq .L_00002C90
+00002C88 lfs f1, 0x0(r30)
+00002C8C bl setFrame__16gfModelAnimationFd
+.L_00002C90:
+00002C90 lwz r3, 0x1f4(r29)
+00002C94 bl startEntityAutoLoop__8grMadeinFv
+00002C98 lwz r3, 0x294(r31)
+00002C9C li r0, 0x5b8
+00002CA0 stw r3, 0x38c(r29)
+00002CA4 stw r0, 0x390(r29)
+00002CA8 b .L_00002DE4
+.L_00002CAC:
+00002CAC lfs f2, 0x3e4(r29)
+00002CB0 lfs f0, 0xcc(r30)
+00002CB4 lfs f1, 0x3f4(r29)
+00002CB8 lfs f3, 0x3d4(r29)
+00002CBC fcmpo cr0, f2, f0
+00002CC0 stfs f2, 0x30(r1)
+00002CC4 stfs f3, 0x2c(r1)
+00002CC8 stfs f1, 0x34(r1)
+00002CCC blt .L_00002D44
+00002CD0 lfs f1, 0x400(r29)
+00002CD4 addi r3, r29, 0x3c8
+00002CD8 lfs f0, 0x404(r29)
+00002CDC lfs f2, 0x408(r29)
+00002CE0 fadds f1, f1, f0
+00002CE4 lfs f3, 0x0(r30)
+00002CE8 stfs f2, 0x24(r1)
+00002CEC stfs f1, 0x20(r1)
+00002CF0 stfs f3, 0x28(r1)
+00002CF4 bl fn_8003F074
+00002CF8 lfs f1, 0xc4(r30)
+00002CFC addi r4, r29, 0x3c8
+00002D00 lfs f0, 0xc8(r30)
+00002D04 li r5, 0x0
+00002D08 fmuls f3, f1, f31
+00002D0C lfs f2, 0x400(r29)
+00002D10 fmuls f1, f0, f31
+00002D14 lfs f0, 0x408(r29)
+00002D18 lwz r3, 0x1f4(r29)
+00002D1C fmuls f2, f2, f3
+00002D20 fsubs f0, f0, f1
+00002D24 stfs f2, 0x400(r29)
+00002D28 stfs f0, 0x408(r29)
+00002D2C bl fn_27_279FC8
+00002D30 lwz r3, 0x298(r31)
+00002D34 li r0, 0x5cd
+00002D38 stw r3, 0x38c(r29)
+00002D3C stw r0, 0x390(r29)
+00002D40 b .L_00002DE4
+.L_00002D44:
+00002D44 li r28, 0x0
+00002D48 lwz r3, 0x1f4(r29)
+00002D4C stb r28, 0x388(r29)
+00002D50 li r4, 0x0
+00002D54 stb r28, 0x389(r29)
+00002D58 lwz r12, 0x3c(r3)
+00002D5C lwz r12, 0x74(r12)
+00002D60 mtctr r12
+00002D64 bctrl
+00002D68 lwz r3, 0x1f4(r29)
+00002D6C li r4, 0x0
+00002D70 bl setEnableCollisionStatus__6GroundFb
+00002D74 lwz r3, 0x1f4(r29)
+00002D78 lfs f1, 0x0(r30)
+00002D7C lwz r3, 0xd4(r3)
+00002D80 lfs f0, 0x40(r30)
+00002D84 stfs f1, 0x5c(r3)
+00002D88 stfs f0, 0x6c(r3)
+00002D8C stfs f1, 0x7c(r3)
+00002D90 lwz r3, 0x20c(r29)
+00002D94 stfs f1, 0x8(r1)
+00002D98 lwz r3, 0xd4(r3)
+00002D9C stfs f0, 0xc(r1)
+00002DA0 stfs f1, 0x5c(r3)
+00002DA4 stfs f0, 0x6c(r3)
+00002DA8 stfs f1, 0x7c(r3)
+00002DAC stfs f1, 0x10(r1)
+00002DB0 lwz r3, 0x20c(r29)
+00002DB4 stfs f1, 0x14(r1)
+00002DB8 stfs f0, 0x18(r1)
+00002DBC stfs f1, 0x1c(r1)
+00002DC0 bl endEntity__8grMadeinFv
+00002DC4 lwz r3, 0x1d8(r29)
+00002DC8 li r0, 0x5d2
+00002DCC lfs f0, 0x28(r3)
+00002DD0 stfs f0, 0x3fc(r29)
+00002DD4 stw r28, 0x40c(r29)
+00002DD8 lwz r3, 0x29c(r31)
+00002DDC stw r3, 0x38c(r29)
+00002DE0 stw r0, 0x390(r29)
+.L_00002DE4:
+00002DE4 psq_l f31, 0x108(r1), 0, qr0
+00002DE8 lfd f31, 0x100(r1)
+00002DEC psq_l f30, 0xf8(r1), 0, qr0
+00002DF0 addi r11, r1, 0xf0
+00002DF4 lfd f30, 0xf0(r1)
+00002DF8 bl _restgpr_27
+00002DFC lwz r0, 0x114(r1)
+00002E00 mtlr r0
+00002E04 addi r1, r1, 0x110
+00002E08 blr
+.endfn fn_53_242C
+
+# .text:0x2D9C | 0x2E0C | size: 0x564
+.fn fn_53_2E0C, global
+00002E0C stwu r1, -0x110(r1)
+00002E10 mflr r0
+00002E14 stw r0, 0x114(r1)
+00002E18 stfd f31, 0x100(r1)
+00002E1C psq_st f31, 0x108(r1), 0, qr0
+00002E20 fmr f31, f1
+00002E24 stw r31, 0xfc(r1)
+00002E28 lis r31, lbl_53_data_0@ha
+00002E2C addi r31, r31, lbl_53_data_0@l
+00002E30 stw r30, 0xf8(r1)
+00002E34 lis r30, lbl_53_rodata_0@ha
+00002E38 addi r30, r30, lbl_53_rodata_0@l
+00002E3C stw r29, 0xf4(r1)
+00002E40 mr r29, r3
+00002E44 stw r28, 0xf0(r1)
+00002E48 lbz r0, 0x414(r3)
+00002E4C cmpwi r0, 0x0
+00002E50 beq .L_00003348
+00002E54 lfs f2, 0x70(r30)
+00002E58 lis r3, g_aiMgr@ha
+00002E5C lfs f1, 0x50(r30)
+00002E60 addi r4, r1, 0x10
+00002E64 lfs f0, 0xd0(r30)
+00002E68 addi r5, r1, 0x8
+00002E6C stfs f2, 0x8(r1)
+00002E70 li r6, -0x1
+00002E74 lwz r3, g_aiMgr@l(r3)
+00002E78 li r7, 0x0
+00002E7C stfs f2, 0xc(r1)
+00002E80 li r8, 0x0
+00002E84 stfs f1, 0x10(r1)
+00002E88 stfs f0, 0x14(r1)
+00002E8C bl setDangerZone__5aiMgrFP5Vec2fP5Vec2fibb
+00002E90 lwz r0, 0x41c(r29)
+00002E94 cmpwi r0, 0x62c
+00002E98 beq .L_00002F50
+00002E9C bge .L_00002EC4
+00002EA0 cmpwi r0, 0x5fe
+00002EA4 beq .L_00002EEC
+00002EA8 bge .L_00002EB8
+00002EAC cmpwi r0, 0x0
+00002EB0 beq .L_00002EDC
+00002EB4 b .L_00003348
+.L_00002EB8:
+00002EB8 cmpwi r0, 0x600
+00002EBC bge .L_00003348
+00002EC0 b .L_00002F00
+.L_00002EC4:
+00002EC4 cmpwi r0, 0x660
+00002EC8 beq .L_000032A4
+00002ECC bge .L_00003348
+00002ED0 cmpwi r0, 0x63c
+00002ED4 beq .L_00003124
+00002ED8 b .L_00003348
+.L_00002EDC:
+00002EDC lwz r3, 0x2a0(r31)
+00002EE0 li r0, 0x5fe
+00002EE4 stw r3, 0x418(r29)
+00002EE8 stw r0, 0x41c(r29)
+.L_00002EEC:
+00002EEC lwz r3, 0x2a4(r31)
+00002EF0 li r0, 0x5ff
+00002EF4 stw r3, 0x418(r29)
+00002EF8 stw r0, 0x41c(r29)
+00002EFC b .L_00003348
+.L_00002F00:
+00002F00 bl randf__Fv
+00002F04 lfs f2, 0x98(r30)
+00002F08 li r0, -0x1
+00002F0C lfs f0, 0x78(r30)
+00002F10 li r4, 0x1
+00002F14 fmuls f1, f2, f1
+00002F18 stw r0, 0x5ec(r29)
+00002F1C lwz r3, 0x200(r29)
+00002F20 stw r0, 0x5f0(r29)
+00002F24 fadds f0, f0, f1
+00002F28 stfs f0, 0x420(r29)
+00002F2C lwz r12, 0x3c(r3)
+00002F30 lwz r12, 0x74(r12)
+00002F34 mtctr r12
+00002F38 bctrl
+00002F3C lwz r0, 0x434(r29)
+00002F40 li r3, 0x0
+00002F44 stb r3, 0x5f4(r29)
+00002F48 clrlwi r0, r0, 6
+00002F4C stw r0, 0x434(r29)
+.L_00002F50:
+00002F50 lfs f0, 0x420(r29)
+00002F54 addi r4, r1, 0xc0
+00002F58 lwz r3, 0x200(r29)
+00002F5C li r5, 0x0
+00002F60 fsubs f0, f0, f31
+00002F64 lwz r6, 0x424(r29)
+00002F68 stfs f0, 0x420(r29)
+00002F6C lwz r12, 0x3c(r3)
+00002F70 lwz r12, 0xd0(r12)
+00002F74 mtctr r12
+00002F78 bctrl
+00002F7C lfs f0, 0xec(r1)
+00002F80 addi r3, r29, 0x42c
+00002F84 lfs f1, 0xdc(r1)
+00002F88 addi r4, r1, 0x54
+00002F8C lfs f2, 0xcc(r1)
+00002F90 stfs f1, 0x58(r1)
+00002F94 stfs f2, 0x54(r1)
+00002F98 stfs f0, 0x5c(r1)
+00002F9C bl fn_8009EF8C
+00002FA0 lwz r3, 0x200(r29)
+00002FA4 lwz r3, 0x48(r3)
+00002FA8 lwz r28, 0x0(r3)
+00002FAC cmpwi r28, 0x0
+00002FB0 beq .L_00003098
+00002FB4 lbz r0, 0x5f4(r29)
+00002FB8 cmpwi r0, 0x0
+00002FBC bne .L_0000301C
+00002FC0 li r0, 0x1
+00002FC4 addi r3, r29, 0x5e4
+00002FC8 stb r0, 0x5f4(r29)
+00002FCC addi r4, r1, 0x54
+00002FD0 bl setPos__14snd3DGeneratorFP5Vec3f
+00002FD4 addi r3, r29, 0x5e4
+00002FD8 li r4, 0x1bbb
+00002FDC li r5, -0x1
+00002FE0 li r6, 0x0
+00002FE4 li r7, -0x1
+00002FE8 bl playSE__14snd3DGeneratorF5SndIDiii
+00002FEC stw r3, 0x5ec(r29)
+00002FF0 addi r3, r31, 0x2b8
+00002FF4 lfs f1, 0x54(r1)
+00002FF8 lfs f2, 0x58(r1)
+00002FFC lfs f3, 0x5c(r1)
+00003000 crset cr1eq
+00003004 bl OSReport
+00003008 lis r3, g_ecMgr@ha
+0000300C li r4, 0x60
+00003010 lwz r3, g_ecMgr@l(r3)
+00003014 bl setEffect__5ecMgrF4EfID
+00003018 stw r3, 0x428(r29)
+.L_0000301C:
+0000301C lwz r0, 0x5f0(r29)
+00003020 cmpwi r0, 0x0
+00003024 bge .L_00003084
+00003028 mr r3, r28
+0000302C bl getFrame__16gfModelAnimationFd
+00003030 lfs f0, 0x54(r30)
+00003034 fcmpo cr0, f0, f1
+00003038 cror eq, lt, eq
+0000303C bne .L_00003084
+00003040 addi r3, r29, 0x5e4
+00003044 addi r4, r1, 0x54
+00003048 bl setPos__14snd3DGeneratorFP5Vec3f
+0000304C addi r3, r29, 0x5e4
+00003050 li r4, 0x1bbc
+00003054 li r5, -0x1
+00003058 li r6, 0x0
+0000305C li r7, -0x1
+00003060 bl playSE__14snd3DGeneratorF5SndIDiii
+00003064 stw r3, 0x5f0(r29)
+00003068 addi r3, r31, 0x2e8
+0000306C lfs f1, 0x54(r1)
+00003070 lfs f2, 0x58(r1)
+00003074 lfs f3, 0x5c(r1)
+00003078 crset cr1eq
+0000307C bl OSReport
+00003080 b .L_00003124
+.L_00003084:
+00003084 lis r3, g_ecMgr@ha
+00003088 lwz r4, 0x428(r29)
+0000308C lwz r3, g_ecMgr@l(r3)
+00003090 addi r5, r1, 0x54
+00003094 bl setPos__5ecMgrFUlP5Vec3f
+.L_00003098:
+00003098 lwz r3, 0x2a8(r31)
+0000309C li r0, 0x62c
+000030A0 stw r3, 0x418(r29)
+000030A4 stw r0, 0x41c(r29)
+000030A8 b .L_00003348
+.L_000030AC:
+000030AC lfs f0, 0x420(r29)
+000030B0 addi r4, r1, 0x90
+000030B4 lwz r3, 0x200(r29)
+000030B8 li r5, 0x0
+000030BC fsubs f0, f0, f31
+000030C0 lwz r6, 0x424(r29)
+000030C4 stfs f0, 0x420(r29)
+000030C8 lwz r12, 0x3c(r3)
+000030CC lwz r12, 0xd0(r12)
+000030D0 mtctr r12
+000030D4 bctrl
+000030D8 lfs f0, 0xbc(r1)
+000030DC addi r3, r29, 0x42c
+000030E0 lfs f1, 0xac(r1)
+000030E4 addi r4, r1, 0x48
+000030E8 lfs f2, 0x9c(r1)
+000030EC stfs f1, 0x4c(r1)
+000030F0 stfs f2, 0x48(r1)
+000030F4 stfs f0, 0x50(r1)
+000030F8 bl fn_8009EF8C
+000030FC lis r3, g_ecMgr@ha
+00003100 lwz r4, 0x428(r29)
+00003104 lwz r3, g_ecMgr@l(r3)
+00003108 addi r5, r1, 0x48
+0000310C bl setPos__5ecMgrFUlP5Vec3f
+00003110 lwz r3, 0x2ac(r31)
+00003114 li r0, 0x63c
+00003118 stw r3, 0x418(r29)
+0000311C stw r0, 0x41c(r29)
+00003120 b .L_00003348
+.L_00003124:
+00003124 lfs f1, 0x0(r30)
+00003128 lfs f0, 0x420(r29)
+0000312C fcmpo cr0, f1, f0
+00003130 blt .L_000030AC
+00003134 lwz r3, 0x200(r29)
+00003138 addi r4, r1, 0x60
+0000313C lwz r6, 0x424(r29)
+00003140 li r5, 0x0
+00003144 lwz r12, 0x3c(r3)
+00003148 lwz r12, 0xd0(r12)
+0000314C mtctr r12
+00003150 bctrl
+00003154 lfs f0, 0x8c(r1)
+00003158 lis r28, g_ecMgr@ha
+0000315C lfs f1, 0x7c(r1)
+00003160 li r4, 0x18
+00003164 lfs f2, 0x6c(r1)
+00003168 stfs f1, 0x40(r1)
+0000316C lwz r3, g_ecMgr@l(r28)
+00003170 stfs f2, 0x3c(r1)
+00003174 stfs f0, 0x44(r1)
+00003178 bl setEffect__5ecMgrF4EfID
+0000317C mr r4, r3
+00003180 lwz r3, g_ecMgr@l(r28)
+00003184 addi r5, r1, 0x3c
+00003188 bl setPos__5ecMgrFUlP5Vec3f
+0000318C addi r3, r29, 0x5e4
+00003190 addi r4, r1, 0x3c
+00003194 bl setPos__14snd3DGeneratorFP5Vec3f
+00003198 addi r3, r29, 0x5e4
+0000319C li r4, 0x1bbd
+000031A0 li r5, -0x1
+000031A4 li r6, 0x0
+000031A8 li r7, -0x1
+000031AC bl playSE__14snd3DGeneratorF5SndIDiii
+000031B0 lfs f1, 0x3c(r1)
+000031B4 addi r3, r31, 0x310
+000031B8 lfs f2, 0x40(r1)
+000031BC lfs f3, 0x44(r1)
+000031C0 crset cr1eq
+000031C4 bl OSReport
+000031C8 addi r4, r1, 0x3c
+000031CC li r3, 0x5
+000031D0 bl cmReqQuake__FiP5Vec3f
+000031D4 addi r3, r29, 0x42c
+000031D8 addi r4, r1, 0x3c
+000031DC bl fn_8009EF8C
+000031E0 lwz r3, g_ecMgr@l(r28)
+000031E4 li r5, 0x1
+000031E8 lwz r4, 0x428(r29)
+000031EC li r6, 0x1
+000031F0 bl killEffect__5ecMgrFUlUlUl
+000031F4 lfs f1, 0x7c(r1)
+000031F8 addi r4, r1, 0x60
+000031FC lfs f0, 0x3c(r30)
+00003200 li r5, 0x0
+00003204 fsubs f0, f1, f0
+00003208 stfs f0, 0x7c(r1)
+0000320C lwz r3, 0x210(r29)
+00003210 bl fn_27_279FC8
+00003214 lwz r3, 0x200(r29)
+00003218 li r4, 0x0
+0000321C lwz r12, 0x3c(r3)
+00003220 lwz r12, 0x74(r12)
+00003224 mtctr r12
+00003228 bctrl
+0000322C lwz r3, 0x200(r29)
+00003230 li r5, 0x1
+00003234 lfs f1, 0x0(r30)
+00003238 li r0, 0x0
+0000323C lwz r6, 0xd4(r3)
+00003240 mr r3, r29
+00003244 lfs f0, 0x40(r30)
+00003248 li r4, 0x1bbe
+0000324C stfs f1, 0x5c(r6)
+00003250 stfs f0, 0x6c(r6)
+00003254 stfs f1, 0x7c(r6)
+00003258 stb r5, 0x4b0(r29)
+0000325C lwz r5, 0x0(r31)
+00003260 stfs f1, 0x30(r1)
+00003264 stfs f0, 0x34(r1)
+00003268 stfs f1, 0x38(r1)
+0000326C stw r5, 0x4b4(r29)
+00003270 stw r0, 0x4b8(r29)
+00003274 bl playSeBasic__7stMeleeF5SndIDf
+00003278 lfs f0, 0x10(r30)
+0000327C stfs f0, 0x420(r29)
+00003280 b .L_000032A4
+.L_00003284:
+00003284 lfs f0, 0x420(r29)
+00003288 li r0, 0x660
+0000328C fsubs f0, f0, f31
+00003290 stfs f0, 0x420(r29)
+00003294 lwz r3, 0x2b0(r31)
+00003298 stw r3, 0x418(r29)
+0000329C stw r0, 0x41c(r29)
+000032A0 b .L_00003348
+.L_000032A4:
+000032A4 lfs f1, 0x0(r30)
+000032A8 lfs f0, 0x420(r29)
+000032AC fcmpo cr0, f1, f0
+000032B0 blt .L_00003284
+000032B4 li r0, 0x0
+000032B8 lwz r3, 0x200(r29)
+000032BC stb r0, 0x414(r29)
+000032C0 li r4, 0x0
+000032C4 lwz r12, 0x3c(r3)
+000032C8 lwz r12, 0x74(r12)
+000032CC mtctr r12
+000032D0 bctrl
+000032D4 lwz r3, 0x200(r29)
+000032D8 li r4, 0x0
+000032DC bl setEnableCollisionStatus__6GroundFb
+000032E0 lwz r3, 0x200(r29)
+000032E4 li r4, 0x1
+000032E8 lfs f1, 0x0(r30)
+000032EC li r0, 0x663
+000032F0 lwz r3, 0xd4(r3)
+000032F4 lfs f0, 0x40(r30)
+000032F8 stfs f1, 0x5c(r3)
+000032FC stfs f0, 0x6c(r3)
+00003300 stfs f1, 0x7c(r3)
+00003304 lwz r3, 0x210(r29)
+00003308 stfs f1, 0x18(r1)
+0000330C lwz r3, 0xd4(r3)
+00003310 stfs f0, 0x1c(r1)
+00003314 stfs f1, 0x5c(r3)
+00003318 stfs f0, 0x6c(r3)
+0000331C stfs f1, 0x7c(r3)
+00003320 lwz r3, 0x434(r29)
+00003324 rlwimi r3, r4, 29, 0, 2
+00003328 stfs f1, 0x20(r1)
+0000332C stw r3, 0x434(r29)
+00003330 lwz r3, 0x2b4(r31)
+00003334 stfs f1, 0x24(r1)
+00003338 stfs f0, 0x28(r1)
+0000333C stfs f1, 0x2c(r1)
+00003340 stw r3, 0x418(r29)
+00003344 stw r0, 0x41c(r29)
+.L_00003348:
+00003348 psq_l f31, 0x108(r1), 0, qr0
+0000334C lwz r0, 0x114(r1)
+00003350 lfd f31, 0x100(r1)
+00003354 lwz r31, 0xfc(r1)
+00003358 lwz r30, 0xf8(r1)
+0000335C lwz r29, 0xf4(r1)
+00003360 lwz r28, 0xf0(r1)
+00003364 mtlr r0
+00003368 addi r1, r1, 0x110
+0000336C blr
+.endfn fn_53_2E0C
+
+# .text:0x3300 | 0x3370 | size: 0x80C
+.fn fn_53_3370, global
+00003370 stwu r1, -0x230(r1)
+00003374 mflr r0
+00003378 stw r0, 0x234(r1)
+0000337C stfd f31, 0x220(r1)
+00003380 psq_st f31, 0x228(r1), 0, qr0
+00003384 stfd f30, 0x210(r1)
+00003388 psq_st f30, 0x218(r1), 0, qr0
+0000338C addi r11, r1, 0x210
+00003390 bl _savegpr_27
+00003394 lbz r0, 0x4b0(r3)
+00003398 lis r30, lbl_53_rodata_0@ha
+0000339C lis r31, lbl_53_data_0@ha
+000033A0 fmr f31, f1
+000033A4 cmpwi r0, 0x0
+000033A8 mr r29, r3
+000033AC addi r30, r30, lbl_53_rodata_0@l
+000033B0 addi r31, r31, lbl_53_data_0@l
+000033B4 beq .L_00003B54
+000033B8 lwz r0, 0x4b8(r3)
+000033BC cmpwi r0, 0x6dd
+000033C0 beq .L_00003738
+000033C4 bge .L_00003428
+000033C8 cmpwi r0, 0x6b3
+000033CC beq .L_00003588
+000033D0 bge .L_00003404
+000033D4 cmpwi r0, 0x695
+000033D8 beq .L_00003480
+000033DC bge .L_000033EC
+000033E0 cmpwi r0, 0x0
+000033E4 beq .L_00003470
+000033E8 b .L_00003B54
+.L_000033EC:
+000033EC cmpwi r0, 0x6a9
+000033F0 beq .L_0000351C
+000033F4 bge .L_00003B54
+000033F8 cmpwi r0, 0x6a8
+000033FC bge .L_00003508
+00003400 b .L_00003B54
+.L_00003404:
+00003404 cmpwi r0, 0x6b6
+00003408 beq .L_000035C4
+0000340C bge .L_0000341C
+00003410 cmpwi r0, 0x6b5
+00003414 bge .L_000035B0
+00003418 b .L_0000359C
+.L_0000341C:
+0000341C cmpwi r0, 0x6d2
+00003420 beq .L_000036CC
+00003424 b .L_00003B54
+.L_00003428:
+00003428 cmpwi r0, 0x71b
+0000342C beq .L_00003930
+00003430 bge .L_00003458
+00003434 cmpwi r0, 0x700
+00003438 beq .L_00003854
+0000343C bge .L_0000344C
+00003440 cmpwi r0, 0x6e6
+00003444 beq .L_0000377C
+00003448 b .L_00003B54
+.L_0000344C:
+0000344C cmpwi r0, 0x707
+00003450 beq .L_000038A8
+00003454 b .L_00003B54
+.L_00003458:
+00003458 cmpwi r0, 0x73b
+0000345C beq .L_00003A4C
+00003460 bge .L_00003B54
+00003464 cmpwi r0, 0x735
+00003468 beq .L_00003A10
+0000346C b .L_00003B54
+.L_00003470:
+00003470 lwz r4, 0x338(r31)
+00003474 li r0, 0x695
+00003478 stw r4, 0x4b4(r3)
+0000347C stw r0, 0x4b8(r3)
+.L_00003480:
+00003480 lwz r3, 0x1e4(r3)
+00003484 addi r4, r1, 0x1b8
+00003488 lwz r6, 0x218(r29)
+0000348C li r5, 0x0
+00003490 lwz r12, 0x3c(r3)
+00003494 lwz r12, 0xd0(r12)
+00003498 mtctr r12
+0000349C bctrl
+000034A0 lfs f0, 0x1e4(r1)
+000034A4 lis r3, 0x64
+000034A8 lfs f1, 0x1d4(r1)
+000034AC lis r6, g_ecMgr@ha
+000034B0 lfs f2, 0x1c4(r1)
+000034B4 addi r4, r3, 0x1
+000034B8 stfs f1, 0x60(r1)
+000034BC addi r5, r1, 0x5c
+000034C0 lwz r3, g_ecMgr@l(r6)
+000034C4 stfs f2, 0x5c(r1)
+000034C8 stfs f0, 0x64(r1)
+000034CC bl setEffect__5ecMgrF4EfIDP5Vec3f
+000034D0 addi r3, r29, 0x544
+000034D4 addi r4, r1, 0x5c
+000034D8 bl fn_8009EF8C
+000034DC lwz r0, 0x54c(r29)
+000034E0 mr r3, r29
+000034E4 li r4, 0x1
+000034E8 clrlwi r0, r0, 6
+000034EC stw r0, 0x54c(r29)
+000034F0 bl fn_53_3EC4
+000034F4 lwz r3, 0x33c(r31)
+000034F8 li r0, 0x6a8
+000034FC stw r3, 0x4b4(r29)
+00003500 stw r0, 0x4b8(r29)
+00003504 b .L_00003B54
+.L_00003508:
+00003508 lwz r4, 0x340(r31)
+0000350C li r0, 0x6a9
+00003510 stw r4, 0x4b4(r3)
+00003514 stw r0, 0x4b8(r3)
+00003518 b .L_00003B54
+.L_0000351C:
+0000351C lwz r3, 0x1e4(r3)
+00003520 addi r4, r1, 0x188
+00003524 lwz r6, 0x218(r29)
+00003528 li r5, 0x0
+0000352C lwz r12, 0x3c(r3)
+00003530 lwz r12, 0xd0(r12)
+00003534 mtctr r12
+00003538 bctrl
+0000353C lfs f2, 0x194(r1)
+00003540 lis r3, 0x64
+00003544 lfs f0, 0x50(r30)
+00003548 lis r6, g_ecMgr@ha
+0000354C lfs f1, 0x1b4(r1)
+00003550 addi r4, r3, 0x1
+00003554 fsubs f0, f2, f0
+00003558 lfs f2, 0x1a4(r1)
+0000355C stfs f1, 0x58(r1)
+00003560 addi r5, r1, 0x50
+00003564 lwz r3, g_ecMgr@l(r6)
+00003568 stfs f2, 0x54(r1)
+0000356C stfs f0, 0x50(r1)
+00003570 bl setEffect__5ecMgrF4EfIDP5Vec3f
+00003574 lwz r3, 0x344(r31)
+00003578 li r0, 0x6b3
+0000357C stw r3, 0x4b4(r29)
+00003580 stw r0, 0x4b8(r29)
+00003584 b .L_00003B54
+.L_00003588:
+00003588 lwz r4, 0x348(r31)
+0000358C li r0, 0x6b4
+00003590 stw r4, 0x4b4(r3)
+00003594 stw r0, 0x4b8(r3)
+00003598 b .L_00003B54
+.L_0000359C:
+0000359C lwz r4, 0x34c(r31)
+000035A0 li r0, 0x6b5
+000035A4 stw r4, 0x4b4(r3)
+000035A8 stw r0, 0x4b8(r3)
+000035AC b .L_00003B54
+.L_000035B0:
+000035B0 lwz r4, 0x350(r31)
+000035B4 li r0, 0x6b6
+000035B8 stw r4, 0x4b4(r3)
+000035BC stw r0, 0x4b8(r3)
+000035C0 b .L_00003B54
+.L_000035C4:
+000035C4 lwz r3, 0x1e4(r3)
+000035C8 addi r4, r1, 0x158
+000035CC lwz r6, 0x218(r29)
+000035D0 li r5, 0x0
+000035D4 lwz r12, 0x3c(r3)
+000035D8 lwz r12, 0xd0(r12)
+000035DC mtctr r12
+000035E0 bctrl
+000035E4 lfs f0, 0x184(r1)
+000035E8 lis r27, g_ecMgr@ha
+000035EC lfs f1, 0x174(r1)
+000035F0 lis r28, 0x64
+000035F4 lfs f2, 0x164(r1)
+000035F8 addi r4, r28, 0x2
+000035FC stfs f1, 0x48(r1)
+00003600 addi r5, r1, 0x44
+00003604 lwz r3, g_ecMgr@l(r27)
+00003608 stfs f2, 0x44(r1)
+0000360C stfs f0, 0x4c(r1)
+00003610 bl setEffect__5ecMgrF4EfIDP5Vec3f
+00003614 lwz r3, 0x1e4(r29)
+00003618 addi r4, r1, 0x128
+0000361C lwz r6, 0x21c(r29)
+00003620 li r5, 0x0
+00003624 lwz r12, 0x3c(r3)
+00003628 lwz r12, 0xd0(r12)
+0000362C mtctr r12
+00003630 bctrl
+00003634 lfs f0, 0x154(r1)
+00003638 addi r4, r28, 0x3
+0000363C lfs f1, 0x144(r1)
+00003640 addi r5, r1, 0x38
+00003644 lfs f2, 0x134(r1)
+00003648 stfs f1, 0x3c(r1)
+0000364C lwz r3, g_ecMgr@l(r27)
+00003650 stfs f2, 0x38(r1)
+00003654 stfs f0, 0x40(r1)
+00003658 bl setEffect__5ecMgrF4EfIDP5Vec3f
+0000365C lwz r3, 0x1e4(r29)
+00003660 li r4, 0x0
+00003664 lwz r12, 0x3c(r3)
+00003668 lwz r12, 0x74(r12)
+0000366C mtctr r12
+00003670 bctrl
+00003674 lwz r3, 0x1e4(r29)
+00003678 li r4, 0x0
+0000367C bl setEnableCollisionStatus__6GroundFb
+00003680 lwz r3, 0x1e8(r29)
+00003684 li r4, 0x0
+00003688 lwz r12, 0x3c(r3)
+0000368C lwz r12, 0x74(r12)
+00003690 mtctr r12
+00003694 bctrl
+00003698 lwz r3, 0x1f0(r29)
+0000369C bl startEntity__8grMadeinFv
+000036A0 lfs f0, 0x78(r30)
+000036A4 stfs f0, 0x4bc(r29)
+000036A8 b .L_000036CC
+.L_000036AC:
+000036AC lfs f0, 0x4bc(r29)
+000036B0 li r0, 0x6d2
+000036B4 fsubs f0, f0, f31
+000036B8 stfs f0, 0x4bc(r29)
+000036BC lwz r3, 0x354(r31)
+000036C0 stw r3, 0x4b4(r29)
+000036C4 stw r0, 0x4b8(r29)
+000036C8 b .L_00003B54
+.L_000036CC:
+000036CC lfs f1, 0x0(r30)
+000036D0 lfs f0, 0x4bc(r29)
+000036D4 fcmpo cr0, f1, f0
+000036D8 blt .L_000036AC
+000036DC lwz r0, 0x54c(r29)
+000036E0 li r3, 0x1
+000036E4 rlwimi r0, r3, 29, 0, 2
+000036E8 lwz r3, 0x1d8(r29)
+000036EC stw r0, 0x54c(r29)
+000036F0 lfs f1, 0x30(r3)
+000036F4 lfs f0, 0x2c(r3)
+000036F8 fsubs f30, f1, f0
+000036FC bl randf__Fv
+00003700 lwz r3, 0x1d8(r29)
+00003704 fmuls f1, f30, f1
+00003708 lfs f0, 0x2c(r3)
+0000370C fadds f0, f0, f1
+00003710 stfs f0, 0x4bc(r29)
+00003714 b .L_00003738
+.L_00003718:
+00003718 lfs f0, 0x4bc(r29)
+0000371C li r0, 0x6dd
+00003720 fsubs f0, f0, f31
+00003724 stfs f0, 0x4bc(r29)
+00003728 lwz r3, 0x358(r31)
+0000372C stw r3, 0x4b4(r29)
+00003730 stw r0, 0x4b8(r29)
+00003734 b .L_00003B54
+.L_00003738:
+00003738 lfs f1, 0x0(r30)
+0000373C lfs f0, 0x4bc(r29)
+00003740 fcmpo cr0, f1, f0
+00003744 blt .L_00003718
+00003748 lwz r3, 0x1f0(r29)
+0000374C bl endEntity__8grMadeinFv
+00003750 lwz r3, 0x1ec(r29)
+00003754 bl startEntity__8grMadeinFv
+00003758 lfs f1, 0x0(r30)
+0000375C mr r3, r29
+00003760 li r4, 0x1bbf
+00003764 bl playSeBasic__7stMeleeF5SndIDf
+00003768 lwz r3, 0x35c(r31)
+0000376C li r0, 0x6e6
+00003770 stw r3, 0x4b4(r29)
+00003774 stw r0, 0x4b8(r29)
+00003778 b .L_00003B54
+.L_0000377C:
+0000377C lwz r3, 0x1ec(r3)
+00003780 addi r4, r1, 0xf8
+00003784 lwz r6, 0x224(r29)
+00003788 li r5, 0x0
+0000378C lwz r12, 0x3c(r3)
+00003790 lwz r12, 0xd0(r12)
+00003794 mtctr r12
+00003798 bctrl
+0000379C lfs f0, 0x124(r1)
+000037A0 lis r3, 0x64
+000037A4 lfs f1, 0x114(r1)
+000037A8 lis r6, g_ecMgr@ha
+000037AC lfs f2, 0x104(r1)
+000037B0 addi r4, r3, 0x6
+000037B4 stfs f1, 0x30(r1)
+000037B8 addi r5, r1, 0x2c
+000037BC lwz r3, g_ecMgr@l(r6)
+000037C0 stfs f2, 0x2c(r1)
+000037C4 stfs f0, 0x34(r1)
+000037C8 bl setEffect__5ecMgrF4EfIDP5Vec3f
+000037CC addi r3, r29, 0x4c0
+000037D0 addi r4, r1, 0x2c
+000037D4 bl fn_8009EF8C
+000037D8 li r7, 0x0
+000037DC lwz r3, 0x4c8(r29)
+000037E0 li r0, 0x50
+000037E4 stb r7, 0x12(r1)
+000037E8 clrlwi r4, r3, 6
+000037EC lis r3, g_efScreen@ha
+000037F0 stw r4, 0x4c8(r29)
+000037F4 addi r6, r1, 0xc
+000037F8 lfs f1, 0x98(r30)
+000037FC li r4, 0x0
+00003800 stb r7, 0x11(r1)
+00003804 li r5, 0x80
+00003808 lwz r3, g_efScreen@l(r3)
+0000380C stb r7, 0x10(r1)
+00003810 stb r0, 0x13(r1)
+00003814 lwz r0, 0x10(r1)
+00003818 stw r0, 0xc(r1)
+0000381C bl requestFill__8efScreenFfiiP8_GXColor
+00003820 lfs f0, 0xd4(r30)
+00003824 srwi r0, r3, 24
+00003828 stb r0, 0x604(r29)
+0000382C stfs f0, 0x4bc(r29)
+00003830 b .L_00003854
+.L_00003834:
+00003834 lfs f0, 0x4bc(r29)
+00003838 li r0, 0x700
+0000383C fsubs f0, f0, f31
+00003840 stfs f0, 0x4bc(r29)
+00003844 lwz r3, 0x360(r31)
+00003848 stw r3, 0x4b4(r29)
+0000384C stw r0, 0x4b8(r29)
+00003850 b .L_00003B54
+.L_00003854:
+00003854 lfs f1, 0x0(r30)
+00003858 lfs f0, 0x4bc(r29)
+0000385C fcmpo cr0, f1, f0
+00003860 blt .L_00003834
+00003864 mr r3, r29
+00003868 li r4, 0x1bc0
+0000386C bl playSeBasic__7stMeleeF5SndIDf
+00003870 stw r3, 0x5f8(r29)
+00003874 lwz r3, 0x1e4(r29)
+00003878 bl startEntity__8grMadeinFv
+0000387C lwz r3, 0x1e4(r29)
+00003880 lfs f1, 0x34(r30)
+00003884 lwz r12, 0x3c(r3)
+00003888 lwz r12, 0x10c(r12)
+0000388C mtctr r12
+00003890 bctrl
+00003894 lwz r3, 0x364(r31)
+00003898 li r0, 0x707
+0000389C stw r3, 0x4b4(r29)
+000038A0 stw r0, 0x4b8(r29)
+000038A4 b .L_00003B54
+.L_000038A8:
+000038A8 lwz r3, 0x1e4(r3)
+000038AC addi r4, r1, 0xc8
+000038B0 lwz r6, 0x220(r29)
+000038B4 li r5, 0x0
+000038B8 lwz r12, 0x3c(r3)
+000038BC lwz r12, 0xd0(r12)
+000038C0 mtctr r12
+000038C4 bctrl
+000038C8 lfs f0, 0xf4(r1)
+000038CC lis r3, 0x64
+000038D0 lfs f1, 0xe4(r1)
+000038D4 lis r6, g_ecMgr@ha
+000038D8 lfs f2, 0xd4(r1)
+000038DC addi r4, r3, 0x4
+000038E0 stfs f1, 0x24(r1)
+000038E4 addi r5, r1, 0x20
+000038E8 lwz r3, g_ecMgr@l(r6)
+000038EC stfs f2, 0x20(r1)
+000038F0 stfs f0, 0x28(r1)
+000038F4 bl setEffect__5ecMgrF4EfIDP5Vec3f
+000038F8 lwz r0, 0x54c(r29)
+000038FC lfs f0, 0xd8(r30)
+00003900 clrlwi r0, r0, 3
+00003904 stw r0, 0x54c(r29)
+00003908 stfs f0, 0x4bc(r29)
+0000390C b .L_00003930
+.L_00003910:
+00003910 lfs f0, 0x4bc(r29)
+00003914 li r0, 0x71b
+00003918 fsubs f0, f0, f31
+0000391C stfs f0, 0x4bc(r29)
+00003920 lwz r3, 0x368(r31)
+00003924 stw r3, 0x4b4(r29)
+00003928 stw r0, 0x4b8(r29)
+0000392C b .L_00003B54
+.L_00003930:
+00003930 lfs f1, 0x0(r30)
+00003934 lfs f0, 0x4bc(r29)
+00003938 fcmpo cr0, f1, f0
+0000393C blt .L_00003910
+00003940 lwz r4, 0x5f8(r29)
+00003944 mr r3, r29
+00003948 bl stopSeBasic__7stMeleeFif
+0000394C lfs f1, 0x0(r30)
+00003950 mr r3, r29
+00003954 li r4, 0x1bc1
+00003958 bl playSeBasic__7stMeleeF5SndIDf
+0000395C mr r3, r29
+00003960 li r4, 0x0
+00003964 bl fn_53_3EC4
+00003968 lwz r3, 0x1e4(r29)
+0000396C addi r4, r1, 0x98
+00003970 lwz r6, 0x220(r29)
+00003974 li r5, 0x0
+00003978 lwz r12, 0x3c(r3)
+0000397C lwz r12, 0xd0(r12)
+00003980 mtctr r12
+00003984 bctrl
+00003988 lfs f0, 0xc4(r1)
+0000398C lis r3, 0x64
+00003990 lfs f1, 0xb4(r1)
+00003994 lis r6, g_ecMgr@ha
+00003998 lfs f2, 0xa4(r1)
+0000399C addi r4, r3, 0x5
+000039A0 stfs f1, 0x18(r1)
+000039A4 addi r5, r1, 0x14
+000039A8 lwz r3, g_ecMgr@l(r6)
+000039AC stfs f2, 0x14(r1)
+000039B0 stfs f0, 0x1c(r1)
+000039B4 bl setEffect__5ecMgrF4EfIDP5Vec3f
+000039B8 lwz r3, 0x1e8(r29)
+000039BC li r4, 0x1
+000039C0 lwz r12, 0x3c(r3)
+000039C4 lwz r12, 0x74(r12)
+000039C8 mtctr r12
+000039CC bctrl
+000039D0 lwz r3, 0x1e4(r29)
+000039D4 li r4, 0x1
+000039D8 bl setEnableCollisionStatus__6GroundFb
+000039DC lwz r3, 0x214(r29)
+000039E0 bl startEntity__8grMadeinFv
+000039E4 lfs f0, 0xdc(r30)
+000039E8 stfs f0, 0x4bc(r29)
+000039EC b .L_00003A10
+.L_000039F0:
+000039F0 lfs f0, 0x4bc(r29)
+000039F4 li r0, 0x735
+000039F8 fsubs f0, f0, f31
+000039FC stfs f0, 0x4bc(r29)
+00003A00 lwz r3, 0x36c(r31)
+00003A04 stw r3, 0x4b4(r29)
+00003A08 stw r0, 0x4b8(r29)
+00003A0C b .L_00003B54
+.L_00003A10:
+00003A10 lfs f1, 0x58(r30)
+00003A14 lfs f0, 0x4bc(r29)
+00003A18 fcmpo cr0, f1, f0
+00003A1C blt .L_000039F0
+00003A20 lwz r3, 0x214(r29)
+00003A24 bl endEntity__8grMadeinFv
+00003A28 b .L_00003A4C
+.L_00003A2C:
+00003A2C lfs f0, 0x4bc(r29)
+00003A30 li r0, 0x73b
+00003A34 fsubs f0, f0, f31
+00003A38 stfs f0, 0x4bc(r29)
+00003A3C lwz r3, 0x370(r31)
+00003A40 stw r3, 0x4b4(r29)
+00003A44 stw r0, 0x4b8(r29)
+00003A48 b .L_00003B54
+.L_00003A4C:
+00003A4C lfs f1, 0x0(r30)
+00003A50 lfs f0, 0x4bc(r29)
+00003A54 fcmpo cr0, f1, f0
+00003A58 blt .L_00003A2C
+00003A5C lbz r0, 0x604(r29)
+00003A60 lis r3, g_efScreen@ha
+00003A64 lwz r3, g_efScreen@l(r3)
+00003A68 addi r4, r1, 0x8
+00003A6C stb r0, 0x8(r1)
+00003A70 lfs f1, 0x98(r30)
+00003A74 bl fn_8005E3C8
+00003A78 li r0, 0x0
+00003A7C lwz r3, 0x1e4(r29)
+00003A80 stb r0, 0x4b0(r29)
+00003A84 bl startEntity__8grMadeinFv
+00003A88 lwz r3, 0x1e4(r29)
+00003A8C li r4, 0x1
+00003A90 bl setEnableCollisionStatus__6GroundFb
+00003A94 lwz r3, 0x1e4(r29)
+00003A98 lwz r3, 0x48(r3)
+00003A9C lwz r27, 0x0(r3)
+00003AA0 cmpwi r27, 0x0
+00003AA4 beq .L_00003AD0
+00003AA8 mr r3, r27
+00003AAC bl getFrameCount__16gfModelAnimationFd
+00003AB0 lis r0, 0x4330
+00003AB4 stw r3, 0x1ec(r1)
+00003AB8 lfd f1, 0x48(r30)
+00003ABC mr r3, r27
+00003AC0 stw r0, 0x1e8(r1)
+00003AC4 lfd f0, 0x1e8(r1)
+00003AC8 fsubs f1, f0, f1
+00003ACC bl setFrame__16gfModelAnimationFd
+.L_00003AD0:
+00003AD0 lwz r3, 0x1e4(r29)
+00003AD4 lfs f1, 0x0(r30)
+00003AD8 lwz r12, 0x3c(r3)
+00003ADC lwz r12, 0x10c(r12)
+00003AE0 mtctr r12
+00003AE4 bctrl
+00003AE8 lwz r3, 0x1e8(r29)
+00003AEC li r4, 0x1
+00003AF0 lwz r12, 0x3c(r3)
+00003AF4 lwz r12, 0x74(r12)
+00003AF8 mtctr r12
+00003AFC bctrl
+00003B00 addi r3, r1, 0x68
+00003B04 bl setIdentity__6MatrixFv
+00003B08 lwz r3, 0x1e4(r29)
+00003B0C addi r4, r1, 0x68
+00003B10 li r5, 0x1
+00003B14 bl fn_27_279FC8
+00003B18 lwz r3, 0x1f0(r29)
+00003B1C addi r4, r1, 0x68
+00003B20 li r5, 0x1
+00003B24 bl fn_27_279FC8
+00003B28 lwz r0, 0x4c8(r29)
+00003B2C li r4, 0x1
+00003B30 lwz r3, 0x54c(r29)
+00003B34 rlwimi r0, r4, 29, 0, 2
+00003B38 rlwimi r3, r4, 29, 0, 2
+00003B3C stw r0, 0x4c8(r29)
+00003B40 li r0, 0x741
+00003B44 stw r3, 0x54c(r29)
+00003B48 lwz r3, 0x374(r31)
+00003B4C stw r3, 0x4b4(r29)
+00003B50 stw r0, 0x4b8(r29)
+.L_00003B54:
+00003B54 psq_l f31, 0x228(r1), 0, qr0
+00003B58 lfd f31, 0x220(r1)
+00003B5C psq_l f30, 0x218(r1), 0, qr0
+00003B60 addi r11, r1, 0x210
+00003B64 lfd f30, 0x210(r1)
+00003B68 bl _restgpr_27
+00003B6C lwz r0, 0x234(r1)
+00003B70 mtlr r0
+00003B74 addi r1, r1, 0x230
+00003B78 blr
+.endfn fn_53_3370
+
+# .text:0x3B0C | 0x3B7C | size: 0x124
+.fn fn_53_3B7C, global
+00003B7C stwu r1, -0x10(r1)
+00003B80 mflr r0
+00003B84 lis r5, lbl_53_rodata_AC@ha
+00003B88 stw r0, 0x14(r1)
+00003B8C lfs f1, lbl_53_rodata_AC@l(r5)
+00003B90 stw r31, 0xc(r1)
+00003B94 mr r31, r3
+00003B98 stw r30, 0x8(r1)
+00003B9C mr r30, r4
+00003BA0 lwz r3, 0x208(r3)
+00003BA4 bl setAttack__8grMadeinFfP5Vec3f
+00003BA8 lwz r3, 0x208(r31)
+00003BAC bl getOverwriteAttackData__8grMadeinFv
+00003BB0 lwz r7, 0x30(r3)
+00003BB4 lis r4, lbl_53_rodata_30@ha
+00003BB8 lfs f0, lbl_53_rodata_30@l(r4)
+00003BBC li r6, 0xf
+00003BC0 clrlwi r7, r7, 9
+00003BC4 li r0, 0x23
+00003BC8 stw r7, 0x30(r3)
+00003BCC li r9, 0x2
+00003BD0 li r5, 0x28
+00003BD4 li r10, 0x0
+00003BD8 stw r6, 0x0(r3)
+00003BDC li r8, 0x50
+00003BE0 li r4, 0x3ff
+00003BE4 rlwimi r7, r9, 0, 27, 31
+00003BE8 stw r0, 0x14(r3)
+00003BEC ori r0, r7, 0x1c00
+00003BF0 rlwimi r0, r4, 13, 9, 18
+00003BF4 li r6, 0x5a
+00003BF8 stw r5, 0x18(r3)
+00003BFC rlwinm r7, r0, 0, 23, 21
+00003C00 ori r7, r7, 0x1e0
+00003C04 li r5, 0x3
+00003C08 stw r10, 0x1c(r3)
+00003C0C li r0, 0x4
+00003C10 stw r8, 0x20(r3)
+00003C14 stfs f0, 0x10(r3)
+00003C18 lfs f0, 0x0(r30)
+00003C1C stfs f0, 0x4(r3)
+00003C20 lfs f0, 0x4(r30)
+00003C24 stfs f0, 0x8(r3)
+00003C28 lfs f0, 0x8(r30)
+00003C2C stfs f0, 0xc(r3)
+00003C30 lwz r8, 0x34(r3)
+00003C34 lwz r4, 0x38(r3)
+00003C38 rlwinm r8, r8, 0, 9, 6
+00003C3C rlwimi r8, r9, 30, 0, 1
+00003C40 rlwinm r4, r4, 0, 17, 15
+00003C44 rlwimi r4, r6, 16, 0, 15
+00003C48 stw r7, 0x30(r3)
+00003C4C rlwimi r8, r9, 25, 2, 6
+00003C50 rlwinm r6, r8, 0, 10, 8
+00003C54 rlwinm r4, r4, 0, 19, 16
+00003C58 rlwimi r4, r5, 10, 19, 21
+00003C5C oris r6, r6, 0x20
+00003C60 rlwinm r5, r6, 0, 13, 10
+00003C64 rlwinm r4, r4, 0, 27, 21
+00003C68 stw r5, 0x34(r3)
+00003C6C stw r4, 0x38(r3)
+00003C70 lwz r4, 0x3c(r3)
+00003C74 clrlwi r4, r4, 1
+00003C78 stw r4, 0x3c(r3)
+00003C7C lwz r3, 0x208(r31)
+00003C80 lwz r3, 0x15c(r3)
+00003C84 stw r0, 0x28(r3)
+00003C88 lwz r31, 0xc(r1)
+00003C8C lwz r30, 0x8(r1)
+00003C90 lwz r0, 0x14(r1)
+00003C94 mtlr r0
+00003C98 addi r1, r1, 0x10
+00003C9C blr
+.endfn fn_53_3B7C
+
+# .text:0x3C30 | 0x3CA0 | size: 0x10C
+.fn fn_53_3CA0, global
+00003CA0 stwu r1, -0x20(r1)
+00003CA4 mflr r0
+00003CA8 stw r0, 0x24(r1)
+00003CAC stw r31, 0x1c(r1)
+00003CB0 mr r31, r3
+00003CB4 stw r30, 0x18(r1)
+00003CB8 lis r30, lbl_53_rodata_50@ha
+00003CBC lfs f1, lbl_53_rodata_50@l(r30)
+00003CC0 stw r29, 0x14(r1)
+00003CC4 mr r29, r4
+00003CC8 lwz r3, 0x210(r3)
+00003CCC bl setAttack__8grMadeinFfP5Vec3f
+00003CD0 lwz r3, 0x210(r31)
+00003CD4 bl getOverwriteAttackData__8grMadeinFv
+00003CD8 lwz r0, 0x30(r3)
+00003CDC li r4, 0x1e
+00003CE0 li r6, 0x16a
+00003CE4 li r8, 0x32
+00003CE8 clrlwi r0, r0, 9
+00003CEC li r9, 0x0
+00003CF0 stw r0, 0x30(r3)
+00003CF4 clrrwi r0, r0, 5
+00003CF8 li r7, 0x50
+00003CFC lfs f0, lbl_53_rodata_50@l(r30)
+00003D00 stw r4, 0x0(r3)
+00003D04 li r4, 0x3ff
+00003D08 ori r0, r0, 0x1c00
+00003D0C li r5, 0x3c
+00003D10 stw r6, 0x14(r3)
+00003D14 rlwimi r0, r4, 13, 9, 18
+00003D18 rlwinm r6, r0, 0, 23, 21
+00003D1C stw r8, 0x18(r3)
+00003D20 ori r6, r6, 0x1e0
+00003D24 li r0, 0x4
+00003D28 stw r9, 0x1c(r3)
+00003D2C stw r7, 0x20(r3)
+00003D30 stfs f0, 0x10(r3)
+00003D34 lfs f0, 0x0(r29)
+00003D38 stfs f0, 0x4(r3)
+00003D3C lfs f0, 0x4(r29)
+00003D40 stfs f0, 0x8(r3)
+00003D44 lfs f0, 0x8(r29)
+00003D48 stfs f0, 0xc(r3)
+00003D4C lwz r4, 0x34(r3)
+00003D50 lwz r7, 0x38(r3)
+00003D54 clrlwi r4, r4, 10
+00003D58 oris r4, r4, 0x20
+00003D5C stw r6, 0x30(r3)
+00003D60 rlwinm r6, r4, 0, 13, 10
+00003D64 rlwinm r4, r7, 0, 17, 15
+00003D68 stw r6, 0x34(r3)
+00003D6C rlwimi r4, r5, 16, 0, 15
+00003D70 rlwinm r4, r4, 0, 27, 16
+00003D74 stw r4, 0x38(r3)
+00003D78 lwz r4, 0x3c(r3)
+00003D7C oris r4, r4, 0x8000
+00003D80 stw r4, 0x3c(r3)
+00003D84 lwz r3, 0x210(r31)
+00003D88 lwz r3, 0x15c(r3)
+00003D8C stw r0, 0x28(r3)
+00003D90 lwz r31, 0x1c(r1)
+00003D94 lwz r30, 0x18(r1)
+00003D98 lwz r29, 0x14(r1)
+00003D9C lwz r0, 0x24(r1)
+00003DA0 mtlr r0
+00003DA4 addi r1, r1, 0x20
+00003DA8 blr
+.endfn fn_53_3CA0
+
+# .text:0x3D3C | 0x3DAC | size: 0x118
+.fn fn_53_3DAC, global
+00003DAC stwu r1, -0x20(r1)
+00003DB0 mflr r0
+00003DB4 stw r0, 0x24(r1)
+00003DB8 addi r4, r1, 0x8
+00003DBC stw r31, 0x1c(r1)
+00003DC0 mr r31, r3
+00003DC4 stw r30, 0x18(r1)
+00003DC8 lis r30, lbl_53_rodata_0@ha
+00003DCC addi r30, r30, lbl_53_rodata_0@l
+00003DD0 lfs f0, 0x0(r30)
+00003DD4 lfs f2, 0xa8(r30)
+00003DD8 stfs f0, 0xc(r1)
+00003DDC lfs f1, 0x50(r30)
+00003DE0 stfs f2, 0x8(r1)
+00003DE4 stfs f0, 0x10(r1)
+00003DE8 lwz r3, 0x214(r3)
+00003DEC bl setAttack__8grMadeinFfP5Vec3f
+00003DF0 lwz r3, 0x214(r31)
+00003DF4 bl getOverwriteAttackData__8grMadeinFv
+00003DF8 lwz r0, 0x30(r3)
+00003DFC li r4, 0x0
+00003E00 li r9, 0x5a
+00003E04 li r8, 0x32
+00003E08 clrlwi r0, r0, 9
+00003E0C li r7, 0x64
+00003E10 stw r0, 0x30(r3)
+00003E14 clrrwi r0, r0, 5
+00003E18 li r6, 0x50
+00003E1C lfs f0, 0xe0(r30)
+00003E20 stw r4, 0x0(r3)
+00003E24 li r4, 0x3ff
+00003E28 ori r0, r0, 0x1c00
+00003E2C li r5, 0x3c
+00003E30 stw r9, 0x14(r3)
+00003E34 rlwimi r0, r4, 13, 9, 18
+00003E38 rlwinm r4, r0, 0, 23, 21
+00003E3C stw r8, 0x18(r3)
+00003E40 ori r4, r4, 0x1e0
+00003E44 li r0, 0x4
+00003E48 stw r7, 0x1c(r3)
+00003E4C stw r6, 0x20(r3)
+00003E50 stfs f0, 0x10(r3)
+00003E54 lfs f0, 0x8(r1)
+00003E58 stfs f0, 0x4(r3)
+00003E5C lfs f0, 0xc(r1)
+00003E60 stfs f0, 0x8(r3)
+00003E64 lfs f0, 0x10(r1)
+00003E68 stfs f0, 0xc(r3)
+00003E6C lwz r6, 0x34(r3)
+00003E70 lwz r7, 0x38(r3)
+00003E74 clrlwi r6, r6, 13
+00003E78 stw r4, 0x30(r3)
+00003E7C rlwinm r4, r7, 0, 17, 15
+00003E80 rlwimi r4, r5, 16, 0, 15
+00003E84 ori r4, r4, 0x6000
+00003E88 stw r6, 0x34(r3)
+00003E8C rlwinm r4, r4, 0, 27, 18
+00003E90 stw r4, 0x38(r3)
+00003E94 lwz r4, 0x3c(r3)
+00003E98 oris r4, r4, 0x8000
+00003E9C stw r4, 0x3c(r3)
+00003EA0 lwz r3, 0x214(r31)
+00003EA4 lwz r3, 0x15c(r3)
+00003EA8 stw r0, 0x28(r3)
+00003EAC lwz r31, 0x1c(r1)
+00003EB0 lwz r30, 0x18(r1)
+00003EB4 lwz r0, 0x24(r1)
+00003EB8 mtlr r0
+00003EBC addi r1, r1, 0x20
+00003EC0 blr
+.endfn fn_53_3DAC
+
+# .text:0x3E54 | 0x3EC4 | size: 0x90
+.fn fn_53_3EC4, global
+00003EC4 stwu r1, -0x20(r1)
+00003EC8 mflr r0
+00003ECC stw r0, 0x24(r1)
+00003ED0 addi r11, r1, 0x20
+00003ED4 bl _savegpr_26
+00003ED8 lwz r3, 0x1e4(r3)
+00003EDC mr r26, r4
+00003EE0 cmpwi r3, 0x0
+00003EE4 beq .L_00003F3C
+00003EE8 lwz r29, 0x4c(r3)
+00003EEC cmpwi r29, 0x0
+00003EF0 beq .L_00003F3C
+00003EF4 lhz r27, 0x6(r29)
+00003EF8 li r28, 0x0
+00003EFC li r31, 0x6000
+00003F00 li r30, 0x0
+00003F04 b .L_00003F34
+.L_00003F08:
+00003F08 mr r3, r29
+00003F0C mr r4, r28
+00003F10 bl getJoint__11grCollisionFUs
+00003F14 cmpwi r3, 0x0
+00003F18 beq .L_00003F30
+00003F1C cmplwi r26, 0x1
+00003F20 bne .L_00003F2C
+00003F24 sth r30, 0x52(r3)
+00003F28 b .L_00003F30
+.L_00003F2C:
+00003F2C sth r31, 0x52(r3)
+.L_00003F30:
+00003F30 addi r28, r28, 0x1
+.L_00003F34:
+00003F34 cmplw r28, r27
+00003F38 bne .L_00003F08
+.L_00003F3C:
+00003F3C addi r11, r1, 0x20
+00003F40 bl _restgpr_26
+00003F44 lwz r0, 0x24(r1)
+00003F48 mtlr r0
+00003F4C addi r1, r1, 0x20
+00003F50 blr
+.endfn fn_53_3EC4
+
+# .text:0x3EE4 | 0x3F54 | size: 0x4
+.fn fn_53_3F54, global
+00003F54 blr
+.endfn fn_53_3F54
+
+# .text:0x3EE8 | 0x3F58 | size: 0x8
+.fn fn_53_3F58, global
+00003F58 li r3, 0x0
+00003F5C blr
+.endfn fn_53_3F58
+
+# .text:0x3EF0 | 0x3F60 | size: 0x8
+.fn fn_53_3F60, global
+00003F60 li r3, 0x0
+00003F64 blr
+.endfn fn_53_3F60
+
+# .text:0x3EF8 | 0x3F68 | size: 0x8
+.fn fn_53_3F68, global
+00003F68 li r3, 0x0
+00003F6C blr
+.endfn fn_53_3F68
+
+# .text:0x3F00 | 0x3F70 | size: 0x8
+.fn fn_53_3F70, global
+00003F70 li r3, 0x0
+00003F74 blr
+.endfn fn_53_3F70
+
+# .text:0x3F08 | 0x3F78 | size: 0x8
+.fn fn_53_3F78, global
+00003F78 li r3, 0x1
+00003F7C blr
+.endfn fn_53_3F78
+
+# .text:0x3F10 | 0x3F80 | size: 0x4
+.fn fn_53_3F80, global
+00003F80 blr
+.endfn fn_53_3F80
+
+# .text:0x3F14 | 0x3F84 | size: 0x8
+.fn fn_53_3F84, global
+00003F84 lfs f1, 0x190(r3)
+00003F88 blr
+.endfn fn_53_3F84
+
+# .text:0x3F1C | 0x3F8C | size: 0x8
+.fn fn_53_3F8C, global
+00003F8C stfs f1, 0x190(r3)
+00003F90 blr
+.endfn fn_53_3F8C
+
+# .text:0x3F24 | 0x3F94 | size: 0x8
+.fn fn_53_3F94, global
+00003F94 li r3, 0x0
+00003F98 blr
+.endfn fn_53_3F94
+
+# .text:0x3F2C | 0x3F9C | size: 0xC
+.fn fn_53_3F9C, global
+00003F9C lis r3, lbl_53_rodata_0@ha
+00003FA0 lfs f1, lbl_53_rodata_0@l(r3)
+00003FA4 blr
+.endfn fn_53_3F9C
+
+# .text:0x3F38 | 0x3FA8 | size: 0xC
+.fn fn_53_3FA8, global
+00003FA8 lis r3, lbl_53_rodata_34@ha
+00003FAC lfs f1, lbl_53_rodata_34@l(r3)
+00003FB0 blr
+.endfn fn_53_3FA8
+
+# .text:0x3F44 | 0x3FB4 | size: 0x10
+.fn fn_53_3FB4, global
+00003FB4 stb r4, 0x184(r3)
+00003FB8 stw r5, 0x188(r3)
+00003FBC stfs f1, 0x18c(r3)
+00003FC0 blr
+.endfn fn_53_3FB4
+
+# .text:0x3F54 | 0x3FC4 | size: 0x14
+.fn fn_53_3FC4, global
+00003FC4 lwz r0, 0x188(r3)
+00003FC8 stw r0, 0x0(r4)
+00003FCC lfs f0, 0x18c(r3)
+00003FD0 stfs f0, 0x0(r5)
+00003FD4 blr
+.endfn fn_53_3FC4
+
+# .text:0x3F68 | 0x3FD8 | size: 0x8
+.fn fn_53_3FD8, global
+00003FD8 lbz r3, 0x184(r3)
+00003FDC blr
+.endfn fn_53_3FD8
+
+# .text:0x3F70 | 0x3FE0 | size: 0x8
+.fn fn_53_3FE0, global
+00003FE0 li r3, 0x0
+00003FE4 blr
+.endfn fn_53_3FE0
+
+# .text:0x3F78 | 0x3FE8 | size: 0x8
+.fn fn_53_3FE8, global
+00003FE8 li r3, 0x0
+00003FEC blr
+.endfn fn_53_3FE8
+
+# .text:0x3F80 | 0x3FF0 | size: 0x8
+.fn fn_53_3FF0, global
+00003FF0 li r3, 0x0
+00003FF4 blr
+.endfn fn_53_3FF0
+
+# .text:0x3F88 | 0x3FF8 | size: 0x8
+.fn fn_53_3FF8, global
+00003FF8 li r3, 0x0
+00003FFC blr
+.endfn fn_53_3FF8
+
+# .text:0x3F90 | 0x4000 | size: 0x4
+.fn fn_53_4000, global
+00004000 blr
+.endfn fn_53_4000
+
+# .text:0x3F94 | 0x4004 | size: 0x1C
+.fn fn_53_4004, global
+00004004 lis r5, lbl_53_rodata_0@ha
+00004008 li r3, 0x0
+0000400C lfs f0, lbl_53_rodata_0@l(r5)
+00004010 stfs f0, 0x0(r4)
+00004014 stfs f0, 0x4(r4)
+00004018 stfs f0, 0x8(r4)
+0000401C blr
+.endfn fn_53_4004
+
+# .text:0x3FB0 | 0x4020 | size: 0x8
+.fn fn_53_4020, global
+00004020 li r3, 0x14
+00004024 blr
+.endfn fn_53_4020
+
+# .text:0x3FB8 | 0x4028 | size: 0x8
+.fn fn_53_4028, global
+00004028 addi r3, r3, 0x68
+0000402C blr
+.endfn fn_53_4028
+
+# .text:0x3FC0 | 0x4030 | size: 0x8
+.fn fn_53_4030, global
+00004030 li r3, 0x0
+00004034 blr
+.endfn fn_53_4030
+
+# .text:0x3FC8 | 0x4038 | size: 0x8
+.fn fn_53_4038, global
+00004038 li r3, 0x0
+0000403C blr
+.endfn fn_53_4038
+
+# .text:0x3FD0 | 0x4040 | size: 0xC
+.fn fn_53_4040, global
+00004040 lis r3, lbl_53_rodata_0@ha
+00004044 lfs f1, lbl_53_rodata_0@l(r3)
+00004048 blr
+.endfn fn_53_4040
+
+# .text:0x3FDC | 0x404C | size: 0x4
+.fn fn_53_404C, global
+0000404C blr
+.endfn fn_53_404C
+
+# .text:0x3FE0 | 0x4050 | size: 0x8
+.fn fn_53_4050, global
+00004050 li r3, 0x0
+00004054 blr
+.endfn fn_53_4050
+
+# .text:0x3FE8 | 0x4058 | size: 0x8
+.fn fn_53_4058, global
+00004058 li r3, 0x1
+0000405C blr
+.endfn fn_53_4058
+
+# .text:0x3FF0 | 0x4060 | size: 0x8
+.fn fn_53_4060, global
+00004060 lwz r3, 0x1c8(r3)
+00004064 blr
+.endfn fn_53_4060
+
+# .text:0x3FF8 | 0x4068 | size: 0x8
+.fn fn_53_4068, global
+00004068 li r3, 0x1
+0000406C blr
+.endfn fn_53_4068
+
+# .text:0x4000 | 0x4070 | size: 0xC
+.fn fn_53_4070, global
+00004070 lis r3, 0x1400
+00004074 addi r3, r3, 0x496
+00004078 blr
+.endfn fn_53_4070
+
+.include "macros.inc"
+.file "auto_00_000040E0_text"
+
+# 0x000040E0..0x0000418C | size: 0xAC
+.text
+.balign 4
+
+# .text:0x0 | 0x40E0 | size: 0x74
+.fn fn_53_40E0, global
+000040E0 stwu r1, -0x10(r1)
+000040E4 mflr r0
+000040E8 cmpwi r3, 0x0
+000040EC stw r0, 0x14(r1)
+000040F0 stw r31, 0xc(r1)
+000040F4 mr r31, r4
+000040F8 stw r30, 0x8(r1)
+000040FC mr r30, r3
+00004100 beq .L_00004138
+00004104 lis r6, lbl_53_data_660@ha
+00004108 li r4, 0x33
+0000410C addi r6, r6, lbl_53_data_660@l
+00004110 li r5, 0x0
+00004114 stw r6, 0x0(r3)
+00004118 bl setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+0000411C mr r3, r30
+00004120 li r4, 0x0
+00004124 bl __dt__11stClassInfoFv
+00004128 cmpwi r31, 0x0
+0000412C ble .L_00004138
+00004130 mr r3, r30
+00004134 bl __dl__FPv
+.L_00004138:
+00004138 mr r3, r30
+0000413C lwz r31, 0xc(r1)
+00004140 lwz r30, 0x8(r1)
+00004144 lwz r0, 0x14(r1)
+00004148 mtlr r0
+0000414C addi r1, r1, 0x10
+00004150 blr
+.endfn fn_53_40E0
+
+# .text:0x74 | 0x4154 | size: 0x34
+.fn fn_53_4154, global
+00004154 stwu r1, -0x10(r1)
+00004158 mflr r0
+0000415C li r3, 0x608
+00004160 li r4, 0xf
+00004164 stw r0, 0x14(r1)
+00004168 bl __nw__FUlQ25Heaps8HeapType
+0000416C cmpwi r3, 0x0
+00004170 beq .L_00004178
+00004174 bl fn_53_A4
+.L_00004178:
+00004178 lwz r0, 0x14(r1)
+0000417C mtlr r0
+00004180 addi r1, r1, 0x10
+00004184 blr
+.endfn fn_53_4154
+
+# .text:0xA8 | 0x4188 | size: 0x4
+.fn fn_53_4188, global
+00004188 blr
+.endfn fn_53_4188
+
+.include "macros.inc"
+.file "auto_fn_53_407C_text"
+
+# 0x0000407C..0x000040E0 | size: 0x64
+.text
+.balign 4
+
+# .text:0x0 | 0x407C | size: 0x64
+.fn fn_53_407C, global
+0000407C stwu r1, -0x10(r1)
+00004080 mflr r0
+00004084 stw r0, 0x14(r1)
+00004088 stw r31, 0xc(r1)
+0000408C lis r31, lbl_53_bss_14@ha
+00004090 addi r3, r31, lbl_53_bss_14@l
+00004094 bl __ct__11stClassInfoFv
+00004098 lis r5, lbl_53_data_660@ha
+0000409C addi r3, r31, lbl_53_bss_14@l
+000040A0 addi r5, r5, lbl_53_data_660@l
+000040A4 li r4, 0x33
+000040A8 stw r5, lbl_53_bss_14@l(r31)
+000040AC mr r5, r3
+000040B0 bl setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+000040B4 lis r4, fn_53_40E0@ha
+000040B8 lis r5, lbl_53_bss_8@ha
+000040BC addi r3, r31, lbl_53_bss_14@l
+000040C0 addi r4, r4, fn_53_40E0@l
+000040C4 addi r5, r5, lbl_53_bss_8@l
+000040C8 bl __register_global_object
+000040CC lwz r0, 0x14(r1)
+000040D0 lwz r31, 0xc(r1)
+000040D4 mtlr r0
+000040D8 addi r1, r1, 0x10
+000040DC blr
+.endfn fn_53_407C
+
+# 0x00000000..0x00000004 | size: 0x4
+.section .ctors, "a"
+.balign 4
+	.4byte fn_53_407C

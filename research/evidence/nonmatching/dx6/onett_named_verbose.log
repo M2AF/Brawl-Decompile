@@ -1,0 +1,380 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+SAME create__9stDxOnettFv                     create__9stDxOnettFv                          13 13
+DIFF __ct__9stDxOnettFv                       __ct__9stDxOnettFv                            65 65
+    --- target
+    +++ candidate
+    @@ -40,10 +40,10 @@
+     stb     r31,604(r28)
+     bl <addr>
+    +lwz     r0,616(r28)
+    +mr      r3,r28
+     lfs     f0,0(r30)
+    -li      r3,1
+    -lwz     r0,616(r28)
+    -rlwimi  r0,r3,29,0,2
+    +clrlwi  r0,r0,3
+     stb     r31,740(r28)
+    -mr      r3,r28
+    +oris    r0,r0,8192
+     stw     r0,616(r28)
+     stb     r29,741(r28)
+SAME __dt__9stDxOnettFv                       __dt__9stDxOnettFv                            40 40
+SAME loading__9stDxOnettFv                    loading__9stDxOnettFv                         2 2
+SAME createObj__9stDxOnettFv                  createObj__9stDxOnettFv                       164 164
+SAME createCloud__9stDxOnettFi                createCloud__9stDxOnettFi                     43 43
+SAME setStageData__6GroundFPv                 setStageData__6GroundFPv                      2 2
+SAME createBackground__9stDxOnettFi           createBackground__9stDxOnettFi                55 55
+SAME set1C8__9grDxOnettFPv                    set1C8__9grDxOnettFPv                         2 2
+SAME set1D0__11grDxOnettBgFPv                 set1D0__11grDxOnettBgFPv                      2 2
+DIFF createKanban__9stDxOnettFi               createKanban__9stDxOnettFi                    82 81
+    --- target
+    +++ candidate
+    @@ -66,6 +66,5 @@
+     bctrl
+     cmpwi   r30,3
+    -beq <addr>
+    -b <addr>
+    +bne <addr>
+     lwz     r12,60(r31)
+     mr      r3,r31
+SAME set1D8__15grDxOnettKanbanFPv             set1D8__15grDxOnettKanbanFPv                  2 2
+SAME set1DC__15grDxOnettKanbanFPv             set1DC__15grDxOnettKanbanFPv                  2 2
+SAME set1E0__15grDxOnettKanbanFPv             set1E0__15grDxOnettKanbanFPv                  2 2
+SAME set1E4__15grDxOnettKanbanFUc             set1E4__15grDxOnettKanbanFUc                  2 2
+SAME createAshiba__9stDxOnettFi               createAshiba__9stDxOnettFi                    62 62
+SAME set1D4__15grDxOnettAshibaFUc             set1D4__15grDxOnettAshibaFUc                  2 2
+SAME createCar__9stDxOnettFi                  createCar__9stDxOnettFi                       116 116
+SAME set1D0__12grDxOnettCarFPv                set1D0__12grDxOnettCarFPv                     2 2
+SAME set1D4__12grDxOnettCarFPv                set1D4__12grDxOnettCarFPv                     2 2
+SAME set1D8__12grDxOnettCarFPv                set1D8__12grDxOnettCarFPv                     2 2
+SAME set1DC__12grDxOnettCarFPv                set1DC__12grDxOnettCarFPv                     2 2
+SAME set1E0__12grDxOnettCarFPv                set1E0__12grDxOnettCarFPv                     2 2
+SAME set1E4__12grDxOnettCarFUc                set1E4__12grDxOnettCarFUc                     2 2
+SAME createAttack__9stDxOnettFi               createAttack__9stDxOnettFi                    61 61
+SAME set1E4__15grDxOnettAttackFPv             set1E4__15grDxOnettAttackFPv                  2 2
+SAME set1E0__15grDxOnettAttackFPv             set1E0__15grDxOnettAttackFPv                  2 2
+SAME createWarning__9stDxOnettFi              createWarning__9stDxOnettFi                   55 55
+SAME set1D8__16grDxOnettWarningFPv            set1D8__16grDxOnettWarningFPv                 2 2
+DIFF createBeltConveyors__9stDxOnettFv        createBeltConveyors__9stDxOnettFv             91 103
+    --- target
+    +++ candidate
+    @@ -5,44 +5,50 @@
+     stw     r31,28(r1)
+     stw     r30,24(r1)
+    +mr      r30,r3
+    +li      r3,64
+     stw     r29,20(r1)
+    -lis     r29,0
+    -addi    r29,r29,0
+     stw     r28,16(r1)
+    -mr      r28,r3
+    -li      r3,64
+    +lis     r28,0
+    +addi    r28,r28,0
+     bl <addr>
+     cmpwi   r3,0
+    -stw     r3,760(r28)
+    +stw     r3,760(r30)
+     beq <addr>
+     li      r4,0
+     li      r5,64
+     bl <addr>
+    -lwz     r3,760(r28)
+    -li      r30,0
+    -lfs     f0,8(r29)
+    -lis     r31,0
+    -lfs     f3,0(r29)
+    +lfs     f0,8(r28)
+    +li      r31,0
+    +lwz     r3,760(r30)
+    +lis     r29,0
+    +lfs     f3,0(r28)
+     li      r4,14
+     stfs    f0,40(r3)
+     li      r5,-1
+    -lfs     f2,12(r29)
+    +lfs     f2,12(r28)
+    +lwz     r3,760(r30)
+    +lfs     f1,16(r28)
+     stfs    f3,44(r3)
+    -lfs     f1,16(r29)
+    +lfs     f0,20(r28)
+    +lwz     r3,760(r30)
+     stfs    f3,48(r3)
+    -lfs     f0,20(r29)
+    -lwz     r3,760(r28)
+    +lwz     r3,760(r30)
+     stfs    f2,52(r3)
+    -lwz     r3,760(r28)
+    -stb     r30,56(r3)
+    -lwz     r3,760(r28)
+    +lwz     r3,760(r30)
+    +stb     r31,56(r3)
+    +lwz     r3,760(r30)
+     stfs    f3,24(r3)
+    +lwz     r3,760(r30)
+     stfs    f3,28(r3)
+    +lwz     r3,760(r30)
+     stfs    f1,32(r3)
+    +lwz     r3,760(r30)
+     stfs    f0,36(r3)
+    -stw     r30,0(r3)
+    -lwz     r3,0(r31)
+    +lwz     r3,760(r30)
+    +stw     r31,0(r3)
+    +lwz     r3,0(r29)
+     bl <addr>
+    -stw     r3,752(r28)
+    -lwz     r4,760(r28)
+    +stw     r3,752(r30)
+    +lwz     r4,760(r30)
+     bl <addr>
+     li      r3,64
+    @@ -50,35 +56,41 @@
+     bl <addr>
+     cmpwi   r3,0
+    -stw     r3,764(r28)
+    +stw     r3,764(r30)
+     beq <addr>
+     li      r4,0
+     li      r5,64
+     bl <addr>
+    -lwz     r3,764(r28)
+    +lfs     f0,24(r28)
+     li      r0,1
+    -lfs     f0,24(r29)
+    +lwz     r3,764(r30)
+     li      r4,14
+    -lfs     f3,0(r29)
+    +lfs     f3,0(r28)
+     li      r5,-1
+     stfs    f0,40(r3)
+    -lfs     f2,12(r29)
+    +lfs     f2,12(r28)
+    +lwz     r3,764(r30)
+    +lfs     f1,28(r28)
+     stfs    f3,44(r3)
+    -lfs     f1,28(r29)
+    +lfs     f0,20(r28)
+    +lwz     r3,764(r30)
+     stfs    f3,48(r3)
+    -lfs     f0,20(r29)
+    -lwz     r3,764(r28)
+    +lwz     r3,764(r30)
+     stfs    f2,52(r3)
+    -lwz     r3,764(r28)
+    +lwz     r3,764(r30)
+     stb     r0,56(r3)
+    -lwz     r3,764(r28)
+    +lwz     r3,764(r30)
+     stfs    f3,24(r3)
+    +lwz     r3,764(r30)
+     stfs    f3,28(r3)
+    +lwz     r3,764(r30)
+     stfs    f1,32(r3)
+    +lwz     r3,764(r30)
+     stfs    f0,36(r3)
+    -stw     r30,0(r3)
+    -lwz     r3,0(r31)
+    +lwz     r3,764(r30)
+    +stw     r31,0(r3)
+    +lwz     r3,0(r29)
+     bl <addr>
+    -stw     r3,756(r28)
+    -lwz     r4,764(r28)
+    +stw     r3,756(r30)
+    +lwz     r4,764(r30)
+     bl <addr>
+     lwz     r0,36(r1)
+DIFF update__9stDxOnettFf                     update__9stDxOnettFf                          79 80
+    --- target
+    +++ candidate
+    @@ -18,4 +18,5 @@
+     bl <addr>
+     addic.  r30,r3,132
+    +lfs     f4,0(r31)
+     beq <addr>
+     lfs     f1,32(r31)
+DIFF updateCameraBounds__9stDxOnettFf         updateCameraBounds__9stDxOnettFf              23 23
+    --- target
+    +++ candidate
+    @@ -5,16 +5,16 @@
+     mr      r31,r3
+     bl <addr>
+    +lfs     f0,328(r3)
+     lis     r4,0
+    -lfs     f2,336(r3)
+    -lfs     f1,328(r3)
+    -lfs     f0,0(r4)
+    -stfs    f1,568(r31)
+    -stfs    f2,572(r31)
+    -stfs    f0,576(r31)
+    -lfs     f2,340(r3)
+    -lfs     f1,332(r3)
+    -stfs    f1,580(r31)
+    -stfs    f2,584(r31)
+    -stfs    f0,588(r31)
+    +lfs     f1,0(r4)
+    +stfs    f0,568(r31)
+    +lfs     f0,336(r3)
+    +stfs    f0,572(r31)
+    +stfs    f1,576(r31)
+    +lfs     f0,332(r3)
+    +stfs    f0,580(r31)
+    +lfs     f0,340(r3)
+    +stfs    f0,584(r31)
+    +stfs    f1,588(r31)
+     lwz     r31,12(r1)
+     lwz     r0,20(r1)
+DIFF updateCars__9stDxOnettFf                 updateCars__9stDxOnettFf                      85 86
+    --- target
+    +++ candidate
+    @@ -61,8 +61,9 @@
+     cmplwi  r0,4
+     bne <addr>
+    +lwz     r0,616(r3)
+    +li      r4,1
+     lfs     f0,36(r31)
+    -li      r4,1
+    -lwz     r0,616(r3)
+    -rlwimi  r0,r4,29,0,2
+    +clrlwi  r0,r0,3
+    +oris    r0,r0,8192
+     stfs    f0,596(r3)
+     stb     r4,592(r3)
+DIFF updateKanban__9stDxOnettFf               updateKanban__9stDxOnettFf                    58 56
+    --- target
+    +++ candidate
+    @@ -9,12 +9,10 @@
+     beq <addr>
+     lbz     r0,741(r3)
+    -cmpwi   r0,2
+    +cmplwi  r0,2
+    +beq <addr>
+    +cmpwi   r0,1
+     beq <addr>
+     bge <addr>
+     cmpwi   r0,0
+    -beq <addr>
+    -bge <addr>
+    -b <addr>
+    -cmpwi   r0,4
+     bge <addr>
+     b <addr>
+    @@ -25,10 +23,10 @@
+     bne <addr>
+     bl <addr>
+    +lfs     f2,20(r31)
+    +li      r0,3
+    +stb     r0,741(r30)
+     lfs     f0,24(r31)
+    -li      r0,3
+    -lfs     f2,20(r31)
+     fsubs   f0,f0,f2
+    -stb     r0,741(r30)
+    -fmuls   f0,f0,f1
+    +fmuls   f0,f1,f0
+     fadds   f0,f2,f0
+     stfs    f0,744(r30)
+SAME updateEmpty__9stDxOnettFf                updateEmpty__9stDxOnettFf                     1 1
+DIFF chooseCar__9stDxOnettFUl                 chooseCar__9stDxOnettFUl                      145 145
+    --- target
+    +++ candidate
+    @@ -105,35 +105,35 @@
+     stb     r5,600(r29)
+     addi    r3,r29,608
+    -lfs     f0,0(r31)
+    -addi    r4,r1,8
+    +lfs     f4,0(r31)
+    +addi    r4,r1,24
+     stb     r5,601(r29)
+    -lfs     f4,68(r31)
+    -stfs    f0,8(r1)
+    -lfs     f3,72(r31)
+    -lfs     f2,76(r31)
+    -lfs     f1,80(r31)
+    +lfs     f3,68(r31)
+    +stfs    f4,24(r1)
+    +lfs     f2,72(r31)
+    +lfs     f1,76(r31)
+    +lfs     f0,80(r31)
+    +stfs    f4,28(r1)
+    +stfs    f4,32(r1)
+    +lwz     r0,616(r29)
+    +stfs    f3,16(r1)
+    +clrlwi  r0,r0,3
+    +stfs    f2,20(r1)
+    +stfs    f1,8(r1)
+     stfs    f0,12(r1)
+    -stfs    f0,16(r1)
+    -lwz     r0,616(r29)
+    -stfs    f4,32(r1)
+    -clrlwi  r0,r0,3
+    -stfs    f3,36(r1)
+    -stfs    f2,24(r1)
+    -stfs    f1,28(r1)
+     stw     r0,616(r29)
+     bl <addr>
+    -lwz     r0,616(r29)
+    -li      r3,0
+    -lfs     f3,24(r1)
+    -lfs     f2,28(r1)
+    -rlwinm  r0,r0,0,6,2
+    -lfs     f1,32(r1)
+    -lfs     f0,36(r1)
+    +lwz     r3,616(r29)
+    +li      r0,0
+    +lfs     f3,8(r1)
+    +lfs     f2,12(r1)
+    +rlwinm  r3,r3,0,6,2
+    +lfs     f1,16(r1)
+    +lfs     f0,20(r1)
+     stfs    f3,668(r29)
+     stfs    f2,672(r29)
+     stfs    f1,676(r29)
+     stfs    f0,680(r29)
+    -stw     r0,616(r29)
+    -stb     r3,740(r29)
+    +stw     r3,616(r29)
+    +stb     r0,740(r29)
+     li      r3,1
+     lwz     r0,68(r1)
+SAME startFighterEvent__5StageFv              startFighterEvent__5StageFv                   1 1
+SAME initializeFighterAttackRatio__5StageFv   initializeFighterAttackRatio__5StageFv        2 2
+SAME helperStarWarp__5StageFv                 helperStarWarp__5StageFv                      2 2
+SAME isSimpleBossBattleMode__5StageFv         isSimpleBossBattleMode__5StageFv              2 2
+SAME isBossBattleMode__5StageFv               isBossBattleMode__5StageFv                    2 2
+SAME isCameraLocked__5StageFv                 isCameraLocked__5StageFv                      2 2
+SAME notifyTimmingGameStart__5StageFv         notifyTimmingGameStart__5StageFv              1 1
+SAME getFrameRuleTime__5StageFv               getFrameRuleTime__5StageFv                    2 2
+SAME setFrameRuleTime__5StageFf               setFrameRuleTime__5StageFf                    2 2
+SAME isNextStepBgmEqualNowStepBgmFromFlag__5StageFv isNextStepBgmEqualNowStepBgmFromFlag__5StageFv 2 2
+SAME getBgmPlayOffsetFrame__5StageFv          getBgmPlayOffsetFrame__5StageFv               3 3
+SAME getBgmVolume__5StageFv                   getBgmVolume__5StageFv                        3 3
+SAME setBgmChange__5StageFfbUl                setBgmChange__5StageFfbUl                     4 4
+SAME getBgmChangeID__5StageFPUlPf             getBgmChangeID__5StageFPUlPf                  5 5
+SAME isBgmChange__5StageFv                    isBgmChange__5StageFv                         2 2
+SAME getBgmOptionID__5StageFv                 getBgmOptionID__5StageFv                      2 2
+SAME getNowStepBgmID__5StageFv                getNowStepBgmID__5StageFv                     2 2
+SAME getBgmID__5StageFv                       getBgmID__5StageFv                            2 2
+SAME getBgmID__5StageCFv                      getBgmID__5StageCFv                           2 2
+SAME appearanceFighterLocal__5StageFv         appearanceFighterLocal__5StageFv              1 1
+SAME getScrollDir__5StageFP5Vec3f             getScrollDir__5StageFP5Vec3f                  7 7
+SAME getDefaultLightSetIndex__5StageFv        getDefaultLightSetIndex__5StageFv             2 2
+SAME getAIRange__5StageFv                     getAIRange__5StageFv                          2 2
+SAME isAdventureStage__5StageFv               isAdventureStage__5StageFv                    2 2
+SAME getPokeTrainerDrawLayer__5StageFv        getPokeTrainerDrawLayer__5StageFv             2 2
+SAME getPokeTrainerPositionZ__5StageFv        getPokeTrainerPositionZ__5StageFv             3 3
+SAME getPokeTrainerPointData__5StageFPii      getPokeTrainerPointData__5StageFPii           1 1
+SAME getPokeTrainerPointNum__5StageFv         getPokeTrainerPointNum__5StageFv              2 2
+SAME isReStartSamePoint__7stMeleeFv           isReStartSamePoint__7stMeleeFv                2 2
+SAME getWind2ndOnlyData__7stMeleeFv           getWind2ndOnlyData__7stMeleeFv                2 2
+SAME isBamperVector__9stDxOnettFv             isBamperVector__9stDxOnettFv                  2 2
+SAME __sinit_\st_dxonett_cpp                  __sinit_\st_dxonett_cpp                       25 25
+SAME __dt__30stClassInfoImpl<44,9stDxOnett>Fv __dt__30stClassInfoImpl<44,9stDxOnett>Fv      29 29
+SAME create__30stClassInfoImpl<44,9stDxOnett>Fv create__30stClassInfoImpl<44,9stDxOnett>Fv    13 13
+SAME preload__30stClassInfoImpl<44,9stDxOnett>Fv preload__30stClassInfoImpl<44,9stDxOnett>Fv   1 1
+SAME section .rodata: target 88 bytes, candidate 88 bytes
+SAME section .data: target 1352 bytes, candidate 1352 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 63/71. Section contents match. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

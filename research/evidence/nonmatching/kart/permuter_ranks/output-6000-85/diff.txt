@@ -1,0 +1,75 @@
+--- before
++++ after
+@@ -37837,12 +37837,15 @@
+ 
+ void updateRanks(float deltaFrame)
+ {
++  stKartData *new_var2;
+   stKartData *data = (stKartData *) m_stageData;
++  u8 new_var;
+   if (data)
+   {
++    new_var2 = data;
+     m_bgState = 10;
+     bool allOnFinalLap = true;
+-    __alloca(data->m_kartNum * (sizeof(int)));
++    __alloca(new_var2->m_kartNum * (sizeof(int)));
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
+@@ -37862,7 +37865,7 @@
+           }
+           m_bgState = 9;
+         }
+-        if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true))
++        if ((kart->m_checkpoint > 90) && ((new_var = kart->m_isRacing) == true))
+         {
+           m_bgState = 8;
+         }
+@@ -37871,7 +37874,7 @@
+     }
+     {
+       u8 i = 0;
+-      u8 kartNum = data->m_kartNum;
++      u8 kartNum = new_var2->m_kartNum;
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+@@ -37890,7 +37893,7 @@
+         stKartRecord *kart = &m_karts[i];
+         {
+           u8 j = 0;
+-          u8 otherNum = data->m_kartNum;
++          u8 otherNum = new_var2->m_kartNum;
+           for (; j != otherNum; j++)
+           {
+             if (i != j)
+@@ -37902,6 +37905,11 @@
+                 isBehind = true;
+               }
+               else
++              {
++ ;
++                if (((!data) && (!data)) && (!new_var2))
++                {
++                }
+                 if (kart->m_lap == other->m_lap)
+               {
+                 if (kart->m_checkpoint < other->m_checkpoint)
+@@ -37917,6 +37925,7 @@
+                   }
+                 }
+               }
++              }
+               if (isBehind == true)
+               {
+                 kart->m_rank++;
+@@ -37934,7 +37943,7 @@
+       m_isZoomedOut = false;
+     }
+     else
+-      if ((m_isZoomedOut == false) && (m_warningState == 0))
++      if ((m_isZoomedOut == false) && (m_warningState == (0 & 0xFFFFFFFFu)))
+     {
+       zoomOutCamera(225.0f, 275.0f);
+       m_isZoomedOut = true;

@@ -1,0 +1,32 @@
+--- before
++++ after
+@@ -37902,16 +37902,16 @@
+                 isBehind = true;
+               }
+               else
+-                if (kart->m_lap == other->m_lap)
++                if (kart->m_lap == (&m_karts[j])->m_lap)
+               {
+-                if (kart->m_checkpoint < other->m_checkpoint)
++                if ((&m_karts[i])->m_checkpoint < (&m_karts[j])->m_checkpoint)
+                 {
+                   isBehind = true;
+                 }
+                 else
+-                  if (kart->m_checkpoint == other->m_checkpoint)
++                  if ((&m_karts[i])->m_checkpoint == (&m_karts[j])->m_checkpoint)
+                 {
+-                  if (kart->m_distance < other->m_distance)
++                  if ((&m_karts[i])->m_distance < (&m_karts[j])->m_distance)
+                   {
+                     isBehind = true;
+                   }
+@@ -37919,7 +37919,7 @@
+               }
+               if (isBehind == true)
+               {
+-                kart->m_rank++;
++                (&m_karts[i])->m_rank++;
+               }
+             }
+           }

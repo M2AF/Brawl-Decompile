@@ -1,0 +1,10 @@
+--- before
++++ after
+@@ -37916,6 +37916,7 @@
+                     isBehind = true;
+                   }
+                 }
++ goto dummy_label_425551; dummy_label_425551: ;
+               }
+               if (isBehind == true)
+               {

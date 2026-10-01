@@ -1,0 +1,8 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+DIFF createBeltConveyors__9stDxOnettFv        createBeltConveyors__9stDxOnettFv             91 93
+DIFF updateKanban__9stDxOnettFf               updateKanban__9stDxOnettFf                    58 59
+DIFF chooseCar__9stDxOnettFUl                 chooseCar__9stDxOnettFUl                      145 145
+SAME section .rodata: target 88 bytes, candidate 88 bytes
+SAME section .data: target 1352 bytes, candidate 1352 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 68/71. Section contents match. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

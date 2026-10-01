@@ -1,0 +1,126 @@
+.include "macros.inc"
+.file "auto_fn_80292F3C_text"
+
+# 0x80006660..0x80006668 | size: 0x8
+.section extab, "a"
+.balign 4
+
+# extab:0x0 | 0x80006660 | size: 0x8
+.obj "@etb_80006660", local
+.hidden "@etb_80006660"
+/*
+ * Flag values:
+ * Has Elf Vector: Yes
+ * Large Frame: Yes
+ * Has Frame Pointer: No
+ * Saved CR: No
+ * Saved GPR range: r26-r31
+ */
+	.4byte 0x300A0000
+	.4byte 0x00000000
+.endobj "@etb_80006660"
+
+# 0x800099A0..0x800099AC | size: 0xC
+.section extabindex, "a"
+.balign 4
+
+# extabindex:0x0 | 0x800099A0 | size: 0xC
+.obj "@eti_800099A0", local
+.hidden "@eti_800099A0"
+	.4byte fn_80292F3C
+	.4byte 0x0000014C
+	.4byte "@etb_80006660"
+.endobj "@eti_800099A0"
+
+# 0x80292F3C..0x80293088 | size: 0x14C
+.text
+.balign 4
+
+# .text:0x0 | 0x80292F3C | size: 0x14C
+.fn fn_80292F3C, global
+/* 80292F3C 00288CBC  54 2B 07 3E */	clrlwi r11, r1, 28
+/* 80292F40 00288CC0  7C 2C 0B 78 */	mr r12, r1
+/* 80292F44 00288CC4  21 6B FF B0 */	subfic r11, r11, -0x50
+/* 80292F48 00288CC8  7C 21 59 6E */	stwux r1, r1, r11
+/* 80292F4C 00288CCC  7C 08 02 A6 */	mflr r0
+/* 80292F50 00288CD0  7D 8B 63 78 */	mr r11, r12
+/* 80292F54 00288CD4  90 0C 00 04 */	stw r0, 0x4(r12)
+/* 80292F58 00288CD8  48 15 E3 C5 */	bl _savegpr_26
+/* 80292F5C 00288CDC  C0 02 AA E0 */	lfs f0, lbl_805A3E00@sda21(r0)
+/* 80292F60 00288CE0  3B A4 00 20 */	addi r29, r4, 0x20
+/* 80292F64 00288CE4  7C 7A 1B 78 */	mr r26, r3
+/* 80292F68 00288CE8  3B 80 00 00 */	li r28, 0x0
+/* 80292F6C 00288CEC  D0 04 00 0C */	stfs f0, 0xc(r4)
+/* 80292F70 00288CF0  3B E0 00 00 */	li r31, 0x0
+/* 80292F74 00288CF4  3B C0 00 00 */	li r30, 0x0
+/* 80292F78 00288CF8  D0 04 00 08 */	stfs f0, 0x8(r4)
+/* 80292F7C 00288CFC  D0 04 00 04 */	stfs f0, 0x4(r4)
+/* 80292F80 00288D00  D0 04 00 00 */	stfs f0, 0x0(r4)
+/* 80292F84 00288D04  D0 04 00 1C */	stfs f0, 0x1c(r4)
+/* 80292F88 00288D08  D0 04 00 18 */	stfs f0, 0x18(r4)
+/* 80292F8C 00288D0C  D0 04 00 14 */	stfs f0, 0x14(r4)
+/* 80292F90 00288D10  D0 04 00 10 */	stfs f0, 0x10(r4)
+/* 80292F94 00288D14  48 00 00 CC */	b .L_80293060
+.L_80292F98:
+/* 80292F98 00288D18  38 1C FF FF */	subi r0, r28, 0x1
+/* 80292F9C 00288D1C  80 7A 00 2C */	lwz r3, 0x2c(r26)
+/* 80292FA0 00288D20  80 9A 00 20 */	lwz r4, 0x20(r26)
+/* 80292FA4 00288D24  54 00 28 34 */	slwi r0, r0, 5
+/* 80292FA8 00288D28  7F 63 F2 14 */	add r27, r3, r30
+/* 80292FAC 00288D2C  38 61 00 10 */	addi r3, r1, 0x10
+/* 80292FB0 00288D30  7C 84 FA 14 */	add r4, r4, r31
+/* 80292FB4 00288D34  7C BD 02 14 */	add r5, r29, r0
+/* 80292FB8 00288D38  4B FF 13 F1 */	bl fn_802843A8
+/* 80292FBC 00288D3C  C0 3B 00 00 */	lfs f1, 0x0(r27)
+/* 80292FC0 00288D40  7C 7D F2 14 */	add r3, r29, r30
+/* 80292FC4 00288D44  C0 01 00 10 */	lfs f0, 0x10(r1)
+/* 80292FC8 00288D48  38 A1 00 10 */	addi r5, r1, 0x10
+/* 80292FCC 00288D4C  80 1A 00 20 */	lwz r0, 0x20(r26)
+/* 80292FD0 00288D50  EC 21 00 28 */	fsubs f1, f1, f0
+/* 80292FD4 00288D54  C0 01 00 14 */	lfs f0, 0x14(r1)
+/* 80292FD8 00288D58  7C 80 FA 14 */	add r4, r0, r31
+/* 80292FDC 00288D5C  C0 A1 00 18 */	lfs f5, 0x18(r1)
+/* 80292FE0 00288D60  C0 81 00 1C */	lfs f4, 0x1c(r1)
+/* 80292FE4 00288D64  38 84 00 C0 */	addi r4, r4, 0xc0
+/* 80292FE8 00288D68  D0 21 00 10 */	stfs f1, 0x10(r1)
+/* 80292FEC 00288D6C  C0 61 00 20 */	lfs f3, 0x20(r1)
+/* 80292FF0 00288D70  C0 3B 00 04 */	lfs f1, 0x4(r27)
+/* 80292FF4 00288D74  C0 41 00 24 */	lfs f2, 0x24(r1)
+/* 80292FF8 00288D78  EC C1 00 28 */	fsubs f6, f1, f0
+/* 80292FFC 00288D7C  C0 21 00 28 */	lfs f1, 0x28(r1)
+/* 80293000 00288D80  C0 01 00 2C */	lfs f0, 0x2c(r1)
+/* 80293004 00288D84  D0 C1 00 14 */	stfs f6, 0x14(r1)
+/* 80293008 00288D88  C0 DB 00 08 */	lfs f6, 0x8(r27)
+/* 8029300C 00288D8C  EC A6 28 28 */	fsubs f5, f6, f5
+/* 80293010 00288D90  D0 A1 00 18 */	stfs f5, 0x18(r1)
+/* 80293014 00288D94  C0 BB 00 0C */	lfs f5, 0xc(r27)
+/* 80293018 00288D98  EC 85 20 28 */	fsubs f4, f5, f4
+/* 8029301C 00288D9C  D0 81 00 1C */	stfs f4, 0x1c(r1)
+/* 80293020 00288DA0  C0 9B 00 10 */	lfs f4, 0x10(r27)
+/* 80293024 00288DA4  EC 64 18 28 */	fsubs f3, f4, f3
+/* 80293028 00288DA8  D0 61 00 20 */	stfs f3, 0x20(r1)
+/* 8029302C 00288DAC  C0 7B 00 14 */	lfs f3, 0x14(r27)
+/* 80293030 00288DB0  EC 43 10 28 */	fsubs f2, f3, f2
+/* 80293034 00288DB4  D0 41 00 24 */	stfs f2, 0x24(r1)
+/* 80293038 00288DB8  C0 5B 00 18 */	lfs f2, 0x18(r27)
+/* 8029303C 00288DBC  EC 22 08 28 */	fsubs f1, f2, f1
+/* 80293040 00288DC0  D0 21 00 28 */	stfs f1, 0x28(r1)
+/* 80293044 00288DC4  C0 3B 00 1C */	lfs f1, 0x1c(r27)
+/* 80293048 00288DC8  EC 01 00 28 */	fsubs f0, f1, f0
+/* 8029304C 00288DCC  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 80293050 00288DD0  4B FF 13 59 */	bl fn_802843A8
+/* 80293054 00288DD4  3B 9C 00 01 */	addi r28, r28, 0x1
+/* 80293058 00288DD8  3B FF 03 C0 */	addi r31, r31, 0x3c0
+/* 8029305C 00288DDC  3B DE 00 20 */	addi r30, r30, 0x20
+.L_80293060:
+/* 80293060 00288DE0  80 1A 00 04 */	lwz r0, 0x4(r26)
+/* 80293064 00288DE4  7C 1C 00 00 */	cmpw r28, r0
+/* 80293068 00288DE8  41 80 FF 30 */	blt .L_80292F98
+/* 8029306C 00288DEC  81 41 00 00 */	lwz r10, 0x0(r1)
+/* 80293070 00288DF0  7D 4B 53 78 */	mr r11, r10
+/* 80293074 00288DF4  48 15 E2 F5 */	bl _restgpr_26
+/* 80293078 00288DF8  80 0A 00 04 */	lwz r0, 0x4(r10)
+/* 8029307C 00288DFC  7C 08 03 A6 */	mtlr r0
+/* 80293080 00288E00  7D 41 53 78 */	mr r1, r10
+/* 80293084 00288E04  4E 80 00 20 */	blr
+.endfn fn_80292F3C

@@ -1,0 +1,36 @@
+--- before
++++ after
+@@ -37883,6 +37883,8 @@
+ 
+ int getZoneLightSetIndex(Vec3f *pos)
+ {
++  char new_var2;
++  float new_var;
+   if (pos == 0)
+   {
+     return 0x14;
+@@ -37928,13 +37930,15 @@
+   {
+     return 0x15;
+   }
++  new_var2 = 0x14;
+   if ((x >= 45.0f) && (x <= 100.0f))
+   {
+     if (y <= 25.0f)
+     {
+       return 0x15;
+     }
+-    if (y <= (25.0f + (15.0f * clamp(1.0f - ((x - 45.0f) / 55.0f), 0.0f, 1.0f))))
++    new_var = 1.0f;
++    if (y <= (25.0f + (15.0f * clamp(new_var - ((x - 45.0f) / 55.0f), 0.0f, 1.0f))))
+     {
+       return 0x15;
+     }
+@@ -37943,6 +37947,6 @@
+   {
+     return 0x15;
+   }
+-  return 0x14;
++  return new_var2;
+ }
+ 

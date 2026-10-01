@@ -1,0 +1,59 @@
+--- before
++++ after
+@@ -37835,8 +37835,14 @@
+ 
+ 
+ 
++inline int inline_fn(stKartRecord *arg0, int arg1)
++{
++  return arg0->m_lap < arg1;
++}
++
+ void updateRanks(float deltaFrame)
+ {
++  int new_var;
+   stKartData *data = (stKartData *) m_stageData;
+   if (data)
+   {
+@@ -37850,7 +37856,7 @@
+       {
+         stKartRecord *kart = &m_karts[i];
+         kart->m_rank = 0;
+-        if (kart->m_lap < 10)
++        if (inline_fn(kart, 10))
+         {
+           allOnFinalLap = false;
+         }
+@@ -37872,12 +37878,13 @@
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
++      new_var = 10;
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+         if (allOnFinalLap == true)
+         {
+-          kart->m_lap -= 10;
++          kart->m_lap -= new_var;
+         }
+       }
+ 
+@@ -37897,7 +37904,7 @@
+             {
+               stKartRecord *other = &m_karts[j];
+               bool isBehind = false;
+-              if (kart->m_lap < other->m_lap)
++              if (inline_fn(kart, other->m_lap))
+               {
+                 isBehind = true;
+               }
+@@ -37936,7 +37943,7 @@
+     else
+       if ((m_isZoomedOut == false) && (m_warningState == 0))
+     {
+-      zoomOutCamera(225.0f, 275.0f);
++      zoomOutCamera((double) 225.0f, 275.0f);
+       m_isZoomedOut = true;
+     }
+   }

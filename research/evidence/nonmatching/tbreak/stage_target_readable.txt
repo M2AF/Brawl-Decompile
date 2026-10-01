@@ -1,0 +1,2080 @@
+.include "macros.inc"
+.file "auto_00_00000070_text"
+
+# 0x00000070..0x00001A30 | size: 0x19C0
+.text
+.balign 4
+
+# .text:0x0 | 0x70 | size: 0x34
+.fn fn_89_70, global
+00000070 stwu r1, -0x10(r1)
+00000074 mflr r0
+00000078 li r3, 0x3c4
+0000007C li r4, 0xf
+00000080 stw r0, 0x14(r1)
+00000084 bl __nw__FUlQ25Heaps8HeapType
+00000088 cmpwi r3, 0x0
+0000008C beq .L_00000094
+00000090 bl fn_89_A4
+.L_00000094:
+00000094 lwz r0, 0x14(r1)
+00000098 mtlr r0
+0000009C addi r1, r1, 0x10
+000000A0 blr
+.endfn fn_89_70
+
+# .text:0x34 | 0xA4 | size: 0xC8
+.fn fn_89_A4, global
+000000A4 stwu r1, -0x20(r1)
+000000A8 mflr r0
+000000AC li r5, 0x38
+000000B0 stw r0, 0x24(r1)
+000000B4 stw r31, 0x1c(r1)
+000000B8 lis r31, lbl_89_data_0@ha
+000000BC addi r31, r31, lbl_89_data_0@l
+000000C0 stw r30, 0x18(r1)
+000000C4 addi r4, r31, 0x4c0
+000000C8 stw r29, 0x14(r1)
+000000CC stw r28, 0x10(r1)
+000000D0 mr r28, r3
+000000D4 bl __ct__7stMeleeFPCcQ26Stages11srStageKind
+000000D8 lis r3, lbl_89_data_8E0@ha
+000000DC li r0, 0x0
+000000E0 addi r3, r3, lbl_89_data_8E0@l
+000000E4 addi r30, r31, 0x400
+000000E8 stw r3, 0x3c(r28)
+000000EC li r29, 0x0
+000000F0 lwz r3, 0x0(r31)
+000000F4 stw r3, 0x35c(r28)
+000000F8 stw r0, 0x360(r28)
+.L_000000FC:
+000000FC bl getInstance__9itManagerFv
+00000100 lwz r4, 0x4(r30)
+00000104 li r6, 0x0
+00000108 lwz r5, 0x8(r30)
+0000010C li r7, 0x1
+00000110 bl preloadItemKindArchive__9itManagerF6itKindUlQ29itArchive4Typeb
+00000114 addi r29, r29, 0x1
+00000118 addi r30, r30, 0xc
+0000011C cmpwi r29, 0x10
+00000120 blt .L_000000FC
+00000124 li r0, 0x0
+00000128 mr r3, r28
+0000012C stw r0, 0x2f8(r28)
+00000130 stw r0, 0x2fc(r28)
+00000134 stw r0, 0x300(r28)
+00000138 stw r0, 0x304(r28)
+0000013C stw r0, 0x33c(r28)
+00000140 stw r0, 0x348(r28)
+00000144 bl setPlayerPositionIndexSerial__7stMeleeFv
+00000148 lwz r31, 0x1c(r1)
+0000014C mr r3, r28
+00000150 lwz r30, 0x18(r1)
+00000154 lwz r29, 0x14(r1)
+00000158 lwz r28, 0x10(r1)
+0000015C lwz r0, 0x24(r1)
+00000160 mtlr r0
+00000164 addi r1, r1, 0x20
+00000168 blr
+.endfn fn_89_A4
+
+# .text:0xFC | 0x16C | size: 0xC8
+.fn fn_89_16C, global
+0000016C stwu r1, -0x20(r1)
+00000170 mflr r0
+00000174 cmpwi r3, 0x0
+00000178 stw r0, 0x24(r1)
+0000017C stw r31, 0x1c(r1)
+00000180 stw r30, 0x18(r1)
+00000184 stw r29, 0x14(r1)
+00000188 mr r29, r4
+0000018C stw r28, 0x10(r1)
+00000190 mr r28, r3
+00000194 beq .L_00000210
+00000198 lis r4, lbl_89_data_8E0@ha
+0000019C mr r31, r28
+000001A0 addi r4, r4, lbl_89_data_8E0@l
+000001A4 li r30, 0x0
+000001A8 stw r4, 0x3c(r3)
+.L_000001AC:
+000001AC lwz r3, 0x2f8(r31)
+000001B0 cmpwi r3, 0x0
+000001B4 beq .L_000001BC
+000001B8 bl __dl__FPv
+.L_000001BC:
+000001BC addi r30, r30, 0x1
+000001C0 addi r31, r31, 0x4
+000001C4 cmpwi r30, 0x4
+000001C8 blt .L_000001AC
+000001CC lwz r3, 0x348(r28)
+000001D0 cmpwi r3, 0x0
+000001D4 beq .L_000001DC
+000001D8 bl __dl__FPv
+.L_000001DC:
+000001DC lwz r3, 0x33c(r28)
+000001E0 cmpwi r3, 0x0
+000001E4 beq .L_000001EC
+000001E8 bl __dl__FPv
+.L_000001EC:
+000001EC mr r3, r28
+000001F0 bl releaseArchive__15stCommonGimmickFv
+000001F4 mr r3, r28
+000001F8 li r4, 0x0
+000001FC bl __dt__7stMeleeFv
+00000200 cmpwi r29, 0x0
+00000204 ble .L_00000210
+00000208 mr r3, r28
+0000020C bl __dl__FPv
+.L_00000210:
+00000210 lwz r31, 0x1c(r1)
+00000214 mr r3, r28
+00000218 lwz r30, 0x18(r1)
+0000021C lwz r29, 0x14(r1)
+00000220 lwz r28, 0x10(r1)
+00000224 lwz r0, 0x24(r1)
+00000228 mtlr r0
+0000022C addi r1, r1, 0x20
+00000230 blr
+.endfn fn_89_16C
+
+# .text:0x1C4 | 0x234 | size: 0x8
+.fn fn_89_234, global
+00000234 li r3, 0x1
+00000238 blr
+.endfn fn_89_234
+
+# .text:0x1CC | 0x23C | size: 0xD4C
+.fn fn_89_23C, global
+0000023C stwu r1, -0x250(r1)
+00000240 mflr r0
+00000244 stw r0, 0x254(r1)
+00000248 stfd f31, 0x240(r1)
+0000024C psq_st f31, 0x248(r1), 0, qr0
+00000250 stfd f30, 0x230(r1)
+00000254 psq_st f30, 0x238(r1), 0, qr0
+00000258 stfd f29, 0x220(r1)
+0000025C psq_st f29, 0x228(r1), 0, qr0
+00000260 stfd f28, 0x210(r1)
+00000264 psq_st f28, 0x218(r1), 0, qr0
+00000268 addi r11, r1, 0x210
+0000026C bl _savegpr_22
+00000270 lis r4, g_GameGlobal@ha
+00000274 lis r29, lbl_89_rodata_0@ha
+00000278 lwz r4, g_GameGlobal@l(r4)
+0000027C lis r30, lbl_89_data_0@ha
+00000280 mr r27, r3
+00000284 addi r29, r29, lbl_89_rodata_0@l
+00000288 lwz r4, 0x8(r4)
+0000028C addi r30, r30, lbl_89_data_0@l
+00000290 li r5, 0x4
+00000294 lbz r0, 0xe(r4)
+00000298 extrwi r0, r0, 3, 24
+0000029C cmpwi r0, 0x4
+000002A0 bgt .L_000002A8
+000002A4 mr r5, r0
+.L_000002A8:
+000002A8 srawi r0, r5, 31
+000002AC lwz r4, 0x1a0(r27)
+000002B0 andc r0, r5, r0
+000002B4 li r5, 0xa
+000002B8 stw r0, 0x350(r3)
+000002BC mr r3, r27
+000002C0 bl testStageParamInit__5StageFP9gfArchivei
+000002C4 lwz r3, 0x350(r27)
+000002C8 addi r0, r30, 0x4
+000002CC addi r4, r30, 0x4d0
+000002D0 addi r5, r30, 0x4d4
+000002D4 mulli r6, r3, 0x8c
+000002D8 li r3, 0x0
+000002DC add r28, r0, r6
+000002E0 bl create__13grTargetBreakFiPCcPCc
+000002E4 cmpwi r3, 0x0
+000002E8 stw r3, 0x1d8(r27)
+000002EC mr r4, r3
+000002F0 beq .L_00000344
+000002F4 mr r3, r27
+000002F8 bl addGround__5StageFP6Ground
+000002FC lwz r3, 0x1d8(r27)
+00000300 li r5, 0x0
+00000304 lwz r4, 0x1a0(r27)
+00000308 li r6, 0x0
+0000030C lwz r12, 0x3c(r3)
+00000310 lwz r12, 0x9c(r12)
+00000314 mtctr r12
+00000318 bctrl
+0000031C lwz r3, 0x1d8(r27)
+00000320 lwz r4, 0x9c(r27)
+00000324 lwz r12, 0x3c(r3)
+00000328 lwz r12, 0xa4(r12)
+0000032C mtctr r12
+00000330 bctrl
+00000334 lwz r3, 0x1d8(r27)
+00000338 bl initializeEntity__8grMadeinFv
+0000033C lwz r3, 0x1d8(r27)
+00000340 bl startEntityAutoLoop__8grMadeinFv
+.L_00000344:
+00000344 addi r4, r30, 0x4d0
+00000348 addi r5, r30, 0x4e8
+0000034C li r3, 0x2
+00000350 bl create__13grTargetBreakFiPCcPCc
+00000354 cmpwi r3, 0x0
+00000358 stw r3, 0x204(r27)
+0000035C mr r4, r3
+00000360 beq .L_000003B4
+00000364 mr r3, r27
+00000368 bl addGround__5StageFP6Ground
+0000036C lwz r3, 0x204(r27)
+00000370 li r5, 0x0
+00000374 lwz r4, 0x1a0(r27)
+00000378 li r6, 0x0
+0000037C lwz r12, 0x3c(r3)
+00000380 lwz r12, 0x9c(r12)
+00000384 mtctr r12
+00000388 bctrl
+0000038C lwz r3, 0x204(r27)
+00000390 lwz r4, 0x9c(r27)
+00000394 lwz r12, 0x3c(r3)
+00000398 lwz r12, 0xa4(r12)
+0000039C mtctr r12
+000003A0 bctrl
+000003A4 lwz r3, 0x204(r27)
+000003A8 bl initializeEntity__8grMadeinFv
+000003AC lwz r3, 0x204(r27)
+000003B0 bl startEntity__8grMadeinFv
+.L_000003B4:
+000003B4 lwz r0, 0x350(r27)
+000003B8 cmpwi r0, 0x3
+000003BC bne .L_00000430
+000003C0 addi r4, r30, 0x4d0
+000003C4 addi r5, r30, 0x4f8
+000003C8 li r3, 0x3
+000003CC bl create__13grTargetBreakFiPCcPCc
+000003D0 cmpwi r3, 0x0
+000003D4 stw r3, 0x294(r27)
+000003D8 mr r4, r3
+000003DC beq .L_00000430
+000003E0 mr r3, r27
+000003E4 bl addGround__5StageFP6Ground
+000003E8 lwz r3, 0x294(r27)
+000003EC li r5, 0x0
+000003F0 lwz r4, 0x1a0(r27)
+000003F4 li r6, 0x0
+000003F8 lwz r12, 0x3c(r3)
+000003FC lwz r12, 0x9c(r12)
+00000400 mtctr r12
+00000404 bctrl
+00000408 lwz r3, 0x294(r27)
+0000040C lwz r4, 0x9c(r27)
+00000410 lwz r12, 0x3c(r3)
+00000414 lwz r12, 0xa4(r12)
+00000418 mtctr r12
+0000041C bctrl
+00000420 lwz r3, 0x294(r27)
+00000424 bl initializeEntity__8grMadeinFv
+00000428 lwz r3, 0x294(r27)
+0000042C bl startEntityAutoLoop__8grMadeinFv
+.L_00000430:
+00000430 addi r3, r29, 0x0
+00000434 li r0, 0xc
+00000438 addi r7, r1, 0x174
+0000043C subi r4, r3, 0x4
+00000440 mtctr r0
+.L_00000444:
+00000444 lwz r3, 0x4(r4)
+00000448 lwzu r0, 0x8(r4)
+0000044C stw r3, 0x4(r7)
+00000450 stwu r0, 0x8(r7)
+00000454 bdnz .L_00000444
+00000458 lfs f0, 0x64(r29)
+0000045C mr r3, r27
+00000460 lwz r0, 0x4(r4)
+00000464 addi r4, r1, 0x178
+00000468 stfs f0, 0x50(r1)
+0000046C stfs f0, 0x54(r1)
+00000470 lwz r6, 0x50(r1)
+00000474 stw r0, 0x4(r7)
+00000478 lwz r5, 0x54(r1)
+0000047C stfs f0, 0x58(r1)
+00000480 lwz r0, 0x58(r1)
+00000484 stw r6, 0x17c(r1)
+00000488 stw r5, 0x180(r1)
+0000048C stw r0, 0x184(r1)
+00000490 bl setStageAttackData__5StageFP20grGimmickDamageFloorUl
+00000494 mr r24, r27
+00000498 li r26, 0x0
+0000049C li r25, 0x0
+.L_000004A0:
+000004A0 stw r25, 0x2f8(r24)
+000004A4 stw r25, 0x308(r24)
+000004A8 lwz r0, 0x1d8(r27)
+000004AC cmpwi r0, 0x0
+000004B0 beq .L_00000564
+000004B4 addi r3, r1, 0xf8
+000004B8 addi r4, r30, 0x510
+000004BC addi r5, r26, 0x1
+000004C0 crclr cr1eq
+000004C4 bl sprintf
+000004C8 lwz r3, 0x1d8(r27)
+000004CC addi r5, r1, 0xf8
+000004D0 li r4, 0x0
+000004D4 lwz r12, 0x3c(r3)
+000004D8 lwz r12, 0xc4(r12)
+000004DC mtctr r12
+000004E0 bctrl
+000004E4 stw r3, 0x318(r24)
+000004E8 addi r3, r1, 0xf8
+000004EC addi r4, r30, 0x528
+000004F0 addi r5, r26, 0x1
+000004F4 crclr cr1eq
+000004F8 bl sprintf
+000004FC lwz r3, 0x1d8(r27)
+00000500 addi r5, r1, 0xf8
+00000504 li r4, 0x0
+00000508 lwz r12, 0x3c(r3)
+0000050C lwz r12, 0xc4(r12)
+00000510 mtctr r12
+00000514 bctrl
+00000518 stw r3, 0x328(r24)
+0000051C lwz r0, 0x318(r24)
+00000520 cmpwi r0, 0x0
+00000524 beq .L_0000056C
+00000528 lwz r0, 0x328(r24)
+0000052C cmpwi r0, 0x0
+00000530 beq .L_0000056C
+00000534 addi r3, r30, 0x540
+00000538 addi r4, r26, 0x1
+0000053C crclr cr1eq
+00000540 bl OSReport
+00000544 li r3, 0x40
+00000548 li r4, 0xf
+0000054C bl __nw__FUlQ25Heaps8HeapType
+00000550 stw r3, 0x2f8(r24)
+00000554 li r4, 0x0
+00000558 li r5, 0x40
+0000055C bl memset
+00000560 b .L_0000056C
+.L_00000564:
+00000564 stw r25, 0x318(r24)
+00000568 stw r25, 0x328(r24)
+.L_0000056C:
+0000056C addi r26, r26, 0x1
+00000570 addi r24, r24, 0x4
+00000574 cmpwi r26, 0x4
+00000578 blt .L_000004A0
+0000057C lfs f28, 0x64(r29)
+00000580 mr r24, r27
+00000584 lfs f29, 0x68(r29)
+00000588 li r26, 0x0
+0000058C lfs f30, 0x6c(r29)
+00000590 li r25, -0x1
+00000594 lfs f31, 0x70(r29)
+.L_00000598:
+00000598 addi r4, r30, 0x4d0
+0000059C addi r5, r30, 0x55c
+000005A0 li r3, 0x1
+000005A4 bl create__13grTargetBreakFiPCcPCc
+000005A8 cmpwi r3, 0x0
+000005AC mr r31, r3
+000005B0 beq .L_00000660
+000005B4 stw r3, 0x1dc(r24)
+000005B8 mr r3, r27
+000005BC mr r4, r31
+000005C0 bl addGround__5StageFP6Ground
+000005C4 lwz r12, 0x3c(r31)
+000005C8 mr r3, r31
+000005CC lwz r4, 0x1a0(r27)
+000005D0 li r5, 0x0
+000005D4 lwz r12, 0x9c(r12)
+000005D8 li r6, 0x0
+000005DC mtctr r12
+000005E0 bctrl
+000005E4 lwz r12, 0x3c(r31)
+000005E8 mr r3, r31
+000005EC lwz r4, 0x9c(r27)
+000005F0 lwz r12, 0xa4(r12)
+000005F4 mtctr r12
+000005F8 bctrl
+000005FC stfs f28, 0x68(r1)
+00000600 mr r3, r31
+00000604 lfs f1, 0x4(r28)
+00000608 addi r4, r1, 0x68
+0000060C stfs f28, 0x6c(r1)
+00000610 addi r5, r1, 0x5c
+00000614 li r6, 0x1
+00000618 li r7, 0x0
+0000061C stfs f29, 0x70(r1)
+00000620 stfs f28, 0x5c(r1)
+00000624 stfs f28, 0x60(r1)
+00000628 stfs f30, 0x64(r1)
+0000062C bl setHitPoint__8grMadeinFfP5Vec3fP5Vec3fbi
+00000630 lbz r0, 0x16c(r31)
+00000634 mr r3, r31
+00000638 ori r0, r0, 0x8
+0000063C stb r0, 0x16c(r31)
+00000640 bl initializeEntity__8grMadeinFv
+00000644 mr r3, r31
+00000648 bl startEntity__8grMadeinFv
+0000064C mr r3, r31
+00000650 bl fn_27_279FA4
+00000654 mr r3, r31
+00000658 bl initSoundEffect__13grTargetBreakFv
+0000065C stw r25, 0x39c(r24)
+.L_00000660:
+00000660 addi r26, r26, 0x1
+00000664 stfs f31, 0x364(r24)
+00000668 cmpwi r26, 0xa
+0000066C addi r24, r24, 0x4
+00000670 blt .L_00000598
+00000674 lfs f0, 0x8(r28)
+00000678 fmuls f0, f0, f0
+0000067C stfs f0, 0x38c(r27)
+00000680 lbz r0, 0x14(r28)
+00000684 cmpwi r0, 0x0
+00000688 beq .L_00000728
+0000068C addi r4, r30, 0x4d0
+00000690 addi r5, r30, 0x568
+00000694 li r3, 0x3
+00000698 bl create__13grTargetBreakFiPCcPCc
+0000069C stw r3, 0x230(r27)
+000006A0 mr r4, r3
+000006A4 mr r3, r27
+000006A8 bl addGround__5StageFP6Ground
+000006AC lwz r3, 0x230(r27)
+000006B0 li r5, 0x0
+000006B4 lwz r4, 0x1a0(r27)
+000006B8 li r6, 0x0
+000006BC lwz r12, 0x3c(r3)
+000006C0 lwz r12, 0x9c(r12)
+000006C4 mtctr r12
+000006C8 bctrl
+000006CC lwz r3, 0x230(r27)
+000006D0 lwz r4, 0x9c(r27)
+000006D4 lwz r12, 0x3c(r3)
+000006D8 lwz r12, 0xa4(r12)
+000006DC mtctr r12
+000006E0 bctrl
+000006E4 lwz r3, 0x230(r27)
+000006E8 bl initializeEntity__8grMadeinFv
+000006EC lwz r3, 0x230(r27)
+000006F0 bl startEntity__8grMadeinFv
+000006F4 lwz r3, 0x230(r27)
+000006F8 addi r5, r30, 0x574
+000006FC li r4, 0x0
+00000700 lwz r12, 0x3c(r3)
+00000704 lwz r12, 0xc4(r12)
+00000708 mtctr r12
+0000070C bctrl
+00000710 stw r3, 0x344(r27)
+00000714 mr r4, r3
+00000718 addi r3, r30, 0x588
+0000071C crclr cr1eq
+00000720 bl OSReport
+00000724 b .L_00000730
+.L_00000728:
+00000728 li r0, 0x0
+0000072C stw r0, 0x230(r27)
+.L_00000730:
+00000730 mr r24, r27
+00000734 li r23, 0x0
+00000738 lis r31, 0x1
+0000073C li r25, 0x1
+00000740 li r26, 0x0
+.L_00000744:
+00000744 lwz r3, 0x10(r28)
+00000748 slw r0, r25, r23
+0000074C addi r22, r23, 0x28
+00000750 and. r0, r3, r0
+00000754 beq .L_000007FC
+00000758 subi r0, r31, 0x2
+0000075C lwz r3, 0x1a0(r27)
+00000760 mr r5, r22
+00000764 li r4, 0x2
+00000768 clrlwi r6, r0, 16
+0000076C bl getData__9gfArchiveF11ARCNodeTypeiUs
+00000770 cmpwi r3, 0x0
+00000774 beq .L_000007FC
+00000778 mr r4, r23
+0000077C addi r3, r30, 0x5a4
+00000780 crclr cr1eq
+00000784 bl OSReport
+00000788 extsh r3, r22
+0000078C addi r4, r30, 0x4d0
+00000790 addi r5, r30, 0x5c0
+00000794 bl create__13grTargetBreakFiPCcPCc
+00000798 cmpwi r3, 0x0
+0000079C stw r3, 0x208(r24)
+000007A0 mr r4, r3
+000007A4 beq .L_00000800
+000007A8 mr r3, r27
+000007AC bl addGround__5StageFP6Ground
+000007B0 lwz r3, 0x208(r24)
+000007B4 li r5, 0x0
+000007B8 lwz r4, 0x1a0(r27)
+000007BC li r6, 0x0
+000007C0 lwz r12, 0x3c(r3)
+000007C4 lwz r12, 0x9c(r12)
+000007C8 mtctr r12
+000007CC bctrl
+000007D0 lwz r3, 0x208(r24)
+000007D4 lwz r4, 0x9c(r27)
+000007D8 lwz r12, 0x3c(r3)
+000007DC lwz r12, 0xa4(r12)
+000007E0 mtctr r12
+000007E4 bctrl
+000007E8 lwz r3, 0x208(r24)
+000007EC bl initializeEntity__8grMadeinFv
+000007F0 lwz r3, 0x208(r24)
+000007F4 bl startEntityAutoLoop__8grMadeinFv
+000007F8 b .L_00000800
+.L_000007FC:
+000007FC stw r26, 0x208(r24)
+.L_00000800:
+00000800 addi r23, r23, 0x1
+00000804 addi r24, r24, 0x4
+00000808 cmpwi r23, 0xa
+0000080C blt .L_00000744
+00000810 lis r26, 0x1
+00000814 lwz r3, 0x1a0(r27)
+00000818 subi r0, r26, 0x2
+0000081C li r4, 0x2
+00000820 clrlwi r6, r0, 16
+00000824 li r5, 0x9
+00000828 bl getData__9gfArchiveF11ARCNodeTypeiUs
+0000082C cmpwi r3, 0x0
+00000830 beq .L_000009DC
+00000834 subi r31, r26, 0x2
+00000838 mr r25, r27
+0000083C li r22, 0x0
+00000840 li r26, 0x0
+.L_00000844:
+00000844 addi r23, r22, 0xa
+00000848 lwz r3, 0x1a0(r27)
+0000084C mr r5, r23
+00000850 clrlwi r6, r31, 16
+00000854 li r4, 0x2
+00000858 bl getData__9gfArchiveF11ARCNodeTypeiUs
+0000085C cmpwi r3, 0x0
+00000860 beq .L_000009C0
+00000864 mr r4, r22
+00000868 addi r3, r30, 0x5d4
+0000086C crclr cr1eq
+00000870 bl OSReport
+00000874 extsh r3, r23
+00000878 addi r4, r30, 0x4d0
+0000087C addi r5, r30, 0x5e8
+00000880 bl create__13grTargetBreakFiPCcPCc
+00000884 cmpwi r3, 0x0
+00000888 stw r3, 0x264(r25)
+0000088C mr r4, r3
+00000890 beq .L_000009B8
+00000894 mr r3, r27
+00000898 bl addGround__5StageFP6Ground
+0000089C lwz r3, 0x264(r25)
+000008A0 li r5, 0x0
+000008A4 lwz r4, 0x1a0(r27)
+000008A8 li r6, 0x0
+000008AC lwz r12, 0x3c(r3)
+000008B0 lwz r12, 0x9c(r12)
+000008B4 mtctr r12
+000008B8 bctrl
+000008BC lwz r3, 0x264(r25)
+000008C0 lwz r4, 0x9c(r27)
+000008C4 lwz r12, 0x3c(r3)
+000008C8 lwz r12, 0xa4(r12)
+000008CC mtctr r12
+000008D0 bctrl
+000008D4 lwz r3, 0x264(r25)
+000008D8 bl initializeEntity__8grMadeinFv
+000008DC lwz r3, 0x264(r25)
+000008E0 bl startEntityAutoLoop__8grMadeinFv
+000008E4 addi r3, r1, 0x78
+000008E8 addi r4, r30, 0x5f0
+000008EC addi r5, r22, 0x1
+000008F0 crclr cr1eq
+000008F4 bl sprintf
+000008F8 lwz r3, 0x264(r25)
+000008FC addi r5, r1, 0x78
+00000900 li r4, 0x0
+00000904 lwz r12, 0x3c(r3)
+00000908 lwz r12, 0xc4(r12)
+0000090C mtctr r12
+00000910 bctrl
+00000914 stw r3, 0x298(r25)
+00000918 mr r4, r22
+0000091C addi r3, r30, 0x600
+00000920 crclr cr1eq
+00000924 bl OSReport
+00000928 addi r4, r30, 0x4d0
+0000092C addi r5, r30, 0x5e8
+00000930 li r3, 0x9
+00000934 bl create__13grTargetBreakFiPCcPCc
+00000938 cmpwi r3, 0x0
+0000093C stw r3, 0x234(r25)
+00000940 mr r4, r3
+00000944 beq .L_000009C8
+00000948 mr r3, r27
+0000094C bl addGround__5StageFP6Ground
+00000950 lwz r3, 0x234(r25)
+00000954 li r5, 0x0
+00000958 lwz r4, 0x1a0(r27)
+0000095C li r6, 0x0
+00000960 lwz r12, 0x3c(r3)
+00000964 lwz r12, 0x9c(r12)
+00000968 mtctr r12
+0000096C bctrl
+00000970 lwz r3, 0x234(r25)
+00000974 lwz r4, 0x9c(r27)
+00000978 lwz r12, 0x3c(r3)
+0000097C lwz r12, 0xa4(r12)
+00000980 mtctr r12
+00000984 bctrl
+00000988 lwz r3, 0x234(r25)
+0000098C bl initializeEntity__8grMadeinFv
+00000990 lwz r3, 0x234(r25)
+00000994 bl startEntity__8grMadeinFv
+00000998 lwz r3, 0x234(r25)
+0000099C bl fn_27_279FA4
+000009A0 lwz r4, 0x1a0(r27)
+000009A4 mr r3, r27
+000009A8 lwz r6, 0x234(r25)
+000009AC li r5, 0x3
+000009B0 bl createCollision__5StageFP9gfArchiveiP6Ground
+000009B4 b .L_000009C8
+.L_000009B8:
+000009B8 stw r26, 0x234(r25)
+000009BC b .L_000009C8
+.L_000009C0:
+000009C0 stw r26, 0x234(r25)
+000009C4 stw r26, 0x264(r25)
+.L_000009C8:
+000009C8 addi r22, r22, 0x1
+000009CC addi r25, r25, 0x4
+000009D0 cmpwi r22, 0xc
+000009D4 blt .L_00000844
+000009D8 b .L_00000AB8
+.L_000009DC:
+000009DC mr r25, r27
+000009E0 subi r26, r26, 0x2
+000009E4 li r22, 0x0
+000009E8 li r31, 0x0
+.L_000009EC:
+000009EC addi r23, r22, 0xa
+000009F0 lwz r3, 0x1a0(r27)
+000009F4 mr r5, r23
+000009F8 clrlwi r6, r26, 16
+000009FC li r4, 0x2
+00000A00 bl getData__9gfArchiveF11ARCNodeTypeiUs
+00000A04 cmpwi r3, 0x0
+00000A08 beq .L_00000A94
+00000A0C mr r4, r22
+00000A10 addi r3, r30, 0x600
+00000A14 crclr cr1eq
+00000A18 bl OSReport
+00000A1C extsh r3, r23
+00000A20 addi r4, r30, 0x4d0
+00000A24 addi r5, r30, 0x5e8
+00000A28 bl create__13grTargetBreakFiPCcPCc
+00000A2C cmpwi r3, 0x0
+00000A30 stw r3, 0x234(r25)
+00000A34 mr r4, r3
+00000A38 beq .L_00000A8C
+00000A3C mr r3, r27
+00000A40 bl addGround__5StageFP6Ground
+00000A44 lwz r3, 0x234(r25)
+00000A48 li r5, 0x0
+00000A4C lwz r4, 0x1a0(r27)
+00000A50 li r6, 0x0
+00000A54 lwz r12, 0x3c(r3)
+00000A58 lwz r12, 0x9c(r12)
+00000A5C mtctr r12
+00000A60 bctrl
+00000A64 lwz r3, 0x234(r25)
+00000A68 lwz r4, 0x9c(r27)
+00000A6C lwz r12, 0x3c(r3)
+00000A70 lwz r12, 0xa4(r12)
+00000A74 mtctr r12
+00000A78 bctrl
+00000A7C lwz r3, 0x234(r25)
+00000A80 bl initializeEntity__8grMadeinFv
+00000A84 lwz r3, 0x234(r25)
+00000A88 bl startEntityAutoLoop__8grMadeinFv
+.L_00000A8C:
+00000A8C stw r31, 0x264(r25)
+00000A90 b .L_00000A9C
+.L_00000A94:
+00000A94 stw r31, 0x234(r25)
+00000A98 stw r31, 0x264(r25)
+.L_00000A9C:
+00000A9C addi r22, r22, 0x1
+00000AA0 addi r25, r25, 0x4
+00000AA4 cmpwi r22, 0xc
+00000AA8 blt .L_000009EC
+00000AAC addi r3, r30, 0x610
+00000AB0 crclr cr1eq
+00000AB4 bl OSReport
+.L_00000AB8:
+00000AB8 lwz r0, 0x18(r28)
+00000ABC cmpwi r0, 0x0
+00000AC0 blt .L_00000C70
+00000AC4 li r3, 0x54
+00000AC8 li r4, 0xf
+00000ACC bl __nw__FUlQ25Heaps8HeapType
+00000AD0 stw r3, 0x33c(r27)
+00000AD4 mr r22, r3
+00000AD8 li r4, 0x0
+00000ADC li r5, 0x54
+00000AE0 bl memset
+00000AE4 lfs f1, 0x74(r29)
+00000AE8 li r31, 0x0
+00000AEC lfs f0, 0x64(r29)
+00000AF0 li r0, 0x1
+00000AF4 stfs f1, 0x0(r22)
+00000AF8 mr r3, r27
+00000AFC lfs f6, 0x78(r29)
+00000B00 mr r4, r22
+00000B04 stb r31, 0x4(r22)
+00000B08 lfs f5, 0x7c(r29)
+00000B0C lwz r5, 0x18(r28)
+00000B10 lfs f4, 0x80(r29)
+00000B14 addi r5, r5, 0x1
+00000B18 lfs f3, 0x84(r29)
+00000B1C stb r5, 0x6(r22)
+00000B20 lfs f2, 0x88(r29)
+00000B24 stb r31, 0x7(r22)
+00000B28 lfs f1, 0x8c(r29)
+00000B2C stfs f0, 0x20(r22)
+00000B30 lfs f0, 0x90(r29)
+00000B34 stfs f6, 0x24(r22)
+00000B38 stfs f5, 0x28(r22)
+00000B3C stfs f4, 0x2c(r22)
+00000B40 stfs f3, 0x30(r22)
+00000B44 stfs f2, 0x34(r22)
+00000B48 stfs f1, 0x38(r22)
+00000B4C stfs f0, 0x3c(r22)
+00000B50 lwz r5, 0x18(r28)
+00000B54 stb r5, 0x50(r22)
+00000B58 stb r0, 0x51(r22)
+00000B5C stb r0, 0x52(r22)
+00000B60 lwz r5, 0x1a0(r27)
+00000B64 bl createGimmickCatapult__15stCommonGimmickFP21grGimmickCatapultDataP9gfArchive
+00000B68 stw r3, 0x340(r27)
+00000B6C li r6, 0x1ee1
+00000B70 lfs f2, 0x64(r29)
+00000B74 li r4, 0x1ee2
+00000B78 lwz r5, 0xa8(r3)
+00000B7C li r0, 0x1ee3
+00000B80 stfs f2, 0x40(r1)
+00000B84 stw r6, 0xc(r5)
+00000B88 lwz r7, 0x40(r1)
+00000B8C lwz r5, 0xa8(r3)
+00000B90 stfs f2, 0x44(r1)
+00000B94 stw r31, 0x10(r5)
+00000B98 lwz r6, 0x44(r1)
+00000B9C lwz r5, 0xa8(r3)
+00000BA0 stw r7, 0x48(r1)
+00000BA4 sth r31, 0x18(r5)
+00000BA8 lfs f1, 0x48(r1)
+00000BAC lwz r5, 0xa8(r3)
+00000BB0 stw r6, 0x4c(r1)
+00000BB4 stw r31, 0x14(r5)
+00000BB8 lfs f0, 0x4c(r1)
+00000BBC lwz r3, 0xa8(r3)
+00000BC0 stfs f2, 0x38(r1)
+00000BC4 stfs f1, 0x1c(r3)
+00000BC8 lwz r5, 0x38(r1)
+00000BCC stfs f0, 0x20(r3)
+00000BD0 lwz r6, 0x340(r27)
+00000BD4 stw r5, 0x18(r1)
+00000BD8 lwz r3, 0xa8(r6)
+00000BDC stfs f2, 0x3c(r1)
+00000BE0 lfs f1, 0x18(r1)
+00000BE4 stw r4, 0x34(r3)
+00000BE8 lwz r5, 0x3c(r1)
+00000BEC lwz r3, 0xa8(r6)
+00000BF0 stw r5, 0x1c(r1)
+00000BF4 stw r31, 0x38(r3)
+00000BF8 lfs f0, 0x1c(r1)
+00000BFC lwz r3, 0xa8(r6)
+00000C00 stfs f2, 0x28(r1)
+00000C04 sth r31, 0x40(r3)
+00000C08 lwz r4, 0x28(r1)
+00000C0C lwz r3, 0xa8(r6)
+00000C10 stfs f2, 0x2c(r1)
+00000C14 stw r31, 0x3c(r3)
+00000C18 lwz r3, 0x2c(r1)
+00000C1C lwz r5, 0xa8(r6)
+00000C20 stw r4, 0x20(r1)
+00000C24 stfs f1, 0x44(r5)
+00000C28 lfs f1, 0x20(r1)
+00000C2C stfs f0, 0x48(r5)
+00000C30 stw r3, 0x24(r1)
+00000C34 lwz r4, 0x340(r27)
+00000C38 lfs f0, 0x24(r1)
+00000C3C lwz r3, 0xa8(r4)
+00000C40 stfs f2, 0x30(r1)
+00000C44 stw r0, 0x84(r3)
+00000C48 lwz r3, 0xa8(r4)
+00000C4C stfs f2, 0x14(r1)
+00000C50 stw r31, 0x88(r3)
+00000C54 lwz r3, 0xa8(r4)
+00000C58 sth r31, 0x90(r3)
+00000C5C lwz r3, 0xa8(r4)
+00000C60 stw r31, 0x8c(r3)
+00000C64 lwz r3, 0xa8(r4)
+00000C68 stfs f1, 0x94(r3)
+00000C6C stfs f0, 0x98(r3)
+.L_00000C70:
+00000C70 lwz r0, 0x1c(r28)
+00000C74 cmpwi r0, 0x0
+00000C78 blt .L_00000D98
+00000C7C li r3, 0x50
+00000C80 li r4, 0xf
+00000C84 bl __nw__FUlQ25Heaps8HeapType
+00000C88 stw r3, 0x348(r27)
+00000C8C mr r22, r3
+00000C90 li r4, 0x0
+00000C94 li r5, 0x50
+00000C98 bl memset
+00000C9C lfs f3, 0x64(r29)
+00000CA0 addi r26, r30, 0x624
+00000CA4 lfs f2, 0x7c(r29)
+00000CA8 li r3, 0x19c
+00000CAC stfs f3, 0x20(r22)
+00000CB0 li r4, 0xf
+00000CB4 lfs f1, 0x94(r29)
+00000CB8 stfs f3, 0x24(r22)
+00000CBC lfs f0, 0x80(r29)
+00000CC0 stfs f2, 0x28(r22)
+00000CC4 stfs f1, 0x2c(r22)
+00000CC8 stfs f3, 0x30(r22)
+00000CCC stfs f3, 0x34(r22)
+00000CD0 stfs f3, 0x38(r22)
+00000CD4 stfs f0, 0x3c(r22)
+00000CD8 lwz r0, 0x1c(r28)
+00000CDC stb r0, 0x48(r22)
+00000CE0 clrlwi r25, r0, 24
+00000CE4 lwz r0, 0x20(r28)
+00000CE8 stb r0, 0x49(r22)
+00000CEC lwz r23, 0x1a0(r27)
+00000CF0 bl __nw__FUlQ25Heaps8HeapType
+00000CF4 cmpwi r3, 0x0
+00000CF8 mr r28, r3
+00000CFC beq .L_00000D14
+00000D00 mr r4, r26
+00000D04 bl __ct__15grGimmickSpringFPCc
+00000D08 lis r3, lbl_89_data_6C0@ha
+00000D0C addi r3, r3, lbl_89_data_6C0@l
+00000D10 stw r3, 0x3c(r28)
+.L_00000D14:
+00000D14 cmpwi r28, 0x0
+00000D18 beq .L_00000D34
+00000D1C lwz r12, 0x3c(r28)
+00000D20 mr r3, r28
+00000D24 extsh r4, r25
+00000D28 lwz r12, 0xb0(r12)
+00000D2C mtctr r12
+00000D30 bctrl
+.L_00000D34:
+00000D34 cmpwi r28, 0x0
+00000D38 stw r28, 0x34c(r27)
+00000D3C beq .L_00000D98
+00000D40 mr r3, r27
+00000D44 mr r4, r28
+00000D48 bl addGround__5StageFP6Ground
+00000D4C lwz r3, 0x34c(r27)
+00000D50 mr r4, r22
+00000D54 lwz r12, 0x3c(r3)
+00000D58 lwz r12, 0x148(r12)
+00000D5C mtctr r12
+00000D60 bctrl
+00000D64 lwz r3, 0x34c(r27)
+00000D68 mr r4, r23
+00000D6C li r5, 0x0
+00000D70 li r6, 0x0
+00000D74 lwz r12, 0x3c(r3)
+00000D78 lwz r12, 0x9c(r12)
+00000D7C mtctr r12
+00000D80 bctrl
+00000D84 lbz r4, 0x49(r22)
+00000D88 mr r3, r27
+00000D8C lwz r5, 0x34c(r27)
+00000D90 mr r6, r23
+00000D94 bl createGimmickCollision__15stCommonGimmickFUlP6GroundP9gfArchive
+.L_00000D98:
+00000D98 lwz r0, 0x350(r27)
+00000D9C cmpwi r0, 0x4
+00000DA0 bne .L_00000E18
+00000DA4 addi r4, r30, 0x4d0
+00000DA8 addi r5, r30, 0x630
+00000DAC li r3, 0x8
+00000DB0 bl create__13grTargetBreakFiPCcPCc
+00000DB4 cmpwi r3, 0x0
+00000DB8 stw r3, 0x338(r27)
+00000DBC mr r4, r3
+00000DC0 beq .L_00000E20
+00000DC4 mr r3, r27
+00000DC8 bl addGround__5StageFP6Ground
+00000DCC lwz r3, 0x338(r27)
+00000DD0 li r5, 0x0
+00000DD4 lwz r4, 0x1a0(r27)
+00000DD8 li r6, 0x0
+00000DDC lwz r12, 0x3c(r3)
+00000DE0 lwz r12, 0x9c(r12)
+00000DE4 mtctr r12
+00000DE8 bctrl
+00000DEC lwz r3, 0x338(r27)
+00000DF0 lwz r4, 0x9c(r27)
+00000DF4 lwz r12, 0x3c(r3)
+00000DF8 lwz r12, 0xa4(r12)
+00000DFC mtctr r12
+00000E00 bctrl
+00000E04 lwz r3, 0x338(r27)
+00000E08 bl initializeEntity__8grMadeinFv
+00000E0C lwz r3, 0x338(r27)
+00000E10 bl startEntityAutoLoop__8grMadeinFv
+00000E14 b .L_00000E20
+.L_00000E18:
+00000E18 li r0, 0x0
+00000E1C stw r0, 0x338(r27)
+.L_00000E20:
+00000E20 lwz r4, 0x1a0(r27)
+00000E24 mr r3, r27
+00000E28 li r5, 0x2
+00000E2C li r6, 0x0
+00000E30 bl createCollision__5StageFP9gfArchiveiP6Ground
+00000E34 lwz r12, 0x3c(r27)
+00000E38 mr r3, r27
+00000E3C lwz r12, 0xc4(r12)
+00000E40 mtctr r12
+00000E44 bctrl
+00000E48 lis r4, 0x1
+00000E4C lwz r3, 0x1a0(r27)
+00000E50 subi r0, r4, 0x2
+00000E54 li r5, 0x64
+00000E58 li r4, 0x2
+00000E5C clrlwi r6, r0, 16
+00000E60 bl getData__9gfArchiveF11ARCNodeTypeiUs
+00000E64 cmpwi r3, 0x0
+00000E68 beq .L_00000E80
+00000E6C stw r3, 0x8(r1)
+00000E70 mr r3, r27
+00000E74 addi r4, r1, 0x8
+00000E78 bl createStagePositions__5StageFPQ34nw4r3g3d7ResFile
+00000E7C b .L_00000E88
+.L_00000E80:
+00000E80 mr r3, r27
+00000E84 bl createStagePositions__5StageFv
+.L_00000E88:
+00000E88 lwz r12, 0x3c(r27)
+00000E8C mr r3, r27
+00000E90 lwz r12, 0x1f4(r12)
+00000E94 mtctr r12
+00000E98 bctrl
+00000E9C lwz r4, 0x1a0(r27)
+00000EA0 mr r3, r27
+00000EA4 li r5, 0x32
+00000EA8 bl loadStageAttrParam__5StageFP9gfArchivei
+00000EAC mr r3, r27
+00000EB0 li r4, 0x1
+00000EB4 li r5, 0x0
+00000EB8 bl initPosPokeTrainer__5StageFii
+00000EBC lwz r12, 0x3c(r27)
+00000EC0 mr r3, r27
+00000EC4 addi r6, r30, 0x63c
+00000EC8 li r5, 0x65
+00000ECC lwz r12, 0x68(r12)
+00000ED0 li r8, 0x0
+00000ED4 lwz r4, 0x1a0(r27)
+00000ED8 lwz r7, 0xbc(r27)
+00000EDC mtctr r12
+00000EE0 bctrl
+00000EE4 lis r4, 0x1
+00000EE8 lwz r3, 0x1a0(r27)
+00000EEC subi r0, r4, 0x2
+00000EF0 li r5, 0x0
+00000EF4 li r4, 0x5
+00000EF8 clrlwi r6, r0, 16
+00000EFC bl getData__9gfArchiveF11ARCNodeTypeiUs
+00000F00 mr r4, r3
+00000F04 mr r3, r27
+00000F08 li r5, 0x0
+00000F0C bl registScnAnim__5StageFPQ34nw4r3g3d11ResFileDataUl
+00000F10 lfs f0, 0x64(r29)
+00000F14 li r4, 0x0
+00000F18 li r0, 0xa
+00000F1C stw r4, 0x354(r27)
+00000F20 lis r3, g_cmAIController@ha
+00000F24 stw r0, 0x358(r27)
+00000F28 stfs f0, 0x390(r27)
+00000F2C stw r4, 0x394(r27)
+00000F30 stw r4, 0x398(r27)
+00000F34 lwz r0, 0x0(r30)
+00000F38 stw r0, 0x35c(r27)
+00000F3C stw r4, 0x360(r27)
+00000F40 lwz r3, g_cmAIController@l(r3)
+00000F44 lbz r0, 0x94(r3)
+00000F48 rlwinm r0, r0, 0, 29, 27
+00000F4C stb r0, 0x94(r3)
+00000F50 psq_l f31, 0x248(r1), 0, qr0
+00000F54 lfd f31, 0x240(r1)
+00000F58 psq_l f30, 0x238(r1), 0, qr0
+00000F5C lfd f30, 0x230(r1)
+00000F60 psq_l f29, 0x228(r1), 0, qr0
+00000F64 lfd f29, 0x220(r1)
+00000F68 psq_l f28, 0x218(r1), 0, qr0
+00000F6C lfd f28, 0x210(r1)
+00000F70 addi r11, r1, 0x210
+00000F74 bl _restgpr_22
+00000F78 lwz r0, 0x254(r1)
+00000F7C mtlr r0
+00000F80 addi r1, r1, 0x250
+00000F84 blr
+.endfn fn_89_23C
+
+# .text:0xF18 | 0xF88 | size: 0x8
+# Ground::setStageData(void*)
+.fn setStageData__6GroundFPv, global
+00000F88 stw r4, 0x60(r3)
+00000F8C blr
+.endfn setStageData__6GroundFPv
+
+# .text:0xF20 | 0xF90 | size: 0x8
+# Ground::setMdlIndex(int)
+.fn setMdlIndex__6GroundFi, global
+00000F90 sth r4, 0x5c(r3)
+00000F94 blr
+.endfn setMdlIndex__6GroundFi
+
+# .text:0xF28 | 0xF98 | size: 0x8
+# grGimmick::setGimmickData(void*)
+.fn setGimmickData__9grGimmickFPv, global
+00000F98 stw r4, 0xbc(r3)
+00000F9C blr
+.endfn setGimmickData__9grGimmickFPv
+
+# .text:0xF30 | 0xFA0 | size: 0x6E0
+.fn fn_89_FA0, global
+00000FA0 stwu r1, -0x1f0(r1)
+00000FA4 mflr r0
+00000FA8 stw r0, 0x1f4(r1)
+00000FAC stfd f31, 0x1e0(r1)
+00000FB0 psq_st f31, 0x1e8(r1), 0, qr0
+00000FB4 stfd f30, 0x1d0(r1)
+00000FB8 psq_st f30, 0x1d8(r1), 0, qr0
+00000FBC stfd f29, 0x1c0(r1)
+00000FC0 psq_st f29, 0x1c8(r1), 0, qr0
+00000FC4 stfd f28, 0x1b0(r1)
+00000FC8 psq_st f28, 0x1b8(r1), 0, qr0
+00000FCC addi r11, r1, 0x1b0
+00000FD0 bl _savegpr_21
+00000FD4 lwz r0, 0x350(r3)
+00000FD8 lis r28, lbl_89_rodata_0@ha
+00000FDC addi r28, r28, lbl_89_rodata_0@l
+00000FE0 lis r29, lbl_89_data_0@ha
+00000FE4 mulli r4, r0, 0x8c
+00000FE8 mr r22, r3
+00000FEC addi r29, r29, lbl_89_data_0@l
+00000FF0 fmr f31, f1
+00000FF4 lfs f30, 0x64(r28)
+00000FF8 mr r27, r22
+00000FFC addi r0, r29, 0x4
+00001000 lfs f28, 0x84(r28)
+00001004 lfs f29, 0x68(r28)
+00001008 add r25, r0, r4
+0000100C li r24, 0x0
+00001010 lis r30, g_ecMgr@ha
+00001014 li r31, 0x0
+00001018 li r21, 0x1
+.L_0000101C:
+0000101C lwz r0, 0x1dc(r27)
+00001020 cmpwi r0, 0x0
+00001024 beq .L_000012E8
+00001028 lfs f0, 0x364(r27)
+0000102C fcmpo cr0, f30, f0
+00001030 cror eq, lt, eq
+00001034 bne .L_00001060
+00001038 fsubs f0, f0, f31
+0000103C fcmpo cr0, f0, f30
+00001040 stfs f0, 0x364(r27)
+00001044 bge .L_0000104C
+00001048 stfs f30, 0x364(r27)
+.L_0000104C:
+0000104C lfs f1, 0x364(r27)
+00001050 mr r4, r24
+00001054 addi r3, r29, 0x664
+00001058 crset cr1eq
+0000105C bl OSReport
+.L_00001060:
+00001060 lwz r3, 0x1dc(r27)
+00001064 lbz r0, 0x16c(r3)
+00001068 extrwi. r0, r0, 1, 27
+0000106C bne .L_0000107C
+00001070 lfs f0, 0x364(r27)
+00001074 fcmpu cr0, f30, f0
+00001078 bne .L_00001248
+.L_0000107C:
+0000107C mr r4, r24
+00001080 addi r3, r29, 0x678
+00001084 crclr cr1eq
+00001088 bl OSReport
+0000108C lwz r3, 0x1dc(r27)
+00001090 lbz r0, 0x16c(r3)
+00001094 extrwi. r0, r0, 1, 27
+00001098 beq .L_000010C4
+0000109C lwz r3, 0x160(r3)
+000010A0 lfs f0, 0x390(r22)
+000010A4 lfs f1, 0x28(r3)
+000010A8 fadds f0, f0, f1
+000010AC stfs f0, 0x390(r22)
+000010B0 lwz r3, 0x1dc(r27)
+000010B4 lwz r3, 0x160(r3)
+000010B8 lwz r0, 0x38(r3)
+000010BC stw r0, 0x39c(r27)
+000010C0 b .L_000010D0
+.L_000010C4:
+000010C4 lfs f0, 0x390(r22)
+000010C8 fadds f0, f0, f28
+000010CC stfs f0, 0x390(r22)
+.L_000010D0:
+000010D0 lwz r0, 0x39c(r27)
+000010D4 cmplwi r0, 0x1
+000010D8 bgt .L_000010F0
+000010DC slwi r0, r0, 2
+000010E0 add r4, r22, r0
+000010E4 lwz r3, 0x394(r4)
+000010E8 addi r0, r3, 0x1
+000010EC stw r0, 0x394(r4)
+.L_000010F0:
+000010F0 lwz r3, 0x1dc(r27)
+000010F4 li r4, 0x0
+000010F8 lwz r3, 0xd4(r3)
+000010FC lfs f0, 0x7c(r3)
+00001100 lfs f1, 0x6c(r3)
+00001104 lfs f2, 0x5c(r3)
+00001108 stfs f2, 0x44(r1)
+0000110C stfs f1, 0x48(r1)
+00001110 stfs f0, 0x4c(r1)
+00001114 lwz r3, 0x1dc(r27)
+00001118 lwz r12, 0x3c(r3)
+0000111C lwz r12, 0x74(r12)
+00001120 mtctr r12
+00001124 bctrl
+00001128 lwz r3, 0x1dc(r27)
+0000112C bl deleteHitPoint__8grMadeinFv
+00001130 lwz r3, 0x1dc(r27)
+00001134 bl startSoundEffect__13grTargetBreakFv
+00001138 lwz r4, 0x350(r22)
+0000113C addi r5, r1, 0x44
+00001140 lwz r3, g_ecMgr@l(r30)
+00001144 addis r4, r4, 0x12b
+00001148 addi r4, r4, 0x1
+0000114C bl setEffect__5ecMgrF4EfIDP5Vec3f
+00001150 lwz r4, 0x354(r22)
+00001154 mr r26, r22
+00001158 lwz r3, 0x358(r22)
+0000115C li r23, 0x0
+00001160 addi r4, r4, 0x1
+00001164 subi r0, r3, 0x1
+00001168 stw r4, 0x354(r22)
+0000116C stw r0, 0x358(r22)
+00001170 stw r31, 0x1dc(r27)
+.L_00001174:
+00001174 lwz r0, 0x1dc(r26)
+00001178 cmpwi r0, 0x0
+0000117C beq .L_00001234
+00001180 lfs f0, 0x364(r26)
+00001184 fcmpo cr0, f0, f30
+00001188 bge .L_00001234
+0000118C mr r4, r23
+00001190 addi r3, r29, 0x690
+00001194 crclr cr1eq
+00001198 bl OSReport
+0000119C lwz r3, 0x1dc(r26)
+000011A0 psq_l f3, 0x44(r1), 0, qr0
+000011A4 lwz r3, 0xd4(r3)
+000011A8 psq_l f4, 0x4c(r1), 1, qr0
+000011AC lfs f0, 0x6c(r3)
+000011B0 lfs f2, 0x5c(r3)
+000011B4 stfs f0, 0x3c(r1)
+000011B8 lfs f1, 0x7c(r3)
+000011BC stfs f2, 0x38(r1)
+000011C0 lfs f0, 0x38c(r22)
+000011C4 psq_l f2, 0x38(r1), 0, qr0
+000011C8 stfs f1, 0x40(r1)
+000011CC ps_sub f2, f2, f3
+000011D0 psq_l f1, 0x40(r1), 1, qr0
+000011D4 psq_st f2, 0x38(r1), 0, qr0
+000011D8 ps_sub f3, f1, f4
+000011DC lfs f2, 0x38(r1)
+000011E0 lfs f1, 0x3c(r1)
+000011E4 psq_st f3, 0x40(r1), 1, qr0
+000011E8 fmuls f2, f2, f2
+000011EC fmuls f1, f1, f1
+000011F0 lfs f3, 0x40(r1)
+000011F4 fmuls f3, f3, f3
+000011F8 fadds f1, f2, f1
+000011FC fadds f1, f3, f1
+00001200 fcmpo cr0, f1, f0
+00001204 cror eq, lt, eq
+00001208 bne .L_00001228
+0000120C lfs f0, 0xc(r25)
+00001210 addi r3, r29, 0x6a0
+00001214 stfs f0, 0x364(r26)
+00001218 lwz r0, 0x39c(r27)
+0000121C stw r0, 0x39c(r26)
+00001220 crclr cr1eq
+00001224 bl OSReport
+.L_00001228:
+00001228 addi r3, r29, 0x6ac
+0000122C crclr cr1eq
+00001230 bl OSReport
+.L_00001234:
+00001234 addi r23, r23, 0x1
+00001238 addi r26, r26, 0x4
+0000123C cmpwi r23, 0xa
+00001240 blt .L_00001174
+00001244 b .L_000012E8
+.L_00001248:
+00001248 addi r3, r1, 0x140
+0000124C addi r4, r29, 0x6b0
+00001250 addi r5, r24, 0x1
+00001254 crclr cr1eq
+00001258 bl sprintf
+0000125C lwz r3, 0x10(r25)
+00001260 slw r0, r21, r24
+00001264 and. r0, r3, r0
+00001268 beq .L_000012AC
+0000126C lwz r3, 0x208(r27)
+00001270 cmpwi r3, 0x0
+00001274 beq .L_000012E8
+00001278 lwz r12, 0x3c(r3)
+0000127C addi r4, r1, 0x110
+00001280 addi r6, r1, 0x140
+00001284 li r5, 0x0
+00001288 lwz r12, 0xd4(r12)
+0000128C mtctr r12
+00001290 bctrl
+00001294 stfs f29, 0x13c(r1)
+00001298 addi r4, r1, 0x110
+0000129C li r5, 0x1
+000012A0 lwz r3, 0x1dc(r27)
+000012A4 bl fn_27_279FC8
+000012A8 b .L_000012E8
+.L_000012AC:
+000012AC lwz r3, 0x204(r22)
+000012B0 cmpwi r3, 0x0
+000012B4 beq .L_000012E8
+000012B8 lwz r12, 0x3c(r3)
+000012BC addi r4, r1, 0xe0
+000012C0 addi r6, r1, 0x140
+000012C4 li r5, 0x0
+000012C8 lwz r12, 0xd4(r12)
+000012CC mtctr r12
+000012D0 bctrl
+000012D4 stfs f29, 0x10c(r1)
+000012D8 addi r4, r1, 0xe0
+000012DC li r5, 0x1
+000012E0 lwz r3, 0x1dc(r27)
+000012E4 bl fn_27_279FC8
+.L_000012E8:
+000012E8 addi r24, r24, 0x1
+000012EC addi r27, r27, 0x4
+000012F0 cmpwi r24, 0xa
+000012F4 blt .L_0000101C
+000012F8 mr r21, r22
+000012FC li r23, 0x0
+.L_00001300:
+00001300 lwz r3, 0x264(r21)
+00001304 cmpwi r3, 0x0
+00001308 beq .L_00001338
+0000130C lwz r12, 0x3c(r3)
+00001310 addi r4, r1, 0xb0
+00001314 li r5, 0x0
+00001318 lwz r6, 0x298(r21)
+0000131C lwz r12, 0xd0(r12)
+00001320 mtctr r12
+00001324 bctrl
+00001328 lwz r3, 0x234(r21)
+0000132C addi r4, r1, 0xb0
+00001330 li r5, 0x1
+00001334 bl fn_27_279FC8
+.L_00001338:
+00001338 addi r23, r23, 0x1
+0000133C addi r21, r21, 0x4
+00001340 cmpwi r23, 0xc
+00001344 blt .L_00001300
+00001348 lwz r0, 0x360(r22)
+0000134C cmpwi r0, 0x3be
+00001350 beq .L_000013CC
+00001354 bge .L_0000137C
+00001358 cmpwi r0, 0x3bb
+0000135C beq .L_000013A4
+00001360 bge .L_00001370
+00001364 cmpwi r0, 0x0
+00001368 beq .L_00001394
+0000136C b .L_00001648
+.L_00001370:
+00001370 cmpwi r0, 0x3bd
+00001374 bge .L_000013B8
+00001378 b .L_00001648
+.L_0000137C:
+0000137C cmpwi r0, 0x42a
+00001380 beq .L_00001608
+00001384 bge .L_00001648
+00001388 cmpwi r0, 0x419
+0000138C beq .L_000015CC
+00001390 b .L_00001648
+.L_00001394:
+00001394 lwz r3, 0x64c(r29)
+00001398 li r0, 0x3bb
+0000139C stw r3, 0x35c(r22)
+000013A0 stw r0, 0x360(r22)
+.L_000013A4:
+000013A4 lwz r3, 0x650(r29)
+000013A8 li r0, 0x3bd
+000013AC stw r3, 0x35c(r22)
+000013B0 stw r0, 0x360(r22)
+000013B4 b .L_00001648
+.L_000013B8:
+000013B8 lwz r3, 0x654(r29)
+000013BC li r0, 0x3be
+000013C0 stw r3, 0x35c(r22)
+000013C4 stw r0, 0x360(r22)
+000013C8 b .L_00001648
+.L_000013CC:
+000013CC lfs f31, 0x98(r28)
+000013D0 mr r21, r22
+000013D4 lfs f29, 0x8c(r28)
+000013D8 li r26, 0x0
+000013DC lfs f30, 0x64(r28)
+000013E0 li r24, 0x1
+000013E4 lis r23, g_stTriggerMng@ha
+.L_000013E8:
+000013E8 lwz r3, 0x1d8(r22)
+000013EC cmpwi r3, 0x0
+000013F0 beq .L_00001558
+000013F4 lwz r0, 0x2f8(r21)
+000013F8 cmpwi r0, 0x0
+000013FC beq .L_00001558
+00001400 lwz r12, 0x3c(r3)
+00001404 addi r4, r1, 0x80
+00001408 li r5, 0x0
+0000140C lwz r6, 0x318(r21)
+00001410 lwz r12, 0xd0(r12)
+00001414 mtctr r12
+00001418 bctrl
+0000141C lwz r3, 0x1d8(r22)
+00001420 addi r4, r1, 0x80
+00001424 lfs f0, 0xac(r1)
+00001428 li r5, 0x0
+0000142C lwz r12, 0x3c(r3)
+00001430 lfs f1, 0x9c(r1)
+00001434 lfs f2, 0x8c(r1)
+00001438 lwz r12, 0xd0(r12)
+0000143C stfs f2, 0x2c(r1)
+00001440 lwz r6, 0x328(r21)
+00001444 stfs f1, 0x30(r1)
+00001448 stfs f0, 0x34(r1)
+0000144C mtctr r12
+00001450 bctrl
+00001454 lfs f3, 0xac(r1)
+00001458 lfs f0, 0x34(r1)
+0000145C stfs f3, 0x28(r1)
+00001460 lfs f4, 0x9c(r1)
+00001464 stfs f0, 0x1c(r1)
+00001468 lfs f5, 0x8c(r1)
+0000146C lfs f2, 0x2c(r1)
+00001470 lfs f1, 0x30(r1)
+00001474 stfs f5, 0x20(r1)
+00001478 psq_l f3, 0x28(r1), 1, qr0
+0000147C psq_l f0, 0x1c(r1), 1, qr0
+00001480 psq_l f5, 0x34(r1), 1, qr0
+00001484 ps_add f0, f0, f3
+00001488 stfs f4, 0x24(r1)
+0000148C ps_sub f6, f3, f5
+00001490 psq_l f5, 0x2c(r1), 0, qr0
+00001494 stfs f2, 0x14(r1)
+00001498 psq_l f3, 0x20(r1), 0, qr0
+0000149C ps_muls0 f4, f0, f31
+000014A0 stfs f1, 0x18(r1)
+000014A4 ps_sub f2, f3, f5
+000014A8 lwz r3, 0x2f8(r21)
+000014AC psq_l f0, 0x14(r1), 0, qr0
+000014B0 psq_st f4, 0x1c(r1), 1, qr0
+000014B4 ps_add f1, f0, f3
+000014B8 psq_st f2, 0x20(r1), 0, qr0
+000014BC lfs f0, 0x1c(r1)
+000014C0 ps_muls0 f1, f1, f31
+000014C4 lfs f2, 0x20(r1)
+000014C8 psq_st f6, 0x28(r1), 1, qr0
+000014CC fabs f3, f2
+000014D0 psq_st f1, 0x14(r1), 0, qr0
+000014D4 lfs f2, 0x14(r1)
+000014D8 frsp f3, f3
+000014DC lfs f1, 0x18(r1)
+000014E0 stfs f2, 0x28(r3)
+000014E4 stfs f1, 0x2c(r3)
+000014E8 stfs f0, 0x30(r3)
+000014EC lwz r3, 0x2f8(r21)
+000014F0 stfs f29, 0x34(r3)
+000014F4 lwz r3, 0x2f8(r21)
+000014F8 stb r24, 0x38(r3)
+000014FC lwz r3, 0x2f8(r21)
+00001500 stfs f30, 0x18(r3)
+00001504 lwz r3, 0x2f8(r21)
+00001508 stfs f30, 0x1c(r3)
+0000150C lwz r3, 0x2f8(r21)
+00001510 stfs f3, 0x20(r3)
+00001514 lwz r0, 0x350(r22)
+00001518 cmpwi r0, 0x0
+0000151C bne .L_00001530
+00001520 lfs f0, 0x24(r1)
+00001524 fabs f0, f0
+00001528 frsp f0, f0
+0000152C b .L_00001534
+.L_00001530:
+00001530 lfs f0, 0x7c(r28)
+.L_00001534:
+00001534 lwz r3, 0x2f8(r21)
+00001538 li r4, 0xe
+0000153C li r5, -0x1
+00001540 stfs f0, 0x24(r3)
+00001544 lwz r3, g_stTriggerMng@l(r23)
+00001548 bl createTrigger__12stTriggerMngFQ27Gimmick8AreaKindi
+0000154C stw r3, 0x308(r21)
+00001550 lwz r4, 0x2f8(r21)
+00001554 bl setBeltConveyorTrigger__9stTriggerFP25grGimmickBeltConveyorData
+.L_00001558:
+00001558 addi r26, r26, 0x1
+0000155C addi r21, r21, 0x4
+00001560 cmpwi r26, 0x4
+00001564 blt .L_000013E8
+00001568 lwz r0, 0x1c(r25)
+0000156C cmpwi r0, 0x0
+00001570 blt .L_000015B8
+00001574 lwz r3, 0x230(r22)
+00001578 addi r4, r1, 0x50
+0000157C lwz r6, 0x344(r22)
+00001580 li r5, 0x0
+00001584 lwz r12, 0x3c(r3)
+00001588 lwz r12, 0xd0(r12)
+0000158C mtctr r12
+00001590 bctrl
+00001594 lfs f0, 0x7c(r1)
+00001598 addi r4, r1, 0x8
+0000159C lfs f1, 0x6c(r1)
+000015A0 lfs f2, 0x5c(r1)
+000015A4 stfs f1, 0xc(r1)
+000015A8 stfs f2, 0x8(r1)
+000015AC stfs f0, 0x10(r1)
+000015B0 lwz r3, 0x34c(r22)
+000015B4 bl setPos__9grGimmickFP5Vec3f
+.L_000015B8:
+000015B8 lwz r3, 0x658(r29)
+000015BC li r0, 0x419
+000015C0 stw r3, 0x35c(r22)
+000015C4 stw r0, 0x360(r22)
+000015C8 b .L_00001648
+.L_000015CC:
+000015CC mr r21, r22
+000015D0 li r23, 0x0
+.L_000015D4:
+000015D4 lwz r0, 0x1d8(r22)
+000015D8 cmpwi r0, 0x0
+000015DC beq .L_000015F8
+000015E0 lwz r0, 0x2f8(r21)
+000015E4 cmpwi r0, 0x0
+000015E8 beq .L_000015F8
+000015EC lwz r3, 0x308(r21)
+000015F0 li r4, 0x0
+000015F4 bl setAreaSleep__9stTriggerFb
+.L_000015F8:
+000015F8 addi r23, r23, 0x1
+000015FC addi r21, r21, 0x4
+00001600 cmpwi r23, 0x4
+00001604 blt .L_000015D4
+.L_00001608:
+00001608 mr r3, r22
+0000160C bl fn_89_1680
+00001610 cmpwi r3, 0x0
+00001614 beq .L_00001624
+00001618 li r0, 0x0
+0000161C stw r0, 0x230(r22)
+00001620 b .L_00001638
+.L_00001624:
+00001624 lwz r3, 0x65c(r29)
+00001628 li r0, 0x42a
+0000162C stw r3, 0x35c(r22)
+00001630 stw r0, 0x360(r22)
+00001634 b .L_00001648
+.L_00001638:
+00001638 lwz r3, 0x660(r29)
+0000163C li r0, 0x42d
+00001640 stw r3, 0x35c(r22)
+00001644 stw r0, 0x360(r22)
+.L_00001648:
+00001648 psq_l f31, 0x1e8(r1), 0, qr0
+0000164C lfd f31, 0x1e0(r1)
+00001650 psq_l f30, 0x1d8(r1), 0, qr0
+00001654 lfd f30, 0x1d0(r1)
+00001658 psq_l f29, 0x1c8(r1), 0, qr0
+0000165C lfd f29, 0x1c0(r1)
+00001660 psq_l f28, 0x1b8(r1), 0, qr0
+00001664 addi r11, r1, 0x1b0
+00001668 lfd f28, 0x1b0(r1)
+0000166C bl _restgpr_21
+00001670 lwz r0, 0x1f4(r1)
+00001674 mtlr r0
+00001678 addi r1, r1, 0x1f0
+0000167C blr
+.endfn fn_89_FA0
+
+# .text:0x1610 | 0x1680 | size: 0x128
+.fn fn_89_1680, global
+00001680 stwu r1, -0x70(r1)
+00001684 mflr r0
+00001688 stw r0, 0x74(r1)
+0000168C addi r11, r1, 0x70
+00001690 bl _savegpr_27
+00001694 lwz r0, 0x230(r3)
+00001698 mr r27, r3
+0000169C cmpwi r0, 0x0
+000016A0 beq .L_0000178C
+000016A4 lis r30, lbl_89_data_400@ha
+000016A8 li r31, 0x0
+000016AC addi r30, r30, lbl_89_data_400@l
+.L_000016B0:
+000016B0 bl getInstance__9itManagerFv
+000016B4 lwz r4, 0x4(r30)
+000016B8 li r6, 0x1
+000016BC lwz r5, 0x8(r30)
+000016C0 bl isCompItemKindArchive__9itManagerF6itKindUlb
+000016C4 cmpwi r3, 0x0
+000016C8 bne .L_000016D4
+000016CC li r3, 0x0
+000016D0 b .L_00001790
+.L_000016D4:
+000016D4 addi r31, r31, 0x1
+000016D8 addi r30, r30, 0xc
+000016DC cmpwi r31, 0x10
+000016E0 blt .L_000016B0
+000016E4 lis r30, lbl_89_data_400@ha
+000016E8 li r29, 0x0
+000016EC addi r30, r30, lbl_89_data_400@l
+000016F0 lis r31, 0x1
+.L_000016F4:
+000016F4 lwz r3, 0x230(r27)
+000016F8 addi r4, r1, 0x20
+000016FC lwz r6, 0x0(r30)
+00001700 li r5, 0x0
+00001704 lwz r12, 0x3c(r3)
+00001708 lwz r12, 0xd4(r12)
+0000170C mtctr r12
+00001710 bctrl
+00001714 cmpwi r3, 0x0
+00001718 beq .L_0000177C
+0000171C bl getInstance__9itManagerFv
+00001720 subi r9, r31, 0x1
+00001724 li r6, -0x1
+00001728 stw r9, 0x8(r1)
+0000172C li r7, 0x0
+00001730 li r8, 0x0
+00001734 li r10, 0x0
+00001738 lwz r4, 0x4(r30)
+0000173C lwz r5, 0x8(r30)
+00001740 bl createItem__9itManagerF6itKindUliP16soResourceModuleUciii
+00001744 cmpwi r3, 0x0
+00001748 mr r28, r3
+0000174C beq .L_0000177C
+00001750 lfs f0, 0x4c(r1)
+00001754 addi r4, r1, 0x10
+00001758 lfs f1, 0x3c(r1)
+0000175C lfs f2, 0x2c(r1)
+00001760 stfs f1, 0x14(r1)
+00001764 stfs f2, 0x10(r1)
+00001768 stfs f0, 0x18(r1)
+0000176C bl warp__8BaseItemFP5Vec3f
+00001770 mr r3, r28
+00001774 li r4, 0x0
+00001778 bl setVanishMode__8BaseItemFb
+.L_0000177C:
+0000177C addi r29, r29, 0x1
+00001780 addi r30, r30, 0xc
+00001784 cmpwi r29, 0x10
+00001788 blt .L_000016F4
+.L_0000178C:
+0000178C li r3, 0x1
+.L_00001790:
+00001790 addi r11, r1, 0x70
+00001794 bl _restgpr_27
+00001798 lwz r0, 0x74(r1)
+0000179C mtlr r0
+000017A0 addi r1, r1, 0x70
+000017A4 blr
+.endfn fn_89_1680
+
+# .text:0x1738 | 0x17A8 | size: 0x8
+# Ground::adventureEventGetItem(int, stTriggerData*)
+.fn adventureEventGetItem__6GroundFiP13stTriggerData, global
+000017A8 li r3, 0x0
+000017AC blr
+.endfn adventureEventGetItem__6GroundFiP13stTriggerData
+
+# .text:0x1740 | 0x17B0 | size: 0x8
+# Ground::getInitializeInfo(int)
+.fn getInitializeInfo__6GroundFi, global
+000017B0 li r3, 0x0
+000017B4 blr
+.endfn getInitializeInfo__6GroundFi
+
+# .text:0x1748 | 0x17B8 | size: 0x4
+# Ground::setInitializeInfo(int)
+.fn setInitializeInfo__6GroundFi, global
+000017B8 blr
+.endfn setInitializeInfo__6GroundFi
+
+# .text:0x174C | 0x17BC | size: 0x10
+# Ground::disableCalcCollision()
+.fn disableCalcCollision__6GroundFv, global
+000017BC lbz r0, 0x6c(r3)
+000017C0 rlwinm r0, r0, 0, 29, 27
+000017C4 stb r0, 0x6c(r3)
+000017C8 blr
+.endfn disableCalcCollision__6GroundFv
+
+# .text:0x175C | 0x17CC | size: 0x10
+# Ground::enableCalcCollision()
+.fn enableCalcCollision__6GroundFv, global
+000017CC lbz r0, 0x6c(r3)
+000017D0 ori r0, r0, 0x8
+000017D4 stb r0, 0x6c(r3)
+000017D8 blr
+.endfn enableCalcCollision__6GroundFv
+
+# .text:0x176C | 0x17DC | size: 0xC
+# Ground::isEnableCalcCollision()
+.fn isEnableCalcCollision__6GroundFv, global
+000017DC lbz r0, 0x6c(r3)
+000017E0 extrwi r3, r0, 1, 28
+000017E4 blr
+.endfn isEnableCalcCollision__6GroundFv
+
+# .text:0x1778 | 0x17E8 | size: 0x8
+# Ground::getMdlIndex()
+.fn getMdlIndex__6GroundFv, global
+000017E8 lha r3, 0x5c(r3)
+000017EC blr
+.endfn getMdlIndex__6GroundFv
+
+# .text:0x1780 | 0x17F0 | size: 0x4
+# Ground::initStageData()
+.fn initStageData__6GroundFv, global
+000017F0 blr
+.endfn initStageData__6GroundFv
+
+# .text:0x1784 | 0x17F4 | size: 0x8
+# Ground::getStageData()
+.fn getStageData__6GroundFv, global
+000017F4 lwz r3, 0x60(r3)
+000017F8 blr
+.endfn getStageData__6GroundFv
+
+# .text:0x178C | 0x17FC | size: 0x1C
+# Ground::getModelCount()
+.fn getModelCount__6GroundFv, global
+000017FC lwz r0, 0x40(r3)
+00001800 cmpwi r0, 0x0
+00001804 beq .L_00001810
+00001808 addi r3, r3, 0x40
+0000180C b GetResMdlNumEntries__Q34nw4r3g3d7ResFileCFv
+.L_00001810:
+00001810 li r3, 0x0
+00001814 blr
+.endfn getModelCount__6GroundFv
+
+# .text:0x17A8 | 0x1818 | size: 0x8
+# grGimmick::getTransparencyFlag()
+.fn getTransparencyFlag__9grGimmickFv, global
+00001818 lbz r3, 0xe1(r3)
+0000181C blr
+.endfn getTransparencyFlag__9grGimmickFv
+
+# .text:0x17B0 | 0x1820 | size: 0x8
+# grGimmick::getGimmickData()
+.fn getGimmickData__9grGimmickFv, global
+00001820 lwz r3, 0xbc(r3)
+00001824 blr
+.endfn getGimmickData__9grGimmickFv
+
+# .text:0x17B8 | 0x1828 | size: 0x9C
+.fn fn_89_1828, global
+00001828 stwu r1, -0x10(r1)
+0000182C mflr r0
+00001830 stw r0, 0x14(r1)
+00001834 stw r31, 0xc(r1)
+00001838 mr r31, r3
+0000183C lwz r3, 0x48(r3)
+00001840 lwz r4, 0x44(r31)
+00001844 lwz r3, 0x0(r3)
+00001848 lwz r4, 0x0(r4)
+0000184C bl unbindShapeAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
+00001850 lwz r12, 0x3c(r31)
+00001854 mr r3, r31
+00001858 li r4, 0x0
+0000185C li r5, 0x0
+00001860 lwz r12, 0x150(r12)
+00001864 mtctr r12
+00001868 bctrl
+0000186C mr r3, r31
+00001870 li r4, 0x0
+00001874 li r5, 0x0
+00001878 bl changeShapeAnim__9grGimmickFUlUl
+0000187C lis r3, g_sndSystem@ha
+00001880 li r4, 0x1ee0
+00001884 lwz r3, g_sndSystem@l(r3)
+00001888 li r5, -0x1
+0000188C li r6, 0x0
+00001890 li r7, 0x0
+00001894 li r8, -0x1
+00001898 bl playSE__9sndSystemF5SndIDiiii
+0000189C lis r3, lbl_89_rodata_64@ha
+000018A0 li r0, 0x2
+000018A4 lfs f0, lbl_89_rodata_64@l(r3)
+000018A8 stb r0, 0x158(r31)
+000018AC stfs f0, 0x15c(r31)
+000018B0 lwz r31, 0xc(r1)
+000018B4 lwz r0, 0x14(r1)
+000018B8 mtlr r0
+000018BC addi r1, r1, 0x10
+000018C0 blr
+.endfn fn_89_1828
+
+# .text:0x1854 | 0x18C4 | size: 0x58
+.fn fn_89_18C4, global
+000018C4 stwu r1, -0x10(r1)
+000018C8 mflr r0
+000018CC cmpwi r3, 0x0
+000018D0 stw r0, 0x14(r1)
+000018D4 stw r31, 0xc(r1)
+000018D8 mr r31, r4
+000018DC stw r30, 0x8(r1)
+000018E0 mr r30, r3
+000018E4 beq .L_00001900
+000018E8 li r4, 0x0
+000018EC bl __dt__15grGimmickSpringFv
+000018F0 cmpwi r31, 0x0
+000018F4 ble .L_00001900
+000018F8 mr r3, r30
+000018FC bl __dl__FPv
+.L_00001900:
+00001900 mr r3, r30
+00001904 lwz r31, 0xc(r1)
+00001908 lwz r30, 0x8(r1)
+0000190C lwz r0, 0x14(r1)
+00001910 mtlr r0
+00001914 addi r1, r1, 0x10
+00001918 blr
+.endfn fn_89_18C4
+
+# .text:0x18AC | 0x191C | size: 0x4
+.fn fn_89_191C, global
+0000191C blr
+.endfn fn_89_191C
+
+# .text:0x18B0 | 0x1920 | size: 0x8
+.fn fn_89_1920, global
+00001920 li r3, 0x0
+00001924 blr
+.endfn fn_89_1920
+
+# .text:0x18B8 | 0x1928 | size: 0x8
+.fn fn_89_1928, global
+00001928 li r3, 0x0
+0000192C blr
+.endfn fn_89_1928
+
+# .text:0x18C0 | 0x1930 | size: 0x8
+.fn fn_89_1930, global
+00001930 li r3, 0x0
+00001934 blr
+.endfn fn_89_1930
+
+# .text:0x18C8 | 0x1938 | size: 0x8
+.fn fn_89_1938, global
+00001938 li r3, 0x0
+0000193C blr
+.endfn fn_89_1938
+
+# .text:0x18D0 | 0x1940 | size: 0x8
+.fn fn_89_1940, global
+00001940 li r3, 0x1
+00001944 blr
+.endfn fn_89_1940
+
+# .text:0x18D8 | 0x1948 | size: 0x4
+.fn fn_89_1948, global
+00001948 blr
+.endfn fn_89_1948
+
+# .text:0x18DC | 0x194C | size: 0x8
+.fn fn_89_194C, global
+0000194C lfs f1, 0x190(r3)
+00001950 blr
+.endfn fn_89_194C
+
+# .text:0x18E4 | 0x1954 | size: 0x8
+.fn fn_89_1954, global
+00001954 stfs f1, 0x190(r3)
+00001958 blr
+.endfn fn_89_1954
+
+# .text:0x18EC | 0x195C | size: 0x8
+.fn fn_89_195C, global
+0000195C li r3, 0x0
+00001960 blr
+.endfn fn_89_195C
+
+# .text:0x18F4 | 0x1964 | size: 0xC
+.fn fn_89_1964, global
+00001964 lis r3, lbl_89_rodata_64@ha
+00001968 lfs f1, lbl_89_rodata_64@l(r3)
+0000196C blr
+.endfn fn_89_1964
+
+# .text:0x1900 | 0x1970 | size: 0xC
+.fn fn_89_1970, global
+00001970 lis r3, lbl_89_rodata_8C@ha
+00001974 lfs f1, lbl_89_rodata_8C@l(r3)
+00001978 blr
+.endfn fn_89_1970
+
+# .text:0x190C | 0x197C | size: 0x10
+.fn fn_89_197C, global
+0000197C stb r4, 0x184(r3)
+00001980 stw r5, 0x188(r3)
+00001984 stfs f1, 0x18c(r3)
+00001988 blr
+.endfn fn_89_197C
+
+# .text:0x191C | 0x198C | size: 0x14
+.fn fn_89_198C, global
+0000198C lwz r0, 0x188(r3)
+00001990 stw r0, 0x0(r4)
+00001994 lfs f0, 0x18c(r3)
+00001998 stfs f0, 0x0(r5)
+0000199C blr
+.endfn fn_89_198C
+
+# .text:0x1930 | 0x19A0 | size: 0x8
+.fn fn_89_19A0, global
+000019A0 lbz r3, 0x184(r3)
+000019A4 blr
+.endfn fn_89_19A0
+
+# .text:0x1938 | 0x19A8 | size: 0x8
+.fn fn_89_19A8, global
+000019A8 li r3, 0x0
+000019AC blr
+.endfn fn_89_19A8
+
+# .text:0x1940 | 0x19B0 | size: 0x8
+.fn fn_89_19B0, global
+000019B0 li r3, 0x0
+000019B4 blr
+.endfn fn_89_19B0
+
+# .text:0x1948 | 0x19B8 | size: 0x8
+.fn fn_89_19B8, global
+000019B8 li r3, 0x0
+000019BC blr
+.endfn fn_89_19B8
+
+# .text:0x1950 | 0x19C0 | size: 0x4
+.fn fn_89_19C0, global
+000019C0 blr
+.endfn fn_89_19C0
+
+# .text:0x1954 | 0x19C4 | size: 0x1C
+.fn fn_89_19C4, global
+000019C4 lis r5, lbl_89_rodata_64@ha
+000019C8 li r3, 0x0
+000019CC lfs f0, lbl_89_rodata_64@l(r5)
+000019D0 stfs f0, 0x0(r4)
+000019D4 stfs f0, 0x4(r4)
+000019D8 stfs f0, 0x8(r4)
+000019DC blr
+.endfn fn_89_19C4
+
+# .text:0x1970 | 0x19E0 | size: 0x8
+.fn fn_89_19E0, global
+000019E0 li r3, 0x14
+000019E4 blr
+.endfn fn_89_19E0
+
+# .text:0x1978 | 0x19E8 | size: 0x8
+.fn fn_89_19E8, global
+000019E8 addi r3, r3, 0x68
+000019EC blr
+.endfn fn_89_19E8
+
+# .text:0x1980 | 0x19F0 | size: 0x8
+.fn fn_89_19F0, global
+000019F0 li r3, 0x0
+000019F4 blr
+.endfn fn_89_19F0
+
+# .text:0x1988 | 0x19F8 | size: 0x8
+.fn fn_89_19F8, global
+000019F8 li r3, 0x0
+000019FC blr
+.endfn fn_89_19F8
+
+# .text:0x1990 | 0x1A00 | size: 0xC
+.fn fn_89_1A00, global
+00001A00 lis r3, lbl_89_rodata_64@ha
+00001A04 lfs f1, lbl_89_rodata_64@l(r3)
+00001A08 blr
+.endfn fn_89_1A00
+
+# .text:0x199C | 0x1A0C | size: 0x4
+.fn fn_89_1A0C, global
+00001A0C blr
+.endfn fn_89_1A0C
+
+# .text:0x19A0 | 0x1A10 | size: 0x8
+.fn fn_89_1A10, global
+00001A10 li r3, 0x0
+00001A14 blr
+.endfn fn_89_1A10
+
+# .text:0x19A8 | 0x1A18 | size: 0x8
+.fn fn_89_1A18, global
+00001A18 lwz r3, 0x1c8(r3)
+00001A1C blr
+.endfn fn_89_1A18
+
+# .text:0x19B0 | 0x1A20 | size: 0x8
+.fn fn_89_1A20, global
+00001A20 li r3, 0x0
+00001A24 blr
+.endfn fn_89_1A20
+
+# .text:0x19B8 | 0x1A28 | size: 0x8
+.fn fn_89_1A28, global
+00001A28 li r3, 0x2712
+00001A2C blr
+.endfn fn_89_1A28
+
+.include "macros.inc"
+.file "auto_00_00001AB8_text"
+
+# 0x00001AB8..0x00001B64 | size: 0xAC
+.text
+.balign 4
+
+# .text:0x0 | 0x1AB8 | size: 0x74
+.fn fn_89_1AB8, global
+00001AB8 stwu r1, -0x10(r1)
+00001ABC mflr r0
+00001AC0 cmpwi r3, 0x0
+00001AC4 stw r0, 0x14(r1)
+00001AC8 stw r31, 0xc(r1)
+00001ACC mr r31, r4
+00001AD0 stw r30, 0x8(r1)
+00001AD4 mr r30, r3
+00001AD8 beq .L_00001B10
+00001ADC lis r6, lbl_89_data_C80@ha
+00001AE0 li r4, 0x38
+00001AE4 addi r6, r6, lbl_89_data_C80@l
+00001AE8 li r5, 0x0
+00001AEC stw r6, 0x0(r3)
+00001AF0 bl setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+00001AF4 mr r3, r30
+00001AF8 li r4, 0x0
+00001AFC bl __dt__11stClassInfoFv
+00001B00 cmpwi r31, 0x0
+00001B04 ble .L_00001B10
+00001B08 mr r3, r30
+00001B0C bl __dl__FPv
+.L_00001B10:
+00001B10 mr r3, r30
+00001B14 lwz r31, 0xc(r1)
+00001B18 lwz r30, 0x8(r1)
+00001B1C lwz r0, 0x14(r1)
+00001B20 mtlr r0
+00001B24 addi r1, r1, 0x10
+00001B28 blr
+.endfn fn_89_1AB8
+
+# .text:0x74 | 0x1B2C | size: 0x34
+.fn fn_89_1B2C, global
+00001B2C stwu r1, -0x10(r1)
+00001B30 mflr r0
+00001B34 li r3, 0x3c4
+00001B38 li r4, 0xf
+00001B3C stw r0, 0x14(r1)
+00001B40 bl __nw__FUlQ25Heaps8HeapType
+00001B44 cmpwi r3, 0x0
+00001B48 beq .L_00001B50
+00001B4C bl fn_89_A4
+.L_00001B50:
+00001B50 lwz r0, 0x14(r1)
+00001B54 mtlr r0
+00001B58 addi r1, r1, 0x10
+00001B5C blr
+.endfn fn_89_1B2C
+
+# .text:0xA8 | 0x1B60 | size: 0x4
+.fn fn_89_1B60, global
+00001B60 blr
+.endfn fn_89_1B60
+
+.include "macros.inc"
+.file "auto_fn_89_1A30_text"
+
+# 0x00001A30..0x00001AB8 | size: 0x88
+.text
+.balign 4
+
+# .text:0x0 | 0x1A30 | size: 0x88
+.fn fn_89_1A30, global
+00001A30 stwu r1, -0x10(r1)
+00001A34 mflr r0
+00001A38 li r7, 0xff
+00001A3C li r6, 0x0
+00001A40 stw r0, 0x14(r1)
+00001A44 li r0, 0x1
+00001A48 stw r31, 0xc(r1)
+00001A4C lis r31, lbl_89_bss_8@ha
+00001A50 addi r31, r31, lbl_89_bss_8@l
+00001A54 addi r5, r31, 0x0
+00001A58 stw r7, 0x0(r31)
+00001A5C addi r4, r31, 0x8
+00001A60 addi r3, r31, 0x1c
+00001A64 stw r6, 0x4(r5)
+00001A68 stw r7, 0x8(r31)
+00001A6C stw r0, 0x4(r4)
+00001A70 bl __ct__11stClassInfoFv
+00001A74 lis r5, lbl_89_data_C80@ha
+00001A78 addi r3, r31, 0x1c
+00001A7C addi r5, r5, lbl_89_data_C80@l
+00001A80 li r4, 0x38
+00001A84 stw r5, 0x1c(r31)
+00001A88 mr r5, r3
+00001A8C bl setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+00001A90 lis r4, fn_89_1AB8@ha
+00001A94 addi r3, r31, 0x1c
+00001A98 addi r4, r4, fn_89_1AB8@l
+00001A9C addi r5, r31, 0x10
+00001AA0 bl __register_global_object
+00001AA4 lwz r0, 0x14(r1)
+00001AA8 lwz r31, 0xc(r1)
+00001AAC mtlr r0
+00001AB0 addi r1, r1, 0x10
+00001AB4 blr
+.endfn fn_89_1A30
+
+# 0x00000000..0x00000004 | size: 0x4
+.section .ctors, "a"
+.balign 4
+	.4byte fn_89_1A30

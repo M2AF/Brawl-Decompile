@@ -1,0 +1,29 @@
+--- before
++++ after
+@@ -37842,13 +37842,16 @@
+   {
+     m_bgState = 10;
+     bool allOnFinalLap = true;
++    u8 i = 0;
+     __alloca(data->m_kartNum * (sizeof(int)));
+     {
+-      u8 i = 0;
+       u8 kartNum = data->m_kartNum;
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
++        if (1)
++        {
++        }
+         kart->m_rank = 0;
+         if (kart->m_lap < 10)
+         {
+@@ -37897,7 +37900,7 @@
+             {
+               stKartRecord *other = &m_karts[j];
+               bool isBehind = false;
+-              if (kart->m_lap < other->m_lap)
++              if (other->m_lap > kart->m_lap)
+               {
+                 isBehind = true;
+               }

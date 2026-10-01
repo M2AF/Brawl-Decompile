@@ -1,0 +1,42 @@
+[
+  {
+    "name": "utRelocate_destructor",
+    "address": "0x80043f6c",
+    "size": "0x40",
+    "target_file": "research/evidence/nonmatching/archived_layout/target-packets/utRelocate_destructor.target.s",
+    "status": "target only; no compiled candidate exists",
+    "semantic_name_confidence": "upstream Rev2 name at same address; validate on Rev1"
+  },
+  {
+    "name": "vlRotateFix",
+    "address": "0x8003e244",
+    "size": "0x118",
+    "target_file": "research/evidence/nonmatching/archived_layout/target-packets/vlRotateFix.target.s",
+    "status": "target only; no compiled candidate exists",
+    "semantic_name_confidence": "upstream Rev2 name at same address; validate on Rev1"
+  },
+  {
+    "name": "mtSinf",
+    "address": "0x8003fd5c",
+    "size": "0xa0",
+    "target_file": "research/evidence/nonmatching/archived_layout/target-packets/mtSinf.target.s",
+    "status": "target only; no compiled candidate exists",
+    "semantic_name_confidence": "upstream Rev2 name at same address; validate on Rev1"
+  },
+  {
+    "name": "gfTaskScheduler_create",
+    "address": "0x8002e09c",
+    "size": "0x270",
+    "target_file": "research/evidence/nonmatching/archived_layout/target-packets/gfTaskScheduler_create.target.s",
+    "status": "target only; no compiled candidate exists",
+    "semantic_name_confidence": "upstream Rev2 name at same address; validate on Rev1"
+  },
+  {
+    "name": "cmMenuFixedController_constructor",
+    "address": "0x800a68c0",
+    "size": "0x44",
+    "target_file": "research/evidence/nonmatching/archived_layout/target-packets/cmMenuFixedController_constructor.target.s",
+    "status": "target only; no compiled candidate exists",
+    "semantic_name_confidence": "upstream Rev2 name at same address; validate on Rev1"
+  }
+]

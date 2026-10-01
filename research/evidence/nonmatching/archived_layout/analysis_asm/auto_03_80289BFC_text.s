@@ -1,0 +1,88 @@
+.include "macros.inc"
+.file "auto_03_80289BFC_text"
+
+# 0x80289BFC..0x80289D14 | size: 0x118
+.text
+.balign 4
+
+# .text:0x0 | 0x80289BFC | size: 0x8
+.fn fn_80289BFC, global
+/* 80289BFC 0027F97C  38 60 00 00 */	li r3, 0x0
+/* 80289C00 0027F980  4E 80 00 20 */	blr
+.endfn fn_80289BFC
+
+# .text:0x8 | 0x80289C04 | size: 0x108
+.fn fn_80289C04, global
+/* 80289C04 0027F984  80 E4 00 30 */	lwz r7, 0x30(r4)
+/* 80289C08 0027F988  C1 23 00 14 */	lfs f9, 0x14(r3)
+/* 80289C0C 0027F98C  C0 07 00 10 */	lfs f0, 0x10(r7)
+/* 80289C10 0027F990  C1 43 00 10 */	lfs f10, 0x10(r3)
+/* 80289C14 0027F994  EC 49 00 32 */	fmuls f2, f9, f0
+/* 80289C18 0027F998  C0 27 00 00 */	lfs f1, 0x0(r7)
+/* 80289C1C 0027F99C  C1 03 00 18 */	lfs f8, 0x18(r3)
+/* 80289C20 0027F9A0  C0 07 00 20 */	lfs f0, 0x20(r7)
+/* 80289C24 0027F9A4  EC 2A 10 7A */	fmadds f1, f10, f1, f2
+/* 80289C28 0027F9A8  C0 67 00 30 */	lfs f3, 0x30(r7)
+/* 80289C2C 0027F9AC  C0 E2 AA 70 */	lfs f7, lbl_805A3D90@sda21(r0)
+/* 80289C30 0027F9B0  80 84 00 34 */	lwz r4, 0x34(r4)
+/* 80289C34 0027F9B4  EC 88 08 3A */	fmadds f4, f8, f0, f1
+/* 80289C38 0027F9B8  C0 23 00 24 */	lfs f1, 0x24(r3)
+/* 80289C3C 0027F9BC  C0 43 00 20 */	lfs f2, 0x20(r3)
+/* 80289C40 0027F9C0  C0 03 00 28 */	lfs f0, 0x28(r3)
+/* 80289C44 0027F9C4  EC 63 20 2A */	fadds f3, f3, f4
+/* 80289C48 0027F9C8  D0 65 00 30 */	stfs f3, 0x30(r5)
+/* 80289C4C 0027F9CC  C0 67 00 14 */	lfs f3, 0x14(r7)
+/* 80289C50 0027F9D0  C0 A7 00 04 */	lfs f5, 0x4(r7)
+/* 80289C54 0027F9D4  EC C9 00 F2 */	fmuls f6, f9, f3
+/* 80289C58 0027F9D8  C0 87 00 24 */	lfs f4, 0x24(r7)
+/* 80289C5C 0027F9DC  C0 67 00 34 */	lfs f3, 0x34(r7)
+/* 80289C60 0027F9E0  EC AA 31 7A */	fmadds f5, f10, f5, f6
+/* 80289C64 0027F9E4  EC 88 29 3A */	fmadds f4, f8, f4, f5
+/* 80289C68 0027F9E8  EC 63 20 2A */	fadds f3, f3, f4
+/* 80289C6C 0027F9EC  D0 65 00 34 */	stfs f3, 0x34(r5)
+/* 80289C70 0027F9F0  C0 67 00 18 */	lfs f3, 0x18(r7)
+/* 80289C74 0027F9F4  C0 A7 00 08 */	lfs f5, 0x8(r7)
+/* 80289C78 0027F9F8  EC C9 00 F2 */	fmuls f6, f9, f3
+/* 80289C7C 0027F9FC  C0 87 00 28 */	lfs f4, 0x28(r7)
+/* 80289C80 0027FA00  C0 67 00 38 */	lfs f3, 0x38(r7)
+/* 80289C84 0027FA04  EC AA 31 7A */	fmadds f5, f10, f5, f6
+/* 80289C88 0027FA08  D0 E5 00 3C */	stfs f7, 0x3c(r5)
+/* 80289C8C 0027FA0C  EC 88 29 3A */	fmadds f4, f8, f4, f5
+/* 80289C90 0027FA10  EC 63 20 2A */	fadds f3, f3, f4
+/* 80289C94 0027FA14  D0 65 00 38 */	stfs f3, 0x38(r5)
+/* 80289C98 0027FA18  C0 64 00 10 */	lfs f3, 0x10(r4)
+/* 80289C9C 0027FA1C  C0 A4 00 00 */	lfs f5, 0x0(r4)
+/* 80289CA0 0027FA20  EC C1 00 F2 */	fmuls f6, f1, f3
+/* 80289CA4 0027FA24  C0 84 00 20 */	lfs f4, 0x20(r4)
+/* 80289CA8 0027FA28  C0 64 00 30 */	lfs f3, 0x30(r4)
+/* 80289CAC 0027FA2C  EC A2 31 7A */	fmadds f5, f2, f5, f6
+/* 80289CB0 0027FA30  EC 80 29 3A */	fmadds f4, f0, f4, f5
+/* 80289CB4 0027FA34  EC 63 20 2A */	fadds f3, f3, f4
+/* 80289CB8 0027FA38  D0 66 00 30 */	stfs f3, 0x30(r6)
+/* 80289CBC 0027FA3C  C0 64 00 14 */	lfs f3, 0x14(r4)
+/* 80289CC0 0027FA40  C0 A4 00 04 */	lfs f5, 0x4(r4)
+/* 80289CC4 0027FA44  EC C1 00 F2 */	fmuls f6, f1, f3
+/* 80289CC8 0027FA48  C0 84 00 24 */	lfs f4, 0x24(r4)
+/* 80289CCC 0027FA4C  C0 64 00 34 */	lfs f3, 0x34(r4)
+/* 80289CD0 0027FA50  EC A2 31 7A */	fmadds f5, f2, f5, f6
+/* 80289CD4 0027FA54  EC 80 29 3A */	fmadds f4, f0, f4, f5
+/* 80289CD8 0027FA58  EC 63 20 2A */	fadds f3, f3, f4
+/* 80289CDC 0027FA5C  D0 66 00 34 */	stfs f3, 0x34(r6)
+/* 80289CE0 0027FA60  C0 64 00 18 */	lfs f3, 0x18(r4)
+/* 80289CE4 0027FA64  C0 84 00 08 */	lfs f4, 0x8(r4)
+/* 80289CE8 0027FA68  EC A1 00 F2 */	fmuls f5, f1, f3
+/* 80289CEC 0027FA6C  C0 64 00 28 */	lfs f3, 0x28(r4)
+/* 80289CF0 0027FA70  C0 24 00 38 */	lfs f1, 0x38(r4)
+/* 80289CF4 0027FA74  EC 42 29 3A */	fmadds f2, f2, f4, f5
+/* 80289CF8 0027FA78  D0 E6 00 3C */	stfs f7, 0x3c(r6)
+/* 80289CFC 0027FA7C  EC 00 10 FA */	fmadds f0, f0, f3, f2
+/* 80289D00 0027FA80  EC 01 00 2A */	fadds f0, f1, f0
+/* 80289D04 0027FA84  D0 06 00 38 */	stfs f0, 0x38(r6)
+/* 80289D08 0027FA88  4E 80 00 20 */	blr
+.endfn fn_80289C04
+
+# .text:0x110 | 0x80289D0C | size: 0x8
+.fn fn_80289D0C, global
+/* 80289D0C 0027FA8C  38 60 00 00 */	li r3, 0x0
+/* 80289D10 0027FA90  4E 80 00 20 */	blr
+.endfn fn_80289D0C

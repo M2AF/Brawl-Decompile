@@ -1,0 +1,39 @@
+--- before
++++ after
+@@ -37848,13 +37848,13 @@
+       u8 kartNum = data->m_kartNum;
+       for (; i != kartNum; i++)
+       {
+-        stKartRecord *kart = &m_karts[i];
+-        kart->m_rank = 0;
+-        if (kart->m_lap < 10)
++        stKartRecord *kart;
++        (&m_karts[i])->m_rank = 0;
++        if ((&m_karts[i])->m_lap < 10)
+         {
+           allOnFinalLap = false;
+         }
+-        if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))
++        if ((((&m_karts[i])->m_checkpoint > 20) && ((&m_karts[i])->m_checkpoint < 40)) && ((&m_karts[i])->m_isRacing == true))
+         {
+           if (m_warningState == 10)
+           {
+@@ -37862,7 +37862,7 @@
+           }
+           m_bgState = 9;
+         }
+-        if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true))
++        if (((&m_karts[i])->m_checkpoint > 90) && ((&m_karts[i])->m_isRacing == true))
+         {
+           m_bgState = 8;
+         }
+@@ -37917,6 +37917,9 @@
+                   }
+                 }
+               }
++              if (((!kart) && (!kart)) && (!kart))
++              {
++              }
+               if (isBehind == true)
+               {
+                 kart->m_rank++;

@@ -1,0 +1,12 @@
+--- before
++++ after
+@@ -37872,6 +37872,9 @@
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
++      if ((i && i) && i)
++      {
++      }
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];

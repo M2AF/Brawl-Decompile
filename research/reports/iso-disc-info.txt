@@ -1,0 +1,162 @@
+Format: ISO
+Lossless: true
+Verification data: false
+
+Title: Super Smash Bros. Brawl
+Game ID: RSBE01
+Disc 1, Revision 1
+
+Partition 0
+	Type: Update
+	Start sector: 10 (offset 0x50000)
+	Data offset / size: 0x70000 / 0xAB48000 (171 MiB)
+	TMD  offset / size: 0x502C0 / 0x208
+	Cert offset / size: 0x504E0 / 0xA00
+	H3   offset / size: 0x58000 / 0x18000
+	Title: Sample Game Name
+	Game ID: RELSAB (0001000000555045)
+	Disc 1, Revision 0
+
+Partition 1
+	Type: Data
+	Start sector: 7936 (offset 0xF800000)
+	Data offset / size: 0xF820000 / 0x1CAD30000 (7.17 GiB)
+	TMD  offset / size: 0xF8002C0 / 0x208
+	Cert offset / size: 0xF8004E0 / 0xA00
+	H3   offset / size: 0xF808000 / 0x18000
+	Title: Super Smash Bros. Brawl
+	Game ID: RSBE01 (0001000052534245)
+	Disc 1, Revision 1
+
+Partition 2
+	Type: Other (48413845, HA8E)
+	Start sector: 242858 (offset 0x1DA550000)
+	Data offset / size: 0x1DA570000 / 0xA98000 (10.6 MiB)
+	TMD  offset / size: 0x1DA5502C0 / 0x208
+	Cert offset / size: 0x1DA5504E0 / 0xA00
+	H3   offset / size: 0x1DA558000 / 0x18000
+	Title: 
+	Game ID: HA8E01 (0001000048413845)
+	Disc 1, Revision 0
+
+Partition 3
+	Type: Other (48413945, HA9E)
+	Start sector: 243202 (offset 0x1DB010000)
+	Data offset / size: 0x1DB030000 / 0xAA0000 (10.6 MiB)
+	TMD  offset / size: 0x1DB0102C0 / 0x208
+	Cert offset / size: 0x1DB0104E0 / 0xA00
+	H3   offset / size: 0x1DB018000 / 0x18000
+	Title: 
+	Game ID: HA9E01 (0001000048413945)
+	Disc 1, Revision 0
+
+Partition 4
+	Type: Other (48424145, HBAE)
+	Start sector: 243546 (offset 0x1DBAD0000)
+	Data offset / size: 0x1DBAF0000 / 0xAC0000 (10.8 MiB)
+	TMD  offset / size: 0x1DBAD02C0 / 0x208
+	Cert offset / size: 0x1DBAD04E0 / 0xA00
+	H3   offset / size: 0x1DBAD8000 / 0x18000
+	Title: 
+	Game ID: HBAE01 (0001000048424145)
+	Disc 1, Revision 0
+
+Partition 5
+	Type: Other (48424245, HBBE)
+	Start sector: 243894 (offset 0x1DC5B0000)
+	Data offset / size: 0x1DC5D0000 / 0xB68000 (11.4 MiB)
+	TMD  offset / size: 0x1DC5B02C0 / 0x208
+	Cert offset / size: 0x1DC5B04E0 / 0xA00
+	H3   offset / size: 0x1DC5B8000 / 0x18000
+	Title: 
+	Game ID: HBBE01 (0001000048424245)
+	Disc 1, Revision 0
+
+Partition 6
+	Type: Other (48424345, HBCE)
+	Start sector: 244264 (offset 0x1DD140000)
+	Data offset / size: 0x1DD160000 / 0xAC0000 (10.8 MiB)
+	TMD  offset / size: 0x1DD1402C0 / 0x208
+	Cert offset / size: 0x1DD1404E0 / 0xA00
+	H3   offset / size: 0x1DD148000 / 0x18000
+	Title: 
+	Game ID: HBCE01 (0001000048424345)
+	Disc 1, Revision 0
+
+Partition 7
+	Type: Other (48424445, HBDE)
+	Start sector: 244612 (offset 0x1DDC20000)
+	Data offset / size: 0x1DDC40000 / 0xAA0000 (10.6 MiB)
+	TMD  offset / size: 0x1DDC202C0 / 0x208
+	Cert offset / size: 0x1DDC204E0 / 0xA00
+	H3   offset / size: 0x1DDC28000 / 0x18000
+	Title: 
+	Game ID: HBDE01 (0001000048424445)
+	Disc 1, Revision 0
+
+Partition 8
+	Type: Other (48424545, HBEE)
+	Start sector: 244956 (offset 0x1DE6E0000)
+	Data offset / size: 0x1DE700000 / 0xAE0000 (10.9 MiB)
+	TMD  offset / size: 0x1DE6E02C0 / 0x208
+	Cert offset / size: 0x1DE6E04E0 / 0xA00
+	H3   offset / size: 0x1DE6E8000 / 0x18000
+	Title: 
+	Game ID: HBEE01 (0001000048424545)
+	Disc 1, Revision 0
+
+Partition 9
+	Type: Other (48424645, HBFE)
+	Start sector: 245308 (offset 0x1DF1E0000)
+	Data offset / size: 0x1DF200000 / 0xB88000 (11.5 MiB)
+	TMD  offset / size: 0x1DF1E02C0 / 0x208
+	Cert offset / size: 0x1DF1E04E0 / 0xA00
+	H3   offset / size: 0x1DF1E8000 / 0x18000
+	Title: 
+	Game ID: HBFE01 (0001000048424645)
+	Disc 1, Revision 0
+
+Partition 10
+	Type: Other (48424745, HBGE)
+	Start sector: 245682 (offset 0x1DFD90000)
+	Data offset / size: 0x1DFDB0000 / 0xB88000 (11.5 MiB)
+	TMD  offset / size: 0x1DFD902C0 / 0x208
+	Cert offset / size: 0x1DFD904E0 / 0xA00
+	H3   offset / size: 0x1DFD98000 / 0x18000
+	Title: 
+	Game ID: HBGE01 (0001000048424745)
+	Disc 1, Revision 0
+
+Partition 11
+	Type: Other (48424945, HBIE)
+	Start sector: 246056 (offset 0x1E0940000)
+	Data offset / size: 0x1E0960000 / 0xF98000 (15.6 MiB)
+	TMD  offset / size: 0x1E09402C0 / 0x208
+	Cert offset / size: 0x1E09404E0 / 0xA00
+	H3   offset / size: 0x1E0948000 / 0x18000
+	Title: 
+	Game ID: HBIE01 (0001000048424945)
+	Disc 1, Revision 0
+
+Partition 12
+	Type: Other (48424B45, HBKE)
+	Start sector: 246560 (offset 0x1E1900000)
+	Data offset / size: 0x1E1920000 / 0x36E0000 (54.9 MiB)
+	TMD  offset / size: 0x1E19002C0 / 0x208
+	Cert offset / size: 0x1E19004E0 / 0xA00
+	H3   offset / size: 0x1E1908000 / 0x18000
+	Title: Ocarina US Partition
+	Game ID: HBKEZZ (0001000048424b45)
+	Disc 1, Revision 0
+
+Partition 13
+	Type: Other (48424C45, HBLE)
+	Start sector: 248320 (offset 0x1E5000000)
+	Data offset / size: 0x1E5020000 / 0x21F0000 (33.9 MiB)
+	TMD  offset / size: 0x1E50002C0 / 0x208
+	Cert offset / size: 0x1E50004E0 / 0xA00
+	H3   offset / size: 0x1E5008000 / 0x18000
+	Title: StarFox US Partition
+	Game ID: HBLEZZ (0001000048424c45)
+	Disc 1, Revision 0
+

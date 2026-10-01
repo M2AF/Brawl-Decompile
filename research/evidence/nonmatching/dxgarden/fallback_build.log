@@ -1,0 +1,20 @@
+[1/2] SPLIT config\RSBE01_01\config.yml
+ WARN Alignment for mo_fighter/ft_marth/ft_marth_status_uniq_process_special_hi.cpp .data expected 8, but starts at 4:0x00005584
+[2/2] RUN configure.py
+[1/7] LINK build\RSBE01_01\st_dxgarden\st_dxgarden.plf
+[2/7] REL
+[3/7] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[4/7] REPORT
+[5/7] PROGRESS
+Progress:
+  All: 1.30% matched, 1.09% linked (518 / 4410 files)
+    Code: 206324 / 15833548 bytes (2738 / 92523 functions)
+    Data: 833936 / 5667476 bytes (14.71%)
+  DOL: 1.37% matched, 0.85% linked (65 / 1722 files)
+    Code: 57172 / 4170064 bytes (511 / 14278 functions)
+    Data: 6720 / 1724104 bytes (0.39%)
+  Modules: 1.28% matched, 1.17% linked (453 / 2688 files)
+    Code: 149152 / 11663484 bytes (2227 / 78245 functions)
+    Data: 827216 / 3943372 bytes (20.98%)

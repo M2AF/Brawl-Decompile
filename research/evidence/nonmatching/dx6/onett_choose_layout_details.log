@@ -1,0 +1,60 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+DIFF chooseCar__9stDxOnettFUl                 chooseCar__9stDxOnettFUl                      145 145
+    --- target
+    +++ candidate
+    @@ -105,32 +105,32 @@
+     stb     r5,600(r29)
+     addi    r3,r29,608
+    -lfs     f0,0(r31)
+    +lfs     f4,0(r31)
+     addi    r4,r1,8
+     stb     r5,601(r29)
+    -lfs     f4,68(r31)
+    -stfs    f0,8(r1)
+    -lfs     f3,72(r31)
+    -lfs     f2,76(r31)
+    -lfs     f1,80(r31)
+    -stfs    f0,12(r1)
+    -stfs    f0,16(r1)
+    +lfs     f3,68(r31)
+    +lfs     f2,72(r31)
+    +lfs     f1,76(r31)
+    +lfs     f0,80(r31)
+    +stfs    f4,8(r1)
+    +stfs    f4,12(r1)
+    +stfs    f4,16(r1)
+    +stfs    f3,32(r1)
+    +stfs    f2,36(r1)
+    +stfs    f1,24(r1)
+    +stfs    f0,28(r1)
+     lwz     r0,616(r29)
+    -stfs    f4,32(r1)
+     clrlwi  r0,r0,3
+    -stfs    f3,36(r1)
+    -stfs    f2,24(r1)
+    -stfs    f1,28(r1)
+     stw     r0,616(r29)
+     bl <addr>
+    +lfs     f0,24(r1)
+    +li      r3,0
+     lwz     r0,616(r29)
+    -li      r3,0
+    -lfs     f3,24(r1)
+    -lfs     f2,28(r1)
+    +stfs    f0,668(r29)
+     rlwinm  r0,r0,0,6,2
+    -lfs     f1,32(r1)
+    +lfs     f0,28(r1)
+    +stfs    f0,672(r29)
+    +lfs     f0,32(r1)
+    +stfs    f0,676(r29)
+     lfs     f0,36(r1)
+    -stfs    f3,668(r29)
+    -stfs    f2,672(r29)
+    -stfs    f1,676(r29)
+     stfs    f0,680(r29)
+     stw     r0,616(r29)
+SAME section .rodata: target 88 bytes, candidate 88 bytes
+SAME section .data: target 1352 bytes, candidate 1352 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 70/71. Section contents match. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

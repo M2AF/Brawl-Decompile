@@ -1,0 +1,63 @@
+.include "macros.inc"
+.file "auto_03_80306EF0_text"
+
+# 0x80306EF0..0x80306FAC | size: 0xBC
+.text
+.balign 4
+
+# .text:0x0 | 0x80306EF0 | size: 0xC
+.fn fn_80306EF0, global
+/* 80306EF0 002FCC70  88 03 00 22 */	lbz r0, 0x22(r3)
+/* 80306EF4 002FCC74  54 03 C0 0E */	slwi r3, r0, 24
+/* 80306EF8 002FCC78  4E 80 00 20 */	blr
+.endfn fn_80306EF0
+
+# .text:0xC | 0x80306EFC | size: 0xB0
+.fn fn_80306EFC, global
+/* 80306EFC 002FCC7C  80 06 00 38 */	lwz r0, 0x38(r6)
+/* 80306F00 002FCC80  2C 00 00 02 */	cmpwi r0, 0x2
+/* 80306F04 002FCC84  41 81 00 30 */	bgt .L_80306F34
+/* 80306F08 002FCC88  C0 02 B2 A4 */	lfs f0, lbl_805A45C4@sda21(r0)
+/* 80306F0C 002FCC8C  88 05 00 00 */	lbz r0, 0x0(r5)
+/* 80306F10 002FCC90  D0 04 00 0C */	stfs f0, 0xc(r4)
+/* 80306F14 002FCC94  54 00 10 3A */	slwi r0, r0, 2
+/* 80306F18 002FCC98  D0 04 00 08 */	stfs f0, 0x8(r4)
+/* 80306F1C 002FCC9C  D0 04 00 04 */	stfs f0, 0x4(r4)
+/* 80306F20 002FCCA0  D0 04 00 00 */	stfs f0, 0x0(r4)
+/* 80306F24 002FCCA4  C0 06 00 30 */	lfs f0, 0x30(r6)
+/* 80306F28 002FCCA8  FC 00 00 50 */	fneg f0, f0
+/* 80306F2C 002FCCAC  7C 04 05 2E */	stfsx f0, r4, r0
+/* 80306F30 002FCCB0  4E 80 00 20 */	blr
+.L_80306F34:
+/* 80306F34 002FCCB4  2C 00 00 06 */	cmpwi r0, 0x6
+/* 80306F38 002FCCB8  41 81 00 50 */	bgt .L_80306F88
+/* 80306F3C 002FCCBC  88 A5 00 00 */	lbz r5, 0x0(r5)
+/* 80306F40 002FCCC0  38 63 00 20 */	addi r3, r3, 0x20
+/* 80306F44 002FCCC4  C0 06 00 30 */	lfs f0, 0x30(r6)
+/* 80306F48 002FCCC8  38 05 FF FC */	subi r0, r5, 0x4
+/* 80306F4C 002FCCCC  54 00 20 36 */	slwi r0, r0, 4
+/* 80306F50 002FCCD0  FC 20 00 50 */	fneg f1, f0
+/* 80306F54 002FCCD4  7C 03 04 6E */	lfsux f0, r3, r0
+/* 80306F58 002FCCD8  EC 01 00 32 */	fmuls f0, f1, f0
+/* 80306F5C 002FCCDC  D0 04 00 00 */	stfs f0, 0x0(r4)
+/* 80306F60 002FCCE0  C0 03 00 04 */	lfs f0, 0x4(r3)
+/* 80306F64 002FCCE4  EC 01 00 32 */	fmuls f0, f1, f0
+/* 80306F68 002FCCE8  D0 04 00 04 */	stfs f0, 0x4(r4)
+/* 80306F6C 002FCCEC  C0 03 00 08 */	lfs f0, 0x8(r3)
+/* 80306F70 002FCCF0  EC 01 00 32 */	fmuls f0, f1, f0
+/* 80306F74 002FCCF4  D0 04 00 08 */	stfs f0, 0x8(r4)
+/* 80306F78 002FCCF8  C0 03 00 0C */	lfs f0, 0xc(r3)
+/* 80306F7C 002FCCFC  EC 01 00 32 */	fmuls f0, f1, f0
+/* 80306F80 002FCD00  D0 04 00 0C */	stfs f0, 0xc(r4)
+/* 80306F84 002FCD04  4E 80 00 20 */	blr
+.L_80306F88:
+/* 80306F88 002FCD08  C0 06 00 20 */	lfs f0, 0x20(r6)
+/* 80306F8C 002FCD0C  D0 04 00 00 */	stfs f0, 0x0(r4)
+/* 80306F90 002FCD10  C0 06 00 24 */	lfs f0, 0x24(r6)
+/* 80306F94 002FCD14  D0 04 00 04 */	stfs f0, 0x4(r4)
+/* 80306F98 002FCD18  C0 06 00 28 */	lfs f0, 0x28(r6)
+/* 80306F9C 002FCD1C  D0 04 00 08 */	stfs f0, 0x8(r4)
+/* 80306FA0 002FCD20  C0 06 00 2C */	lfs f0, 0x2c(r6)
+/* 80306FA4 002FCD24  D0 04 00 0C */	stfs f0, 0xc(r4)
+/* 80306FA8 002FCD28  4E 80 00 20 */	blr
+.endfn fn_80306EFC

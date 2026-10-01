@@ -1,0 +1,127 @@
+#include <gf/gf_3d_scene.h>
+#include <memory.h>
+#include <nw4r/g3d/g3d_resmat.h>
+#include <nw4r/g3d/g3d_resmdl.h>
+#include <nw4r/g3d/g3d_scnmdl.h>
+#include <nw4r/math/math_arithmetic.h>
+#include <st_battle/gr_battle.h>
+
+using namespace nw4r::g3d;
+
+// These nw4r entry points have no confirmed names in this project yet.
+extern "C" {
+u32 fn_8018F394(ResMdl*);
+ResMat fn_8018F340(ResMdl*, u32);
+void fn_80191314(ResMatTevColor*, u32, GXColor*);
+void fn_80190A3C(ResMatTevColor*, bool);
+}
+
+// Mirrors nw4r's ResMat::GetResMatTevColor(): the TEV color display list sits
+// 0x20 bytes into the material's display lists. The pinned ResMatTevColor
+// declaration has no pointer constructor, so the handle is written directly.
+static inline ResMatTevColor getResMatTevColor(const ResMat& mat) {
+    s32 dlOffset = mat.ptr()->m_offToDisplayLists;
+    const u8* dl = dlOffset != 0 ? reinterpret_cast<const u8*>(mat.ptr()) + dlOffset : nullptr;
+    ResMatTevColor tevColor;
+    *reinterpret_cast<const u8**>(&tevColor) = dl + 0x20;
+    return tevColor;
+}
+
+static inline float clampRate(float rate) {
+    rate = nw4r::math::FSelect(rate - 0.0f, rate, 0.0f);
+    return nw4r::math::FSelect(rate - 1.0f, 1.0f, rate);
+}
+
+grBattleField::~grBattleField() { }
+
+void grBattleField::update(float deltaFrame) {
+    if (!m_isUpdate) {
+        return;
+    }
+    if (m_shadowMaterialId == 0) {
+        ResMdl resMdl(nullptr);
+        ScnMdl* scnMdl = m_sceneModels[0];
+        if (scnMdl == nullptr) {
+            return;
+        }
+        resMdl = scnMdl->m_resMdl;
+        if (!resMdl.ptr()) {
+            return;
+        }
+        u32 i = 0;
+        u32 numMats = fn_8018F394(&resMdl);
+        for (; i != numMats; i++) {
+            ResMat mat = resMdl.GetResMat("MShadow1");
+            if (mat.ptr()) {
+                m_shadowMaterialId = mat.ptr()->m_id;
+                break;
+            }
+        }
+        if (i == numMats) {
+            m_shadowMaterialId = 0xff;
+        }
+    }
+    if (m_shadowMaterialId == 0xff) {
+        return;
+    }
+    float frame = 0.0f;
+    AnmScnRes* anmScn = g_gfSceneRoot->m_anmScnRes;
+    if (anmScn != nullptr) {
+        frame = anmScn->GetFrame();
+    }
+    float alpha;
+    if (frame >= 5600.0f && frame <= 6000.0f) {
+        alpha = clampRate((6000.0f - frame) / 400.0f);
+    } else if (frame >= 400.0f && frame <= 5600.0f) {
+        alpha = 1.0f;
+    } else if (frame >= 0.0f && frame <= 400.0f) {
+        alpha = clampRate(frame / 400.0f);
+    } else {
+        alpha = 0.0f;
+    }
+    ResMdl resMdl(nullptr);
+    ResMat mat(nullptr);
+    ResMatTevColor tevColor;
+    ResMatTevColor origTevColor;
+    GXColor color = {0xff, 0xff, 0xff, 0xff};
+    GXColor origColor = {0xff, 0xff, 0xff, 0xff};
+    ScnMdl* scnMdl = m_sceneModels[0];
+    if (scnMdl == nullptr) {
+        return;
+    }
+    resMdl = scnMdl->m_resMdl;
+    if (!resMdl.ptr()) {
+        return;
+    }
+    mat = fn_8018F340(&resMdl, m_shadowMaterialId);
+    if (!mat.ptr()) {
+        return;
+    }
+    ScnMdl::CopiedMatAccess access(scnMdl, mat.ptr()->m_id);
+    tevColor = access.GetResMatTevColor(false);
+    if (!tevColor.ptr()) {
+        return;
+    }
+    origTevColor = getResMatTevColor(mat);
+    if (!origTevColor.ptr()) {
+        return;
+    }
+    fn_80191314(&origTevColor, 1, &origColor);
+    fn_80191314(&tevColor, 1, &color);
+    color.a = origColor.a * alpha;
+    tevColor.GXSetTevColor(1, color);
+    fn_80190A3C(&tevColor, false);
+    mat.DCStore(false);
+}
+
+grBattleField::~grBattleField() { }
+
+grBattleField* grBattleField::create(int mdlIndex, const char* tgtNodeName, const char* taskName) {
+    grBattleField* ground = new (Heaps::StageInstance) grBattleField(taskName);
+    if (ground) {
+        ground->setMdlIndex(mdlIndex);
+        ground->setTgtNode(tgtNodeName);
+    }
+    return ground;
+}
+

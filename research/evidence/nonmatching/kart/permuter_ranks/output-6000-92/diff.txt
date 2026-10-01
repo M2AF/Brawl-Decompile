@@ -1,0 +1,17 @@
+--- before
++++ after
+@@ -37842,10 +37842,13 @@
+   {
+     m_bgState = 10;
+     bool allOnFinalLap = true;
+-    __alloca(data->m_kartNum * (sizeof(int)));
++    __alloca((((0, 0), data))->m_kartNum * (sizeof(int)));
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
++      if (data && data)
++      {
++      }
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];

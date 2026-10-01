@@ -1,0 +1,40 @@
+--- before
++++ after
+@@ -37835,6 +37835,11 @@
+ 
+ 
+ 
++inline int inline_fn(u32 arg0, int arg1)
++{
++  return arg0 > arg1;
++}
++
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
+@@ -37854,7 +37859,7 @@
+         {
+           allOnFinalLap = false;
+         }
+-        if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))
++        if ((inline_fn(kart->m_checkpoint, 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))
+         {
+           if (m_warningState == 10)
+           {
+@@ -37862,7 +37867,7 @@
+           }
+           m_bgState = 9;
+         }
+-        if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true))
++        if (inline_fn(kart->m_checkpoint, 90) && (kart->m_isRacing == true))
+         {
+           m_bgState = 8;
+         }
+@@ -37899,6 +37904,7 @@
+               bool isBehind = false;
+               if (kart->m_lap < other->m_lap)
+               {
++ do { } while (0);
+                 isBehind = true;
+               }
+               else

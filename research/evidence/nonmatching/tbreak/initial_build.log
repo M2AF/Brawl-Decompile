@@ -1,0 +1,572 @@
+[1/2] SPLIT config\RSBE01_01\config.yml
+ WARN Alignment for mo_fighter/ft_marth/ft_marth_status_uniq_process_special_hi.cpp .data expected 8, but starts at 4:0x00005584
+[2/2] RUN configure.py
+[1/4] SPLIT config\RSBE01_01\config.yml
+ WARN Alignment for mo_fighter/ft_marth/ft_marth_status_uniq_process_special_hi.cpp .data expected 8, but starts at 4:0x00005584
+[2/4] RUN configure.py
+[1/479] MWCC build\RSBE01_01\src\global_destructor_chain.o
+[2/479] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_demo.o
+[3/479] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_staffroll.o
+[4/479] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_tutorial.o
+[5/479] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_seal_list.o
+[6/479] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_net_time_result.o
+[7/479] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_adv_selchar.o
+[8/479] MWCC build\RSBE01_01\src\home_button_icon.o
+[9/479] MWCC build\RSBE01_01\src\mo_menu\mo_menu.o
+[10/479] MWCC build\RSBE01_01\src\mo_scene\mo_scene.o
+[11/479] MWCC build\RSBE01_01\src\mo_menu\sora_menu_sel_char_access\sel_char_access.o
+[12/479] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_adv_result.o
+[13/479] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_adv_saveload.o
+[14/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_heap_module_impl.o
+[15/479] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_seal_disp.o
+[16/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_general_work_abstract.o
+[17/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_general_work_simple.o
+[18/479] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_adv_diff.o
+### mwcceppc.exe Compiler:
+#    File: src\mo_scene\sora_scene\sc_adv_diff.cpp
+# ------------------------------------------------
+#      67: }  
+# Warning: ^
+#   (33058) <string not found>
+[19/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_general_work.o
+[20/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\anim\so_anim_chr.o
+[21/479] MWCC build\RSBE01_01\src\mo_adv_menu\mo_adv_menu.o
+[22/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\model\so_model_module_simple.o
+[23/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\model\so_model_virtual_node.o
+[24/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_resource_module_impl.o
+[25/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\ft\ft_class_info.o
+[26/479] MWCC build\RSBE01_01\src\mo_melee\mo_melee.o
+[27/479] MWCC build\RSBE01_01\src\mo_adv_stage\mo_adv_stage.o
+[28/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_common_data_accesser.o
+[29/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_photo_call_back.o
+[30/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\wnem\wn_em_heap_module_impl.o
+[31/479] MWCC build\RSBE01_01\src\mo_adv_menu\sora_adv_menu_telop\mu_adv_telop_task.o
+[32/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\model\so_model_module_impl_variable.o
+[33/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_controller_module_link_ref.o
+[34/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_module_accesser.o
+[35/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\wnem\wn_em_resource_module_impl.o
+[36/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\anim\so_anim_cmd_interpreter_effect.o
+[37/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\ft\ft_extend_param_accesser.o
+[38/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\ft\ft_fighter_build_data.o
+### mwcceppc.exe Compiler:
+#      In: include\lib\BrawlHeaders\Brawl\Include\so\so_module_accesser_build_data.h
+#    From: src\mo_melee\sora_melee\ft\ft_fighter_build_data.cpp
+# -------------------------------------------------------------
+#      31:         return rect;  
+# Warning:                    ^
+#   (10326) function result is a pointer/reference to an automatic/temporary 
+#   variable
+[39/479] MWCC build\RSBE01_01\src\mo_melee\sora_melee\st\st_common_gimmick.o
+[40/479] MWCC build\RSBE01_01\src\mo_adv_stage\gr_adventure_final.o
+[41/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\stop\em_stop_module_impl.o
+[42/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\em_create.o
+[43/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\em_extend_param_accesser.o
+[44/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\resource\em_resource_module_impl.o
+[45/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\em_target_search_unit.o
+[46/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\boobas\em_boobas_param_accesser.o
+[47/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\siralamos\em_siralamos_param_accesser.o
+[48/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\wnem\wn_em_report.o
+[49/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\em_info.o
+[50/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\roada\em_roada_param_accesser.o
+[51/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\killer\em_killer_param_accesser.o
+[52/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\popperam\em_popperam_param_accesser.o
+[53/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\jyakeel\em_jyakeel_param_accesser.o
+[54/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\pacci\em_pacci_param_accesser.o
+[55/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\aroaros\em_aroaros_param_accesser.o
+[56/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\cymal\em_cymal_param_accesser.o
+[57/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\deathpod\em_deathpod_param_accesser.o
+[58/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\dekakuribo\em_dekakuribo_param_accesser.o
+[59/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\bucyulus\em_bucyulus_param_accesser.o
+[60/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\botron\em_botron_param_accesser.o
+[61/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\gyraan\em_gyraan_param_accesser.o
+[62/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\prim\em_prim_param_accesser.o
+[63/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\mite\em_mite_param_accesser.o
+[64/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\cataguard\em_cataguard_param_accesser.o
+[65/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\kuribo\em_kuribo_param_accesser.o
+[66/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\tautau\em_tautau_param_accesser.o
+[67/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\flows\em_flows_param_accesser.o
+[68/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\shelly\em_shelly_param_accesser.o
+[69/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\teckin\em_teckin_param_accesser.o
+[70/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\spar\em_spar_param_accesser.o
+[71/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\hammerbros\em_hammerbros_param_accesser.o
+[72/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\kokkon\em_kokkon_param_accesser.o
+[73/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\bombhead\em_bombhead_param_accesser.o
+[74/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\ngagog\em_ngagog_param_accesser.o
+[75/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\faulong\em_faulong_param_accesser.o
+[76/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\bitan\em_bitan_param_accesser.o
+[77/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\patapata\em_patapata_param_accesser.o
+[78/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\jdus\em_jdus_param_accesser.o
+[79/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\ghamgha\em_ghamgha_param_accesser.o
+[80/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\robodistance\em_robodistance_param_accesser.o
+[81/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\robobeam\em_robobeam_param_accesser.o
+[82/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\robohoming\em_robohoming_param_accesser.o
+[83/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\robopunch\em_robopunch_param_accesser.o
+[84/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\arman\wnem_proc_arman.o
+[85/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\arman\em_arman_param_accesser.o
+[86/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\galfire\em_galfire_param_accesser.o
+[87/479] MWCC build\RSBE01_01\src\mo_enemy\mo_enemy.o
+[88/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\bosspackun\em_bosspackun_param_accesser.o
+[89/479] MWCC build\RSBE01_01\src\mo_stage\mo_stage.o
+[90/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\ghamghabase\em_ghamghabase_param_accesser.o
+[91/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\galleom\em_galleom_param_accesser.o
+[92/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\ridley\em_ridley_param_accesser.o
+[93/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\rayquaza\em_rayquaza_param_accesser.o
+[94/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\rayquaza\wnem_proc_rayquaza.o
+[95/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\duon\em_duon_param_accesser.o
+[96/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\porky\em_porky_param_accesser.o
+[97/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\metaridley\em_metaridley_param_accesser.o
+[98/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\falconflyer\em_falconflyer_param_accesser.o
+[99/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\taboo\em_taboo_param_accesser.o
+[100/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\taboo\wnem_proc_taboo.o
+[101/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\masterhand\em_masterhand_param_accesser.o
+[102/479] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\crazyhand\em_crazyhand_param_accesser.o
+[103/479] MWCC build\RSBE01_01\src\mo_stage\st_battles\gr_battles.o
+[104/479] MWCC build\RSBE01_01\src\mo_stage\st_config\gr_config.o
+[105/479] MWCC build\RSBE01_01\src\mo_stage\st_final\gr_final.o
+[106/479] MWCC build\RSBE01_01\src\mo_stage\st_oldin\gr_oldin.o
+[107/479] MWCC build\RSBE01_01\src\mo_stage\st_crayon\gr_crayon_yakumono.o
+[108/479] MWCC build\RSBE01_01\src\mo_stage\st_tengan\gr_tengan.o
+[109/479] MWCC build\RSBE01_01\src\mo_stage\st_tengan\gr_tengan_bg.o
+[110/479] MWCC build\RSBE01_01\src\mo_stage\st_battles\st_battles.o
+[111/479] MWCC build\RSBE01_01\src\mo_stage\st_config\st_config.o
+[112/479] MWCC build\RSBE01_01\src\mo_stage\st_starfox\st_starfox.o
+[113/479] MWCC build\RSBE01_01\src\mo_stage\st_tengan\gr_tengan_ashiba.o
+[114/479] MWCC build\RSBE01_01\src\mo_stage\st_newpork\gr_newpork.o
+[115/479] MWCC build\RSBE01_01\src\mo_stage\st_final\st_final.o
+[116/479] MWCC build\RSBE01_01\src\mo_stage\st_dxshrine\gr_dxshrine.o
+[117/479] MWCC build\RSBE01_01\src\mo_fighter\mo_fighter.o
+[118/479] MWCC build\RSBE01_01\src\mo_stage\st_crayon\st_crayon.o
+[119/479] MWCC build\RSBE01_01\src\sora\sr\sr_getappname.o
+[120/479] MWCC build\RSBE01_01\src\sora\sr\sr_revision.o
+[121/479] MWCC build\RSBE01_01\src\sora\main.o
+[122/479] MWCC build\RSBE01_01\src\mo_stage\st_greenhill\st_greenhill.o
+[123/479] MWCC build\RSBE01_01\src\sora\gf\gf_3d_scene_event.o
+[124/479] MWCC build\RSBE01_01\src\mo_stage\st_dxyorster\st_dxyorster.o
+[125/479] MWCC build\RSBE01_01\src\sora\sr\sr_common.o
+[126/479] MWCC build\RSBE01_01\src\sora\gf\gf_archive_load_thread.o
+[127/479] MWCC build\RSBE01_01\src\sora\gf\gf_callback.o
+[128/479] MWCC build\RSBE01_01\src\sora\gf\gf_decomp.o
+[129/479] MWCC build\RSBE01_01\src\sora\gf\gf_camera_controller.o
+[130/479] MWCC build\RSBE01_01\src\sora\gf\gf_archive_file.o
+[131/479] MWCC build\RSBE01_01\src\sora\gf\gf_archive_manager.o
+[132/479] MWCC build\RSBE01_01\src\sora\gf\gf_archive_db.o
+[133/479] MWCC build\RSBE01_01\src\mo_stage\st_dxshrine\st_dxshrine.o
+[134/479] MWCC build\RSBE01_01\src\sora\gf\gf_3d_scene_light_resource.o
+[135/479] MWCC build\RSBE01_01\src\sora\gf\gf_gameframe_counter.o
+[136/479] MWCC build\RSBE01_01\src\mo_stage\st_dxbigblue\gr_dxbigblue.o
+[137/479] MWCC build\RSBE01_01\src\sora\gf\gf_pad_queue.o
+[138/479] MWCC build\RSBE01_01\src\mo_stage\st_dxcorneria\gr_dxcorneria.o
+[139/479] MWCC build\RSBE01_01\src\sora\gf\gf_file_io_request.o
+[140/479] MWCC build\RSBE01_01\src\sora\gf\gf_file_io_handle.o
+[141/479] MWCC build\RSBE01_01\src\sora\gf\gf_memory_util.o
+[142/479] MWCC build\RSBE01_01\src\sora\gf\gf_task.o
+[143/479] MWCC build\RSBE01_01\src\sora\gf\gf_pad_thread.o
+[144/479] MWCC build\RSBE01_01\src\sora\gf\gf_system_callback.o
+[145/479] MWCC build\RSBE01_01\src\sora\gf\gf_slow_manager.o
+[146/479] MWCC build\RSBE01_01\src\sora\mt\mt_prng.o
+[147/479] MWCC build\RSBE01_01\src\sora\gf\gf_keep_fb.o
+[148/479] MWCC build\RSBE01_01\src\sora\gf\gf_thread.o
+[149/479] MWCC build\RSBE01_01\src\sora\gf\gf_monitor.o
+[150/479] MWCC build\RSBE01_01\src\sora\ut\ut_list.o
+[151/479] MWCC build\RSBE01_01\src\sora\gf\gf_capture_util.o
+[152/479] MWCC build\RSBE01_01\src\sora\st\module.o
+[153/479] MWCC build\RSBE01_01\src\mo_stage\st_tbreak\gr_tbreak.o
+[154/479] MWCC build\RSBE01_01\src\mo_stage\st_otrain\st_onlinetrainning.o
+[155/479] MWCC build\RSBE01_01\src\mo_stage\st_dxgarden\st_dxgarden.o
+[156/479] MWCC build\RSBE01_01\src\sora\ip\ip_human.o
+[157/479] MWCC build\RSBE01_01\src\sora\gf\gf_resource_loader.o
+[158/479] MWCC build\RSBE01_01\src\sora\mt\mt_prng_log.o
+[159/479] MWCC build\RSBE01_01\src\sora\ef\ef_screen_handle.o
+[160/479] MWCC build\RSBE01_01\src\sora\mv\mv_THPAudioDecode.o
+[161/479] MWCC build\RSBE01_01\src\sora\ut\ut_nw.o
+[162/479] MWCC build\RSBE01_01\src\sora\gf\gf_error_manager.o
+[163/479] MWCC build\RSBE01_01\src\sora\gf\gf_error_check.o
+[164/479] MWCC build\RSBE01_01\src\sora\mv\mv_THPRead.o
+[165/479] MWCC build\RSBE01_01\src\sora\cm\cm_controller_default.o
+[166/479] MWCC build\RSBE01_01\src\sora\cm\cm_controller_melee_fixed.o
+[167/479] MWCC build\RSBE01_01\src\sora\cm\cm_controller_menu_fixed.o
+[168/479] MWCC build\RSBE01_01\src\sora\if\if_wifipr_task.o
+[169/479] MWCC build\RSBE01_01\src\sora\if\if_adv_task.o
+[170/479] MWCC build\RSBE01_01\src\sora\gr\collision\gr_collision_shape.o
+[171/479] MWCC build\RSBE01_01\src\sora\gr\collision\gr_collision_data.o
+[172/479] MWCC build\RSBE01_01\src\sora\gr\gr_path.o
+[173/479] MWCC build\RSBE01_01\src\sora\gr\collision\gr_collision_shape_rhombus.o
+[174/479] MWCC build\RSBE01_01\src\sora\gr\collision\gr_collision_shape_circle.o
+[175/479] MWCC build\RSBE01_01\src\mo_stage\st_heal\st_heal.o
+[176/479] MWCC build\RSBE01_01\src\sora\gf\gf_shutdown_manager.o
+[177/479] MWCC build\RSBE01_01\src\sora\ec\ec_trace_mgr.o
+[178/479] MWCC build\RSBE01_01\src\sora\ft\ft_system.o
+[179/479] MWCC build\RSBE01_01\src\sora\nt\nt_offline.o
+[180/479] MWCC build\RSBE01_01\src\sora\gr\collision\gr_collision_handle.o
+[181/479] MWCC build\RSBE01_01\src\sora\ad\ad_static_data.o
+[182/479] MWCC build\RSBE01_01\src\sora\nt\d_net_connect.o
+[183/479] MWCC build\RSBE01_01\src\sora\ac\ac_anim_cmd_impl.o
+[184/479] MWCC build\RSBE01_01\src\sora\cm\cm_stage_param.o
+[185/479] LINK build\RSBE01_01\sora_menu_main\sora_menu_main.preplf
+[186/479] LINK build\RSBE01_01\sora_menu_qm\sora_menu_qm.preplf
+[187/479] LINK build\RSBE01_01\sora_menu_tour\sora_menu_tour.preplf
+[188/479] LINK build\RSBE01_01\sora_menu_edit\sora_menu_edit.preplf
+[189/479] LINK build\RSBE01_01\sora_menu_collect_viewer\sora_menu_collect_viewer.preplf
+[190/479] MWCC build\RSBE01_01\src\sora\nt\nt_etc_so.o
+[191/479] LINK build\RSBE01_01\sora_scene\sora_scene.preplf
+[192/479] MWCC build\RSBE01_01\src\sora\ac\ac_null.o
+[193/479] LINK build\RSBE01_01\sora_menu_replay\sora_menu_replay.preplf
+[194/479] LINK build\RSBE01_01\sora_menu_snap_shot\sora_menu_snap_shot.preplf
+[195/479] LINK build\RSBE01_01\sora_menu_event\sora_menu_event.preplf
+[196/479] MWCC build\RSBE01_01\src\sora\if\if_stgedit.o
+[197/479] LINK build\RSBE01_01\sora_menu_sel_char\sora_menu_sel_char.preplf
+[198/479] MWCC build\RSBE01_01\src\sora\snd\snd_init_thread.o
+[199/479] LINK build\RSBE01_01\sora_menu_intro\sora_menu_intro.preplf
+[200/479] LINK build\RSBE01_01\sora_menu_game_over\sora_menu_game_over.preplf
+[201/479] LINK build\RSBE01_01\sora_menu_sel_stage\sora_menu_sel_stage.preplf
+[202/479] LINK build\RSBE01_01\sora_menu_watch\sora_menu_watch.preplf
+[203/479] MWCC build\RSBE01_01\src\sora\st\st_data_container.o
+[204/479] MWCC build\RSBE01_01\src\sora\st\st_data_container_magic.o
+[205/479] LINK build\RSBE01_01\sora_minigame\sora_minigame.preplf
+[206/479] MWCC build\RSBE01_01\src\sora\nt\nt_etc_dwc.o
+[207/479] LINK build\RSBE01_01\sora_menu_time_result\sora_menu_time_result.preplf
+[208/479] LINK build\RSBE01_01\sora_menu_boot\sora_menu_boot.preplf
+[209/479] MWCC build\RSBE01_01\src\sora\st\st_data_container_multi.o
+[210/479] LINK build\RSBE01_01\sora_menu_sel_char_access\sora_menu_sel_char_access.preplf
+[211/479] LINK build\RSBE01_01\sora_menu_friend_list\sora_menu_friend_list.preplf
+[212/479] LINK build\RSBE01_01\sora_menu_challenger\sora_menu_challenger.preplf
+[213/479] LINK build\RSBE01_01\sora_menu_name\sora_menu_name.preplf
+[214/479] LINK build\RSBE01_01\sora_menu_title\sora_menu_title.preplf
+[215/479] LINK build\RSBE01_01\sora_menu_title_sunset\sora_menu_title_sunset.preplf
+[216/479] LINK build\RSBE01_01\sora_menu_fig_get_demo\sora_menu_fig_get_demo.preplf
+[217/479] LINK build\RSBE01_01\sora_menu_simple_ending\sora_menu_simple_ending.preplf
+[218/479] LINK build\RSBE01_01\sora_menu_rule\sora_menu_rule.preplf
+[219/479] LINK build\RSBE01_01\sora_adv_menu_name\sora_adv_menu_name.preplf
+[220/479] LINK build\RSBE01_01\sora_adv_menu_visual\sora_adv_menu_visual.preplf
+[221/479] LINK build\RSBE01_01\sora_adv_menu_sel_char\sora_adv_menu_sel_char.preplf
+[222/479] LINK build\RSBE01_01\sora_adv_menu_sel_map\sora_adv_menu_sel_map.preplf
+[223/479] LINK build\RSBE01_01\sora_adv_menu_difficulty\sora_adv_menu_difficulty.preplf
+[224/479] LINK build\RSBE01_01\sora_adv_menu_game_over\sora_adv_menu_game_over.preplf
+[225/479] LINK build\RSBE01_01\sora_adv_menu_result\sora_adv_menu_result.preplf
+[226/479] LINK build\RSBE01_01\sora_adv_menu_save_load\sora_adv_menu_save_load.preplf
+[227/479] LINK build\RSBE01_01\sora_adv_menu_seal\sora_adv_menu_seal.preplf
+[228/479] LINK build\RSBE01_01\sora_adv_menu_ending\sora_adv_menu_ending.preplf
+[229/479] LINK build\RSBE01_01\sora_adv_menu_telop\sora_adv_menu_telop.preplf
+[230/479] LINK build\RSBE01_01\sora_adv_menu_save_point\sora_adv_menu_save_point.preplf
+[231/479] LINK build\RSBE01_01\st_battles\st_battles.preplf
+[232/479] LINK build\RSBE01_01\st_battle\st_battle.preplf
+[233/479] LINK build\RSBE01_01\st_config\st_config.preplf
+[234/479] LINK build\RSBE01_01\st_final\st_final.preplf
+[235/479] LINK build\RSBE01_01\st_dolpic\st_dolpic.preplf
+[236/479] LINK build\RSBE01_01\st_mansion\st_mansion.preplf
+[237/479] LINK build\RSBE01_01\st_mariopast\st_mariopast.preplf
+[238/479] LINK build\RSBE01_01\st_kart\st_kart.preplf
+[239/479] LINK build\RSBE01_01\st_donkey\st_donkey.preplf
+[240/479] LINK build\RSBE01_01\st_jungle\st_jungle.preplf
+[241/479] LINK build\RSBE01_01\st_pirates\st_pirates.preplf
+[242/479] LINK build\RSBE01_01\st_oldin\st_oldin.preplf
+[243/479] LINK build\RSBE01_01\st_norfair\st_norfair.preplf
+[244/479] LINK build\RSBE01_01\st_orpheon\st_orpheon.preplf
+[245/479] LINK build\RSBE01_01\st_crayon\st_crayon.preplf
+[246/479] LINK build\RSBE01_01\st_halberd\st_halberd.preplf
+[247/479] LINK build\RSBE01_01\st_starfox\st_starfox.preplf
+[248/479] LINK build\RSBE01_01\st_stadium\st_stadium.preplf
+[249/479] LINK build\RSBE01_01\sora_adv_stage\sora_adv_stage.preplf
+[250/479] LINK build\RSBE01_01\st_tengan\st_tengan.preplf
+[251/479] LINK build\RSBE01_01\st_fzero\st_fzero.preplf
+[252/479] LINK build\RSBE01_01\st_ice\st_ice.preplf
+[253/479] LINK build\RSBE01_01\st_gw\st_gw.preplf
+[254/479] LINK build\RSBE01_01\st_emblem\st_emblem.preplf
+[255/479] LINK build\RSBE01_01\st_madein\st_madein.preplf
+[256/479] LINK build\RSBE01_01\st_earth\st_earth.preplf
+[257/479] LINK build\RSBE01_01\st_palutena\st_palutena.preplf
+[258/479] LINK build\RSBE01_01\st_famicom\st_famicom.preplf
+[259/479] LINK build\RSBE01_01\st_newpork\st_newpork.preplf
+[260/479] LINK build\RSBE01_01\st_village\st_village.preplf
+[261/479] LINK build\RSBE01_01\st_metalgear\st_metalgear.preplf
+[262/479] LINK build\RSBE01_01\st_greenhill\st_greenhill.preplf
+[263/479] LINK build\RSBE01_01\st_pictchat\st_pictchat.preplf
+[264/479] LINK build\RSBE01_01\st_plankton\st_plankton.preplf
+[265/479] LINK build\RSBE01_01\st_dxshrine\st_dxshrine.preplf
+[266/479] LINK build\RSBE01_01\st_dxgarden\st_dxgarden.preplf
+[267/479] LINK build\RSBE01_01\st_dxonett\st_dxonett.preplf
+[268/479] LINK build\RSBE01_01\st_dxrcruise\st_dxrcruise.preplf
+[269/479] LINK build\RSBE01_01\sora_enemy\sora_enemy.preplf
+[270/479] LINK build\RSBE01_01\st_dxgreens\st_dxgreens.preplf
+[271/479] LINK build\RSBE01_01\st_dxzebes\st_dxzebes.preplf
+[272/479] LINK build\RSBE01_01\st_dxcorneria\st_dxcorneria.preplf
+[273/479] LINK build\RSBE01_01\st_dxyorster\st_dxyorster.preplf
+[274/479] LINK build\RSBE01_01\st_heal\st_heal.preplf
+[275/479] LINK build\RSBE01_01\st_stageedit\st_stageedit.preplf
+[276/479] LINK build\RSBE01_01\st_dxpstadium\st_dxpstadium.preplf
+[277/479] LINK build\RSBE01_01\st_dxbigblue\st_dxbigblue.preplf
+[278/479] LINK build\RSBE01_01\st_croll\st_croll.preplf
+[279/479] LINK build\RSBE01_01\st_homerun\st_homerun.preplf
+[280/479] LINK build\RSBE01_01\st_otrain\st_otrain.preplf
+[281/479] LINK build\RSBE01_01\st_tbreak\st_tbreak.preplf
+[282/479] LINK build\RSBE01_01\ft_mario\ft_mario.preplf
+[283/479] LINK build\RSBE01_01\ft_link\ft_link.preplf
+[284/479] LINK build\RSBE01_01\ft_fox\ft_fox.preplf
+[285/479] LINK build\RSBE01_01\ft_donkey\ft_donkey.preplf
+[286/479] LINK build\RSBE01_01\ft_samus\ft_samus.preplf
+[287/479] LINK build\RSBE01_01\ft_kirby\ft_kirby.preplf
+[288/479] LINK build\RSBE01_01\ft_yoshi\ft_yoshi.preplf
+[289/479] LINK build\RSBE01_01\ft_luigi\ft_luigi.preplf
+[290/479] LINK build\RSBE01_01\ft_pikachu\ft_pikachu.preplf
+[291/479] LINK build\RSBE01_01\ft_captain\ft_captain.preplf
+[292/479] LINK build\RSBE01_01\ft_koopa\ft_koopa.preplf
+[293/479] LINK build\RSBE01_01\ft_ness\ft_ness.preplf
+[294/479] LINK build\RSBE01_01\ft_marth\ft_marth.preplf
+[295/479] LINK build\RSBE01_01\ft_peach\ft_peach.preplf
+[296/479] LINK build\RSBE01_01\ft_zelda\ft_zelda.preplf
+[297/479] LINK build\RSBE01_01\ft_falco\ft_falco.preplf
+[298/479] LINK build\RSBE01_01\ft_iceclimber\ft_iceclimber.preplf
+[299/479] LINK build\RSBE01_01\ft_gamewatch\ft_gamewatch.preplf
+[300/479] LINK build\RSBE01_01\ft_ganon\ft_ganon.preplf
+[301/479] LINK build\RSBE01_01\ft_metaknight\ft_metaknight.preplf
+[302/479] LINK build\RSBE01_01\ft_lucario\ft_lucario.preplf
+[303/479] LINK build\RSBE01_01\ft_poke\ft_poke.preplf
+[304/479] LINK build\RSBE01_01\ft_pit\ft_pit.preplf
+[305/479] LINK build\RSBE01_01\ft_wario\ft_wario.preplf
+[306/479] LINK build\RSBE01_01\ft_wolf\ft_wolf.preplf
+[307/479] LINK build\RSBE01_01\ft_lucas\ft_lucas.preplf
+[308/479] LINK build\RSBE01_01\ft_robot\ft_robot.preplf
+[309/479] LINK build\RSBE01_01\ft_diddy\ft_diddy.preplf
+[310/479] LINK build\RSBE01_01\ft_pikmin\ft_pikmin.preplf
+[311/479] LINK build\RSBE01_01\ft_ike\ft_ike.preplf
+[312/479] LINK build\RSBE01_01\ft_sonic\ft_sonic.preplf
+[313/479] LINK build\RSBE01_01\ft_dedede\ft_dedede.preplf
+[314/479] LINK build\RSBE01_01\sora_menu_collect_viewer\sora_menu_collect_viewer.plf
+[315/479] LINK build\RSBE01_01\ft_purin\ft_purin.preplf
+[316/479] LINK build\RSBE01_01\ft_zako\ft_zako.preplf
+[317/479] LINK build\RSBE01_01\sora_menu_replay\sora_menu_replay.plf
+[318/479] LINK build\RSBE01_01\sora_menu_tour\sora_menu_tour.plf
+[319/479] LINK build\RSBE01_01\ft_toonlink\ft_toonlink.preplf
+[320/479] LINK build\RSBE01_01\sora_menu_snap_shot\sora_menu_snap_shot.plf
+[321/479] LINK build\RSBE01_01\ft_snake\ft_snake.preplf
+[322/479] LINK build\RSBE01_01\sora_menu_qm\sora_menu_qm.plf
+[323/479] LINK build\RSBE01_01\sora_menu_main\sora_menu_main.plf
+[324/479] LINK build\RSBE01_01\sora_menu_edit\sora_menu_edit.plf
+[325/479] LINK build\RSBE01_01\sora_menu_game_over\sora_menu_game_over.plf
+FAILED: [code=1] build/RSBE01_01/sora_menu_game_over/sora_menu_game_over.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_menu_game_over\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_menu_game_over\sora_menu_game_over.plf @build\RSBE01_01\sora_menu_game_over\sora_menu_game_over.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Usage Alert:
+#   Specified file 'build\RSBE01_01\src\mo_menu\mo_menu.o' not found
+#   Operating system error:
+#   The system cannot find the path specified.
+
+Errors caused tool to abort.
+[326/479] LINK build\RSBE01_01\sora_menu_sel_stage\sora_menu_sel_stage.plf
+FAILED: [code=1] build/RSBE01_01/sora_menu_sel_stage/sora_menu_sel_stage.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_menu_sel_stage\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_menu_sel_stage\sora_menu_sel_stage.plf @build\RSBE01_01\sora_menu_sel_stage\sora_menu_sel_stage.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Usage Alert:
+#   Specified file 'build\RSBE01_01\src\mo_menu\mo_menu.o' not found
+#   Operating system error:
+#   The system cannot find the path specified.
+
+Errors caused tool to abort.
+[327/479] LINK build\RSBE01_01\sora_menu_friend_list\sora_menu_friend_list.plf
+FAILED: [code=1] build/RSBE01_01/sora_menu_friend_list/sora_menu_friend_list.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_menu_friend_list\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_menu_friend_list\sora_menu_friend_list.plf @build\RSBE01_01\sora_menu_friend_list\sora_menu_friend_list.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Usage Alert:
+#   Specified file 'build\RSBE01_01\src\mo_menu\mo_menu.o' not found
+#   Operating system error:
+#   The system cannot find the path specified.
+
+Errors caused tool to abort.
+[328/479] LINK build\RSBE01_01\sora_menu_intro\sora_menu_intro.plf
+FAILED: [code=1] build/RSBE01_01/sora_menu_intro/sora_menu_intro.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_menu_intro\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_menu_intro\sora_menu_intro.plf @build\RSBE01_01\sora_menu_intro\sora_menu_intro.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Usage Alert:
+#   Specified file 'build\RSBE01_01\src\mo_menu\mo_menu.o' not found
+#   Operating system error:
+#   The system cannot find the path specified.
+
+Errors caused tool to abort.
+[329/479] LINK build\RSBE01_01\sora_menu_sel_char\sora_menu_sel_char.plf
+FAILED: [code=1] build/RSBE01_01/sora_menu_sel_char/sora_menu_sel_char.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_menu_sel_char\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_menu_sel_char\sora_menu_sel_char.plf @build\RSBE01_01\sora_menu_sel_char\sora_menu_sel_char.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Error:
+#   'mo_menu.o' is not a valid library file.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Alert:
+#   Link failed.
+
+Errors caused tool to abort.
+[330/479] LINK build\RSBE01_01\sora_menu_watch\sora_menu_watch.plf
+FAILED: [code=1] build/RSBE01_01/sora_menu_watch/sora_menu_watch.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_menu_watch\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_menu_watch\sora_menu_watch.plf @build\RSBE01_01\sora_menu_watch\sora_menu_watch.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Usage Alert:
+#   Specified file 'build\RSBE01_01\src\mo_menu\mo_menu.o' not found
+#   Operating system error:
+#   The system cannot find the path specified.
+
+Errors caused tool to abort.
+[331/479] LINK build\RSBE01_01\sora_menu_event\sora_menu_event.plf
+FAILED: [code=1] build/RSBE01_01/sora_menu_event/sora_menu_event.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_menu_event\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_menu_event\sora_menu_event.plf @build\RSBE01_01\sora_menu_event\sora_menu_event.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Error:
+#   'mo_menu.o' is not a valid library file.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Alert:
+#   Link failed.
+
+Errors caused tool to abort.
+[332/479] LINK build\RSBE01_01\sora_melee\sora_melee.preplf
+FAILED: [code=1] build/RSBE01_01/sora_melee/sora_melee.preplf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r -o build\RSBE01_01\sora_melee\sora_melee.preplf @build\RSBE01_01\sora_melee\sora_melee.preplf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Error:
+#   'mo_melee.o' is not a valid library file.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Alert:
+#   Link failed.
+
+Errors caused tool to abort.
+[333/479] LINK build\RSBE01_01\sora_menu_name\sora_menu_name.plf
+FAILED: [code=1] build/RSBE01_01/sora_menu_name/sora_menu_name.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_menu_name\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_menu_name\sora_menu_name.plf @build\RSBE01_01\sora_menu_name\sora_menu_name.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Usage Alert:
+#   Specified file 'build\RSBE01_01\src\mo_menu\mo_menu.o' not found
+#   Operating system error:
+#   The system cannot find the path specified.
+
+Errors caused tool to abort.
+[334/479] LINK build\RSBE01_01\sora_scene\sora_scene.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_rodata_18' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_rodata_8C0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_18D8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_1900' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_190C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5DA0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5DAC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5DD4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5DE0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5E1C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5E28' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5E48' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5E54' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5E74' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5E80' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5E88' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5E90' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5E98' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5F08' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_5F14' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_6488' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_6494' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_64C8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_1_data_64D4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+[335/479] LINK build\RSBE01_01\sora_menu_rule\sora_menu_rule.plf
+FAILED: [code=1] build/RSBE01_01/sora_menu_rule/sora_menu_rule.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_menu_rule\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_menu_rule\sora_menu_rule.plf @build\RSBE01_01\sora_menu_rule\sora_menu_rule.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Usage Alert:
+#   Specified file 'build\RSBE01_01\src\mo_menu\mo_menu.o' not found
+#   Operating system error:
+#   The system cannot find the path specified.
+
+Errors caused tool to abort.
+[336/479] LINK build\RSBE01_01\sora_menu_simple_ending\sora_menu_simple_ending.plf
+FAILED: [code=1] build/RSBE01_01/sora_menu_simple_ending/sora_menu_simple_ending.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_menu_simple_ending\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_menu_simple_ending\sora_menu_simple_ending.plf @build\RSBE01_01\sora_menu_simple_ending\sora_menu_simple_ending.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Usage Alert:
+#   Specified file 'build\RSBE01_01\src\mo_menu\mo_menu.o' not found
+#   Operating system error:
+#   The system cannot find the path specified.
+
+Errors caused tool to abort.
+[337/479] LINK build\RSBE01_01\sora_menu_sel_char_access\sora_menu_sel_char_access.plf
+FAILED: [code=1] build/RSBE01_01/sora_menu_sel_char_access/sora_menu_sel_char_access.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_menu_sel_char_access\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_menu_sel_char_access\sora_menu_sel_char_access.plf @build\RSBE01_01\sora_menu_sel_char_access\sora_menu_sel_char_access.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Usage Alert:
+#   Specified file 
+#   'build\RSBE01_01\src\mo_menu\sora_menu_sel_char_access\sel_char_access.o' 
+#   not found
+#   Operating system error:
+#   The system cannot find the path specified.
+
+Errors caused tool to abort.
+[338/479] LINK build\RSBE01_01\sora_minigame\sora_minigame.plf
+FAILED: [code=1] build/RSBE01_01/sora_minigame/sora_minigame.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_minigame\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_minigame\sora_minigame.plf @build\RSBE01_01\sora_minigame\sora_minigame.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Usage Alert:
+#   Specified file 'build\RSBE01_01\src\global_destructor_chain.o' not found
+#   Operating system error:
+#   The system cannot find the path specified.
+
+Errors caused tool to abort.
+[339/479] LINK build\RSBE01_01\sora_menu_time_result\sora_menu_time_result.plf
+FAILED: [code=1] build/RSBE01_01/sora_menu_time_result/sora_menu_time_result.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_menu_time_result\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_menu_time_result\sora_menu_time_result.plf @build\RSBE01_01\sora_menu_time_result\sora_menu_time_result.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Usage Alert:
+#   Specified file 'build\RSBE01_01\src\mo_menu\mo_menu.o' not found
+#   Operating system error:
+#   The system cannot find the path specified.
+
+Errors caused tool to abort.
+[340/479] LINK build\RSBE01_01\sora_menu_boot\sora_menu_boot.plf
+FAILED: [code=1] build/RSBE01_01/sora_menu_boot/sora_menu_boot.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_menu_boot\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_menu_boot\sora_menu_boot.plf @build\RSBE01_01\sora_menu_boot\sora_menu_boot.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Usage Alert:
+#   Specified file 'build\RSBE01_01\src\mo_menu\mo_menu.o' not found
+#   Operating system error:
+#   The system cannot find the path specified.
+
+Errors caused tool to abort.
+[341/479] LINK build\RSBE01_01\sora_menu_challenger\sora_menu_challenger.plf
+FAILED: [code=1] build/RSBE01_01/sora_menu_challenger/sora_menu_challenger.plf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -sdata 0 -sdata2 0 -r1 -lcf build\RSBE01_01\sora_menu_challenger\ldscript.lcf -m _prolog -strip_partial -o build\RSBE01_01\sora_menu_challenger\sora_menu_challenger.plf @build\RSBE01_01\sora_menu_challenger\sora_menu_challenger.plf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Usage Alert:
+#   Specified file 'build\RSBE01_01\src\mo_menu\mo_menu.o' not found
+#   Operating system error:
+#   The system cannot find the path specified.
+
+Errors caused tool to abort.
+[342/479] LINK build\RSBE01_01\main.elf
+FAILED: [code=1] build/RSBE01_01/main.elf 
+build\compilers\GC\3.0a5.2\mwldeppc.exe -fp hardware -nodefaults -lcf build\RSBE01_01\ldscript.lcf -o build\RSBE01_01\main.elf @build\RSBE01_01\main.elf.rsp
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Driver Error:
+#   Could not load file 'C:\Users\balla\Documents\Brawl Decompile\brawl-
+#   codex4\build\RSBE01_01\src\sora\sr\sr_getappname.o'
+
+Errors caused tool to abort.
+ninja: build stopped: subcommand failed.

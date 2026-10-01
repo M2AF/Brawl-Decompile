@@ -1,0 +1,12 @@
+--- before
++++ after
+@@ -37906,6 +37906,9 @@
+               {
+                 if (kart->m_checkpoint < other->m_checkpoint)
+                 {
++                  if ((i && i) && i)
++                  {
++                  }
+                   isBehind = true;
+                 }
+                 else

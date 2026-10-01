@@ -1,0 +1,3 @@
+func_name = "getZoneLightSetIndex"
+compiler_type = "mwcc"
+objdump_command = "C:/Users/balla/AppData/Local/Temp/claude/c--Users-balla-Documents-Brawl-Decompile/2423b920-b88e-46dc-89f5-276962976089/scratchpad/bin/powerpc-eabi-objdump.exe -dr -EB -mpowerpc -M broadway"

@@ -1,0 +1,60 @@
+target 54 funcs, candidate 55 funcs
+DIFF  create__11stDxYorsterFv      __ct__11stDxYorsterFv
+DIFF  __dt__11stDxYorsterFv        create__11stDxYorsterFv
+DIFF  loading__11stDxYorsterFv     __dt__11stDxYorsterFv
+DIFF  createObj__11stDxYorsterFv   loading__11stDxYorsterFv
+DIFF  fn_76_400__11stDxYorsterFi   createObj__11stDxYorsterFv
+DIFF  setStageData__6GroundFPv     fn_76_400__11stDxYorsterFi
+DIFF  fn_76_4FC__13grDxYorsterBgFP5Vec3f setStageData__6GroundFPv
+DIFF  fn_76_504__13grDxYorsterBgFPb fn_76_4FC__13grDxYorsterBgFP5Vec3f
+DIFF  fn_76_50C__13grDxYorsterBgFPb fn_76_504__13grDxYorsterBgFPb
+DIFF  fn_76_514__11stDxYorsterFi   fn_76_50C__13grDxYorsterBgFPb
+DIFF  fn_76_618__11stDxYorsterFv   fn_76_514__11stDxYorsterFi
+DIFF  fn_76_6E0__19grDxYorsterBlockPosFP5Vec3f fn_76_618__11stDxYorsterFv
+DIFF  fn_76_6E8__19grDxYorsterBlockPosFPUc fn_76_6E0__19grDxYorsterBlockPosFP5Vec3f
+DIFF  fn_76_6F0__11stDxYorsterFi   fn_76_6E8__19grDxYorsterBlockPosFPUc
+DIFF  fn_76_854__16grDxYorsterBlockFi fn_76_6F0__11stDxYorsterFi
+DIFF  fn_76_85C__16grDxYorsterBlockFP5Vec3f fn_76_854__16grDxYorsterBlockFi
+DIFF  fn_76_864__16grDxYorsterBlockFPUc fn_76_85C__16grDxYorsterBlockFP5Vec3f
+DIFF  fn_76_86C__16grDxYorsterBlockFPb fn_76_864__16grDxYorsterBlockFPUc
+DIFF  update__11stDxYorsterFf      fn_76_86C__16grDxYorsterBlockFPb
+MATCH startFighterEvent__5StageFv  startFighterEvent__5StageFv
+MATCH initializeFighterAttackRatio__5StageFv initializeFighterAttackRatio__5StageFv
+MATCH helperStarWarp__5StageFv     helperStarWarp__5StageFv
+MATCH isSimpleBossBattleMode__5StageFv isSimpleBossBattleMode__5StageFv
+MATCH isBossBattleMode__5StageFv   isBossBattleMode__5StageFv
+MATCH isCameraLocked__5StageFv     isCameraLocked__5StageFv
+MATCH notifyTimmingGameStart__5StageFv notifyTimmingGameStart__5StageFv
+MATCH getFrameRuleTime__5StageFv   getFrameRuleTime__5StageFv
+MATCH setFrameRuleTime__5StageFf   setFrameRuleTime__5StageFf
+MATCH isNextStepBgmEqualNowStepBgmFromFlag__5StageFv isNextStepBgmEqualNowStepBgmFromFlag__5StageFv
+MATCH getBgmPlayOffsetFrame__5StageFv getBgmPlayOffsetFrame__5StageFv
+MATCH getBgmVolume__5StageFv       getBgmVolume__5StageFv
+MATCH setBgmChange__5StageFfbUl    setBgmChange__5StageFfbUl
+MATCH getBgmChangeID__5StageFPUlPf getBgmChangeID__5StageFPUlPf
+MATCH isBgmChange__5StageFv        isBgmChange__5StageFv
+MATCH getBgmOptionID__5StageFv     getBgmOptionID__5StageFv
+MATCH getNowStepBgmID__5StageFv    getNowStepBgmID__5StageFv
+MATCH getBgmID__5StageFv           getBgmID__5StageFv
+MATCH getBgmID__5StageCFv          getBgmID__5StageCFv
+MATCH appearanceFighterLocal__5StageFv appearanceFighterLocal__5StageFv
+MATCH getScrollDir__5StageFP5Vec3f getScrollDir__5StageFP5Vec3f
+MATCH getDefaultLightSetIndex__5StageFv getDefaultLightSetIndex__5StageFv
+MATCH getAIRange__5StageFv         getAIRange__5StageFv
+MATCH isAdventureStage__5StageFv   isAdventureStage__5StageFv
+MATCH getPokeTrainerDrawLayer__5StageFv getPokeTrainerDrawLayer__5StageFv
+MATCH getPokeTrainerPositionZ__5StageFv getPokeTrainerPositionZ__5StageFv
+MATCH getPokeTrainerPointData__5StageFPii getPokeTrainerPointData__5StageFPii
+MATCH getPokeTrainerPointNum__5StageFv getPokeTrainerPointNum__5StageFv
+MATCH isReStartSamePoint__7stMeleeFv isReStartSamePoint__7stMeleeFv
+MATCH getWind2ndOnlyData__7stMeleeFv getWind2ndOnlyData__7stMeleeFv
+MATCH isBamperVector__11stDxYorsterFv isBamperVector__11stDxYorsterFv
+DIFF  __sinit_\st_dxyorster_cpp    update__11stDxYorsterFf
+DIFF  __dt__33stClassInfoImpl<42,11stDxYorster>Fv __sinit_\st_dxyorster_cpp
+DIFF  create__33stClassInfoImpl<42,11stDxYorster>Fv __dt__33stClassInfoImpl<42,11stDxYorster>Fv
+DIFF  preload__33stClassInfoImpl<42,11stDxYorster>Fv create__33stClassInfoImpl<42,11stDxYorster>Fv
+DIFF  -                            preload__33stClassInfoImpl<42,11stDxYorster>Fv
+.data: target 1072 bytes, candidate 1072 bytes, same bytes
+.rodata: target 8 bytes, candidate 8 bytes, same bytes
+.bss: target 16 bytes, candidate 16 bytes, same bytes
+.ctors: target 4 bytes, candidate 4 bytes, same bytes

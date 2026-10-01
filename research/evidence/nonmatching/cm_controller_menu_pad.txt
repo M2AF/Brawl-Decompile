@@ -1,0 +1,137 @@
+Unit: sora/cm/cm_controller_menu_pad (new split 0x800A6598-0x800A68C0, RSBE01_01)
+Best attempt: src/sora/cm/cm_controller_menu_pad.cpp. ctor/storeDefault/init match; update does not.
+Solved: integer register allocation. Declare i first, then maxX,maxY,minX,minY, and initialise in the order maxX,minX,maxY,minY. Declaration order sets register order.
+Open: the target uses separate conversion slots 0x50/0x58 with the 0x4330 stores hoisted to entry. A nested-ternary helper that duplicates the conversion per arm reproduces the hoist and slots, but also duplicates the division. Single-site forms (inline helper, explicit per-axis code, one statement, Vec2f temporary) all share one slot.
+
+Compile command:
+build\tools\sjiswrap.exe build\compilers\GC\3.0a5.2\mwcceppc.exe -nodefaults -proc gekko -align powerpc -enum int -fp hardware -Cpp_exceptions off -O4,p -inline auto -pragma "cats off" -pragma "warn_notinlined off" -maxerrors 1 -nosyspath -RTTI off -fp_contract off -str reuse -enc SJIS -i include -i build/RSBE01_01/include -DBUILD_VERSION=2 -DVERSION_RSBE01_01 -DMATCHING -Iinclude -Iinclude/lib/PowerPC_EABI_Support/Runtime/Inc -Iinclude/lib/BrawlHeaders/Brawl/Include -Iinclude/lib/BrawlHeaders/nw4r/include -Iinclude/lib/BrawlHeaders/OpenRVL/include -Iinclude/lib/BrawlHeaders/OpenRVL/include/MetroTRK -Iinclude/lib/BrawlHeaders/OpenRVL/include/revolution -Iinclude/lib/BrawlHeaders/OpenRVL/include/RVLFaceLib -Iinclude/lib/BrawlHeaders/OpenRVL/include/stl -Iinclude/lib/BrawlHeaders/utils/include -RTTI on -ipa file -lang=c++ -MMD -c src\sora\cm\cm_controller_menu_pad.cpp -o build\RSBE01_01\src\sora\cm
+
+== __ct__19cmMenuPadControllerFv: MATCH (26 insns)
+== storeDefault__19cmMenuPadControllerFv: MATCH (15 insns)
+== init__19cmMenuPadControllerFv: MATCH (17 insns)
+== update__19cmMenuPadControllerFf: DIFF
+--- target
++++ candidate
+@@ -1,14 +1,11 @@
+-stwu    r1,-128(r1)
++stwu    r1,-112(r1)
+ mflr    r0
+-stw     r0,132(r1)
+-addi    r11,r1,128
++stw     r0,116(r1)
++addi    r11,r1,112
+ bl <addr>
+ R_PPC_REL24	_savegpr_26
+ lbz     r4,16(r3)
+-lis     r5,17200
+-stw     r5,80(r1)
++lwz     r31,0(r3)
+ rlwinm. r0,r4,25,31,31
+-lwz     r31,0(r3)
+-stw     r5,88(r1)
+ bne <addr>
+ lfs     f0,204(r31)
+@@ -91,19 +88,21 @@
+ cmpwi   r3,30
+ ble <addr>
+-addi    r0,r3,-30
++addi    r3,r3,-30
++lis     r0,17200
++xoris   r3,r3,32768
++stw     r0,80(r1)
+ lfd     f2,0(0)
+ R_PPC_EMB_SDA21
+-xoris   r0,r0,32768
++cmpwi   r4,0
++stw     r3,84(r1)
+ lfs     f0,0(0)
+ R_PPC_EMB_SDA21
+-stw     r0,84(r1)
+-cmpwi   r4,0
+ lfd     f1,80(r1)
+ fsubs   f1,f1,f2
+-fdivs   f3,f1,f0
++fdivs   f4,f1,f0
+ bge <addr>
+-fneg    f3,f3
++fneg    f4,f4
+ b <addr>
+-lfs     f3,0(0)
++lfs     f4,0(0)
+ R_PPC_EMB_SDA21
+ extsb   r3,r28
+@@ -123,46 +122,48 @@
+ cmpwi   r3,30
+ ble <addr>
+-addi    r0,r3,-30
++addi    r3,r3,-30
++lis     r0,17200
++xoris   r3,r3,32768
++stw     r0,80(r1)
+ lfd     f2,0(0)
+ R_PPC_EMB_SDA21
+-xoris   r0,r0,32768
++cmpwi   r4,0
++stw     r3,84(r1)
+ lfs     f0,0(0)
+ R_PPC_EMB_SDA21
+-stw     r0,92(r1)
+-cmpwi   r4,0
+-lfd     f1,88(r1)
++lfd     f1,80(r1)
+ fsubs   f1,f1,f2
+-fdivs   f2,f1,f0
++fdivs   f0,f1,f0
+ bge <addr>
+-fneg    f2,f2
++fneg    f0,f0
+ b <addr>
++lfs     f0,0(0)
++R_PPC_EMB_SDA21
++lfs     f1,0(0)
++R_PPC_EMB_SDA21
++li      r0,225
+ lfs     f2,0(0)
+ R_PPC_EMB_SDA21
++mr      r3,r31
++fmuls   f3,f1,f0
+ lfs     f0,0(0)
+ R_PPC_EMB_SDA21
+-li      r0,225
+-lfs     f1,0(0)
+-R_PPC_EMB_SDA21
+-mr      r3,r31
+-fmuls   f2,f0,f2
+-fmuls   f3,f0,f3
+-lfs     f0,0(0)
+-R_PPC_EMB_SDA21
+-fneg    f2,f2
+-fmuls   f3,f1,f3
+-fmuls   f1,f1,f2
+-stfs    f3,12(r1)
+-stfs    f1,192(r31)
+-stfs    f3,196(r31)
++fmuls   f1,f1,f4
++fneg    f3,f3
++fmuls   f1,f2,f1
++fmuls   f2,f2,f3
++stfs    f1,12(r1)
++stfs    f2,192(r31)
++stfs    f1,196(r31)
+ sth     r0,248(r31)
+-stfs    f1,8(r1)
++stfs    f2,8(r1)
+ stfs    f0,212(r31)
+ bl <addr>
+ R_PPC_REL24	fn_80018778
+-addi    r11,r1,128
++addi    r11,r1,112
+ bl <addr>
+ R_PPC_REL24	_restgpr_26
+-lwz     r0,132(r1)
++lwz     r0,116(r1)
+ mtlr    r0
+-addi    r1,r1,128
++addi    r1,r1,112
+ blr
+candidate-only: []

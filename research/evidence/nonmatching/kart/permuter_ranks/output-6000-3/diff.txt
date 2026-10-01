@@ -1,0 +1,19 @@
+--- before
++++ after
+@@ -37838,6 +37838,7 @@
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
++  int new_var;
+   if (data)
+   {
+     m_bgState = 10;
+@@ -37846,7 +37847,7 @@
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
+-      for (; i != kartNum; i++)
++      for (; new_var = i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+         kart->m_rank = 0;

@@ -1,0 +1,122 @@
+Unit: sora/mt/mt_trig
+Best attempt: src/sora/mt/mt_trig.cpp at branch rsbe01_01-support bc88679 (upstream source; no tried variant scored better)
+
+Compile command:
+build\tools\sjiswrap.exe build\compilers\GC\3.0a5.2\mwcceppc.exe -nodefaults -proc gekko -align powerpc -enum int -fp hardware -Cpp_exceptions off -O4,p -inline auto -pragma "cats off" -pragma "warn_notinlined off" -maxerrors 1 -nosyspath -RTTI off -fp_contract off -str reuse -enc SJIS -i include -i build/RSBE01_01/include -DBUILD_VERSION=2 -DVERSION_RSBE01_01 -DMATCHING -Iinclude -Iinclude/lib/PowerPC_EABI_Support/Runtime/Inc -Iinclude/lib/BrawlHeaders/Brawl/Include -Iinclude/lib/BrawlHeaders/nw4r/include -Iinclude/lib/BrawlHeaders/OpenRVL/include -Iinclude/lib/BrawlHeaders/OpenRVL/include/MetroTRK -Iinclude/lib/BrawlHeaders/OpenRVL/include/revolution -Iinclude/lib/BrawlHeaders/OpenRVL/include/RVLFaceLib -Iinclude/lib/BrawlHeaders/OpenRVL/include/stl -Iinclude/lib/BrawlHeaders/utils/include -RTTI on -ipa file -lang=c++ -MMD -c src\sora\mt\mt_trig.cpp -o build\RSBE01_01\src\sora\mt
+
+Compiler: GC/3.0a5.2 mwcceppc.exe sha256 bfa9fd1794736e0aaa937ad8786956b2bc5cd7fddcc6fe20af45798812e1918d
+
+== mtSinCosf__FfPfPf: DIFF
+--- target
++++ candidate
+@@ -12,69 +12,69 @@
+ fctiwz  f0,f0
+ lwz     r5,12(r1)
+-addis   r6,r5,64
++addis   r5,r5,64
+ stfd    f0,16(r1)
+-clrlwi  r6,r6,8
++clrlwi  r7,r5,8
+ lwz     r5,20(r1)
+-cmpw    r6,r0
+-addis   r7,r5,64
+-clrlwi  r7,r7,8
+-ble <addr>
+-lis     r0,256
+-subf    r6,r6,r0
+-lis     r0,128
+ cmpw    r7,r0
++addis   r0,r5,64
++clrlwi  r5,r0,8
+ ble <addr>
+ lis     r0,256
+ subf    r7,r7,r0
+-addis   r0,r6,-64
++lis     r0,128
++cmpw    r5,r0
++ble <addr>
++lis     r0,256
++subf    r5,r5,r0
++addis   r0,r5,-64
+ lis     r5,17200
+ xoris   r6,r0,32768
+ stw     r5,24(r1)
+ addis   r0,r7,-64
+-lfd     f3,0(0)
++lfd     f2,0(0)
+ R_PPC_EMB_SDA21
+ stw     r6,28(r1)
+ xoris   r0,r0,32768
+-lfs     f1,0(0)
++lfs     f0,0(0)
+ R_PPC_EMB_SDA21
+-lfd     f0,24(r1)
++lfd     f1,24(r1)
+ stw     r0,36(r1)
+-fsubs   f2,f0,f3
++fsubs   f3,f1,f2
++lfs     f7,0(0)
++R_PPC_EMB_SDA21
++stw     r5,32(r1)
+ lfs     f6,0(0)
+ R_PPC_EMB_SDA21
+-stw     r5,32(r1)
++fmuls   f10,f0,f3
++lfd     f1,32(r1)
+ lfs     f5,0(0)
+ R_PPC_EMB_SDA21
+-fmuls   f10,f1,f2
+-lfd     f0,32(r1)
++fsubs   f1,f1,f2
+ lfs     f4,0(0)
+ R_PPC_EMB_SDA21
+-fsubs   f0,f0,f3
++fmuls   f8,f10,f10
+ lfs     f3,0(0)
+ R_PPC_EMB_SDA21
+-fmuls   f8,f10,f10
+-lfs     f2,0(0)
+-R_PPC_EMB_SDA21
+-fmuls   f7,f1,f0
+-fmuls   f0,f6,f8
+-fmuls   f9,f7,f7
+-fadds   f1,f5,f0
+-fmuls   f0,f6,f9
+-fmuls   f1,f8,f1
++fmuls   f9,f0,f1
++fmuls   f0,f7,f8
++fmuls   f1,f9,f9
++fadds   f2,f6,f0
++fmuls   f0,f7,f1
++fmuls   f2,f8,f2
++fadds   f0,f6,f0
++fadds   f2,f5,f2
++fmuls   f0,f1,f0
++fmuls   f2,f8,f2
+ fadds   f0,f5,f0
+-fadds   f1,f4,f1
++fadds   f2,f4,f2
++fmuls   f0,f1,f0
++fmuls   f2,f8,f2
++fadds   f0,f4,f0
++fadds   f2,f3,f2
++fmuls   f0,f1,f0
++fmuls   f1,f10,f2
++fadds   f0,f3,f0
++stfs    f1,0(r3)
+ fmuls   f0,f9,f0
+-fmuls   f1,f8,f1
+-fadds   f0,f4,f0
+-fadds   f1,f3,f1
+-fmuls   f0,f9,f0
+-fmuls   f1,f8,f1
+-fadds   f0,f3,f0
+-fadds   f1,f2,f1
+-fmuls   f0,f9,f0
+-fmuls   f1,f10,f1
+-fadds   f0,f2,f0
+-stfs    f1,0(r3)
+-fmuls   f0,f7,f0
+ stfs    f0,0(r4)
+ addi    r1,r1,48
+candidate-only: []

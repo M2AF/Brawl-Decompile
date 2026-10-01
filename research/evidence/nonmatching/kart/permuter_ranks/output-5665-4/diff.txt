@@ -1,0 +1,41 @@
+--- before
++++ after
+@@ -37838,11 +37838,12 @@
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
++  int new_var;
+   if (data)
+   {
+-    m_bgState = 10;
+     bool allOnFinalLap = true;
+     __alloca(data->m_kartNum * (sizeof(int)));
++    m_bgState = 10;
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
+@@ -37854,13 +37855,14 @@
+         {
+           allOnFinalLap = false;
+         }
++        new_var = 9;
+         if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))
+         {
+           if (m_warningState == 10)
+           {
+             m_warningState = 0;
+           }
+-          m_bgState = 9;
++          m_bgState = new_var;
+         }
+         if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true))
+         {
+@@ -37934,7 +37936,7 @@
+       m_isZoomedOut = false;
+     }
+     else
+-      if ((m_isZoomedOut == false) && (m_warningState == 0))
++      if ((((0, m_isZoomedOut)) == false) && (m_warningState == 0))
+     {
+       zoomOutCamera(225.0f, 275.0f);
+       m_isZoomedOut = true;

@@ -1,0 +1,13 @@
+{
+  "fn_60_67EC": "create__13grTenganFloorFiPCcPCc",
+  "fn_60_68F0": "__dt__13grTenganFloorFv",
+  "fn_60_6948": "update__13grTenganFloorFf",
+  "fn_60_69BC": "updateFloor__13grTenganFloorFf",
+  "fn_60_6CFC": "updateVisibility__13grTenganFloorFf",
+  "fn_60_6D2C": "changeAnimation__13grTenganFloorFUlbbPf",
+  "fn_60_22E4": "setEventTime__13grTenganFloorFPf",
+  "fn_60_22EC": "setEventFlags__13grTenganFloorFPUc",
+  "fn_60_22F4": "setKind__13grTenganFloorFUc",
+  "lbl_60_data_DD0": "__vt__13grTenganFloor",
+  "lbl_60_data_FE8": "__RTTI__13grTenganFloor"
+}

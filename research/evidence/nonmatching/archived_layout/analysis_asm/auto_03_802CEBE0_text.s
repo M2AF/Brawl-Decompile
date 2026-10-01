@@ -1,0 +1,44 @@
+.include "macros.inc"
+.file "auto_03_802CEBE0_text"
+
+# 0x802CEBE0..0x802CEC68 | size: 0x88
+.text
+.balign 4
+
+# .text:0x0 | 0x802CEBE0 | size: 0x88
+.fn fn_802CEBE0, global
+/* 802CEBE0 002C4960  3C E0 80 48 */	lis r7, lbl_804875E0@ha
+/* 802CEBE4 002C4964  3C C0 80 45 */	lis r6, lbl_80454AB0@ha
+/* 802CEBE8 002C4968  38 E7 75 E0 */	addi r7, r7, lbl_804875E0@l
+/* 802CEBEC 002C496C  C0 04 00 0C */	lfs f0, 0xc(r4)
+/* 802CEBF0 002C4970  90 E3 00 00 */	stw r7, 0x0(r3)
+/* 802CEBF4 002C4974  38 C6 4A B0 */	addi r6, r6, lbl_80454AB0@l
+/* 802CEBF8 002C4978  3C E0 80 48 */	lis r7, lbl_80487448@ha
+/* 802CEBFC 002C497C  C0 C4 00 00 */	lfs f6, 0x0(r4)
+/* 802CEC00 002C4980  90 C3 00 00 */	stw r6, 0x0(r3)
+/* 802CEC04 002C4984  38 E7 74 48 */	addi r7, r7, lbl_80487448@l
+/* 802CEC08 002C4988  C0 A4 00 04 */	lfs f5, 0x4(r4)
+/* 802CEC0C 002C498C  3C C0 80 48 */	lis r6, lbl_80487408@ha
+/* 802CEC10 002C4990  D0 03 00 1C */	stfs f0, 0x1c(r3)
+/* 802CEC14 002C4994  39 00 00 01 */	li r8, 0x1
+/* 802CEC18 002C4998  C0 84 00 08 */	lfs f4, 0x8(r4)
+/* 802CEC1C 002C499C  38 00 00 00 */	li r0, 0x0
+/* 802CEC20 002C49A0  C0 65 00 00 */	lfs f3, 0x0(r5)
+/* 802CEC24 002C49A4  38 C6 74 08 */	addi r6, r6, lbl_80487408@l
+/* 802CEC28 002C49A8  C0 45 00 04 */	lfs f2, 0x4(r5)
+/* 802CEC2C 002C49AC  90 E3 00 00 */	stw r7, 0x0(r3)
+/* 802CEC30 002C49B0  C0 05 00 08 */	lfs f0, 0x8(r5)
+/* 802CEC34 002C49B4  B1 03 00 06 */	sth r8, 0x6(r3)
+/* 802CEC38 002C49B8  90 03 00 08 */	stw r0, 0x8(r3)
+/* 802CEC3C 002C49BC  D0 23 00 0C */	stfs f1, 0xc(r3)
+/* 802CEC40 002C49C0  90 C3 00 00 */	stw r6, 0x0(r3)
+/* 802CEC44 002C49C4  D0 C3 00 10 */	stfs f6, 0x10(r3)
+/* 802CEC48 002C49C8  D0 A3 00 14 */	stfs f5, 0x14(r3)
+/* 802CEC4C 002C49CC  D0 83 00 18 */	stfs f4, 0x18(r3)
+/* 802CEC50 002C49D0  D0 63 00 20 */	stfs f3, 0x20(r3)
+/* 802CEC54 002C49D4  D0 43 00 24 */	stfs f2, 0x24(r3)
+/* 802CEC58 002C49D8  D0 03 00 28 */	stfs f0, 0x28(r3)
+/* 802CEC5C 002C49DC  D0 23 00 1C */	stfs f1, 0x1c(r3)
+/* 802CEC60 002C49E0  D0 23 00 2C */	stfs f1, 0x2c(r3)
+/* 802CEC64 002C49E4  4E 80 00 20 */	blr
+.endfn fn_802CEBE0

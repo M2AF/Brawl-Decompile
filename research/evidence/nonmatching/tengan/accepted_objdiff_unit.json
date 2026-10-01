@@ -1,0 +1,259 @@
+{
+  "name": "st_tengan/mo_stage/st_tengan/gr_tengan",
+  "measures": {
+    "fuzzy_match_percent": 100.0,
+    "total_code": "628",
+    "matched_code": "628",
+    "matched_code_percent": 100.0,
+    "total_data": "640",
+    "total_functions": 21,
+    "matched_functions": 21,
+    "matched_functions_percent": 100.0,
+    "complete_code": "628",
+    "complete_code_percent": 100.0,
+    "complete_data": "640",
+    "complete_data_percent": 100.0,
+    "total_units": 1,
+    "complete_units": 1
+  },
+  "sections": [
+    {
+      "name": ".data",
+      "size": "640",
+      "fuzzy_match_percent": 98.765434,
+      "metadata": {
+        "virtual_address": "2104"
+      }
+    },
+    {
+      "name": ".text",
+      "size": "628",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "virtual_address": "25416"
+      }
+    }
+  ],
+  "functions": [
+    {
+      "name": "create__8grTenganFiPCcPCc",
+      "size": "212",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTengan::create(int, const char*, const char*)",
+        "virtual_address": "25416"
+      },
+      "address": "0"
+    },
+    {
+      "name": "setMdlIndex__6GroundFi",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::setMdlIndex(int)",
+        "virtual_address": "25628"
+      },
+      "address": "212"
+    },
+    {
+      "name": "__ct__8grTenganFPCc",
+      "size": "76",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTengan::grTengan(const char*)",
+        "virtual_address": "25636"
+      },
+      "address": "220"
+    },
+    {
+      "name": "__dt__8grTenganFv",
+      "size": "88",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTengan::~grTengan()",
+        "virtual_address": "25712"
+      },
+      "address": "296"
+    },
+    {
+      "name": "update__8grTenganFf",
+      "size": "4",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTengan::update(float)",
+        "virtual_address": "25800"
+      },
+      "address": "384"
+    },
+    {
+      "name": "setTgtNode__8grTenganFPCc",
+      "size": "92",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTengan::setTgtNode(const char*)",
+        "virtual_address": "25804"
+      },
+      "address": "388"
+    },
+    {
+      "name": "getTgtNode__8grTenganFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTengan::getTgtNode()",
+        "virtual_address": "25896"
+      },
+      "address": "480"
+    },
+    {
+      "name": "adventureEventGetItem__6GroundFiP13stTriggerData",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::adventureEventGetItem(int, stTriggerData*)",
+        "virtual_address": "25904"
+      },
+      "address": "488"
+    },
+    {
+      "name": "getInitializeInfo__6GroundFi",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::getInitializeInfo(int)",
+        "virtual_address": "25912"
+      },
+      "address": "496"
+    },
+    {
+      "name": "setInitializeInfo__6GroundFi",
+      "size": "4",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::setInitializeInfo(int)",
+        "virtual_address": "25920"
+      },
+      "address": "504"
+    },
+    {
+      "name": "setInitializeFlag__6GroundFv",
+      "size": "4",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::setInitializeFlag()",
+        "virtual_address": "25924"
+      },
+      "address": "508"
+    },
+    {
+      "name": "disableCalcCollision__6GroundFv",
+      "size": "16",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::disableCalcCollision()",
+        "virtual_address": "25928"
+      },
+      "address": "512"
+    },
+    {
+      "name": "enableCalcCollision__6GroundFv",
+      "size": "16",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::enableCalcCollision()",
+        "virtual_address": "25944"
+      },
+      "address": "528"
+    },
+    {
+      "name": "isEnableCalcCollision__6GroundFv",
+      "size": "12",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::isEnableCalcCollision()",
+        "virtual_address": "25960"
+      },
+      "address": "544"
+    },
+    {
+      "name": "getMdlIndex__6GroundFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::getMdlIndex()",
+        "virtual_address": "25972"
+      },
+      "address": "556"
+    },
+    {
+      "name": "initStageData__6GroundFv",
+      "size": "4",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::initStageData()",
+        "virtual_address": "25980"
+      },
+      "address": "564"
+    },
+    {
+      "name": "getStageData__6GroundFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::getStageData()",
+        "virtual_address": "25984"
+      },
+      "address": "568"
+    },
+    {
+      "name": "getModelCount__6GroundFv",
+      "size": "28",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "Ground::getModelCount()",
+        "virtual_address": "25992"
+      },
+      "address": "576"
+    },
+    {
+      "name": "getTransparencyFlag__9grGimmickFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grGimmick::getTransparencyFlag()",
+        "virtual_address": "26020"
+      },
+      "address": "604"
+    },
+    {
+      "name": "getGimmickData__9grGimmickFv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grGimmick::getGimmickData()",
+        "virtual_address": "26028"
+      },
+      "address": "612"
+    },
+    {
+      "name": "setGimmickData__9grGimmickFPv",
+      "size": "8",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grGimmick::setGimmickData(void*)",
+        "virtual_address": "26036"
+      },
+      "address": "620"
+    }
+  ],
+  "metadata": {
+    "complete": true,
+    "module_name": "st_tengan",
+    "module_id": 60,
+    "source_path": "src/mo_stage/st_tengan/gr_tengan.cpp",
+    "progress_categories": [
+      "modules"
+    ],
+    "auto_generated": false
+  }
+}

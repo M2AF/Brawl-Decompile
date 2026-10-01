@@ -1,0 +1,42 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+DIFF createBeltConveyors__9stDxOnettFv        createBeltConveyors__9stDxOnettFv             91 93
+    --- target
+    +++ candidate
+    @@ -40,4 +40,5 @@
+     stfs    f1,32(r3)
+     stfs    f0,36(r3)
+    +lwz     r3,760(r28)
+     stw     r30,0(r3)
+     lwz     r3,0(r31)
+    @@ -76,4 +77,5 @@
+     stfs    f1,32(r3)
+     stfs    f0,36(r3)
+    +lwz     r3,764(r28)
+     stw     r30,0(r3)
+     lwz     r3,0(r31)
+DIFF updateKanban__9stDxOnettFf               updateKanban__9stDxOnettFf                    58 59
+    --- target
+    +++ candidate
+    @@ -25,11 +25,12 @@
+     bne <addr>
+     bl <addr>
+    -lfs     f0,24(r31)
+    +lfs     f2,24(r31)
+     li      r0,3
+    -lfs     f2,20(r31)
+    -fsubs   f0,f0,f2
+    +lfs     f0,20(r31)
+    +fsubs   f2,f2,f0
+     stb     r0,741(r30)
+    -fmuls   f0,f0,f1
+    -fadds   f0,f2,f0
+    +lfs     f0,20(r31)
+    +fmuls   f1,f2,f1
+    +fadds   f0,f0,f1
+     stfs    f0,744(r30)
+     b <addr>
+DIFF chooseCar__9stDxOnettFUl                 chooseCar__9stDxOnettFUl                      145 145
+SAME section .rodata: target 88 bytes, candidate 88 bytes
+SAME section .data: target 1352 bytes, candidate 1352 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 68/71. Section contents match. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

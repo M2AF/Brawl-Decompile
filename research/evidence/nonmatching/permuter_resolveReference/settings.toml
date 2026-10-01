@@ -1,0 +1,3 @@
+func_name = "resolveReference"
+compiler_type = "mwcc"
+objdump_command = "C:/Users/balla/AppData/Local/Temp/claude/C--Users-balla-Documents-Brawl-Decompile/7bc8fa43-f13b-42c3-b039-71040809bd6c/scratchpad/bin/powerpc-eabi-objdump.exe -dr -EB -mpowerpc -M broadway"

@@ -1,0 +1,35 @@
+.include "macros.inc"
+.file "auto_fn_8016F148_text"
+
+# 0x8016F148..0x8016F198 | size: 0x50
+.text
+.balign 4
+
+# .text:0x0 | 0x8016F148 | size: 0x50
+.fn fn_8016F148, global
+/* 8016F148 00164EC8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8016F14C 00164ECC  7C 08 02 A6 */	mflr r0
+/* 8016F150 00164ED0  38 80 00 04 */	li r4, 0x4
+/* 8016F154 00164ED4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8016F158 00164ED8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8016F15C 00164EDC  3F E0 80 4A */	lis r31, lbl_804A3E70@ha
+/* 8016F160 00164EE0  38 7F 3E 70 */	addi r3, r31, lbl_804A3E70@l
+/* 8016F164 00164EE4  4B FE CE 39 */	bl fn_8015BF9C
+/* 8016F168 00164EE8  3B FF 3E 70 */	addi r31, r31, lbl_804A3E70@l
+/* 8016F16C 00164EEC  38 80 00 04 */	li r4, 0x4
+/* 8016F170 00164EF0  38 7F 00 10 */	addi r3, r31, 0x10
+/* 8016F174 00164EF4  4B FE CE 29 */	bl fn_8015BF9C
+/* 8016F178 00164EF8  38 00 00 00 */	li r0, 0x0
+/* 8016F17C 00164EFC  90 1F 00 0C */	stw r0, 0xc(r31)
+/* 8016F180 00164F00  90 1F 00 1C */	stw r0, 0x1c(r31)
+/* 8016F184 00164F04  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8016F188 00164F08  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8016F18C 00164F0C  7C 08 03 A6 */	mtlr r0
+/* 8016F190 00164F10  38 21 00 10 */	addi r1, r1, 0x10
+/* 8016F194 00164F14  4E 80 00 20 */	blr
+.endfn fn_8016F148
+
+# 0x8040659C..0x804065A0 | size: 0x4
+.section .ctors, "a"
+.balign 4
+	.4byte fn_8016F148

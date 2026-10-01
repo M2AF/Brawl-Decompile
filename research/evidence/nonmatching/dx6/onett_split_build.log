@@ -1,0 +1,28 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\ninja.exe
+[1/2] SPLIT config\RSBE01_01\config.yml
+ WARN Alignment for mo_fighter/ft_marth/ft_marth_status_uniq_process_special_hi.cpp .data expected 8, but starts at 4:0x00005584
+[2/2] RUN configure.py
+[1/9] LINK build\RSBE01_01\st_dxonett\st_dxonett.preplf
+[2/9] MWCC build\RSBE01_01\src\mo_stage\st_dxonett\st_dxonett.o
+[3/9] LINK build\RSBE01_01\st_dxonett\st_dxonett.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'stDxOnett::create()' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+[4/9] REL
+[5/9] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[6/9] REPORT
+[7/9] PROGRESS
+Progress:
+  All: 1.43% matched, 1.19% linked (525 / 4395 files)
+    Code: 226916 / 15833548 bytes (3033 / 92522 functions)
+    Data: 843740 / 5667448 bytes (14.89%)
+  DOL: 1.37% matched, 0.85% linked (65 / 1722 files)
+    Code: 57172 / 4170064 bytes (511 / 14278 functions)
+    Data: 6720 / 1724104 bytes (0.39%)
+  Modules: 1.46% matched, 1.32% linked (460 / 2673 files)
+    Code: 169744 / 11663484 bytes (2522 / 78244 functions)
+    Data: 837020 / 3943344 bytes (21.23%)
+PASS: OK: 127/127 binaries verified

@@ -1,0 +1,44 @@
+--- before
++++ after
+@@ -37837,12 +37837,14 @@
+ 
+ void updateRanks(float deltaFrame)
+ {
++  u8 *new_var;
+   stKartData *data = (stKartData *) m_stageData;
++  int new_var2;
+   if (data)
+   {
+-    m_bgState = 10;
+     bool allOnFinalLap = true;
+     __alloca(data->m_kartNum * (sizeof(int)));
++    m_bgState = 10;
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
+@@ -37850,11 +37852,14 @@
+       {
+         stKartRecord *kart = &m_karts[i];
+         kart->m_rank = 0;
++ do { } while (0);
+         if (kart->m_lap < 10)
+         {
+           allOnFinalLap = false;
+         }
+-        if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))
++        new_var2 = 20;
++        new_var2 = kart->m_checkpoint > new_var2;
++        if ((new_var2 && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))
+         {
+           if (m_warningState == 10)
+           {
+@@ -37893,7 +37898,8 @@
+           u8 otherNum = data->m_kartNum;
+           for (; j != otherNum; j++)
+           {
+-            if (i != j)
++            new_var = &i;
++            if ((*new_var) != j)
+             {
+               stKartRecord *other = &m_karts[j];
+               bool isBehind = false;

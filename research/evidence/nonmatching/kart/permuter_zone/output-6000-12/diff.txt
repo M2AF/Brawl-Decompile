@@ -1,0 +1,20 @@
+--- before
++++ after
+@@ -37883,6 +37883,9 @@
+ 
+ int getZoneLightSetIndex(Vec3f *pos)
+ {
++  if (((!pos) && (!pos)) && (!pos))
++  {
++  }
+   if (pos == 0)
+   {
+     return 0x14;
+@@ -37939,6 +37942,7 @@
+       return 0x15;
+     }
+   }
++  x = x;
+   if (((x >= 100.0f) && (x <= 250.0f)) && (y <= 25.0f))
+   {
+     return 0x15;

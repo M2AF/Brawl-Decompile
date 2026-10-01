@@ -1,0 +1,21 @@
+--- before
++++ after
+@@ -37860,8 +37860,8 @@
+           {
+             m_warningState = 0;
+           }
++        }
+           m_bgState = 9;
+-        }
+         if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true))
+         {
+           m_bgState = 8;
+@@ -37885,7 +37885,7 @@
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
+-      for (; i != kartNum; i++)
++      for (; (((((((i != kartNum) & 0xFFFFFFFF) & 0xFFFFFFFF) & 0xFFFFFFFF) & 0xFFFFFFFF) & 0xFFFFFFFF) & 0xFFFFFFFF) & 0xFFFFFFFF; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+         {

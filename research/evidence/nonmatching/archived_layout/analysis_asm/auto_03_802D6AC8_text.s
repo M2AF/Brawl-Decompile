@@ -1,0 +1,51 @@
+.include "macros.inc"
+.file "auto_03_802D6AC8_text"
+
+# 0x802D6AC8..0x802D6B5C | size: 0x94
+.text
+.balign 4
+
+# .text:0x0 | 0x802D6AC8 | size: 0x14
+.fn fn_802D6AC8, global
+/* 802D6AC8 002CC848  38 60 00 03 */	li r3, 0x3
+/* 802D6ACC 002CC84C  38 00 00 01 */	li r0, 0x1
+/* 802D6AD0 002CC850  90 64 00 00 */	stw r3, 0x0(r4)
+/* 802D6AD4 002CC854  98 04 00 04 */	stb r0, 0x4(r4)
+/* 802D6AD8 002CC858  4E 80 00 20 */	blr
+.endfn fn_802D6AC8
+
+# .text:0x14 | 0x802D6ADC | size: 0x80
+.fn fn_802D6ADC, global
+/* 802D6ADC 002CC85C  C0 03 00 10 */	lfs f0, 0x10(r3)
+/* 802D6AE0 002CC860  D0 04 00 00 */	stfs f0, 0x0(r4)
+/* 802D6AE4 002CC864  C0 03 00 14 */	lfs f0, 0x14(r3)
+/* 802D6AE8 002CC868  D0 04 00 04 */	stfs f0, 0x4(r4)
+/* 802D6AEC 002CC86C  C0 03 00 18 */	lfs f0, 0x18(r3)
+/* 802D6AF0 002CC870  D0 04 00 08 */	stfs f0, 0x8(r4)
+/* 802D6AF4 002CC874  C0 03 00 1C */	lfs f0, 0x1c(r3)
+/* 802D6AF8 002CC878  D0 04 00 0C */	stfs f0, 0xc(r4)
+/* 802D6AFC 002CC87C  C0 03 00 0C */	lfs f0, 0xc(r3)
+/* 802D6B00 002CC880  D0 04 00 0C */	stfs f0, 0xc(r4)
+/* 802D6B04 002CC884  C0 03 00 20 */	lfs f0, 0x20(r3)
+/* 802D6B08 002CC888  D0 04 00 10 */	stfs f0, 0x10(r4)
+/* 802D6B0C 002CC88C  C0 03 00 24 */	lfs f0, 0x24(r3)
+/* 802D6B10 002CC890  D0 04 00 14 */	stfs f0, 0x14(r4)
+/* 802D6B14 002CC894  C0 03 00 28 */	lfs f0, 0x28(r3)
+/* 802D6B18 002CC898  D0 04 00 18 */	stfs f0, 0x18(r4)
+/* 802D6B1C 002CC89C  C0 03 00 2C */	lfs f0, 0x2c(r3)
+/* 802D6B20 002CC8A0  D0 04 00 1C */	stfs f0, 0x1c(r4)
+/* 802D6B24 002CC8A4  C0 03 00 0C */	lfs f0, 0xc(r3)
+/* 802D6B28 002CC8A8  D0 04 00 1C */	stfs f0, 0x1c(r4)
+/* 802D6B2C 002CC8AC  C0 03 00 30 */	lfs f0, 0x30(r3)
+/* 802D6B30 002CC8B0  D0 04 00 20 */	stfs f0, 0x20(r4)
+/* 802D6B34 002CC8B4  C0 03 00 34 */	lfs f0, 0x34(r3)
+/* 802D6B38 002CC8B8  D0 04 00 24 */	stfs f0, 0x24(r4)
+/* 802D6B3C 002CC8BC  C0 03 00 38 */	lfs f0, 0x38(r3)
+/* 802D6B40 002CC8C0  D0 04 00 28 */	stfs f0, 0x28(r4)
+/* 802D6B44 002CC8C4  C0 03 00 3C */	lfs f0, 0x3c(r3)
+/* 802D6B48 002CC8C8  D0 04 00 2C */	stfs f0, 0x2c(r4)
+/* 802D6B4C 002CC8CC  C0 03 00 0C */	lfs f0, 0xc(r3)
+/* 802D6B50 002CC8D0  7C 83 23 78 */	mr r3, r4
+/* 802D6B54 002CC8D4  D0 04 00 2C */	stfs f0, 0x2c(r4)
+/* 802D6B58 002CC8D8  4E 80 00 20 */	blr
+.endfn fn_802D6ADC

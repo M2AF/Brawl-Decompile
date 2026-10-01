@@ -1,0 +1,23 @@
+--- before
++++ after
+@@ -1328,10 +1328,12 @@
+ 
+ u32 requestSlow(u8 rate)
+ {
++  u8 *new_var;
+   u8 res = 0xFF;
+   SlowRequest *reqs = s_gfSlowManager.m_reqs;
+   SlowRequest *curr;
+   u8 i;
++  new_var = &res;
+   for (i = 0; i < NRequests; i++)
+   {
+     curr = &reqs[i];
+@@ -1345,6 +1347,6 @@
+     }
+   }
+ 
+-  return ((u32) res) << 24;
++  return ((u32) (*new_var)) << 24;
+ }
+ 

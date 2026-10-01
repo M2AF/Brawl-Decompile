@@ -1,0 +1,92 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+DIFF createKanban__9stDxOnettFi               createKanban__9stDxOnettFi                    82 81
+DIFF createBeltConveyors__9stDxOnettFv        createBeltConveyors__9stDxOnettFv             91 103
+DIFF updateKanban__9stDxOnettFf               updateKanban__9stDxOnettFf                    58 56
+    --- target
+    +++ candidate
+    @@ -9,12 +9,10 @@
+     beq <addr>
+     lbz     r0,741(r3)
+    -cmpwi   r0,2
+    +cmplwi  r0,2
+    +beq <addr>
+    +cmpwi   r0,1
+     beq <addr>
+     bge <addr>
+     cmpwi   r0,0
+    -beq <addr>
+    -bge <addr>
+    -b <addr>
+    -cmpwi   r0,4
+     bge <addr>
+     b <addr>
+    @@ -25,10 +23,10 @@
+     bne <addr>
+     bl <addr>
+    +lfs     f2,20(r31)
+    +li      r0,3
+    +stb     r0,741(r30)
+     lfs     f0,24(r31)
+    -li      r0,3
+    -lfs     f2,20(r31)
+     fsubs   f0,f0,f2
+    -stb     r0,741(r30)
+    -fmuls   f0,f0,f1
+    +fmuls   f0,f1,f0
+     fadds   f0,f2,f0
+     stfs    f0,744(r30)
+DIFF chooseCar__9stDxOnettFUl                 chooseCar__9stDxOnettFUl                      145 145
+    --- target
+    +++ candidate
+    @@ -105,29 +105,29 @@
+     stb     r5,600(r29)
+     addi    r3,r29,608
+    -lfs     f0,0(r31)
+    -addi    r4,r1,8
+    +lfs     f4,0(r31)
+    +addi    r4,r1,24
+     stb     r5,601(r29)
+    -lfs     f4,68(r31)
+    -stfs    f0,8(r1)
+    -lfs     f3,72(r31)
+    -lfs     f2,76(r31)
+    -lfs     f1,80(r31)
+    +lfs     f3,68(r31)
+    +stfs    f4,24(r1)
+    +lfs     f2,72(r31)
+    +lfs     f1,76(r31)
+    +lfs     f0,80(r31)
+    +stfs    f4,28(r1)
+    +stfs    f4,32(r1)
+    +lwz     r0,616(r29)
+    +stfs    f3,16(r1)
+    +clrlwi  r0,r0,3
+    +stfs    f2,20(r1)
+    +stfs    f1,8(r1)
+     stfs    f0,12(r1)
+    -stfs    f0,16(r1)
+    -lwz     r0,616(r29)
+    -stfs    f4,32(r1)
+    -clrlwi  r0,r0,3
+    -stfs    f3,36(r1)
+    -stfs    f2,24(r1)
+    -stfs    f1,28(r1)
+     stw     r0,616(r29)
+     bl <addr>
+     lwz     r0,616(r29)
+     li      r3,0
+    -lfs     f3,24(r1)
+    -lfs     f2,28(r1)
+    +lfs     f3,8(r1)
+    +lfs     f2,12(r1)
+     rlwinm  r0,r0,0,6,2
+    -lfs     f1,32(r1)
+    -lfs     f0,36(r1)
+    +lfs     f1,16(r1)
+    +lfs     f0,20(r1)
+     stfs    f3,668(r29)
+     stfs    f2,672(r29)
+SAME section .rodata: target 88 bytes, candidate 88 bytes
+SAME section .data: target 1352 bytes, candidate 1352 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 67/71. Section contents match. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

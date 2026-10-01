@@ -1,0 +1,19 @@
+--- before
++++ after
+@@ -37909,11 +37909,16 @@
+                   isBehind = true;
+                 }
+                 else
++                {
+                   if (kart->m_checkpoint == other->m_checkpoint)
+                 {
+                   if (kart->m_distance < other->m_distance)
+                   {
+                     isBehind = true;
++                    }
++                  }
++                  if (!true)
++                  {
+                   }
+                 }
+               }

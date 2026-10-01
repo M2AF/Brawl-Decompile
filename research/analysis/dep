@@ -1,0 +1,4 @@
+research/analysis/config.json: \
+  research/local/iso/sys/main.dol \
+  research/reports/analyzed-splits.txt \
+  research/reports/analyzed-symbols.txt

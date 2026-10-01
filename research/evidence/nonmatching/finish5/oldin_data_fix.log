@@ -1,0 +1,18 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex5 (codex/finish)
+DIFF __dt__7stOldinFv                         __dt__7stOldinFv                              48 52
+DIFF createObj__7stOldinFv                    createObj__7stOldinFv                         925 961
+DIFF fn_53_129C                               fn_53_129C                                    192 204
+DIFF fn_53_159C                               fn_53_159C                                    571 583
+DIFF fn_53_1E88                               fn_53_1E88                                    361 349
+DIFF fn_53_242C                               fn_53_242C                                    632 602
+DIFF fn_53_2E0C                               fn_53_2E0C                                    345 356
+DIFF fn_53_3370                               fn_53_3370                                    515 540
+DIFF fn_53_3B7C                               fn_53_3B7C                                    73 94
+DIFF fn_53_3CA0                               fn_53_3CA0                                    67 91
+DIFF fn_53_3DAC                               fn_53_3DAC                                    70 95
+DIFF fn_53_3EC4                               fn_53_3EC4                                    36 36
+Candidate-only functions (often unreferenced weak inlines the linker strips): __dt__15stOldinOpaque84Fv, __dt__Q34nw4r2ut5ColorFv
+DIFF section .rodata: target 228 bytes, candidate 224 bytes
+SAME section .data: target 1728 bytes, candidate 1728 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 41/53. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

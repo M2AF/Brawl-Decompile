@@ -1,0 +1,69 @@
+--- before
++++ after
+@@ -37835,6 +37835,11 @@
+ 
+ 
+ 
++inline u8 inline_fn(stKartData *arg0)
++{
++  return arg0->m_kartNum;
++}
++
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
+@@ -37842,10 +37847,10 @@
+   {
+     m_bgState = 10;
+     bool allOnFinalLap = true;
+-    __alloca(data->m_kartNum * (sizeof(int)));
++    __alloca(inline_fn(data) * (sizeof(int)));
+     {
+       u8 i = 0;
+-      u8 kartNum = data->m_kartNum;
++      u8 kartNum = inline_fn(data);
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+@@ -37858,7 +37863,14 @@
+         {
+           if (m_warningState == 10)
+           {
++            if (true)
++            {
+             m_warningState = 0;
++            }
++            else
++            {
++              m_warningState = 0;
++            }
+           }
+           m_bgState = 9;
+         }
+@@ -37871,7 +37883,9 @@
+     }
+     {
+       u8 i = 0;
+-      u8 kartNum = data->m_kartNum;
++      u8 kartNum = inline_fn(data);
++      kartNum++;
++      kartNum--;
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+@@ -37884,13 +37898,13 @@
+     }
+     {
+       u8 i = 0;
+-      u8 kartNum = data->m_kartNum;
++      u8 kartNum = inline_fn(data);
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+         {
+           u8 j = 0;
+-          u8 otherNum = data->m_kartNum;
++          u8 otherNum = inline_fn(data);
+           for (; j != otherNum; j++)
+           {
+             if (i != j)

@@ -1,0 +1,6 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex5 (codex/finish)
+DIFF updateVisibility__13grTenganFloorFf      updateVisibility__13grTenganFloorFf           11 12
+Candidate-only functions (often unreferenced weak inlines the linker strips): setMdlIndex__6GroundFi, getStageData__6GroundFv, adventureEventGetItem__6GroundFiP13stTriggerData, getInitializeInfo__6GroundFi, setInitializeFlag__6GroundFv, disableCalcCollision__6GroundFv, enableCalcCollision__6GroundFv, isEnableCalcCollision__6GroundFv, getMdlIndex__6GroundFv, initStageData__6GroundFv, setStageData__6GroundFPv, getModelCount__6GroundFv, getTransparencyFlag__9grGimmickFv, getGimmickData__9grGimmickFv, setGimmickData__9grGimmickFPv, setKind__13grTenganFloorFUc, setEventFlags__13grTenganFloorFPUc, setEventTime__13grTenganFloorFPf
+SAME section .rodata: target 16 bytes, candidate 16 bytes
+DIFF section .data: target 544 bytes, candidate 680 bytes
+Instruction diagnostics: 6/7. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

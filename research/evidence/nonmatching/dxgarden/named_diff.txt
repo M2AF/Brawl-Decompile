@@ -1,0 +1,541 @@
+== create__10stDxGardenFv: DIFF
+--- target
++++ candidate
+@@ -11,8 +11,8 @@
+ beq <addr>
+ lis     r4,0
+-R_PPC_ADDR16_HA	lbl_77_data_0
++R_PPC_ADDR16_HA
+ li      r5,43
+ addi    r4,r4,0
+-R_PPC_ADDR16_LO	lbl_77_data_0
++R_PPC_ADDR16_LO
+ bl <addr>
+ R_PPC_REL24	__ct__7stMeleeFPCcQ26Stages11srStageKind
+== __dt__10stDxGardenFv: MATCH (39 insns)
+== loading__10stDxGardenFv: MATCH (2 insns)
+== createObj__10stDxGardenFv: DIFF
+--- target
++++ candidate
+@@ -145,10 +145,10 @@
+ lwz     r12,60(r31)
+ lis     r6,0
+-R_PPC_ADDR16_HA	lbl_77_data_C
++R_PPC_ADDR16_HA
+ mr      r3,r31
+ lwz     r4,416(r31)
+ lwz     r12,104(r12)
+ addi    r6,r6,0
+-R_PPC_ADDR16_LO	lbl_77_data_C
++R_PPC_ADDR16_LO
+ li      r5,101
+ li      r8,0
+== fn_77_3CC__10stDxGardenFi: DIFF
+--- target
++++ candidate
+@@ -9,12 +9,12 @@
+ b <addr>
+ lis     r4,0
+-R_PPC_ADDR16_HA	lbl_77_data_1C
++R_PPC_ADDR16_HA
+ lis     r5,0
+-R_PPC_ADDR16_HA	lbl_77_data_28
++R_PPC_ADDR16_HA
+ addi    r4,r4,0
+-R_PPC_ADDR16_LO	lbl_77_data_1C
++R_PPC_ADDR16_LO
+ li      r3,6
+ addi    r5,r5,0
+-R_PPC_ADDR16_LO	lbl_77_data_28
++R_PPC_ADDR16_LO
+ bl <addr>
+ R_PPC_REL24	fn_77_1038
+== setStageData__6GroundFPv: MATCH (2 insns)
+== fn_77_480__10stDxGardenFi: DIFF
+--- target
++++ candidate
+@@ -9,12 +9,12 @@
+ b <addr>
+ lis     r4,0
+-R_PPC_ADDR16_HA	lbl_77_data_38
++R_PPC_ADDR16_HA
+ lis     r5,0
+-R_PPC_ADDR16_HA	lbl_77_data_40
++R_PPC_ADDR16_HA
+ addi    r4,r4,0
+-R_PPC_ADDR16_LO	lbl_77_data_38
++R_PPC_ADDR16_LO
+ li      r3,10
+ addi    r5,r5,0
+-R_PPC_ADDR16_LO	lbl_77_data_40
++R_PPC_ADDR16_LO
+ bl <addr>
+ R_PPC_REL24	fn_77_190C
+== fn_77_52C__10stDxGardenFi: DIFF
+--- target
++++ candidate
+@@ -9,12 +9,12 @@
+ b <addr>
+ lis     r4,0
+-R_PPC_ADDR16_HA	lbl_77_data_50
++R_PPC_ADDR16_HA
+ lis     r5,0
+-R_PPC_ADDR16_HA	lbl_77_data_60
++R_PPC_ADDR16_HA
+ addi    r4,r4,0
+-R_PPC_ADDR16_LO	lbl_77_data_50
++R_PPC_ADDR16_LO
+ li      r3,4
+ addi    r5,r5,0
+-R_PPC_ADDR16_LO	lbl_77_data_60
++R_PPC_ADDR16_LO
+ bl <addr>
+ R_PPC_REL24	fn_77_1140
+== fn_77_5D8__10stDxGardenFi: DIFF
+--- target
++++ candidate
+@@ -2,9 +2,9 @@
+ mflr    r0
+ lis     r5,0
+-R_PPC_ADDR16_HA	lbl_77_data_0
++R_PPC_ADDR16_HA	...data.0
+ cmpwi   r4,9
+ stw     r0,36(r1)
+ addi    r5,r5,0
+-R_PPC_ADDR16_LO	lbl_77_data_0
++R_PPC_ADDR16_LO	...data.0
+ stw     r31,28(r1)
+ stw     r30,24(r1)
+== fn_77_6D0__14grDxGardenLampFi: MATCH (2 insns)
+== fn_77_6D8__10stDxGardenFi: DIFF
+--- target
++++ candidate
+@@ -9,12 +9,12 @@
+ b <addr>
+ lis     r4,0
+-R_PPC_ADDR16_HA	lbl_77_data_B8
++R_PPC_ADDR16_HA
+ lis     r5,0
+-R_PPC_ADDR16_HA	lbl_77_data_C8
++R_PPC_ADDR16_HA
+ addi    r4,r4,0
+-R_PPC_ADDR16_LO	lbl_77_data_B8
++R_PPC_ADDR16_LO
+ li      r3,8
+ addi    r5,r5,0
+-R_PPC_ADDR16_LO	lbl_77_data_C8
++R_PPC_ADDR16_LO
+ bl <addr>
+ R_PPC_REL24	fn_77_6284
+== fn_77_79C__16grDxGardenSuimenFP5Vec3f: MATCH (2 insns)
+== fn_77_7A4__10stDxGardenFi: DIFF
+--- target
++++ candidate
+@@ -2,9 +2,9 @@
+ mflr    r0
+ lis     r5,0
+-R_PPC_ADDR16_HA	lbl_77_data_0
++R_PPC_ADDR16_HA	...data.0
+ cmplwi  r4,10
+ stw     r0,20(r1)
+ addi    r5,r5,0
+-R_PPC_ADDR16_LO	lbl_77_data_0
++R_PPC_ADDR16_LO	...data.0
+ stw     r31,12(r1)
+ stw     r30,8(r1)
+@@ -12,8 +12,8 @@
+ bgt <addr>
+ lis     r3,0
+-R_PPC_ADDR16_HA	jumptable_77_data_188
++R_PPC_ADDR16_HA
+ slwi    r0,r4,2
+ addi    r3,r3,0
+-R_PPC_ADDR16_LO	jumptable_77_data_188
++R_PPC_ADDR16_LO
+ lwzx    r3,r3,r0
+ mtctr   r3
+== fn_77_8C4__10stDxGardenFv: DIFF
+--- target
++++ candidate
+@@ -1,15 +1,10 @@
+-stwu    r1,-32(r1)
++stwu    r1,-16(r1)
+ mflr    r0
+-stw     r0,36(r1)
+-stw     r31,28(r1)
+-lis     r31,0
+-R_PPC_ADDR16_HA	stageConstants
+-addi    r31,r31,0
+-R_PPC_ADDR16_LO	stageConstants
+-stw     r30,24(r1)
+-stw     r29,20(r1)
+-mr      r29,r3
+-lwz     r30,156(r3)
+-cmpwi   r30,0
++stw     r0,20(r1)
++stw     r31,12(r1)
++stw     r30,8(r1)
++mr      r30,r3
++lwz     r31,156(r3)
++cmpwi   r31,0
+ beq <addr>
+ li      r3,56
+@@ -18,5 +13,5 @@
+ R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+ cmpwi   r3,0
+-stw     r3,504(r29)
++stw     r3,504(r30)
+ beq <addr>
+ li      r4,0
+@@ -24,24 +19,29 @@
+ bl <addr>
+ R_PPC_REL24	memset
+-lfs     f0,0(r30)
++lfs     f0,0(r31)
++lis     r3,0
++R_PPC_ADDR16_HA	stageConstants
++lwz     r4,504(r30)
++addi    r6,r3,0
++R_PPC_ADDR16_LO	stageConstants
++lfs     f3,0(r3)
++R_PPC_ADDR16_LO	stageConstants
+ li      r0,1
+-lwz     r5,504(r29)
++stfs    f0,40(r4)
+ lis     r3,0
+ R_PPC_ADDR16_HA	g_stTriggerMng
++lfs     f2,4(r6)
++li      r4,17
++lwz     r7,504(r30)
++li      r5,-1
++lfs     f1,8(r6)
++stb     r0,44(r7)
++lfs     f0,12(r6)
++lfs     f4,4(r31)
++lwz     r6,504(r30)
++stfs    f4,48(r6)
++lwz     r6,504(r30)
++stfs    f3,24(r6)
+ lfs     f3,0(r31)
+-li      r4,17
+-stfs    f0,40(r5)
+-li      r5,-1
+-lfs     f2,4(r31)
+-lwz     r6,504(r29)
+-lfs     f1,8(r31)
+-stb     r0,44(r6)
+-lfs     f0,12(r31)
+-lfs     f4,4(r30)
+-lwz     r6,504(r29)
+-stfs    f4,48(r6)
+-lwz     r6,504(r29)
+-stfs    f3,24(r6)
+-lfs     f3,0(r30)
+ fsubs   f2,f3,f2
+ stfs    f2,28(r6)
+@@ -52,13 +52,12 @@
+ bl <addr>
+ R_PPC_REL24	createTrigger__12stTriggerMngFQ27Gimmick8AreaKindi
+-stw     r3,500(r29)
+-lwz     r4,504(r29)
++stw     r3,500(r30)
++lwz     r4,504(r30)
+ bl <addr>
+ R_PPC_REL24	setWaterTrigger__9stTriggerFP18grGimmickWaterData
+-lwz     r0,36(r1)
+-lwz     r31,28(r1)
+-lwz     r30,24(r1)
+-lwz     r29,20(r1)
++lwz     r0,20(r1)
++lwz     r31,12(r1)
++lwz     r30,8(r1)
+ mtlr    r0
+-addi    r1,r1,32
++addi    r1,r1,16
+ blr
+== update__10stDxGardenFf: DIFF
+--- target
++++ candidate
+@@ -6,10 +6,5 @@
+ fmr     f31,f1
+ stw     r31,12(r1)
+-lis     r31,0
+-R_PPC_ADDR16_HA	stageConstants
+-addi    r31,r31,0
+-R_PPC_ADDR16_LO	stageConstants
+-stw     r30,8(r1)
+-mr      r30,r3
++mr      r31,r3
+ lbz     r0,472(r3)
+ cmpwi   r0,1
+@@ -31,32 +26,36 @@
+ R_PPC_REL24	playSE__9sndSystemF5SndIDiiii
+ li      r0,1
+-stb     r0,472(r30)
+-lbz     r0,235(r30)
++stb     r0,472(r31)
++lbz     r0,235(r31)
+ cmplwi  r0,1
+ bne <addr>
+-lwz     r12,60(r30)
+-mr      r3,r30
+-lfs     f2,20(r31)
++lis     r4,0
++R_PPC_ADDR16_HA	stageConstants
++lwz     r12,60(r31)
++addi    r4,r4,0
++R_PPC_ADDR16_LO	stageConstants
++mr      r3,r31
++lfs     f2,20(r4)
+ lwz     r12,520(r12)
+ fmr     f3,f2
+-lfs     f1,16(r31)
+-lfs     f4,24(r31)
++lfs     f1,16(r4)
++lfs     f4,24(r4)
+ mtctr   r12
+ bctrl
+ b <addr>
+-lwz     r12,60(r30)
+-mr      r3,r30
++lwz     r12,60(r31)
++mr      r3,r31
+ lwz     r12,524(r12)
+ mtctr   r12
+ bctrl
+-lwz     r12,60(r30)
++lwz     r12,60(r31)
+ fmr     f1,f31
+-mr      r3,r30
++mr      r3,r31
+ lwz     r12,568(r12)
+ mtctr   r12
+ bctrl
+-lwz     r12,60(r30)
++lwz     r12,60(r31)
+ fmr     f1,f31
+-mr      r3,r30
++mr      r3,r31
+ lwz     r12,572(r12)
+ mtctr   r12
+@@ -66,5 +65,4 @@
+ lfd     f31,16(r1)
+ lwz     r31,12(r1)
+-lwz     r30,8(r1)
+ mtlr    r0
+ addi    r1,r1,32
+== fn_77_AAC__10stDxGardenFf: MATCH (26 insns)
+== fn_77_B08__10stDxGardenFf: DIFF
+--- target
++++ candidate
+@@ -1,37 +1,39 @@
+ lwz     r0,500(r3)
+-lis     r4,0
+-R_PPC_ADDR16_HA	stageConstants
+-mr      r7,r3
++mr      r8,r3
+ cmpwi   r0,0
+-addi    r4,r4,0
+-R_PPC_ADDR16_LO	stageConstants
+ beqlr
+-lwz     r5,504(r3)
+-cmpwi   r5,0
+-beqlr
+-lwz     r6,156(r3)
++lwz     r6,504(r3)
+ cmpwi   r6,0
+ beqlr
++lwz     r7,156(r3)
++cmpwi   r7,0
++beqlr
+ lfs     f1,488(r3)
++lis     r5,0
++R_PPC_ADDR16_HA	stageConstants
+ lfs     f0,476(r3)
++addi    r4,r5,0
++R_PPC_ADDR16_LO	stageConstants
+ lfs     f3,8(r4)
+ fsubs   f4,f1,f0
+ lfs     f1,12(r4)
+-lfs     f2,0(r4)
++lfs     f2,0(r5)
++R_PPC_ADDR16_LO	stageConstants
+ lfs     f0,28(r4)
+ fadds   f3,f3,f4
+-stfs    f3,32(r5)
+-lfs     f4,0(r6)
++stfs    f3,32(r6)
++lfs     f4,0(r7)
+ lfs     f3,492(r3)
+ fsubs   f3,f4,f3
+ fadds   f1,f1,f3
+-stfs    f1,36(r5)
++stfs    f1,36(r6)
+ fmuls   f1,f0,f1
+-stfs    f2,24(r5)
+-lfs     f0,0(r6)
++stfs    f2,24(r6)
++lfs     f0,0(r7)
+ fsubs   f0,f0,f1
+-stfs    f0,28(r5)
++stfs    f0,28(r6)
+ lwz     r3,500(r3)
+-lwz     r4,504(r7)
++lwz     r4,504(r8)
+ b <addr>
+ R_PPC_REL24	fn_27_233C70
++blr
+== lbl_water_update_epilogue: target=yes candidate=no
+== startFighterEvent__5StageFv: MATCH (1 insns)
+== initializeFighterAttackRatio__5StageFv: MATCH (2 insns)
+== helperStarWarp__5StageFv: MATCH (2 insns)
+== isSimpleBossBattleMode__5StageFv: MATCH (2 insns)
+== isBossBattleMode__5StageFv: MATCH (2 insns)
+== isCameraLocked__5StageFv: MATCH (2 insns)
+== notifyTimmingGameStart__5StageFv: MATCH (1 insns)
+== getFrameRuleTime__5StageFv: MATCH (2 insns)
+== setFrameRuleTime__5StageFf: MATCH (2 insns)
+== isNextStepBgmEqualNowStepBgmFromFlag__5StageFv: MATCH (2 insns)
+== getBgmPlayOffsetFrame__5StageFv: DIFF
+--- target
++++ candidate
+@@ -1,5 +1,5 @@
+ lis     r3,0
+-R_PPC_ADDR16_HA	stageConstants
++R_PPC_ADDR16_HA
+ lfs     f1,0(r3)
+-R_PPC_ADDR16_LO	stageConstants
++R_PPC_ADDR16_LO
+ blr
+== getBgmVolume__5StageFv: DIFF
+--- target
++++ candidate
+@@ -1,5 +1,5 @@
+ lis     r3,0
+-R_PPC_ADDR16_HA	lbl_77_rodata_20
++R_PPC_ADDR16_HA
+ lfs     f1,0(r3)
+-R_PPC_ADDR16_LO	lbl_77_rodata_20
++R_PPC_ADDR16_LO
+ blr
+== setBgmChange__5StageFfbUl: MATCH (4 insns)
+== getBgmChangeID__5StageFPUlPf: MATCH (5 insns)
+== isBgmChange__5StageFv: MATCH (2 insns)
+== getBgmOptionID__5StageFv: MATCH (2 insns)
+== getNowStepBgmID__5StageFv: MATCH (2 insns)
+== getBgmID__5StageFv: MATCH (2 insns)
+== getBgmID__5StageCFv: MATCH (2 insns)
+== appearanceFighterLocal__5StageFv: MATCH (1 insns)
+== getScrollDir__5StageFP5Vec3f: DIFF
+--- target
++++ candidate
+@@ -1,7 +1,7 @@
+ lis     r5,0
+-R_PPC_ADDR16_HA	stageConstants
++R_PPC_ADDR16_HA
+ li      r3,0
+ lfs     f0,0(r5)
+-R_PPC_ADDR16_LO	stageConstants
++R_PPC_ADDR16_LO
+ stfs    f0,0(r4)
+ stfs    f0,4(r4)
+== getDefaultLightSetIndex__5StageFv: MATCH (2 insns)
+== getAIRange__5StageFv: MATCH (2 insns)
+== isAdventureStage__5StageFv: MATCH (2 insns)
+== getPokeTrainerDrawLayer__5StageFv: MATCH (2 insns)
+== getPokeTrainerPositionZ__5StageFv: DIFF
+--- target
++++ candidate
+@@ -1,5 +1,5 @@
+ lis     r3,0
+-R_PPC_ADDR16_HA	stageConstants
++R_PPC_ADDR16_HA
+ lfs     f1,0(r3)
+-R_PPC_ADDR16_LO	stageConstants
++R_PPC_ADDR16_LO
+ blr
+== getPokeTrainerPointData__5StageFPii: MATCH (1 insns)
+== getPokeTrainerPointNum__5StageFv: MATCH (2 insns)
+== isReStartSamePoint__7stMeleeFv: MATCH (2 insns)
+== getWind2ndOnlyData__7stMeleeFv: MATCH (2 insns)
+== isBamperVector__10stDxGardenFv: MATCH (2 insns)
+== getFinalTechniqColor__10stDxGardenFv: MATCH (3 insns)
+== __sinit_\st_dxgarden_cpp: DIFF
+--- target
++++ candidate
+@@ -24,5 +24,5 @@
+ R_PPC_ADDR16_HA	__dt__32stClassInfoImpl<43,10stDxGarden>Fv
+ lis     r5,0
+-R_PPC_ADDR16_HA	lbl_77_bss_8
++R_PPC_ADDR16_HA
+ addi    r3,r31,0
+ R_PPC_ADDR16_LO	bss_loc_14__10stDxGarden
+@@ -30,5 +30,5 @@
+ R_PPC_ADDR16_LO	__dt__32stClassInfoImpl<43,10stDxGarden>Fv
+ addi    r5,r5,0
+-R_PPC_ADDR16_LO	lbl_77_bss_8
++R_PPC_ADDR16_LO
+ bl <addr>
+ R_PPC_REL24	__register_global_object
+== __dt__32stClassInfoImpl<43,10stDxGarden>Fv: DIFF
+--- target
++++ candidate
+@@ -7,5 +7,5 @@
+ stw     r30,8(r1)
+ mr      r30,r3
+-beq     d08Fv+0x58>
++beq     d38Fv+0x58>
+ lis     r6,0
+ R_PPC_ADDR16_HA	__vt__32stClassInfoImpl<43,10stDxGarden>
+@@ -15,14 +15,14 @@
+ li      r5,0
+ stw     r6,0(r3)
+-bl      ce8Fv+0x38>
++bl      d18Fv+0x38>
+ R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+ mr      r3,r30
+ li      r4,0
+-bl      cf4Fv+0x44>
++bl      d24Fv+0x44>
+ R_PPC_REL24	__dt__11stClassInfoFv
+ cmpwi   r31,0
+-ble     d08Fv+0x58>
++ble     d38Fv+0x58>
+ mr      r3,r30
+-bl      d04Fv+0x54>
++bl      d34Fv+0x54>
+ R_PPC_REL24	__dl__FPv
+ mr      r3,r30
+== create__32stClassInfoImpl<43,10stDxGarden>Fv: DIFF
+--- target
++++ candidate
+@@ -5,15 +5,15 @@
+ stw     r0,20(r1)
+ stw     r31,12(r1)
+-bl      d3cFv+0x18>
++bl      d6cFv+0x18>
+ R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+ cmpwi   r3,0
+ mr      r31,r3
+-beq     d84Fv+0x60>
++beq     db4Fv+0x60>
+ lis     r4,0
+-R_PPC_ADDR16_HA	lbl_77_data_0
++R_PPC_ADDR16_HA
+ li      r5,43
+ addi    r4,r4,0
+-R_PPC_ADDR16_LO	lbl_77_data_0
+-bl      d58Fv+0x34>
++R_PPC_ADDR16_LO
++bl      d88Fv+0x34>
+ R_PPC_REL24	__ct__7stMeleeFPCcQ26Stages11srStageKind
+ lis     r4,0
+@@ -28,5 +28,5 @@
+ stw     r0,504(r31)
+ stw     r0,500(r31)
+-bl      d80Fv+0x5c>
++bl      db0Fv+0x5c>
+ R_PPC_REL24	memset
+ mr      r3,r31
+== preload__32stClassInfoImpl<43,10stDxGarden>Fv: MATCH (1 insns)
+candidate-only: ['__dt__Q34nw4r2ut5ColorFv']

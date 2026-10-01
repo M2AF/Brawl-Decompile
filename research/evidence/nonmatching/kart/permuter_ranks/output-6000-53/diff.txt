@@ -1,0 +1,25 @@
+--- before
++++ after
+@@ -37858,7 +37858,14 @@
+         {
+           if (m_warningState == 10)
+           {
++            if (kart->m_lap || kart)
++            {
+             m_warningState = 0;
++            }
++            else
++            {
++              m_warningState = 0;
++            }
+           }
+           m_bgState = 9;
+         }
+@@ -37921,6 +37928,7 @@
+               {
+                 kart->m_rank++;
+               }
++              isBehind = true;
+             }
+           }
+ 

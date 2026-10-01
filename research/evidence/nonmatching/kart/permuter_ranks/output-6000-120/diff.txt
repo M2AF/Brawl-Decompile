@@ -1,0 +1,68 @@
+--- before
++++ after
+@@ -37835,17 +37835,24 @@
+ 
+ 
+ 
++inline u8 inline_fn(stKartData *arg0)
++{
++  return arg0->m_kartNum;
++}
++
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
++  u8 new_var;
++  new_var = true;
+   if (data)
+   {
+     m_bgState = 10;
+-    bool allOnFinalLap = true;
++    bool allOnFinalLap = new_var;
+     __alloca(data->m_kartNum * (sizeof(int)));
+     {
+       u8 i = 0;
+-      u8 kartNum = data->m_kartNum;
++      u8 kartNum = inline_fn(data);
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+@@ -37871,7 +37878,7 @@
+     }
+     {
+       u8 i = 0;
+-      u8 kartNum = data->m_kartNum;
++      u8 kartNum = inline_fn(data);
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+@@ -37884,16 +37891,17 @@
+     }
+     {
+       u8 i = 0;
+-      u8 kartNum = data->m_kartNum;
++      u8 kartNum = inline_fn(data);
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+         {
+           u8 j = 0;
+-          u8 otherNum = data->m_kartNum;
++          u8 otherNum = inline_fn(data);
++          new_var = i;
+           for (; j != otherNum; j++)
+           {
+-            if (i != j)
++            if (new_var != j)
+             {
+               stKartRecord *other = &m_karts[j];
+               bool isBehind = false;
+@@ -37919,7 +37927,7 @@
+               }
+               if (isBehind == true)
+               {
+-                kart->m_rank++;
++ do { kart->m_rank++; } while (0);
+               }
+             }
+           }

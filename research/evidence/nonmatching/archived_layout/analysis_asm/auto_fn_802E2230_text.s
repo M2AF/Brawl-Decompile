@@ -1,0 +1,52 @@
+.include "macros.inc"
+.file "auto_fn_802E2230_text"
+
+# 0x802E2230..0x802E22C4 | size: 0x94
+.text
+.balign 4
+
+# .text:0x0 | 0x802E2230 | size: 0x94
+.fn fn_802E2230, global
+/* 802E2230 002D7FB0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 802E2234 002D7FB4  7C 08 02 A6 */	mflr r0
+/* 802E2238 002D7FB8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802E223C 002D7FBC  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802E2240 002D7FC0  3F E0 80 53 */	lis r31, lbl_80532FD0@ha
+/* 802E2244 002D7FC4  3B FF 2F D0 */	addi r31, r31, lbl_80532FD0@l
+/* 802E2248 002D7FC8  4B FF FF 95 */	bl fn_802E21DC
+/* 802E224C 002D7FCC  3C A0 80 45 */	lis r5, lbl_80454890@ha
+/* 802E2250 002D7FD0  3D 60 80 41 */	lis r11, lbl_80412CC0@ha
+/* 802E2254 002D7FD4  38 A5 48 90 */	addi r5, r5, lbl_80454890@l
+/* 802E2258 002D7FD8  3D 40 80 2E */	lis r10, fn_802E2094@ha
+/* 802E225C 002D7FDC  3D 00 80 2E */	lis r8, fn_802E216C@ha
+/* 802E2260 002D7FE0  3C C0 80 48 */	lis r6, lbl_80487E98@ha
+/* 802E2264 002D7FE4  90 BF 00 20 */	stw r5, 0x20(r31)
+/* 802E2268 002D7FE8  39 6B 2C C0 */	addi r11, r11, lbl_80412CC0@l
+/* 802E226C 002D7FEC  39 3F 00 00 */	addi r9, r31, 0x0
+/* 802E2270 002D7FF0  39 4A 20 94 */	addi r10, r10, fn_802E2094@l
+/* 802E2274 002D7FF4  39 08 21 6C */	addi r8, r8, fn_802E216C@l
+/* 802E2278 002D7FF8  38 C6 7E 98 */	addi r6, r6, lbl_80487E98@l
+/* 802E227C 002D7FFC  3C 80 80 2E */	lis r4, fn_802E2180@ha
+/* 802E2280 002D8000  38 FF 00 20 */	addi r7, r31, 0x20
+/* 802E2284 002D8004  38 00 00 01 */	li r0, 0x1
+/* 802E2288 002D8008  90 69 00 0C */	stw r3, 0xc(r9)
+/* 802E228C 002D800C  7C E3 3B 78 */	mr r3, r7
+/* 802E2290 002D8010  38 84 21 80 */	addi r4, r4, fn_802E2180@l
+/* 802E2294 002D8014  91 7F 00 00 */	stw r11, 0x0(r31)
+/* 802E2298 002D8018  38 BF 00 10 */	addi r5, r31, 0x10
+/* 802E229C 002D801C  91 49 00 04 */	stw r10, 0x4(r9)
+/* 802E22A0 002D8020  91 09 00 08 */	stw r8, 0x8(r9)
+/* 802E22A4 002D8024  B0 07 00 06 */	sth r0, 0x6(r7)
+/* 802E22A8 002D8028  90 DF 00 20 */	stw r6, 0x20(r31)
+/* 802E22AC 002D802C  48 10 E4 79 */	bl __register_global_object
+/* 802E22B0 002D8030  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802E22B4 002D8034  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 802E22B8 002D8038  7C 08 03 A6 */	mtlr r0
+/* 802E22BC 002D803C  38 21 00 10 */	addi r1, r1, 0x10
+/* 802E22C0 002D8040  4E 80 00 20 */	blr
+.endfn fn_802E2230
+
+# 0x804066F0..0x804066F4 | size: 0x4
+.section .ctors, "a"
+.balign 4
+	.4byte fn_802E2230

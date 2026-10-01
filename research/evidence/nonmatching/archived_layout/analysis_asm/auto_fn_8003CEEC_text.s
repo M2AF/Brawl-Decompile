@@ -1,0 +1,68 @@
+.include "macros.inc"
+.file "auto_fn_8003CEEC_text"
+
+# 0x8003CEEC..0x8003CFC0 | size: 0xD4
+.text
+.balign 4
+
+# .text:0x0 | 0x8003CEEC | size: 0xD4
+.fn fn_8003CEEC, global
+/* 8003CEEC 00032C6C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8003CEF0 00032C70  7C 08 02 A6 */	mflr r0
+/* 8003CEF4 00032C74  3C 60 80 42 */	lis r3, lbl_804230FC@ha
+/* 8003CEF8 00032C78  3C 80 80 42 */	lis r4, lbl_80423880@ha
+/* 8003CEFC 00032C7C  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8003CF00 00032C80  38 63 30 FC */	addi r3, r3, lbl_804230FC@l
+/* 8003CF04 00032C84  38 A0 00 00 */	li r5, 0x0
+/* 8003CF08 00032C88  38 00 00 01 */	li r0, 0x1
+/* 8003CF0C 00032C8C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8003CF10 00032C90  38 84 38 80 */	addi r4, r4, lbl_80423880@l
+/* 8003CF14 00032C94  93 C1 00 08 */	stw r30, 0x8(r1)
+/* 8003CF18 00032C98  3F C0 80 49 */	lis r30, lbl_804976D8@ha
+/* 8003CF1C 00032C9C  3B DE 76 D8 */	addi r30, r30, lbl_804976D8@l
+/* 8003CF20 00032CA0  38 DE 00 00 */	addi r6, r30, 0x0
+/* 8003CF24 00032CA4  90 BE 00 00 */	stw r5, 0x0(r30)
+/* 8003CF28 00032CA8  90 66 00 04 */	stw r3, 0x4(r6)
+/* 8003CF2C 00032CAC  38 7E 00 18 */	addi r3, r30, 0x18
+/* 8003CF30 00032CB0  90 86 00 04 */	stw r4, 0x4(r6)
+/* 8003CF34 00032CB4  98 06 00 08 */	stb r0, 0x8(r6)
+/* 8003CF38 00032CB8  48 1A 1C 45 */	bl fn_801DEB7C
+/* 8003CF3C 00032CBC  3F E0 80 02 */	lis r31, fn_80020AF8@ha
+/* 8003CF40 00032CC0  38 7E 00 18 */	addi r3, r30, 0x18
+/* 8003CF44 00032CC4  38 9F 0A F8 */	addi r4, r31, fn_80020AF8@l
+/* 8003CF48 00032CC8  38 BE 00 0C */	addi r5, r30, 0xc
+/* 8003CF4C 00032CCC  48 3B 37 D9 */	bl __register_global_object
+/* 8003CF50 00032CD0  38 7E 00 40 */	addi r3, r30, 0x40
+/* 8003CF54 00032CD4  48 1A 1C 29 */	bl fn_801DEB7C
+/* 8003CF58 00032CD8  38 7E 00 40 */	addi r3, r30, 0x40
+/* 8003CF5C 00032CDC  38 9F 0A F8 */	addi r4, r31, fn_80020AF8@l
+/* 8003CF60 00032CE0  38 BE 00 30 */	addi r5, r30, 0x30
+/* 8003CF64 00032CE4  48 3B 37 C1 */	bl __register_global_object
+/* 8003CF68 00032CE8  38 7E 00 68 */	addi r3, r30, 0x68
+/* 8003CF6C 00032CEC  48 1A 1C 11 */	bl fn_801DEB7C
+/* 8003CF70 00032CF0  38 7E 00 68 */	addi r3, r30, 0x68
+/* 8003CF74 00032CF4  38 9F 0A F8 */	addi r4, r31, fn_80020AF8@l
+/* 8003CF78 00032CF8  38 BE 00 58 */	addi r5, r30, 0x58
+/* 8003CF7C 00032CFC  48 3B 37 A9 */	bl __register_global_object
+/* 8003CF80 00032D00  38 7E 00 90 */	addi r3, r30, 0x90
+/* 8003CF84 00032D04  48 1A 1B F9 */	bl fn_801DEB7C
+/* 8003CF88 00032D08  38 7E 00 90 */	addi r3, r30, 0x90
+/* 8003CF8C 00032D0C  38 9F 0A F8 */	addi r4, r31, fn_80020AF8@l
+/* 8003CF90 00032D10  38 BE 00 80 */	addi r5, r30, 0x80
+/* 8003CF94 00032D14  48 3B 37 91 */	bl __register_global_object
+/* 8003CF98 00032D18  38 7E 00 A8 */	addi r3, r30, 0xa8
+/* 8003CF9C 00032D1C  38 80 00 00 */	li r4, 0x0
+/* 8003CFA0 00032D20  38 A0 00 28 */	li r5, 0x28
+/* 8003CFA4 00032D24  4B FC 74 99 */	bl memset
+/* 8003CFA8 00032D28  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8003CFAC 00032D2C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8003CFB0 00032D30  83 C1 00 08 */	lwz r30, 0x8(r1)
+/* 8003CFB4 00032D34  7C 08 03 A6 */	mtlr r0
+/* 8003CFB8 00032D38  38 21 00 10 */	addi r1, r1, 0x10
+/* 8003CFBC 00032D3C  4E 80 00 20 */	blr
+.endfn fn_8003CEEC
+
+# 0x8040650C..0x80406510 | size: 0x4
+.section .ctors, "a"
+.balign 4
+	.4byte fn_8003CEEC

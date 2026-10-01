@@ -1,0 +1,56 @@
+{
+  "module": 81,
+  "class": "stDxBigBlue",
+  "size": 3132,
+  "ranges": {
+    "text": [
+      112,
+      16760
+    ],
+    "rodata": [
+      0,
+      144
+    ],
+    "data": [
+      0,
+      1960
+    ],
+    "bss": [
+      8,
+      24
+    ],
+    "ctors": [
+      0,
+      4
+    ]
+  },
+  "label_references": {
+    "data": [
+      0,
+      200,
+      220,
+      240,
+      260,
+      280,
+      304,
+      896,
+      904,
+      964,
+      1856
+    ],
+    "rodata": [
+      0,
+      8,
+      28,
+      44,
+      80,
+      112
+    ],
+    "bss": [
+      8,
+      20
+    ]
+  },
+  "functions": 101,
+  "proof": "Class-info methods end4178, RTTI7A0..7A8; source-linked grDxBigBlue begins4178/data7A8/rodata90, bss stage8..18; no out-of-range owned label references."
+}

@@ -1,0 +1,35 @@
+--- before
++++ after
+@@ -37840,6 +37840,7 @@
+   stKartData *data = (stKartData *) m_stageData;
+   if (data)
+   {
++    stKartRecord *new_var;
+     m_bgState = 10;
+     bool allOnFinalLap = true;
+     __alloca(data->m_kartNum * (sizeof(int)));
+@@ -37858,6 +37859,7 @@
+         {
+           if (m_warningState == 10)
+           {
++ do { } while (0);
+             m_warningState = 0;
+           }
+           m_bgState = 9;
+@@ -37913,13 +37915,14 @@
+                 {
+                   if (kart->m_distance < other->m_distance)
+                   {
+-                    isBehind = true;
++ do { isBehind = true; } while (0);
+                   }
+                 }
+               }
+               if (isBehind == true)
+               {
+-                kart->m_rank++;
++                new_var = kart;
++                new_var->m_rank++;
+               }
+             }
+           }

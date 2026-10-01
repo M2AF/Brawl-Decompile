@@ -1,0 +1,257 @@
+
+C:\Users\balla\Documents\Brawl Decompile\brawl-greenhill\build\RSBE01_01\src\mo_stage\st_greenhill\st_greenhill.o:     file format elf32-powerpc
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 st_greenhill.cpp
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .ctors	00000000 .ctors
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l     O .bss	0000000c @11117
+00000000 l     O .data	0000000c @11621
+00000000 l       .data	00000000 ...data.0
+00000000 l     O .rodata	00000004 @11622
+00000000 l       .rodata	00000000 ...rodata.0
+00000004 l     O .rodata	00000004 @11623
+0000000c l     O .data	0000000e @11640
+0000001c l     O .data	00000011 @11644
+00000030 l     O .data	00000012 @11645
+00000044 l     O .data	00000017 @11660
+0000005c l     O .data	00000013 @11661
+00000070 l     O .data	00000017 @11662
+00000088 l     O .data	00000013 @11663
+0000009c l     O .data	00000017 @11664
+000000b4 l     O .data	00000013 @11665
+000000c8 l     O .data	00000013 @11677
+000000dc l     O .data	00000012 @11678
+000000f0 l     O .data	0000001a @11696
+0000010c l     O .data	00000014 @11697
+00000120 l     O .data	00000018 @11698
+00000138 l     O .data	00000012 @11699
+0000014c l     O .data	00000017 @11700
+00000164 l     O .data	00000011 @11701
+00000178 l     O .data	00000018 @11702
+00000190 l     O .data	00000016 @11703
+000001a8 l     O .data	00000016 @11704
+000001c0 l     O .data	00000016 @11705
+00000008 l     O .rodata	00000004 @11716
+0000000c l     O .rodata	00000004 @11717
+00000010 l     O .rodata	00000004 @11718
+00000014 l     O .rodata	00000004 @11719
+00000018 l     O .rodata	00000004 @11756
+0000001c l     O .rodata	00000004 @11757
+00000020 l     O .rodata	00000004 @11758
+00000024 l     O .rodata	00000004 @11759
+00000028 l     O .rodata	00000004 @11760
+0000002c l     O .rodata	00000004 @11761
+00000030 l     O .rodata	00000004 @11762
+00000034 l     O .rodata	00000004 @11763
+00000408 l     O .data	0000000c @11270
+00000414 l     O .data	00000024 @11271
+00000440 l     O .data	00000008 @11272
+00000448 l     O .data	0000001c @11273
+00000470 l     O .data	00000010 @11274
+00000480 l     O .data	00000014 @11275
+000004a0 l     O .data	00000006 @11276
+000004a8 l     O .data	0000000c @11277
+000004c0 l     O .data	00000007 @11335
+00000f10 l     F .text	00000064 __sinit_\st_greenhill_cpp
+000004e4 l     O .data	00000021 @11521
+00000508 l     O .data	0000000c @11522
+00000520 l     O .data	0000000c @11523
+0000000c g     O .bss	00000004 bss_loc_14__11stGreenhill
+00000000 g     F .text	00000034 create__11stGreenhillFv
+00000000         *UND*	00000000 __nw__FUlQ25Heaps8HeapType
+00000034 g     F .text	000000fc __ct__11stGreenhillFv
+000001d8 g     O .data	00000230 __vt__11stGreenhill
+00000000         *UND*	00000000 _savegpr_27
+00000000         *UND*	00000000 _restgpr_27
+00000000         *UND*	00000000 __ct__7stMeleeFPCcQ26Stages11srStageKind
+00000000         *UND*	00000000 memset
+00000000         *UND*	00000000 setIdentity__6MatrixFv
+00000130 g     F .text	0000006c __dt__11stGreenhillFv
+00000000         *UND*	00000000 releaseArchive__15stCommonGimmickFv
+00000000         *UND*	00000000 __dt__7stMeleeFv
+00000000         *UND*	00000000 __dl__FPv
+0000019c g     F .text	00000008 loading__11stGreenhillFv
+000001a4 g     F .text	0000018c createObj__11stGreenhillFv
+00000000         *UND*	00000000 testStageParamInit__5StageFP9gfArchivei
+00000000         *UND*	00000000 testStageDataInit__5StageFP9gfArchiveii
+00000000         *UND*	00000000 createCollision__5StageFP9gfArchiveiP6Ground
+00000000         *UND*	00000000 getData__9gfArchiveF11ARCNodeTypeiUs
+00000000         *UND*	00000000 createStagePositions__5StageFPQ34nw4r3g3d7ResFile
+00000000         *UND*	00000000 createStagePositions__5StageFv
+00000000         *UND*	00000000 loadStageAttrParam__5StageFP9gfArchivei
+00000000         *UND*	00000000 registScnAnim__5StageFPQ34nw4r3g3d11ResFileDataUl
+00000000         *UND*	00000000 initPosPokeTrainer__5StageFii
+00000330 g     F .text	000000c8 fn_72_3A0__11stGreenhillFv
+00000000         *UND*	00000000 fn_72_11EC
+00000000         *UND*	00000000 addGround__5StageFP6Ground
+000003f8  w    F .text	00000008 setStageData__6GroundFPv
+00000400  w    F .text	00000008 fn_72_470__13grGreenhillBgFP6Matrix
+00000408  w    F .text	00000008 fn_72_478__13grGreenhillBgFPUc
+00000410 g     F .text	00000238 fn_72_480__11stGreenhillFv
+00000000         *UND*	00000000 fn_72_9D54
+00000648  w    F .text	00000008 fn_72_6B8__16grGreenhillBreakFUc
+00000650  w    F .text	00000008 fn_72_6C0__16grGreenhillBreakFPUc
+00000658  w    F .text	00000008 fn_72_6C8__16grGreenhillBreakFPUc
+00000660 g     F .text	000000e0 fn_72_6D0__11stGreenhillFv
+00000000         *UND*	00000000 fn_72_1ACC
+00000740  w    F .text	00000008 fn_72_7B0__16grGreenhillCheckFPUc
+00000748  w    F .text	00000008 fn_72_7B8__16grGreenhillCheckFPUc
+00000750  w    F .text	00000008 fn_72_7C0__16grGreenhillCheckFP6Matrix
+00000758 g     F .text	00000298 fn_72_7C8__11stGreenhillFv
+00000000         *UND*	00000000 fn_72_C06C
+00000000         *UND*	00000000 fn_72_C5CC
+000009f0  w    F .text	00000008 fn_72_AF0__16grGreenhillGuestFP21stGreenhillGuestState
+000009f8  w    F .text	00000008 fn_72_AF8__20grGreenhillGuestLineFP21stGreenhillGuestState
+00000a00 g     F .text	0000009c update__11stGreenhillFf
+00000a9c g     F .text	00000358 fn_72_B9C__11stGreenhillFf
+00000000         *UND*	00000000 randf__Fv
+00000df4  w    F .text	00000004 startFighterEvent__5StageFv
+00000df8  w    F .text	00000008 initializeFighterAttackRatio__5StageFv
+00000e00  w    F .text	00000008 helperStarWarp__5StageFv
+00000e08  w    F .text	00000008 isSimpleBossBattleMode__5StageFv
+00000e10  w    F .text	00000008 isBossBattleMode__5StageFv
+00000e18  w    F .text	00000008 isCameraLocked__5StageFv
+00000e20  w    F .text	00000004 notifyTimmingGameStart__5StageFv
+00000e24  w    F .text	00000008 getFrameRuleTime__5StageFv
+00000e2c  w    F .text	00000008 setFrameRuleTime__5StageFf
+00000e34  w    F .text	00000008 isNextStepBgmEqualNowStepBgmFromFlag__5StageFv
+00000e3c  w    F .text	0000000c getBgmPlayOffsetFrame__5StageFv
+00000e48  w    F .text	0000000c getBgmVolume__5StageFv
+00000e54  w    F .text	00000010 setBgmChange__5StageFfbUl
+00000e64  w    F .text	00000014 getBgmChangeID__5StageFPUlPf
+00000e78  w    F .text	00000008 isBgmChange__5StageFv
+00000e80  w    F .text	00000008 getBgmOptionID__5StageFv
+00000e88  w    F .text	00000008 getNowStepBgmID__5StageFv
+00000e90  w    F .text	00000008 getBgmID__5StageFv
+00000e98  w    F .text	00000008 getBgmID__5StageCFv
+00000ea0  w    F .text	00000004 appearanceFighterLocal__5StageFv
+00000ea4  w    F .text	0000001c getScrollDir__5StageFP5Vec3f
+00000ec0  w    F .text	00000008 getDefaultLightSetIndex__5StageFv
+00000ec8  w    F .text	00000008 getAIRange__5StageFv
+00000ed0  w    F .text	00000008 isAdventureStage__5StageFv
+00000ed8  w    F .text	00000008 getPokeTrainerDrawLayer__5StageFv
+00000ee0  w    F .text	0000000c getPokeTrainerPositionZ__5StageFv
+00000eec  w    F .text	00000004 getPokeTrainerPointData__5StageFPii
+00000ef0  w    F .text	00000008 getPokeTrainerPointNum__5StageFv
+00000ef8  w    F .text	00000008 isReStartSamePoint__7stMeleeFv
+00000f00  w    F .text	00000008 getWind2ndOnlyData__7stMeleeFv
+00000f08  w    F .text	00000008 isBamperVector__11stGreenhillFv
+00000438  w    O .data	00000008 __RTTI__11stGreenhill
+00000000         *UND*	00000000 init__6gfTaskFv
+00000000         *UND*	00000000 processDebug__6gfTaskFv
+00000000         *UND*	00000000 renderXlu__6gfTaskFv
+00000000         *UND*	00000000 renderOpa__6gfTaskFv
+00000000         *UND*	00000000 processGameProc__6gfTaskFv
+00000000         *UND*	00000000 processEffect__6gfTaskFv
+00000000         *UND*	00000000 processCamera__6gfTaskFv
+00000000         *UND*	00000000 processHit__6gfTaskFv
+00000000         *UND*	00000000 processCatch__6gfTaskFv
+00000000         *UND*	00000000 processCollision__6gfTaskFv
+00000000         *UND*	00000000 processPreCollision__6gfTaskFv
+00000000         *UND*	00000000 processFixPosition__6gfTaskFv
+00000000         *UND*	00000000 processPreMapCorrection__6gfTaskFv
+00000000         *UND*	00000000 processDefault__6gfTaskFv
+00000000         *UND*	00000000 setVision__5StageFUc
+00000000         *UND*	00000000 getIteamDropStatus__5StageFv
+00000000         *UND*	00000000 getAcidHeight__5StageFv
+00000000         *UND*	00000000 getMagmaHeight__5StageFv
+00000000         *UND*	00000000 getZonePos__5StageFP5Vec3f
+00000000         *UND*	00000000 getZoneState__5StageFv
+00000000         *UND*	00000000 setStageInEffectInit__5StageFv
+00000000         *UND*	00000000 setStageOutEffectInit__5StageFv
+00000000         *UND*	00000000 stAdventureEventGetItem__5StageFi6itKindiii
+00000000         *UND*	00000000 getDestroyBossParamCommon__5StageFUl
+00000000         *UND*	00000000 notifyEventInfoGo__5StageFv
+00000000         *UND*	00000000 notifyEventInfoReady__5StageFv
+00000000         *UND*	00000000 getBamperVector__5StageFP5Vec3f
+00000000         *UND*	00000000 getMadeinAiData__5StageFv
+00000000         *UND*	00000000 isStartAppearTimming__5StageFv
+00000000         *UND*	00000000 isAppear__5StageFv
+00000000         *UND*	00000000 restoreMotionSubRatio__5StageFi
+00000000         *UND*	00000000 saveMotionSubRatio__5StageFi
+00000000         *UND*	00000000 setMotionSubRatio__5StageFff
+00000000         *UND*	00000000 restoreMotionRatio__5StageFi
+00000000         *UND*	00000000 saveMotionRatio__5StageFi
+00000000         *UND*	00000000 setMotionRatio__5StageFff
+00000000         *UND*	00000000 getFinalTechniqColor__5StageFv
+00000000         *UND*	00000000 forceStopAppear__5StageFv
+00000000         *UND*	00000000 getAppearTask__5StageFv
+00000000         *UND*	00000000 endAppear__5StageFv
+00000000         *UND*	00000000 setAppearKind__5StageFUc
+00000000         *UND*	00000000 startAppear__5StageFv
+00000000         *UND*	00000000 getLucarioFinalTechniquePosition__5StageFP5Vec3f
+00000000         *UND*	00000000 setDevilScrool__5StageFff
+00000000         *UND*	00000000 isDevil__5StageFv
+00000000         *UND*	00000000 disableDevil__5StageFv
+00000000         *UND*	00000000 enableDevil__5StageFv
+00000000         *UND*	00000000 isEventEnd__5StageFiPiPi
+00000000         *UND*	00000000 isEnd__5StageFv
+00000000         *UND*	00000000 getEnableZ__5StageFv
+00000000         *UND*	00000000 getEnemyDeadEffectSizeRate__5StageFv
+00000000         *UND*	00000000 getFighterDeadEffectSizeRate__5StageFv
+00000000         *UND*	00000000 getPokeTrainerPos__5StageFP5Vec3fP5Vec3fUl
+00000000         *UND*	00000000 getPokeTrainerPosCount__5StageFv
+00000000         *UND*	00000000 getKirifudaModelType__5StageFUl
+00000000         *UND*	00000000 getKirifudaScale__5StageFP5Vec3fUl
+00000000         *UND*	00000000 getKirifudaAngle__5StageFUl
+00000000         *UND*	00000000 getKirifudaPos__5StageFP5Vec3fUl
+00000000         *UND*	00000000 getRandItemPos__5StageFP5Vec3f
+00000000         *UND*	00000000 getItemPos__5StageFP5Vec3fP5Vec3fUl
+00000000         *UND*	00000000 getItemPosCount__5StageFv
+00000000         *UND*	00000000 getPokeTrainerStartPos__5StageFP5Vec3fUl
+00000000         *UND*	00000000 removeLocalData__5StageFv
+00000000         *UND*	00000000 entryLocalData__5StageFv
+00000000         *UND*	00000000 isLoadLocalData__5StageFv
+00000000         *UND*	00000000 startLoadLocalData__5StageFv
+00000000         *UND*	00000000 initCameraParam__5StageFv
+00000000         *UND*	00000000 clearCameraParam__5StageFv
+00000000         *UND*	00000000 getZoneLightSetIndex__5StageFv
+00000000         *UND*	00000000 debugCollision__5StageFv
+00000000         *UND*	00000000 updateStagePositions__5StageFv
+00000000         *UND*	00000000 process__5StageFv
+00000000         *UND*	00000000 renderDebugPositions__5StageFv
+00000000         *UND*	00000000 closeStage__5StageFv
+00000000         *UND*	00000000 initializeStage__5StageFv
+00000000         *UND*	00000000 getAdvRadarData__5StageFPP9gfArchivePP9gfArchive
+00000000         *UND*	00000000 getEnemyPac__5StageFPP9gfArchivePP9gfArchivePP9gfArchivePP9gfArchive6emKind
+00000000         *UND*	00000000 getItemPacEnemyFigure__5StageFPP9gfArchive
+00000000         *UND*	00000000 getItemPac__5StageFPP9gfArchivePP9gfArchive6itKindi
+00000000         *UND*	00000000 createObjPokeTrainer__5StageFP9gfArchiveiPCcP5Vec3fP5Vec3f
+00000000         *UND*	00000000 renderDebug__5StageFv
+00000000         *UND*	00000000 renderPre__5StageFv
+00000000         *UND*	00000000 processEnd__5StageFv
+00000000         *UND*	00000000 processFixCamera__5StageFv
+00000000         *UND*	00000000 processMapCorrection__5StageFv
+00000000         *UND*	00000000 processAnim__5StageFv
+00000000         *UND*	00000000 setChangeSceneNumber__7stMeleeFl
+00000000         *UND*	00000000 resetChangeScene__7stMeleeFv
+00000000         *UND*	00000000 checkChangeScene__7stMeleeFv
+00000000         *UND*	00000000 resetCameraLimitRange__7stMeleeFv
+00000000         *UND*	00000000 setCameraLimitRange__7stMeleeFffff
+00000000         *UND*	00000000 updateWind2ndOnly__7stMeleeFv
+00000000         *UND*	00000000 createWind2ndOnly__7stMeleeFv
+00000000         *UND*	00000000 getFighterReStartPos__7stMeleeFP5Vec3fi
+00000000         *UND*	00000000 getFighterStartPos__7stMeleeFP5Vec3fi
+00000000         *UND*	00000000 getItemGenPac__7stMeleeFPP9gfArchive
+00000000         *UND*	00000000 processUpdate__7stMeleeFv
+00000000         *UND*	00000000 processBegin__7stMeleeFv
+00000468  w    O .data	00000008 __RTTI__7stMelee
+00000498  w    O .data	00000008 __RTTI__15stCommonGimmick
+000004b8  w    O .data	00000008 __RTTI__5Stage
+000004c8  w    O .data	00000008 __RTTI__6gfTask
+000004d0  w    O .data	00000014 __vt__33stClassInfoImpl<35,11stGreenhill>
+00000000         *UND*	00000000 __ct__11stClassInfoFv
+00000000         *UND*	00000000 setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+00000f74  w    F .text	00000074 __dt__33stClassInfoImpl<35,11stGreenhill>Fv
+00000000         *UND*	00000000 __register_global_object
+00000000         *UND*	00000000 __dt__11stClassInfoFv
+00000518  w    O .data	00000008 __RTTI__33stClassInfoImpl<35,11stGreenhill>
+00000fe8  w    F .text	00000034 create__33stClassInfoImpl<35,11stGreenhill>Fv
+0000101c  w    F .text	00000004 preload__33stClassInfoImpl<35,11stGreenhill>Fv
+00000530  w    O .data	00000008 __RTTI__11stClassInfo
+
+

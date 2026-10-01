@@ -1,0 +1,25 @@
+--- before
++++ after
+@@ -37837,11 +37837,11 @@
+ 
+ void updateRanks(float deltaFrame)
+ {
++  bool allOnFinalLap = true;
+   stKartData *data = (stKartData *) m_stageData;
+   if (data)
+   {
+     m_bgState = 10;
+-    bool allOnFinalLap = true;
+     __alloca(data->m_kartNum * (sizeof(int)));
+     {
+       u8 i = 0;
+@@ -37878,6 +37878,9 @@
+         if (allOnFinalLap == true)
+         {
+           kart->m_lap -= 10;
++          if (kart)
++          {
++          }
+         }
+       }
+ 

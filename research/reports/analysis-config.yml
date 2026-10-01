@@ -1,0 +1,6 @@
+object: research/local/iso/sys/main.dol
+hash: 2a78a0b3f375bfc85c7e42e20bc8551d1492d5d8
+symbols: research/reports/analyzed-symbols.txt
+splits: research/reports/analyzed-splits.txt
+write_asm: true
+quick_analysis: false

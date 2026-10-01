@@ -1,0 +1,153 @@
+.include "macros.inc"
+.file "auto_fn_802AE4F8_text"
+
+# 0x80007044..0x8000706C | size: 0x28
+.section extab, "a"
+.balign 4
+
+# extab:0x0 | 0x80007044 | size: 0x28
+.obj "@etb_80007044", local
+.hidden "@etb_80007044"
+/*
+ * Flag values:
+ * Has Elf Vector: Yes
+ * Large Frame: Yes
+ * Has Frame Pointer: No
+ * Saved CR: No
+ * 
+ * PC actions:
+ * PC=00000130, Action: 000018
+ * PC=0000014C, Action: 000020
+ * 
+ * Exception actions:
+ * 000018:
+ * Type: DESTROYLOCAL
+ * Local: 0x10(SP)
+ * Dtor: "dtor_802A3994"
+ * 000020:
+ * Type: DESTROYLOCAL
+ * Local: 0x40(SP)
+ * Dtor: "dtor_802A3994"
+ * Has end bit
+ */
+	.4byte 0x000A0000
+	.4byte 0x00000130
+	.4byte 0x00000018
+	.4byte 0x0000014C
+	.4byte 0x00000020
+	.4byte 0x00000000
+	.4byte 0x02000010
+	.4byte dtor_802A3994
+	.4byte 0x82000040
+	.4byte dtor_802A3994
+.endobj "@etb_80007044"
+
+# 0x8000A1EC..0x8000A1F8 | size: 0xC
+.section extabindex, "a"
+.balign 4
+
+# extabindex:0x0 | 0x8000A1EC | size: 0xC
+.obj "@eti_8000A1EC", local
+.hidden "@eti_8000A1EC"
+	.4byte fn_802AE4F8
+	.4byte 0x00000160
+	.4byte "@etb_80007044"
+.endobj "@eti_8000A1EC"
+
+# 0x802AE4F8..0x802AE658 | size: 0x160
+.text
+.balign 4
+
+# .text:0x0 | 0x802AE4F8 | size: 0x160
+.fn fn_802AE4F8, global
+/* 802AE4F8 002A4278  54 2B 07 3E */	clrlwi r11, r1, 28
+/* 802AE4FC 002A427C  7C 2C 0B 78 */	mr r12, r1
+/* 802AE500 002A4280  21 6B FF 60 */	subfic r11, r11, -0xa0
+/* 802AE504 002A4284  7C 21 59 6E */	stwux r1, r1, r11
+/* 802AE508 002A4288  7C 08 02 A6 */	mflr r0
+/* 802AE50C 002A428C  3D 00 80 48 */	lis r8, lbl_80487188@ha
+/* 802AE510 002A4290  C0 22 AB F4 */	lfs f1, lbl_805A3F14@sda21(r0)
+/* 802AE514 002A4294  90 0C 00 04 */	stw r0, 0x4(r12)
+/* 802AE518 002A4298  39 08 71 88 */	addi r8, r8, lbl_80487188@l
+/* 802AE51C 002A429C  2C 07 00 00 */	cmpwi r7, 0x0
+/* 802AE520 002A42A0  7C 6A 1B 78 */	mr r10, r3
+/* 802AE524 002A42A4  80 05 00 00 */	lwz r0, 0x0(r5)
+/* 802AE528 002A42A8  39 21 00 40 */	addi r9, r1, 0x40
+/* 802AE52C 002A42AC  90 01 00 70 */	stw r0, 0x70(r1)
+/* 802AE530 002A42B0  80 05 00 04 */	lwz r0, 0x4(r5)
+/* 802AE534 002A42B4  90 01 00 74 */	stw r0, 0x74(r1)
+/* 802AE538 002A42B8  C0 05 00 08 */	lfs f0, 0x8(r5)
+/* 802AE53C 002A42BC  D0 01 00 78 */	stfs f0, 0x78(r1)
+/* 802AE540 002A42C0  88 05 00 0C */	lbz r0, 0xc(r5)
+/* 802AE544 002A42C4  98 01 00 7C */	stb r0, 0x7c(r1)
+/* 802AE548 002A42C8  C0 05 00 10 */	lfs f0, 0x10(r5)
+/* 802AE54C 002A42CC  D0 01 00 80 */	stfs f0, 0x80(r1)
+/* 802AE550 002A42D0  C0 05 00 14 */	lfs f0, 0x14(r5)
+/* 802AE554 002A42D4  D0 01 00 84 */	stfs f0, 0x84(r1)
+/* 802AE558 002A42D8  C0 05 00 18 */	lfs f0, 0x18(r5)
+/* 802AE55C 002A42DC  D0 01 00 88 */	stfs f0, 0x88(r1)
+/* 802AE560 002A42E0  C0 05 00 1C */	lfs f0, 0x1c(r5)
+/* 802AE564 002A42E4  D0 01 00 8C */	stfs f0, 0x8c(r1)
+/* 802AE568 002A42E8  C0 05 00 20 */	lfs f0, 0x20(r5)
+/* 802AE56C 002A42EC  D0 01 00 90 */	stfs f0, 0x90(r1)
+/* 802AE570 002A42F0  C0 05 00 24 */	lfs f0, 0x24(r5)
+/* 802AE574 002A42F4  D0 01 00 94 */	stfs f0, 0x94(r1)
+/* 802AE578 002A42F8  80 05 00 28 */	lwz r0, 0x28(r5)
+/* 802AE57C 002A42FC  90 01 00 98 */	stw r0, 0x98(r1)
+/* 802AE580 002A4300  C0 05 00 10 */	lfs f0, 0x10(r5)
+/* 802AE584 002A4304  FC 00 00 50 */	fneg f0, f0
+/* 802AE588 002A4308  D0 01 00 80 */	stfs f0, 0x80(r1)
+/* 802AE58C 002A430C  C0 05 00 14 */	lfs f0, 0x14(r5)
+/* 802AE590 002A4310  FC 00 00 50 */	fneg f0, f0
+/* 802AE594 002A4314  D0 01 00 84 */	stfs f0, 0x84(r1)
+/* 802AE598 002A4318  C0 05 00 18 */	lfs f0, 0x18(r5)
+/* 802AE59C 002A431C  FC 00 00 50 */	fneg f0, f0
+/* 802AE5A0 002A4320  D0 01 00 88 */	stfs f0, 0x88(r1)
+/* 802AE5A4 002A4324  C0 05 00 1C */	lfs f0, 0x1c(r5)
+/* 802AE5A8 002A4328  FC 00 00 50 */	fneg f0, f0
+/* 802AE5AC 002A432C  D0 21 00 44 */	stfs f1, 0x44(r1)
+/* 802AE5B0 002A4330  91 01 00 40 */	stw r8, 0x40(r1)
+/* 802AE5B4 002A4334  D0 01 00 8C */	stfs f0, 0x8c(r1)
+/* 802AE5B8 002A4338  C0 05 00 10 */	lfs f0, 0x10(r5)
+/* 802AE5BC 002A433C  D0 01 00 50 */	stfs f0, 0x50(r1)
+/* 802AE5C0 002A4340  C0 05 00 14 */	lfs f0, 0x14(r5)
+/* 802AE5C4 002A4344  D0 01 00 54 */	stfs f0, 0x54(r1)
+/* 802AE5C8 002A4348  C0 05 00 18 */	lfs f0, 0x18(r5)
+/* 802AE5CC 002A434C  D0 01 00 58 */	stfs f0, 0x58(r1)
+/* 802AE5D0 002A4350  C0 05 00 1C */	lfs f0, 0x1c(r5)
+/* 802AE5D4 002A4354  D0 01 00 5C */	stfs f0, 0x5c(r1)
+/* 802AE5D8 002A4358  90 C1 00 60 */	stw r6, 0x60(r1)
+/* 802AE5DC 002A435C  41 82 00 50 */	beq .L_802AE62C
+/* 802AE5E0 002A4360  D0 21 00 14 */	stfs f1, 0x14(r1)
+/* 802AE5E4 002A4364  7C 83 23 78 */	mr r3, r4
+/* 802AE5E8 002A4368  38 01 00 10 */	addi r0, r1, 0x10
+/* 802AE5EC 002A436C  7D 44 53 78 */	mr r4, r10
+/* 802AE5F0 002A4370  91 01 00 10 */	stw r8, 0x10(r1)
+/* 802AE5F4 002A4374  7D 26 4B 78 */	mr r6, r9
+/* 802AE5F8 002A4378  C0 05 00 10 */	lfs f0, 0x10(r5)
+/* 802AE5FC 002A437C  D0 01 00 20 */	stfs f0, 0x20(r1)
+/* 802AE600 002A4380  C0 05 00 14 */	lfs f0, 0x14(r5)
+/* 802AE604 002A4384  D0 01 00 24 */	stfs f0, 0x24(r1)
+/* 802AE608 002A4388  C0 05 00 18 */	lfs f0, 0x18(r5)
+/* 802AE60C 002A438C  D0 01 00 28 */	stfs f0, 0x28(r1)
+/* 802AE610 002A4390  C0 05 00 1C */	lfs f0, 0x1c(r5)
+/* 802AE614 002A4394  38 A1 00 70 */	addi r5, r1, 0x70
+/* 802AE618 002A4398  90 E1 00 30 */	stw r7, 0x30(r1)
+/* 802AE61C 002A439C  7C 07 03 78 */	mr r7, r0
+/* 802AE620 002A43A0  D0 01 00 2C */	stfs f0, 0x2c(r1)
+/* 802AE624 002A43A4  48 00 99 AD */	bl fn_802B7FD0
+/* 802AE628 002A43A8  48 00 00 1C */	b .L_802AE644
+.L_802AE62C:
+/* 802AE62C 002A43AC  7C 83 23 78 */	mr r3, r4
+/* 802AE630 002A43B0  7D 44 53 78 */	mr r4, r10
+/* 802AE634 002A43B4  7D 26 4B 78 */	mr r6, r9
+/* 802AE638 002A43B8  38 A1 00 70 */	addi r5, r1, 0x70
+/* 802AE63C 002A43BC  38 E0 00 00 */	li r7, 0x0
+/* 802AE640 002A43C0  48 00 99 91 */	bl fn_802B7FD0
+.L_802AE644:
+/* 802AE644 002A43C4  81 41 00 00 */	lwz r10, 0x0(r1)
+/* 802AE648 002A43C8  80 0A 00 04 */	lwz r0, 0x4(r10)
+/* 802AE64C 002A43CC  7C 08 03 A6 */	mtlr r0
+/* 802AE650 002A43D0  7D 41 53 78 */	mr r1, r10
+/* 802AE654 002A43D4  4E 80 00 20 */	blr
+.endfn fn_802AE4F8

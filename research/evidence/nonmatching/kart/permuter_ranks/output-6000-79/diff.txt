@@ -1,0 +1,112 @@
+--- before
++++ after
+@@ -37838,108 +37838,7 @@
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
+-  if (data)
+-  {
+-    m_bgState = 10;
+-    bool allOnFinalLap = true;
+-    __alloca(data->m_kartNum * (sizeof(int)));
+-    {
+-      u8 i = 0;
+-      u8 kartNum = data->m_kartNum;
+-      for (; i != kartNum; i++)
+-      {
+-        stKartRecord *kart = &m_karts[i];
+-        kart->m_rank = 0;
+-        if (kart->m_lap < 10)
+-        {
+-          allOnFinalLap = false;
+-        }
+-        if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))
+-        {
+-          if (m_warningState == 10)
+-          {
+-            m_warningState = 0;
+-          }
+-          m_bgState = 9;
+-        }
+-        if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true))
+-        {
+-          m_bgState = 8;
+-        }
+-      }
+-
+-    }
+-    {
+-      u8 i = 0;
+-      u8 kartNum = data->m_kartNum;
+-      for (; i != kartNum; i++)
+-      {
+-        stKartRecord *kart = &m_karts[i];
+-        if (allOnFinalLap == true)
+-        {
+-          kart->m_lap -= 10;
+-        }
+-      }
+-
+-    }
+-    {
+-      u8 i = 0;
+-      u8 kartNum = data->m_kartNum;
+-      for (; i != kartNum; i++)
+-      {
+-        stKartRecord *kart = &m_karts[i];
+-        {
+-          u8 j = 0;
+-          u8 otherNum = data->m_kartNum;
+-          for (; j != otherNum; j++)
+-          {
+-            if (i != j)
+-            {
+-              stKartRecord *other = &m_karts[j];
+-              bool isBehind = false;
+-              if (kart->m_lap < other->m_lap)
+-              {
+-                isBehind = true;
+-              }
+-              else
+-                if (kart->m_lap == other->m_lap)
+-              {
+-                if (kart->m_checkpoint < other->m_checkpoint)
+-                {
+-                  isBehind = true;
+-                }
+-                else
+-                  if (kart->m_checkpoint == other->m_checkpoint)
+-                {
+-                  if (kart->m_distance < other->m_distance)
+-                  {
+-                    isBehind = true;
+-                  }
+-                }
+-              }
+-              if (isBehind == true)
+-              {
+-                kart->m_rank++;
+-              }
+-            }
+-          }
+-
+-        }
+-      }
+-
+-    }
+-    if ((m_isZoomedOut == true) && (m_warningState != 0))
+-    {
+-      zoomInCamera();
+-      m_isZoomedOut = false;
+-    }
+-    else
+-      if ((m_isZoomedOut == false) && (m_warningState == 0))
+-    {
+-      zoomOutCamera(225.0f, 275.0f);
+-      m_isZoomedOut = true;
+-    }
+-  }
++ do { if (data) { m_bgState = 10; bool allOnFinalLap = true; __alloca(data->m_kartNum * (sizeof(int))); { u8 i = 0; u8 kartNum = data->m_kartNum; for (; i != kartNum; i++) { stKartRecord *kart = &m_karts[i]; kart->m_rank = 0; if (kart->m_lap < 10) { allOnFinalLap = false; } if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true)) { if (m_warningState == 10) { m_warningState = 0; } m_bgState = 9; } if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true)) { m_bgState = 8; } } } { u8 i = 0; u8 kartNum = data->m_kartNum; for (; i != kartNum; i++) { stKartRecord *kart = &m_karts[i]; if (allOnFinalLap == true) { kart->m_lap -= 10; } } } { u8 i = 0; u8 kartNum = data->m_kartNum; for (; i != kartNum; i++) { stKartRecord *kart = &m_karts[i]; { u8 j = 0; u8 otherNum = data->m_kartNum; for (; j != otherNum; j++) { if (i != j) { stKartRecord *other = &m_karts[j]; bool isBehind = false; if (kart->m_lap < other->m_lap) { isBehind = true; } else if (kart->m_lap == other->m_lap) { if (kart->m_checkpoint < other->m_checkpoint) { isBehind = true; } else if (kart->m_checkpoint == other->m_checkpoint) { if (kart->m_distance < other->m_distance) { isBehind = true; } } } if (isBehind == true) { kart->m_rank++; } } } } } } if ((m_isZoomedOut == true) && (m_warningState != 0)) { zoomInCamera(); m_isZoomedOut = false; } else { if ((m_isZoomedOut == false) && (m_warningState == 0)) { zoomOutCamera(225.0f, 275.0f); m_isZoomedOut = true; } do { } while (0); } } } while (0);
+ }
+ 
+ 

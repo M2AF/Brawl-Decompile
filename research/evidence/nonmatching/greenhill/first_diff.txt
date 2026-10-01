@@ -1,0 +1,1168 @@
+target 57 funcs, candidate 55 funcs
+DIFF  fn_72_70                     create__11stGreenhillFv
+    --- target
+    +++ cand
+    @@ -10,3 +10,3 @@
+     bl <addr>
+    -R_PPC_REL24
+    +R_PPC_REL24	__ct__11stGreenhillFv
+     lwz     r0,20(r1)
+DIFF  fn_72_A4                     __ct__11stGreenhillFv
+    --- target
+    +++ cand
+    @@ -17,2 +17,18 @@
+     lis     r3,0
+    +R_PPC_ADDR16_HA	__vt__11stGreenhill
+    +addi    r31,r27,488
+    +addi    r3,r3,0
+    +R_PPC_ADDR16_LO	__vt__11stGreenhill
+    +addi    r30,r27,656
+    +stw     r3,60(r27)
+    +addi    r3,r31,4
+    +bl <addr>
+    +R_PPC_REL24	setIdentity__6MatrixFv
+    +addi    r31,r31,56
+    +cmplw   r31,r30
+    +blt <addr>
+    +mr      r3,r30
+    +bl <addr>
+    +R_PPC_REL24	setIdentity__6MatrixFv
+    +lis     r3,0
+     R_PPC_ADDR16_HA
+    @@ -21,15 +37,10 @@
+     R_PPC_ADDR16_LO
+    -lis     r4,0
+    -R_PPC_ADDR16_HA
+     li      r30,5
+    -stb     r0,475(r27)
+    -addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    +stb     r30,472(r27)
+     addi    r3,r27,485
+    -stw     r4,60(r27)
+     li      r4,0
+     li      r5,3
+    -stb     r30,472(r27)
+     stb     r30,473(r27)
+     stb     r30,474(r27)
+    +stb     r0,475(r27)
+     stb     r0,476(r27)
+DIFF  fn_72_1A0                    __dt__11stGreenhillFv
+    --- target
+    +++ cand
+    @@ -10,5 +10,5 @@
+     lis     r4,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	__vt__11stGreenhill
+     addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	__vt__11stGreenhill
+     stw     r4,60(r3)
+MATCH fn_72_20C                    loading__11stGreenhillFv
+MATCH fn_72_214                    createObj__11stGreenhillFv
+MATCH fn_72_3A0                    fn_72_3A0__11stGreenhillFv
+MATCH fn_72_468                    setStageData__6GroundFPv
+MATCH fn_72_470                    fn_72_470__13grGreenhillBgFP6Matrix
+MATCH fn_72_478                    fn_72_478__13grGreenhillBgFPUc
+DIFF  fn_72_480                    fn_72_480__11stGreenhillFv
+    --- target
+    +++ cand
+    @@ -5,5 +5,5 @@
+     lis     r31,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	...data.0
+     addi    r31,r31,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	...data.0
+     stw     r30,24(r1)
+    @@ -105,10 +105,10 @@
+     cmpwi   r3,0
+    -mr      r31,r3
+    +mr      r30,r3
+     beq <addr>
+     mr      r3,r29
+    -mr      r4,r31
+    +mr      r4,r30
+     bl <addr>
+     R_PPC_REL24	addGround__5StageFP6Ground
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     li      r4,2
+    @@ -117,4 +117,4 @@
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     lwz     r4,416(r29)
+    @@ -125,4 +125,4 @@
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     lwz     r4,156(r29)
+    @@ -131,4 +131,4 @@
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     addi    r4,r29,474
+    @@ -137,4 +137,4 @@
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     addi    r4,r29,475
+MATCH fn_72_6B8                    fn_72_6B8__16grGreenhillBreakFUc
+MATCH fn_72_6C0                    fn_72_6C0__16grGreenhillBreakFPUc
+MATCH fn_72_6C8                    fn_72_6C8__16grGreenhillBreakFPUc
+MATCH fn_72_6D0                    fn_72_6D0__11stGreenhillFv
+MATCH fn_72_7B0                    fn_72_7B0__16grGreenhillCheckFPUc
+MATCH fn_72_7B8                    fn_72_7B8__16grGreenhillCheckFPUc
+MATCH fn_72_7C0                    fn_72_7C0__16grGreenhillCheckFP6Matrix
+DIFF  fn_72_7C8                    fn_72_7C8__11stGreenhillFv
+    --- target
+    +++ cand
+    @@ -8,5 +8,5 @@
+     lis     r31,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	...data.0
+     addi    r31,r31,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	...data.0
+     stw     r30,24(r1)
+    @@ -39,10 +39,4 @@
+     mr      r3,r30
+    -lwz     r4,156(r29)
+    +addi    r4,r29,488
+     lwz     r12,164(r12)
+    -mtctr   r12
+    -bctrl
+    -lwz     r12,60(r30)
+    -mr      r3,r30
+    -addi    r4,r29,488
+    -lwz     r12,464(r12)
+     mtctr   r12
+    @@ -71,10 +65,4 @@
+     mr      r3,r30
+    -lwz     r4,156(r29)
+    +addi    r4,r29,544
+     lwz     r12,164(r12)
+    -mtctr   r12
+    -bctrl
+    -lwz     r12,60(r30)
+    -mr      r3,r30
+    -addi    r4,r29,544
+    -lwz     r12,464(r12)
+     mtctr   r12
+    @@ -103,10 +91,4 @@
+     mr      r3,r30
+    -lwz     r4,156(r29)
+    +addi    r4,r29,600
+     lwz     r12,164(r12)
+    -mtctr   r12
+    -bctrl
+    -lwz     r12,60(r30)
+    -mr      r3,r30
+    -addi    r4,r29,600
+    -lwz     r12,464(r12)
+     mtctr   r12
+    @@ -135,10 +117,4 @@
+     mr      r3,r30
+    -lwz     r4,156(r29)
+    +addi    r4,r29,488
+     lwz     r12,164(r12)
+    -mtctr   r12
+    -bctrl
+    -lwz     r12,60(r30)
+    -mr      r3,r30
+    -addi    r4,r29,488
+    -lwz     r12,464(r12)
+     mtctr   r12
+    @@ -167,10 +143,4 @@
+     mr      r3,r30
+    -lwz     r4,156(r29)
+    +addi    r4,r29,544
+     lwz     r12,164(r12)
+    -mtctr   r12
+    -bctrl
+    -lwz     r12,60(r30)
+    -mr      r3,r30
+    -addi    r4,r29,544
+    -lwz     r12,464(r12)
+     mtctr   r12
+    @@ -199,10 +169,4 @@
+     mr      r3,r30
+    -lwz     r4,156(r29)
+    +addi    r4,r29,600
+     lwz     r12,164(r12)
+    -mtctr   r12
+    -bctrl
+    -lwz     r12,60(r30)
+    -mr      r3,r30
+    -addi    r4,r29,600
+    -lwz     r12,464(r12)
+     mtctr   r12
+DIFF  fn_72_AF0                    update__11stGreenhillFf
+    --- target
+    +++ cand
+    @@ -1,2 +1,41 @@
+    -stw     r4,344(r3)
+    +stwu    r1,-32(r1)
+    +mflr    r0
+    +stw     r0,36(r1)
+    +stfd    f31,16(r1)
+    +xscmpeqdp vs31,vs1,vs0
+    +lis     r4,0
+    +R_PPC_ADDR16_HA	...rodata.0
+    +fmr     f31,f1
+    +addi    r4,r4,0
+    +R_PPC_ADDR16_LO	...rodata.0
+    +stw     r31,12(r1)
+    +mr      r31,r3
+    +lbz     r0,235(r3)
+    +cmplwi  r0,1
+    +bne <addr>
+    +lwz     r12,60(r3)
+    +lfs     f1,8(r4)
+    +lwz     r12,520(r12)
+    +lfs     f2,12(r4)
+    +lfs     f3,16(r4)
+    +lfs     f4,20(r4)
+    +mtctr   r12
+    +bctrl
+    +b <addr>
+    +lwz     r12,60(r3)
+    +lwz     r12,524(r12)
+    +mtctr   r12
+    +bctrl
+    +lwz     r12,60(r31)
+    +fmr     f1,f31
+    +mr      r3,r31
+    +lwz     r12,556(r12)
+    +mtctr   r12
+    +bctrl
+    +psq_l   f31,24(r1),0,0
+    +lwz     r0,36(r1)
+    +lfd     f31,16(r1)
+    +lwz     r31,12(r1)
+    +mtlr    r0
+    +addi    r1,r1,32
+     blr
+DIFF  fn_72_AF8                    fn_72_B9C__11stGreenhillFf
+    --- target
+    +++ cand
+    @@ -1,2 +1,226 @@
+    -stw     r4,344(r3)
+    +stwu    r1,-32(r1)
+    +mflr    r0
+    +stw     r0,36(r1)
+    +stw     r31,28(r1)
+    +lis     r31,0
+    +R_PPC_ADDR16_HA	...rodata.0
+    +addi    r31,r31,0
+    +R_PPC_ADDR16_LO	...rodata.0
+    +stw     r30,24(r1)
+    +mr      r30,r3
+    +stw     r29,20(r1)
+    +lwz     r29,156(r3)
+    +cmpwi   r29,0
+    +beq <addr>
+    +lfs     f2,480(r3)
+    +lfs     f0,0(r31)
+    +fsubs   f1,f2,f1
+    +fcmpo   cr0,f1,f0
+    +stfs    f1,480(r3)
+    +bge <addr>
+    +stfs    f0,480(r3)
+    +lbz     r0,478(r3)
+    +cmpwi   r0,3
+    +beq <addr>
+    +bge <addr>
+    +cmpwi   r0,1
+    +beq <addr>
+    +bge <addr>
+    +cmpwi   r0,0
+    +bge <addr>
+    +b <addr>
+    +cmpwi   r0,5
+    +beq <addr>
+    +bge <addr>
+    +b <addr>
+    +lfs     f0,52(r29)
+    +li      r0,1
+    +stfs    f0,480(r3)
+    +stb     r0,478(r3)
+    +lfs     f1,0(r31)
+    +lfs     f0,480(r3)
+    +fcmpu   cr0,f1,f0
+    +bne <addr>
+    +lbz     r4,484(r3)
+    +lwz     r0,76(r29)
+    +cmplw   r4,r0
+    +blt <addr>
+    +li      r4,0
+    +li      r0,3
+    +stb     r4,484(r3)
+    +stb     r0,478(r3)
+    +b <addr>
+    +bl <addr>
+    +R_PPC_REL24	randf__Fv
+    +lfs     f0,72(r29)
+    +fcmpo   cr0,f1,f0
+    +bge <addr>
+    +li      r3,0
+    +li      r0,3
+    +stb     r3,484(r30)
+    +stb     r0,478(r30)
+    +b <addr>
+    +bl <addr>
+    +R_PPC_REL24	randf__Fv
+    +lfs     f0,24(r31)
+    +li      r0,2
+    +fmuls   f0,f0,f1
+    +fctiwz  f0,f0
+    +stfd    f0,8(r1)
+    +lwz     r3,12(r1)
+    +clrlwi  r4,r3,24
+    +neg     r3,r4
+    +or      r3,r3,r4
+    +srawi   r3,r3,31
+    +and     r3,r4,r3
+    +cmplwi  r3,2
+    +bge <addr>
+    +clrlwi  r0,r3,24
+    +mulli   r29,r0,56
+    +li      r0,3
+    +add     r3,r30,r29
+    +stb     r0,488(r3)
+    +bl <addr>
+    +R_PPC_REL24	randf__Fv
+    +lfs     f2,32(r31)
+    +add     r3,r30,r29
+    +lfs     f0,28(r31)
+    +li      r0,2
+    +fmuls   f1,f2,f1
+    +fadds   f0,f0,f1
+    +stfs    f0,540(r3)
+    +lbz     r3,484(r30)
+    +stb     r0,478(r30)
+    +addi    r0,r3,1
+    +stb     r0,484(r30)
+    +b <addr>
+    +lbz     r0,488(r3)
+    +cmplwi  r0,5
+    +bne <addr>
+    +lbz     r0,544(r3)
+    +cmplwi  r0,5
+    +bne <addr>
+    +lbz     r0,600(r3)
+    +cmplwi  r0,5
+    +bne <addr>
+    +li      r0,5
+    +stb     r0,478(r3)
+    +b <addr>
+    +bl <addr>
+    +R_PPC_REL24	randf__Fv
+    +lfs     f0,36(r31)
+    +fcmpo   cr0,f1,f0
+    +bge <addr>
+    +li      r0,0
+    +stb     r0,485(r30)
+    +bl <addr>
+    +R_PPC_REL24	randf__Fv
+    +lfs     f0,28(r31)
+    +fcmpo   cr0,f1,f0
+    +bge <addr>
+    +li      r3,1
+    +li      r0,2
+    +stb     r3,486(r30)
+    +stb     r0,487(r30)
+    +b <addr>
+    +li      r3,2
+    +li      r0,1
+    +stb     r3,486(r30)
+    +stb     r0,487(r30)
+    +b <addr>
+    +bl <addr>
+    +R_PPC_REL24	randf__Fv
+    +lfs     f0,40(r31)
+    +fcmpo   cr0,f1,f0
+    +bge <addr>
+    +li      r0,1
+    +stb     r0,485(r30)
+    +bl <addr>
+    +R_PPC_REL24	randf__Fv
+    +lfs     f0,28(r31)
+    +fcmpo   cr0,f1,f0
+    +bge <addr>
+    +li      r3,0
+    +li      r0,2
+    +stb     r3,486(r30)
+    +stb     r0,487(r30)
+    +b <addr>
+    +li      r3,2
+    +li      r0,0
+    +stb     r3,486(r30)
+    +stb     r0,487(r30)
+    +b <addr>
+    +li      r0,2
+    +stb     r0,485(r30)
+    +bl <addr>
+    +R_PPC_REL24	randf__Fv
+    +lfs     f0,28(r31)
+    +fcmpo   cr0,f1,f0
+    +bge <addr>
+    +li      r3,0
+    +li      r0,1
+    +stb     r3,486(r30)
+    +stb     r0,487(r30)
+    +b <addr>
+    +li      r3,1
+    +li      r0,0
+    +stb     r3,486(r30)
+    +stb     r0,487(r30)
+    +lfs     f0,44(r31)
+    +li      r0,4
+    +stb     r0,478(r30)
+    +stfs    f0,480(r30)
+    +lfs     f1,0(r31)
+    +lfs     f0,480(r30)
+    +fcmpu   cr0,f1,f0
+    +bne <addr>
+    +lbz     r0,485(r30)
+    +cmplwi  r0,255
+    +bne <addr>
+    +lbz     r0,488(r30)
+    +cmplwi  r0,5
+    +bne <addr>
+    +lbz     r0,544(r30)
+    +cmplwi  r0,5
+    +bne <addr>
+    +lbz     r0,600(r30)
+    +cmplwi  r0,5
+    +bne <addr>
+    +li      r0,5
+    +stb     r0,478(r30)
+    +b <addr>
+    +mulli   r3,r0,56
+    +li      r4,3
+    +li      r0,255
+    +add     r3,r30,r3
+    +stb     r4,488(r3)
+    +lbz     r4,486(r30)
+    +lbz     r3,487(r30)
+    +stb     r4,485(r30)
+    +stb     r3,486(r30)
+    +stb     r0,487(r30)
+    +bl <addr>
+    +R_PPC_REL24	randf__Fv
+    +lfs     f2,52(r31)
+    +lfs     f0,48(r31)
+    +fmuls   f1,f2,f1
+    +fadds   f0,f0,f1
+    +stfs    f0,480(r30)
+    +b <addr>
+    +li      r0,1
+    +stb     r0,478(r3)
+    +bl <addr>
+    +R_PPC_REL24	randf__Fv
+    +lfs     f0,60(r29)
+    +lfs     f2,56(r29)
+    +fsubs   f0,f0,f2
+    +fmuls   f0,f0,f1
+    +fadds   f0,f2,f0
+    +stfs    f0,480(r30)
+    +lwz     r0,36(r1)
+    +lwz     r31,28(r1)
+    +lwz     r30,24(r1)
+    +lwz     r29,20(r1)
+    +mtlr    r0
+    +addi    r1,r1,32
+     blr
+DIFF  fn_72_B00                    startFighterEvent__5StageFv
+    --- target
+    +++ cand
+    @@ -1,41 +1 @@
+    -stwu    r1,-32(r1)
+    -mflr    r0
+    -stw     r0,36(r1)
+    -stfd    f31,16(r1)
+    -xscmpeqdp vs31,vs1,vs0
+    -lis     r4,0
+    -R_PPC_ADDR16_HA
+    -fmr     f31,f1
+    -addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    -stw     r31,12(r1)
+    -mr      r31,r3
+    -lbz     r0,235(r3)
+    -cmplwi  r0,1
+    -bne <addr>
+    -lwz     r12,60(r3)
+    -lfs     f1,8(r4)
+    -lwz     r12,520(r12)
+    -lfs     f2,12(r4)
+    -lfs     f3,16(r4)
+    -lfs     f4,20(r4)
+    -mtctr   r12
+    -bctrl
+    -b <addr>
+    -lwz     r12,60(r3)
+    -lwz     r12,524(r12)
+    -mtctr   r12
+    -bctrl
+    -lwz     r12,60(r31)
+    -fmr     f1,f31
+    -mr      r3,r31
+    -lwz     r12,556(r12)
+    -mtctr   r12
+    -bctrl
+    -psq_l   f31,24(r1),0,0
+    -lwz     r0,36(r1)
+    -lfd     f31,16(r1)
+    -lwz     r31,12(r1)
+    -mtlr    r0
+    -addi    r1,r1,32
+     blr
+DIFF  fn_72_B9C                    initializeFighterAttackRatio__5StageFv
+    --- target
+    +++ cand
+    @@ -1,228 +1,2 @@
+    -stwu    r1,-32(r1)
+    -mflr    r0
+    -stw     r0,36(r1)
+    -stw     r31,28(r1)
+    -lis     r31,0
+    -R_PPC_ADDR16_HA
+    -addi    r31,r31,0
+    -R_PPC_ADDR16_LO
+    -stw     r30,24(r1)
+    -mr      r30,r3
+    -stw     r29,20(r1)
+    -lwz     r29,156(r3)
+    -cmpwi   r29,0
+    -beq <addr>
+    -lfs     f2,480(r3)
+    -lfs     f0,0(r31)
+    -fsubs   f1,f2,f1
+    -fcmpo   cr0,f1,f0
+    -stfs    f1,480(r3)
+    -bge <addr>
+    -stfs    f0,480(r3)
+    -lbz     r0,478(r3)
+    -cmpwi   r0,3
+    -beq <addr>
+    -bge <addr>
+    -cmpwi   r0,1
+    -beq <addr>
+    -bge <addr>
+    -cmpwi   r0,0
+    -bge <addr>
+    -b <addr>
+    -cmpwi   r0,5
+    -beq <addr>
+    -bge <addr>
+    -b <addr>
+    -lfs     f0,52(r29)
+    -li      r0,1
+    -stfs    f0,480(r3)
+    -stb     r0,478(r3)
+    -lfs     f1,0(r31)
+    -lfs     f0,480(r3)
+    -fcmpu   cr0,f1,f0
+    -bne <addr>
+    -lbz     r4,484(r3)
+    -lwz     r0,76(r29)
+    -cmplw   r4,r0
+    -blt <addr>
+    -li      r4,0
+    -li      r0,3
+    -stb     r4,484(r3)
+    -stb     r0,478(r3)
+    -b <addr>
+    -bl <addr>
+    -R_PPC_REL24	randf__Fv
+    -lfs     f0,72(r29)
+    -fcmpo   cr0,f1,f0
+    -bge <addr>
+     li      r3,0
+    -li      r0,3
+    -stb     r3,484(r30)
+    -stb     r0,478(r30)
+    -b <addr>
+    -bl <addr>
+    -R_PPC_REL24	randf__Fv
+    -lfs     f0,24(r31)
+    -li      r3,2
+    -fmuls   f0,f0,f1
+    -fctiwz  f0,f0
+    -stfd    f0,8(r1)
+    -lwz     r5,12(r1)
+    -clrlwi  r4,r5,24
+    -neg     r0,r4
+    -or      r0,r0,r4
+    -srawi   r0,r0,31
+    -and     r4,r5,r0
+    -clrlwi  r0,r4,24
+    -cmplwi  r0,2
+    -bge <addr>
+    -mr      r3,r4
+    -clrlwi  r3,r3,24
+    -li      r0,3
+    -mulli   r29,r3,56
+    -add     r3,r30,r29
+    -stb     r0,488(r3)
+    -bl <addr>
+    -R_PPC_REL24	randf__Fv
+    -lfs     f2,32(r31)
+    -add     r3,r30,r29
+    -lfs     f0,28(r31)
+    -li      r0,2
+    -fmuls   f1,f2,f1
+    -fadds   f0,f0,f1
+    -stfs    f0,540(r3)
+    -lbz     r3,484(r30)
+    -stb     r0,478(r30)
+    -addi    r0,r3,1
+    -stb     r0,484(r30)
+    -b <addr>
+    -lbz     r0,488(r3)
+    -cmplwi  r0,5
+    -bne <addr>
+    -lbz     r0,544(r3)
+    -cmplwi  r0,5
+    -bne <addr>
+    -lbz     r0,600(r3)
+    -cmplwi  r0,5
+    -bne <addr>
+    -li      r0,5
+    -stb     r0,478(r3)
+    -b <addr>
+    -bl <addr>
+    -R_PPC_REL24	randf__Fv
+    -lfs     f0,36(r31)
+    -fcmpo   cr0,f1,f0
+    -bge <addr>
+    -li      r0,0
+    -stb     r0,485(r30)
+    -bl <addr>
+    -R_PPC_REL24	randf__Fv
+    -lfs     f0,28(r31)
+    -fcmpo   cr0,f1,f0
+    -bge <addr>
+    -li      r3,1
+    -li      r0,2
+    -stb     r3,486(r30)
+    -stb     r0,487(r30)
+    -b <addr>
+    -li      r3,2
+    -li      r0,1
+    -stb     r3,486(r30)
+    -stb     r0,487(r30)
+    -b <addr>
+    -bl <addr>
+    -R_PPC_REL24	randf__Fv
+    -lfs     f0,40(r31)
+    -fcmpo   cr0,f1,f0
+    -bge <addr>
+    -li      r0,1
+    -stb     r0,485(r30)
+    -bl <addr>
+    -R_PPC_REL24	randf__Fv
+    -lfs     f0,28(r31)
+    -fcmpo   cr0,f1,f0
+    -bge <addr>
+    -li      r3,0
+    -li      r0,2
+    -stb     r3,486(r30)
+    -stb     r0,487(r30)
+    -b <addr>
+    -li      r3,2
+    -li      r0,0
+    -stb     r3,486(r30)
+    -stb     r0,487(r30)
+    -b <addr>
+    -li      r0,2
+    -stb     r0,485(r30)
+    -bl <addr>
+    -R_PPC_REL24	randf__Fv
+    -lfs     f0,28(r31)
+    -fcmpo   cr0,f1,f0
+    -bge <addr>
+    -li      r3,0
+    -li      r0,1
+    -stb     r3,486(r30)
+    -stb     r0,487(r30)
+    -b <addr>
+    -li      r3,1
+    -li      r0,0
+    -stb     r3,486(r30)
+    -stb     r0,487(r30)
+    -lfs     f0,44(r31)
+    -li      r0,4
+    -stb     r0,478(r30)
+    -stfs    f0,480(r30)
+    -lfs     f1,0(r31)
+    -lfs     f0,480(r30)
+    -fcmpu   cr0,f1,f0
+    -bne <addr>
+    -lbz     r0,485(r30)
+    -cmplwi  r0,255
+    -bne <addr>
+    -lbz     r0,488(r30)
+    -cmplwi  r0,5
+    -bne <addr>
+    -lbz     r0,544(r30)
+    -cmplwi  r0,5
+    -bne <addr>
+    -lbz     r0,600(r30)
+    -cmplwi  r0,5
+    -bne <addr>
+    -li      r0,5
+    -stb     r0,478(r30)
+    -b <addr>
+    -mulli   r3,r0,56
+    -li      r4,3
+    -li      r0,255
+    -add     r3,r30,r3
+    -stb     r4,488(r3)
+    -lbz     r4,486(r30)
+    -lbz     r3,487(r30)
+    -stb     r4,485(r30)
+    -stb     r3,486(r30)
+    -stb     r0,487(r30)
+    -bl <addr>
+    -R_PPC_REL24	randf__Fv
+    -lfs     f2,52(r31)
+    -lfs     f0,48(r31)
+    -fmuls   f1,f2,f1
+    -fadds   f0,f0,f1
+    -stfs    f0,480(r30)
+    -b <addr>
+    -bl <addr>
+    -R_PPC_REL24	randf__Fv
+    -lfs     f0,60(r29)
+    -li      r0,1
+    -lfs     f2,56(r29)
+    -fsubs   f0,f0,f2
+    -stb     r0,478(r30)
+    -fmuls   f0,f0,f1
+    -fadds   f0,f2,f0
+    -stfs    f0,480(r30)
+    -lwz     r0,36(r1)
+    -lwz     r31,28(r1)
+    -lwz     r30,24(r1)
+    -lwz     r29,20(r1)
+    -mtlr    r0
+    -addi    r1,r1,32
+     blr
+DIFF  fn_72_EFC                    helperStarWarp__5StageFv
+    --- target
+    +++ cand
+    @@ -1 +1,2 @@
+    +li      r3,0
+     blr
+MATCH fn_72_F00                    isSimpleBossBattleMode__5StageFv
+MATCH fn_72_F08                    isBossBattleMode__5StageFv
+DIFF  fn_72_F10                    isCameraLocked__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,0
+    +li      r3,1
+     blr
+DIFF  fn_72_F18                    notifyTimmingGameStart__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1 @@
+    -li      r3,0
+     blr
+DIFF  fn_72_F20                    getFrameRuleTime__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,1
+    +lfs     f1,400(r3)
+     blr
+DIFF  fn_72_F28                    setFrameRuleTime__5StageFf
+    --- target
+    +++ cand
+    @@ -1 +1,2 @@
+    +stfs    f1,400(r3)
+     blr
+DIFF  fn_72_F2C                    isNextStepBgmEqualNowStepBgmFromFlag__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -lfs     f1,400(r3)
+    +li      r3,0
+     blr
+DIFF  fn_72_F34                    getBgmPlayOffsetFrame__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,5 @@
+    -stfs    f1,400(r3)
+    +lis     r3,0
+    +R_PPC_ADDR16_HA
+    +lfs     f1,0(r3)
+    +R_PPC_ADDR16_LO
+     blr
+DIFF  fn_72_F3C                    getBgmVolume__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,5 @@
+    -li      r3,0
+    +lis     r3,0
+    +R_PPC_ADDR16_HA
+    +lfs     f1,0(r3)
+    +R_PPC_ADDR16_LO
+     blr
+DIFF  fn_72_F44                    setBgmChange__5StageFfbUl
+    --- target
+    +++ cand
+    @@ -1,5 +1,4 @@
+    -lis     r3,0
+    -R_PPC_ADDR16_HA
+    -lfs     f1,0(r3)
+    -R_PPC_ADDR16_LO
+    +stb     r4,388(r3)
+    +stw     r5,392(r3)
+    +stfs    f1,396(r3)
+     blr
+DIFF  fn_72_F50                    getBgmChangeID__5StageFPUlPf
+    --- target
+    +++ cand
+    @@ -1,5 +1,5 @@
+    -lis     r3,0
+    -R_PPC_ADDR16_HA
+    -lfs     f1,0(r3)
+    -R_PPC_ADDR16_LO
+    +lwz     r0,392(r3)
+    +stw     r0,0(r4)
+    +lfs     f0,396(r3)
+    +stfs    f0,0(r5)
+     blr
+DIFF  fn_72_F5C                    isBgmChange__5StageFv
+    --- target
+    +++ cand
+    @@ -1,4 +1,2 @@
+    -stb     r4,388(r3)
+    -stw     r5,392(r3)
+    -stfs    f1,396(r3)
+    +lbz     r3,388(r3)
+     blr
+DIFF  fn_72_F6C                    getBgmOptionID__5StageFv
+    --- target
+    +++ cand
+    @@ -1,5 +1,2 @@
+    -lwz     r0,392(r3)
+    -stw     r0,0(r4)
+    -lfs     f0,396(r3)
+    -stfs    f0,0(r5)
+    +li      r3,0
+     blr
+DIFF  fn_72_F80                    getNowStepBgmID__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -lbz     r3,388(r3)
+    +li      r3,0
+     blr
+MATCH fn_72_F88                    getBgmID__5StageFv
+MATCH fn_72_F90                    getBgmID__5StageCFv
+DIFF  fn_72_F98                    appearanceFighterLocal__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1 @@
+    -li      r3,0
+     blr
+DIFF  fn_72_FA0                    getScrollDir__5StageFP5Vec3f
+    --- target
+    +++ cand
+    @@ -1,2 +1,9 @@
+    +lis     r5,0
+    +R_PPC_ADDR16_HA
+     li      r3,0
+    +lfs     f0,0(r5)
+    +R_PPC_ADDR16_LO
+    +stfs    f0,0(r4)
+    +stfs    f0,4(r4)
+    +stfs    f0,8(r4)
+     blr
+DIFF  fn_72_FA8                    getDefaultLightSetIndex__5StageFv
+    --- target
+    +++ cand
+    @@ -1 +1,2 @@
+    +li      r3,20
+     blr
+DIFF  fn_72_FAC                    getAIRange__5StageFv
+    --- target
+    +++ cand
+    @@ -1,9 +1,2 @@
+    -lis     r5,0
+    -R_PPC_ADDR16_HA
+    -li      r3,0
+    -lfs     f0,0(r5)
+    -R_PPC_ADDR16_LO
+    -stfs    f0,0(r4)
+    -stfs    f0,4(r4)
+    -stfs    f0,8(r4)
+    +addi    r3,r3,104
+     blr
+DIFF  fn_72_FC8                    isAdventureStage__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,20
+    +li      r3,0
+     blr
+DIFF  fn_72_FD0                    getPokeTrainerDrawLayer__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -addi    r3,r3,104
+    +li      r3,0
+     blr
+DIFF  fn_72_FD8                    getPokeTrainerPositionZ__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,5 @@
+    -li      r3,0
+    +lis     r3,0
+    +R_PPC_ADDR16_HA
+    +lfs     f1,0(r3)
+    +R_PPC_ADDR16_LO
+     blr
+DIFF  fn_72_FE0                    getPokeTrainerPointData__5StageFPii
+    --- target
+    +++ cand
+    @@ -1,2 +1 @@
+    -li      r3,0
+     blr
+DIFF  fn_72_FE8                    getPokeTrainerPointNum__5StageFv
+    --- target
+    +++ cand
+    @@ -1,5 +1,2 @@
+    -lis     r3,0
+    -R_PPC_ADDR16_HA
+    -lfs     f1,0(r3)
+    -R_PPC_ADDR16_LO
+    +li      r3,0
+     blr
+DIFF  fn_72_FF4                    isReStartSamePoint__7stMeleeFv
+    --- target
+    +++ cand
+    @@ -1 +1,2 @@
+    +li      r3,1
+     blr
+DIFF  fn_72_FF8                    getWind2ndOnlyData__7stMeleeFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,0
+    +lwz     r3,456(r3)
+     blr
+MATCH fn_72_1000                   isBamperVector__11stGreenhillFv
+DIFF  fn_72_1008                   __sinit_\st_greenhill_cpp
+    --- target
+    +++ cand
+    @@ -1,2 +1,39 @@
+    -lwz     r3,456(r3)
+    +stwu    r1,-16(r1)
+    +mflr    r0
+    +stw     r0,20(r1)
+    +stw     r31,12(r1)
+    +lis     r31,0
+    +R_PPC_ADDR16_HA	bss_loc_14__11stGreenhill
+    +addi    r3,r31,0
+    +R_PPC_ADDR16_LO	bss_loc_14__11stGreenhill
+    +bl <addr>
+    +R_PPC_REL24	__ct__11stClassInfoFv
+    +lis     r5,0
+    +R_PPC_ADDR16_HA	__vt__33stClassInfoImpl<35,11stGreenhill>
+    +addi    r3,r31,0
+    +R_PPC_ADDR16_LO	bss_loc_14__11stGreenhill
+    +addi    r5,r5,0
+    +R_PPC_ADDR16_LO	__vt__33stClassInfoImpl<35,11stGreenhill>
+    +li      r4,35
+    +stw     r5,0(r31)
+    +R_PPC_ADDR16_LO	bss_loc_14__11stGreenhill
+    +mr      r5,r3
+    +bl <addr>
+    +R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+    +lis     r4,0
+    +R_PPC_ADDR16_HA	__dt__33stClassInfoImpl<35,11stGreenhill>Fv
+    +lis     r5,0
+    +R_PPC_ADDR16_HA
+    +addi    r3,r31,0
+    +R_PPC_ADDR16_LO	bss_loc_14__11stGreenhill
+    +addi    r4,r4,0
+    +R_PPC_ADDR16_LO	__dt__33stClassInfoImpl<35,11stGreenhill>Fv
+    +addi    r5,r5,0
+    +R_PPC_ADDR16_LO
+    +bl <addr>
+    +R_PPC_REL24	__register_global_object
+    +lwz     r0,20(r1)
+    +lwz     r31,12(r1)
+    +mtlr    r0
+    +addi    r1,r1,16
+     blr
+DIFF  fn_72_1010                   __dt__33stClassInfoImpl<35,11stGreenhill>Fv
+    --- target
+    +++ cand
+    @@ -1,2 +1,34 @@
+    -li      r3,1
+    +stwu    r1,-16(r1)
+    +mflr    r0
+    +cmpwi   r3,0
+    +stw     r0,20(r1)
+    +stw     r31,12(r1)
+    +mr      r31,r4
+    +stw     r30,8(r1)
+    +mr      r30,r3
+    +beq     fe0Fv+0x58>
+    +lis     r6,0
+    +R_PPC_ADDR16_HA	__vt__33stClassInfoImpl<35,11stGreenhill>
+    +li      r4,35
+    +addi    r6,r6,0
+    +R_PPC_ADDR16_LO	__vt__33stClassInfoImpl<35,11stGreenhill>
+    +li      r5,0
+    +stw     r6,0(r3)
+    +bl      fc0Fv+0x38>
+    +R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+    +mr      r3,r30
+    +li      r4,0
+    +bl      fccFv+0x44>
+    +R_PPC_REL24	__dt__11stClassInfoFv
+    +cmpwi   r31,0
+    +ble     fe0Fv+0x58>
+    +mr      r3,r30
+    +bl      fdcFv+0x54>
+    +R_PPC_REL24	__dl__FPv
+    +mr      r3,r30
+    +lwz     r31,12(r1)
+    +lwz     r30,8(r1)
+    +lwz     r0,20(r1)
+    +mtlr    r0
+    +addi    r1,r1,16
+     blr
+DIFF  fn_72_1018                   create__33stClassInfoImpl<35,11stGreenhill>Fv
+    --- target
+    +++ cand
+    @@ -2,36 +2,12 @@
+     mflr    r0
+    +li      r3,708
+    +li      r4,15
+     stw     r0,20(r1)
+    -stw     r31,12(r1)
+    -lis     r31,0
+    -R_PPC_ADDR16_HA
+    -addi    r3,r31,0
+    -R_PPC_ADDR16_LO
+    -bl <addr>
+    -R_PPC_REL24	__ct__11stClassInfoFv
+    -lis     r5,0
+    -R_PPC_ADDR16_HA
+    -addi    r3,r31,0
+    -R_PPC_ADDR16_LO
+    -addi    r5,r5,0
+    -R_PPC_ADDR16_LO
+    -li      r4,35
+    -stw     r5,0(r31)
+    -R_PPC_ADDR16_LO
+    -mr      r5,r3
+    -bl <addr>
+    -R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+    -lis     r4,0
+    -R_PPC_ADDR16_HA
+    -lis     r5,0
+    -R_PPC_ADDR16_HA
+    -addi    r3,r31,0
+    -R_PPC_ADDR16_LO
+    -addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    -addi    r5,r5,0
+    -R_PPC_ADDR16_LO
+    -bl <addr>
+    -R_PPC_REL24	__register_global_object
+    +bl      1010Fv+0x14>
+    +R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+    +cmpwi   r3,0
+    +beq     1020Fv+0x24>
+    +bl      101cFv+0x20>
+    +R_PPC_REL24	__ct__11stGreenhillFv
+     lwz     r0,20(r1)
+    -lwz     r31,12(r1)
+     mtlr    r0
+DIFF  fn_72_107C                   preload__33stClassInfoImpl<35,11stGreenhill>Fv
+    --- target
+    +++ cand
+    @@ -1,34 +1 @@
+    -stwu    r1,-16(r1)
+    -mflr    r0
+    -cmpwi   r3,0
+    -stw     r0,20(r1)
+    -stw     r31,12(r1)
+    -mr      r31,r4
+    -stw     r30,8(r1)
+    -mr      r30,r3
+    -beq <addr>
+    -lis     r6,0
+    -R_PPC_ADDR16_HA
+    -li      r4,35
+    -addi    r6,r6,0
+    -R_PPC_ADDR16_LO
+    -li      r5,0
+    -stw     r6,0(r3)
+    -bl <addr>
+    -R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+    -mr      r3,r30
+    -li      r4,0
+    -bl <addr>
+    -R_PPC_REL24	__dt__11stClassInfoFv
+    -cmpwi   r31,0
+    -ble <addr>
+    -mr      r3,r30
+    -bl <addr>
+    -R_PPC_REL24	__dl__FPv
+    -mr      r3,r30
+    -lwz     r31,12(r1)
+    -lwz     r30,8(r1)
+    -lwz     r0,20(r1)
+    -mtlr    r0
+    -addi    r1,r1,16
+     blr
+DIFF  fn_72_10F0                   -
+    --- target
+    +++ cand
+    @@ -1,15 +0,0 @@
+    -stwu    r1,-16(r1)
+    -mflr    r0
+    -li      r3,708
+    -li      r4,15
+    -stw     r0,20(r1)
+    -bl <addr>
+    -R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+    -cmpwi   r3,0
+    -beq <addr>
+    -bl <addr>
+    -R_PPC_REL24
+    -lwz     r0,20(r1)
+    -mtlr    r0
+    -addi    r1,r1,16
+    -blr
+DIFF  fn_72_1124                   -
+    --- target
+    +++ cand
+    @@ -1 +0,0 @@
+    -blr
+.data: target 1336 bytes, candidate 1336 bytes, same bytes
+.rodata: target 56 bytes, candidate 56 bytes, same bytes
+.bss: target 16 bytes, candidate 16 bytes, same bytes
+.ctors: target 4 bytes, candidate 4 bytes, same bytes

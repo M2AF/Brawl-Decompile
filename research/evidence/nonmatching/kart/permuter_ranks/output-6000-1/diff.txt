@@ -1,0 +1,23 @@
+--- before
++++ after
+@@ -37835,6 +37835,11 @@
+ 
+ 
+ 
++inline int inline_fn(int arg0)
++{
++  return arg0 < 10;
++}
++
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
+@@ -37850,7 +37855,7 @@
+       {
+         stKartRecord *kart = &m_karts[i];
+         kart->m_rank = 0;
+-        if (kart->m_lap < 10)
++        if (inline_fn(kart->m_lap))
+         {
+           allOnFinalLap = false;
+         }

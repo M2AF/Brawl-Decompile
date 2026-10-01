@@ -1,0 +1,111 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+typedef struct CameraController {
+    /* 0x000 */ char pad0[0x3C];
+    /* 0x03C */ void *unk3C;                        /* inferred */
+    /* 0x040 */ char pad40[0x160];                  /* maybe part of unk3C[0x59]? */
+    /* 0x1A0 */ gfArchive *unk1A0;                  /* inferred */
+    /* 0x1A4 */ char pad1A4[0x3C];                  /* maybe part of unk1A0[0x10]? */
+    /* 0x1E0 */ f32 unk1E0;                         /* inferred */
+    /* 0x1E4 */ f32 unk1E4;                         /* inferred */
+    /* 0x1E8 */ f32 unk1E8;                         /* inferred */
+    /* 0x1EC */ f32 unk1EC;                         /* inferred */
+    /* 0x1F0 */ f32 unk1F0;                         /* inferred */
+    /* 0x1F4 */ f32 unk1F4;                         /* inferred */
+    /* 0x1F8 */ char pad1F8[0xA40];                 /* maybe part of unk1F4[0x291]? */
+    /* 0xC38 */ s8 unkC38;                          /* inferred */
+} CameraController;                                 /* size >= 0xC39 */
+
+typedef struct Ground {
+    /* 0x00 */ char pad0[0x3C];
+    /* 0x3C */ void *unk3C;                         /* inferred */
+    /* 0x40 */ char pad40[0x20];                    /* maybe part of unk3C[9]? */
+    /* 0x60 */ void *unk60;                         /* inferred */
+} Ground;                                           /* size >= 0x64 */
+
+typedef struct Stage {
+    /* 0x000 */ char pad0[0x3C];
+    /* 0x03C */ void *unk3C;                        /* inferred */
+    /* 0x040 */ char pad40[0x5C];                   /* maybe part of unk3C[0x18]? */
+    /* 0x09C */ void *unk9C;                        /* inferred */
+    /* 0x0A0 */ char padA0[0x1C];                   /* maybe part of unk9C[8]? */
+    /* 0x0BC */ s32 unkBC;                          /* inferred */
+    /* 0x0C0 */ char padC0[0xE0];                   /* maybe part of unkBC[0x39]? */
+    /* 0x1A0 */ gfArchive *unk1A0;                  /* inferred */
+    /* 0x1A4 */ char pad1A4[0x3C];                  /* maybe part of unk1A0[0x10]? */
+    /* 0x1E0 */ ? unk1E0;                           /* inferred */
+    /* 0x1E0 */ char pad1E0[0x1C];
+    /* 0x1FC */ ? unk1FC;                           /* inferred */
+    /* 0x1FC */ char pad1FC[0xC];
+    /* 0x208 */ ? unk208;                           /* inferred */
+    /* 0x208 */ char pad208[0x28];
+    /* 0x230 */ ? unk230;                           /* inferred */
+    /* 0x230 */ char pad230[0x12C];
+    /* 0x35C */ ? unk35C;                           /* inferred */
+    /* 0x35C */ char pad35C[0x18];
+    /* 0x374 */ ? unk374;                           /* inferred */
+    /* 0x374 */ char pad374[0x708];
+    /* 0xA7C */ ? unkA7C;                           /* inferred */
+    /* 0xA7C */ char padA7C[0x1E];
+    /* 0xA9A */ ? unkA9A;                           /* inferred */
+    /* 0xA9A */ char padA9A[0x56];
+    /* 0xAF0 */ u8 unkAF0;                          /* inferred */
+    /* 0xAF1 */ u8 unkAF1;                          /* inferred */
+    /* 0xAF2 */ char padAF2[2];                     /* maybe part of unkAF1[3]? */
+    /* 0xAF4 */ f32 unkAF4;                         /* inferred */
+    /* 0xAF8 */ s32 unkAF8;                         /* inferred */
+    /* 0xAFC */ s32 unkAFC;                         /* inferred */
+    /* 0xB00 */ char padB00[0x9C];                  /* maybe part of unkAFC[0x28]? */
+    /* 0xB9C */ ? unkB9C;                           /* inferred */
+    /* 0xB9C */ char padB9C[0x2C];
+    /* 0xBC8 */ f32 unkBC8;                         /* inferred */
+    /* 0xBCC */ char padBCC[4];
+    /* 0xBD0 */ ? unkBD0;                           /* inferred */
+    /* 0xBD0 */ char padBD0[0x2C];
+    /* 0xBFC */ f32 unkBFC;                         /* inferred */
+    /* 0xC00 */ char padC00[4];
+    /* 0xC04 */ ? unkC04;                           /* inferred */
+    /* 0xC04 */ char padC04[0x2C];
+    /* 0xC30 */ f32 unkC30;                         /* inferred */
+} Stage;                                            /* size >= 0xC34 */
+
+typedef struct nw4r::ut::LinkListNode {
+    /* 0x0 */ s32 unk0;                             /* inferred */
+    /* 0x4 */ s32 unk4;                             /* inferred */
+    /* 0x8 */ s8 unk8;                              /* inferred */
+} nw4r::ut::LinkListNode;                           /* size >= 0x9 */
+
+typedef struct nw4r::ut::detail::LinkListImpl {
+    /* 0x0 */ char pad0[4];
+    /* 0x4 */ s32 unk4;                             /* inferred */
+} nw4r::ut::detail::LinkListImpl;                   /* size >= 0x8 */
+
+typedef struct stClassInfo {
+    /* 0x0 */ ? *unk0;                              /* inferred */
+} stClassInfo;                                      /* size >= 0x4 */
+
+typedef struct stCommonGimmick {
+    /* 0x000 */ char pad0[0x3C];
+    /* 0x03C */ ? *unk3C;                           /* inferred */
+    /* 0x040 */ char pad40[0x320];                  /* maybe part of unk3C[0xC9]? */
+    /* 0x360 */ ? unk360;                           /* inferred */
+    /* 0x360 */ char pad360[0x740];
+    /* 0xAA0 */ ? unkAA0;                           /* inferred */
+    /* 0xAA0 */ char padAA0[1];
+} stCommonGimmick;                                  /* size >= 0xAA1 */
+
+typedef struct stMelee {
+    /* 0x000 */ char pad0[0x3C];
+    /* 0x03C */ ? *unk3C;                           /* inferred */
+    /* 0x040 */ char pad40[0x198];                  /* maybe part of unk3C[0x67]? */
+    /* 0x1D8 */ s8 unk1D8;                          /* inferred */
+    /* 0x1D9 */ char pad1D9[3];                     /* maybe part of unk1D8[4]? */
+    /* 0x1DC */ f32 unk1DC;                         /* inferred */
+    /* 0x1E0 */ ? unk1E0;                           /* inferred */
+    /* 0x1E0 */ char pad1E0[0x18];
+    /* 0x1F8 */ s8 unk1F8;                          /* inferred */
+    /* 0x1F9 */ char pad1F9[3];                     /* maybe part of unk1F8[4]? */
+    /* 0x1FC */ ? unk1FC;                           /* inferred */
+    /* 0x1FC */ char pad1FC[0xC];
+    /* 0x208 */ ? unk208;                           /* inferre
+... (truncated in log; full draft saved)
+Draft saved: C:\Users\balla\Documents\Brawl Decompile\research\evidence\nonmatching\tool_drafts\brawl-codex6\st_dxbigblue__st_dxbigblue.m2c.c

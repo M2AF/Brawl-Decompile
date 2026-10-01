@@ -1,0 +1,604 @@
+--- before/common.py
++++ brawltool/common.py
+@@ -3,13 +3,15 @@
+ 
+ import os
+ import subprocess
++import sys
+ import threading
+ from pathlib import Path
+ from typing import Callable, Optional, Sequence
+ 
+ WS = Path(__file__).resolve().parents[2]          # "Brawl Decompile" workspace
+ RESEARCH = WS / "research"
+-BRAWL = WS / "brawl"
++MAIN_REPO = (WS / "brawl").resolve()
++BRAWL = Path(os.environ.get("BRAWLTOOL_REPO", str(MAIN_REPO))).expanduser().resolve()
+ VENV_SCRIPTS = WS / ".venv" / "Scripts"
+ PY = VENV_SCRIPTS / "python.exe"
+ NINJA = VENV_SCRIPTS / "ninja.exe"
+@@ -18,7 +20,7 @@
+ DTK = BRAWL / "build" / "tools" / "dtk.exe"
+ TOOLS = RESEARCH / "claude_tools"
+ M2C = RESEARCH / "tools" / "m2c" / "m2c.py"
+-DRAFTS = RESEARCH / "drafts"
++DRAFTS = RESEARCH / "evidence" / "nonmatching" / "tool_drafts" / BRAWL.name
+ HANDOFF = Path.home() / ".claude" / "skills" / "agent-handoff" / "scripts" / "handoff.py"
+ MAIN_DOL_SHA1 = "2a78a0b3f375bfc85c7e42e20bc8551d1492d5d8"
+ BRANCH = "rsbe01_01-support"
+@@ -28,6 +30,51 @@
+ 
+ class ToolError(Exception):
+     """A gate or precondition failed; the message says what to fix."""
++
++
++def select_repo(path: str | Path | None = None) -> Path:
++    """Select once, before importing ops: its constants bind to this checkout."""
++    global BRAWL, BUILD, OBJDUMP, DTK, DRAFTS
++    root = Path(path or BRAWL).expanduser().resolve()
++    if "brawltool.ops" in sys.modules and root != BRAWL:
++        raise ToolError("Start a new BrawlTool process to change checkouts; operations are already bound.")
++    try:
++        proc = subprocess.run(["git", "-C", str(root), "rev-parse", "--show-toplevel"],
++                              capture_output=True, text=True, check=True)
++    except (OSError, subprocess.CalledProcessError) as exc:
++        raise ToolError(f"Not a Git checkout: {root}") from exc
++    if Path(proc.stdout.strip()).resolve() != root or not (root / "configure.py").is_file():
++        raise ToolError(f"Select the Brawl checkout root, not a parent/subdirectory: {root}")
++    if not (root / "config/RSBE01_01/config.yml").is_file():
++        raise ToolError(f"Missing RSBE01_01 configuration in {root}")
++    # A linked cache/config/source tree could send writes into another checkout.
++    for folder in ("build", "build/RSBE01_01/src", "src", "config", "include"):
++        if not (root / folder).resolve().is_relative_to(root):
++            raise ToolError(f"Directory leaves selected checkout: {root / folder}")
++    BRAWL = root
++    BUILD = root / "build/RSBE01_01"
++    OBJDUMP = root / "build/binutils/powerpc-eabi-objdump.exe"
++    DTK = root / "build/tools/dtk.exe"
++    DRAFTS = RESEARCH / "evidence/nonmatching/tool_drafts" / root.name
++    return root
++
++
++def is_parallel() -> bool:
++    return BRAWL != MAIN_REPO
++
++
++def require_main(operation: str) -> None:
++    if is_parallel():
++        raise ToolError(f"{operation} is disabled in isolated worktrees; no lease claim or integration is allowed.")
++
++
++def validate_unit(module: str, unit: str) -> None:
++    """Reject paths that could write/read outside this checkout."""
++    import re
++    if not re.fullmatch(r"[A-Za-z0-9_]+", module):
++        raise ToolError(f"Invalid module: {module}")
++    if not unit or any(not re.fullmatch(r"[A-Za-z0-9_-]+", p) for p in unit.split("/")):
++        raise ToolError("Unit must be a relative slash-separated path without .cpp, dots or traversal.")
+ 
+ 
+ class Runner:
+@@ -45,13 +92,13 @@
+         e["PYTHONIOENCODING"] = "utf-8"
+         return e
+ 
+-    def run(self, cmd: Sequence[str], cwd: Path = BRAWL, quiet: bool = False, check: bool = True) -> tuple[int, str]:
++    def run(self, cmd: Sequence[str], cwd: Optional[Path] = None, quiet: bool = False, check: bool = True) -> tuple[int, str]:
+         if self.cancelled:
+             raise ToolError("Cancelled.")
+         if not quiet:
+             self.log(f"$ {' '.join(str(c) for c in cmd)}")
+         with self._lock:
+-            self._proc = subprocess.Popen([str(c) for c in cmd], cwd=str(cwd), env=self.env(),
++            self._proc = subprocess.Popen([str(c) for c in cmd], cwd=str(cwd or BRAWL), env=self.env(),
+                                           stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                                           text=True, encoding="utf-8", errors="replace")
+         out = []
+@@ -62,6 +109,7 @@
+             if not quiet:
+                 self.log(line)
+         code = self._proc.wait()
++        self._proc.stdout.close()
+         with self._lock:
+             self._proc = None
+         if self.cancelled:
+@@ -86,9 +134,10 @@
+     """Append a handoff journal entry as agent 'tool' (skipped if the skill is not installed)."""
+     if not HANDOFF.exists():
+         return
+-    cmd = [str(PY), str(HANDOFF), "log", "tool", kind]
++    parallel = is_parallel()
++    cmd = [str(PY), str(HANDOFF), "log", "codex" if parallel else "tool", "note" if parallel else kind]
+     for f in facts:
+-        cmd += ["-m", f]
+-    if verified:
++        cmd += ["-m", f"codex-parallel: {BRAWL.name}: {f}" if parallel else f]
++    if verified and not parallel:
+         cmd += ["--verified", verified]
+     r.run(cmd, cwd=RESEARCH, quiet=True, check=False)
+--- before/cli.py
++++ brawltool/cli.py
+@@ -4,8 +4,7 @@
+ import argparse
+ import sys
+ 
+-from . import ops
+-from .common import Runner, ToolError
++from .common import Runner, ToolError, select_repo, git
+ 
+ 
+ def _ranges(items: list[str]) -> dict[str, str]:
+@@ -18,6 +17,7 @@
+ 
+ def main(argv: list[str] | None = None) -> int:
+     p = argparse.ArgumentParser(prog="brawltool", description="Local helpers for the Brawl RSBE01_01 matching decomp.")
++    p.add_argument("--repo", help="Explicit Brawl checkout/worktree root (or BRAWLTOOL_REPO). Put before the command.")
+     sub = p.add_subparsers(dest="cmd", required=True)
+     s = sub.add_parser("build", help="configure + ninja, must print 127/127"); s.add_argument("--clean", action="store_true")
+     sub.add_parser("check", help="independent check against the originals + verifier tests")
+@@ -31,6 +31,8 @@
+     s = sub.add_parser("diff", help="compare candidate vs target per function"); s.add_argument("module"); s.add_argument("unit")
+     s.add_argument("-s", "--show", nargs="*", default=[], help="function names to print diffs for"); s.add_argument("-v", "--verbose", action="store_true")
+     s = sub.add_parser("probe", help="full-REL byte check for one source unit"); s.add_argument("module"); s.add_argument("unit")
++    s = sub.add_parser("review", help="compile, diff and full-REL probe; save private logs and input hashes, never promote")
++    s.add_argument("module"); s.add_argument("unit")
+     s = sub.add_parser("promote", help="all gates, then MatchingFor + allowlist"); s.add_argument("unit"); s.add_argument("-m", "--commit-message")
+     s = sub.add_parser("integrate", help="cherry-pick a Codex branch + clean rebuild + probes"); s.add_argument("branch"); s.add_argument("--cleanup", action="store_true")
+     s = sub.add_parser("cleanup", help="remove an integrated Codex worktree after checks"); s.add_argument("branch")
+@@ -39,6 +41,10 @@
+     a = p.parse_args(argv)
+     r = Runner(lambda line: print(line, flush=True))
+     try:
++        root = select_repo(a.repo)
++        # Ops imports path constants, so selection must precede this import.
++        from . import ops
++        r.log(f"Checkout: {root} ({git(r, 'branch', '--show-current') or 'detached HEAD'})")
+         if a.cmd == "build": ops.build(r, clean=a.clean)
+         elif a.cmd == "check": ops.independent_check(r)
+         elif a.cmd == "status": ops.status_page(r, open_it=not a.no_open)
+@@ -47,6 +53,7 @@
+         elif a.cmd == "draft": ops.draft(r, a.module, a.unit, tuple(a.function))
+         elif a.cmd == "diff": return 0 if ops.diff(r, a.module, a.unit, tuple(a.show), a.verbose) else 1
+         elif a.cmd == "probe": return 0 if ops.probe(r, a.module, a.unit) else 1
++        elif a.cmd == "review": return 0 if ops.review(r, a.module, a.unit) else 1
+         elif a.cmd == "promote": ops.promote(r, a.unit, a.commit_message)
+         elif a.cmd == "integrate": ops.integrate(r, a.branch, a.cleanup)
+         elif a.cmd == "cleanup": ops.cleanup(r, a.branch)
+--- before/ops.py
++++ brawltool/ops.py
+@@ -7,12 +7,16 @@
+ import re
+ import shutil
+ import webbrowser
++from datetime import datetime, timezone
+ from collections import defaultdict
+ from pathlib import Path
+ from typing import Optional
+ 
++from . import common
++common.select_repo()  # Also validate launches through the existing GUI entry point.
++
+ from .common import (BRAWL, BRANCH, BUILD, DRAFTS, DTK, HANDOFF, M2C, MAIN_DOL_SHA1, NINJA, OBJDUMP, PY, RESEARCH, TOOLS,
+-                     WS, Runner, ToolError, git, journal)
++                     WS, Runner, ToolError, git, journal, is_parallel, require_main, validate_unit)
+ 
+ CONFIGURE = BRAWL / "configure.py"
+ VERIFIED = BRAWL / "config" / "RSBE01_01" / "verified_objects.txt"
+@@ -24,6 +28,8 @@
+     """configure + remove the stamp + ninja; must print OK: 127/127."""
+     if clean:
+         src = BUILD / "src"
++        if not src.resolve().is_relative_to(BUILD.resolve()) or not BUILD.resolve().is_relative_to(BRAWL):
++            raise ToolError(f"Refusing cache clear outside selected checkout: {src}")
+         if src.exists():
+             r.log(f"Clearing compiled-source cache {src}")
+             shutil.rmtree(src)
+@@ -51,6 +57,9 @@
+ 
+ 
+ def status_page(r: Runner, open_it: bool = True) -> None:
++    if is_parallel():
++        r.log("Shared main status page unchanged. Use review for private worktree evidence.")
++        return
+     r.run([PY, TOOLS / "mk_status_page.py"])
+     if open_it:
+         webbrowser.open(STATUS_HTML.as_uri())
+@@ -138,6 +147,7 @@
+ # ----------------------------------------------------------------------------- split (start a TU)
+ def split(r: Runner, module: str, unit: str, ranges: dict[str, str], force_active: Optional[str] = None) -> None:
+     """Add a splits.txt entry and a NonMatching configure.py object for a new TU."""
++    validate_unit(module, unit)
+     splits = BRAWL / "config" / "RSBE01_01" / "rels" / module / "splits.txt"
+     if module == "main":
+         splits = BRAWL / "config" / "RSBE01_01" / "splits.txt"
+@@ -183,6 +193,7 @@
+ # ----------------------------------------------------------------------------- draft (m2c)
+ def draft(r: Runner, module: str, unit: str, functions: tuple[str, ...] = ()) -> Path:
+     """Run m2c on the unit's split assembly (or an auto_ chunk name) and save a C draft."""
++    validate_unit(module, unit)
+     asm = BUILD / module / "asm" / (unit + ".s")
+     if not asm.exists():
+         alt = BUILD / module / "asm" / (Path(unit).name + ".s")
+@@ -206,7 +217,14 @@
+ # ----------------------------------------------------------------------------- diff
+ def _funcs(obj: Path) -> tuple[list[str], dict[str, list[str]]]:
+     import subprocess
+-    text = subprocess.run([str(OBJDUMP), "-dr", "--no-show-raw-insn", str(obj)], capture_output=True, text=True).stdout
++    if not obj.is_file():
++        raise ToolError(f"Missing object: {obj}")
++    if not OBJDUMP.is_file():
++        raise ToolError(f"Missing objdump: {OBJDUMP}")
++    proc = subprocess.run([str(OBJDUMP), "-dr", "--no-show-raw-insn", "-j", ".text", str(obj)], capture_output=True, text=True)
++    if proc.returncode != 0:
++        raise ToolError(f"Objdump failed for {obj}: {proc.stderr.strip()}")
++    text = proc.stdout
+     order, res, cur = [], {}, None
+     for line in text.splitlines():
+         m = re.match(r"^[0-9a-f]+ <(.+)>:$", line)
+@@ -222,15 +240,22 @@
+             ins = m[1].strip()
+             if ins.startswith("R_"):
+                 continue  # relocation symbol names differ between extracted and compiled objects
+-            ins = re.sub(r"\s+<[^>]*>", "", ins)
++            # Mangled template symbols contain nested '>'; consume the entire
++            # annotation, otherwise its tail corrupts branch diagnostics.
++            ins = re.sub(r"\s+<.*$", "", ins)
+             ins = re.sub(r"^(b\w*)\s+[0-9a-f]+$", r"\1 <addr>", ins)
+             res[cur].append(ins)
++    if not order or not any(res.values()):
++        raise ToolError(f"No function instructions parsed from {obj}; cannot report a match.")
+     return order, res
+ 
+ 
+ def _sections(obj: Path) -> dict[str, bytes]:
+     import subprocess
+-    text = subprocess.run([str(OBJDUMP), "-s", str(obj)], capture_output=True, text=True).stdout
++    proc = subprocess.run([str(OBJDUMP), "-s", str(obj)], capture_output=True, text=True)
++    if proc.returncode != 0:
++        raise ToolError(f"Section dump failed for {obj}: {proc.stderr.strip()}")
++    text = proc.stdout
+     secs, cur = {}, None
+     for line in text.splitlines():
+         m = re.match(r"^Contents of section (\S+):", line)
+@@ -246,6 +271,7 @@
+ 
+ def diff(r: Runner, module: str, unit: str, show: tuple[str, ...] = (), verbose: bool = False) -> bool:
+     """Compile the candidate and compare it to the extracted target, function by function."""
++    validate_unit(module, unit)
+     tgt = BUILD / module / "obj" / (unit + ".o")
+     if not is_rel(module):
+         tgt = BUILD / "obj" / (unit + ".o")  # main.dol units
+@@ -292,24 +318,92 @@
+             good = a == b
+             sec_ok &= good
+             r.log(f"{'SAME' if good else 'DIFF'} section {sec}: target {len(a)} bytes, candidate {len(b)} bytes")
+-    r.log(f"Functions matching: {same}/{len(t_order)}. Sections {'match' if sec_ok else 'differ'}. "
++    r.log(f"Instruction diagnostics: {same}/{len(t_order)}. Section contents {'match' if sec_ok else 'differ'}. "
++          "Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. "
+           "Final word is always the full-REL probe.")
+     return same == len(t_order) and sec_ok
+ 
+ 
+ # ----------------------------------------------------------------------------- probe
+ def probe(r: Runner, module: str, unit: str) -> bool:
++    validate_unit(module, unit)
+     if not is_rel(module):
+         raise ToolError(f"{module} is a main.dol library; the full-REL probe only works for REL modules.")
+     code, out = r.run([PY, TOOLS / "probe_source_rel.py", module, unit], check=False)
+-    ok = "Full REL byte match: True" in out
++    ok = code == 0 and "Full REL byte match: True" in out
+     r.log(("PASS" if ok else "FAIL") + f": full-REL probe for {module} ({unit})")
+     return ok
+ 
+ 
+ # ----------------------------------------------------------------------------- promote
++def review(r: Runner, module: str, unit: str) -> bool:
++    """Run local diagnostics/probe once and keep evidence, without promotion or ownership changes."""
++    validate_unit(module, unit)
++    if not is_rel(module):
++        raise ToolError("review needs a REL module with a successful normal build first.")
++    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S.%fZ")
++    dest = RESEARCH / "evidence/nonmatching" / module / BRAWL.name / (Path(unit).name + "_" + stamp)
++    dest.mkdir(parents=True, exist_ok=False)
++    meta = {"checkout": str(BRAWL), "head": git(r, "rev-parse", "HEAD"),
++            "branch": git(r, "branch", "--show-current"), "module": module, "unit": unit,
++            "configured_state": unit_state(unit), "instruction_diagnostics_match": None,
++            "instruction_diagnostic_counts": None,
++            "full_rel_byte_match": False, "error": None, "sha256": {},
++            "note": "Does not promote, verify 127 binaries, claim/release a lease, merge or commit."}
++    log_path = dest / "review.log"
++    r.log(f"Review running locally; private log: {log_path}")
++    failure = None
++    with log_path.open("w", encoding="utf-8") as log:
++        def record(line: str) -> None:
++            counts = re.search(r"Instruction diagnostics: (\d+)/(\d+)", line)
++            if counts:
++                meta["instruction_diagnostic_counts"] = {"same": int(counts[1]), "total": int(counts[2])}
++            log.write(line + "\n")
++            log.flush()
++        local = Runner(record)
++        # Use the same Runner, so GUI Stop/cancellation also reaches this review.
++        old_log = r.log
++        r.log = record
++        try:
++            record(json.dumps({k: meta[k] for k in ("checkout", "head", "branch", "unit")}, indent=2))
++            meta["instruction_diagnostics_match"] = diff(r, module, unit, verbose=True)
++            meta["full_rel_byte_match"] = probe(r, module, unit)
++            cmd = [NINJA, "-t", "commands", str(Path("build/RSBE01_01/src") / (unit + ".o"))]
++            _, commands = r.run(cmd, quiet=True)
++            (dest / "compile_commands.txt").write_text(commands + "\n", encoding="utf-8")
++        except (ToolError, OSError) as exc:
++            meta["error"] = str(exc)
++            failure = exc
++        finally:
++            r.log = old_log
++            paths = [CONFIGURE, VERIFIED, BRAWL / "config/RSBE01_01/config.yml",
++                     BRAWL / "config/RSBE01_01/symbols.txt",
++                     BRAWL / "config/RSBE01_01/rels" / module / "symbols.txt",
++                     BRAWL / "config/RSBE01_01/rels" / module / "splits.txt",
++                     BUILD / module / "obj" / (unit + ".o"), BUILD / "src" / (unit + ".o"),
++                     BRAWL / "src" / (unit + ".cpp"), BRAWL / "src" / (unit + ".c"),
++                     BRAWL / "orig/RSBE01_01/files/module" / (module + ".rel"),
++                     BUILD / ("codex_" + module + "_probe") / (module + ".rel")]
++            paths += sorted((BRAWL / "include").rglob("*.h"))
++            for path in paths:
++                if path.is_file():
++                    meta["sha256"][str(path.relative_to(BRAWL))] = hashlib.sha256(path.read_bytes()).hexdigest()
++            meta["git_status"] = git(local, "status", "--porcelain")
++            (dest / "summary.json").write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
++    ok = meta["full_rel_byte_match"] and meta["error"] is None
++    r.log(f"{'PASS' if ok else 'FAIL'}: {module}/{Path(unit).name} full source REL. Summary: {dest / 'summary.json'}")
++    journal(r, "note", f"Local review {module}/{unit}: full source REL {'matches' if ok else 'not accepted'}; "
++            f"no promotion. Evidence {dest.relative_to(RESEARCH)}.")
++    if failure:
++        raise ToolError(f"Review failed: {failure}. Evidence: {dest}") from failure
++    return bool(ok)
++
++
+ def promote(r: Runner, unit: str, commit_message: Optional[str] = None) -> None:
+     """All gates in order; edits configure.py + verified_objects.txt only after the probe passes."""
++    validate_unit("main", unit)
++    if is_parallel() and commit_message:
++        raise ToolError("Automatic broad staging is disabled in worktrees. Commit explicit files manually after promotion.")
+     state = unit_state(unit)
+     if state != "nonmatching":
+         raise ToolError(f"{unit} must be Object(NonMatching, ...) in configure.py (found: {state}).")
+@@ -319,13 +413,17 @@
+     r.log(f"Gate 1/4: full-REL probe of {module} with {unit} from source")
+     if not probe(r, module, unit):
+         raise ToolError("Probe failed: the module is not byte-identical. Not promoted. Use 'diff' to see why.")
++    snapshots = {path: path.read_bytes() for path in (CONFIGURE, VERIFIED)}
+     c = CONFIGURE.read_text(encoding="utf-8")
+-    c = c.replace(f'Object(NonMatching, "{unit}.cpp")', f'Object(MatchingFor("RSBE01_01"), "{unit}.cpp")', 1)
+-    CONFIGURE.write_text(c, encoding="utf-8", newline="\n")
+-    v = VERIFIED.read_text(encoding="utf-8")
+-    if f"{unit}.cpp" not in v.split():
+-        VERIFIED.write_text(v.rstrip("\n") + f"\n{unit}.cpp\n", encoding="utf-8", newline="\n")
++    old = f'Object(NonMatching, "{unit}.cpp")'
++    if c.count(old) != 1:
++        raise ToolError("Promotion expects exactly one canonical C++ Object entry; configure was not changed.")
++    c = c.replace(old, f'Object(MatchingFor("RSBE01_01"), "{unit}.cpp")', 1)
+     try:
++        CONFIGURE.write_text(c, encoding="utf-8", newline="\n")
++        v = VERIFIED.read_text(encoding="utf-8")
++        if f"{unit}.cpp" not in v.split():
++            VERIFIED.write_text(v.rstrip("\n") + f"\n{unit}.cpp\n", encoding="utf-8", newline="\n")
+         r.log("Gate 2/4: normal build with the stamp removed")
+         build(r)
+         r.log("Gate 3/4: independent check against the originals")
+@@ -333,9 +431,10 @@
+         r.log("Gate 4/4: re-probe after promotion")
+         if not probe(r, module, unit):
+             raise ToolError("Post-promotion probe failed.")
+-    except ToolError:
++    except BaseException:
+         r.log("Rolling back the promotion edits (configure.py, verified_objects.txt).")
+-        git(r, "checkout", "--", "configure.py", "config/RSBE01_01/verified_objects.txt", check=False)
++        for path, content in snapshots.items():
++            path.write_bytes(content)
+         raise
+     status_page(r, open_it=False)
+     journal(r, "verify", f"Promoted {unit} ({module}): full-REL probe byte-identical, 127/127, independent check OK.",
+@@ -357,6 +456,7 @@
+ 
+ def integrate(r: Runner, branch: str, cleanup_after: bool = False) -> None:
+     """Cherry-pick a Codex branch's commits not yet on main, then clean rebuild + probes + independent check."""
++    require_main("integrate")
+     if git(r, "rev-parse", "--abbrev-ref", "HEAD") != BRANCH:
+         raise ToolError(f"Main checkout is not on {BRANCH}.")
+     if git(r, "status", "--porcelain", "--untracked-files=no"):
+@@ -401,6 +501,7 @@
+ 
+ def cleanup(r: Runner, branch: str) -> None:
+     """Remove the worktree of a fully integrated branch, after the safety checks (branch is kept)."""
++    require_main("cleanup")
+     wt = None
+     for block in git(r, "worktree", "list", "--porcelain").split("\n\n"):
+         if f"branch refs/heads/{branch}" in block:
+@@ -446,6 +547,7 @@
+ 
+ def autopilot(r: Runner, dry_run: bool = False, do_integrate: bool = True, do_promote: bool = True) -> None:
+     """The routine loop, in the same order a session would run it. Never writes matching code."""
++    require_main("autopilot (use review for worktree diagnostics)")
+     summary: list[str] = []
+     r.log("Step 1/5: preflight")
+     if git(r, "rev-parse", "--abbrev-ref", "HEAD") != BRANCH:
+--- before/README.md
++++ brawltool/README.md
+@@ -15,10 +15,11 @@
+ | Status page / `status` | regenerates `research/status/brawl_status.html` and opens it | the page |
+ | Rank candidates / `rank` | smallest remaining extracted text chunks (`--exclude`, `--min`, `--top`) | no |
+ | New splitâ€¦ / `split` | adds a `splits.txt` entry, an `Object(NonMatching, ...)` and an optional `force_active` entry for a new TU | config + empty source stub |
+-| m2c draft / `draft` | m2c's PowerPC C draft of a split unit, saved to `research/drafts/` (machine output, not source) | draft file |
++| m2c draft / `draft` | m2c's PowerPC C draft of a split unit, saved privately in `research/evidence/nonmatching/tool_drafts/<checkout>/` (machine output, not source) | draft file |
+ | TU dropdown (window only) | picks Module + Unit for you. Order: our in-progress TUs, upstream in-progress, our matched, upstream matched ("ours" = file added since upstream f168bd9) | no |
+ | Diff / `diff` | compiles the candidate and compares functions and data sections with the extracted target | no |
+ | Probe full REL / `probe` | links the module with the unit from source and checks it is byte-identical to the original | no |
++| `review` (CLI) | compiles, saves verbose diagnostic diffs and full-REL probe, command lines and input SHA256s privately; never promotes | private evidence + journal note |
+ | Promoteâ€¦ / `promote` | probe, set MatchingFor + allowlist, build 127/127, independent check, re-probe; **rolls back** if any gate fails; optional commit | config (+ commit) |
+ | Integrate / `integrate` | cherry-picks a Codex branch's new commits, auto-resolves docs/allowlist conflicts by keeping both sides, then a clean rebuild, independent check and probes | commits on main |
+ | Clean up worktree / `cleanup` | removes an integrated Codex worktree after safety checks (clean, integrated, no links, originals unchanged); keeps the branch | deletes that worktree |
+@@ -29,3 +30,40 @@
+   carry no AI attribution.
+ - Nothing is ever pushed. The original game files are only read; their hash is checked.
+ - m2c is pinned at `research/tools/m2c` (commit 708d2d2).
++
++## Isolated worktrees (Codex parallel work)
++
++Use **--repo before the command**; it applies to configure, Ninja, objects,
++config files and Git operations. The checkout root and current branch print
++before anything runs. A missing/invalid root fails; there is no fallback to main.
++Alternatively set BRAWLTOOL_REPO for the CLI process. Without either, the
++existing default remains `brawl` on rsbe01_01-support. Do not use that default
++while another agent owns main. Worktree setup/original copies remain manual.
++
++From the research directory in PowerShell:
++```
++./brawltool-cli.bat --repo '../brawl-codex4' build
++./brawltool-cli.bat --repo '../brawl-codex4' check
++./brawltool-cli.bat --repo '../brawl-codex4' rank --top 10
++./brawltool-cli.bat --repo '../brawl-codex4' review st_oldin mo_stage/st_oldin/st_oldin
++```
++
++`review` runs once on this PC, writes logs and summary.json under
++`evidence/nonmatching/<module>/<checkout>/<unit>_<timestamp>/`, and returns 1
++for a nonmatching source REL, 2 for a tool/precondition error, 0 for a full
++source REL byte match. Logs may contain target assembly; keep them private.
++The summary includes checkout/HEAD/branch, current config state, errors and
++hashes of source, shadow headers, config, objects and RELs. A review is not
++promotion or 127/127 verification; run `build` + `check` for those gates.
++The normalized instruction count does not establish branch/relocation or BSS
++identity. Failed objdump or empty input cannot report a diagnostic match.
++
++In isolated worktrees, integrate, cleanup and autopilot are disabled (including
++autopilot dry-run). They cannot claim the main lease. Journal writes become only
++`note` entries as Codex tagged `codex-parallel`, never main's verified state.
++`status` leaves the shared main HTML unchanged. Promotion still requires all
++existing gates; its optional broad auto-commit is disabled in worktrees.
++On gate failure, configure/allowlist rollback restores the exact preexisting
++file bytes, including uncommitted edits. Commit explicit files manually.
++Build --clean rejects a cache path that resolves outside the selected checkout.
++No GUI controls were changed; these new examples are CLI workflows.
+--- before/test_worktree.py
++++ brawltool/test_worktree.py
+@@ -0,0 +1,120 @@
++"""Focused stdlib tests: routing and false-positive/rollback gates, no original writes."""
++from pathlib import Path
++import subprocess
++import tempfile
++import unittest
++from unittest.mock import patch
++
++from . import common, ops
++
++
++class WorktreeTests(unittest.TestCase):
++    def test_runner_default_cwd_is_live_selection(self):
++        with tempfile.TemporaryDirectory() as folder, patch.object(common, 'BRAWL', Path(folder)):
++            _, out = common.Runner(lambda _: None).run([common.PY, '-c', 'import os; print(os.getcwd())'], quiet=True)
++            self.assertEqual(Path(out).resolve(), Path(folder).resolve())
++
++    def test_invalid_repo_fails_without_fallback(self):
++        with tempfile.TemporaryDirectory() as folder:
++            with self.assertRaises(common.ToolError):
++                common.select_repo(folder)
++
++    def test_subdirectory_is_not_checkout_root(self):
++        with self.assertRaises(common.ToolError):
++            common.select_repo(common.MAIN_REPO / 'src')
++
++    def test_parallel_operations_cannot_integrate_delete_or_claim(self):
++        with patch.object(common, 'BRAWL', common.WS / 'isolated-test'), patch.object(ops, 'git') as git:
++            r = common.Runner(lambda _: None)
++            for call in (lambda: ops.integrate(r, 'codex/test'), lambda: ops.cleanup(r, 'codex/test'),
++                         lambda: ops.autopilot(r), lambda: ops.autopilot(r, dry_run=True)):
++                with self.assertRaises(common.ToolError):
++                    call()
++            git.assert_not_called()
++
++    def test_parallel_journal_is_only_tagged_note(self):
++        with tempfile.TemporaryDirectory() as folder:
++            script = Path(folder) / 'handoff.py'; script.touch()
++            r = common.Runner(lambda _: None)
++            with patch.object(common, 'HANDOFF', script), patch.object(common, 'BRAWL', Path(folder)), patch.object(r, 'run') as run:
++                common.journal(r, 'verify', 'result', verified='not main verification')
++                cmd = run.call_args.args[0]
++                self.assertEqual(cmd[2:5], ['log', 'codex', 'note'])
++                self.assertNotIn('--verified', cmd)
++                self.assertIn('codex-parallel:', cmd[-1])
++
++    def test_missing_or_failed_or_empty_objdump_cannot_match(self):
++        with tempfile.TemporaryDirectory() as folder:
++            obj = Path(folder) / 'test.o'
++            with self.assertRaises(common.ToolError):
++                ops._funcs(obj)
++            obj.touch()
++            for proc in (subprocess.CompletedProcess([], 1, stdout='', stderr='broken'),
++                         subprocess.CompletedProcess([], 0, stdout='', stderr=''),
++                         subprocess.CompletedProcess([], 0, stdout='00000000 <empty>:\n', stderr='')):
++                with patch('subprocess.run', return_value=proc), self.assertRaises(common.ToolError):
++                    ops._funcs(obj)
++
++    def test_probe_rejects_error_even_after_true_text(self):
++        r = common.Runner(lambda _: None)
++        with patch.object(ops, 'is_rel', return_value=True), patch.object(r, 'run', return_value=(1, 'Full REL byte match: True')):
++            self.assertFalse(ops.probe(r, 'st_test', 'mo_stage/st_test/st_test'))
++
++    def test_template_annotation_is_fully_removed(self):
++        with tempfile.TemporaryDirectory() as folder:
++            obj = Path(folder) / 'test.o'; obj.touch()
++            text = '00000000 <test>:\n   0:  beq 1234 <create__28stClassInfoImpl<51,7stOldin>Fv+0x24>\n'
++            with patch('subprocess.run', return_value=subprocess.CompletedProcess([], 0, stdout=text, stderr='')):
++                order, funcs = ops._funcs(obj)
++            self.assertEqual(funcs['test'], ['beq <addr>'])
++
++    def test_traversal_rejected_before_operations(self):
++        for module, unit in [('..', 'x'), ('st_test', '../orig/foo'), ('st_test', '/x'), ('st_test', 'a\\b')]:
++            with self.assertRaises(common.ToolError):
++                common.validate_unit(module, unit)
++
++    def test_failed_promotion_preserves_dirty_bytes(self):
++        with tempfile.TemporaryDirectory() as folder:
++            config, verified = Path(folder) / 'configure.py', Path(folder) / 'verified.txt'
++            unit = 'mo_stage/st_test/st_test'
++            old_config = b'# existing WIP\r\n{"lib": "st_test", "objects": [Object(NonMatching, "mo_stage/st_test/st_test.cpp")]}\r\n'
++            old_verified = b'# existing dirty allowlist\r\nother.cpp\r\n'
++            config.write_bytes(old_config); verified.write_bytes(old_verified)
++            with patch.object(ops, 'CONFIGURE', config), patch.object(ops, 'VERIFIED', verified), \
++                 patch.object(ops, 'git', return_value='dirty') as git, patch.object(ops, 'probe', return_value=True), \
++                 patch.object(ops, 'build', side_effect=common.ToolError('intentional failed gate')):
++                with self.assertRaises(common.ToolError):
++                    ops.promote(common.Runner(lambda _: None), unit)
++                self.assertEqual(config.read_bytes(), old_config)
++                self.assertEqual(verified.read_bytes(), old_verified)
++                self.assertFalse(any('checkout' in c.args for c in git.call_args_list))
++
++    def test_parallel_status_never_regenerates_main(self):
++        r = common.Runner(lambda _: None)
++        with patch.object(common, 'BRAWL', common.WS / 'isolated-test'), patch.object(r, 'run') as run:
++            ops.status_page(r, open_it=False)
++            run.assert_not_called()
++
++    def test_failed_compile_still_records_rejected_review(self):
++        with tempfile.TemporaryDirectory() as folder:
++            root = Path(folder) / 'repo'; root.mkdir()
++            research = Path(folder) / 'research'
++            unit = 'mo_stage/st_test/st_test'
++            with patch.object(ops, 'BRAWL', root), patch.object(ops, 'BUILD', root / 'build/RSBE01_01'), \
++                 patch.object(ops, 'RESEARCH', research), patch.object(ops, 'CONFIGURE', root / 'configure.py'), \
++                 patch.object(ops, 'VERIFIED', root / 'verified.txt'), patch.object(ops, 'is_rel', return_value=True), \
++                 patch.object(ops, 'unit_state', return_value='nonmatching'), patch.object(ops, 'git', return_value='test'), \
++                 patch.object(ops, 'journal'), patch.object(ops, 'diff', side_effect=common.ToolError('compile failed')), \
++                 patch.object(ops, 'probe') as probe:
++                with self.assertRaises(common.ToolError):
++                    ops.review(common.Runner(lambda _: None), 'st_test', unit)
++                probe.assert_not_called()
++                path = next(research.rglob('summary.json'))
++                summary = json.loads(path.read_text())
++                self.assertFalse(summary['full_rel_byte_match'])
++                self.assertEqual(summary['error'], 'compile failed')
++
++
++if __name__ == '__main__':
++    unittest.main()
++import json

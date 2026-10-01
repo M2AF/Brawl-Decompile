@@ -1,0 +1,7 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex5 (codex/finish)
+DIFF createObj__13stTargetBreakFv             createObj__13stTargetBreakFv                  851 849
+DIFF update__13stTargetBreakFf                update__13stTargetBreakFf                     440 462
+DIFF section .rodata: target 160 bytes, candidate 156 bytes
+SAME section .data: target 3304 bytes, candidate 3304 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 56/58. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

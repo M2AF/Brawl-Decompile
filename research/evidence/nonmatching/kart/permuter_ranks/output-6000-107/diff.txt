@@ -1,0 +1,49 @@
+--- before
++++ after
+@@ -37835,26 +37835,33 @@
+ 
+ 
+ 
++inline u8 inline_fn(stKartData *arg0)
++{
++  return arg0->m_kartNum;
++}
++
+ void updateRanks(float deltaFrame)
+ {
++  u8 new_var;
+   stKartData *data = (stKartData *) m_stageData;
+   if (data)
+   {
+     m_bgState = 10;
+     bool allOnFinalLap = true;
+-    __alloca(data->m_kartNum * (sizeof(int)));
++    __alloca(inline_fn(data) * (sizeof(int)));
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+-        kart->m_rank = 0;
+-        if (kart->m_lap < 10)
++        new_var = i;
++        (&m_karts[new_var])->m_rank = 0;
++        if ((&m_karts[new_var])->m_lap < 10)
+         {
+           allOnFinalLap = false;
+         }
+-        if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))
++        if ((((&m_karts[new_var])->m_checkpoint > 20) && ((&m_karts[new_var])->m_checkpoint < 40)) && ((&m_karts[i])->m_isRacing == true))
+         {
+           if (m_warningState == 10)
+           {
+@@ -37862,7 +37869,7 @@
+           }
+           m_bgState = 9;
+         }
+-        if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true))
++        if (((&m_karts[new_var])->m_checkpoint > 90) && (kart->m_isRacing == true))
+         {
+           m_bgState = 8;
+         }

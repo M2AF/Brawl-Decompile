@@ -1,0 +1,12 @@
+--- before
++++ after
+@@ -37917,6 +37917,9 @@
+                   }
+                 }
+               }
++              if (!true)
++              {
++              }
+               if (isBehind == true)
+               {
+                 kart->m_rank++;

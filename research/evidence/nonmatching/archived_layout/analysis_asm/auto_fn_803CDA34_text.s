@@ -1,0 +1,83 @@
+.include "macros.inc"
+.file "auto_fn_803CDA34_text"
+
+# 0x800092A4..0x800092AC | size: 0x8
+.section extab, "a"
+.balign 4
+
+# extab:0x0 | 0x800092A4 | size: 0x8
+.obj "@etb_800092A4", local
+.hidden "@etb_800092A4"
+/*
+ * Flag values:
+ * Has Elf Vector: No
+ * Large Frame: Yes
+ * Has Frame Pointer: No
+ * Saved CR: No
+ */
+	.4byte 0x00080000
+	.4byte 0x00000000
+.endobj "@etb_800092A4"
+
+# 0x8000C190..0x8000C19C | size: 0xC
+.section extabindex, "a"
+.balign 4
+
+# extabindex:0x0 | 0x8000C190 | size: 0xC
+.obj "@eti_8000C190", local
+.hidden "@eti_8000C190"
+	.4byte fn_803CDA34
+	.4byte 0x00000094
+	.4byte "@etb_800092A4"
+.endobj "@eti_8000C190"
+
+# 0x803CDA34..0x803CDAC8 | size: 0x94
+.text
+.balign 4
+
+# .text:0x0 | 0x803CDA34 | size: 0x94
+.fn fn_803CDA34, global
+/* 803CDA34 003C37B4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803CDA38 003C37B8  7C 08 02 A6 */	mflr r0
+/* 803CDA3C 003C37BC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803CDA40 003C37C0  4B FF F8 A1 */	bl fn_803CD2E0
+/* 803CDA44 003C37C4  2C 03 00 00 */	cmpwi r3, 0x0
+/* 803CDA48 003C37C8  40 82 00 14 */	bne .L_803CDA5C
+/* 803CDA4C 003C37CC  38 60 00 05 */	li r3, 0x5
+/* 803CDA50 003C37D0  48 00 0B 75 */	bl fn_803CE5C4
+/* 803CDA54 003C37D4  38 60 00 05 */	li r3, 0x5
+/* 803CDA58 003C37D8  48 00 00 60 */	b .L_803CDAB8
+.L_803CDA5C:
+/* 803CDA5C 003C37DC  4B FF F8 15 */	bl fn_803CD270
+/* 803CDA60 003C37E0  2C 03 00 00 */	cmpwi r3, 0x0
+/* 803CDA64 003C37E4  40 82 00 0C */	bne .L_803CDA70
+/* 803CDA68 003C37E8  38 00 00 00 */	li r0, 0x0
+/* 803CDA6C 003C37EC  48 00 00 1C */	b .L_803CDA88
+.L_803CDA70:
+/* 803CDA70 003C37F0  4B FF F8 71 */	bl fn_803CD2E0
+/* 803CDA74 003C37F4  2C 03 00 00 */	cmpwi r3, 0x0
+/* 803CDA78 003C37F8  40 82 00 0C */	bne .L_803CDA84
+/* 803CDA7C 003C37FC  38 00 00 00 */	li r0, 0x0
+/* 803CDA80 003C3800  48 00 00 08 */	b .L_803CDA88
+.L_803CDA84:
+/* 803CDA84 003C3804  80 03 00 98 */	lwz r0, 0x98(r3)
+.L_803CDA88:
+/* 803CDA88 003C3808  2C 00 00 00 */	cmpwi r0, 0x0
+/* 803CDA8C 003C380C  41 82 00 18 */	beq .L_803CDAA4
+/* 803CDA90 003C3810  4B FF FB 09 */	bl fn_803CD598
+/* 803CDA94 003C3814  38 60 00 00 */	li r3, 0x0
+/* 803CDA98 003C3818  48 00 0B 2D */	bl fn_803CE5C4
+/* 803CDA9C 003C381C  38 60 00 06 */	li r3, 0x6
+/* 803CDAA0 003C3820  48 00 00 18 */	b .L_803CDAB8
+.L_803CDAA4:
+/* 803CDAA4 003C3824  3C A0 80 3D */	lis r5, fn_803CD9C4@ha
+/* 803CDAA8 003C3828  38 60 00 01 */	li r3, 0x1
+/* 803CDAAC 003C382C  38 A5 D9 C4 */	addi r5, r5, fn_803CD9C4@l
+/* 803CDAB0 003C3830  38 80 00 01 */	li r4, 0x1
+/* 803CDAB4 003C3834  48 00 14 49 */	bl fn_803CEEFC
+.L_803CDAB8:
+/* 803CDAB8 003C3838  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803CDABC 003C383C  7C 08 03 A6 */	mtlr r0
+/* 803CDAC0 003C3840  38 21 00 10 */	addi r1, r1, 0x10
+/* 803CDAC4 003C3844  4E 80 00 20 */	blr
+.endfn fn_803CDA34

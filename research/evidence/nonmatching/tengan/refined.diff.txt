@@ -1,0 +1,668 @@
+MATCH create__8grTenganFiPCcPCc
+MATCH setMdlIndex__6GroundFi
+MATCH __ct__8grTenganFPCc
+MATCH __dt__8grTenganFv
+MATCH update__8grTenganFf
+MATCH setTgtNode__8grTenganFPCc
+MATCH getTgtNode__8grTenganFv
+MATCH adventureEventGetItem__6GroundFiP13stTriggerData
+MATCH getInitializeInfo__6GroundFi
+MATCH setInitializeInfo__6GroundFi
+MATCH setInitializeFlag__6GroundFv
+MATCH disableCalcCollision__6GroundFv
+MATCH enableCalcCollision__6GroundFv
+MATCH isEnableCalcCollision__6GroundFv
+MATCH getMdlIndex__6GroundFv
+MATCH initStageData__6GroundFv
+MATCH getStageData__6GroundFv
+MATCH getModelCount__6GroundFv
+MATCH getTransparencyFlag__9grGimmickFv
+MATCH getGimmickData__9grGimmickFv
+MATCH setGimmickData__9grGimmickFPv
+MATCH create__10grTenganBgFiPCcPCc
+MATCH __dt__10grTenganBgFv
+DIFF  update__10grTenganBgFf
+--- target
++++ candidate
+@@ -6,6 +6,2 @@
+ stw     r31,20(r1)
+-lis     r31,0
+-R_PPC_ADDR16_HA
+-addi    r31,r31,0
+-R_PPC_ADDR16_LO
+ stw     r30,16(r1)
+@@ -16,5 +12,8 @@
+ lwz     r12,60(r3)
+-addi    r6,r31,0
++lis     r6,0
++R_PPC_ADDR16_HA	backgroundNodeNames
+ li      r5,0
+ lwz     r12,204(r12)
++addi    r6,r6,0
++R_PPC_ADDR16_LO	backgroundNodeNames
+ mtctr   r12
+@@ -25,6 +24,10 @@
+ lwz     r12,60(r30)
++lis     r31,0
++R_PPC_ADDR16_HA	backgroundNodeNames
++addi    r31,r31,0
++R_PPC_ADDR16_LO	backgroundNodeNames
+ mr      r3,r30
++lwz     r12,204(r12)
++li      r5,0
+ addi    r6,r31,16
+-li      r5,0
+-lwz     r12,204(r12)
+ mtctr   r12
+MATCH create__13grTenganFloorFiPCcPCc
+MATCH __dt__13grTenganFloorFv
+MATCH update__13grTenganFloorFf
+MATCH updateFloor__13grTenganFloorFf
+DIFF  updateVisibility__13grTenganFloorFf
+--- target
++++ candidate
+@@ -13 +13,2 @@
+ bctr
++blr
+MATCH fn_60_6D28
+DIFF  changeAnimation__13grTenganFloorFUlbbPf
+--- target
++++ candidate
+@@ -7,7 +7,7 @@
+ lbz     r0,372(r3)
+-mr      r25,r3
+-mr      r26,r4
+-mr      r27,r5
++mr      r29,r3
++mr      r25,r4
++mr      r30,r5
+ cmplw   r0,r4
+-mr      r28,r7
++mr      r31,r7
+ bne <addr>
+@@ -16,109 +16,103 @@
+ lwz     r4,68(r3)
+-lwz     r30,0(r4)
+-cmpwi   r30,0
++lwz     r27,0(r4)
++cmpwi   r27,0
+ beq <addr>
+ lwz     r3,72(r3)
+-lwz     r29,0(r3)
++lwz     r26,0(r3)
++cmpwi   r26,0
++beq <addr>
++lwz     r28,232(r27)
++cmpwi   r28,0
++beq <addr>
++mr      r3,r26
++mr      r4,r27
++bl <addr>
++R_PPC_REL24	unbindNodeAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
++mr      r3,r26
++mr      r4,r27
++bl <addr>
++R_PPC_REL24	unbindVisibleAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
++mr      r3,r26
++mr      r4,r27
++bl <addr>
++R_PPC_REL24	unbindTexAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
++mr      r3,r26
++mr      r4,r27
++bl <addr>
++R_PPC_REL24	unbindTexSrtAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
++mr      r3,r26
++mr      r4,r27
++bl <addr>
++R_PPC_REL24	unbindMatColAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
++cmplwi  r25,2
++stb     r25,372(r29)
++bge <addr>
++mr      r3,r26
++bl <addr>
++R_PPC_REL24	GetResAnmChrNumEntries__Q34nw4r3g3d7ResFileFv
++cmplw   r25,r3
++bge <addr>
++mr      r3,r26
++bl <addr>
++R_PPC_REL24	GetResAnmChrNumEntries__Q34nw4r3g3d7ResFileFv
++cmplw   r25,r3
++bge <addr>
++mr      r3,r26
++mr      r4,r25
++bl <addr>
++R_PPC_REL24
++mr      r29,r3
++li      r3,15
++bl <addr>
++R_PPC_REL24	getMEMAllocator__13gfHeapManagerFQ25Heaps8HeapType
+ cmpwi   r29,0
+ beq <addr>
+-lwz     r31,232(r30)
+-cmpwi   r31,0
+-beq <addr>
+-mr      r3,r29
+-mr      r4,r30
+-bl <addr>
+-R_PPC_REL24	unbindNodeAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
+-mr      r3,r29
+-mr      r4,r30
+-bl <addr>
+-R_PPC_REL24	unbindVisibleAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
+-mr      r3,r29
+-mr      r4,r30
+-bl <addr>
+-R_PPC_REL24	unbindTexAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
+-mr      r3,r29
+-mr      r4,r30
+-bl <addr>
+-R_PPC_REL24	unbindTexSrtAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
+-mr      r3,r29
+-mr      r4,r30
+-bl <addr>
+-R_PPC_REL24	unbindMatColAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
+-cmplwi  r26,2
+-stb     r26,372(r25)
+-bge <addr>
+-mr      r3,r29
+-bl <addr>
+-R_PPC_REL24	GetResAnmChrNumEntries__Q34nw4r3g3d7ResFileFv
+-xor     r0,r3,r26
+-cntlzw  r0,r0
+-slw     r0,r3,r0
+-srwi.   r0,r0,31
+-beq <addr>
+-mr      r3,r29
+-bl <addr>
+-R_PPC_REL24	GetResAnmChrNumEntries__Q34nw4r3g3d7ResFileFv
+-cmplw   r26,r3
+-bge <addr>
+-mr      r3,r29
+-mr      r4,r26
+-bl <addr>
+-R_PPC_REL24
+-mr      r25,r3
+-li      r3,15
+-bl <addr>
+-R_PPC_REL24	getMEMAllocator__13gfHeapManagerFQ25Heaps8HeapType
+-cmpwi   r25,0
+-beq <addr>
+-stw     r31,76(r1)
++stw     r28,60(r1)
+ addi    r4,r1,84
+-addi    r5,r1,80
+-addi    r6,r1,76
+-stw     r25,80(r1)
+-li      r7,0
+-bl <addr>
+-R_PPC_REL24	Construct__Q34nw4r3g3d12AnmObjChrResFP12MEMAllocatorPiQ34nw4r3g3d9ResAnmChrQ34nw4r3g3d6ResMdlb
+-cmpwi   r3,0
+-mr      r25,r3
+-beq <addr>
+-stw     r31,72(r1)
+-addi    r4,r1,72
+-lwz     r12,0(r3)
+-lwz     r12,48(r12)
+-mtctr   r12
+-bctrl
+-lwz     r3,12(r29)
+-cmpwi   r3,0
+-beq <addr>
+-bl <addr>
+-R_PPC_REL24	Destroy__Q34nw4r3g3d6G3dObjFv
+-stw     r25,12(r29)
+-mr      r3,r29
+-bl <addr>
+-R_PPC_REL24	GetResAnmVisNumEntries__Q34nw4r3g3d7ResFileFv
+-xor     r0,r3,r26
+-cntlzw  r0,r0
+-slw     r0,r3,r0
+-srwi.   r0,r0,31
+-beq <addr>
+-mr      r3,r29
+-bl <addr>
+-R_PPC_REL24	GetResAnmVisNumEntries__Q34nw4r3g3d7ResFileFv
+-cmplw   r26,r3
+-bge <addr>
+-mr      r3,r29
+-mr      r4,r26
+-bl <addr>
+-R_PPC_REL24
+-mr      r25,r3
+-li      r3,15
+-bl <addr>
+-R_PPC_REL24	getMEMAllocator__13gfHeapManagerFQ25Heaps8HeapType
+-cmpwi   r25,0
+-beq <addr>
+-stw     r31,60(r1)
+-addi    r4,r1,68
+ addi    r5,r1,64
+ addi    r6,r1,60
+-stw     r25,64(r1)
++stw     r29,64(r1)
++li      r7,0
++bl <addr>
++R_PPC_REL24	Construct__Q34nw4r3g3d12AnmObjChrResFP12MEMAllocatorPiQ34nw4r3g3d9ResAnmChrQ34nw4r3g3d6ResMdlb
++cmpwi   r3,0
++mr      r29,r3
++beq <addr>
++stw     r28,56(r1)
++addi    r4,r1,56
++lwz     r12,0(r3)
++lwz     r12,48(r12)
++mtctr   r12
++bctrl
++lwz     r3,12(r26)
++cmpwi   r3,0
++beq <addr>
++bl <addr>
++R_PPC_REL24	Destroy__Q34nw4r3g3d6G3dObjFv
++stw     r29,12(r26)
++mr      r3,r26
++bl <addr>
++R_PPC_REL24	GetResAnmVisNumEntries__Q34nw4r3g3d7ResFileFv
++cmplw   r25,r3
++bge <addr>
++mr      r3,r26
++bl <addr>
++R_PPC_REL24	GetResAnmVisNumEntries__Q34nw4r3g3d7ResFileFv
++cmplw   r25,r3
++bge <addr>
++mr      r3,r26
++mr      r4,r25
++bl <addr>
++R_PPC_REL24
++mr      r29,r3
++li      r3,15
++bl <addr>
++R_PPC_REL24	getMEMAllocator__13gfHeapManagerFQ25Heaps8HeapType
++cmpwi   r29,0
++beq <addr>
++stw     r28,48(r1)
++addi    r4,r1,80
++addi    r5,r1,52
++addi    r6,r1,48
++stw     r29,52(r1)
+ bl <addr>
+@@ -126,44 +120,41 @@
+ cmpwi   r3,0
+-mr      r25,r3
+-beq <addr>
+-stw     r31,56(r1)
+-addi    r4,r1,56
+-lwz     r12,0(r3)
+-lwz     r12,48(r12)
+-mtctr   r12
+-bctrl
+-lwz     r3,8(r29)
+-cmpwi   r3,0
+-beq <addr>
+-bl <addr>
+-R_PPC_REL24	Destroy__Q34nw4r3g3d6G3dObjFv
+-stw     r25,8(r29)
+-mr      r3,r29
++mr      r29,r3
++beq <addr>
++stw     r28,44(r1)
++addi    r4,r1,44
++lwz     r12,0(r3)
++lwz     r12,48(r12)
++mtctr   r12
++bctrl
++lwz     r3,8(r26)
++cmpwi   r3,0
++beq <addr>
++bl <addr>
++R_PPC_REL24	Destroy__Q34nw4r3g3d6G3dObjFv
++stw     r29,8(r26)
++mr      r3,r26
+ bl <addr>
+ R_PPC_REL24	GetResAnmTexPatNumEntries__Q34nw4r3g3d7ResFileFv
+-xor     r0,r3,r26
+-cntlzw  r0,r0
+-slw     r0,r3,r0
+-srwi.   r0,r0,31
+-beq <addr>
+-mr      r3,r29
++cmplw   r25,r3
++bge <addr>
++mr      r3,r26
+ bl <addr>
+ R_PPC_REL24	GetResAnmTexPatNumEntries__Q34nw4r3g3d7ResFileFv
+-cmplw   r26,r3
+-bge <addr>
+-mr      r3,r29
+-mr      r4,r26
+-bl <addr>
+-R_PPC_REL24
+-cmpwi   r3,0
+-mr      r25,r3
+-beq <addr>
+-li      r3,15
+-bl <addr>
+-R_PPC_REL24	getMEMAllocator__13gfHeapManagerFQ25Heaps8HeapType
+-stw     r31,44(r1)
+-addi    r4,r1,52
+-addi    r5,r1,48
+-addi    r6,r1,44
+-stw     r25,48(r1)
++cmplw   r25,r3
++bge <addr>
++mr      r3,r26
++mr      r4,r25
++bl <addr>
++R_PPC_REL24
++cmpwi   r3,0
++mr      r29,r3
++beq <addr>
++li      r3,15
++bl <addr>
++R_PPC_REL24	getMEMAllocator__13gfHeapManagerFQ25Heaps8HeapType
++stw     r28,36(r1)
++addi    r4,r1,76
++addi    r5,r1,40
++addi    r6,r1,36
++stw     r29,40(r1)
+ li      r7,0
+@@ -172,44 +163,41 @@
+ cmpwi   r3,0
+-mr      r25,r3
+-beq <addr>
+-stw     r31,40(r1)
+-addi    r4,r1,40
+-lwz     r12,0(r3)
+-lwz     r12,48(r12)
+-mtctr   r12
+-bctrl
+-lwz     r3,16(r29)
+-cmpwi   r3,0
+-beq <addr>
+-bl <addr>
+-R_PPC_REL24	Destroy__Q34nw4r3g3d6G3dObjFv
+-stw     r25,16(r29)
+-mr      r3,r29
++mr      r29,r3
++beq <addr>
++stw     r28,32(r1)
++addi    r4,r1,32
++lwz     r12,0(r3)
++lwz     r12,48(r12)
++mtctr   r12
++bctrl
++lwz     r3,16(r26)
++cmpwi   r3,0
++beq <addr>
++bl <addr>
++R_PPC_REL24	Destroy__Q34nw4r3g3d6G3dObjFv
++stw     r29,16(r26)
++mr      r3,r26
+ bl <addr>
+ R_PPC_REL24	GetResAnmTexSrtNumEntries__Q34nw4r3g3d7ResFileFv
+-xor     r0,r3,r26
+-cntlzw  r0,r0
+-slw     r0,r3,r0
+-srwi.   r0,r0,31
+-beq <addr>
+-mr      r3,r29
++cmplw   r25,r3
++bge <addr>
++mr      r3,r26
+ bl <addr>
+ R_PPC_REL24	GetResAnmTexSrtNumEntries__Q34nw4r3g3d7ResFileFv
+-cmplw   r26,r3
+-bge <addr>
+-mr      r3,r29
+-mr      r4,r26
+-bl <addr>
+-R_PPC_REL24
+-cmpwi   r3,0
+-mr      r25,r3
+-beq <addr>
+-li      r3,15
+-bl <addr>
+-R_PPC_REL24	getMEMAllocator__13gfHeapManagerFQ25Heaps8HeapType
+-stw     r31,28(r1)
+-addi    r4,r1,36
+-addi    r5,r1,32
+-addi    r6,r1,28
+-stw     r25,32(r1)
++cmplw   r25,r3
++bge <addr>
++mr      r3,r26
++mr      r4,r25
++bl <addr>
++R_PPC_REL24
++cmpwi   r3,0
++mr      r29,r3
++beq <addr>
++li      r3,15
++bl <addr>
++R_PPC_REL24	getMEMAllocator__13gfHeapManagerFQ25Heaps8HeapType
++stw     r28,24(r1)
++addi    r4,r1,72
++addi    r5,r1,28
++addi    r6,r1,24
++stw     r29,28(r1)
+ li      r7,0
+@@ -218,44 +206,41 @@
+ cmpwi   r3,0
+-mr      r25,r3
+-beq <addr>
+-stw     r31,24(r1)
+-addi    r4,r1,24
+-lwz     r12,0(r3)
+-lwz     r12,48(r12)
+-mtctr   r12
+-bctrl
+-lwz     r3,20(r29)
+-cmpwi   r3,0
+-beq <addr>
+-bl <addr>
+-R_PPC_REL24	Destroy__Q34nw4r3g3d6G3dObjFv
+-stw     r25,20(r29)
+-mr      r3,r29
++mr      r29,r3
++beq <addr>
++stw     r28,20(r1)
++addi    r4,r1,20
++lwz     r12,0(r3)
++lwz     r12,48(r12)
++mtctr   r12
++bctrl
++lwz     r3,20(r26)
++cmpwi   r3,0
++beq <addr>
++bl <addr>
++R_PPC_REL24	Destroy__Q34nw4r3g3d6G3dObjFv
++stw     r29,20(r26)
++mr      r3,r26
+ bl <addr>
+ R_PPC_REL24	GetResAnmClrNumEntries__Q34nw4r3g3d7ResFileFv
+-xor     r0,r3,r26
+-cntlzw  r0,r0
+-slw     r0,r3,r0
+-srwi.   r0,r0,31
+-beq <addr>
+-mr      r3,r29
++cmplw   r25,r3
++bge <addr>
++mr      r3,r26
+ bl <addr>
+ R_PPC_REL24	GetResAnmClrNumEntries__Q34nw4r3g3d7ResFileFv
+-cmplw   r26,r3
+-bge <addr>
+-mr      r3,r29
+-mr      r4,r26
+-bl <addr>
+-R_PPC_REL24
+-cmpwi   r3,0
+-mr      r26,r3
+-beq <addr>
+-li      r3,15
+-bl <addr>
+-R_PPC_REL24	getMEMAllocator__13gfHeapManagerFQ25Heaps8HeapType
+-stw     r31,12(r1)
+-addi    r4,r1,20
++cmplw   r25,r3
++bge <addr>
++mr      r3,r26
++mr      r4,r25
++bl <addr>
++R_PPC_REL24
++cmpwi   r3,0
++mr      r29,r3
++beq <addr>
++li      r3,15
++bl <addr>
++R_PPC_REL24	getMEMAllocator__13gfHeapManagerFQ25Heaps8HeapType
++stw     r28,12(r1)
++addi    r4,r1,68
+ addi    r5,r1,16
+ addi    r6,r1,12
+-stw     r26,16(r1)
++stw     r29,16(r1)
+ li      r7,0
+@@ -264,5 +249,5 @@
+ cmpwi   r3,0
+-mr      r25,r3
+-beq <addr>
+-stw     r31,8(r1)
++mr      r29,r3
++beq <addr>
++stw     r28,8(r1)
+ addi    r4,r1,8
+@@ -272,10 +257,10 @@
+ bctrl
+-lwz     r3,24(r29)
+-cmpwi   r3,0
+-beq <addr>
+-bl <addr>
+-R_PPC_REL24	Destroy__Q34nw4r3g3d6G3dObjFv
+-stw     r25,24(r29)
+-mr      r3,r30
+-mr      r4,r29
++lwz     r3,24(r26)
++cmpwi   r3,0
++beq <addr>
++bl <addr>
++R_PPC_REL24	Destroy__Q34nw4r3g3d6G3dObjFv
++stw     r29,24(r26)
++mr      r3,r27
++mr      r4,r26
+ bl <addr>
+@@ -284,3 +269,3 @@
+ R_PPC_ADDR16_HA
+-mr      r3,r29
++mr      r3,r26
+ lfs     f1,0(r4)
+@@ -291,3 +276,3 @@
+ R_PPC_ADDR16_HA
+-mr      r3,r29
++mr      r3,r26
+ lfs     f1,0(r4)
+@@ -296,9 +281,9 @@
+ R_PPC_REL24	setUpdateRate__16gfModelAnimationFf
+-mr      r3,r29
+-mr      r4,r27
++mr      r3,r26
++mr      r4,r30
+ bl <addr>
+ R_PPC_REL24	setLoop__16gfModelAnimationFd
+-cmpwi   r28,0
+-beq <addr>
+-mr      r3,r29
++cmpwi   r31,0
++beq <addr>
++mr      r3,r26
+ bl <addr>
+@@ -314,3 +299,3 @@
+ fsubs   f0,f0,f1
+-stfs    f0,0(r28)
++stfs    f0,0(r31)
+ addi    r11,r1,128
+MATCH create__14grTenganAshibaFiPCcPCc
+DIFF  __ct__14grTenganAshibaFPCc
+--- target
++++ candidate
+@@ -9,6 +9,6 @@
+ lis     r3,0
+-R_PPC_ADDR16_HA
++R_PPC_ADDR16_HA	platformConstants
+ li      r0,0
+ lfs     f0,0(r3)
+-R_PPC_ADDR16_LO
++R_PPC_ADDR16_LO	platformConstants
+ lis     r3,0
+@@ -29,5 +29,3 @@
+ stb     r0,497(r30)
+-bne <addr>
+-mr      r3,r30
+-b <addr>
++beq <addr>
+ li      r0,1
+@@ -41,10 +39,10 @@
+ bctrl
+-lwz     r4,4(r31)
++lwz     r3,4(r31)
++lwz     r0,4(r3)
++ori     r0,r0,1
++stw     r0,4(r3)
+ mr      r3,r30
+-lwz     r0,4(r4)
+-ori     r0,r0,1
+-stw     r0,4(r4)
+-lwz     r0,20(r1)
+ lwz     r31,12(r1)
+ lwz     r30,8(r1)
++lwz     r0,20(r1)
+ mtlr    r0
+MATCH __dt__14grTenganAshibaFv
+MATCH update__14grTenganAshibaFf
+DIFF  updatePlatform__14grTenganAshibaFf
+--- target
++++ candidate
+@@ -10,6 +10,2 @@
+ stw     r29,20(r1)
+-lis     r29,0
+-R_PPC_ADDR16_HA
+-addi    r29,r29,0
+-R_PPC_ADDR16_LO
+ stw     r28,16(r1)
+@@ -31,3 +27,6 @@
+ lfs     f1,468(r31)
+-lfs     f0,0(r29)
++lis     r4,0
++R_PPC_ADDR16_HA	platformConstants
++lfs     f0,0(r4)
++R_PPC_ADDR16_LO	platformConstants
+ fsubs   f1,f1,f31
+@@ -66,3 +65,7 @@
+ R_PPC_REL24	randf__Fv
+-lfs     f0,4(r29)
++lis     r3,0
++R_PPC_ADDR16_HA	platformConstants
++addi    r3,r3,0
++R_PPC_ADDR16_LO	platformConstants
++lfs     f0,4(r3)
+ fcmpo   cr0,f1,f0
+@@ -76,4 +79,7 @@
+ stb     r0,464(r31)
+-lfs     f1,0(r29)
++lis     r3,0
++R_PPC_ADDR16_HA	platformConstants
+ lfs     f0,468(r31)
++lfs     f1,0(r3)
++R_PPC_ADDR16_LO	platformConstants
+ fcmpu   cr0,f1,f0
+@@ -156,3 +162,7 @@
+ ble <addr>
+-lfs     f0,8(r29)
++lis     r3,0
++R_PPC_ADDR16_HA	platformConstants
++addi    r3,r3,0
++R_PPC_ADDR16_LO	platformConstants
++lfs     f0,8(r3)
+ fmuls   f0,f0,f1
+MATCH updatePosition__14grTenganAshibaFf
+Instruction comparison: 32 / 37
+Extra emitted functions: setStageData__6GroundFPv, setBounds__14grTenganAshibaFPf, setKind__13grTenganFloorFUc, setEventFlags__13grTenganFloorFPUc, setEventTime__13grTenganFloorFPf, setPlatformPositions__10grTenganBgFP5Vec3f, setDialgaPosition__10grTenganBgFP5Vec3f

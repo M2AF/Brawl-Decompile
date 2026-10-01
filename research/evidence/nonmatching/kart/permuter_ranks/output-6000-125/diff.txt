@@ -1,0 +1,17 @@
+--- before
++++ after
+@@ -37860,7 +37860,14 @@
+           {
+             m_warningState = 0;
+           }
++          if (kart->m_isRacing || kart)
++          {
+           m_bgState = 9;
++          }
++          else
++          {
++            m_bgState = 9;
++          }
+         }
+         if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true))
+         {

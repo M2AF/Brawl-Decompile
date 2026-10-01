@@ -1,0 +1,28 @@
+--- before
++++ after
+@@ -37897,21 +37897,21 @@
+             {
+               stKartRecord *other = &m_karts[j];
+               bool isBehind = false;
+-              if (kart->m_lap < other->m_lap)
++              if (kart->m_lap < (&m_karts[j])->m_lap)
+               {
+                 isBehind = true;
+               }
+               else
+                 if (kart->m_lap == other->m_lap)
+               {
+-                if (kart->m_checkpoint < other->m_checkpoint)
++                if (kart->m_checkpoint < (&m_karts[j])->m_checkpoint)
+                 {
+                   isBehind = true;
+                 }
+                 else
+-                  if (kart->m_checkpoint == other->m_checkpoint)
++                  if (kart->m_checkpoint == (&m_karts[j])->m_checkpoint)
+                 {
+-                  if (kart->m_distance < other->m_distance)
++                  if (kart->m_distance < (&m_karts[j])->m_distance)
+                   {
+                     isBehind = true;
+                   }

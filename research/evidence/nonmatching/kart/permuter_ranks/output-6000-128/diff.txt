@@ -1,0 +1,99 @@
+--- before
++++ after
+@@ -37837,19 +37837,24 @@
+ 
+ void updateRanks(float deltaFrame)
+ {
++  stKartData *new_var2;
+   stKartData *data = (stKartData *) m_stageData;
++  int pad;
++  unsigned short new_var;
+   if (data)
+   {
+     m_bgState = 10;
+     bool allOnFinalLap = true;
+     __alloca(data->m_kartNum * (sizeof(int)));
++    new_var = 0;
++    new_var2 = data;
+     {
+-      u8 i = 0;
+-      u8 kartNum = data->m_kartNum;
++      u8 i = new_var;
++      u8 kartNum = new_var2->m_kartNum;
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+-        kart->m_rank = 0;
++        kart->m_rank = new_var;
+         if (kart->m_lap < 10)
+         {
+           allOnFinalLap = false;
+@@ -37858,7 +37863,7 @@
+         {
+           if (m_warningState == 10)
+           {
+-            m_warningState = 0;
++            m_warningState = new_var;
+           }
+           m_bgState = 9;
+         }
+@@ -37870,7 +37875,7 @@
+ 
+     }
+     {
+-      u8 i = 0;
++      u8 i = new_var;
+       u8 kartNum = data->m_kartNum;
+       for (; i != kartNum; i++)
+       {
+@@ -37883,13 +37888,13 @@
+ 
+     }
+     {
+-      u8 i = 0;
++      u8 i = new_var;
+       u8 kartNum = data->m_kartNum;
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+         {
+-          u8 j = 0;
++          u8 j = new_var;
+           u8 otherNum = data->m_kartNum;
+           for (; j != otherNum; j++)
+           {
+@@ -37902,7 +37907,7 @@
+                 isBehind = true;
+               }
+               else
+-                if (kart->m_lap == other->m_lap)
++                if (((0, kart->m_lap)) == other->m_lap)
+               {
+                 if (kart->m_checkpoint < other->m_checkpoint)
+                 {
+@@ -37919,7 +37924,8 @@
+               }
+               if (isBehind == true)
+               {
+-                kart->m_rank++;
++ if (1) { do { kart->m_rank++; } while (0);
++                }
+               }
+             }
+           }
+@@ -37928,13 +37934,13 @@
+       }
+ 
+     }
+-    if ((m_isZoomedOut == true) && (m_warningState != 0))
++    if ((m_isZoomedOut == true) && (m_warningState != new_var))
+     {
+       zoomInCamera();
+       m_isZoomedOut = false;
+     }
+     else
+-      if ((m_isZoomedOut == false) && (m_warningState == 0))
++      if ((m_isZoomedOut == false) && (m_warningState == new_var))
+     {
+       zoomOutCamera(225.0f, 275.0f);
+       m_isZoomedOut = true;

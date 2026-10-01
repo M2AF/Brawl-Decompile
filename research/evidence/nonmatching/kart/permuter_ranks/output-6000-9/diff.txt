@@ -1,0 +1,11 @@
+--- before
++++ after
+@@ -37897,7 +37897,7 @@
+             {
+               stKartRecord *other = &m_karts[j];
+               bool isBehind = false;
+-              if (kart->m_lap < other->m_lap)
++              if (0, kart->m_lap < other->m_lap)
+               {
+                 isBehind = true;
+               }

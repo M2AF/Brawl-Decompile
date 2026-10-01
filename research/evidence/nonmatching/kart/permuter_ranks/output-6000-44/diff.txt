@@ -1,0 +1,23 @@
+--- before
++++ after
+@@ -37835,6 +37835,11 @@
+ 
+ 
+ 
++inline int inline_fn(int arg0)
++{
++  return arg0;
++}
++
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
+@@ -37842,7 +37847,7 @@
+   {
+     m_bgState = 10;
+     bool allOnFinalLap = true;
+-    __alloca(data->m_kartNum * (sizeof(int)));
++    __alloca(data->m_kartNum * inline_fn(sizeof(int)));
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;

@@ -1,0 +1,3 @@
+Fresh generated config SHA256 37874e33b89dfcacd586e9f7cf33f65d475110ca93232454465a4facbe730cb9
+[(2340, 5, 'st_dxyorster', 50), (3148, 6, 'st_dxgarden', 50), (3508, 7, 'st_heal', 37), (4008, 8, 'st_greenhill', 53), (4432, 9, 'st_kart', 59), (5228, 10, 'st_tengan', 37)]
+#5 remains smallest in the authorized provisional queue; no change of candidate.

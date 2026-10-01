@@ -1,0 +1,38 @@
+--- before
++++ after
+@@ -37838,6 +37838,7 @@
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
++  int new_var;
+   if (data)
+   {
+     m_bgState = 10;
+@@ -37897,12 +37898,17 @@
+             {
+               stKartRecord *other = &m_karts[j];
+               bool isBehind = false;
+-              if (kart->m_lap < other->m_lap)
++              new_var = other->m_lap;
++              if (kart->m_lap < new_var)
+               {
+                 isBehind = true;
+               }
+               else
+-                if (kart->m_lap == other->m_lap)
++              {
++                if (((!data->m_kartNum) && (!data->m_kartNum)) && (!data->m_kartNum))
++                {
++                }
++                if (kart->m_lap == new_var)
+               {
+                 if (kart->m_checkpoint < other->m_checkpoint)
+                 {
+@@ -37914,6 +37920,7 @@
+                   if (kart->m_distance < other->m_distance)
+                   {
+                     isBehind = true;
++                    }
+                   }
+                 }
+               }

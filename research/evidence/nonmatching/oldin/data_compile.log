@@ -1,0 +1,9 @@
+[1/2] SPLIT config\RSBE01_01\config.yml
+ninja: error: rebuilding 'build.ninja': subcommand failed
+FAILED: [code=1] build/RSBE01_01/config.json 
+build\tools\dtk.exe dol split config\RSBE01_01\config.yml build\RSBE01_01
+ WARN Alignment for mo_fighter/ft_marth/ft_marth_status_uniq_process_special_hi.cpp .data expected 8, but starts at 4:0x00005584
+Failed: While processing object 'st_oldin.rel' (module st_oldin ID 53)
+
+Caused by:
+    Symbol s_oldinData (0x00000000..0x00000378) overlaps with symbol lbl_53_data_38 (0x00000038..0x00000378, align 1)

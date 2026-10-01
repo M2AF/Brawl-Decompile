@@ -1,0 +1,44 @@
+.include "macros.inc"
+.file "auto_fn_8027CC2C_text"
+
+# 0x8027CC2C..0x8027CCA0 | size: 0x74
+.text
+.balign 4
+
+# .text:0x0 | 0x8027CC2C | size: 0x74
+.fn fn_8027CC2C, global
+/* 8027CC2C 002729AC  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 8027CC30 002729B0  7C 08 02 A6 */	mflr r0
+/* 8027CC34 002729B4  3C E0 80 48 */	lis r7, lbl_80486250@ha
+/* 8027CC38 002729B8  3C 60 80 53 */	lis r3, lbl_805323E8@ha
+/* 8027CC3C 002729BC  90 01 00 24 */	stw r0, 0x24(r1)
+/* 8027CC40 002729C0  3C 80 80 41 */	lis r4, lbl_8040F208@ha
+/* 8027CC44 002729C4  3D 20 80 41 */	lis r9, lbl_8040F1D8@ha
+/* 8027CC48 002729C8  38 E7 62 50 */	addi r7, r7, lbl_80486250@l
+/* 8027CC4C 002729CC  81 0D AB 18 */	lwz r8, lbl_8059EF38@sda21(r0)
+/* 8027CC50 002729D0  38 00 00 08 */	li r0, 0x8
+/* 8027CC54 002729D4  38 63 23 E8 */	addi r3, r3, lbl_805323E8@l
+/* 8027CC58 002729D8  38 84 F2 08 */	addi r4, r4, lbl_8040F208@l
+/* 8027CC5C 002729DC  90 E1 00 08 */	stw r7, 0x8(r1)
+/* 8027CC60 002729E0  39 29 F1 D8 */	addi r9, r9, lbl_8040F1D8@l
+/* 8027CC64 002729E4  38 A0 00 00 */	li r5, 0x0
+/* 8027CC68 002729E8  38 C0 00 14 */	li r6, 0x14
+/* 8027CC6C 002729EC  90 01 00 0C */	stw r0, 0xc(r1)
+/* 8027CC70 002729F0  38 00 00 00 */	li r0, 0x0
+/* 8027CC74 002729F4  39 40 00 03 */	li r10, 0x3
+/* 8027CC78 002729F8  91 07 00 44 */	stw r8, 0x44(r7)
+/* 8027CC7C 002729FC  91 07 00 58 */	stw r8, 0x58(r7)
+/* 8027CC80 00272A00  38 E0 00 00 */	li r7, 0x0
+/* 8027CC84 00272A04  39 00 00 00 */	li r8, 0x0
+/* 8027CC88 00272A08  90 01 00 10 */	stw r0, 0x10(r1)
+/* 8027CC8C 00272A0C  4B FF FB 7D */	bl fn_8027C808
+/* 8027CC90 00272A10  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 8027CC94 00272A14  7C 08 03 A6 */	mtlr r0
+/* 8027CC98 00272A18  38 21 00 20 */	addi r1, r1, 0x20
+/* 8027CC9C 00272A1C  4E 80 00 20 */	blr
+.endfn fn_8027CC2C
+
+# 0x804065E8..0x804065EC | size: 0x4
+.section .ctors, "a"
+.balign 4
+	.4byte fn_8027CC2C

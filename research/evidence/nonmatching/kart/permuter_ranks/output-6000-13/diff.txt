@@ -1,0 +1,40 @@
+--- before
++++ after
+@@ -37835,6 +37835,11 @@
+ 
+ 
+ 
++inline int inline_fn(stKartRecord *arg0)
++{
++  return arg0->m_lap;
++}
++
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
+@@ -37850,7 +37855,7 @@
+       {
+         stKartRecord *kart = &m_karts[i];
+         kart->m_rank = 0;
+-        if (kart->m_lap < 10)
++        if (inline_fn(kart) < 10)
+         {
+           allOnFinalLap = false;
+         }
+@@ -37897,12 +37902,14 @@
+             {
+               stKartRecord *other = &m_karts[j];
+               bool isBehind = false;
+-              if (kart->m_lap < other->m_lap)
++              if (inline_fn(kart) < inline_fn(other))
+               {
+                 isBehind = true;
++                kart++;
++                kart--;
+               }
+               else
+-                if (kart->m_lap == other->m_lap)
++                if (inline_fn(kart) == inline_fn(other))
+               {
+                 if (kart->m_checkpoint < other->m_checkpoint)
+                 {

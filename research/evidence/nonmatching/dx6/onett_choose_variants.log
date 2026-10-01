@@ -1,0 +1,6 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+base                         chooseCar__9stDxOnettFUl: 36 diff lines, functions matching 68/71
+decl-reverse-fields          chooseCar__9stDxOnettFUl: 36 diff lines, functions matching 68/71
+decl-reverse-assign          chooseCar__9stDxOnettFUl: 52 diff lines, functions matching 68/71
+all-scalar-decls             chooseCar__9stDxOnettFUl: 36 diff lines, functions matching 68/71
+Best: all-scalar-decls (36), base (36), decl-reverse-fields (36)

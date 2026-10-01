@@ -1,0 +1,17 @@
+--- before
++++ after
+@@ -37877,7 +37877,14 @@
+         stKartRecord *kart = &m_karts[i];
+         if (allOnFinalLap == true)
+         {
++          if (kart->m_lap)
++          {
+           kart->m_lap -= 10;
++          }
++          else
++          {
++            kart->m_lap -= 10;
++          }
+         }
+       }
+ 

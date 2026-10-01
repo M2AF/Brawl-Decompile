@@ -1,0 +1,82 @@
+--- before
++++ after
+@@ -37835,6 +37835,11 @@
+ 
+ 
+ 
++inline u32 inline_fn(stKartRecord *arg0)
++{
++  return arg0->m_checkpoint;
++}
++
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
+@@ -37854,7 +37859,7 @@
+         {
+           allOnFinalLap = false;
+         }
+-        if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))
++        if (((inline_fn(kart) > 20) && (inline_fn(kart) < 40)) && (kart->m_isRacing == true))
+         {
+           if (m_warningState == 10)
+           {
+@@ -37862,7 +37867,7 @@
+           }
+           m_bgState = 9;
+         }
+-        if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true))
++        if ((inline_fn(kart) > 90) && (kart->m_isRacing == true))
+         {
+           m_bgState = 8;
+         }
+@@ -37885,48 +37890,7 @@
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;
+-      for (; i != kartNum; i++)
+-      {
+-        stKartRecord *kart = &m_karts[i];
+-        {
+-          u8 j = 0;
+-          u8 otherNum = data->m_kartNum;
+-          for (; j != otherNum; j++)
+-          {
+-            if (i != j)
+-            {
+-              stKartRecord *other = &m_karts[j];
+-              bool isBehind = false;
+-              if (kart->m_lap < other->m_lap)
+-              {
+-                isBehind = true;
+-              }
+-              else
+-                if (kart->m_lap == other->m_lap)
+-              {
+-                if (kart->m_checkpoint < other->m_checkpoint)
+-                {
+-                  isBehind = true;
+-                }
+-                else
+-                  if (kart->m_checkpoint == other->m_checkpoint)
+-                {
+-                  if (kart->m_distance < other->m_distance)
+-                  {
+-                    isBehind = true;
+-                  }
+-                }
+-              }
+-              if (isBehind == true)
+-              {
+-                kart->m_rank++;
+-              }
+-            }
+-          }
+-
+-        }
+-      }
+-
++ do { for (; i != kartNum; i++) { stKartRecord *kart = &m_karts[i]; { u8 j = 0; u8 otherNum = data->m_kartNum; for (; j != otherNum; j++) { if (i != j) { stKartRecord *other = &m_karts[j]; bool isBehind = false; if (kart->m_lap < other->m_lap) { isBehind = true; } else if (1) { if (kart->m_lap == other->m_lap) { if (inline_fn(kart) < inline_fn(other)) { isBehind = true; } else if (inline_fn(kart) == inline_fn(other)) { if (kart->m_distance < other->m_distance) { isBehind = true; } } } } if (isBehind == true) { kart->m_rank++; } } } } } } while (0);
+     }
+     if ((m_isZoomedOut == true) && (m_warningState != 0))
+     {

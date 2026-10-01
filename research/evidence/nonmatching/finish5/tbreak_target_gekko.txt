@@ -1,0 +1,2029 @@
+
+../brawl-codex5/build/RSBE01_01/st_tbreak/obj/mo_stage/st_tbreak/st_tbreak.o:     file format elf32-powerpc
+
+
+Disassembly of section .text:
+
+00000000 <create__13stTargetBreakFv>:
+       0:	stwu    r1,-16(r1)
+       4:	mflr    r0
+       8:	li      r3,964
+       c:	li      r4,15
+      10:	stw     r0,20(r1)
+      14:	bl      14 <create__13stTargetBreakFv+0x14>
+			14: R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+      18:	cmpwi   r3,0
+      1c:	beq-    24 <create__13stTargetBreakFv+0x24>
+      20:	bl      20 <create__13stTargetBreakFv+0x20>
+			20: R_PPC_REL24	__ct__13stTargetBreakFv
+      24:	lwz     r0,20(r1)
+      28:	mtlr    r0
+      2c:	addi    r1,r1,16
+      30:	blr
+
+00000034 <__ct__13stTargetBreakFv>:
+      34:	stwu    r1,-32(r1)
+      38:	mflr    r0
+      3c:	li      r5,56
+      40:	stw     r0,36(r1)
+      44:	stw     r31,28(r1)
+      48:	lis     r31,0
+			4a: R_PPC_ADDR16_HA	lbl_89_data_0
+      4c:	addi    r31,r31,0
+			4e: R_PPC_ADDR16_LO	lbl_89_data_0
+      50:	stw     r30,24(r1)
+      54:	addi    r4,r31,1216
+      58:	stw     r29,20(r1)
+      5c:	stw     r28,16(r1)
+      60:	mr      r28,r3
+      64:	bl      64 <__ct__13stTargetBreakFv+0x30>
+			64: R_PPC_REL24	__ct__7stMeleeFPCcQ26Stages11srStageKind
+      68:	lis     r3,0
+			6a: R_PPC_ADDR16_HA	__vt__13stTargetBreak
+      6c:	li      r0,0
+      70:	addi    r3,r3,0
+			72: R_PPC_ADDR16_LO	__vt__13stTargetBreak
+      74:	addi    r30,r31,1024
+      78:	stw     r3,60(r28)
+      7c:	li      r29,0
+      80:	lwz     r3,0(r31)
+      84:	stw     r3,860(r28)
+      88:	stw     r0,864(r28)
+      8c:	bl      8c <__ct__13stTargetBreakFv+0x58>
+			8c: R_PPC_REL24	getInstance__9itManagerFv
+      90:	lwz     r4,4(r30)
+      94:	li      r6,0
+      98:	lwz     r5,8(r30)
+      9c:	li      r7,1
+      a0:	bl      a0 <__ct__13stTargetBreakFv+0x6c>
+			a0: R_PPC_REL24	preloadItemKindArchive__9itManagerF6itKindUlQ29itArchive4Typeb
+      a4:	addi    r29,r29,1
+      a8:	addi    r30,r30,12
+      ac:	cmpwi   r29,16
+      b0:	blt+    8c <__ct__13stTargetBreakFv+0x58>
+      b4:	li      r0,0
+      b8:	mr      r3,r28
+      bc:	stw     r0,760(r28)
+      c0:	stw     r0,764(r28)
+      c4:	stw     r0,768(r28)
+      c8:	stw     r0,772(r28)
+      cc:	stw     r0,828(r28)
+      d0:	stw     r0,840(r28)
+      d4:	bl      d4 <__ct__13stTargetBreakFv+0xa0>
+			d4: R_PPC_REL24	setPlayerPositionIndexSerial__7stMeleeFv
+      d8:	lwz     r31,28(r1)
+      dc:	mr      r3,r28
+      e0:	lwz     r30,24(r1)
+      e4:	lwz     r29,20(r1)
+      e8:	lwz     r28,16(r1)
+      ec:	lwz     r0,36(r1)
+      f0:	mtlr    r0
+      f4:	addi    r1,r1,32
+      f8:	blr
+
+000000fc <__dt__13stTargetBreakFv>:
+      fc:	stwu    r1,-32(r1)
+     100:	mflr    r0
+     104:	cmpwi   r3,0
+     108:	stw     r0,36(r1)
+     10c:	stw     r31,28(r1)
+     110:	stw     r30,24(r1)
+     114:	stw     r29,20(r1)
+     118:	mr      r29,r4
+     11c:	stw     r28,16(r1)
+     120:	mr      r28,r3
+     124:	beq-    1a0 <__dt__13stTargetBreakFv+0xa4>
+     128:	lis     r4,0
+			12a: R_PPC_ADDR16_HA	__vt__13stTargetBreak
+     12c:	mr      r31,r28
+     130:	addi    r4,r4,0
+			132: R_PPC_ADDR16_LO	__vt__13stTargetBreak
+     134:	li      r30,0
+     138:	stw     r4,60(r3)
+     13c:	lwz     r3,760(r31)
+     140:	cmpwi   r3,0
+     144:	beq-    14c <__dt__13stTargetBreakFv+0x50>
+     148:	bl      148 <__dt__13stTargetBreakFv+0x4c>
+			148: R_PPC_REL24	__dl__FPv
+     14c:	addi    r30,r30,1
+     150:	addi    r31,r31,4
+     154:	cmpwi   r30,4
+     158:	blt+    13c <__dt__13stTargetBreakFv+0x40>
+     15c:	lwz     r3,840(r28)
+     160:	cmpwi   r3,0
+     164:	beq-    16c <__dt__13stTargetBreakFv+0x70>
+     168:	bl      168 <__dt__13stTargetBreakFv+0x6c>
+			168: R_PPC_REL24	__dl__FPv
+     16c:	lwz     r3,828(r28)
+     170:	cmpwi   r3,0
+     174:	beq-    17c <__dt__13stTargetBreakFv+0x80>
+     178:	bl      178 <__dt__13stTargetBreakFv+0x7c>
+			178: R_PPC_REL24	__dl__FPv
+     17c:	mr      r3,r28
+     180:	bl      180 <__dt__13stTargetBreakFv+0x84>
+			180: R_PPC_REL24	releaseArchive__15stCommonGimmickFv
+     184:	mr      r3,r28
+     188:	li      r4,0
+     18c:	bl      18c <__dt__13stTargetBreakFv+0x90>
+			18c: R_PPC_REL24	__dt__7stMeleeFv
+     190:	cmpwi   r29,0
+     194:	ble-    1a0 <__dt__13stTargetBreakFv+0xa4>
+     198:	mr      r3,r28
+     19c:	bl      19c <__dt__13stTargetBreakFv+0xa0>
+			19c: R_PPC_REL24	__dl__FPv
+     1a0:	lwz     r31,28(r1)
+     1a4:	mr      r3,r28
+     1a8:	lwz     r30,24(r1)
+     1ac:	lwz     r29,20(r1)
+     1b0:	lwz     r28,16(r1)
+     1b4:	lwz     r0,36(r1)
+     1b8:	mtlr    r0
+     1bc:	addi    r1,r1,32
+     1c0:	blr
+
+000001c4 <loading__13stTargetBreakFv>:
+     1c4:	li      r3,1
+     1c8:	blr
+
+000001cc <createObj__13stTargetBreakFv>:
+     1cc:	stwu    r1,-592(r1)
+     1d0:	mflr    r0
+     1d4:	stw     r0,596(r1)
+     1d8:	stfd    f31,576(r1)
+     1dc:	psq_st  f31,584(r1),0,0
+     1e0:	stfd    f30,560(r1)
+     1e4:	psq_st  f30,568(r1),0,0
+     1e8:	stfd    f29,544(r1)
+     1ec:	psq_st  f29,552(r1),0,0
+     1f0:	stfd    f28,528(r1)
+     1f4:	psq_st  f28,536(r1),0,0
+     1f8:	addi    r11,r1,528
+     1fc:	bl      1fc <createObj__13stTargetBreakFv+0x30>
+			1fc: R_PPC_REL24	_savegpr_22
+     200:	lis     r4,0
+			202: R_PPC_ADDR16_HA	g_GameGlobal
+     204:	lis     r29,0
+			206: R_PPC_ADDR16_HA	lbl_89_rodata_0
+     208:	lwz     r4,0(r4)
+			20a: R_PPC_ADDR16_LO	g_GameGlobal
+     20c:	lis     r30,0
+			20e: R_PPC_ADDR16_HA	lbl_89_data_0
+     210:	mr      r27,r3
+     214:	addi    r29,r29,0
+			216: R_PPC_ADDR16_LO	lbl_89_rodata_0
+     218:	lwz     r4,8(r4)
+     21c:	addi    r30,r30,0
+			21e: R_PPC_ADDR16_LO	lbl_89_data_0
+     220:	li      r5,4
+     224:	lbz     r0,14(r4)
+     228:	rlwinm  r0,r0,27,29,31
+     22c:	cmpwi   r0,4
+     230:	bgt-    238 <createObj__13stTargetBreakFv+0x6c>
+     234:	mr      r5,r0
+     238:	srawi   r0,r5,31
+     23c:	lwz     r4,416(r27)
+     240:	andc    r0,r5,r0
+     244:	li      r5,10
+     248:	stw     r0,848(r3)
+     24c:	mr      r3,r27
+     250:	bl      250 <createObj__13stTargetBreakFv+0x84>
+			250: R_PPC_REL24	testStageParamInit__5StageFP9gfArchivei
+     254:	lwz     r3,848(r27)
+     258:	addi    r0,r30,4
+     25c:	addi    r4,r30,1232
+     260:	addi    r5,r30,1236
+     264:	mulli   r6,r3,140
+     268:	li      r3,0
+     26c:	add     r28,r0,r6
+     270:	bl      270 <createObj__13stTargetBreakFv+0xa4>
+			270: R_PPC_REL24	create__13grTargetBreakFiPCcPCc
+     274:	cmpwi   r3,0
+     278:	stw     r3,472(r27)
+     27c:	mr      r4,r3
+     280:	beq-    2d4 <createObj__13stTargetBreakFv+0x108>
+     284:	mr      r3,r27
+     288:	bl      288 <createObj__13stTargetBreakFv+0xbc>
+			288: R_PPC_REL24	addGround__5StageFP6Ground
+     28c:	lwz     r3,472(r27)
+     290:	li      r5,0
+     294:	lwz     r4,416(r27)
+     298:	li      r6,0
+     29c:	lwz     r12,60(r3)
+     2a0:	lwz     r12,156(r12)
+     2a4:	mtctr   r12
+     2a8:	bctrl
+     2ac:	lwz     r3,472(r27)
+     2b0:	lwz     r4,156(r27)
+     2b4:	lwz     r12,60(r3)
+     2b8:	lwz     r12,164(r12)
+     2bc:	mtctr   r12
+     2c0:	bctrl
+     2c4:	lwz     r3,472(r27)
+     2c8:	bl      2c8 <createObj__13stTargetBreakFv+0xfc>
+			2c8: R_PPC_REL24	initializeEntity__8grMadeinFv
+     2cc:	lwz     r3,472(r27)
+     2d0:	bl      2d0 <createObj__13stTargetBreakFv+0x104>
+			2d0: R_PPC_REL24	startEntityAutoLoop__8grMadeinFv
+     2d4:	addi    r4,r30,1232
+     2d8:	addi    r5,r30,1256
+     2dc:	li      r3,2
+     2e0:	bl      2e0 <createObj__13stTargetBreakFv+0x114>
+			2e0: R_PPC_REL24	create__13grTargetBreakFiPCcPCc
+     2e4:	cmpwi   r3,0
+     2e8:	stw     r3,516(r27)
+     2ec:	mr      r4,r3
+     2f0:	beq-    344 <createObj__13stTargetBreakFv+0x178>
+     2f4:	mr      r3,r27
+     2f8:	bl      2f8 <createObj__13stTargetBreakFv+0x12c>
+			2f8: R_PPC_REL24	addGround__5StageFP6Ground
+     2fc:	lwz     r3,516(r27)
+     300:	li      r5,0
+     304:	lwz     r4,416(r27)
+     308:	li      r6,0
+     30c:	lwz     r12,60(r3)
+     310:	lwz     r12,156(r12)
+     314:	mtctr   r12
+     318:	bctrl
+     31c:	lwz     r3,516(r27)
+     320:	lwz     r4,156(r27)
+     324:	lwz     r12,60(r3)
+     328:	lwz     r12,164(r12)
+     32c:	mtctr   r12
+     330:	bctrl
+     334:	lwz     r3,516(r27)
+     338:	bl      338 <createObj__13stTargetBreakFv+0x16c>
+			338: R_PPC_REL24	initializeEntity__8grMadeinFv
+     33c:	lwz     r3,516(r27)
+     340:	bl      340 <createObj__13stTargetBreakFv+0x174>
+			340: R_PPC_REL24	startEntity__8grMadeinFv
+     344:	lwz     r0,848(r27)
+     348:	cmpwi   r0,3
+     34c:	bne-    3c0 <createObj__13stTargetBreakFv+0x1f4>
+     350:	addi    r4,r30,1232
+     354:	addi    r5,r30,1272
+     358:	li      r3,3
+     35c:	bl      35c <createObj__13stTargetBreakFv+0x190>
+			35c: R_PPC_REL24	create__13grTargetBreakFiPCcPCc
+     360:	cmpwi   r3,0
+     364:	stw     r3,660(r27)
+     368:	mr      r4,r3
+     36c:	beq-    3c0 <createObj__13stTargetBreakFv+0x1f4>
+     370:	mr      r3,r27
+     374:	bl      374 <createObj__13stTargetBreakFv+0x1a8>
+			374: R_PPC_REL24	addGround__5StageFP6Ground
+     378:	lwz     r3,660(r27)
+     37c:	li      r5,0
+     380:	lwz     r4,416(r27)
+     384:	li      r6,0
+     388:	lwz     r12,60(r3)
+     38c:	lwz     r12,156(r12)
+     390:	mtctr   r12
+     394:	bctrl
+     398:	lwz     r3,660(r27)
+     39c:	lwz     r4,156(r27)
+     3a0:	lwz     r12,60(r3)
+     3a4:	lwz     r12,164(r12)
+     3a8:	mtctr   r12
+     3ac:	bctrl
+     3b0:	lwz     r3,660(r27)
+     3b4:	bl      3b4 <createObj__13stTargetBreakFv+0x1e8>
+			3b4: R_PPC_REL24	initializeEntity__8grMadeinFv
+     3b8:	lwz     r3,660(r27)
+     3bc:	bl      3bc <createObj__13stTargetBreakFv+0x1f0>
+			3bc: R_PPC_REL24	startEntityAutoLoop__8grMadeinFv
+     3c0:	addi    r3,r29,0
+     3c4:	li      r0,12
+     3c8:	addi    r7,r1,372
+     3cc:	addi    r4,r3,-4
+     3d0:	mtctr   r0
+     3d4:	lwz     r3,4(r4)
+     3d8:	lwzu    r0,8(r4)
+     3dc:	stw     r3,4(r7)
+     3e0:	stwu    r0,8(r7)
+     3e4:	bdnz+   3d4 <createObj__13stTargetBreakFv+0x208>
+     3e8:	lfs     f0,100(r29)
+     3ec:	mr      r3,r27
+     3f0:	lwz     r0,4(r4)
+     3f4:	addi    r4,r1,376
+     3f8:	stfs    f0,80(r1)
+     3fc:	stfs    f0,84(r1)
+     400:	lwz     r6,80(r1)
+     404:	stw     r0,4(r7)
+     408:	lwz     r5,84(r1)
+     40c:	stfs    f0,88(r1)
+     410:	lwz     r0,88(r1)
+     414:	stw     r6,380(r1)
+     418:	stw     r5,384(r1)
+     41c:	stw     r0,388(r1)
+     420:	bl      420 <createObj__13stTargetBreakFv+0x254>
+			420: R_PPC_REL24	setStageAttackData__5StageFP20grGimmickDamageFloorUl
+     424:	mr      r24,r27
+     428:	li      r26,0
+     42c:	li      r25,0
+     430:	stw     r25,760(r24)
+     434:	stw     r25,776(r24)
+     438:	lwz     r0,472(r27)
+     43c:	cmpwi   r0,0
+     440:	beq-    4f4 <createObj__13stTargetBreakFv+0x328>
+     444:	addi    r3,r1,248
+     448:	addi    r4,r30,1296
+     44c:	addi    r5,r26,1
+     450:	crclr   4*cr1+eq
+     454:	bl      454 <createObj__13stTargetBreakFv+0x288>
+			454: R_PPC_REL24	sprintf
+     458:	lwz     r3,472(r27)
+     45c:	addi    r5,r1,248
+     460:	li      r4,0
+     464:	lwz     r12,60(r3)
+     468:	lwz     r12,196(r12)
+     46c:	mtctr   r12
+     470:	bctrl
+     474:	stw     r3,792(r24)
+     478:	addi    r3,r1,248
+     47c:	addi    r4,r30,1320
+     480:	addi    r5,r26,1
+     484:	crclr   4*cr1+eq
+     488:	bl      488 <createObj__13stTargetBreakFv+0x2bc>
+			488: R_PPC_REL24	sprintf
+     48c:	lwz     r3,472(r27)
+     490:	addi    r5,r1,248
+     494:	li      r4,0
+     498:	lwz     r12,60(r3)
+     49c:	lwz     r12,196(r12)
+     4a0:	mtctr   r12
+     4a4:	bctrl
+     4a8:	stw     r3,808(r24)
+     4ac:	lwz     r0,792(r24)
+     4b0:	cmpwi   r0,0
+     4b4:	beq-    4fc <createObj__13stTargetBreakFv+0x330>
+     4b8:	lwz     r0,808(r24)
+     4bc:	cmpwi   r0,0
+     4c0:	beq-    4fc <createObj__13stTargetBreakFv+0x330>
+     4c4:	addi    r3,r30,1344
+     4c8:	addi    r4,r26,1
+     4cc:	crclr   4*cr1+eq
+     4d0:	bl      4d0 <createObj__13stTargetBreakFv+0x304>
+			4d0: R_PPC_REL24	OSReport
+     4d4:	li      r3,64
+     4d8:	li      r4,15
+     4dc:	bl      4dc <createObj__13stTargetBreakFv+0x310>
+			4dc: R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+     4e0:	stw     r3,760(r24)
+     4e4:	li      r4,0
+     4e8:	li      r5,64
+     4ec:	bl      4ec <createObj__13stTargetBreakFv+0x320>
+			4ec: R_PPC_REL24	memset
+     4f0:	b       4fc <createObj__13stTargetBreakFv+0x330>
+     4f4:	stw     r25,792(r24)
+     4f8:	stw     r25,808(r24)
+     4fc:	addi    r26,r26,1
+     500:	addi    r24,r24,4
+     504:	cmpwi   r26,4
+     508:	blt+    430 <createObj__13stTargetBreakFv+0x264>
+     50c:	lfs     f28,100(r29)
+     510:	mr      r24,r27
+     514:	lfs     f29,104(r29)
+     518:	li      r26,0
+     51c:	lfs     f30,108(r29)
+     520:	li      r25,-1
+     524:	lfs     f31,112(r29)
+     528:	addi    r4,r30,1232
+     52c:	addi    r5,r30,1372
+     530:	li      r3,1
+     534:	bl      534 <createObj__13stTargetBreakFv+0x368>
+			534: R_PPC_REL24	create__13grTargetBreakFiPCcPCc
+     538:	cmpwi   r3,0
+     53c:	mr      r31,r3
+     540:	beq-    5f0 <createObj__13stTargetBreakFv+0x424>
+     544:	stw     r3,476(r24)
+     548:	mr      r3,r27
+     54c:	mr      r4,r31
+     550:	bl      550 <createObj__13stTargetBreakFv+0x384>
+			550: R_PPC_REL24	addGround__5StageFP6Ground
+     554:	lwz     r12,60(r31)
+     558:	mr      r3,r31
+     55c:	lwz     r4,416(r27)
+     560:	li      r5,0
+     564:	lwz     r12,156(r12)
+     568:	li      r6,0
+     56c:	mtctr   r12
+     570:	bctrl
+     574:	lwz     r12,60(r31)
+     578:	mr      r3,r31
+     57c:	lwz     r4,156(r27)
+     580:	lwz     r12,164(r12)
+     584:	mtctr   r12
+     588:	bctrl
+     58c:	stfs    f28,104(r1)
+     590:	mr      r3,r31
+     594:	lfs     f1,4(r28)
+     598:	addi    r4,r1,104
+     59c:	stfs    f28,108(r1)
+     5a0:	addi    r5,r1,92
+     5a4:	li      r6,1
+     5a8:	li      r7,0
+     5ac:	stfs    f29,112(r1)
+     5b0:	stfs    f28,92(r1)
+     5b4:	stfs    f28,96(r1)
+     5b8:	stfs    f30,100(r1)
+     5bc:	bl      5bc <createObj__13stTargetBreakFv+0x3f0>
+			5bc: R_PPC_REL24	setHitPoint__8grMadeinFfP5Vec3fP5Vec3fbi
+     5c0:	lbz     r0,364(r31)
+     5c4:	mr      r3,r31
+     5c8:	ori     r0,r0,8
+     5cc:	stb     r0,364(r31)
+     5d0:	bl      5d0 <createObj__13stTargetBreakFv+0x404>
+			5d0: R_PPC_REL24	initializeEntity__8grMadeinFv
+     5d4:	mr      r3,r31
+     5d8:	bl      5d8 <createObj__13stTargetBreakFv+0x40c>
+			5d8: R_PPC_REL24	startEntity__8grMadeinFv
+     5dc:	mr      r3,r31
+     5e0:	bl      5e0 <createObj__13stTargetBreakFv+0x414>
+			5e0: R_PPC_REL24	fn_27_279FA4
+     5e4:	mr      r3,r31
+     5e8:	bl      5e8 <createObj__13stTargetBreakFv+0x41c>
+			5e8: R_PPC_REL24	initSoundEffect__13grTargetBreakFv
+     5ec:	stw     r25,924(r24)
+     5f0:	addi    r26,r26,1
+     5f4:	stfs    f31,868(r24)
+     5f8:	cmpwi   r26,10
+     5fc:	addi    r24,r24,4
+     600:	blt+    528 <createObj__13stTargetBreakFv+0x35c>
+     604:	lfs     f0,8(r28)
+     608:	fmuls   f0,f0,f0
+     60c:	stfs    f0,908(r27)
+     610:	lbz     r0,20(r28)
+     614:	cmpwi   r0,0
+     618:	beq-    6b8 <createObj__13stTargetBreakFv+0x4ec>
+     61c:	addi    r4,r30,1232
+     620:	addi    r5,r30,1384
+     624:	li      r3,3
+     628:	bl      628 <createObj__13stTargetBreakFv+0x45c>
+			628: R_PPC_REL24	create__13grTargetBreakFiPCcPCc
+     62c:	stw     r3,560(r27)
+     630:	mr      r4,r3
+     634:	mr      r3,r27
+     638:	bl      638 <createObj__13stTargetBreakFv+0x46c>
+			638: R_PPC_REL24	addGround__5StageFP6Ground
+     63c:	lwz     r3,560(r27)
+     640:	li      r5,0
+     644:	lwz     r4,416(r27)
+     648:	li      r6,0
+     64c:	lwz     r12,60(r3)
+     650:	lwz     r12,156(r12)
+     654:	mtctr   r12
+     658:	bctrl
+     65c:	lwz     r3,560(r27)
+     660:	lwz     r4,156(r27)
+     664:	lwz     r12,60(r3)
+     668:	lwz     r12,164(r12)
+     66c:	mtctr   r12
+     670:	bctrl
+     674:	lwz     r3,560(r27)
+     678:	bl      678 <createObj__13stTargetBreakFv+0x4ac>
+			678: R_PPC_REL24	initializeEntity__8grMadeinFv
+     67c:	lwz     r3,560(r27)
+     680:	bl      680 <createObj__13stTargetBreakFv+0x4b4>
+			680: R_PPC_REL24	startEntity__8grMadeinFv
+     684:	lwz     r3,560(r27)
+     688:	addi    r5,r30,1396
+     68c:	li      r4,0
+     690:	lwz     r12,60(r3)
+     694:	lwz     r12,196(r12)
+     698:	mtctr   r12
+     69c:	bctrl
+     6a0:	stw     r3,836(r27)
+     6a4:	mr      r4,r3
+     6a8:	addi    r3,r30,1416
+     6ac:	crclr   4*cr1+eq
+     6b0:	bl      6b0 <createObj__13stTargetBreakFv+0x4e4>
+			6b0: R_PPC_REL24	OSReport
+     6b4:	b       6c0 <createObj__13stTargetBreakFv+0x4f4>
+     6b8:	li      r0,0
+     6bc:	stw     r0,560(r27)
+     6c0:	mr      r24,r27
+     6c4:	li      r23,0
+     6c8:	lis     r31,1
+     6cc:	li      r25,1
+     6d0:	li      r26,0
+     6d4:	lwz     r3,16(r28)
+     6d8:	slw     r0,r25,r23
+     6dc:	addi    r22,r23,40
+     6e0:	and.    r0,r3,r0
+     6e4:	beq-    78c <createObj__13stTargetBreakFv+0x5c0>
+     6e8:	addi    r0,r31,-2
+     6ec:	lwz     r3,416(r27)
+     6f0:	mr      r5,r22
+     6f4:	li      r4,2
+     6f8:	clrlwi  r6,r0,16
+     6fc:	bl      6fc <createObj__13stTargetBreakFv+0x530>
+			6fc: R_PPC_REL24	getData__9gfArchiveF11ARCNodeTypeiUs
+     700:	cmpwi   r3,0
+     704:	beq-    78c <createObj__13stTargetBreakFv+0x5c0>
+     708:	mr      r4,r23
+     70c:	addi    r3,r30,1444
+     710:	crclr   4*cr1+eq
+     714:	bl      714 <createObj__13stTargetBreakFv+0x548>
+			714: R_PPC_REL24	OSReport
+     718:	extsh   r3,r22
+     71c:	addi    r4,r30,1232
+     720:	addi    r5,r30,1472
+     724:	bl      724 <createObj__13stTargetBreakFv+0x558>
+			724: R_PPC_REL24	create__13grTargetBreakFiPCcPCc
+     728:	cmpwi   r3,0
+     72c:	stw     r3,520(r24)
+     730:	mr      r4,r3
+     734:	beq-    790 <createObj__13stTargetBreakFv+0x5c4>
+     738:	mr      r3,r27
+     73c:	bl      73c <createObj__13stTargetBreakFv+0x570>
+			73c: R_PPC_REL24	addGround__5StageFP6Ground
+     740:	lwz     r3,520(r24)
+     744:	li      r5,0
+     748:	lwz     r4,416(r27)
+     74c:	li      r6,0
+     750:	lwz     r12,60(r3)
+     754:	lwz     r12,156(r12)
+     758:	mtctr   r12
+     75c:	bctrl
+     760:	lwz     r3,520(r24)
+     764:	lwz     r4,156(r27)
+     768:	lwz     r12,60(r3)
+     76c:	lwz     r12,164(r12)
+     770:	mtctr   r12
+     774:	bctrl
+     778:	lwz     r3,520(r24)
+     77c:	bl      77c <createObj__13stTargetBreakFv+0x5b0>
+			77c: R_PPC_REL24	initializeEntity__8grMadeinFv
+     780:	lwz     r3,520(r24)
+     784:	bl      784 <createObj__13stTargetBreakFv+0x5b8>
+			784: R_PPC_REL24	startEntityAutoLoop__8grMadeinFv
+     788:	b       790 <createObj__13stTargetBreakFv+0x5c4>
+     78c:	stw     r26,520(r24)
+     790:	addi    r23,r23,1
+     794:	addi    r24,r24,4
+     798:	cmpwi   r23,10
+     79c:	blt+    6d4 <createObj__13stTargetBreakFv+0x508>
+     7a0:	lis     r26,1
+     7a4:	lwz     r3,416(r27)
+     7a8:	addi    r0,r26,-2
+     7ac:	li      r4,2
+     7b0:	clrlwi  r6,r0,16
+     7b4:	li      r5,9
+     7b8:	bl      7b8 <createObj__13stTargetBreakFv+0x5ec>
+			7b8: R_PPC_REL24	getData__9gfArchiveF11ARCNodeTypeiUs
+     7bc:	cmpwi   r3,0
+     7c0:	beq-    96c <createObj__13stTargetBreakFv+0x7a0>
+     7c4:	addi    r31,r26,-2
+     7c8:	mr      r25,r27
+     7cc:	li      r22,0
+     7d0:	li      r26,0
+     7d4:	addi    r23,r22,10
+     7d8:	lwz     r3,416(r27)
+     7dc:	mr      r5,r23
+     7e0:	clrlwi  r6,r31,16
+     7e4:	li      r4,2
+     7e8:	bl      7e8 <createObj__13stTargetBreakFv+0x61c>
+			7e8: R_PPC_REL24	getData__9gfArchiveF11ARCNodeTypeiUs
+     7ec:	cmpwi   r3,0
+     7f0:	beq-    950 <createObj__13stTargetBreakFv+0x784>
+     7f4:	mr      r4,r22
+     7f8:	addi    r3,r30,1492
+     7fc:	crclr   4*cr1+eq
+     800:	bl      800 <createObj__13stTargetBreakFv+0x634>
+			800: R_PPC_REL24	OSReport
+     804:	extsh   r3,r23
+     808:	addi    r4,r30,1232
+     80c:	addi    r5,r30,1512
+     810:	bl      810 <createObj__13stTargetBreakFv+0x644>
+			810: R_PPC_REL24	create__13grTargetBreakFiPCcPCc
+     814:	cmpwi   r3,0
+     818:	stw     r3,612(r25)
+     81c:	mr      r4,r3
+     820:	beq-    948 <createObj__13stTargetBreakFv+0x77c>
+     824:	mr      r3,r27
+     828:	bl      828 <createObj__13stTargetBreakFv+0x65c>
+			828: R_PPC_REL24	addGround__5StageFP6Ground
+     82c:	lwz     r3,612(r25)
+     830:	li      r5,0
+     834:	lwz     r4,416(r27)
+     838:	li      r6,0
+     83c:	lwz     r12,60(r3)
+     840:	lwz     r12,156(r12)
+     844:	mtctr   r12
+     848:	bctrl
+     84c:	lwz     r3,612(r25)
+     850:	lwz     r4,156(r27)
+     854:	lwz     r12,60(r3)
+     858:	lwz     r12,164(r12)
+     85c:	mtctr   r12
+     860:	bctrl
+     864:	lwz     r3,612(r25)
+     868:	bl      868 <createObj__13stTargetBreakFv+0x69c>
+			868: R_PPC_REL24	initializeEntity__8grMadeinFv
+     86c:	lwz     r3,612(r25)
+     870:	bl      870 <createObj__13stTargetBreakFv+0x6a4>
+			870: R_PPC_REL24	startEntityAutoLoop__8grMadeinFv
+     874:	addi    r3,r1,120
+     878:	addi    r4,r30,1520
+     87c:	addi    r5,r22,1
+     880:	crclr   4*cr1+eq
+     884:	bl      884 <createObj__13stTargetBreakFv+0x6b8>
+			884: R_PPC_REL24	sprintf
+     888:	lwz     r3,612(r25)
+     88c:	addi    r5,r1,120
+     890:	li      r4,0
+     894:	lwz     r12,60(r3)
+     898:	lwz     r12,196(r12)
+     89c:	mtctr   r12
+     8a0:	bctrl
+     8a4:	stw     r3,664(r25)
+     8a8:	mr      r4,r22
+     8ac:	addi    r3,r30,1536
+     8b0:	crclr   4*cr1+eq
+     8b4:	bl      8b4 <createObj__13stTargetBreakFv+0x6e8>
+			8b4: R_PPC_REL24	OSReport
+     8b8:	addi    r4,r30,1232
+     8bc:	addi    r5,r30,1512
+     8c0:	li      r3,9
+     8c4:	bl      8c4 <createObj__13stTargetBreakFv+0x6f8>
+			8c4: R_PPC_REL24	create__13grTargetBreakFiPCcPCc
+     8c8:	cmpwi   r3,0
+     8cc:	stw     r3,564(r25)
+     8d0:	mr      r4,r3
+     8d4:	beq-    958 <createObj__13stTargetBreakFv+0x78c>
+     8d8:	mr      r3,r27
+     8dc:	bl      8dc <createObj__13stTargetBreakFv+0x710>
+			8dc: R_PPC_REL24	addGround__5StageFP6Ground
+     8e0:	lwz     r3,564(r25)
+     8e4:	li      r5,0
+     8e8:	lwz     r4,416(r27)
+     8ec:	li      r6,0
+     8f0:	lwz     r12,60(r3)
+     8f4:	lwz     r12,156(r12)
+     8f8:	mtctr   r12
+     8fc:	bctrl
+     900:	lwz     r3,564(r25)
+     904:	lwz     r4,156(r27)
+     908:	lwz     r12,60(r3)
+     90c:	lwz     r12,164(r12)
+     910:	mtctr   r12
+     914:	bctrl
+     918:	lwz     r3,564(r25)
+     91c:	bl      91c <createObj__13stTargetBreakFv+0x750>
+			91c: R_PPC_REL24	initializeEntity__8grMadeinFv
+     920:	lwz     r3,564(r25)
+     924:	bl      924 <createObj__13stTargetBreakFv+0x758>
+			924: R_PPC_REL24	startEntity__8grMadeinFv
+     928:	lwz     r3,564(r25)
+     92c:	bl      92c <createObj__13stTargetBreakFv+0x760>
+			92c: R_PPC_REL24	fn_27_279FA4
+     930:	lwz     r4,416(r27)
+     934:	mr      r3,r27
+     938:	lwz     r6,564(r25)
+     93c:	li      r5,3
+     940:	bl      940 <createObj__13stTargetBreakFv+0x774>
+			940: R_PPC_REL24	createCollision__5StageFP9gfArchiveiP6Ground
+     944:	b       958 <createObj__13stTargetBreakFv+0x78c>
+     948:	stw     r26,564(r25)
+     94c:	b       958 <createObj__13stTargetBreakFv+0x78c>
+     950:	stw     r26,564(r25)
+     954:	stw     r26,612(r25)
+     958:	addi    r22,r22,1
+     95c:	addi    r25,r25,4
+     960:	cmpwi   r22,12
+     964:	blt+    7d4 <createObj__13stTargetBreakFv+0x608>
+     968:	b       a48 <createObj__13stTargetBreakFv+0x87c>
+     96c:	mr      r25,r27
+     970:	addi    r26,r26,-2
+     974:	li      r22,0
+     978:	li      r31,0
+     97c:	addi    r23,r22,10
+     980:	lwz     r3,416(r27)
+     984:	mr      r5,r23
+     988:	clrlwi  r6,r26,16
+     98c:	li      r4,2
+     990:	bl      990 <createObj__13stTargetBreakFv+0x7c4>
+			990: R_PPC_REL24	getData__9gfArchiveF11ARCNodeTypeiUs
+     994:	cmpwi   r3,0
+     998:	beq-    a24 <createObj__13stTargetBreakFv+0x858>
+     99c:	mr      r4,r22
+     9a0:	addi    r3,r30,1536
+     9a4:	crclr   4*cr1+eq
+     9a8:	bl      9a8 <createObj__13stTargetBreakFv+0x7dc>
+			9a8: R_PPC_REL24	OSReport
+     9ac:	extsh   r3,r23
+     9b0:	addi    r4,r30,1232
+     9b4:	addi    r5,r30,1512
+     9b8:	bl      9b8 <createObj__13stTargetBreakFv+0x7ec>
+			9b8: R_PPC_REL24	create__13grTargetBreakFiPCcPCc
+     9bc:	cmpwi   r3,0
+     9c0:	stw     r3,564(r25)
+     9c4:	mr      r4,r3
+     9c8:	beq-    a1c <createObj__13stTargetBreakFv+0x850>
+     9cc:	mr      r3,r27
+     9d0:	bl      9d0 <createObj__13stTargetBreakFv+0x804>
+			9d0: R_PPC_REL24	addGround__5StageFP6Ground
+     9d4:	lwz     r3,564(r25)
+     9d8:	li      r5,0
+     9dc:	lwz     r4,416(r27)
+     9e0:	li      r6,0
+     9e4:	lwz     r12,60(r3)
+     9e8:	lwz     r12,156(r12)
+     9ec:	mtctr   r12
+     9f0:	bctrl
+     9f4:	lwz     r3,564(r25)
+     9f8:	lwz     r4,156(r27)
+     9fc:	lwz     r12,60(r3)
+     a00:	lwz     r12,164(r12)
+     a04:	mtctr   r12
+     a08:	bctrl
+     a0c:	lwz     r3,564(r25)
+     a10:	bl      a10 <createObj__13stTargetBreakFv+0x844>
+			a10: R_PPC_REL24	initializeEntity__8grMadeinFv
+     a14:	lwz     r3,564(r25)
+     a18:	bl      a18 <createObj__13stTargetBreakFv+0x84c>
+			a18: R_PPC_REL24	startEntityAutoLoop__8grMadeinFv
+     a1c:	stw     r31,612(r25)
+     a20:	b       a2c <createObj__13stTargetBreakFv+0x860>
+     a24:	stw     r31,564(r25)
+     a28:	stw     r31,612(r25)
+     a2c:	addi    r22,r22,1
+     a30:	addi    r25,r25,4
+     a34:	cmpwi   r22,12
+     a38:	blt+    97c <createObj__13stTargetBreakFv+0x7b0>
+     a3c:	addi    r3,r30,1552
+     a40:	crclr   4*cr1+eq
+     a44:	bl      a44 <createObj__13stTargetBreakFv+0x878>
+			a44: R_PPC_REL24	OSReport
+     a48:	lwz     r0,24(r28)
+     a4c:	cmpwi   r0,0
+     a50:	blt-    c00 <createObj__13stTargetBreakFv+0xa34>
+     a54:	li      r3,84
+     a58:	li      r4,15
+     a5c:	bl      a5c <createObj__13stTargetBreakFv+0x890>
+			a5c: R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+     a60:	stw     r3,828(r27)
+     a64:	mr      r22,r3
+     a68:	li      r4,0
+     a6c:	li      r5,84
+     a70:	bl      a70 <createObj__13stTargetBreakFv+0x8a4>
+			a70: R_PPC_REL24	memset
+     a74:	lfs     f1,116(r29)
+     a78:	li      r31,0
+     a7c:	lfs     f0,100(r29)
+     a80:	li      r0,1
+     a84:	stfs    f1,0(r22)
+     a88:	mr      r3,r27
+     a8c:	lfs     f6,120(r29)
+     a90:	mr      r4,r22
+     a94:	stb     r31,4(r22)
+     a98:	lfs     f5,124(r29)
+     a9c:	lwz     r5,24(r28)
+     aa0:	lfs     f4,128(r29)
+     aa4:	addi    r5,r5,1
+     aa8:	lfs     f3,132(r29)
+     aac:	stb     r5,6(r22)
+     ab0:	lfs     f2,136(r29)
+     ab4:	stb     r31,7(r22)
+     ab8:	lfs     f1,140(r29)
+     abc:	stfs    f0,32(r22)
+     ac0:	lfs     f0,144(r29)
+     ac4:	stfs    f6,36(r22)
+     ac8:	stfs    f5,40(r22)
+     acc:	stfs    f4,44(r22)
+     ad0:	stfs    f3,48(r22)
+     ad4:	stfs    f2,52(r22)
+     ad8:	stfs    f1,56(r22)
+     adc:	stfs    f0,60(r22)
+     ae0:	lwz     r5,24(r28)
+     ae4:	stb     r5,80(r22)
+     ae8:	stb     r0,81(r22)
+     aec:	stb     r0,82(r22)
+     af0:	lwz     r5,416(r27)
+     af4:	bl      af4 <createObj__13stTargetBreakFv+0x928>
+			af4: R_PPC_REL24	createGimmickCatapult__15stCommonGimmickFP21grGimmickCatapultDataP9gfArchive
+     af8:	stw     r3,832(r27)
+     afc:	li      r6,7905
+     b00:	lfs     f2,100(r29)
+     b04:	li      r4,7906
+     b08:	lwz     r5,168(r3)
+     b0c:	li      r0,7907
+     b10:	stfs    f2,64(r1)
+     b14:	stw     r6,12(r5)
+     b18:	lwz     r7,64(r1)
+     b1c:	lwz     r5,168(r3)
+     b20:	stfs    f2,68(r1)
+     b24:	stw     r31,16(r5)
+     b28:	lwz     r6,68(r1)
+     b2c:	lwz     r5,168(r3)
+     b30:	stw     r7,72(r1)
+     b34:	sth     r31,24(r5)
+     b38:	lfs     f1,72(r1)
+     b3c:	lwz     r5,168(r3)
+     b40:	stw     r6,76(r1)
+     b44:	stw     r31,20(r5)
+     b48:	lfs     f0,76(r1)
+     b4c:	lwz     r3,168(r3)
+     b50:	stfs    f2,56(r1)
+     b54:	stfs    f1,28(r3)
+     b58:	lwz     r5,56(r1)
+     b5c:	stfs    f0,32(r3)
+     b60:	lwz     r6,832(r27)
+     b64:	stw     r5,24(r1)
+     b68:	lwz     r3,168(r6)
+     b6c:	stfs    f2,60(r1)
+     b70:	lfs     f1,24(r1)
+     b74:	stw     r4,52(r3)
+     b78:	lwz     r5,60(r1)
+     b7c:	lwz     r3,168(r6)
+     b80:	stw     r5,28(r1)
+     b84:	stw     r31,56(r3)
+     b88:	lfs     f0,28(r1)
+     b8c:	lwz     r3,168(r6)
+     b90:	stfs    f2,40(r1)
+     b94:	sth     r31,64(r3)
+     b98:	lwz     r4,40(r1)
+     b9c:	lwz     r3,168(r6)
+     ba0:	stfs    f2,44(r1)
+     ba4:	stw     r31,60(r3)
+     ba8:	lwz     r3,44(r1)
+     bac:	lwz     r5,168(r6)
+     bb0:	stw     r4,32(r1)
+     bb4:	stfs    f1,68(r5)
+     bb8:	lfs     f1,32(r1)
+     bbc:	stfs    f0,72(r5)
+     bc0:	stw     r3,36(r1)
+     bc4:	lwz     r4,832(r27)
+     bc8:	lfs     f0,36(r1)
+     bcc:	lwz     r3,168(r4)
+     bd0:	stfs    f2,48(r1)
+     bd4:	stw     r0,132(r3)
+     bd8:	lwz     r3,168(r4)
+     bdc:	stfs    f2,20(r1)
+     be0:	stw     r31,136(r3)
+     be4:	lwz     r3,168(r4)
+     be8:	sth     r31,144(r3)
+     bec:	lwz     r3,168(r4)
+     bf0:	stw     r31,140(r3)
+     bf4:	lwz     r3,168(r4)
+     bf8:	stfs    f1,148(r3)
+     bfc:	stfs    f0,152(r3)
+     c00:	lwz     r0,28(r28)
+     c04:	cmpwi   r0,0
+     c08:	blt-    d28 <createObj__13stTargetBreakFv+0xb5c>
+     c0c:	li      r3,80
+     c10:	li      r4,15
+     c14:	bl      c14 <createObj__13stTargetBreakFv+0xa48>
+			c14: R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+     c18:	stw     r3,840(r27)
+     c1c:	mr      r22,r3
+     c20:	li      r4,0
+     c24:	li      r5,80
+     c28:	bl      c28 <createObj__13stTargetBreakFv+0xa5c>
+			c28: R_PPC_REL24	memset
+     c2c:	lfs     f3,100(r29)
+     c30:	addi    r26,r30,1572
+     c34:	lfs     f2,124(r29)
+     c38:	li      r3,412
+     c3c:	stfs    f3,32(r22)
+     c40:	li      r4,15
+     c44:	lfs     f1,148(r29)
+     c48:	stfs    f3,36(r22)
+     c4c:	lfs     f0,128(r29)
+     c50:	stfs    f2,40(r22)
+     c54:	stfs    f1,44(r22)
+     c58:	stfs    f3,48(r22)
+     c5c:	stfs    f3,52(r22)
+     c60:	stfs    f3,56(r22)
+     c64:	stfs    f0,60(r22)
+     c68:	lwz     r0,28(r28)
+     c6c:	stb     r0,72(r22)
+     c70:	clrlwi  r25,r0,24
+     c74:	lwz     r0,32(r28)
+     c78:	stb     r0,73(r22)
+     c7c:	lwz     r23,416(r27)
+     c80:	bl      c80 <createObj__13stTargetBreakFv+0xab4>
+			c80: R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+     c84:	cmpwi   r3,0
+     c88:	mr      r28,r3
+     c8c:	beq-    ca4 <createObj__13stTargetBreakFv+0xad8>
+     c90:	mr      r4,r26
+     c94:	bl      c94 <createObj__13stTargetBreakFv+0xac8>
+			c94: R_PPC_REL24	__ct__15grGimmickSpringFPCc
+     c98:	lis     r3,0
+			c9a: R_PPC_ADDR16_HA	__vt__26grGimmickTargetBreakSpring
+     c9c:	addi    r3,r3,0
+			c9e: R_PPC_ADDR16_LO	__vt__26grGimmickTargetBreakSpring
+     ca0:	stw     r3,60(r28)
+     ca4:	cmpwi   r28,0
+     ca8:	beq-    cc4 <createObj__13stTargetBreakFv+0xaf8>
+     cac:	lwz     r12,60(r28)
+     cb0:	mr      r3,r28
+     cb4:	extsh   r4,r25
+     cb8:	lwz     r12,176(r12)
+     cbc:	mtctr   r12
+     cc0:	bctrl
+     cc4:	cmpwi   r28,0
+     cc8:	stw     r28,844(r27)
+     ccc:	beq-    d28 <createObj__13stTargetBreakFv+0xb5c>
+     cd0:	mr      r3,r27
+     cd4:	mr      r4,r28
+     cd8:	bl      cd8 <createObj__13stTargetBreakFv+0xb0c>
+			cd8: R_PPC_REL24	addGround__5StageFP6Ground
+     cdc:	lwz     r3,844(r27)
+     ce0:	mr      r4,r22
+     ce4:	lwz     r12,60(r3)
+     ce8:	lwz     r12,328(r12)
+     cec:	mtctr   r12
+     cf0:	bctrl
+     cf4:	lwz     r3,844(r27)
+     cf8:	mr      r4,r23
+     cfc:	li      r5,0
+     d00:	li      r6,0
+     d04:	lwz     r12,60(r3)
+     d08:	lwz     r12,156(r12)
+     d0c:	mtctr   r12
+     d10:	bctrl
+     d14:	lbz     r4,73(r22)
+     d18:	mr      r3,r27
+     d1c:	lwz     r5,844(r27)
+     d20:	mr      r6,r23
+     d24:	bl      d24 <createObj__13stTargetBreakFv+0xb58>
+			d24: R_PPC_REL24	createGimmickCollision__15stCommonGimmickFUlP6GroundP9gfArchive
+     d28:	lwz     r0,848(r27)
+     d2c:	cmpwi   r0,4
+     d30:	bne-    da8 <createObj__13stTargetBreakFv+0xbdc>
+     d34:	addi    r4,r30,1232
+     d38:	addi    r5,r30,1584
+     d3c:	li      r3,8
+     d40:	bl      d40 <createObj__13stTargetBreakFv+0xb74>
+			d40: R_PPC_REL24	create__13grTargetBreakFiPCcPCc
+     d44:	cmpwi   r3,0
+     d48:	stw     r3,824(r27)
+     d4c:	mr      r4,r3
+     d50:	beq-    db0 <createObj__13stTargetBreakFv+0xbe4>
+     d54:	mr      r3,r27
+     d58:	bl      d58 <createObj__13stTargetBreakFv+0xb8c>
+			d58: R_PPC_REL24	addGround__5StageFP6Ground
+     d5c:	lwz     r3,824(r27)
+     d60:	li      r5,0
+     d64:	lwz     r4,416(r27)
+     d68:	li      r6,0
+     d6c:	lwz     r12,60(r3)
+     d70:	lwz     r12,156(r12)
+     d74:	mtctr   r12
+     d78:	bctrl
+     d7c:	lwz     r3,824(r27)
+     d80:	lwz     r4,156(r27)
+     d84:	lwz     r12,60(r3)
+     d88:	lwz     r12,164(r12)
+     d8c:	mtctr   r12
+     d90:	bctrl
+     d94:	lwz     r3,824(r27)
+     d98:	bl      d98 <createObj__13stTargetBreakFv+0xbcc>
+			d98: R_PPC_REL24	initializeEntity__8grMadeinFv
+     d9c:	lwz     r3,824(r27)
+     da0:	bl      da0 <createObj__13stTargetBreakFv+0xbd4>
+			da0: R_PPC_REL24	startEntityAutoLoop__8grMadeinFv
+     da4:	b       db0 <createObj__13stTargetBreakFv+0xbe4>
+     da8:	li      r0,0
+     dac:	stw     r0,824(r27)
+     db0:	lwz     r4,416(r27)
+     db4:	mr      r3,r27
+     db8:	li      r5,2
+     dbc:	li      r6,0
+     dc0:	bl      dc0 <createObj__13stTargetBreakFv+0xbf4>
+			dc0: R_PPC_REL24	createCollision__5StageFP9gfArchiveiP6Ground
+     dc4:	lwz     r12,60(r27)
+     dc8:	mr      r3,r27
+     dcc:	lwz     r12,196(r12)
+     dd0:	mtctr   r12
+     dd4:	bctrl
+     dd8:	lis     r4,1
+     ddc:	lwz     r3,416(r27)
+     de0:	addi    r0,r4,-2
+     de4:	li      r5,100
+     de8:	li      r4,2
+     dec:	clrlwi  r6,r0,16
+     df0:	bl      df0 <createObj__13stTargetBreakFv+0xc24>
+			df0: R_PPC_REL24	getData__9gfArchiveF11ARCNodeTypeiUs
+     df4:	cmpwi   r3,0
+     df8:	beq-    e10 <createObj__13stTargetBreakFv+0xc44>
+     dfc:	stw     r3,8(r1)
+     e00:	mr      r3,r27
+     e04:	addi    r4,r1,8
+     e08:	bl      e08 <createObj__13stTargetBreakFv+0xc3c>
+			e08: R_PPC_REL24	createStagePositions__5StageFPQ34nw4r3g3d7ResFile
+     e0c:	b       e18 <createObj__13stTargetBreakFv+0xc4c>
+     e10:	mr      r3,r27
+     e14:	bl      e14 <createObj__13stTargetBreakFv+0xc48>
+			e14: R_PPC_REL24	createStagePositions__5StageFv
+     e18:	lwz     r12,60(r27)
+     e1c:	mr      r3,r27
+     e20:	lwz     r12,500(r12)
+     e24:	mtctr   r12
+     e28:	bctrl
+     e2c:	lwz     r4,416(r27)
+     e30:	mr      r3,r27
+     e34:	li      r5,50
+     e38:	bl      e38 <createObj__13stTargetBreakFv+0xc6c>
+			e38: R_PPC_REL24	loadStageAttrParam__5StageFP9gfArchivei
+     e3c:	mr      r3,r27
+     e40:	li      r4,1
+     e44:	li      r5,0
+     e48:	bl      e48 <createObj__13stTargetBreakFv+0xc7c>
+			e48: R_PPC_REL24	initPosPokeTrainer__5StageFii
+     e4c:	lwz     r12,60(r27)
+     e50:	mr      r3,r27
+     e54:	addi    r6,r30,1596
+     e58:	li      r5,101
+     e5c:	lwz     r12,104(r12)
+     e60:	li      r8,0
+     e64:	lwz     r4,416(r27)
+     e68:	lwz     r7,188(r27)
+     e6c:	mtctr   r12
+     e70:	bctrl
+     e74:	lis     r4,1
+     e78:	lwz     r3,416(r27)
+     e7c:	addi    r0,r4,-2
+     e80:	li      r5,0
+     e84:	li      r4,5
+     e88:	clrlwi  r6,r0,16
+     e8c:	bl      e8c <createObj__13stTargetBreakFv+0xcc0>
+			e8c: R_PPC_REL24	getData__9gfArchiveF11ARCNodeTypeiUs
+     e90:	mr      r4,r3
+     e94:	mr      r3,r27
+     e98:	li      r5,0
+     e9c:	bl      e9c <createObj__13stTargetBreakFv+0xcd0>
+			e9c: R_PPC_REL24	registScnAnim__5StageFPQ34nw4r3g3d11ResFileDataUl
+     ea0:	lfs     f0,100(r29)
+     ea4:	li      r4,0
+     ea8:	li      r0,10
+     eac:	stw     r4,852(r27)
+     eb0:	lis     r3,0
+			eb2: R_PPC_ADDR16_HA	g_cmAIController
+     eb4:	stw     r0,856(r27)
+     eb8:	stfs    f0,912(r27)
+     ebc:	stw     r4,916(r27)
+     ec0:	stw     r4,920(r27)
+     ec4:	lwz     r0,0(r30)
+     ec8:	stw     r0,860(r27)
+     ecc:	stw     r4,864(r27)
+     ed0:	lwz     r3,0(r3)
+			ed2: R_PPC_ADDR16_LO	g_cmAIController
+     ed4:	lbz     r0,148(r3)
+     ed8:	rlwinm  r0,r0,0,29,27
+     edc:	stb     r0,148(r3)
+     ee0:	psq_l   f31,584(r1),0,0
+     ee4:	lfd     f31,576(r1)
+     ee8:	psq_l   f30,568(r1),0,0
+     eec:	lfd     f30,560(r1)
+     ef0:	psq_l   f29,552(r1),0,0
+     ef4:	lfd     f29,544(r1)
+     ef8:	psq_l   f28,536(r1),0,0
+     efc:	lfd     f28,528(r1)
+     f00:	addi    r11,r1,528
+     f04:	bl      f04 <createObj__13stTargetBreakFv+0xd38>
+			f04: R_PPC_REL24	_restgpr_22
+     f08:	lwz     r0,596(r1)
+     f0c:	mtlr    r0
+     f10:	addi    r1,r1,592
+     f14:	blr
+
+00000f18 <setStageData__6GroundFPv>:
+     f18:	stw     r4,96(r3)
+     f1c:	blr
+
+00000f20 <setMdlIndex__6GroundFi>:
+     f20:	sth     r4,92(r3)
+     f24:	blr
+
+00000f28 <setGimmickData__9grGimmickFPv>:
+     f28:	stw     r4,188(r3)
+     f2c:	blr
+
+00000f30 <update__13stTargetBreakFf>:
+     f30:	stwu    r1,-496(r1)
+     f34:	mflr    r0
+     f38:	stw     r0,500(r1)
+     f3c:	stfd    f31,480(r1)
+     f40:	psq_st  f31,488(r1),0,0
+     f44:	stfd    f30,464(r1)
+     f48:	psq_st  f30,472(r1),0,0
+     f4c:	stfd    f29,448(r1)
+     f50:	psq_st  f29,456(r1),0,0
+     f54:	stfd    f28,432(r1)
+     f58:	psq_st  f28,440(r1),0,0
+     f5c:	addi    r11,r1,432
+     f60:	bl      f60 <update__13stTargetBreakFf+0x30>
+			f60: R_PPC_REL24	_savegpr_21
+     f64:	lwz     r0,848(r3)
+     f68:	lis     r28,0
+			f6a: R_PPC_ADDR16_HA	lbl_89_rodata_0
+     f6c:	addi    r28,r28,0
+			f6e: R_PPC_ADDR16_LO	lbl_89_rodata_0
+     f70:	lis     r29,0
+			f72: R_PPC_ADDR16_HA	lbl_89_data_0
+     f74:	mulli   r4,r0,140
+     f78:	mr      r22,r3
+     f7c:	addi    r29,r29,0
+			f7e: R_PPC_ADDR16_LO	lbl_89_data_0
+     f80:	fmr     f31,f1
+     f84:	lfs     f30,100(r28)
+     f88:	mr      r27,r22
+     f8c:	addi    r0,r29,4
+     f90:	lfs     f28,132(r28)
+     f94:	lfs     f29,104(r28)
+     f98:	add     r25,r0,r4
+     f9c:	li      r24,0
+     fa0:	lis     r30,0
+			fa2: R_PPC_ADDR16_HA	g_ecMgr
+     fa4:	li      r31,0
+     fa8:	li      r21,1
+     fac:	lwz     r0,476(r27)
+     fb0:	cmpwi   r0,0
+     fb4:	beq-    1278 <update__13stTargetBreakFf+0x348>
+     fb8:	lfs     f0,868(r27)
+     fbc:	fcmpo   cr0,f30,f0
+     fc0:	cror    eq,lt,eq
+     fc4:	bne-    ff0 <update__13stTargetBreakFf+0xc0>
+     fc8:	fsubs   f0,f0,f31
+     fcc:	fcmpo   cr0,f0,f30
+     fd0:	stfs    f0,868(r27)
+     fd4:	bge-    fdc <update__13stTargetBreakFf+0xac>
+     fd8:	stfs    f30,868(r27)
+     fdc:	lfs     f1,868(r27)
+     fe0:	mr      r4,r24
+     fe4:	addi    r3,r29,1636
+     fe8:	crset   4*cr1+eq
+     fec:	bl      fec <update__13stTargetBreakFf+0xbc>
+			fec: R_PPC_REL24	OSReport
+     ff0:	lwz     r3,476(r27)
+     ff4:	lbz     r0,364(r3)
+     ff8:	rlwinm. r0,r0,28,31,31
+     ffc:	bne-    100c <update__13stTargetBreakFf+0xdc>
+    1000:	lfs     f0,868(r27)
+    1004:	fcmpu   cr0,f30,f0
+    1008:	bne-    11d8 <update__13stTargetBreakFf+0x2a8>
+    100c:	mr      r4,r24
+    1010:	addi    r3,r29,1656
+    1014:	crclr   4*cr1+eq
+    1018:	bl      1018 <update__13stTargetBreakFf+0xe8>
+			1018: R_PPC_REL24	OSReport
+    101c:	lwz     r3,476(r27)
+    1020:	lbz     r0,364(r3)
+    1024:	rlwinm. r0,r0,28,31,31
+    1028:	beq-    1054 <update__13stTargetBreakFf+0x124>
+    102c:	lwz     r3,352(r3)
+    1030:	lfs     f0,912(r22)
+    1034:	lfs     f1,40(r3)
+    1038:	fadds   f0,f0,f1
+    103c:	stfs    f0,912(r22)
+    1040:	lwz     r3,476(r27)
+    1044:	lwz     r3,352(r3)
+    1048:	lwz     r0,56(r3)
+    104c:	stw     r0,924(r27)
+    1050:	b       1060 <update__13stTargetBreakFf+0x130>
+    1054:	lfs     f0,912(r22)
+    1058:	fadds   f0,f0,f28
+    105c:	stfs    f0,912(r22)
+    1060:	lwz     r0,924(r27)
+    1064:	cmplwi  r0,1
+    1068:	bgt-    1080 <update__13stTargetBreakFf+0x150>
+    106c:	slwi    r0,r0,2
+    1070:	add     r4,r22,r0
+    1074:	lwz     r3,916(r4)
+    1078:	addi    r0,r3,1
+    107c:	stw     r0,916(r4)
+    1080:	lwz     r3,476(r27)
+    1084:	li      r4,0
+    1088:	lwz     r3,212(r3)
+    108c:	lfs     f0,124(r3)
+    1090:	lfs     f1,108(r3)
+    1094:	lfs     f2,92(r3)
+    1098:	stfs    f2,68(r1)
+    109c:	stfs    f1,72(r1)
+    10a0:	stfs    f0,76(r1)
+    10a4:	lwz     r3,476(r27)
+    10a8:	lwz     r12,60(r3)
+    10ac:	lwz     r12,116(r12)
+    10b0:	mtctr   r12
+    10b4:	bctrl
+    10b8:	lwz     r3,476(r27)
+    10bc:	bl      10bc <update__13stTargetBreakFf+0x18c>
+			10bc: R_PPC_REL24	deleteHitPoint__8grMadeinFv
+    10c0:	lwz     r3,476(r27)
+    10c4:	bl      10c4 <update__13stTargetBreakFf+0x194>
+			10c4: R_PPC_REL24	startSoundEffect__13grTargetBreakFv
+    10c8:	lwz     r4,848(r22)
+    10cc:	addi    r5,r1,68
+    10d0:	lwz     r3,0(r30)
+			10d2: R_PPC_ADDR16_LO	g_ecMgr
+    10d4:	addis   r4,r4,299
+    10d8:	addi    r4,r4,1
+    10dc:	bl      10dc <update__13stTargetBreakFf+0x1ac>
+			10dc: R_PPC_REL24	setEffect__5ecMgrF4EfIDP5Vec3f
+    10e0:	lwz     r4,852(r22)
+    10e4:	mr      r26,r22
+    10e8:	lwz     r3,856(r22)
+    10ec:	li      r23,0
+    10f0:	addi    r4,r4,1
+    10f4:	addi    r0,r3,-1
+    10f8:	stw     r4,852(r22)
+    10fc:	stw     r0,856(r22)
+    1100:	stw     r31,476(r27)
+    1104:	lwz     r0,476(r26)
+    1108:	cmpwi   r0,0
+    110c:	beq-    11c4 <update__13stTargetBreakFf+0x294>
+    1110:	lfs     f0,868(r26)
+    1114:	fcmpo   cr0,f0,f30
+    1118:	bge-    11c4 <update__13stTargetBreakFf+0x294>
+    111c:	mr      r4,r23
+    1120:	addi    r3,r29,1680
+    1124:	crclr   4*cr1+eq
+    1128:	bl      1128 <update__13stTargetBreakFf+0x1f8>
+			1128: R_PPC_REL24	OSReport
+    112c:	lwz     r3,476(r26)
+    1130:	psq_l   f3,68(r1),0,0
+    1134:	lwz     r3,212(r3)
+    1138:	psq_l   f4,76(r1),1,0
+    113c:	lfs     f0,108(r3)
+    1140:	lfs     f2,92(r3)
+    1144:	stfs    f0,60(r1)
+    1148:	lfs     f1,124(r3)
+    114c:	stfs    f2,56(r1)
+    1150:	lfs     f0,908(r22)
+    1154:	psq_l   f2,56(r1),0,0
+    1158:	stfs    f1,64(r1)
+    115c:	ps_sub  f2,f2,f3
+    1160:	psq_l   f1,64(r1),1,0
+    1164:	psq_st  f2,56(r1),0,0
+    1168:	ps_sub  f3,f1,f4
+    116c:	lfs     f2,56(r1)
+    1170:	lfs     f1,60(r1)
+    1174:	psq_st  f3,64(r1),1,0
+    1178:	fmuls   f2,f2,f2
+    117c:	fmuls   f1,f1,f1
+    1180:	lfs     f3,64(r1)
+    1184:	fmuls   f3,f3,f3
+    1188:	fadds   f1,f2,f1
+    118c:	fadds   f1,f3,f1
+    1190:	fcmpo   cr0,f1,f0
+    1194:	cror    eq,lt,eq
+    1198:	bne-    11b8 <update__13stTargetBreakFf+0x288>
+    119c:	lfs     f0,12(r25)
+    11a0:	addi    r3,r29,1696
+    11a4:	stfs    f0,868(r26)
+    11a8:	lwz     r0,924(r27)
+    11ac:	stw     r0,924(r26)
+    11b0:	crclr   4*cr1+eq
+    11b4:	bl      11b4 <update__13stTargetBreakFf+0x284>
+			11b4: R_PPC_REL24	OSReport
+    11b8:	addi    r3,r29,1708
+    11bc:	crclr   4*cr1+eq
+    11c0:	bl      11c0 <update__13stTargetBreakFf+0x290>
+			11c0: R_PPC_REL24	OSReport
+    11c4:	addi    r23,r23,1
+    11c8:	addi    r26,r26,4
+    11cc:	cmpwi   r23,10
+    11d0:	blt+    1104 <update__13stTargetBreakFf+0x1d4>
+    11d4:	b       1278 <update__13stTargetBreakFf+0x348>
+    11d8:	addi    r3,r1,320
+    11dc:	addi    r4,r29,1712
+    11e0:	addi    r5,r24,1
+    11e4:	crclr   4*cr1+eq
+    11e8:	bl      11e8 <update__13stTargetBreakFf+0x2b8>
+			11e8: R_PPC_REL24	sprintf
+    11ec:	lwz     r3,16(r25)
+    11f0:	slw     r0,r21,r24
+    11f4:	and.    r0,r3,r0
+    11f8:	beq-    123c <update__13stTargetBreakFf+0x30c>
+    11fc:	lwz     r3,520(r27)
+    1200:	cmpwi   r3,0
+    1204:	beq-    1278 <update__13stTargetBreakFf+0x348>
+    1208:	lwz     r12,60(r3)
+    120c:	addi    r4,r1,272
+    1210:	addi    r6,r1,320
+    1214:	li      r5,0
+    1218:	lwz     r12,212(r12)
+    121c:	mtctr   r12
+    1220:	bctrl
+    1224:	stfs    f29,316(r1)
+    1228:	addi    r4,r1,272
+    122c:	li      r5,1
+    1230:	lwz     r3,476(r27)
+    1234:	bl      1234 <update__13stTargetBreakFf+0x304>
+			1234: R_PPC_REL24	fn_27_279FC8
+    1238:	b       1278 <update__13stTargetBreakFf+0x348>
+    123c:	lwz     r3,516(r22)
+    1240:	cmpwi   r3,0
+    1244:	beq-    1278 <update__13stTargetBreakFf+0x348>
+    1248:	lwz     r12,60(r3)
+    124c:	addi    r4,r1,224
+    1250:	addi    r6,r1,320
+    1254:	li      r5,0
+    1258:	lwz     r12,212(r12)
+    125c:	mtctr   r12
+    1260:	bctrl
+    1264:	stfs    f29,268(r1)
+    1268:	addi    r4,r1,224
+    126c:	li      r5,1
+    1270:	lwz     r3,476(r27)
+    1274:	bl      1274 <update__13stTargetBreakFf+0x344>
+			1274: R_PPC_REL24	fn_27_279FC8
+    1278:	addi    r24,r24,1
+    127c:	addi    r27,r27,4
+    1280:	cmpwi   r24,10
+    1284:	blt+    fac <update__13stTargetBreakFf+0x7c>
+    1288:	mr      r21,r22
+    128c:	li      r23,0
+    1290:	lwz     r3,612(r21)
+    1294:	cmpwi   r3,0
+    1298:	beq-    12c8 <update__13stTargetBreakFf+0x398>
+    129c:	lwz     r12,60(r3)
+    12a0:	addi    r4,r1,176
+    12a4:	li      r5,0
+    12a8:	lwz     r6,664(r21)
+    12ac:	lwz     r12,208(r12)
+    12b0:	mtctr   r12
+    12b4:	bctrl
+    12b8:	lwz     r3,564(r21)
+    12bc:	addi    r4,r1,176
+    12c0:	li      r5,1
+    12c4:	bl      12c4 <update__13stTargetBreakFf+0x394>
+			12c4: R_PPC_REL24	fn_27_279FC8
+    12c8:	addi    r23,r23,1
+    12cc:	addi    r21,r21,4
+    12d0:	cmpwi   r23,12
+    12d4:	blt+    1290 <update__13stTargetBreakFf+0x360>
+    12d8:	lwz     r0,864(r22)
+    12dc:	cmpwi   r0,958
+    12e0:	beq-    135c <update__13stTargetBreakFf+0x42c>
+    12e4:	bge-    130c <update__13stTargetBreakFf+0x3dc>
+    12e8:	cmpwi   r0,955
+    12ec:	beq-    1334 <update__13stTargetBreakFf+0x404>
+    12f0:	bge-    1300 <update__13stTargetBreakFf+0x3d0>
+    12f4:	cmpwi   r0,0
+    12f8:	beq-    1324 <update__13stTargetBreakFf+0x3f4>
+    12fc:	b       15d8 <update__13stTargetBreakFf+0x6a8>
+    1300:	cmpwi   r0,957
+    1304:	bge-    1348 <update__13stTargetBreakFf+0x418>
+    1308:	b       15d8 <update__13stTargetBreakFf+0x6a8>
+    130c:	cmpwi   r0,1066
+    1310:	beq-    1598 <update__13stTargetBreakFf+0x668>
+    1314:	bge-    15d8 <update__13stTargetBreakFf+0x6a8>
+    1318:	cmpwi   r0,1049
+    131c:	beq-    155c <update__13stTargetBreakFf+0x62c>
+    1320:	b       15d8 <update__13stTargetBreakFf+0x6a8>
+    1324:	lwz     r3,1612(r29)
+    1328:	li      r0,955
+    132c:	stw     r3,860(r22)
+    1330:	stw     r0,864(r22)
+    1334:	lwz     r3,1616(r29)
+    1338:	li      r0,957
+    133c:	stw     r3,860(r22)
+    1340:	stw     r0,864(r22)
+    1344:	b       15d8 <update__13stTargetBreakFf+0x6a8>
+    1348:	lwz     r3,1620(r29)
+    134c:	li      r0,958
+    1350:	stw     r3,860(r22)
+    1354:	stw     r0,864(r22)
+    1358:	b       15d8 <update__13stTargetBreakFf+0x6a8>
+    135c:	lfs     f31,152(r28)
+    1360:	mr      r21,r22
+    1364:	lfs     f29,140(r28)
+    1368:	li      r26,0
+    136c:	lfs     f30,100(r28)
+    1370:	li      r24,1
+    1374:	lis     r23,0
+			1376: R_PPC_ADDR16_HA	g_stTriggerMng
+    1378:	lwz     r3,472(r22)
+    137c:	cmpwi   r3,0
+    1380:	beq-    14e8 <update__13stTargetBreakFf+0x5b8>
+    1384:	lwz     r0,760(r21)
+    1388:	cmpwi   r0,0
+    138c:	beq-    14e8 <update__13stTargetBreakFf+0x5b8>
+    1390:	lwz     r12,60(r3)
+    1394:	addi    r4,r1,128
+    1398:	li      r5,0
+    139c:	lwz     r6,792(r21)
+    13a0:	lwz     r12,208(r12)
+    13a4:	mtctr   r12
+    13a8:	bctrl
+    13ac:	lwz     r3,472(r22)
+    13b0:	addi    r4,r1,128
+    13b4:	lfs     f0,172(r1)
+    13b8:	li      r5,0
+    13bc:	lwz     r12,60(r3)
+    13c0:	lfs     f1,156(r1)
+    13c4:	lfs     f2,140(r1)
+    13c8:	lwz     r12,208(r12)
+    13cc:	stfs    f2,44(r1)
+    13d0:	lwz     r6,808(r21)
+    13d4:	stfs    f1,48(r1)
+    13d8:	stfs    f0,52(r1)
+    13dc:	mtctr   r12
+    13e0:	bctrl
+    13e4:	lfs     f3,172(r1)
+    13e8:	lfs     f0,52(r1)
+    13ec:	stfs    f3,40(r1)
+    13f0:	lfs     f4,156(r1)
+    13f4:	stfs    f0,28(r1)
+    13f8:	lfs     f5,140(r1)
+    13fc:	lfs     f2,44(r1)
+    1400:	lfs     f1,48(r1)
+    1404:	stfs    f5,32(r1)
+    1408:	psq_l   f3,40(r1),1,0
+    140c:	psq_l   f0,28(r1),1,0
+    1410:	psq_l   f5,52(r1),1,0
+    1414:	ps_add  f0,f0,f3
+    1418:	stfs    f4,36(r1)
+    141c:	ps_sub  f6,f3,f5
+    1420:	psq_l   f5,44(r1),0,0
+    1424:	stfs    f2,20(r1)
+    1428:	psq_l   f3,32(r1),0,0
+    142c:	ps_muls0 f4,f0,f31
+    1430:	stfs    f1,24(r1)
+    1434:	ps_sub  f2,f3,f5
+    1438:	lwz     r3,760(r21)
+    143c:	psq_l   f0,20(r1),0,0
+    1440:	psq_st  f4,28(r1),1,0
+    1444:	ps_add  f1,f0,f3
+    1448:	psq_st  f2,32(r1),0,0
+    144c:	lfs     f0,28(r1)
+    1450:	ps_muls0 f1,f1,f31
+    1454:	lfs     f2,32(r1)
+    1458:	psq_st  f6,40(r1),1,0
+    145c:	fabs    f3,f2
+    1460:	psq_st  f1,20(r1),0,0
+    1464:	lfs     f2,20(r1)
+    1468:	frsp    f3,f3
+    146c:	lfs     f1,24(r1)
+    1470:	stfs    f2,40(r3)
+    1474:	stfs    f1,44(r3)
+    1478:	stfs    f0,48(r3)
+    147c:	lwz     r3,760(r21)
+    1480:	stfs    f29,52(r3)
+    1484:	lwz     r3,760(r21)
+    1488:	stb     r24,56(r3)
+    148c:	lwz     r3,760(r21)
+    1490:	stfs    f30,24(r3)
+    1494:	lwz     r3,760(r21)
+    1498:	stfs    f30,28(r3)
+    149c:	lwz     r3,760(r21)
+    14a0:	stfs    f3,32(r3)
+    14a4:	lwz     r0,848(r22)
+    14a8:	cmpwi   r0,0
+    14ac:	bne-    14c0 <update__13stTargetBreakFf+0x590>
+    14b0:	lfs     f0,36(r1)
+    14b4:	fabs    f0,f0
+    14b8:	frsp    f0,f0
+    14bc:	b       14c4 <update__13stTargetBreakFf+0x594>
+    14c0:	lfs     f0,124(r28)
+    14c4:	lwz     r3,760(r21)
+    14c8:	li      r4,14
+    14cc:	li      r5,-1
+    14d0:	stfs    f0,36(r3)
+    14d4:	lwz     r3,0(r23)
+			14d6: R_PPC_ADDR16_LO	g_stTriggerMng
+    14d8:	bl      14d8 <update__13stTargetBreakFf+0x5a8>
+			14d8: R_PPC_REL24	createTrigger__12stTriggerMngFQ27Gimmick8AreaKindi
+    14dc:	stw     r3,776(r21)
+    14e0:	lwz     r4,760(r21)
+    14e4:	bl      14e4 <update__13stTargetBreakFf+0x5b4>
+			14e4: R_PPC_REL24	setBeltConveyorTrigger__9stTriggerFP25grGimmickBeltConveyorData
+    14e8:	addi    r26,r26,1
+    14ec:	addi    r21,r21,4
+    14f0:	cmpwi   r26,4
+    14f4:	blt+    1378 <update__13stTargetBreakFf+0x448>
+    14f8:	lwz     r0,28(r25)
+    14fc:	cmpwi   r0,0
+    1500:	blt-    1548 <update__13stTargetBreakFf+0x618>
+    1504:	lwz     r3,560(r22)
+    1508:	addi    r4,r1,80
+    150c:	lwz     r6,836(r22)
+    1510:	li      r5,0
+    1514:	lwz     r12,60(r3)
+    1518:	lwz     r12,208(r12)
+    151c:	mtctr   r12
+    1520:	bctrl
+    1524:	lfs     f0,124(r1)
+    1528:	addi    r4,r1,8
+    152c:	lfs     f1,108(r1)
+    1530:	lfs     f2,92(r1)
+    1534:	stfs    f1,12(r1)
+    1538:	stfs    f2,8(r1)
+    153c:	stfs    f0,16(r1)
+    1540:	lwz     r3,844(r22)
+    1544:	bl      1544 <update__13stTargetBreakFf+0x614>
+			1544: R_PPC_REL24	setPos__9grGimmickFP5Vec3f
+    1548:	lwz     r3,1624(r29)
+    154c:	li      r0,1049
+    1550:	stw     r3,860(r22)
+    1554:	stw     r0,864(r22)
+    1558:	b       15d8 <update__13stTargetBreakFf+0x6a8>
+    155c:	mr      r21,r22
+    1560:	li      r23,0
+    1564:	lwz     r0,472(r22)
+    1568:	cmpwi   r0,0
+    156c:	beq-    1588 <update__13stTargetBreakFf+0x658>
+    1570:	lwz     r0,760(r21)
+    1574:	cmpwi   r0,0
+    1578:	beq-    1588 <update__13stTargetBreakFf+0x658>
+    157c:	lwz     r3,776(r21)
+    1580:	li      r4,0
+    1584:	bl      1584 <update__13stTargetBreakFf+0x654>
+			1584: R_PPC_REL24	setAreaSleep__9stTriggerFb
+    1588:	addi    r23,r23,1
+    158c:	addi    r21,r21,4
+    1590:	cmpwi   r23,4
+    1594:	blt+    1564 <update__13stTargetBreakFf+0x634>
+    1598:	mr      r3,r22
+    159c:	bl      159c <update__13stTargetBreakFf+0x66c>
+			159c: R_PPC_REL24	createItems__13stTargetBreakFv
+    15a0:	cmpwi   r3,0
+    15a4:	beq-    15b4 <update__13stTargetBreakFf+0x684>
+    15a8:	li      r0,0
+    15ac:	stw     r0,560(r22)
+    15b0:	b       15c8 <update__13stTargetBreakFf+0x698>
+    15b4:	lwz     r3,1628(r29)
+    15b8:	li      r0,1066
+    15bc:	stw     r3,860(r22)
+    15c0:	stw     r0,864(r22)
+    15c4:	b       15d8 <update__13stTargetBreakFf+0x6a8>
+    15c8:	lwz     r3,1632(r29)
+    15cc:	li      r0,1069
+    15d0:	stw     r3,860(r22)
+    15d4:	stw     r0,864(r22)
+    15d8:	psq_l   f31,488(r1),0,0
+    15dc:	lfd     f31,480(r1)
+    15e0:	psq_l   f30,472(r1),0,0
+    15e4:	lfd     f30,464(r1)
+    15e8:	psq_l   f29,456(r1),0,0
+    15ec:	lfd     f29,448(r1)
+    15f0:	psq_l   f28,440(r1),0,0
+    15f4:	addi    r11,r1,432
+    15f8:	lfd     f28,432(r1)
+    15fc:	bl      15fc <update__13stTargetBreakFf+0x6cc>
+			15fc: R_PPC_REL24	_restgpr_21
+    1600:	lwz     r0,500(r1)
+    1604:	mtlr    r0
+    1608:	addi    r1,r1,496
+    160c:	blr
+
+00001610 <createItems__13stTargetBreakFv>:
+    1610:	stwu    r1,-112(r1)
+    1614:	mflr    r0
+    1618:	stw     r0,116(r1)
+    161c:	addi    r11,r1,112
+    1620:	bl      1620 <createItems__13stTargetBreakFv+0x10>
+			1620: R_PPC_REL24	_savegpr_27
+    1624:	lwz     r0,560(r3)
+    1628:	mr      r27,r3
+    162c:	cmpwi   r0,0
+    1630:	beq-    171c <createItems__13stTargetBreakFv+0x10c>
+    1634:	lis     r30,0
+			1636: R_PPC_ADDR16_HA	s_items
+    1638:	li      r31,0
+    163c:	addi    r30,r30,0
+			163e: R_PPC_ADDR16_LO	s_items
+    1640:	bl      1640 <createItems__13stTargetBreakFv+0x30>
+			1640: R_PPC_REL24	getInstance__9itManagerFv
+    1644:	lwz     r4,4(r30)
+    1648:	li      r6,1
+    164c:	lwz     r5,8(r30)
+    1650:	bl      1650 <createItems__13stTargetBreakFv+0x40>
+			1650: R_PPC_REL24	isCompItemKindArchive__9itManagerF6itKindUlb
+    1654:	cmpwi   r3,0
+    1658:	bne-    1664 <createItems__13stTargetBreakFv+0x54>
+    165c:	li      r3,0
+    1660:	b       1720 <createItems__13stTargetBreakFv+0x110>
+    1664:	addi    r31,r31,1
+    1668:	addi    r30,r30,12
+    166c:	cmpwi   r31,16
+    1670:	blt+    1640 <createItems__13stTargetBreakFv+0x30>
+    1674:	lis     r30,0
+			1676: R_PPC_ADDR16_HA	s_items
+    1678:	li      r29,0
+    167c:	addi    r30,r30,0
+			167e: R_PPC_ADDR16_LO	s_items
+    1680:	lis     r31,1
+    1684:	lwz     r3,560(r27)
+    1688:	addi    r4,r1,32
+    168c:	lwz     r6,0(r30)
+    1690:	li      r5,0
+    1694:	lwz     r12,60(r3)
+    1698:	lwz     r12,212(r12)
+    169c:	mtctr   r12
+    16a0:	bctrl
+    16a4:	cmpwi   r3,0
+    16a8:	beq-    170c <createItems__13stTargetBreakFv+0xfc>
+    16ac:	bl      16ac <createItems__13stTargetBreakFv+0x9c>
+			16ac: R_PPC_REL24	getInstance__9itManagerFv
+    16b0:	addi    r9,r31,-1
+    16b4:	li      r6,-1
+    16b8:	stw     r9,8(r1)
+    16bc:	li      r7,0
+    16c0:	li      r8,0
+    16c4:	li      r10,0
+    16c8:	lwz     r4,4(r30)
+    16cc:	lwz     r5,8(r30)
+    16d0:	bl      16d0 <createItems__13stTargetBreakFv+0xc0>
+			16d0: R_PPC_REL24	createItem__9itManagerF6itKindUliP16soResourceModuleUciii
+    16d4:	cmpwi   r3,0
+    16d8:	mr      r28,r3
+    16dc:	beq-    170c <createItems__13stTargetBreakFv+0xfc>
+    16e0:	lfs     f0,76(r1)
+    16e4:	addi    r4,r1,16
+    16e8:	lfs     f1,60(r1)
+    16ec:	lfs     f2,44(r1)
+    16f0:	stfs    f1,20(r1)
+    16f4:	stfs    f2,16(r1)
+    16f8:	stfs    f0,24(r1)
+    16fc:	bl      16fc <createItems__13stTargetBreakFv+0xec>
+			16fc: R_PPC_REL24	warp__8BaseItemFP5Vec3f
+    1700:	mr      r3,r28
+    1704:	li      r4,0
+    1708:	bl      1708 <createItems__13stTargetBreakFv+0xf8>
+			1708: R_PPC_REL24	setVanishMode__8BaseItemFb
+    170c:	addi    r29,r29,1
+    1710:	addi    r30,r30,12
+    1714:	cmpwi   r29,16
+    1718:	blt+    1684 <createItems__13stTargetBreakFv+0x74>
+    171c:	li      r3,1
+    1720:	addi    r11,r1,112
+    1724:	bl      1724 <createItems__13stTargetBreakFv+0x114>
+			1724: R_PPC_REL24	_restgpr_27
+    1728:	lwz     r0,116(r1)
+    172c:	mtlr    r0
+    1730:	addi    r1,r1,112
+    1734:	blr
+
+00001738 <adventureEventGetItem__6GroundFiP13stTriggerData>:
+    1738:	li      r3,0
+    173c:	blr
+
+00001740 <getInitializeInfo__6GroundFi>:
+    1740:	li      r3,0
+    1744:	blr
+
+00001748 <setInitializeInfo__6GroundFi>:
+    1748:	blr
+
+0000174c <disableCalcCollision__6GroundFv>:
+    174c:	lbz     r0,108(r3)
+    1750:	rlwinm  r0,r0,0,29,27
+    1754:	stb     r0,108(r3)
+    1758:	blr
+
+0000175c <enableCalcCollision__6GroundFv>:
+    175c:	lbz     r0,108(r3)
+    1760:	ori     r0,r0,8
+    1764:	stb     r0,108(r3)
+    1768:	blr
+
+0000176c <isEnableCalcCollision__6GroundFv>:
+    176c:	lbz     r0,108(r3)
+    1770:	rlwinm  r3,r0,29,31,31
+    1774:	blr
+
+00001778 <getMdlIndex__6GroundFv>:
+    1778:	lha     r3,92(r3)
+    177c:	blr
+
+00001780 <initStageData__6GroundFv>:
+    1780:	blr
+
+00001784 <getStageData__6GroundFv>:
+    1784:	lwz     r3,96(r3)
+    1788:	blr
+
+0000178c <getModelCount__6GroundFv>:
+    178c:	lwz     r0,64(r3)
+    1790:	cmpwi   r0,0
+    1794:	beq-    17a0 <getModelCount__6GroundFv+0x14>
+    1798:	addi    r3,r3,64
+    179c:	b       179c <getModelCount__6GroundFv+0x10>
+			179c: R_PPC_REL24	GetResMdlNumEntries__Q34nw4r3g3d7ResFileCFv
+    17a0:	li      r3,0
+    17a4:	blr
+
+000017a8 <getTransparencyFlag__9grGimmickFv>:
+    17a8:	lbz     r3,225(r3)
+    17ac:	blr
+
+000017b0 <getGimmickData__9grGimmickFv>:
+    17b0:	lwz     r3,188(r3)
+    17b4:	blr
+
+000017b8 <setMotionOff__26grGimmickTargetBreakSpringFv>:
+    17b8:	stwu    r1,-16(r1)
+    17bc:	mflr    r0
+    17c0:	stw     r0,20(r1)
+    17c4:	stw     r31,12(r1)
+    17c8:	mr      r31,r3
+    17cc:	lwz     r3,72(r3)
+    17d0:	lwz     r4,68(r31)
+    17d4:	lwz     r3,0(r3)
+    17d8:	lwz     r4,0(r4)
+    17dc:	bl      17dc <setMotionOff__26grGimmickTargetBreakSpringFv+0x24>
+			17dc: R_PPC_REL24	unbindShapeAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
+    17e0:	lwz     r12,60(r31)
+    17e4:	mr      r3,r31
+    17e8:	li      r4,0
+    17ec:	li      r5,0
+    17f0:	lwz     r12,336(r12)
+    17f4:	mtctr   r12
+    17f8:	bctrl
+    17fc:	mr      r3,r31
+    1800:	li      r4,0
+    1804:	li      r5,0
+    1808:	bl      1808 <setMotionOff__26grGimmickTargetBreakSpringFv+0x50>
+			1808: R_PPC_REL24	changeShapeAnim__9grGimmickFUlUl
+    180c:	lis     r3,0
+			180e: R_PPC_ADDR16_HA	g_sndSystem
+    1810:	li      r4,7904
+    1814:	lwz     r3,0(r3)
+			1816: R_PPC_ADDR16_LO	g_sndSystem
+    1818:	li      r5,-1
+    181c:	li      r6,0
+    1820:	li      r7,0
+    1824:	li      r8,-1
+    1828:	bl      1828 <setMotionOff__26grGimmickTargetBreakSpringFv+0x70>
+			1828: R_PPC_REL24	playSE__9sndSystemF5SndIDiiii
+    182c:	lis     r3,0
+			182e: R_PPC_ADDR16_HA	lbl_89_rodata_64
+    1830:	li      r0,2
+    1834:	lfs     f0,0(r3)
+			1836: R_PPC_ADDR16_LO	lbl_89_rodata_64
+    1838:	stb     r0,344(r31)
+    183c:	stfs    f0,348(r31)
+    1840:	lwz     r31,12(r1)
+    1844:	lwz     r0,20(r1)
+    1848:	mtlr    r0
+    184c:	addi    r1,r1,16
+    1850:	blr
+
+00001854 <__dt__26grGimmickTargetBreakSpringFv>:
+    1854:	stwu    r1,-16(r1)
+    1858:	mflr    r0
+    185c:	cmpwi   r3,0
+    1860:	stw     r0,20(r1)
+    1864:	stw     r31,12(r1)
+    1868:	mr      r31,r4
+    186c:	stw     r30,8(r1)
+    1870:	mr      r30,r3
+    1874:	beq-    1890 <__dt__26grGimmickTargetBreakSpringFv+0x3c>
+    1878:	li      r4,0
+    187c:	bl      187c <__dt__26grGimmickTargetBreakSpringFv+0x28>
+			187c: R_PPC_REL24	__dt__15grGimmickSpringFv
+    1880:	cmpwi   r31,0
+    1884:	ble-    1890 <__dt__26grGimmickTargetBreakSpringFv+0x3c>
+    1888:	mr      r3,r30
+    188c:	bl      188c <__dt__26grGimmickTargetBreakSpringFv+0x38>
+			188c: R_PPC_REL24	__dl__FPv
+    1890:	mr      r3,r30
+    1894:	lwz     r31,12(r1)
+    1898:	lwz     r30,8(r1)
+    189c:	lwz     r0,20(r1)
+    18a0:	mtlr    r0
+    18a4:	addi    r1,r1,16
+    18a8:	blr
+
+000018ac <startFighterEvent__5StageFv>:
+    18ac:	blr
+
+000018b0 <initializeFighterAttackRatio__5StageFv>:
+    18b0:	li      r3,0
+    18b4:	blr
+
+000018b8 <helperStarWarp__5StageFv>:
+    18b8:	li      r3,0
+    18bc:	blr
+
+000018c0 <isSimpleBossBattleMode__5StageFv>:
+    18c0:	li      r3,0
+    18c4:	blr
+
+000018c8 <isBossBattleMode__5StageFv>:
+    18c8:	li      r3,0
+    18cc:	blr
+
+000018d0 <isCameraLocked__5StageFv>:
+    18d0:	li      r3,1
+    18d4:	blr
+
+000018d8 <notifyTimmingGameStart__5StageFv>:
+    18d8:	blr
+
+000018dc <getFrameRuleTime__5StageFv>:
+    18dc:	lfs     f1,400(r3)
+    18e0:	blr
+
+000018e4 <setFrameRuleTime__5StageFf>:
+    18e4:	stfs    f1,400(r3)
+    18e8:	blr
+
+000018ec <isNextStepBgmEqualNowStepBgmFromFlag__5StageFv>:
+    18ec:	li      r3,0
+    18f0:	blr
+
+000018f4 <getBgmPlayOffsetFrame__5StageFv>:
+    18f4:	lis     r3,0
+			18f6: R_PPC_ADDR16_HA	lbl_89_rodata_64
+    18f8:	lfs     f1,0(r3)
+			18fa: R_PPC_ADDR16_LO	lbl_89_rodata_64
+    18fc:	blr
+
+00001900 <getBgmVolume__5StageFv>:
+    1900:	lis     r3,0
+			1902: R_PPC_ADDR16_HA	lbl_89_rodata_8C
+    1904:	lfs     f1,0(r3)
+			1906: R_PPC_ADDR16_LO	lbl_89_rodata_8C
+    1908:	blr
+
+0000190c <setBgmChange__5StageFfbUl>:
+    190c:	stb     r4,388(r3)
+    1910:	stw     r5,392(r3)
+    1914:	stfs    f1,396(r3)
+    1918:	blr
+
+0000191c <getBgmChangeID__5StageFPUlPf>:
+    191c:	lwz     r0,392(r3)
+    1920:	stw     r0,0(r4)
+    1924:	lfs     f0,396(r3)
+    1928:	stfs    f0,0(r5)
+    192c:	blr
+
+00001930 <isBgmChange__5StageFv>:
+    1930:	lbz     r3,388(r3)
+    1934:	blr
+
+00001938 <getBgmOptionID__5StageFv>:
+    1938:	li      r3,0
+    193c:	blr
+
+00001940 <getNowStepBgmID__5StageFv>:
+    1940:	li      r3,0
+    1944:	blr
+
+00001948 <getBgmID__5StageCFv>:
+    1948:	li      r3,0
+    194c:	blr
+
+00001950 <appearanceFighterLocal__5StageFv>:
+    1950:	blr
+
+00001954 <getScrollDir__5StageFP5Vec3f>:
+    1954:	lis     r5,0
+			1956: R_PPC_ADDR16_HA	lbl_89_rodata_64
+    1958:	li      r3,0
+    195c:	lfs     f0,0(r5)
+			195e: R_PPC_ADDR16_LO	lbl_89_rodata_64
+    1960:	stfs    f0,0(r4)
+    1964:	stfs    f0,4(r4)
+    1968:	stfs    f0,8(r4)
+    196c:	blr
+
+00001970 <getDefaultLightSetIndex__5StageFv>:
+    1970:	li      r3,20
+    1974:	blr
+
+00001978 <getAIRange__5StageFv>:
+    1978:	addi    r3,r3,104
+    197c:	blr
+
+00001980 <isAdventureStage__5StageFv>:
+    1980:	li      r3,0
+    1984:	blr
+
+00001988 <getPokeTrainerDrawLayer__5StageFv>:
+    1988:	li      r3,0
+    198c:	blr
+
+00001990 <getPokeTrainerPositionZ__5StageFv>:
+    1990:	lis     r3,0
+			1992: R_PPC_ADDR16_HA	lbl_89_rodata_64
+    1994:	lfs     f1,0(r3)
+			1996: R_PPC_ADDR16_LO	lbl_89_rodata_64
+    1998:	blr
+
+0000199c <getPokeTrainerPointData__5StageFPii>:
+    199c:	blr
+
+000019a0 <getPokeTrainerPointNum__5StageFv>:
+    19a0:	li      r3,0
+    19a4:	blr
+
+000019a8 <getWind2ndOnlyData__7stMeleeFv>:
+    19a8:	lwz     r3,456(r3)
+    19ac:	blr
+
+000019b0 <isReStartSamePoint__13stTargetBreakFv>:
+    19b0:	li      r3,0
+    19b4:	blr
+
+000019b8 <getBgmID__13stTargetBreakFv>:
+    19b8:	li      r3,10002
+    19bc:	blr
+
+000019c0 <__sinit_\st_tbreak_cpp>:
+    19c0:	stwu    r1,-16(r1)
+    19c4:	mflr    r0
+    19c8:	li      r7,255
+    19cc:	li      r6,0
+    19d0:	stw     r0,20(r1)
+    19d4:	li      r0,1
+    19d8:	stw     r31,12(r1)
+    19dc:	lis     r31,0
+			19de: R_PPC_ADDR16_HA	lbl_89_bss_8
+    19e0:	addi    r31,r31,0
+			19e2: R_PPC_ADDR16_LO	lbl_89_bss_8
+    19e4:	addi    r5,r31,0
+    19e8:	stw     r7,0(r31)
+    19ec:	addi    r4,r31,8
+    19f0:	addi    r3,r31,28
+    19f4:	stw     r6,4(r5)
+    19f8:	stw     r7,8(r31)
+    19fc:	stw     r0,4(r4)
+    1a00:	bl      1a00 <__sinit_\st_tbreak_cpp+0x40>
+			1a00: R_PPC_REL24	__ct__11stClassInfoFv
+    1a04:	lis     r5,0
+			1a06: R_PPC_ADDR16_HA	__vt__35stClassInfoImpl<56,13stTargetBreak>
+    1a08:	addi    r3,r31,28
+    1a0c:	addi    r5,r5,0
+			1a0e: R_PPC_ADDR16_LO	__vt__35stClassInfoImpl<56,13stTargetBreak>
+    1a10:	li      r4,56
+    1a14:	stw     r5,28(r31)
+    1a18:	mr      r5,r3
+    1a1c:	bl      1a1c <__sinit_\st_tbreak_cpp+0x5c>
+			1a1c: R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+    1a20:	lis     r4,0
+			1a22: R_PPC_ADDR16_HA	__dt__35stClassInfoImpl<56,13stTargetBreak>Fv
+    1a24:	addi    r3,r31,28
+    1a28:	addi    r4,r4,0
+			1a2a: R_PPC_ADDR16_LO	__dt__35stClassInfoImpl<56,13stTargetBreak>Fv
+    1a2c:	addi    r5,r31,16
+    1a30:	bl      1a30 <__sinit_\st_tbreak_cpp+0x70>
+			1a30: R_PPC_REL24	__register_global_object
+    1a34:	lwz     r0,20(r1)
+    1a38:	lwz     r31,12(r1)
+    1a3c:	mtlr    r0
+    1a40:	addi    r1,r1,16
+    1a44:	blr
+
+00001a48 <__dt__35stClassInfoImpl<56,13stTargetBreak>Fv>:
+    1a48:	stwu    r1,-16(r1)
+    1a4c:	mflr    r0
+    1a50:	cmpwi   r3,0
+    1a54:	stw     r0,20(r1)
+    1a58:	stw     r31,12(r1)
+    1a5c:	mr      r31,r4
+    1a60:	stw     r30,8(r1)
+    1a64:	mr      r30,r3
+    1a68:	beq-    1aa0 <__dt__35stClassInfoImpl<56,13stTargetBreak>Fv+0x58>
+    1a6c:	lis     r6,0
+			1a6e: R_PPC_ADDR16_HA	__vt__35stClassInfoImpl<56,13stTargetBreak>
+    1a70:	li      r4,56
+    1a74:	addi    r6,r6,0
+			1a76: R_PPC_ADDR16_LO	__vt__35stClassInfoImpl<56,13stTargetBreak>
+    1a78:	li      r5,0
+    1a7c:	stw     r6,0(r3)
+    1a80:	bl      1a80 <__dt__35stClassInfoImpl<56,13stTargetBreak>Fv+0x38>
+			1a80: R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+    1a84:	mr      r3,r30
+    1a88:	li      r4,0
+    1a8c:	bl      1a8c <__dt__35stClassInfoImpl<56,13stTargetBreak>Fv+0x44>
+			1a8c: R_PPC_REL24	__dt__11stClassInfoFv
+    1a90:	cmpwi   r31,0
+    1a94:	ble-    1aa0 <__dt__35stClassInfoImpl<56,13stTargetBreak>Fv+0x58>
+    1a98:	mr      r3,r30
+    1a9c:	bl      1a9c <__dt__35stClassInfoImpl<56,13stTargetBreak>Fv+0x54>
+			1a9c: R_PPC_REL24	__dl__FPv
+    1aa0:	mr      r3,r30
+    1aa4:	lwz     r31,12(r1)
+    1aa8:	lwz     r30,8(r1)
+    1aac:	lwz     r0,20(r1)
+    1ab0:	mtlr    r0
+    1ab4:	addi    r1,r1,16
+    1ab8:	blr
+
+00001abc <create__35stClassInfoImpl<56,13stTargetBreak>Fv>:
+    1abc:	stwu    r1,-16(r1)
+    1ac0:	mflr    r0
+    1ac4:	li      r3,964
+    1ac8:	li      r4,15
+    1acc:	stw     r0,20(r1)
+    1ad0:	bl      1ad0 <create__35stClassInfoImpl<56,13stTargetBreak>Fv+0x14>
+			1ad0: R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+    1ad4:	cmpwi   r3,0
+    1ad8:	beq-    1ae0 <create__35stClassInfoImpl<56,13stTargetBreak>Fv+0x24>
+    1adc:	bl      1adc <create__35stClassInfoImpl<56,13stTargetBreak>Fv+0x20>
+			1adc: R_PPC_REL24	__ct__13stTargetBreakFv
+    1ae0:	lwz     r0,20(r1)
+    1ae4:	mtlr    r0
+    1ae8:	addi    r1,r1,16
+    1aec:	blr
+
+00001af0 <preload__35stClassInfoImpl<56,13stTargetBreak>Fv>:
+    1af0:	blr

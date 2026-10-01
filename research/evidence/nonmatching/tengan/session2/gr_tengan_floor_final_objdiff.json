@@ -1,0 +1,123 @@
+{
+  "name": "st_tengan/mo_stage/st_tengan/gr_tengan_floor",
+  "measures": {
+    "fuzzy_match_percent": 98.97049,
+    "total_code": "2440",
+    "matched_code": "1300",
+    "matched_code_percent": 53.27869,
+    "total_data": "560",
+    "matched_data": "16",
+    "matched_data_percent": 2.857143,
+    "total_functions": 7,
+    "matched_functions": 5,
+    "matched_functions_percent": 71.42857,
+    "total_units": 1
+  },
+  "sections": [
+    {
+      "name": ".data",
+      "size": "544",
+      "fuzzy_match_percent": 90.0369,
+      "metadata": {
+        "virtual_address": "3536"
+      }
+    },
+    {
+      "name": ".rodata",
+      "size": "16",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "virtual_address": "248"
+      }
+    },
+    {
+      "name": ".text",
+      "size": "2440",
+      "fuzzy_match_percent": 98.97049,
+      "metadata": {
+        "virtual_address": "26604"
+      }
+    }
+  ],
+  "functions": [
+    {
+      "name": "create__13grTenganFloorFiPCcPCc",
+      "size": "260",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTenganFloor::create(int, const char*, const char*)",
+        "virtual_address": "26604"
+      },
+      "address": "0"
+    },
+    {
+      "name": "__dt__13grTenganFloorFv",
+      "size": "88",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTenganFloor::~grTenganFloor()",
+        "virtual_address": "26864"
+      },
+      "address": "260"
+    },
+    {
+      "name": "update__13grTenganFloorFf",
+      "size": "116",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTenganFloor::update(float)",
+        "virtual_address": "26952"
+      },
+      "address": "348"
+    },
+    {
+      "name": "updateFloor__13grTenganFloorFf",
+      "size": "832",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTenganFloor::updateFloor(float)",
+        "virtual_address": "27068"
+      },
+      "address": "464"
+    },
+    {
+      "name": "updateVisibility__13grTenganFloorFf",
+      "size": "44",
+      "fuzzy_match_percent": 90.90909,
+      "metadata": {
+        "demangled_name": "grTenganFloor::updateVisibility(float)",
+        "virtual_address": "27900"
+      },
+      "address": "1296"
+    },
+    {
+      "name": "fn_60_6D28",
+      "size": "4",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "virtual_address": "27944"
+      },
+      "address": "1340"
+    },
+    {
+      "name": "changeAnimation__13grTenganFloorFUlbbPf",
+      "size": "1096",
+      "fuzzy_match_percent": 98.07299,
+      "metadata": {
+        "demangled_name": "grTenganFloor::changeAnimation(unsigned long, bool, bool, float*)",
+        "virtual_address": "27948"
+      },
+      "address": "1344"
+    }
+  ],
+  "metadata": {
+    "complete": false,
+    "module_name": "st_tengan",
+    "module_id": 60,
+    "source_path": "src/mo_stage/st_tengan/gr_tengan_floor.cpp",
+    "progress_categories": [
+      "modules"
+    ],
+    "auto_generated": false
+  }
+}

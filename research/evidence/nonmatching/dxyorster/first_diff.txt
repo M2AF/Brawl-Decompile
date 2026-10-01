@@ -1,0 +1,524 @@
+target 54 funcs, candidate 53 funcs
+DIFF  fn_76_70                     create__11stDxYorsterFv
+    --- target
+    +++ cand
+    @@ -12,6 +12,6 @@
+     lis     r4,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	@STRING@__ct__11stDxYorsterFv
+     li      r5,42
+     addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	@STRING@__ct__11stDxYorsterFv
+     bl <addr>
+    @@ -19,6 +19,6 @@
+     lis     r5,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	__vt__11stDxYorster
+     addi    r3,r31,472
+     addi    r5,r5,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	__vt__11stDxYorster
+     li      r4,0
+DIFF  fn_76_100                    __dt__11stDxYorsterFv
+    --- target
+    +++ cand
+    @@ -10,5 +10,5 @@
+     lis     r4,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	__vt__11stDxYorster
+     addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	__vt__11stDxYorster
+     stw     r4,60(r3)
+MATCH fn_76_16C                    loading__11stDxYorsterFv
+MATCH fn_76_174                    createObj__11stDxYorsterFv
+DIFF  fn_76_400                    fn_76_400__11stDxYorsterFi
+    --- target
+    +++ cand
+    @@ -5,2 +5,3 @@
+     stw     r31,12(r1)
+    +li      r31,0
+     stw     r30,8(r1)
+    @@ -21,4 +22,2 @@
+     mr      r31,r3
+    -b <addr>
+    -li      r31,0
+     cmpwi   r31,0
+MATCH fn_76_4F4                    setStageData__6GroundFPv
+MATCH fn_76_4FC                    fn_76_4FC__13grDxYorsterBgFP5Vec3f
+MATCH fn_76_504                    fn_76_504__13grDxYorsterBgFPb
+MATCH fn_76_50C                    fn_76_50C__13grDxYorsterBgFPb
+DIFF  fn_76_514                    fn_76_514__11stDxYorsterFi
+    --- target
+    +++ cand
+    @@ -3,3 +3,3 @@
+     lis     r5,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	...data.0
+     cmpwi   r4,2
+    @@ -7,4 +7,5 @@
+     addi    r5,r5,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	...data.0
+     stw     r31,28(r1)
+    +li      r31,0
+     stw     r30,24(r1)
+    @@ -18,4 +19,4 @@
+     b <addr>
+    -addi    r4,r5,80
+    -addi    r5,r5,84
+    +addi    r4,r5,68
+    +addi    r5,r5,72
+     li      r3,1
+    @@ -25,4 +26,4 @@
+     b <addr>
+    -addi    r4,r5,80
+    -addi    r5,r5,104
+    +addi    r4,r5,68
+    +addi    r5,r5,92
+     li      r3,2
+    @@ -31,4 +32,2 @@
+     mr      r31,r3
+    -b <addr>
+    -li      r31,0
+     cmpwi   r31,0
+    @@ -54,4 +53,3 @@
+     cmpwi   r30,2
+    -beq <addr>
+    -b <addr>
+    +bne <addr>
+     lwz     r12,60(r31)
+MATCH fn_76_618                    fn_76_618__11stDxYorsterFv
+MATCH fn_76_6E0                    fn_76_6E0__19grDxYorsterBlockPosFP5Vec3f
+MATCH fn_76_6E8                    fn_76_6E8__19grDxYorsterBlockPosFPUc
+MATCH fn_76_6F0                    fn_76_6F0__11stDxYorsterFi
+MATCH fn_76_854                    fn_76_854__16grDxYorsterBlockFi
+MATCH fn_76_85C                    fn_76_85C__16grDxYorsterBlockFP5Vec3f
+MATCH fn_76_864                    fn_76_864__16grDxYorsterBlockFPUc
+MATCH fn_76_86C                    fn_76_86C__16grDxYorsterBlockFPb
+MATCH fn_76_874                    startFighterEvent__5StageFv
+DIFF  fn_76_878                    initializeFighterAttackRatio__5StageFv
+    --- target
+    +++ cand
+    @@ -1 +1,2 @@
+    +li      r3,0
+     blr
+MATCH fn_76_87C                    helperStarWarp__5StageFv
+MATCH fn_76_884                    isSimpleBossBattleMode__5StageFv
+MATCH fn_76_88C                    isBossBattleMode__5StageFv
+DIFF  fn_76_894                    isCameraLocked__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,0
+    +li      r3,1
+     blr
+DIFF  fn_76_89C                    notifyTimmingGameStart__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1 @@
+    -li      r3,1
+     blr
+DIFF  fn_76_8A4                    getFrameRuleTime__5StageFv
+    --- target
+    +++ cand
+    @@ -1 +1,2 @@
+    +lfs     f1,400(r3)
+     blr
+DIFF  fn_76_8A8                    setFrameRuleTime__5StageFf
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -lfs     f1,400(r3)
+    +stfs    f1,400(r3)
+     blr
+DIFF  fn_76_8B0                    isNextStepBgmEqualNowStepBgmFromFlag__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -stfs    f1,400(r3)
+    +li      r3,0
+     blr
+DIFF  fn_76_8B8                    getBgmPlayOffsetFrame__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,5 @@
+    -li      r3,0
+    +lis     r3,0
+    +R_PPC_ADDR16_HA
+    +lfs     f1,0(r3)
+    +R_PPC_ADDR16_LO
+     blr
+MATCH fn_76_8C0                    getBgmVolume__5StageFv
+DIFF  fn_76_8CC                    setBgmChange__5StageFfbUl
+    --- target
+    +++ cand
+    @@ -1,5 +1,4 @@
+    -lis     r3,0
+    -R_PPC_ADDR16_HA
+    -lfs     f1,0(r3)
+    -R_PPC_ADDR16_LO
+    +stb     r4,388(r3)
+    +stw     r5,392(r3)
+    +stfs    f1,396(r3)
+     blr
+DIFF  fn_76_8D8                    getBgmChangeID__5StageFPUlPf
+    --- target
+    +++ cand
+    @@ -1,4 +1,5 @@
+    -stb     r4,388(r3)
+    -stw     r5,392(r3)
+    -stfs    f1,396(r3)
+    +lwz     r0,392(r3)
+    +stw     r0,0(r4)
+    +lfs     f0,396(r3)
+    +stfs    f0,0(r5)
+     blr
+DIFF  fn_76_8E8                    isBgmChange__5StageFv
+    --- target
+    +++ cand
+    @@ -1,5 +1,2 @@
+    -lwz     r0,392(r3)
+    -stw     r0,0(r4)
+    -lfs     f0,396(r3)
+    -stfs    f0,0(r5)
+    +lbz     r3,388(r3)
+     blr
+DIFF  fn_76_8FC                    getBgmOptionID__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -lbz     r3,388(r3)
+    +li      r3,0
+     blr
+MATCH fn_76_904                    getNowStepBgmID__5StageFv
+MATCH fn_76_90C                    getBgmID__5StageFv
+MATCH fn_76_914                    getBgmID__5StageCFv
+DIFF  fn_76_91C                    appearanceFighterLocal__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1 @@
+    -li      r3,0
+     blr
+DIFF  fn_76_924                    getScrollDir__5StageFP5Vec3f
+    --- target
+    +++ cand
+    @@ -1 +1,9 @@
+    +lis     r5,0
+    +R_PPC_ADDR16_HA
+    +li      r3,0
+    +lfs     f0,0(r5)
+    +R_PPC_ADDR16_LO
+    +stfs    f0,0(r4)
+    +stfs    f0,4(r4)
+    +stfs    f0,8(r4)
+     blr
+DIFF  fn_76_928                    getDefaultLightSetIndex__5StageFv
+    --- target
+    +++ cand
+    @@ -1,9 +1,2 @@
+    -lis     r5,0
+    -R_PPC_ADDR16_HA
+    -li      r3,0
+    -lfs     f0,0(r5)
+    -R_PPC_ADDR16_LO
+    -stfs    f0,0(r4)
+    -stfs    f0,4(r4)
+    -stfs    f0,8(r4)
+    +li      r3,20
+     blr
+DIFF  fn_76_944                    getAIRange__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,20
+    +addi    r3,r3,104
+     blr
+DIFF  fn_76_94C                    isAdventureStage__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -addi    r3,r3,104
+    +li      r3,0
+     blr
+MATCH fn_76_954                    getPokeTrainerDrawLayer__5StageFv
+DIFF  fn_76_95C                    getPokeTrainerPositionZ__5StageFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,5 @@
+    -li      r3,0
+    +lis     r3,0
+    +R_PPC_ADDR16_HA
+    +lfs     f1,0(r3)
+    +R_PPC_ADDR16_LO
+     blr
+DIFF  fn_76_964                    getPokeTrainerPointData__5StageFPii
+    --- target
+    +++ cand
+    @@ -1,5 +1 @@
+    -lis     r3,0
+    -R_PPC_ADDR16_HA
+    -lfs     f1,0(r3)
+    -R_PPC_ADDR16_LO
+     blr
+DIFF  fn_76_970                    getPokeTrainerPointNum__5StageFv
+    --- target
+    +++ cand
+    @@ -1 +1,2 @@
+    +li      r3,0
+     blr
+DIFF  fn_76_974                    isReStartSamePoint__7stMeleeFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,0
+    +li      r3,1
+     blr
+DIFF  fn_76_97C                    getWind2ndOnlyData__7stMeleeFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -li      r3,1
+    +lwz     r3,456(r3)
+     blr
+DIFF  fn_76_984                    isBamperVector__11stDxYorsterFv
+    --- target
+    +++ cand
+    @@ -1,2 +1,2 @@
+    -lwz     r3,456(r3)
+    +li      r3,1
+     blr
+DIFF  fn_76_98C                    __sinit_\st_dxyorster_cpp
+    --- target
+    +++ cand
+    @@ -1,2 +1,39 @@
+    -li      r3,1
+    +stwu    r1,-16(r1)
+    +mflr    r0
+    +stw     r0,20(r1)
+    +stw     r31,12(r1)
+    +lis     r31,0
+    +R_PPC_ADDR16_HA	bss_loc_14__11stDxYorster
+    +addi    r3,r31,0
+    +R_PPC_ADDR16_LO	bss_loc_14__11stDxYorster
+    +bl <addr>
+    +R_PPC_REL24	__ct__11stClassInfoFv
+    +lis     r5,0
+    +R_PPC_ADDR16_HA	__vt__33stClassInfoImpl<42,11stDxYorster>
+    +addi    r3,r31,0
+    +R_PPC_ADDR16_LO	bss_loc_14__11stDxYorster
+    +addi    r5,r5,0
+    +R_PPC_ADDR16_LO	__vt__33stClassInfoImpl<42,11stDxYorster>
+    +li      r4,42
+    +stw     r5,0(r31)
+    +R_PPC_ADDR16_LO	bss_loc_14__11stDxYorster
+    +mr      r5,r3
+    +bl <addr>
+    +R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+    +lis     r4,0
+    +R_PPC_ADDR16_HA	__dt__33stClassInfoImpl<42,11stDxYorster>Fv
+    +lis     r5,0
+    +R_PPC_ADDR16_HA
+    +addi    r3,r31,0
+    +R_PPC_ADDR16_LO	bss_loc_14__11stDxYorster
+    +addi    r4,r4,0
+    +R_PPC_ADDR16_LO	__dt__33stClassInfoImpl<42,11stDxYorster>Fv
+    +addi    r5,r5,0
+    +R_PPC_ADDR16_LO
+    +bl <addr>
+    +R_PPC_REL24	__register_global_object
+    +lwz     r0,20(r1)
+    +lwz     r31,12(r1)
+    +mtlr    r0
+    +addi    r1,r1,16
+     blr
+DIFF  fn_76_994                    __dt__33stClassInfoImpl<42,11stDxYorster>Fv
+    --- target
+    +++ cand
+    @@ -2,36 +2,31 @@
+     mflr    r0
+    +cmpwi   r3,0
+     stw     r0,20(r1)
+     stw     r31,12(r1)
+    -lis     r31,0
+    -R_PPC_ADDR16_HA
+    -addi    r3,r31,0
+    -R_PPC_ADDR16_LO
+    -bl <addr>
+    -R_PPC_REL24	__ct__11stClassInfoFv
+    -lis     r5,0
+    -R_PPC_ADDR16_HA
+    -addi    r3,r31,0
+    -R_PPC_ADDR16_LO
+    -addi    r5,r5,0
+    -R_PPC_ADDR16_LO
+    +mr      r31,r4
+    +stw     r30,8(r1)
+    +mr      r30,r3
+    +beq     9d0Fv+0x58>
+    +lis     r6,0
+    +R_PPC_ADDR16_HA	__vt__33stClassInfoImpl<42,11stDxYorster>
+     li      r4,42
+    -stw     r5,0(r31)
+    -R_PPC_ADDR16_LO
+    -mr      r5,r3
+    -bl <addr>
+    +addi    r6,r6,0
+    +R_PPC_ADDR16_LO	__vt__33stClassInfoImpl<42,11stDxYorster>
+    +li      r5,0
+    +stw     r6,0(r3)
+    +bl      9b0Fv+0x38>
+     R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+    -lis     r4,0
+    -R_PPC_ADDR16_HA
+    -lis     r5,0
+    -R_PPC_ADDR16_HA
+    -addi    r3,r31,0
+    -R_PPC_ADDR16_LO
+    -addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    -addi    r5,r5,0
+    -R_PPC_ADDR16_LO
+    -bl <addr>
+    -R_PPC_REL24	__register_global_object
+    +mr      r3,r30
+    +li      r4,0
+    +bl      9bcFv+0x44>
+    +R_PPC_REL24	__dt__11stClassInfoFv
+    +cmpwi   r31,0
+    +ble     9d0Fv+0x58>
+    +mr      r3,r30
+    +bl      9ccFv+0x54>
+    +R_PPC_REL24	__dl__FPv
+    +mr      r3,r30
+    +lwz     r31,12(r1)
+    +lwz     r30,8(r1)
+     lwz     r0,20(r1)
+    -lwz     r31,12(r1)
+     mtlr    r0
+DIFF  fn_76_9F8                    create__33stClassInfoImpl<42,11stDxYorster>Fv
+    --- target
+    +++ cand
+    @@ -2,30 +2,40 @@
+     mflr    r0
+    -cmpwi   r3,0
+    +li      r3,592
+    +li      r4,15
+     stw     r0,20(r1)
+     stw     r31,12(r1)
+    -mr      r31,r4
+    -stw     r30,8(r1)
+    -mr      r30,r3
+    -beq <addr>
+    -lis     r6,0
+    -R_PPC_ADDR16_HA
+    -li      r4,42
+    -addi    r6,r6,0
+    -R_PPC_ADDR16_LO
+    -li      r5,0
+    -stw     r6,0(r3)
+    -bl <addr>
+    -R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+    -mr      r3,r30
+    +bl      a04Fv+0x18>
+    +R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+    +cmpwi   r3,0
+    +mr      r31,r3
+    +beq     a64Fv+0x78>
+    +lis     r4,0
+    +R_PPC_ADDR16_HA	@STRING@__ct__11stDxYorsterFv
+    +li      r5,42
+    +addi    r4,r4,0
+    +R_PPC_ADDR16_LO	@STRING@__ct__11stDxYorsterFv
+    +bl      a20Fv+0x34>
+    +R_PPC_REL24	__ct__7stMeleeFPCcQ26Stages11srStageKind
+    +lis     r5,0
+    +R_PPC_ADDR16_HA	__vt__11stDxYorster
+    +addi    r3,r31,472
+    +addi    r5,r5,0
+    +R_PPC_ADDR16_LO	__vt__11stDxYorster
+     li      r4,0
+    -bl <addr>
+    -R_PPC_REL24	__dt__11stClassInfoFv
+    -cmpwi   r31,0
+    -ble <addr>
+    -mr      r3,r30
+    -bl <addr>
+    -R_PPC_REL24	__dl__FPv
+    -mr      r3,r30
+    +stw     r5,60(r31)
+    +li      r5,108
+    +bl      a3cFv+0x50>
+    +R_PPC_REL24	memset
+    +li      r6,1
+    +li      r0,0
+    +stb     r6,580(r31)
+    +addi    r3,r31,583
+    +li      r4,0
+    +li      r5,9
+    +stb     r6,581(r31)
+    +stb     r0,582(r31)
+    +bl      a60Fv+0x74>
+    +R_PPC_REL24	memset
+    +mr      r3,r31
+     lwz     r31,12(r1)
+    -lwz     r30,8(r1)
+     lwz     r0,20(r1)
+DIFF  fn_76_A6C                    preload__33stClassInfoImpl<42,11stDxYorster>Fv
+    --- target
+    +++ cand
+    @@ -1,44 +1 @@
+    -stwu    r1,-16(r1)
+    -mflr    r0
+    -li      r3,592
+    -li      r4,15
+    -stw     r0,20(r1)
+    -stw     r31,12(r1)
+    -bl <addr>
+    -R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+    -cmpwi   r3,0
+    -mr      r31,r3
+    -beq <addr>
+    -lis     r4,0
+    -R_PPC_ADDR16_HA
+    -li      r5,42
+    -addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    -bl <addr>
+    -R_PPC_REL24	__ct__7stMeleeFPCcQ26Stages11srStageKind
+    -lis     r5,0
+    -R_PPC_ADDR16_HA
+    -addi    r3,r31,472
+    -addi    r5,r5,0
+    -R_PPC_ADDR16_LO
+    -li      r4,0
+    -stw     r5,60(r31)
+    -li      r5,108
+    -bl <addr>
+    -R_PPC_REL24	memset
+    -li      r6,1
+    -li      r0,0
+    -stb     r6,580(r31)
+    -addi    r3,r31,583
+    -li      r4,0
+    -li      r5,9
+    -stb     r6,581(r31)
+    -stb     r0,582(r31)
+    -bl <addr>
+    -R_PPC_REL24	memset
+    -mr      r3,r31
+    -lwz     r31,12(r1)
+    -lwz     r0,20(r1)
+    -mtlr    r0
+    -addi    r1,r1,16
+     blr
+DIFF  fn_76_AFC                    -
+    --- target
+    +++ cand
+    @@ -1 +0,0 @@
+    -blr
+.data: target 1072 bytes, candidate 1076 bytes, DIFFERENT
+.rodata: target 8 bytes, candidate 8 bytes, same bytes
+.bss: target 16 bytes, candidate 16 bytes, same bytes
+.ctors: target 4 bytes, candidate 4 bytes, same bytes

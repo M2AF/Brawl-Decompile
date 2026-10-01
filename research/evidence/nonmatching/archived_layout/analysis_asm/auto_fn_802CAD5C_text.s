@@ -1,0 +1,108 @@
+.include "macros.inc"
+.file "auto_fn_802CAD5C_text"
+
+# 0x800081C0..0x800081C8 | size: 0x8
+.section extab, "a"
+.balign 4
+
+# extab:0x0 | 0x800081C0 | size: 0x8
+.obj "@etb_800081C0", local
+.hidden "@etb_800081C0"
+/*
+ * Flag values:
+ * Has Elf Vector: No
+ * Large Frame: Yes
+ * Has Frame Pointer: No
+ * Saved CR: No
+ * Saved GPR range: r31
+ */
+	.4byte 0x08080000
+	.4byte 0x00000000
+.endobj "@etb_800081C0"
+
+# 0x8000AE70..0x8000AE7C | size: 0xC
+.section extabindex, "a"
+.balign 4
+
+# extabindex:0x0 | 0x8000AE70 | size: 0xC
+.obj "@eti_8000AE70", local
+.hidden "@eti_8000AE70"
+	.4byte fn_802CAD5C
+	.4byte 0x00000104
+	.4byte "@etb_800081C0"
+.endobj "@eti_8000AE70"
+
+# 0x802CAD5C..0x802CAE60 | size: 0x104
+.text
+.balign 4
+
+# .text:0x0 | 0x802CAD5C | size: 0x104
+.fn fn_802CAD5C, global
+/* 802CAD5C 002C0ADC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 802CAD60 002C0AE0  7C 08 02 A6 */	mflr r0
+/* 802CAD64 002C0AE4  38 80 00 08 */	li r4, 0x8
+/* 802CAD68 002C0AE8  38 A0 00 1F */	li r5, 0x1f
+/* 802CAD6C 002C0AEC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 802CAD70 002C0AF0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 802CAD74 002C0AF4  7C 7F 1B 78 */	mr r31, r3
+/* 802CAD78 002C0AF8  80 6D CA 98 */	lwz r3, lbl_805A0EB8@sda21(r0)
+/* 802CAD7C 002C0AFC  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 802CAD80 002C0B00  81 8C 00 18 */	lwz r12, 0x18(r12)
+/* 802CAD84 002C0B04  7D 89 03 A6 */	mtctr r12
+/* 802CAD88 002C0B08  4E 80 04 21 */	bctrl
+/* 802CAD8C 002C0B0C  38 00 00 08 */	li r0, 0x8
+/* 802CAD90 002C0B10  2C 03 00 00 */	cmpwi r3, 0x0
+/* 802CAD94 002C0B14  B0 03 00 04 */	sth r0, 0x4(r3)
+/* 802CAD98 002C0B18  41 82 00 18 */	beq .L_802CADB0
+/* 802CAD9C 002C0B1C  38 00 00 01 */	li r0, 0x1
+/* 802CADA0 002C0B20  3C 80 80 48 */	lis r4, lbl_80487290@ha
+/* 802CADA4 002C0B24  B0 03 00 06 */	sth r0, 0x6(r3)
+/* 802CADA8 002C0B28  38 84 72 90 */	addi r4, r4, lbl_80487290@l
+/* 802CADAC 002C0B2C  90 83 00 00 */	stw r4, 0x0(r3)
+.L_802CADB0:
+/* 802CADB0 002C0B30  38 00 00 04 */	li r0, 0x4
+/* 802CADB4 002C0B34  7F E4 FB 78 */	mr r4, r31
+/* 802CADB8 002C0B38  90 7F 01 00 */	stw r3, 0x100(r31)
+/* 802CADBC 002C0B3C  7C 09 03 A6 */	mtctr r0
+.L_802CADC0:
+/* 802CADC0 002C0B40  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CADC4 002C0B44  90 04 00 00 */	stw r0, 0x0(r4)
+/* 802CADC8 002C0B48  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CADCC 002C0B4C  90 04 00 04 */	stw r0, 0x4(r4)
+/* 802CADD0 002C0B50  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CADD4 002C0B54  90 04 00 08 */	stw r0, 0x8(r4)
+/* 802CADD8 002C0B58  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CADDC 002C0B5C  90 04 00 0C */	stw r0, 0xc(r4)
+/* 802CADE0 002C0B60  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CADE4 002C0B64  90 04 00 10 */	stw r0, 0x10(r4)
+/* 802CADE8 002C0B68  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CADEC 002C0B6C  90 04 00 14 */	stw r0, 0x14(r4)
+/* 802CADF0 002C0B70  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CADF4 002C0B74  90 04 00 18 */	stw r0, 0x18(r4)
+/* 802CADF8 002C0B78  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CADFC 002C0B7C  90 04 00 1C */	stw r0, 0x1c(r4)
+/* 802CAE00 002C0B80  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CAE04 002C0B84  90 04 00 20 */	stw r0, 0x20(r4)
+/* 802CAE08 002C0B88  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CAE0C 002C0B8C  90 04 00 24 */	stw r0, 0x24(r4)
+/* 802CAE10 002C0B90  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CAE14 002C0B94  90 04 00 28 */	stw r0, 0x28(r4)
+/* 802CAE18 002C0B98  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CAE1C 002C0B9C  90 04 00 2C */	stw r0, 0x2c(r4)
+/* 802CAE20 002C0BA0  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CAE24 002C0BA4  90 04 00 30 */	stw r0, 0x30(r4)
+/* 802CAE28 002C0BA8  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CAE2C 002C0BAC  90 04 00 34 */	stw r0, 0x34(r4)
+/* 802CAE30 002C0BB0  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CAE34 002C0BB4  90 04 00 38 */	stw r0, 0x38(r4)
+/* 802CAE38 002C0BB8  80 1F 01 00 */	lwz r0, 0x100(r31)
+/* 802CAE3C 002C0BBC  90 04 00 3C */	stw r0, 0x3c(r4)
+/* 802CAE40 002C0BC0  38 84 00 40 */	addi r4, r4, 0x40
+/* 802CAE44 002C0BC4  42 00 FF 7C */	bdnz .L_802CADC0
+/* 802CAE48 002C0BC8  7F E3 FB 78 */	mr r3, r31
+/* 802CAE4C 002C0BCC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 802CAE50 002C0BD0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 802CAE54 002C0BD4  7C 08 03 A6 */	mtlr r0
+/* 802CAE58 002C0BD8  38 21 00 10 */	addi r1, r1, 0x10
+/* 802CAE5C 002C0BDC  4E 80 00 20 */	blr
+.endfn fn_802CAD5C

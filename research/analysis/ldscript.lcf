@@ -1,0 +1,222 @@
+MEMORY
+{
+    text : origin = 0x80004000
+}
+
+SECTIONS
+{
+    GROUP:
+    {
+        .init ALIGN(0x4):{}
+        extab ALIGN(0x20):{}
+        extabindex ALIGN(0x20):{}
+        .text ALIGN(0x20):{}
+        .ctors ALIGN(0x20):{}
+        .dtors ALIGN(0x20):{}
+        .rodata ALIGN(0x20):{}
+        .data ALIGN(0x20):{}
+        .bss ALIGN(0x80):{}
+        .sdata ALIGN(0x20):{}
+        .sbss ALIGN(0x10):{}
+        .sdata2 ALIGN(0x10):{}
+        .sbss ALIGN(0x20):{}
+        .stack ALIGN(0x100):{}
+    } > text
+
+    _stack_end = _f_sbss + SIZEOF(.sbss);
+    _stack_addr = (_stack_end + 0x10004 + 0x7) & ~0x7;
+    _db_stack_addr = (_stack_addr + 0x2000);
+    _db_stack_end = _stack_addr;
+    __ArenaLo = (_db_stack_addr + 0x1f) & ~0x1f;
+    __ArenaHi = 0x81700000;
+}
+
+FORCEACTIVE
+{
+    __init_cpp_exceptions
+    __fini_cpp_exceptions
+    fn_80011C30
+    fn_800179D4
+    fn_8001B694
+    fn_80020AA8
+    fn_800238A4
+    fn_80025978
+    fn_80030508
+    fn_8003312C
+    fn_80037DAC
+    fn_80038790
+    fn_8003CEEC
+    fn_8003FD40
+    fn_80043AEC
+    fn_800469C0
+    fn_800568A8
+    fn_8005C574
+    fn_80061510
+    fn_8006CC18
+    fn_8007261C
+    fn_8009F4CC
+    fn_800A5FB8
+    fn_800A9DB8
+    fn_800B95A4
+    fn_800DB79C
+    fn_800FBAE0
+    fn_801048AC
+    fn_80112250
+    fn_80137FB8
+    fn_8013CFB8
+    fn_8013D050
+    fn_8013D324
+    fn_80146BD8
+    fn_80147418
+    fn_8014CBF8
+    fn_8014E2FC
+    fn_80152928
+    fn_8015B05C
+    fn_8015BF90
+    fn_8015CC2C
+    fn_8015CD48
+    fn_8015D360
+    fn_8015D720
+    fn_8015D8C4
+    fn_80162104
+    fn_80164C88
+    fn_8016E4E4
+    fn_8016F148
+    fn_8017053C
+    fn_801763BC
+    fn_80183628
+    fn_80184AE4
+    fn_801856BC
+    fn_80187CF4
+    fn_80187DA0
+    fn_801A174C
+    fn_801BD694
+    fn_801C49B4
+    fn_801CC29C
+    fn_801CF990
+    fn_801D3C48
+    fn_8027B510
+    fn_8027B568
+    fn_8027C7DC
+    fn_8027C914
+    fn_8027C97C
+    fn_8027CC2C
+    fn_8027CCA0
+    fn_8027E4E8
+    fn_8027FFBC
+    fn_80280724
+    fn_80280C14
+    fn_80281EE4
+    fn_80281F4C
+    fn_80282040
+    fn_80285A48
+    fn_80285D40
+    fn_80287AD0
+    fn_8029F08C
+    fn_802A0C5C
+    fn_802A1D7C
+    fn_802A8E08
+    fn_802B7934
+    fn_802B7998
+    fn_802C0644
+    fn_802CB41C
+    fn_802CD518
+    fn_802CD5A8
+    fn_802CD610
+    fn_802CD798
+    fn_802CD828
+    fn_802CE534
+    fn_802CE588
+    fn_802CEAC0
+    fn_802D00F0
+    fn_802D0144
+    fn_802D0828
+    fn_802D0A2C
+    fn_802D14CC
+    fn_802D1520
+    fn_802D2518
+    fn_802D256C
+    fn_802D4634
+    fn_802D4688
+    fn_802D4A44
+    fn_802D4C7C
+    fn_802D4DBC
+    fn_802D4E0C
+    fn_802D5C58
+    fn_802D5CBC
+    fn_802D6400
+    fn_802D6454
+    fn_802D64B0
+    fn_802D720C
+    fn_802D7578
+    fn_802D94A8
+    fn_802D9518
+    fn_802D9A94
+    fn_802D9ADC
+    fn_802DAB08
+    fn_802DBC30
+    fn_802DD520
+    fn_802DD570
+    fn_802DD5D8
+    fn_802DE624
+    fn_802DE690
+    fn_802DE94C
+    fn_802DE99C
+    fn_802DEA10
+    fn_802E1F78
+    fn_802E1FCC
+    fn_802E2038
+    fn_802E2230
+    fn_802E35B4
+    fn_802E3724
+    fn_802E3780
+    fn_802E3BC8
+    fn_802E3C18
+    fn_802E46B0
+    fn_802E47D8
+    fn_802E5208
+    fn_802E5514
+    fn_802E59A0
+    fn_802E5A28
+    fn_802E609C
+    fn_802E61A0
+    fn_802E83C8
+    fn_802E90B4
+    fn_802E9B40
+    fn_802E9B90
+    fn_802F0040
+    fn_802F0358
+    fn_802F03A8
+    fn_802F06A8
+    fn_802F0B40
+    fn_80300794
+    fn_80312F40
+    fn_80313088
+    fn_803227E8
+    fn_80325F8C
+    fn_8032BBDC
+    fn_8032C2B4
+    fn_8032D42C
+    fn_8032D4B0
+    fn_8032D524
+    fn_8032D5E0
+    fn_8032D648
+    fn_8032D700
+    fn_8032E740
+    fn_8032E7AC
+    fn_8032E890
+    fn_8032E8EC
+    fn_8032E950
+    fn_8032F0A8
+    fn_8032F3EC
+    fn_8032F454
+    fn_8032F514
+    fn_8032F584
+    fn_8032F5E8
+    fn_8032F64C
+    fn_8032F6B0
+    fn_80332BA4
+    fn_80333698
+    fn_803340A8
+    fn_80334BCC
+}

@@ -1,0 +1,19 @@
+--- before
++++ after
+@@ -37844,7 +37844,7 @@
+     bool allOnFinalLap = true;
+     __alloca(data->m_kartNum * (sizeof(int)));
+     {
+-      u8 i = 0;
++      u8 i;
+       u8 kartNum = data->m_kartNum;
+       for (; i != kartNum; i++)
+       {
+@@ -37852,6 +37852,7 @@
+         kart->m_rank = 0;
+         if (kart->m_lap < 10)
+         {
++          i = 0;
+           allOnFinalLap = false;
+         }
+         if (((kart->m_checkpoint > 20) && (kart->m_checkpoint < 40)) && (kart->m_isRacing == true))

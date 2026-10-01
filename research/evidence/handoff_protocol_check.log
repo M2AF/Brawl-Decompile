@@ -1,0 +1,15 @@
+[1/3] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[2/3] REPORT
+[3/3] PROGRESS
+Progress:
+  All: 1.27% matched, 1.07% linked (517 / 4412 files)
+    Code: 200760 / 15833548 bytes (2634 / 92524 functions)
+    Data: 831496 / 5667484 bytes (14.67%)
+  DOL: 1.37% matched, 0.85% linked (65 / 1722 files)
+    Code: 57172 / 4170064 bytes (511 / 14278 functions)
+    Data: 6720 / 1724104 bytes (0.39%)
+  Modules: 1.23% matched, 1.15% linked (452 / 2690 files)
+    Code: 143588 / 11663484 bytes (2123 / 78246 functions)
+    Data: 824776 / 3943380 bytes (20.92%)

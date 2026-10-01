@@ -1,0 +1,58 @@
+.include "macros.inc"
+.file "auto_03_802FBEF8_text"
+
+# 0x802FBEF8..0x802FBF78 | size: 0x80
+.text
+.balign 4
+
+# .text:0x0 | 0x802FBEF8 | size: 0x40
+.fn fn_802FBEF8, global
+/* 802FBEF8 002F1C78  38 00 00 03 */	li r0, 0x3
+/* 802FBEFC 002F1C7C  7C 83 23 78 */	mr r3, r4
+/* 802FBF00 002F1C80  38 C0 00 00 */	li r6, 0x0
+/* 802FBF04 002F1C84  7C 09 03 A6 */	mtctr r0
+.L_802FBF08:
+/* 802FBF08 002F1C88  A0 03 00 00 */	lhz r0, 0x0(r3)
+/* 802FBF0C 002F1C8C  7C 05 00 40 */	cmplw r5, r0
+/* 802FBF10 002F1C90  40 82 00 18 */	bne .L_802FBF28
+/* 802FBF14 002F1C94  3C 60 00 01 */	lis r3, 0x1
+/* 802FBF18 002F1C98  54 C0 08 3C */	slwi r0, r6, 1
+/* 802FBF1C 002F1C9C  38 63 FF FF */	subi r3, r3, 0x1
+/* 802FBF20 002F1CA0  7C 64 03 2E */	sthx r3, r4, r0
+/* 802FBF24 002F1CA4  4E 80 00 20 */	blr
+.L_802FBF28:
+/* 802FBF28 002F1CA8  38 63 00 02 */	addi r3, r3, 0x2
+/* 802FBF2C 002F1CAC  38 C6 00 01 */	addi r6, r6, 0x1
+/* 802FBF30 002F1CB0  42 00 FF D8 */	bdnz .L_802FBF08
+/* 802FBF34 002F1CB4  4E 80 00 20 */	blr
+.endfn fn_802FBEF8
+
+# .text:0x40 | 0x802FBF38 | size: 0x38
+.fn fn_802FBF38, global
+/* 802FBF38 002F1CB8  38 00 00 03 */	li r0, 0x3
+/* 802FBF3C 002F1CBC  7C 83 23 78 */	mr r3, r4
+/* 802FBF40 002F1CC0  38 C0 00 00 */	li r6, 0x0
+/* 802FBF44 002F1CC4  7C 09 03 A6 */	mtctr r0
+.L_802FBF48:
+/* 802FBF48 002F1CC8  A0 03 00 00 */	lhz r0, 0x0(r3)
+/* 802FBF4C 002F1CCC  28 00 FF FF */	cmplwi r0, 0xffff
+/* 802FBF50 002F1CD0  40 82 00 10 */	bne .L_802FBF60
+/* 802FBF54 002F1CD4  54 C0 08 3C */	slwi r0, r6, 1
+/* 802FBF58 002F1CD8  7C A4 03 2E */	sthx r5, r4, r0
+/* 802FBF5C 002F1CDC  4E 80 00 20 */	blr
+.L_802FBF60:
+/* 802FBF60 002F1CE0  38 63 00 02 */	addi r3, r3, 0x2
+/* 802FBF64 002F1CE4  38 C6 00 01 */	addi r6, r6, 0x1
+/* 802FBF68 002F1CE8  42 00 FF E0 */	bdnz .L_802FBF48
+/* 802FBF6C 002F1CEC  4E 80 00 20 */	blr
+.endfn fn_802FBF38
+
+# .text:0x78 | 0x802FBF70 | size: 0x4
+.fn fn_802FBF70, global
+/* 802FBF70 002F1CF0  4E 80 00 20 */	blr
+.endfn fn_802FBF70
+
+# .text:0x7C | 0x802FBF74 | size: 0x4
+.fn fn_802FBF74, global
+/* 802FBF74 002F1CF4  4B FF FF 10 */	b fn_802FBE84
+.endfn fn_802FBF74

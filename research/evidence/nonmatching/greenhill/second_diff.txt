@@ -1,0 +1,355 @@
+target 57 funcs, candidate 57 funcs
+DIFF  fn_72_70                     create__11stGreenhillFv
+    --- target
+    +++ cand
+    @@ -10,3 +10,3 @@
+     bl <addr>
+    -R_PPC_REL24
+    +R_PPC_REL24	__ct__11stGreenhillFv
+     lwz     r0,20(r1)
+DIFF  fn_72_A4                     __ct__11stGreenhillFv
+    --- target
+    +++ cand
+    @@ -22,3 +22,3 @@
+     lis     r4,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	__vt__11stGreenhill
+     li      r30,5
+    @@ -26,3 +26,3 @@
+     addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	__vt__11stGreenhill
+     addi    r3,r27,485
+DIFF  fn_72_1A0                    __dt__11stGreenhillFv
+    --- target
+    +++ cand
+    @@ -10,5 +10,5 @@
+     lis     r4,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	__vt__11stGreenhill
+     addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	__vt__11stGreenhill
+     stw     r4,60(r3)
+MATCH fn_72_20C                    loading__11stGreenhillFv
+MATCH fn_72_214                    createObj__11stGreenhillFv
+MATCH fn_72_3A0                    fn_72_3A0__11stGreenhillFv
+MATCH fn_72_468                    setStageData__6GroundFPv
+MATCH fn_72_470                    fn_72_470__13grGreenhillBgFP6Matrix
+MATCH fn_72_478                    fn_72_478__13grGreenhillBgFPUc
+DIFF  fn_72_480                    fn_72_480__11stGreenhillFv
+    --- target
+    +++ cand
+    @@ -5,5 +5,5 @@
+     lis     r31,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	...data.0
+     addi    r31,r31,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	...data.0
+     stw     r30,24(r1)
+    @@ -105,10 +105,10 @@
+     cmpwi   r3,0
+    -mr      r31,r3
+    +mr      r30,r3
+     beq <addr>
+     mr      r3,r29
+    -mr      r4,r31
+    +mr      r4,r30
+     bl <addr>
+     R_PPC_REL24	addGround__5StageFP6Ground
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     li      r4,2
+    @@ -117,4 +117,4 @@
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     lwz     r4,416(r29)
+    @@ -125,4 +125,4 @@
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     lwz     r4,156(r29)
+    @@ -131,4 +131,4 @@
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     addi    r4,r29,474
+    @@ -137,4 +137,4 @@
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     addi    r4,r29,475
+MATCH fn_72_6B8                    fn_72_6B8__16grGreenhillBreakFUc
+MATCH fn_72_6C0                    fn_72_6C0__16grGreenhillBreakFPUc
+MATCH fn_72_6C8                    fn_72_6C8__16grGreenhillBreakFPUc
+MATCH fn_72_6D0                    fn_72_6D0__11stGreenhillFv
+MATCH fn_72_7B0                    fn_72_7B0__16grGreenhillCheckFPUc
+MATCH fn_72_7B8                    fn_72_7B8__16grGreenhillCheckFPUc
+MATCH fn_72_7C0                    fn_72_7C0__16grGreenhillCheckFP6Matrix
+DIFF  fn_72_7C8                    fn_72_7C8__11stGreenhillFv
+    --- target
+    +++ cand
+    @@ -8,5 +8,5 @@
+     lis     r31,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	...data.0
+     addi    r31,r31,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	...data.0
+     stw     r30,24(r1)
+    @@ -35,8 +35,2 @@
+     li      r6,0
+    -mtctr   r12
+    -bctrl
+    -lwz     r12,60(r30)
+    -mr      r3,r30
+    -lwz     r4,156(r29)
+    -lwz     r12,164(r12)
+     mtctr   r12
+    @@ -71,8 +65,2 @@
+     mr      r3,r30
+    -lwz     r4,156(r29)
+    -lwz     r12,164(r12)
+    -mtctr   r12
+    -bctrl
+    -lwz     r12,60(r30)
+    -mr      r3,r30
+     addi    r4,r29,544
+    @@ -99,8 +87,2 @@
+     li      r6,0
+    -mtctr   r12
+    -bctrl
+    -lwz     r12,60(r30)
+    -mr      r3,r30
+    -lwz     r4,156(r29)
+    -lwz     r12,164(r12)
+     mtctr   r12
+    @@ -135,8 +117,2 @@
+     mr      r3,r30
+    -lwz     r4,156(r29)
+    -lwz     r12,164(r12)
+    -mtctr   r12
+    -bctrl
+    -lwz     r12,60(r30)
+    -mr      r3,r30
+     addi    r4,r29,488
+    @@ -163,8 +139,2 @@
+     li      r6,0
+    -mtctr   r12
+    -bctrl
+    -lwz     r12,60(r30)
+    -mr      r3,r30
+    -lwz     r4,156(r29)
+    -lwz     r12,164(r12)
+     mtctr   r12
+    @@ -199,8 +169,2 @@
+     mr      r3,r30
+    -lwz     r4,156(r29)
+    -lwz     r12,164(r12)
+    -mtctr   r12
+    -bctrl
+    -lwz     r12,60(r30)
+    -mr      r3,r30
+     addi    r4,r29,600
+MATCH fn_72_AF0                    fn_72_AF0__16grGreenhillGuestFP21stGreenhillGuestState
+MATCH fn_72_AF8                    fn_72_AF8__20grGreenhillGuestLineFP21stGreenhillGuestState
+DIFF  fn_72_B00                    update__11stGreenhillFf
+    --- target
+    +++ cand
+    @@ -6,6 +6,6 @@
+     lis     r4,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	...rodata.0
+     fmr     f31,f1
+     addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	...rodata.0
+     stw     r31,12(r1)
+DIFF  fn_72_B9C                    fn_72_B9C__11stGreenhillFf
+    --- target
+    +++ cand
+    @@ -5,5 +5,5 @@
+     lis     r31,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	...rodata.0
+     addi    r31,r31,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	...rodata.0
+     stw     r30,24(r1)
+    @@ -65,3 +65,3 @@
+     lfs     f0,24(r31)
+    -li      r3,2
+    +li      r0,2
+     fmuls   f0,f0,f1
+    @@ -69,15 +69,13 @@
+     stfd    f0,8(r1)
+    -lwz     r5,12(r1)
+    -clrlwi  r4,r5,24
+    -neg     r0,r4
+    -or      r0,r0,r4
+    -srawi   r0,r0,31
+    -and     r4,r5,r0
+    -clrlwi  r0,r4,24
+    -cmplwi  r0,2
+    -bge <addr>
+    -mr      r3,r4
+    -clrlwi  r3,r3,24
+    +lwz     r3,12(r1)
+    +clrlwi  r4,r3,24
+    +neg     r3,r4
+    +or      r3,r3,r4
+    +srawi   r3,r3,31
+    +and     r3,r4,r3
+    +cmplwi  r3,2
+    +bge <addr>
+    +clrlwi  r0,r3,24
+    +mulli   r29,r0,56
+     li      r0,3
+    -mulli   r29,r3,56
+     add     r3,r30,r29
+    @@ -211,2 +209,4 @@
+     b <addr>
+    +li      r0,1
+    +stb     r0,478(r3)
+     bl <addr>
+    @@ -214,6 +214,4 @@
+     lfs     f0,60(r29)
+    -li      r0,1
+     lfs     f2,56(r29)
+     fsubs   f0,f0,f2
+    -stb     r0,478(r30)
+     fmuls   f0,f0,f1
+MATCH fn_72_EFC                    startFighterEvent__5StageFv
+MATCH fn_72_F00                    initializeFighterAttackRatio__5StageFv
+MATCH fn_72_F08                    helperStarWarp__5StageFv
+MATCH fn_72_F10                    isSimpleBossBattleMode__5StageFv
+MATCH fn_72_F18                    isBossBattleMode__5StageFv
+MATCH fn_72_F20                    isCameraLocked__5StageFv
+MATCH fn_72_F28                    notifyTimmingGameStart__5StageFv
+MATCH fn_72_F2C                    getFrameRuleTime__5StageFv
+MATCH fn_72_F34                    setFrameRuleTime__5StageFf
+MATCH fn_72_F3C                    isNextStepBgmEqualNowStepBgmFromFlag__5StageFv
+MATCH fn_72_F44                    getBgmPlayOffsetFrame__5StageFv
+MATCH fn_72_F50                    getBgmVolume__5StageFv
+MATCH fn_72_F5C                    setBgmChange__5StageFfbUl
+MATCH fn_72_F6C                    getBgmChangeID__5StageFPUlPf
+MATCH fn_72_F80                    isBgmChange__5StageFv
+MATCH fn_72_F88                    getBgmOptionID__5StageFv
+MATCH fn_72_F90                    getNowStepBgmID__5StageFv
+MATCH fn_72_F98                    getBgmID__5StageFv
+MATCH fn_72_FA0                    getBgmID__5StageCFv
+MATCH fn_72_FA8                    appearanceFighterLocal__5StageFv
+MATCH fn_72_FAC                    getScrollDir__5StageFP5Vec3f
+MATCH fn_72_FC8                    getDefaultLightSetIndex__5StageFv
+MATCH fn_72_FD0                    getAIRange__5StageFv
+MATCH fn_72_FD8                    isAdventureStage__5StageFv
+MATCH fn_72_FE0                    getPokeTrainerDrawLayer__5StageFv
+MATCH fn_72_FE8                    getPokeTrainerPositionZ__5StageFv
+MATCH fn_72_FF4                    getPokeTrainerPointData__5StageFPii
+MATCH fn_72_FF8                    getPokeTrainerPointNum__5StageFv
+MATCH fn_72_1000                   isReStartSamePoint__7stMeleeFv
+MATCH fn_72_1008                   getWind2ndOnlyData__7stMeleeFv
+MATCH fn_72_1010                   isBamperVector__11stGreenhillFv
+DIFF  fn_72_1018                   __sinit_\st_greenhill_cpp
+    --- target
+    +++ cand
+    @@ -5,5 +5,5 @@
+     lis     r31,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	bss_loc_14__11stGreenhill
+     addi    r3,r31,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	bss_loc_14__11stGreenhill
+     bl <addr>
+    @@ -11,10 +11,10 @@
+     lis     r5,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	__vt__33stClassInfoImpl<35,11stGreenhill>
+     addi    r3,r31,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	bss_loc_14__11stGreenhill
+     addi    r5,r5,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	__vt__33stClassInfoImpl<35,11stGreenhill>
+     li      r4,35
+     stw     r5,0(r31)
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	bss_loc_14__11stGreenhill
+     mr      r5,r3
+    @@ -23,3 +23,3 @@
+     lis     r4,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	__dt__33stClassInfoImpl<35,11stGreenhill>Fv
+     lis     r5,0
+    @@ -27,5 +27,5 @@
+     addi    r3,r31,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	bss_loc_14__11stGreenhill
+     addi    r4,r4,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	__dt__33stClassInfoImpl<35,11stGreenhill>Fv
+     addi    r5,r5,0
+DIFF  fn_72_107C                   __dt__33stClassInfoImpl<35,11stGreenhill>Fv
+    --- target
+    +++ cand
+    @@ -8,11 +8,11 @@
+     mr      r30,r3
+    -beq <addr>
+    +beq     fccFv+0x58>
+     lis     r6,0
+    -R_PPC_ADDR16_HA
+    +R_PPC_ADDR16_HA	__vt__33stClassInfoImpl<35,11stGreenhill>
+     li      r4,35
+     addi    r6,r6,0
+    -R_PPC_ADDR16_LO
+    +R_PPC_ADDR16_LO	__vt__33stClassInfoImpl<35,11stGreenhill>
+     li      r5,0
+     stw     r6,0(r3)
+    -bl <addr>
+    +bl      facFv+0x38>
+     R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+    @@ -20,8 +20,8 @@
+     li      r4,0
+    -bl <addr>
+    +bl      fb8Fv+0x44>
+     R_PPC_REL24	__dt__11stClassInfoFv
+     cmpwi   r31,0
+    -ble <addr>
+    +ble     fccFv+0x58>
+     mr      r3,r30
+    -bl <addr>
+    +bl      fc8Fv+0x54>
+     R_PPC_REL24	__dl__FPv
+DIFF  fn_72_10F0                   create__33stClassInfoImpl<35,11stGreenhill>Fv
+    --- target
+    +++ cand
+    @@ -5,8 +5,8 @@
+     stw     r0,20(r1)
+    -bl <addr>
+    +bl      ffcFv+0x14>
+     R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+     cmpwi   r3,0
+    -beq <addr>
+    -bl <addr>
+    -R_PPC_REL24
+    +beq     100cFv+0x24>
+    +bl      1008Fv+0x20>
+    +R_PPC_REL24	__ct__11stGreenhillFv
+     lwz     r0,20(r1)
+MATCH fn_72_1124                   preload__33stClassInfoImpl<35,11stGreenhill>Fv
+.data: target 1336 bytes, candidate 1336 bytes, same bytes
+.rodata: target 56 bytes, candidate 56 bytes, same bytes
+.bss: target 16 bytes, candidate 16 bytes, same bytes
+.ctors: target 4 bytes, candidate 4 bytes, same bytes

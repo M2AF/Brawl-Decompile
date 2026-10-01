@@ -1,0 +1,21 @@
+--- before
++++ after
+@@ -37837,12 +37837,17 @@
+ 
+ void updateRanks(float deltaFrame)
+ {
++  int new_var;
+   stKartData *data = (stKartData *) m_stageData;
+   if (data)
+   {
++    new_var = (!m_isZoomedOut) && (!m_isZoomedOut);
+     m_bgState = 10;
+     bool allOnFinalLap = true;
+-    __alloca(data->m_kartNum * (sizeof(int)));
++    __alloca((sizeof(int)) * data->m_kartNum);
++    if (new_var && (!m_isZoomedOut))
++    {
++    }
+     {
+       u8 i = 0;
+       u8 kartNum = data->m_kartNum;

@@ -1,0 +1,55 @@
+--- before
++++ after
+@@ -37881,6 +37881,16 @@
+   return FSelect(lower - max, max, lower);
+ }
+ 
++inline float inline_fn()
++{
++  return -250.0f;
++}
++
++inline float inline_fn2(float arg0)
++{
++  return 25.0f + arg0;
++}
++
+ int getZoneLightSetIndex(Vec3f *pos)
+ {
+   if (pos == 0)
+@@ -37893,7 +37903,7 @@
+   {
+     return 0x14;
+   }
+-  if (x < (-250.0f))
++  if (x < inline_fn())
+   {
+     return 0x14;
+   }
+@@ -37909,7 +37919,7 @@
+   {
+     return 0x14;
+   }
+-  if (((x >= (-250.0f)) && (x <= (-100.0f))) && (y <= 25.0f))
++  if (((x >= inline_fn()) && (x <= (-100.0f))) && (y <= 25.0f))
+   {
+     return 0x15;
+   }
+@@ -37919,7 +37929,7 @@
+     {
+       return 0x15;
+     }
+-    if (y <= (25.0f + (15.0f * clamp((x - (-100.0f)) / 55.0f, 0.0f, 1.0f))))
++    if (y <= inline_fn2(15.0f * clamp((x - (-100.0f)) / 55.0f, 0.0f, 1.0f)))
+     {
+       return 0x15;
+     }
+@@ -37934,7 +37944,7 @@
+     {
+       return 0x15;
+     }
+-    if (y <= (25.0f + (15.0f * clamp(1.0f - ((x - 45.0f) / 55.0f), 0.0f, 1.0f))))
++    if (y <= inline_fn2(15.0f * clamp(1.0f - ((x - 45.0f) / 55.0f), 0.0f, 1.0f)))
+     {
+       return 0x15;
+     }

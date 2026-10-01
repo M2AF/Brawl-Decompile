@@ -1,0 +1,33 @@
+.include "macros.inc"
+.file "auto_03_802FCC94_text"
+
+# 0x802FCC94..0x802FCCF0 | size: 0x5C
+.text
+.balign 4
+
+# .text:0x0 | 0x802FCC94 | size: 0x5C
+.fn fn_802FCC94, global
+/* 802FCC94 002F2A14  80 03 00 04 */	lwz r0, 0x4(r3)
+/* 802FCC98 002F2A18  7C 65 1B 78 */	mr r5, r3
+/* 802FCC9C 002F2A1C  90 04 00 00 */	stw r0, 0x0(r4)
+/* 802FCCA0 002F2A20  80 03 00 00 */	lwz r0, 0x0(r3)
+/* 802FCCA4 002F2A24  90 04 00 04 */	stw r0, 0x4(r4)
+/* 802FCCA8 002F2A28  80 03 00 08 */	lwz r0, 0x8(r3)
+/* 802FCCAC 002F2A2C  90 04 00 08 */	stw r0, 0x8(r4)
+/* 802FCCB0 002F2A30  80 03 00 0C */	lwz r0, 0xc(r3)
+/* 802FCCB4 002F2A34  90 04 00 0C */	stw r0, 0xc(r4)
+/* 802FCCB8 002F2A38  C0 03 00 60 */	lfs f0, 0x60(r3)
+/* 802FCCBC 002F2A3C  FC 00 00 50 */	fneg f0, f0
+/* 802FCCC0 002F2A40  D0 04 00 60 */	stfs f0, 0x60(r4)
+/* 802FCCC4 002F2A44  C0 03 00 64 */	lfs f0, 0x64(r3)
+/* 802FCCC8 002F2A48  FC 00 00 50 */	fneg f0, f0
+/* 802FCCCC 002F2A4C  D0 04 00 64 */	stfs f0, 0x64(r4)
+/* 802FCCD0 002F2A50  C0 03 00 68 */	lfs f0, 0x68(r3)
+/* 802FCCD4 002F2A54  FC 00 00 50 */	fneg f0, f0
+/* 802FCCD8 002F2A58  D0 04 00 68 */	stfs f0, 0x68(r4)
+/* 802FCCDC 002F2A5C  C0 03 00 6C */	lfs f0, 0x6c(r3)
+/* 802FCCE0 002F2A60  38 64 00 10 */	addi r3, r4, 0x10
+/* 802FCCE4 002F2A64  D0 04 00 6C */	stfs f0, 0x6c(r4)
+/* 802FCCE8 002F2A68  38 85 00 10 */	addi r4, r5, 0x10
+/* 802FCCEC 002F2A6C  4B F8 A6 08 */	b fn_802872F4
+.endfn fn_802FCC94

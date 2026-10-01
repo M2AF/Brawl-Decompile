@@ -1,0 +1,111 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+typedef struct CameraController {
+    /* 0x000 */ char pad0[0x3C];
+    /* 0x03C */ void *unk3C;                        /* inferred */
+    /* 0x040 */ char pad40[0xAB];                   /* maybe part of unk3C[0x2B]? */
+    /* 0x0EB */ u8 unkEB;                           /* inferred */
+    /* 0x0EC */ char padEC[0x14C];                  /* maybe part of unkEB[0x14D]? */
+    /* 0x238 */ f32 unk238;                         /* inferred */
+    /* 0x23C */ f32 unk23C;                         /* inferred */
+    /* 0x240 */ f32 unk240;                         /* inferred */
+    /* 0x244 */ f32 unk244;                         /* inferred */
+    /* 0x248 */ f32 unk248;                         /* inferred */
+    /* 0x24C */ f32 unk24C;                         /* inferred */
+} CameraController;                                 /* size >= 0x250 */
+
+typedef struct Ground {
+    /* 0x00 */ char pad0[0x3C];
+    /* 0x3C */ void *unk3C;                         /* inferred */
+} Ground;                                           /* size >= 0x40 */
+
+typedef struct Stage {
+    /* 0x000 */ char pad0[0x3C];
+    /* 0x03C */ void *unk3C;                        /* inferred */
+    /* 0x040 */ char pad40[0x5C];                   /* maybe part of unk3C[0x18]? */
+    /* 0x09C */ s32 unk9C;                          /* inferred */
+    /* 0x0A0 */ char padA0[0x1C];                   /* maybe part of unk9C[8]? */
+    /* 0x0BC */ s32 unkBC;                          /* inferred */
+    /* 0x0C0 */ char padC0[0xE0];                   /* maybe part of unkBC[0x39]? */
+    /* 0x1A0 */ gfArchive *unk1A0;                  /* inferred */
+    /* 0x1A4 */ char pad1A4[0x34];                  /* maybe part of unk1A0[0xE]? */
+    /* 0x1D8 */ ? unk1D8;                           /* inferred */
+    /* 0x1D8 */ char pad1D8[0x60];
+    /* 0x238 */ ? unk238;                           /* inferred */
+    /* 0x238 */ char pad238[0x20];
+    /* 0x258 */ ? unk258;                           /* inferred */
+    /* 0x258 */ char pad258[2];
+    /* 0x25A */ ? unk25A;                           /* inferred */
+    /* 0x25A */ char pad25A[1];
+    /* 0x25B */ ? unk25B;                           /* inferred */
+    /* 0x25B */ char pad25B[1];
+    /* 0x25C */ ? unk25C;                           /* inferred */
+    /* 0x25C */ char pad25C[0x88];
+    /* 0x2E4 */ ? unk2E4;                           /* inferred */
+    /* 0x2E4 */ char pad2E4[8];
+    /* 0x2EC */ ? unk2EC;                           /* inferred */
+    /* 0x2EC */ char pad2EC[1];
+    /* 0x2ED */ ? unk2ED;                           /* inferred */
+    /* 0x2ED */ char pad2ED[1];
+    /* 0x2EE */ ? unk2EE;                           /* inferred */
+    /* 0x2EE */ char pad2EE[1];
+} Stage;                                            /* size >= 0x2EF */
+
+typedef struct grGimmickBeltConveyorData {
+    /* 0x00 */ s32 unk0;                            /* inferred */
+    /* 0x04 */ char pad4[0x14];                     /* maybe part of unk0[6]? */
+    /* 0x18 */ f32 unk18;                           /* inferred */
+    /* 0x1C */ f32 unk1C;                           /* inferred */
+    /* 0x20 */ f32 unk20;                           /* inferred */
+    /* 0x24 */ f32 unk24;                           /* inferred */
+    /* 0x28 */ f32 unk28;                           /* inferred */
+    /* 0x2C */ f32 unk2C;                           /* inferred */
+    /* 0x30 */ f32 unk30;                           /* inferred */
+    /* 0x34 */ f32 unk34;                           /* inferred */
+    /* 0x38 */ s8 unk38;                            /* inferred */
+} grGimmickBeltConveyorData;                        /* size >= 0x39 */
+
+typedef struct nw4r::math {
+    /* 0x000 */ char pad0[0x148];
+    /* 0x148 */ f32 unk148;                         /* inferred */
+    /* 0x14C */ f32 unk14C;                         /* inferred */
+    /* 0x150 */ f32 unk150;                         /* inferred */
+    /* 0x154 */ f32 unk154;                         /* inferred */
+} nw4r::math;                                       /* size >= 0x158 */
+
+typedef struct stClassInfo {
+    /* 0x0 */ ? *unk0;                              /* inferred */
+} stClassInfo;                                      /* size >= 0x4 */
+
+typedef struct stCommonGimmick {
+    /* 0x000 */ char pad0[0x3C];
+    /* 0x03C */ ? *unk3C;                           /* inferred */
+    /* 0x040 */ char pad40[0x220];                  /* maybe part of unk3C[0x89]? */
+    /* 0x260 */ ? unk260;                           /* inferred */
+    /* 0x260 */ char pad260[0x98];
+    /* 0x2F8 */ void *unk2F8;                       /* inferred */
+    /* 0x2FC */ void *unk2FC;                       /* inferred */
+} stCommonGimmick;                                  /* size >= 0x300 */
+
+typedef struct stMelee {
+    /* 0x000 */ char pad0[0x3C];
+    /* 0x03C */ ? *unk3C;                           /* inferred */
+    /* 0x040 */ char pad40[0x198];                  /* maybe part of unk3C[0x67]? */
+    /* 0x1D8 */ ? unk1D8;                           /* inferred */
+    /* 0x1D8 */ char pad1D8[0x60];
+    /* 0x238 */ ? unk238;                           /* inferred */
+    /* 0x238 */ char pad238[0x18];
+    /* 0x250 */ s8 unk250;                          /* inferred */
+    /* 0x251 */ char pad251[3];                     /* maybe part of unk250[4]? */
+    /* 0x254 */ f32 unk254;                         /* inferred */
+    /* 0x258 */ s8 unk258;                          /* inferred */
+    /* 0x259 */ s8 unk259;                          /* inferred */
+    /* 0x25A */ s8 unk25A;                          /* inferred */
+    /* 0x25B */ s8 unk25B;                          /* inferred */
+    /* 0x25C */ s8 unk25C;                          /* inferred */
+    /* 0x25D */ char pad25D[3];                     /* maybe part of unk25C[4]? */
+    /* 0x260 */ ? unk260;                           /* inferred */
+    /* 0x260 */ char pad260[8];
+    /* 0x268 */ s32 unk268;                         /* inferred */
+    /* 0x26C */ char pad26C[0x78];             
+... (truncated in log; full draft saved)
+Draft saved: C:\Users\balla\Documents\Brawl Decompile\research\evidence\nonmatching\tool_drafts\brawl-codex6\st_dxonett__st_dxonett.m2c.c

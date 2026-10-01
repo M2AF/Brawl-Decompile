@@ -1,0 +1,108 @@
+.include "macros.inc"
+.file "auto_fn_803F5B48_text"
+
+# 0x8000960C..0x80009614 | size: 0x8
+.section extab, "a"
+.balign 4
+
+# extab:0x0 | 0x8000960C | size: 0x8
+.obj "@etb_8000960C", local
+.hidden "@etb_8000960C"
+/*
+ * Flag values:
+ * Has Elf Vector: No
+ * Large Frame: Yes
+ * Has Frame Pointer: No
+ * Saved CR: No
+ * Saved GPR range: r30-r31
+ */
+	.4byte 0x10080000
+	.4byte 0x00000000
+.endobj "@etb_8000960C"
+
+# 0x8000C658..0x8000C664 | size: 0xC
+.section extabindex, "a"
+.balign 4
+
+# extabindex:0x0 | 0x8000C658 | size: 0xC
+.obj "@eti_8000C658", local
+.hidden "@eti_8000C658"
+	.4byte fn_803F5B48
+	.4byte 0x000000F0
+	.4byte "@etb_8000960C"
+.endobj "@eti_8000C658"
+
+# 0x803F5B48..0x803F5C38 | size: 0xF0
+.text
+.balign 4
+
+# .text:0x0 | 0x803F5B48 | size: 0xF0
+.fn fn_803F5B48, global
+/* 803F5B48 003EB8C8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 803F5B4C 003EB8CC  7C 08 02 A6 */	mflr r0
+/* 803F5B50 003EB8D0  2C 03 00 00 */	cmpwi r3, 0x0
+/* 803F5B54 003EB8D4  38 E0 00 00 */	li r7, 0x0
+/* 803F5B58 003EB8D8  90 01 00 14 */	stw r0, 0x14(r1)
+/* 803F5B5C 003EB8DC  39 00 00 00 */	li r8, 0x0
+/* 803F5B60 003EB8E0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 803F5B64 003EB8E4  93 C1 00 08 */	stw r30, 0x8(r1)
+/* 803F5B68 003EB8E8  7C 9E 23 78 */	mr r30, r4
+/* 803F5B6C 003EB8EC  40 80 00 0C */	bge .L_803F5B78
+/* 803F5B70 003EB8F0  7C 63 00 D0 */	neg r3, r3
+/* 803F5B74 003EB8F4  38 E0 00 01 */	li r7, 0x1
+.L_803F5B78:
+/* 803F5B78 003EB8F8  7C 86 23 78 */	mr r6, r4
+.L_803F5B7C:
+/* 803F5B7C 003EB8FC  7C 03 2B 96 */	divwu r0, r3, r5
+/* 803F5B80 003EB900  7C 00 29 D6 */	mullw r0, r0, r5
+/* 803F5B84 003EB904  7D 20 18 50 */	subf r9, r0, r3
+/* 803F5B88 003EB908  2C 09 00 09 */	cmpwi r9, 0x9
+/* 803F5B8C 003EB90C  40 81 00 18 */	ble .L_803F5BA4
+/* 803F5B90 003EB910  38 09 00 37 */	addi r0, r9, 0x37
+/* 803F5B94 003EB914  39 08 00 01 */	addi r8, r8, 0x1
+/* 803F5B98 003EB918  98 06 00 00 */	stb r0, 0x0(r6)
+/* 803F5B9C 003EB91C  38 C6 00 01 */	addi r6, r6, 0x1
+/* 803F5BA0 003EB920  48 00 00 14 */	b .L_803F5BB4
+.L_803F5BA4:
+/* 803F5BA4 003EB924  38 09 00 30 */	addi r0, r9, 0x30
+/* 803F5BA8 003EB928  39 08 00 01 */	addi r8, r8, 0x1
+/* 803F5BAC 003EB92C  98 06 00 00 */	stb r0, 0x0(r6)
+/* 803F5BB0 003EB930  38 C6 00 01 */	addi r6, r6, 0x1
+.L_803F5BB4:
+/* 803F5BB4 003EB934  7C 63 2B 97 */	divwu. r3, r3, r5
+/* 803F5BB8 003EB938  40 82 FF C4 */	bne .L_803F5B7C
+/* 803F5BBC 003EB93C  2C 07 00 00 */	cmpwi r7, 0x0
+/* 803F5BC0 003EB940  41 82 00 10 */	beq .L_803F5BD0
+/* 803F5BC4 003EB944  38 00 00 2D */	li r0, 0x2d
+/* 803F5BC8 003EB948  7C 04 41 AE */	stbx r0, r4, r8
+/* 803F5BCC 003EB94C  39 08 00 01 */	addi r8, r8, 0x1
+.L_803F5BD0:
+/* 803F5BD0 003EB950  38 00 00 00 */	li r0, 0x0
+/* 803F5BD4 003EB954  7F C3 F3 78 */	mr r3, r30
+/* 803F5BD8 003EB958  7C 04 41 AE */	stbx r0, r4, r8
+/* 803F5BDC 003EB95C  3B E0 00 00 */	li r31, 0x0
+/* 803F5BE0 003EB960  4B FF AA 61 */	bl strlen
+/* 803F5BE4 003EB964  38 C3 FF FF */	subi r6, r3, 0x1
+/* 803F5BE8 003EB968  7F C3 F3 78 */	mr r3, r30
+/* 803F5BEC 003EB96C  7C 9E 32 14 */	add r4, r30, r6
+/* 803F5BF0 003EB970  48 00 00 24 */	b .L_803F5C14
+.L_803F5BF4:
+/* 803F5BF4 003EB974  88 A3 00 00 */	lbz r5, 0x0(r3)
+/* 803F5BF8 003EB978  3B FF 00 01 */	addi r31, r31, 0x1
+/* 803F5BFC 003EB97C  88 04 00 00 */	lbz r0, 0x0(r4)
+/* 803F5C00 003EB980  38 C6 FF FF */	subi r6, r6, 0x1
+/* 803F5C04 003EB984  98 03 00 00 */	stb r0, 0x0(r3)
+/* 803F5C08 003EB988  38 63 00 01 */	addi r3, r3, 0x1
+/* 803F5C0C 003EB98C  98 A4 00 00 */	stb r5, 0x0(r4)
+/* 803F5C10 003EB990  38 84 FF FF */	subi r4, r4, 0x1
+.L_803F5C14:
+/* 803F5C14 003EB994  7C 1F 30 00 */	cmpw r31, r6
+/* 803F5C18 003EB998  41 80 FF DC */	blt .L_803F5BF4
+/* 803F5C1C 003EB99C  7F C3 F3 78 */	mr r3, r30
+/* 803F5C20 003EB9A0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 803F5C24 003EB9A4  83 C1 00 08 */	lwz r30, 0x8(r1)
+/* 803F5C28 003EB9A8  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 803F5C2C 003EB9AC  7C 08 03 A6 */	mtlr r0
+/* 803F5C30 003EB9B0  38 21 00 10 */	addi r1, r1, 0x10
+/* 803F5C34 003EB9B4  4E 80 00 20 */	blr
+.endfn fn_803F5B48

@@ -1,0 +1,119 @@
+{
+  "name": "st_tengan/mo_stage/st_tengan/gr_tengan_ashiba",
+  "measures": {
+    "fuzzy_match_percent": 100.0,
+    "total_code": "1600",
+    "matched_code": "1600",
+    "matched_code_percent": 100.0,
+    "total_data": "548",
+    "matched_data": "12",
+    "matched_data_percent": 2.189781,
+    "total_functions": 6,
+    "matched_functions": 6,
+    "matched_functions_percent": 100.0,
+    "complete_code": "1600",
+    "complete_code_percent": 100.0,
+    "complete_data": "548",
+    "complete_data_percent": 100.0,
+    "total_units": 1,
+    "complete_units": 1
+  },
+  "sections": [
+    {
+      "name": ".data",
+      "size": "536",
+      "fuzzy_match_percent": 88.97196,
+      "metadata": {
+        "virtual_address": "4080"
+      }
+    },
+    {
+      "name": ".rodata",
+      "size": "12",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "virtual_address": "264"
+      }
+    },
+    {
+      "name": ".text",
+      "size": "1600",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "virtual_address": "29044"
+      }
+    }
+  ],
+  "functions": [
+    {
+      "name": "create__14grTenganAshibaFiPCcPCc",
+      "size": "188",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTenganAshiba::create(int, const char*, const char*)",
+        "virtual_address": "29044"
+      },
+      "address": "0"
+    },
+    {
+      "name": "__ct__14grTenganAshibaFPCc",
+      "size": "188",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTenganAshiba::grTenganAshiba(const char*)",
+        "virtual_address": "29232"
+      },
+      "address": "188"
+    },
+    {
+      "name": "__dt__14grTenganAshibaFv",
+      "size": "88",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTenganAshiba::~grTenganAshiba()",
+        "virtual_address": "29420"
+      },
+      "address": "376"
+    },
+    {
+      "name": "update__14grTenganAshibaFf",
+      "size": "116",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTenganAshiba::update(float)",
+        "virtual_address": "29508"
+      },
+      "address": "464"
+    },
+    {
+      "name": "updatePlatform__14grTenganAshibaFf",
+      "size": "852",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTenganAshiba::updatePlatform(float)",
+        "virtual_address": "29624"
+      },
+      "address": "580"
+    },
+    {
+      "name": "updatePosition__14grTenganAshibaFf",
+      "size": "168",
+      "fuzzy_match_percent": 100.0,
+      "metadata": {
+        "demangled_name": "grTenganAshiba::updatePosition(float)",
+        "virtual_address": "30476"
+      },
+      "address": "1432"
+    }
+  ],
+  "metadata": {
+    "complete": true,
+    "module_name": "st_tengan",
+    "module_id": 60,
+    "source_path": "src/mo_stage/st_tengan/gr_tengan_ashiba.cpp",
+    "progress_categories": [
+      "modules"
+    ],
+    "auto_generated": false
+  }
+}

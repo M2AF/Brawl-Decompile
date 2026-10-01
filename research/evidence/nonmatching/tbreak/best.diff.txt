@@ -1,0 +1,825 @@
+MATCH create__13stTargetBreakFv
+MATCH __ct__13stTargetBreakFv
+MATCH __dt__13stTargetBreakFv
+MATCH loading__13stTargetBreakFv
+DIFF  createObj__13stTargetBreakFv
+--- target
++++ candidate
+@@ -1,13 +1,13 @@
+-stwu    r1,-592(r1)
++stwu    r1,-704(r1)
+ mflr    r0
+-stw     r0,596(r1)
+-stfd    f31,576(r1)
+-xvmaddmsp vs31,vs1,vs0
+-stfd    f30,560(r1)
+-xxsel   vs30,vs1,vs0,vs40
+-stfd    f29,544(r1)
+-psq_st  f29,552(r1),0,0
+-stfd    f28,528(r1)
+-xvcmpeqsp vs28,vs1,vs0
+-addi    r11,r1,528
++stw     r0,708(r1)
++stfd    f31,688(r1)
++xxsel   vs31,vs1,vs0,vs42
++stfd    f30,672(r1)
++psq_st  f30,680(r1),0,0
++stfd    f29,656(r1)
++xvcmpgesp vs29,vs1,vs0
++stfd    f28,640(r1)
++xvmsubasp vs28,vs1,vs0
++addi    r11,r1,640
+ bl <addr>
+@@ -28,3 +28,2 @@
+ R_PPC_ADDR16_LO
+-li      r5,4
+ lbz     r0,14(r4)
+@@ -32,10 +31,11 @@
+ cmpwi   r0,4
+-bgt <addr>
+-mr      r5,r0
+-srawi   r0,r5,31
+-lwz     r4,416(r27)
+-andc    r0,r5,r0
++ble <addr>
++li      r0,4
++cmpwi   r0,0
++bge <addr>
++li      r0,0
++stw     r0,848(r3)
++mr      r3,r27
++lwz     r4,416(r27)
+ li      r5,10
+-stw     r0,848(r3)
+-mr      r3,r27
+ bl <addr>
+@@ -147,3 +147,3 @@
+ li      r0,12
+-addi    r7,r1,372
++addi    r6,r1,496
+ addi    r4,r3,-4
+@@ -152,19 +152,22 @@
+ lwzu    r0,8(r4)
+-stw     r3,4(r7)
+-stwu    r0,8(r7)
++stw     r3,4(r6)
++stwu    r0,8(r6)
+ bdnz <addr>
++lwz     r0,4(r4)
++addi    r3,r1,400
++addi    r4,r1,500
++li      r5,100
++stw     r0,4(r6)
++bl <addr>
++R_PPC_REL24	memcpy
+ lfs     f0,100(r29)
+ mr      r3,r27
+-lwz     r0,4(r4)
+-addi    r4,r1,376
+-stfs    f0,80(r1)
+-stfs    f0,84(r1)
+-lwz     r6,80(r1)
+-stw     r0,4(r7)
+-lwz     r5,84(r1)
+-stfs    f0,88(r1)
+-lwz     r0,88(r1)
+-stw     r6,380(r1)
+-stw     r5,384(r1)
+-stw     r0,388(r1)
++addi    r4,r1,400
++li      r5,0
++stfs    f0,104(r1)
++stfs    f0,108(r1)
++stfs    f0,112(r1)
++stfs    f0,404(r1)
++stfs    f0,408(r1)
++stfs    f0,412(r1)
+ bl <addr>
+@@ -179,3 +182,3 @@
+ beq <addr>
+-addi    r3,r1,248
++addi    r3,r1,272
+ addi    r4,r30,1296
+@@ -186,3 +189,3 @@
+ lwz     r3,472(r27)
+-addi    r5,r1,248
++addi    r5,r1,272
+ li      r4,0
+@@ -193,3 +196,3 @@
+ stw     r3,792(r24)
+-addi    r3,r1,248
++addi    r3,r1,272
+ addi    r4,r30,1320
+@@ -200,3 +203,3 @@
+ lwz     r3,472(r27)
+-addi    r5,r1,248
++addi    r5,r1,272
+ li      r4,0
+@@ -268,20 +271,23 @@
+ bctrl
+-stfs    f28,104(r1)
++stfs    f28,128(r1)
+ mr      r3,r31
+ lfs     f1,4(r28)
+-addi    r4,r1,104
+-stfs    f28,108(r1)
+-addi    r5,r1,92
++addi    r4,r1,128
++stfs    f28,132(r1)
++addi    r5,r1,116
+ li      r6,1
+ li      r7,0
+-stfs    f29,112(r1)
+-stfs    f28,92(r1)
+-stfs    f28,96(r1)
+-stfs    f30,100(r1)
++stfs    f29,136(r1)
++stfs    f28,116(r1)
++stfs    f28,120(r1)
++stfs    f30,124(r1)
+ bl <addr>
+ R_PPC_REL24	setHitPoint__8grMadeinFfP5Vec3fP5Vec3fbi
+-lbz     r0,364(r31)
++lwz     r4,364(r31)
+ mr      r3,r31
+-ori     r0,r0,8
+-stb     r0,364(r31)
++rlwinm  r0,r4,4,0,2
++srawi   r0,r0,30
++ori     r0,r0,2
++rlwimi  r4,r0,26,4,5
++stw     r4,364(r31)
+ bl <addr>
+@@ -477,3 +483,3 @@
+ R_PPC_REL24	startEntityAutoLoop__8grMadeinFv
+-addi    r3,r1,120
++addi    r3,r1,144
+ addi    r4,r30,1520
+@@ -484,3 +490,3 @@
+ lwz     r3,612(r25)
+-addi    r5,r1,120
++addi    r5,r1,144
+ li      r4,0
+@@ -617,3 +623,2 @@
+ stw     r3,828(r27)
+-mr      r22,r3
+ li      r4,0
+@@ -622,34 +627,38 @@
+ R_PPC_REL24	memset
+-lfs     f1,116(r29)
++lwz     r5,24(r28)
+ li      r31,0
+-lfs     f0,100(r29)
++lwz     r4,828(r27)
+ li      r0,1
+-stfs    f1,0(r22)
+-mr      r3,r27
++lfs     f0,116(r29)
++addi    r5,r5,1
++lfs     f7,100(r29)
++mr      r3,r27
++stfs    f0,0(r4)
+ lfs     f6,120(r29)
+-mr      r4,r22
+-stb     r31,4(r22)
++stb     r31,4(r4)
+ lfs     f5,124(r29)
++stb     r5,6(r4)
++lfs     f4,128(r29)
++stb     r31,7(r4)
++lfs     f3,132(r29)
++stfs    f7,32(r4)
++lfs     f2,136(r29)
++stfs    f6,36(r4)
++lfs     f1,140(r29)
++stfs    f5,40(r4)
++lfs     f0,144(r29)
++stfs    f4,44(r4)
++stfs    f3,48(r4)
++stfs    f2,52(r4)
++stfs    f1,56(r4)
++stfs    f0,60(r4)
+ lwz     r5,24(r28)
+-lfs     f4,128(r29)
+-addi    r5,r5,1
+-lfs     f3,132(r29)
+-stb     r5,6(r22)
+-lfs     f2,136(r29)
+-stb     r31,7(r22)
+-lfs     f1,140(r29)
+-stfs    f0,32(r22)
+-lfs     f0,144(r29)
+-stfs    f6,36(r22)
+-stfs    f5,40(r22)
+-stfs    f4,44(r22)
+-stfs    f3,48(r22)
+-stfs    f2,52(r22)
+-stfs    f1,56(r22)
+-stfs    f0,60(r22)
+-lwz     r5,24(r28)
+-stb     r5,80(r22)
+-stb     r0,81(r22)
+-stb     r0,82(r22)
++stfs    f7,96(r1)
++stb     r5,80(r4)
++stb     r0,81(r4)
++stb     r0,82(r4)
++stfs    f6,100(r1)
+ lwz     r5,416(r27)
++stfs    f5,88(r1)
++stfs    f4,92(r1)
+ bl <addr>
+@@ -657,65 +666,51 @@
+ stw     r3,832(r27)
+-li      r6,7905
++li      r5,7905
+ lfs     f2,100(r29)
+ li      r4,7906
+-lwz     r5,168(r3)
++lwz     r6,168(r3)
+ li      r0,7907
+-stfs    f2,64(r1)
+-stw     r6,12(r5)
+-lwz     r7,64(r1)
+-lwz     r5,168(r3)
+-stfs    f2,68(r1)
+-stw     r31,16(r5)
+-lwz     r6,68(r1)
+-lwz     r5,168(r3)
+-stw     r7,72(r1)
+-sth     r31,24(r5)
+-lfs     f1,72(r1)
+-lwz     r5,168(r3)
+-stw     r6,76(r1)
+-stw     r31,20(r5)
+-lfs     f0,76(r1)
++stfs    f2,76(r1)
++stw     r5,12(r6)
++lwz     r3,76(r1)
++stfs    f2,72(r1)
++lwz     r5,72(r1)
++stw     r31,16(r6)
++stw     r5,80(r1)
++sth     r31,24(r6)
++lfs     f1,80(r1)
++stw     r3,84(r1)
++stw     r31,20(r6)
++lfs     f0,84(r1)
++stfs    f1,28(r6)
++stfs    f0,32(r6)
++lwz     r3,832(r27)
++stfs    f2,56(r1)
+ lwz     r3,168(r3)
+-stfs    f2,56(r1)
+-stfs    f1,28(r3)
+ lwz     r5,56(r1)
+-stfs    f0,32(r3)
+-lwz     r6,832(r27)
+-stw     r5,24(r1)
+-lwz     r3,168(r6)
++stw     r4,52(r3)
+ stfs    f2,60(r1)
+-lfs     f1,24(r1)
+-stw     r4,52(r3)
+-lwz     r5,60(r1)
+-lwz     r3,168(r6)
+-stw     r5,28(r1)
+ stw     r31,56(r3)
+-lfs     f0,28(r1)
+-lwz     r3,168(r6)
++lwz     r4,60(r1)
++stw     r5,64(r1)
++sth     r31,64(r3)
++lfs     f1,64(r1)
++stw     r4,68(r1)
++stw     r31,60(r3)
++lfs     f0,68(r1)
++stfs    f1,68(r3)
++stfs    f0,72(r3)
++lwz     r3,832(r27)
+ stfs    f2,40(r1)
+-sth     r31,64(r3)
++lwz     r3,168(r3)
+ lwz     r4,40(r1)
+-lwz     r3,168(r6)
++stw     r0,132(r3)
+ stfs    f2,44(r1)
+-stw     r31,60(r3)
+-lwz     r3,44(r1)
+-lwz     r5,168(r6)
+-stw     r4,32(r1)
+-stfs    f1,68(r5)
+-lfs     f1,32(r1)
+-stfs    f0,72(r5)
+-stw     r3,36(r1)
+-lwz     r4,832(r27)
+-lfs     f0,36(r1)
+-lwz     r3,168(r4)
+-stfs    f2,48(r1)
+-stw     r0,132(r3)
+-lwz     r3,168(r4)
+-stfs    f2,20(r1)
+ stw     r31,136(r3)
+-lwz     r3,168(r4)
++lwz     r0,44(r1)
++stw     r4,48(r1)
+ sth     r31,144(r3)
+-lwz     r3,168(r4)
++lfs     f1,48(r1)
++stw     r0,52(r1)
+ stw     r31,140(r3)
+-lwz     r3,168(r4)
++lfs     f0,52(r1)
+ stfs    f1,148(r3)
+@@ -730,3 +725,2 @@
+ stw     r3,840(r27)
+-mr      r22,r3
+ li      r4,0
+@@ -736,10 +730,10 @@
+ lfs     f3,100(r29)
+-addi    r26,r30,1572
+-lfs     f2,124(r29)
+ li      r3,412
++lwz     r22,840(r27)
++li      r4,15
++lfs     f2,120(r29)
+ stfs    f3,32(r22)
+-li      r4,15
+ lfs     f1,148(r29)
+ stfs    f3,36(r22)
+-lfs     f0,128(r29)
++lfs     f0,124(r29)
+ stfs    f2,40(r22)
+@@ -751,7 +745,12 @@
+ lwz     r0,28(r28)
++stfs    f3,32(r1)
+ stb     r0,72(r22)
+-clrlwi  r25,r0,24
+ lwz     r0,32(r28)
++stfs    f3,36(r1)
+ stb     r0,73(r22)
++stfs    f2,24(r1)
+ lwz     r23,416(r27)
++stfs    f1,28(r1)
++stfs    f3,16(r1)
++stfs    f3,20(r1)
+ bl <addr>
+@@ -759,5 +758,5 @@
+ cmpwi   r3,0
+-mr      r28,r3
+-beq <addr>
+-mr      r4,r26
++mr      r25,r3
++beq <addr>
++addi    r4,r30,1572
+ bl <addr>
+@@ -768,8 +767,8 @@
+ R_PPC_ADDR16_LO	__vt__26grGimmickTargetBreakSpring
+-stw     r3,60(r28)
+-cmpwi   r28,0
+-beq <addr>
+-lwz     r12,60(r28)
+-mr      r3,r28
+-extsh   r4,r25
++stw     r3,60(r25)
++cmpwi   r25,0
++beq <addr>
++lwz     r12,60(r25)
++mr      r3,r25
++lbz     r4,72(r22)
+ lwz     r12,176(r12)
+@@ -777,7 +776,7 @@
+ bctrl
+-cmpwi   r28,0
+-stw     r28,844(r27)
+-beq <addr>
+-mr      r3,r27
+-mr      r4,r28
++cmpwi   r25,0
++stw     r25,844(r27)
++beq <addr>
++mr      r3,r27
++mr      r4,r25
+ bl <addr>
+@@ -928,16 +927,16 @@
+ stb     r0,148(r3)
+-psq_l   f31,584(r1),0,0
+-lfd     f31,576(r1)
+-lq      r30,560(r1)
+-lfd     f30,560(r1)
+-psq_l   f29,552(r1),0,0
+-lfd     f29,544(r1)
+-lq      r28,528(r1)
+-lfd     f28,528(r1)
+-addi    r11,r1,528
++psq_l   f31,696(r1),0,0
++lfd     f31,688(r1)
++lq      r30,672(r1)
++lfd     f30,672(r1)
++psq_l   f29,664(r1),0,0
++lfd     f29,656(r1)
++lq      r28,640(r1)
++lfd     f28,640(r1)
++addi    r11,r1,640
+ bl <addr>
+ R_PPC_REL24	_restgpr_22
+-lwz     r0,596(r1)
++lwz     r0,708(r1)
+ mtlr    r0
+-addi    r1,r1,592
++addi    r1,r1,704
+ blr
+MATCH setStageData__6GroundFPv
+MATCH setMdlIndex__6GroundFi
+MATCH setGimmickData__9grGimmickFPv
+DIFF  update__13stTargetBreakFf
+--- target
++++ candidate
+@@ -1,13 +1,13 @@
+-stwu    r1,-496(r1)
++stwu    r1,-656(r1)
+ mflr    r0
+-stw     r0,500(r1)
+-stfd    f31,480(r1)
+-psq_st  f31,488(r1),0,0
+-stfd    f30,464(r1)
+-psq_st  f30,472(r1),0,0
+-stfd    f29,448(r1)
+-xsmsubmdp vs29,vs1,vs0
+-stfd    f28,432(r1)
+-xxsel   vs28,vs1,vs0,vs38
+-addi    r11,r1,432
++stw     r0,660(r1)
++stfd    f31,640(r1)
++xvmsubasp vs31,vs1,vs0
++stfd    f30,624(r1)
++xxsel   vs30,vs1,vs0,vs41
++stfd    f29,608(r1)
++psq_st  f29,616(r1),0,0
++stfd    f28,592(r1)
++xvcmpgtsp vs28,vs1,vs0
++addi    r11,r1,592
+ bl <addr>
+@@ -98,5 +98,5 @@
+ lfs     f2,92(r3)
+-stfs    f2,68(r1)
+-stfs    f1,72(r1)
+-stfs    f0,76(r1)
++stfs    f2,160(r1)
++stfs    f1,164(r1)
++stfs    f0,168(r1)
+ lwz     r3,476(r27)
+@@ -113,3 +113,3 @@
+ lwz     r4,848(r22)
+-addi    r5,r1,68
++addi    r5,r1,160
+ lwz     r3,0(r30)
+@@ -141,23 +141,23 @@
+ lwz     r3,476(r26)
+-psq_l   f3,68(r1),0,0
++psq_l   f3,160(r1),0,0
+ lwz     r3,212(r3)
+-lq      r4,-32704(r1)
+-lfs     f0,108(r3)
+-lfs     f2,92(r3)
+-stfs    f0,60(r1)
++lq      r4,-32608(r1)
++lfs     f1,108(r3)
++lfs     f0,92(r3)
++stfs    f1,152(r1)
+ lfs     f1,124(r3)
+-stfs    f2,56(r1)
++stfs    f0,148(r1)
+ lfs     f0,908(r22)
+-lq      r2,48(r1)
+-stfs    f1,64(r1)
++lq      r2,144(r1)
++stfs    f1,156(r1)
+ vmsumshm v2,v2,v3,v0
+-psq_l   f1,64(r1),1,0
+-xxsel   vs2,vs1,vs0,vs32
++psq_l   f1,156(r1),1,0
++xxmrghw vs2,vs33,vs0
+ vmsumshm v3,v1,v4,v0
+-lfs     f2,56(r1)
+-lfs     f1,60(r1)
+-xssubsp vs3,vs1,vs16
++lfs     f2,148(r1)
++lfs     f1,152(r1)
++xscmpgedp vs3,vs33,vs16
+ fmuls   f2,f2,f2
+ fmuls   f1,f1,f1
+-lfs     f3,64(r1)
++lfs     f3,156(r1)
+ fmuls   f3,f3,f3
+@@ -169,3 +169,3 @@
+ lfs     f0,12(r25)
+-addi    r3,r29,1696
++addi    r3,r29,1700
+ stfs    f0,868(r26)
+@@ -176,3 +176,3 @@
+ R_PPC_REL24	OSReport
+-addi    r3,r29,1708
++addi    r3,r29,1712
+ crclr   4*cr1+eq
+@@ -185,4 +185,4 @@
+ b <addr>
+-addi    r3,r1,320
+-addi    r4,r29,1712
++addi    r3,r1,416
++addi    r4,r29,1716
+ addi    r5,r24,1
+@@ -199,4 +199,4 @@
+ lwz     r12,60(r3)
+-addi    r4,r1,272
+-addi    r6,r1,320
++addi    r4,r1,368
++addi    r6,r1,416
+ li      r5,0
+@@ -205,4 +205,4 @@
+ bctrl
+-stfs    f29,316(r1)
+-addi    r4,r1,272
++stfs    f29,412(r1)
++addi    r4,r1,368
+ li      r5,1
+@@ -216,4 +216,4 @@
+ lwz     r12,60(r3)
+-addi    r4,r1,224
+-addi    r6,r1,320
++addi    r4,r1,320
++addi    r6,r1,416
+ li      r5,0
+@@ -222,4 +222,4 @@
+ bctrl
+-stfs    f29,268(r1)
+-addi    r4,r1,224
++stfs    f29,364(r1)
++addi    r4,r1,320
+ li      r5,1
+@@ -238,3 +238,3 @@
+ lwz     r12,60(r3)
+-addi    r4,r1,176
++addi    r4,r1,272
+ li      r5,0
+@@ -245,3 +245,3 @@
+ lwz     r3,564(r21)
+-addi    r4,r1,176
++addi    r4,r1,272
+ li      r5,1
+@@ -301,3 +301,3 @@
+ lwz     r12,60(r3)
+-addi    r4,r1,128
++addi    r4,r1,224
+ li      r5,0
+@@ -308,67 +308,89 @@
+ lwz     r3,472(r22)
+-addi    r4,r1,128
+-lfs     f0,172(r1)
+-li      r5,0
+-lwz     r12,60(r3)
+-lfs     f1,156(r1)
+-lfs     f2,140(r1)
++addi    r4,r1,224
++lfs     f2,268(r1)
++li      r5,0
++lwz     r12,60(r3)
++lfs     f1,252(r1)
++lfs     f0,236(r1)
+ lwz     r12,208(r12)
+-stfs    f2,44(r1)
++stfs    f0,136(r1)
+ lwz     r6,808(r21)
+-stfs    f1,48(r1)
++stfs    f1,140(r1)
++stfs    f2,144(r1)
++mtctr   r12
++bctrl
++lfs     f1,252(r1)
++lfs     f0,236(r1)
++lfs     f3,140(r1)
++lfs     f5,136(r1)
++stfs    f3,44(r1)
++lfs     f2,268(r1)
++stfs    f5,40(r1)
++lfs     f4,144(r1)
+ stfs    f0,52(r1)
+-mtctr   r12
+-bctrl
+-lfs     f3,172(r1)
+-lfs     f0,52(r1)
+-stfs    f3,40(r1)
+-lfs     f4,156(r1)
+-stfs    f0,28(r1)
+-lfs     f5,140(r1)
+-lfs     f2,44(r1)
+-lfs     f1,48(r1)
+-stfs    f5,32(r1)
+-psq_l   f3,40(r1),1,0
+-lq      r0,-32752(r1)
+-psq_l   f5,52(r1),1,0
+-vsel    v0,v0,v3,v0
+-stfs    f4,36(r1)
+-vmsumshm v6,v3,v5,v0
+-psq_l   f5,44(r1),0,0
+-stfs    f2,20(r1)
+-psq_l   f3,32(r1),0,0
+-vextdubvlx v4,v0,v0,r31
+-stfs    f1,24(r1)
+-vmsumshm v2,v3,v5,v0
+-lwz     r3,760(r21)
+-lq      r0,16(r1)
+-xscmpeqdp vs4,vs33,vs16
+-vsel    v1,v0,v3,v0
+-psq_st  f2,32(r1),0,0
+-lfs     f0,28(r1)
+-vextdubvlx v1,v1,v0,r31
+-lfs     f2,32(r1)
+-psq_st  f6,40(r1),1,0
+-fabs    f3,f2
+-xxsldwi vs1,vs33,vs0,0
+-lfs     f2,20(r1)
+-frsp    f3,f3
+-lfs     f1,24(r1)
+-stfs    f2,40(r3)
+-stfs    f1,44(r3)
+-stfs    f0,48(r3)
+-lwz     r3,760(r21)
++psq_l   f3,40(r1),0,0
++stfs    f1,56(r1)
++lwz     r3,760(r21)
++lq      r6,48(r1)
++stfs    f4,48(r1)
++vsel    v6,v3,v6,v0
++psq_l   f9,136(r1),0,0
++stfs    f2,60(r1)
++psq_l   f3,48(r1),1,0
++xssubsp vs6,vs1,vs0
++lq      r6,-32720(r1)
++lfs     f4,68(r1)
++lfs     f5,64(r1)
++vsel    v6,v3,v6,v0
++stfs    f4,20(r1)
++lq      r10,-32624(r1)
++xsmaddmsp vs6,vs1,vs16
++lfs     f3,72(r1)
++stfs    f5,16(r1)
++lq      r6,16(r1)
++stfs    f3,24(r1)
++vextdubvlx v7,v6,v0,r31
++lq      r6,-32752(r1)
++stfs    f0,124(r1)
++xscmpeqdp vs7,vs33,vs0
++vextdubvlx v7,v6,v0,r31
++lfs     f8,28(r1)
++psq_st  f7,36(r1),1,0
++lfs     f7,32(r1)
++stfs    f8,40(r3)
++lfs     f6,36(r1)
++stfs    f7,44(r3)
++stfs    f6,48(r3)
++stfs    f1,128(r1)
++lwz     r3,760(r21)
++lq      r0,112(r1)
+ stfs    f29,52(r3)
+-lwz     r3,760(r21)
++vmsumshm v0,v0,v9,v0
++lwz     r3,760(r21)
++stfs    f2,132(r1)
++psq_st  f0,100(r1),0,0
++psq_l   f1,132(r1),1,0
+ stb     r24,56(r3)
+-lwz     r3,760(r21)
++lfs     f0,100(r1)
++vmsumshm v9,v1,v10,v0
++lwz     r3,760(r21)
++fabs    f0,f0
++stfs    f5,76(r1)
+ stfs    f30,24(r3)
+-lwz     r3,760(r21)
++frsp    f0,f0
+ stfs    f30,28(r3)
+ lwz     r3,760(r21)
+-stfs    f3,32(r3)
++stfs    f4,80(r1)
++stfs    f0,32(r3)
+ lwz     r0,848(r22)
+-cmpwi   r0,0
++stfs    f3,84(r1)
++cmpwi   r0,0
++stfs    f8,112(r1)
++stfs    f7,116(r1)
++stfs    f6,120(r1)
++psq_st  f9,108(r1),1,0
++stfs    f30,8(r1)
++stfs    f30,12(r1)
+ bne <addr>
+-lfs     f0,36(r1)
++lfs     f0,104(r1)
+ fabs    f0,f0
+@@ -376,3 +398,3 @@
+ b <addr>
+-lfs     f0,124(r28)
++lfs     f0,120(r28)
+ lwz     r3,760(r21)
+@@ -397,3 +419,3 @@
+ lwz     r3,560(r22)
+-addi    r4,r1,80
++addi    r4,r1,176
+ lwz     r6,836(r22)
+@@ -404,9 +426,9 @@
+ bctrl
+-lfs     f0,124(r1)
+-addi    r4,r1,8
+-lfs     f1,108(r1)
+-lfs     f2,92(r1)
+-stfs    f1,12(r1)
+-stfs    f2,8(r1)
+-stfs    f0,16(r1)
++lfs     f2,220(r1)
++addi    r4,r1,88
++lfs     f1,204(r1)
++lfs     f0,188(r1)
++stfs    f1,92(r1)
++stfs    f0,88(r1)
++stfs    f2,96(r1)
+ lwz     r3,844(r22)
+@@ -452,16 +474,16 @@
+ stw     r0,864(r22)
+-psq_l   f31,488(r1),0,0
+-lfd     f31,480(r1)
+-lq      r30,464(r1)
+-lfd     f30,464(r1)
+-psq_l   f29,456(r1),0,0
+-lfd     f29,448(r1)
+-lq      r28,432(r1)
+-addi    r11,r1,432
+-lfd     f28,432(r1)
++psq_l   f31,648(r1),0,0
++lfd     f31,640(r1)
++lq      r30,624(r1)
++lfd     f30,624(r1)
++psq_l   f29,616(r1),0,0
++lfd     f29,608(r1)
++lq      r28,592(r1)
++addi    r11,r1,592
++lfd     f28,592(r1)
+ bl <addr>
+ R_PPC_REL24	_restgpr_21
+-lwz     r0,500(r1)
++lwz     r0,660(r1)
+ mtlr    r0
+-addi    r1,r1,496
++addi    r1,r1,656
+ blr
+MATCH createItems__13stTargetBreakFv
+MATCH adventureEventGetItem__6GroundFiP13stTriggerData
+MATCH getInitializeInfo__6GroundFi
+MATCH setInitializeInfo__6GroundFi
+MATCH disableCalcCollision__6GroundFv
+MATCH enableCalcCollision__6GroundFv
+MATCH isEnableCalcCollision__6GroundFv
+MATCH getMdlIndex__6GroundFv
+MATCH initStageData__6GroundFv
+MATCH getStageData__6GroundFv
+MATCH getModelCount__6GroundFv
+MATCH getTransparencyFlag__9grGimmickFv
+MATCH getGimmickData__9grGimmickFv
+MATCH setMotionOff__26grGimmickTargetBreakSpringFv
+MATCH __dt__26grGimmickTargetBreakSpringFv
+MATCH startFighterEvent__5StageFv
+MATCH initializeFighterAttackRatio__5StageFv
+MATCH helperStarWarp__5StageFv
+MATCH isSimpleBossBattleMode__5StageFv
+MATCH isBossBattleMode__5StageFv
+MATCH isCameraLocked__5StageFv
+MATCH notifyTimmingGameStart__5StageFv
+MATCH getFrameRuleTime__5StageFv
+MATCH setFrameRuleTime__5StageFf
+MATCH isNextStepBgmEqualNowStepBgmFromFlag__5StageFv
+MATCH getBgmPlayOffsetFrame__5StageFv
+MATCH getBgmVolume__5StageFv
+MATCH setBgmChange__5StageFfbUl
+MATCH getBgmChangeID__5StageFPUlPf
+MATCH isBgmChange__5StageFv
+MATCH getBgmOptionID__5StageFv
+MATCH getNowStepBgmID__5StageFv
+MATCH getBgmID__5StageCFv
+MATCH appearanceFighterLocal__5StageFv
+MATCH getScrollDir__5StageFP5Vec3f
+MATCH getDefaultLightSetIndex__5StageFv
+MATCH getAIRange__5StageFv
+MATCH isAdventureStage__5StageFv
+MATCH getPokeTrainerDrawLayer__5StageFv
+MATCH getPokeTrainerPositionZ__5StageFv
+MATCH getPokeTrainerPointData__5StageFPii
+MATCH getPokeTrainerPointNum__5StageFv
+MATCH getWind2ndOnlyData__7stMeleeFv
+MATCH isReStartSamePoint__13stTargetBreakFv
+MATCH getBgmID__13stTargetBreakFv
+MATCH __sinit_\st_tbreak_cpp
+MATCH __dt__35stClassInfoImpl<56,13stTargetBreak>Fv
+MATCH create__35stClassInfoImpl<56,13stTargetBreak>Fv
+MATCH preload__35stClassInfoImpl<56,13stTargetBreak>Fv
+Instruction comparison: 56 / 58
+Extra emitted functions: 

@@ -1,0 +1,24 @@
+{
+  ".rodata": {
+    "target_size": 228,
+    "candidate_size": 228,
+    "raw_bytes_equal": true
+  },
+  ".data": {
+    "target_size": 1728,
+    "candidate_size": 1728,
+    "raw_bytes_equal": true
+  },
+  ".bss": {
+    "target_size": 16,
+    "candidate_size": 16,
+    "raw_bytes_equal": true
+  },
+  ".ctors": {
+    "target_size": 4,
+    "candidate_size": 4,
+    "raw_bytes_equal": true
+  },
+  "full_rel_match": false,
+  "note": "Raw section identity is not relocation/code acceptance; see frozen full-REL review."
+}

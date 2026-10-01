@@ -1,0 +1,293 @@
+== create__11stDxYorsterFv: DIFF
+--- target
++++ candidate
+@@ -11,8 +11,8 @@
+ beq <addr>
+ lis     r4,0
+-R_PPC_ADDR16_HA	lbl_76_data_0
++R_PPC_ADDR16_HA
+ li      r5,42
+ addi    r4,r4,0
+-R_PPC_ADDR16_LO	lbl_76_data_0
++R_PPC_ADDR16_LO
+ bl <addr>
+ R_PPC_REL24	__ct__7stMeleeFPCcQ26Stages11srStageKind
+== __dt__11stDxYorsterFv: MATCH (32 insns)
+== loading__11stDxYorsterFv: MATCH (2 insns)
+== createObj__11stDxYorsterFv: DIFF
+--- target
++++ candidate
+@@ -145,10 +145,10 @@
+ lwz     r12,60(r31)
+ lis     r6,0
+-R_PPC_ADDR16_HA	lbl_76_data_C
++R_PPC_ADDR16_HA
+ mr      r3,r31
+ lwz     r4,416(r31)
+ lwz     r12,104(r12)
+ addi    r6,r6,0
+-R_PPC_ADDR16_LO	lbl_76_data_C
++R_PPC_ADDR16_LO
+ li      r5,101
+ li      r8,0
+@@ -158,10 +158,10 @@
+ lwz     r12,60(r31)
+ lis     r6,0
+-R_PPC_ADDR16_HA	lbl_76_data_1C
++R_PPC_ADDR16_HA
+ lwz     r4,188(r31)
+ mr      r3,r31
+ lwz     r12,104(r12)
+ addi    r6,r6,0
+-R_PPC_ADDR16_LO	lbl_76_data_1C
++R_PPC_ADDR16_LO
+ addi    r7,r4,24
+ li      r5,102
+== fn_76_400__11stDxYorsterFi: DIFF
+--- target
++++ candidate
+@@ -9,12 +9,12 @@
+ b <addr>
+ lis     r4,0
+-R_PPC_ADDR16_HA	lbl_76_data_2C
++R_PPC_ADDR16_HA
+ lis     r5,0
+-R_PPC_ADDR16_HA	lbl_76_data_3C
++R_PPC_ADDR16_HA
+ addi    r4,r4,0
+-R_PPC_ADDR16_LO	lbl_76_data_2C
++R_PPC_ADDR16_LO
+ li      r3,0
+ addi    r5,r5,0
+-R_PPC_ADDR16_LO	lbl_76_data_3C
++R_PPC_ADDR16_LO
+ bl <addr>
+ R_PPC_REL24	fn_76_C9C
+== setStageData__6GroundFPv: MATCH (2 insns)
+== fn_76_4FC__13grDxYorsterBgFP5Vec3f: MATCH (2 insns)
+== fn_76_504__13grDxYorsterBgFPb: MATCH (2 insns)
+== fn_76_50C__13grDxYorsterBgFPb: MATCH (2 insns)
+== fn_76_514__11stDxYorsterFi: DIFF
+--- target
++++ candidate
+@@ -2,9 +2,9 @@
+ mflr    r0
+ lis     r5,0
+-R_PPC_ADDR16_HA	lbl_76_data_0
++R_PPC_ADDR16_HA	...data.0
+ cmpwi   r4,2
+ stw     r0,36(r1)
+ addi    r5,r5,0
+-R_PPC_ADDR16_LO	lbl_76_data_0
++R_PPC_ADDR16_LO	...data.0
+ stw     r31,28(r1)
+ stw     r30,24(r1)
+== fn_76_618__11stDxYorsterFv: DIFF
+--- target
++++ candidate
+@@ -2,12 +2,12 @@
+ mflr    r0
+ lis     r4,0
+-R_PPC_ADDR16_HA	lbl_76_data_7C
++R_PPC_ADDR16_HA
+ lis     r5,0
+-R_PPC_ADDR16_HA	lbl_76_data_94
++R_PPC_ADDR16_HA
+ stw     r0,20(r1)
+ addi    r4,r4,0
+-R_PPC_ADDR16_LO	lbl_76_data_7C
++R_PPC_ADDR16_LO
+ addi    r5,r5,0
+-R_PPC_ADDR16_LO	lbl_76_data_94
++R_PPC_ADDR16_LO
+ stw     r31,12(r1)
+ stw     r30,8(r1)
+== fn_76_6E0__19grDxYorsterBlockPosFP5Vec3f: MATCH (2 insns)
+== fn_76_6E8__19grDxYorsterBlockPosFPUc: MATCH (2 insns)
+== fn_76_6F0__11stDxYorsterFi: DIFF
+--- target
++++ candidate
+@@ -2,15 +2,15 @@
+ mflr    r0
+ lis     r5,0
+-R_PPC_ADDR16_HA	lbl_76_data_C0
++R_PPC_ADDR16_HA
+ lis     r6,0
+-R_PPC_ADDR16_HA	lbl_76_data_A8
++R_PPC_ADDR16_HA
+ stw     r0,36(r1)
+ addi    r5,r5,0
+-R_PPC_ADDR16_LO	lbl_76_data_C0
++R_PPC_ADDR16_LO
+ stw     r31,28(r1)
+ stw     r30,24(r1)
+ mr      r30,r4
+ addi    r4,r6,0
+-R_PPC_ADDR16_LO	lbl_76_data_A8
++R_PPC_ADDR16_LO
+ stw     r29,20(r1)
+ mr      r29,r3
+== fn_76_854__16grDxYorsterBlockFi: MATCH (2 insns)
+== fn_76_85C__16grDxYorsterBlockFP5Vec3f: MATCH (2 insns)
+== fn_76_864__16grDxYorsterBlockFPUc: MATCH (2 insns)
+== fn_76_86C__16grDxYorsterBlockFPb: MATCH (2 insns)
+== update__11stDxYorsterFf: MATCH (1 insns)
+== startFighterEvent__5StageFv: MATCH (1 insns)
+== initializeFighterAttackRatio__5StageFv: MATCH (2 insns)
+== helperStarWarp__5StageFv: MATCH (2 insns)
+== isSimpleBossBattleMode__5StageFv: MATCH (2 insns)
+== isBossBattleMode__5StageFv: MATCH (2 insns)
+== isCameraLocked__5StageFv: MATCH (2 insns)
+== notifyTimmingGameStart__5StageFv: MATCH (1 insns)
+== getFrameRuleTime__5StageFv: MATCH (2 insns)
+== setFrameRuleTime__5StageFf: MATCH (2 insns)
+== isNextStepBgmEqualNowStepBgmFromFlag__5StageFv: MATCH (2 insns)
+== getBgmPlayOffsetFrame__5StageFv: DIFF
+--- target
++++ candidate
+@@ -1,5 +1,5 @@
+ lis     r3,0
+-R_PPC_ADDR16_HA	lbl_76_rodata_0
++R_PPC_ADDR16_HA
+ lfs     f1,0(r3)
+-R_PPC_ADDR16_LO	lbl_76_rodata_0
++R_PPC_ADDR16_LO
+ blr
+== getBgmVolume__5StageFv: DIFF
+--- target
++++ candidate
+@@ -1,5 +1,5 @@
+ lis     r3,0
+-R_PPC_ADDR16_HA	lbl_76_rodata_4
++R_PPC_ADDR16_HA
+ lfs     f1,0(r3)
+-R_PPC_ADDR16_LO	lbl_76_rodata_4
++R_PPC_ADDR16_LO
+ blr
+== setBgmChange__5StageFfbUl: MATCH (4 insns)
+== getBgmChangeID__5StageFPUlPf: MATCH (5 insns)
+== isBgmChange__5StageFv: MATCH (2 insns)
+== getBgmOptionID__5StageFv: MATCH (2 insns)
+== getNowStepBgmID__5StageFv: MATCH (2 insns)
+== getBgmID__5StageFv: MATCH (2 insns)
+== getBgmID__5StageCFv: MATCH (2 insns)
+== appearanceFighterLocal__5StageFv: MATCH (1 insns)
+== getScrollDir__5StageFP5Vec3f: DIFF
+--- target
++++ candidate
+@@ -1,7 +1,7 @@
+ lis     r5,0
+-R_PPC_ADDR16_HA	lbl_76_rodata_0
++R_PPC_ADDR16_HA
+ li      r3,0
+ lfs     f0,0(r5)
+-R_PPC_ADDR16_LO	lbl_76_rodata_0
++R_PPC_ADDR16_LO
+ stfs    f0,0(r4)
+ stfs    f0,4(r4)
+== getDefaultLightSetIndex__5StageFv: MATCH (2 insns)
+== getAIRange__5StageFv: MATCH (2 insns)
+== isAdventureStage__5StageFv: MATCH (2 insns)
+== getPokeTrainerDrawLayer__5StageFv: MATCH (2 insns)
+== getPokeTrainerPositionZ__5StageFv: DIFF
+--- target
++++ candidate
+@@ -1,5 +1,5 @@
+ lis     r3,0
+-R_PPC_ADDR16_HA	lbl_76_rodata_0
++R_PPC_ADDR16_HA
+ lfs     f1,0(r3)
+-R_PPC_ADDR16_LO	lbl_76_rodata_0
++R_PPC_ADDR16_LO
+ blr
+== getPokeTrainerPointData__5StageFPii: MATCH (1 insns)
+== getPokeTrainerPointNum__5StageFv: MATCH (2 insns)
+== isReStartSamePoint__7stMeleeFv: MATCH (2 insns)
+== getWind2ndOnlyData__7stMeleeFv: MATCH (2 insns)
+== isBamperVector__11stDxYorsterFv: MATCH (2 insns)
+== __sinit_\st_dxyorster_cpp: DIFF
+--- target
++++ candidate
+@@ -24,5 +24,5 @@
+ R_PPC_ADDR16_HA	__dt__33stClassInfoImpl<42,11stDxYorster>Fv
+ lis     r5,0
+-R_PPC_ADDR16_HA	lbl_76_bss_8
++R_PPC_ADDR16_HA
+ addi    r3,r31,0
+ R_PPC_ADDR16_LO	bss_loc_14__11stDxYorster
+@@ -30,5 +30,5 @@
+ R_PPC_ADDR16_LO	__dt__33stClassInfoImpl<42,11stDxYorster>Fv
+ addi    r5,r5,0
+-R_PPC_ADDR16_LO	lbl_76_bss_8
++R_PPC_ADDR16_LO
+ bl <addr>
+ R_PPC_REL24	__register_global_object
+== __dt__33stClassInfoImpl<42,11stDxYorster>Fv: DIFF
+--- target
++++ candidate
+@@ -7,5 +7,5 @@
+ stw     r30,8(r1)
+ mr      r30,r3
+-beq     9e0Fv+0x58>
++beq     a5cFv+0x58>
+ lis     r6,0
+ R_PPC_ADDR16_HA	__vt__33stClassInfoImpl<42,11stDxYorster>
+@@ -15,14 +15,14 @@
+ li      r5,0
+ stw     r6,0(r3)
+-bl      9c0Fv+0x38>
++bl      a3cFv+0x38>
+ R_PPC_REL24	setClassInfo__11stClassInfoFQ26Stages11srStageKindP11stClassInfo
+ mr      r3,r30
+ li      r4,0
+-bl      9ccFv+0x44>
++bl      a48Fv+0x44>
+ R_PPC_REL24	__dt__11stClassInfoFv
+ cmpwi   r31,0
+-ble     9e0Fv+0x58>
++ble     a5cFv+0x58>
+ mr      r3,r30
+-bl      9dcFv+0x54>
++bl      a58Fv+0x54>
+ R_PPC_REL24	__dl__FPv
+ mr      r3,r30
+== create__33stClassInfoImpl<42,11stDxYorster>Fv: DIFF
+--- target
++++ candidate
+@@ -5,15 +5,15 @@
+ stw     r0,20(r1)
+ stw     r31,12(r1)
+-bl      a14Fv+0x18>
++bl      a90Fv+0x18>
+ R_PPC_REL24	__nw__FUlQ25Heaps8HeapType
+ cmpwi   r3,0
+ mr      r31,r3
+-beq     a74Fv+0x78>
++beq     af0Fv+0x78>
+ lis     r4,0
+-R_PPC_ADDR16_HA	lbl_76_data_0
++R_PPC_ADDR16_HA
+ li      r5,42
+ addi    r4,r4,0
+-R_PPC_ADDR16_LO	lbl_76_data_0
+-bl      a30Fv+0x34>
++R_PPC_ADDR16_LO
++bl      aacFv+0x34>
+ R_PPC_REL24	__ct__7stMeleeFPCcQ26Stages11srStageKind
+ lis     r5,0
+@@ -25,5 +25,5 @@
+ stw     r5,60(r31)
+ li      r5,108
+-bl      a4cFv+0x50>
++bl      ac8Fv+0x50>
+ R_PPC_REL24	memset
+ li      r6,1
+@@ -35,5 +35,5 @@
+ stb     r6,581(r31)
+ stb     r0,582(r31)
+-bl      a70Fv+0x74>
++bl      aecFv+0x74>
+ R_PPC_REL24	memset
+ mr      r3,r31
+== preload__33stClassInfoImpl<42,11stDxYorster>Fv: MATCH (1 insns)
+candidate-only: ['__ct__11stDxYorsterFv']

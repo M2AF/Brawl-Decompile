@@ -1,0 +1,18 @@
+[
+  {
+    "variant": "switch_unsigned",
+    "match": false
+  },
+  {
+    "variant": "goto_active",
+    "match": false
+  },
+  {
+    "variant": "conditional_void",
+    "match": false
+  },
+  {
+    "variant": "explicit_else",
+    "match": false
+  }
+]

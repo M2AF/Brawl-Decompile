@@ -1,0 +1,10 @@
+--- before
++++ after
+@@ -37939,6 +37939,7 @@
+       zoomOutCamera(225.0f, 275.0f);
+       m_isZoomedOut = true;
+     }
++ goto dummy_label_893894; dummy_label_893894: ;
+   }
+ }
+ 

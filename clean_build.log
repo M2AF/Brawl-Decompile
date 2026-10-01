@@ -1,0 +1,869 @@
+[1/2] SPLIT config\RSBE01_01\config.yml
+ INFO Loading config\RSBE01_01\config.yml
+ INFO Loading and analyzing 127 modules (using 16 threads)
+ INFO Initial analysis completed in 45.280s (found 92524 functions)
+ INFO Rebuilding relocations and splitting
+ WARN module{name=ft_marth id=106}: Alignment for mo_fighter/ft_marth/ft_marth_status_uniq_process_special_hi.cpp .data expected 8, but starts at 4:0x00005584
+ INFO Splitting completed in 7.102s (wrote 4417 objects)
+ INFO Total time: 52.888s
+[2/2] RUN configure.py
+[1/456] LINK build\RSBE01_01\sora_scene\sora_scene.preplf
+[2/456] LINK build\RSBE01_01\sora_menu_main\sora_menu_main.preplf
+[3/456] LINK build\RSBE01_01\sora_menu_tour\sora_menu_tour.preplf
+[4/456] LINK build\RSBE01_01\sora_menu_qm\sora_menu_qm.preplf
+[5/456] LINK build\RSBE01_01\sora_menu_edit\sora_menu_edit.preplf
+[6/456] LINK build\RSBE01_01\sora_menu_collect_viewer\sora_menu_collect_viewer.preplf
+[7/456] LINK build\RSBE01_01\sora_menu_replay\sora_menu_replay.preplf
+[8/456] LINK build\RSBE01_01\sora_menu_snap_shot\sora_menu_snap_shot.preplf
+[9/456] LINK build\RSBE01_01\sora_menu_event\sora_menu_event.preplf
+[10/456] LINK build\RSBE01_01\sora_menu_sel_char\sora_menu_sel_char.preplf
+[11/456] LINK build\RSBE01_01\sora_menu_sel_stage\sora_menu_sel_stage.preplf
+[12/456] LINK build\RSBE01_01\sora_menu_game_over\sora_menu_game_over.preplf
+[13/456] LINK build\RSBE01_01\sora_menu_intro\sora_menu_intro.preplf
+[14/456] LINK build\RSBE01_01\sora_menu_friend_list\sora_menu_friend_list.preplf
+[15/456] LINK build\RSBE01_01\sora_menu_watch\sora_menu_watch.preplf
+[16/456] LINK build\RSBE01_01\sora_menu_name\sora_menu_name.preplf
+[17/456] LINK build\RSBE01_01\sora_menu_sel_char_access\sora_menu_sel_char_access.preplf
+[18/456] LINK build\RSBE01_01\sora_menu_rule\sora_menu_rule.preplf
+[19/456] LINK build\RSBE01_01\sora_menu_simple_ending\sora_menu_simple_ending.preplf
+[20/456] LINK build\RSBE01_01\sora_minigame\sora_minigame.preplf
+[21/456] LINK build\RSBE01_01\sora_menu_time_result\sora_menu_time_result.preplf
+[22/456] LINK build\RSBE01_01\sora_menu_boot\sora_menu_boot.preplf
+[23/456] LINK build\RSBE01_01\sora_menu_challenger\sora_menu_challenger.preplf
+[24/456] LINK build\RSBE01_01\sora_menu_title\sora_menu_title.preplf
+[25/456] LINK build\RSBE01_01\sora_menu_title_sunset\sora_menu_title_sunset.preplf
+[26/456] LINK build\RSBE01_01\sora_menu_fig_get_demo\sora_menu_fig_get_demo.preplf
+[27/456] LINK build\RSBE01_01\sora_adv_menu_name\sora_adv_menu_name.preplf
+[28/456] LINK build\RSBE01_01\sora_adv_menu_visual\sora_adv_menu_visual.preplf
+[29/456] LINK build\RSBE01_01\sora_adv_menu_sel_char\sora_adv_menu_sel_char.preplf
+[30/456] LINK build\RSBE01_01\sora_adv_menu_sel_map\sora_adv_menu_sel_map.preplf
+[31/456] LINK build\RSBE01_01\sora_adv_menu_difficulty\sora_adv_menu_difficulty.preplf
+[32/456] LINK build\RSBE01_01\sora_adv_menu_game_over\sora_adv_menu_game_over.preplf
+[33/456] LINK build\RSBE01_01\sora_adv_menu_result\sora_adv_menu_result.preplf
+[34/456] LINK build\RSBE01_01\sora_adv_menu_save_load\sora_adv_menu_save_load.preplf
+[35/456] LINK build\RSBE01_01\sora_adv_menu_seal\sora_adv_menu_seal.preplf
+[36/456] LINK build\RSBE01_01\sora_adv_menu_ending\sora_adv_menu_ending.preplf
+[37/456] LINK build\RSBE01_01\sora_adv_menu_telop\sora_adv_menu_telop.preplf
+[38/456] LINK build\RSBE01_01\sora_adv_menu_save_point\sora_adv_menu_save_point.preplf
+[39/456] LINK build\RSBE01_01\sora_adv_stage\sora_adv_stage.preplf
+[40/456] LINK build\RSBE01_01\st_battles\st_battles.preplf
+[41/456] LINK build\RSBE01_01\st_battle\st_battle.preplf
+[42/456] LINK build\RSBE01_01\st_config\st_config.preplf
+[43/456] LINK build\RSBE01_01\st_final\st_final.preplf
+[44/456] LINK build\RSBE01_01\st_dolpic\st_dolpic.preplf
+[45/456] LINK build\RSBE01_01\st_mansion\st_mansion.preplf
+[46/456] LINK build\RSBE01_01\st_mariopast\st_mariopast.preplf
+[47/456] LINK build\RSBE01_01\st_kart\st_kart.preplf
+[48/456] LINK build\RSBE01_01\st_donkey\st_donkey.preplf
+[49/456] LINK build\RSBE01_01\st_jungle\st_jungle.preplf
+[50/456] LINK build\RSBE01_01\st_pirates\st_pirates.preplf
+[51/456] LINK build\RSBE01_01\st_oldin\st_oldin.preplf
+[52/456] LINK build\RSBE01_01\st_norfair\st_norfair.preplf
+[53/456] LINK build\RSBE01_01\st_orpheon\st_orpheon.preplf
+[54/456] LINK build\RSBE01_01\st_crayon\st_crayon.preplf
+[55/456] LINK build\RSBE01_01\st_halberd\st_halberd.preplf
+[56/456] LINK build\RSBE01_01\st_starfox\st_starfox.preplf
+[57/456] LINK build\RSBE01_01\st_stadium\st_stadium.preplf
+[58/456] LINK build\RSBE01_01\st_tengan\st_tengan.preplf
+[59/456] LINK build\RSBE01_01\st_fzero\st_fzero.preplf
+[60/456] LINK build\RSBE01_01\st_ice\st_ice.preplf
+[61/456] LINK build\RSBE01_01\st_gw\st_gw.preplf
+[62/456] LINK build\RSBE01_01\st_emblem\st_emblem.preplf
+[63/456] LINK build\RSBE01_01\st_madein\st_madein.preplf
+[64/456] LINK build\RSBE01_01\st_earth\st_earth.preplf
+[65/456] LINK build\RSBE01_01\st_palutena\st_palutena.preplf
+[66/456] LINK build\RSBE01_01\st_famicom\st_famicom.preplf
+[67/456] LINK build\RSBE01_01\st_newpork\st_newpork.preplf
+[68/456] LINK build\RSBE01_01\st_village\st_village.preplf
+[69/456] LINK build\RSBE01_01\st_metalgear\st_metalgear.preplf
+[70/456] LINK build\RSBE01_01\st_greenhill\st_greenhill.preplf
+[71/456] LINK build\RSBE01_01\st_pictchat\st_pictchat.preplf
+[72/456] LINK build\RSBE01_01\sora_enemy\sora_enemy.preplf
+[73/456] LINK build\RSBE01_01\st_plankton\st_plankton.preplf
+[74/456] LINK build\RSBE01_01\st_dxshrine\st_dxshrine.preplf
+[75/456] LINK build\RSBE01_01\st_dxyorster\st_dxyorster.preplf
+[76/456] LINK build\RSBE01_01\st_dxgarden\st_dxgarden.preplf
+[77/456] LINK build\RSBE01_01\st_dxonett\st_dxonett.preplf
+[78/456] LINK build\RSBE01_01\st_dxgreens\st_dxgreens.preplf
+[79/456] LINK build\RSBE01_01\st_dxrcruise\st_dxrcruise.preplf
+[80/456] LINK build\RSBE01_01\st_dxbigblue\st_dxbigblue.preplf
+[81/456] LINK build\RSBE01_01\st_dxcorneria\st_dxcorneria.preplf
+[82/456] LINK build\RSBE01_01\st_dxpstadium\st_dxpstadium.preplf
+[83/456] LINK build\RSBE01_01\st_dxzebes\st_dxzebes.preplf
+[84/456] LINK build\RSBE01_01\st_stageedit\st_stageedit.preplf
+[85/456] LINK build\RSBE01_01\st_otrain\st_otrain.preplf
+[86/456] LINK build\RSBE01_01\st_heal\st_heal.preplf
+[87/456] LINK build\RSBE01_01\st_homerun\st_homerun.preplf
+[88/456] LINK build\RSBE01_01\st_tbreak\st_tbreak.preplf
+[89/456] LINK build\RSBE01_01\st_croll\st_croll.preplf
+[90/456] LINK build\RSBE01_01\ft_mario\ft_mario.preplf
+[91/456] LINK build\RSBE01_01\ft_donkey\ft_donkey.preplf
+[92/456] LINK build\RSBE01_01\ft_link\ft_link.preplf
+[93/456] LINK build\RSBE01_01\ft_samus\ft_samus.preplf
+[94/456] LINK build\RSBE01_01\ft_yoshi\ft_yoshi.preplf
+[95/456] LINK build\RSBE01_01\ft_kirby\ft_kirby.preplf
+[96/456] LINK build\RSBE01_01\ft_fox\ft_fox.preplf
+[97/456] LINK build\RSBE01_01\ft_pikachu\ft_pikachu.preplf
+[98/456] LINK build\RSBE01_01\ft_luigi\ft_luigi.preplf
+[99/456] LINK build\RSBE01_01\ft_captain\ft_captain.preplf
+[100/456] LINK build\RSBE01_01\ft_ness\ft_ness.preplf
+[101/456] LINK build\RSBE01_01\ft_koopa\ft_koopa.preplf
+[102/456] LINK build\RSBE01_01\ft_peach\ft_peach.preplf
+[103/456] LINK build\RSBE01_01\ft_zelda\ft_zelda.preplf
+[104/456] LINK build\RSBE01_01\ft_iceclimber\ft_iceclimber.preplf
+[105/456] LINK build\RSBE01_01\ft_marth\ft_marth.preplf
+[106/456] LINK build\RSBE01_01\ft_gamewatch\ft_gamewatch.preplf
+[107/456] LINK build\RSBE01_01\ft_falco\ft_falco.preplf
+[108/456] LINK build\RSBE01_01\ft_ganon\ft_ganon.preplf
+[109/456] LINK build\RSBE01_01\ft_wario\ft_wario.preplf
+[110/456] LINK build\RSBE01_01\ft_metaknight\ft_metaknight.preplf
+[111/456] LINK build\RSBE01_01\ft_pit\ft_pit.preplf
+[112/456] LINK build\RSBE01_01\ft_pikmin\ft_pikmin.preplf
+[113/456] LINK build\RSBE01_01\ft_lucas\ft_lucas.preplf
+[114/456] LINK build\RSBE01_01\ft_diddy\ft_diddy.preplf
+[115/456] LINK build\RSBE01_01\ft_poke\ft_poke.preplf
+[116/456] LINK build\RSBE01_01\ft_dedede\ft_dedede.preplf
+[117/456] LINK build\RSBE01_01\ft_lucario\ft_lucario.preplf
+[118/456] LINK build\RSBE01_01\ft_ike\ft_ike.preplf
+[119/456] LINK build\RSBE01_01\ft_robot\ft_robot.preplf
+[120/456] LINK build\RSBE01_01\ft_toonlink\ft_toonlink.preplf
+[121/456] LINK build\RSBE01_01\ft_snake\ft_snake.preplf
+[122/456] LINK build\RSBE01_01\ft_sonic\ft_sonic.preplf
+[123/456] LINK build\RSBE01_01\ft_purin\ft_purin.preplf
+[124/456] LINK build\RSBE01_01\ft_wolf\ft_wolf.preplf
+[125/456] LINK build\RSBE01_01\ft_zako\ft_zako.preplf
+[126/456] LINK build\RSBE01_01\sora_menu_main\sora_menu_main.plf
+[127/456] LINK build\RSBE01_01\sora_menu_tour\sora_menu_tour.plf
+[128/456] LINK build\RSBE01_01\sora_menu_qm\sora_menu_qm.plf
+[129/456] LINK build\RSBE01_01\sora_melee\sora_melee.preplf
+[130/456] LINK build\RSBE01_01\sora_menu_edit\sora_menu_edit.plf
+[131/456] LINK build\RSBE01_01\sora_menu_collect_viewer\sora_menu_collect_viewer.plf
+[132/456] LINK build\RSBE01_01\sora_menu_replay\sora_menu_replay.plf
+[133/456] LINK build\RSBE01_01\sora_menu_snap_shot\sora_menu_snap_shot.plf
+[134/456] LINK build\RSBE01_01\sora_menu_event\sora_menu_event.plf
+[135/456] LINK build\RSBE01_01\sora_menu_sel_char\sora_menu_sel_char.plf
+[136/456] LINK build\RSBE01_01\sora_menu_sel_stage\sora_menu_sel_stage.plf
+[137/456] LINK build\RSBE01_01\sora_menu_game_over\sora_menu_game_over.plf
+[138/456] LINK build\RSBE01_01\sora_menu_intro\sora_menu_intro.plf
+[139/456] LINK build\RSBE01_01\sora_menu_friend_list\sora_menu_friend_list.plf
+[140/456] LINK build\RSBE01_01\sora_menu_watch\sora_menu_watch.plf
+[141/456] LINK build\RSBE01_01\sora_menu_name\sora_menu_name.plf
+[142/456] LINK build\RSBE01_01\sora_menu_sel_char_access\sora_menu_sel_char_access.plf
+[143/456] LINK build\RSBE01_01\sora_menu_rule\sora_menu_rule.plf
+[144/456] LINK build\RSBE01_01\sora_menu_simple_ending\sora_menu_simple_ending.plf
+[145/456] LINK build\RSBE01_01\sora_menu_time_result\sora_menu_time_result.plf
+[146/456] LINK build\RSBE01_01\sora_menu_boot\sora_menu_boot.plf
+[147/456] LINK build\RSBE01_01\sora_menu_challenger\sora_menu_challenger.plf
+[148/456] LINK build\RSBE01_01\sora_menu_title\sora_menu_title.plf
+[149/456] LINK build\RSBE01_01\sora_menu_title_sunset\sora_menu_title_sunset.plf
+[150/456] LINK build\RSBE01_01\sora_menu_fig_get_demo\sora_menu_fig_get_demo.plf
+[151/456] LINK build\RSBE01_01\sora_adv_menu_name\sora_adv_menu_name.plf
+[152/456] LINK build\RSBE01_01\sora_adv_menu_visual\sora_adv_menu_visual.plf
+[153/456] LINK build\RSBE01_01\sora_adv_menu_sel_char\sora_adv_menu_sel_char.plf
+[154/456] LINK build\RSBE01_01\sora_adv_menu_sel_map\sora_adv_menu_sel_map.plf
+[155/456] LINK build\RSBE01_01\sora_adv_menu_difficulty\sora_adv_menu_difficulty.plf
+[156/456] LINK build\RSBE01_01\sora_adv_menu_game_over\sora_adv_menu_game_over.plf
+[157/456] LINK build\RSBE01_01\sora_adv_menu_result\sora_adv_menu_result.plf
+[158/456] LINK build\RSBE01_01\sora_adv_menu_save_load\sora_adv_menu_save_load.plf
+[159/456] LINK build\RSBE01_01\sora_adv_menu_seal\sora_adv_menu_seal.plf
+[160/456] LINK build\RSBE01_01\sora_adv_menu_ending\sora_adv_menu_ending.plf
+[161/456] LINK build\RSBE01_01\sora_adv_menu_telop\sora_adv_menu_telop.plf
+[162/456] LINK build\RSBE01_01\sora_adv_menu_save_point\sora_adv_menu_save_point.plf
+[163/456] LINK build\RSBE01_01\st_final\st_final.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[164/456] LINK build\RSBE01_01\st_battle\st_battle.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[165/456] LINK build\RSBE01_01\sora_minigame\sora_minigame.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[166/456] LINK build\RSBE01_01\st_config\st_config.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[167/456] LINK build\RSBE01_01\st_dolpic\st_dolpic.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[168/456] LINK build\RSBE01_01\st_battles\st_battles.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[169/456] LINK build\RSBE01_01\st_mansion\st_mansion.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[170/456] LINK build\RSBE01_01\sora_scene\sora_scene.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[171/456] LINK build\RSBE01_01\sora_adv_stage\sora_adv_stage.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[172/456] LINK build\RSBE01_01\st_kart\st_kart.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[173/456] LINK build\RSBE01_01\st_mariopast\st_mariopast.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[174/456] LINK build\RSBE01_01\st_oldin\st_oldin.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[175/456] LINK build\RSBE01_01\st_pirates\st_pirates.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[176/456] LINK build\RSBE01_01\st_jungle\st_jungle.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[177/456] LINK build\RSBE01_01\st_donkey\st_donkey.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[178/456] LINK build\RSBE01_01\st_orpheon\st_orpheon.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[179/456] LINK build\RSBE01_01\st_norfair\st_norfair.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[180/456] LINK build\RSBE01_01\st_stadium\st_stadium.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[181/456] LINK build\RSBE01_01\st_starfox\st_starfox.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[182/456] LINK build\RSBE01_01\st_halberd\st_halberd.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[183/456] LINK build\RSBE01_01\st_tengan\st_tengan.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[184/456] LINK build\RSBE01_01\st_ice\st_ice.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[185/456] LINK build\RSBE01_01\st_emblem\st_emblem.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[186/456] LINK build\RSBE01_01\st_fzero\st_fzero.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[187/456] LINK build\RSBE01_01\st_crayon\st_crayon.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[188/456] LINK build\RSBE01_01\st_gw\st_gw.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[189/456] LINK build\RSBE01_01\st_newpork\st_newpork.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[190/456] LINK build\RSBE01_01\st_palutena\st_palutena.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[191/456] LINK build\RSBE01_01\st_greenhill\st_greenhill.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[192/456] LINK build\RSBE01_01\st_madein\st_madein.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[193/456] LINK build\RSBE01_01\st_famicom\st_famicom.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[194/456] LINK build\RSBE01_01\st_village\st_village.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[195/456] LINK build\RSBE01_01\st_metalgear\st_metalgear.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[196/456] LINK build\RSBE01_01\st_earth\st_earth.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[197/456] LINK build\RSBE01_01\sora_enemy\sora_enemy.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[198/456] LINK build\RSBE01_01\st_dxrcruise\st_dxrcruise.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[199/456] LINK build\RSBE01_01\st_dxyorster\st_dxyorster.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[200/456] LINK build\RSBE01_01\st_plankton\st_plankton.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[201/456] LINK build\RSBE01_01\st_dxonett\st_dxonett.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[202/456] LINK build\RSBE01_01\st_pictchat\st_pictchat.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[203/456] LINK build\RSBE01_01\st_dxgreens\st_dxgreens.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[204/456] LINK build\RSBE01_01\st_dxshrine\st_dxshrine.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[205/456] LINK build\RSBE01_01\st_dxgarden\st_dxgarden.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[206/456] LINK build\RSBE01_01\st_dxbigblue\st_dxbigblue.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[207/456] LINK build\RSBE01_01\st_heal\st_heal.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[208/456] LINK build\RSBE01_01\st_dxzebes\st_dxzebes.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[209/456] LINK build\RSBE01_01\st_dxcorneria\st_dxcorneria.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[210/456] LINK build\RSBE01_01\st_otrain\st_otrain.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[211/456] LINK build\RSBE01_01\st_dxpstadium\st_dxpstadium.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[212/456] LINK build\RSBE01_01\st_tbreak\st_tbreak.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[213/456] LINK build\RSBE01_01\st_croll\st_croll.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[214/456] LINK build\RSBE01_01\st_stageedit\st_stageedit.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[215/456] LINK build\RSBE01_01\st_homerun\st_homerun.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[216/456] LINK build\RSBE01_01\ft_donkey\ft_donkey.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[217/456] LINK build\RSBE01_01\ft_link\ft_link.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[218/456] LINK build\RSBE01_01\ft_mario\ft_mario.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[219/456] LINK build\RSBE01_01\ft_samus\ft_samus.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[220/456] LINK build\RSBE01_01\ft_yoshi\ft_yoshi.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[221/456] LINK build\RSBE01_01\ft_fox\ft_fox.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[222/456] LINK build\RSBE01_01\ft_pikachu\ft_pikachu.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[223/456] LINK build\RSBE01_01\ft_kirby\ft_kirby.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[224/456] LINK build\RSBE01_01\ft_luigi\ft_luigi.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[225/456] LINK build\RSBE01_01\ft_marth\ft_marth.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[226/456] LINK build\RSBE01_01\ft_iceclimber\ft_iceclimber.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[227/456] LINK build\RSBE01_01\ft_captain\ft_captain.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[228/456] LINK build\RSBE01_01\ft_peach\ft_peach.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[229/456] LINK build\RSBE01_01\ft_falco\ft_falco.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[230/456] LINK build\RSBE01_01\ft_koopa\ft_koopa.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[231/456] LINK build\RSBE01_01\ft_gamewatch\ft_gamewatch.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[232/456] LINK build\RSBE01_01\ft_ness\ft_ness.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[233/456] LINK build\RSBE01_01\ft_zelda\ft_zelda.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[234/456] LINK build\RSBE01_01\ft_metaknight\ft_metaknight.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[235/456] LINK build\RSBE01_01\ft_ganon\ft_ganon.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[236/456] LINK build\RSBE01_01\ft_pit\ft_pit.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[237/456] LINK build\RSBE01_01\ft_wario\ft_wario.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[238/456] LINK build\RSBE01_01\ft_lucas\ft_lucas.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[239/456] LINK build\RSBE01_01\ft_pikmin\ft_pikmin.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[240/456] LINK build\RSBE01_01\ft_poke\ft_poke.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[241/456] LINK build\RSBE01_01\ft_diddy\ft_diddy.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[242/456] LINK build\RSBE01_01\ft_purin\ft_purin.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[243/456] LINK build\RSBE01_01\ft_robot\ft_robot.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[244/456] LINK build\RSBE01_01\ft_sonic\ft_sonic.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[245/456] LINK build\RSBE01_01\ft_toonlink\ft_toonlink.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[246/456] LINK build\RSBE01_01\ft_lucario\ft_lucario.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[247/456] LINK build\RSBE01_01\ft_dedede\ft_dedede.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[248/456] LINK build\RSBE01_01\ft_snake\ft_snake.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[249/456] LINK build\RSBE01_01\ft_ike\ft_ike.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[250/456] LINK build\RSBE01_01\ft_wolf\ft_wolf.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[251/456] LINK build\RSBE01_01\sora_melee\sora_melee.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[252/456] MWCC build\RSBE01_01\src\sora\sr\sr_getappname.o
+[253/456] MWCC build\RSBE01_01\src\sora\sr\sr_revision.o
+[254/456] MWCC build\RSBE01_01\src\sora\main.o
+[255/456] MWCC build\RSBE01_01\src\sora\gf\gf_3d_scene_event.o
+[256/456] LINK build\RSBE01_01\ft_zako\ft_zako.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   runtime sources 'global_destructor_chain.c' and 
+#   '__init_cpp_exceptions.cpp' both need to be updated to latest version.  
+#   Please contact Metrowerks support.
+[257/456] MWCC build\RSBE01_01\src\sora\sr\sr_common.o
+[258/456] MWCC build\RSBE01_01\src\sora\gf\gf_archive_load_thread.o
+[259/456] MWCC build\RSBE01_01\src\sora\gf\gf_callback.o
+[260/456] MWCC build\RSBE01_01\src\sora\gf\gf_decomp.o
+[261/456] MWCC build\RSBE01_01\src\sora\gf\gf_camera_controller.o
+[262/456] MWCC build\RSBE01_01\src\sora\gf\gf_archive_file.o
+[263/456] MWCC build\RSBE01_01\src\sora\gf\gf_archive_manager.o
+[264/456] MWCC build\RSBE01_01\src\sora\gf\gf_archive_db.o
+[265/456] MWCC build\RSBE01_01\src\sora\gf\gf_gameframe_counter.o
+[266/456] MWCC build\RSBE01_01\src\sora\gf\gf_3d_scene_light_resource.o
+[267/456] MWCC build\RSBE01_01\src\sora\gf\gf_pad_queue.o
+[268/456] MWCC build\RSBE01_01\src\sora\gf\gf_task.o
+[269/456] MWCC build\RSBE01_01\src\sora\gf\gf_pad_thread.o
+[270/456] MWCC build\RSBE01_01\src\sora\gf\gf_file_io_handle.o
+[271/456] MWCC build\RSBE01_01\src\sora\gf\gf_file_io_request.o
+[272/456] MWCC build\RSBE01_01\src\sora\gf\gf_memory_util.o
+[273/456] MWCC build\RSBE01_01\src\sora\gf\gf_system_callback.o
+[274/456] MWCC build\RSBE01_01\src\sora\gf\gf_task_scheduler.o
+[275/456] MWCC build\RSBE01_01\src\sora\gf\gf_slow_manager.o
+[276/456] MWCC build\RSBE01_01\src\sora\gf\gf_thread.o
+[277/456] MWCC build\RSBE01_01\src\sora\gf\gf_monitor.o
+[278/456] MWCC build\RSBE01_01\src\sora\gf\gf_keep_fb.o
+[279/456] MWCC build\RSBE01_01\src\sora\mt\mt_vector_old.o
+[280/456] MWCC build\RSBE01_01\src\sora\mt\mt_trig.o
+[281/456] MWCC build\RSBE01_01\src\sora\gf\gf_capture_util.o
+[282/456] MWCC build\RSBE01_01\src\sora\mt\mt_prng.o
+[283/456] MWCC build\RSBE01_01\src\sora\gf\gf_resource_loader.o
+[284/456] MWCC build\RSBE01_01\src\sora\st\module.o
+[285/456] MWCC build\RSBE01_01\src\sora\ut\ut_list.o
+[286/456] MWCC build\RSBE01_01\src\sora\ef\ef_screen_handle.o
+[287/456] MWCC build\RSBE01_01\src\sora\ip\ip_human.o
+[288/456] MWCC build\RSBE01_01\src\sora\ip\ip_network_producer.o
+[289/456] MWCC build\RSBE01_01\src\sora\ut\ut_relocate.o
+[290/456] MWCC build\RSBE01_01\src\sora\mv\mv_THPAudioDecode.o
+[291/456] MWCC build\RSBE01_01\src\sora\mt\mt_prng_log.o
+[292/456] MWCC build\RSBE01_01\src\sora\cm\cm_controller_default.o
+[293/456] MWCC build\RSBE01_01\src\sora\ut\ut_nw.o
+[294/456] MWCC build\RSBE01_01\src\sora\cm\cm_controller_menu_fixed.o
+[295/456] MWCC build\RSBE01_01\src\sora\gf\gf_error_check.o
+[296/456] MWCC build\RSBE01_01\src\sora\cm\cm_controller_melee_fixed.o
+[297/456] MWCC build\RSBE01_01\src\sora\mv\mv_THPRead.o
+[298/456] MWCC build\RSBE01_01\src\sora\if\if_wifipr_task.o
+[299/456] MWCC build\RSBE01_01\src\sora\if\if_adv_task.o
+[300/456] MWCC build\RSBE01_01\src\sora\gf\gf_error_manager.o
+[301/456] MWCC build\RSBE01_01\src\sora\gr\collision\gr_collision_shape.o
+[302/456] MWCC build\RSBE01_01\src\sora\gr\collision\gr_collision_data.o
+[303/456] MWCC build\RSBE01_01\src\sora\gf\gf_shutdown_manager.o
+[304/456] MWCC build\RSBE01_01\src\sora\gr\gr_path.o
+[305/456] MWCC build\RSBE01_01\src\sora\gr\collision\gr_collision_shape_rhombus.o
+[306/456] MWCC build\RSBE01_01\src\sora\gr\collision\gr_collision_shape_circle.o
+[307/456] MWCC build\RSBE01_01\src\sora\ty\ty_fig_listmng.o
+[308/456] MWCC build\RSBE01_01\src\sora\ft\ft_system.o
+[309/456] MWCC build\RSBE01_01\src\sora\cm\cm_stage_param.o
+[310/456] MWCC build\RSBE01_01\src\sora\ec\ec_trace_mgr.o
+[311/456] MWCC build\RSBE01_01\src\sora\nt\nt_offline.o
+[312/456] MWCC build\RSBE01_01\src\sora\gr\collision\gr_collision_handle.o
+[313/456] MWCC build\RSBE01_01\src\sora\ac\ac_null.o
+[314/456] MWCC build\RSBE01_01\src\sora\ac\ac_anim_cmd_impl.o
+[315/456] MWCC build\RSBE01_01\src\sora\nt\d_net_connect.o
+[316/456] MWCC build\RSBE01_01\src\sora\nt\nt_report.o
+[317/456] MWCC build\RSBE01_01\src\sora\ad\ad_static_data.o
+[318/456] MWCC build\RSBE01_01\src\sora\if\if_stgedit.o
+[319/456] MWCC build\RSBE01_01\src\sora\ac\ac_cmd_interpreter.o
+[320/456] MWCC build\RSBE01_01\src\sora\nt\nt_etc_so.o
+[321/456] MWCC build\RSBE01_01\src\global_destructor_chain.o
+[322/456] MWCC build\RSBE01_01\src\sora\nt\nt_send.o
+[323/456] MWCC build\RSBE01_01\src\sora\snd\snd_init_thread.o
+[324/456] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_demo.o
+[325/456] MWCC build\RSBE01_01\src\sora\nt\nt_etc_dwc.o
+[326/456] MWCC build\RSBE01_01\src\sora\st\st_data_container.o
+[327/456] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_tutorial.o
+[328/456] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_staffroll.o
+[329/456] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_seal_list.o
+[330/456] MWCC build\RSBE01_01\src\sora\st\st_data_container_magic.o
+[331/456] MWCC build\RSBE01_01\src\sora\st\st_data_container_multi.o
+[332/456] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_net_time_result.o
+[333/456] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_adv_selchar.o
+[334/456] MWCC build\RSBE01_01\src\home_button_icon.o
+[335/456] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_adv_saveload.o
+[336/456] MWCC build\RSBE01_01\src\mo_scene\mo_scene.o
+[337/456] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_seal_disp.o
+[338/456] MWCC build\RSBE01_01\src\mo_menu\mo_menu.o
+[339/456] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_adv_gameover.o
+[340/456] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_adv_result.o
+[341/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_heap_module_impl.o
+[342/456] MWCC build\RSBE01_01\src\mo_scene\sora_scene\sc_adv_diff.o
+### mwcceppc.exe Compiler:
+#    File: src\mo_scene\sora_scene\sc_adv_diff.cpp
+# ------------------------------------------------
+#      67: }  
+# Warning: ^
+#   (33058) <string not found>
+[343/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_general_work_abstract.o
+[344/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_general_work_simple.o
+[345/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\anim\so_anim_chr.o
+[346/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_general_work.o
+[347/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\model\so_model_module_simple.o
+[348/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\model\so_model_virtual_node.o
+[349/456] MWCC build\RSBE01_01\src\mo_adv_menu\mo_adv_menu.o
+[350/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_resource_module_impl.o
+[351/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\ft\ft_class_info.o
+[352/456] MWCC build\RSBE01_01\src\mo_adv_stage\mo_adv_stage.o
+[353/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_common_data_accesser.o
+[354/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_photo_call_back.o
+[355/456] MWCC build\RSBE01_01\src\mo_melee\mo_melee.o
+[356/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\wnem\wn_em_heap_module_impl.o
+[357/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\model\so_model_module_impl_variable.o
+[358/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_controller_module_link_ref.o
+[359/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\so_module_accesser.o
+[360/456] LINK build\RSBE01_01\main.elf
+[361/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\so\anim\so_anim_cmd_interpreter_effect.o
+[362/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\wnem\wn_em_resource_module_impl.o
+[363/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\ft\ft_extend_param_accesser.o
+[364/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\ft\ft_fighter_build_data.o
+### mwcceppc.exe Compiler:
+#      In: include\lib\BrawlHeaders\Brawl\Include\so\so_module_accesser_build_data.h
+#    From: src\mo_melee\sora_melee\ft\ft_fighter_build_data.cpp
+# -------------------------------------------------------------
+#      31:         return rect;  
+# Warning:                    ^
+#   (10326) function result is a pointer/reference to an automatic/temporary 
+#   variable
+[365/456] MWCC build\RSBE01_01\src\mo_melee\sora_melee\st\st_common_gimmick.o
+[366/456] MWCC build\RSBE01_01\src\mo_adv_stage\gr_adventure_final.o
+[367/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\em_create.o
+[368/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\stop\em_stop_module_impl.o
+[369/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\resource\em_resource_module_impl.o
+[370/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\em_extend_param_accesser.o
+[371/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\em_target_search_unit.o
+[372/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\em_external_value_accesser.o
+[373/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\em_info.o
+[374/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\boobas\em_boobas_param_accesser.o
+[375/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\siralamos\em_siralamos_param_accesser.o
+[376/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\wnem\wn_em_report.o
+[377/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\roada\em_roada_param_accesser.o
+[378/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\killer\em_killer_param_accesser.o
+[379/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\popperam\em_popperam_param_accesser.o
+[380/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\pacci\em_pacci_param_accesser.o
+[381/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\jyakeel\em_jyakeel_param_accesser.o
+[382/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\aroaros\em_aroaros_param_accesser.o
+[383/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\cymal\em_cymal_param_accesser.o
+[384/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\deathpod\em_deathpod_param_accesser.o
+[385/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\dekakuribo\em_dekakuribo_param_accesser.o
+[386/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\bucyulus\em_bucyulus_param_accesser.o
+[387/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\botron\em_botron_param_accesser.o
+[388/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\gyraan\em_gyraan_param_accesser.o
+[389/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\mite\em_mite_param_accesser.o
+[390/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\prim\em_prim_param_accesser.o
+[391/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\cataguard\em_cataguard_param_accesser.o
+[392/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\kuribo\em_kuribo_param_accesser.o
+[393/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\flows\em_flows_param_accesser.o
+[394/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\tautau\em_tautau_param_accesser.o
+[395/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\shelly\em_shelly_param_accesser.o
+[396/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\teckin\em_teckin_param_accesser.o
+[397/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\spar\em_spar_param_accesser.o
+[398/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\hammerbros\em_hammerbros_param_accesser.o
+[399/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\kokkon\em_kokkon_param_accesser.o
+[400/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\bombhead\em_bombhead_param_accesser.o
+[401/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\ngagog\em_ngagog_param_accesser.o
+[402/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\faulong\em_faulong_param_accesser.o
+[403/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\bitan\em_bitan_param_accesser.o
+[404/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\patapata\em_patapata_param_accesser.o
+[405/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\jdus\em_jdus_param_accesser.o
+[406/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\ghamgha\em_ghamgha_param_accesser.o
+[407/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\robobeam\em_robobeam_param_accesser.o
+[408/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\robodistance\em_robodistance_param_accesser.o
+[409/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\robohoming\em_robohoming_param_accesser.o
+[410/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\robopunch\em_robopunch_param_accesser.o
+[411/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\arman\wnem_proc_arman.o
+[412/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\arman\em_arman_param_accesser.o
+[413/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\galfire\em_galfire_param_accesser.o
+[414/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\bosspackun\em_bosspackun_param_accesser.o
+[415/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\ghamghabase\em_ghamghabase_param_accesser.o
+[416/456] MWCC build\RSBE01_01\src\mo_enemy\mo_enemy.o
+[417/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\galleom\em_galleom_param_accesser.o
+[418/456] MWCC build\RSBE01_01\src\mo_stage\mo_stage.o
+[419/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\ridley\em_ridley_param_accesser.o
+[420/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\rayquaza\em_rayquaza_param_accesser.o
+[421/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\rayquaza\wnem_proc_rayquaza.o
+[422/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\duon\em_duon_param_accesser.o
+[423/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\porky\em_porky_param_accesser.o
+[424/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\falconflyer\em_falconflyer_param_accesser.o
+[425/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\metaridley\em_metaridley_param_accesser.o
+[426/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\taboo\wnem_proc_taboo.o
+[427/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\taboo\em_taboo_param_accesser.o
+[428/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\masterhand\em_masterhand_param_accesser.o
+[429/456] MWCC build\RSBE01_01\src\mo_enemy\sora_enemy\crazyhand\em_crazyhand_param_accesser.o
+[430/456] MWCC build\RSBE01_01\src\mo_fighter\ft_marth\ft_marth_status_uniq_process_special_s.o
+[431/456] MWCC build\RSBE01_01\src\mo_fighter\mo_fighter.o
+[432/456] MWCC build\RSBE01_01\src\mo_fighter\ft_marth\ft_marth.o
+[433/456] MWCC build\RSBE01_01\src\mo_fighter\ft_marth\ft_marth_status_uniq_process_special_hi.o
+[434/456] DOL build\RSBE01_01\main.dol
+[435/456] MWCC build\RSBE01_01\src\mo_fighter\ft_marth\ft_marth_status_uniq_process_special_lw.o
+[436/456] MWCC build\RSBE01_01\src\mo_fighter\ft_marth\ft_marth_status_uniq_process_special_final.o
+[437/456] MWCC build\RSBE01_01\src\mo_fighter\ft_marth\if_marth_final.o
+[438/456] MWCC build\RSBE01_01\src\mo_stage\st_config\gr_config.o
+[439/456] MWCC build\RSBE01_01\src\mo_stage\st_final\gr_final.o
+[440/456] MWCC build\RSBE01_01\src\mo_stage\st_crayon\gr_crayon_yakumono.o
+[441/456] MWCC build\RSBE01_01\src\mo_stage\st_dxshrine\gr_dxshrine.o
+[442/456] MWCC build\RSBE01_01\src\mo_stage\st_starfox\st_starfox.o
+[443/456] MWCC build\RSBE01_01\src\mo_stage\st_dxbigblue\gr_dxbigblue.o
+[444/456] MWCC build\RSBE01_01\src\mo_stage\st_config\st_config.o
+[445/456] MWCC build\RSBE01_01\src\mo_stage\st_final\st_final.o
+[446/456] MWCC build\RSBE01_01\src\mo_stage\st_crayon\st_crayon.o
+[447/456] REL
+ INFO Loading 127 modules
+ INFO Symbol resolution completed in 0.114s (resolved 228353 symbols)
+ INFO RELs written in 0.296s
+ INFO Total time: 0.554s
+[448/456] MWCC build\RSBE01_01\src\mo_stage\st_dxshrine\st_dxshrine.o
+[449/456] MWCC build\RSBE01_01\src\mo_stage\st_otrain\st_onlinetrainning.o
+[450/456] MWCC build\RSBE01_01\src\mo_stage\st_emblem\st_emblem.o
+[451/456] MWCC build\RSBE01_01\src\mo_fighter\ft_purin\ft_purin.o
+### mwcceppc.exe Compiler:
+#      In: include\lib\BrawlHeaders\Brawl\Include\so\so_module_accesser_build_data.h
+#    From: src\mo_fighter\ft_purin\ft_purin.cpp
+# ---------------------------------------------
+#      31:         return rect;  
+# Warning:                    ^
+#   (10326) function result is a pointer/reference to an automatic/temporary 
+#   variable
+[452/456] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[453/456] REPORT
+ INFO Loading project .
+ INFO Generating report for 4417 units (using 16 threads)
+ INFO Report generated in 11.899s
+ INFO Writing to build\RSBE01_01\report.json
+[454/456] PROGRESS
+Progress:
+  All: 1.20% matched, 0.00% linked (0 / 4417 files)
+    Code: 189300 / 15833548 bytes (2375 / 92524 functions)
+    Data: 826796 / 5667492 bytes (14.59%)
+  DOL: 1.36% matched, 0.00% linked (0 / 1721 files)
+    Code: 56564 / 4170064 bytes (505 / 14278 functions)
+    Data: 6704 / 1724104 bytes (0.39%)
+  Modules: 1.14% matched, 0.00% linked (0 / 2696 files)
+    Code: 132736 / 11663484 bytes (1870 / 78246 functions)
+    Data: 820092 / 3943388 bytes (20.80%)
+
+real	1m20.597s
+user	0m0.015s
+sys	0m0.031s

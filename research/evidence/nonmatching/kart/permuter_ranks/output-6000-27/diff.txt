@@ -1,0 +1,23 @@
+--- before
++++ after
+@@ -37835,6 +37835,11 @@
+ 
+ 
+ 
++inline u32 inline_fn(u32 arg0)
++{
++  return arg0;
++}
++
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
+@@ -37862,7 +37867,7 @@
+           }
+           m_bgState = 9;
+         }
+-        if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true))
++        if ((inline_fn(kart->m_checkpoint) > 90) && (kart->m_isRacing == true))
+         {
+           m_bgState = 8;
+         }

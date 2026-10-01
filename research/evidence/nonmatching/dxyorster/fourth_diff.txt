@@ -1,0 +1,15 @@
+[1/1] MWCC build\RSBE01_01\src\mo_stage\st_dxyorster\st_dxyorster.o
+FAILED: [code=2] build/RSBE01_01/src/mo_stage/st_dxyorster/st_dxyorster.o 
+build\tools\sjiswrap.exe build\compilers\GC\3.0a5.2\mwcceppc.exe -nodefaults -proc gekko -align powerpc -enum int -fp hardware -Cpp_exceptions off -O4,p -inline auto -pragma "cats off" -pragma "warn_notinlined off" -maxerrors 1 -nosyspath -RTTI off -fp_contract off -str reuse -enc SJIS -i include -i build/RSBE01_01/include -DBUILD_VERSION=2 -DVERSION_RSBE01_01 -DMATCHING -Iinclude -Iinclude/lib/PowerPC_EABI_Support/Runtime/Inc -Iinclude/lib/BrawlHeaders/Brawl/Include -Iinclude/lib/BrawlHeaders/nw4r/include -Iinclude/lib/BrawlHeaders/OpenRVL/include -Iinclude/lib/BrawlHeaders/OpenRVL/include/MetroTRK -Iinclude/lib/BrawlHeaders/OpenRVL/include/revolution -Iinclude/lib/BrawlHeaders/OpenRVL/include/RVLFaceLib -Iinclude/lib/BrawlHeaders/OpenRVL/include/stl -Iinclude/lib/BrawlHeaders/utils/include -RTTI on -ipa file -sdata 0 -sdata2 0 -lang=c++ -MMD -c src\mo_stage\st_dxyorster\st_dxyorster.cpp -o build\RSBE01_01\src\mo_stage\st_dxyorster
+### mwcceppc.exe Compiler:
+#      In: include\st_dxyorster\st_dxyorster.h
+#    From: src\mo_stage\st_dxyorster\st_dxyorster.cpp
+# ---------------------------------------------------
+#      24:     virtual ~stDxYorster(const char* name);  
+#   Error:                                           ^
+#   (10146) illegal type
+#   Too many errors printed, aborting program
+
+User break, cancelled...
+ninja: build stopped: subcommand failed.
+

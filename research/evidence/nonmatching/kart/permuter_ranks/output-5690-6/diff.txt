@@ -1,0 +1,18 @@
+--- before
++++ after
+@@ -37837,6 +37837,7 @@
+ 
+ void updateRanks(float deltaFrame)
+ {
++  u8 i = 0;
+   stKartData *data = (stKartData *) m_stageData;
+   if (data)
+   {
+@@ -37844,7 +37845,6 @@
+     bool allOnFinalLap = true;
+     __alloca(data->m_kartNum * (sizeof(int)));
+     {
+-      u8 i = 0;
+       u8 kartNum = data->m_kartNum;
+       for (; i != kartNum; i++)
+       {

@@ -1,0 +1,16 @@
+[1/4] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[2/4] MWCC build\RSBE01_01\src\mo_stage\st_tengan\gr_tengan_floor.o
+[3/4] REPORT
+[4/4] PROGRESS
+Progress:
+  All: 1.41% matched, 1.18% linked (524 / 4407 files)
+    Code: 222712 / 15833548 bytes (2935 / 92523 functions)
+    Data: 838420 / 5667464 bytes (14.79%)
+  DOL: 1.37% matched, 0.85% linked (65 / 1722 files)
+    Code: 57172 / 4170064 bytes (511 / 14278 functions)
+    Data: 6720 / 1724104 bytes (0.39%)
+  Modules: 1.42% matched, 1.29% linked (459 / 2685 files)
+    Code: 165540 / 11663484 bytes (2424 / 78245 functions)
+    Data: 831700 / 3943360 bytes (21.09%)

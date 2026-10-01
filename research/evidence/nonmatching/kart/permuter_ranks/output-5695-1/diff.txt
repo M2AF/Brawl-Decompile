@@ -1,0 +1,32 @@
+--- before
++++ after
+@@ -37837,14 +37837,16 @@
+ 
+ void updateRanks(float deltaFrame)
+ {
++  int new_var;
+   stKartData *data = (stKartData *) m_stageData;
+   if (data)
+   {
+     m_bgState = 10;
+     bool allOnFinalLap = true;
+     __alloca(data->m_kartNum * (sizeof(int)));
++    new_var = 9;
+     {
+-      u8 i = 0;
++      u8 i;
+       u8 kartNum = data->m_kartNum;
+       for (; i != kartNum; i++)
+       {
+@@ -37858,9 +37860,10 @@
+         {
+           if (m_warningState == 10)
+           {
++            i = 0;
+             m_warningState = 0;
+           }
+-          m_bgState = 9;
++          m_bgState = new_var;
+         }
+         if ((kart->m_checkpoint > 90) && (kart->m_isRacing == true))
+         {

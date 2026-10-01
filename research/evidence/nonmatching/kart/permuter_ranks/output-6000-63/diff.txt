@@ -1,0 +1,25 @@
+--- before
++++ after
+@@ -37904,16 +37904,21 @@
+               else
+                 if (kart->m_lap == other->m_lap)
+               {
+-                if (kart->m_checkpoint < other->m_checkpoint)
++                if (kart->m_checkpoint < ((0, other->m_checkpoint)))
+                 {
+                   isBehind = true;
+                 }
+                 else
++                {
+                   if (kart->m_checkpoint == other->m_checkpoint)
+                 {
+                   if (kart->m_distance < other->m_distance)
+                   {
+                     isBehind = true;
++                    }
++                  }
++                  if ((j && j) && j)
++                  {
+                   }
+                 }
+               }

@@ -1,0 +1,28 @@
+--- before
++++ after
+@@ -37875,6 +37875,9 @@
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
++        if (1)
++        {
++        }
+         if (allOnFinalLap == true)
+         {
+           kart->m_lap -= 10;
+@@ -37917,13 +37920,11 @@
+                   }
+                 }
+               }
+-              if (isBehind == true)
+-              {
+-                kart->m_rank++;
+-              }
++ do { if (isBehind == true) { kart->m_rank++; } } while (0);
+             }
+           }
+ 
++ do { } while (0);
+         }
+       }
+ 

@@ -1,0 +1,23 @@
+--- before
++++ after
+@@ -37835,6 +37835,11 @@
+ 
+ 
+ 
++inline int inline_fn(u32 arg0, stKartRecord *arg1)
++{
++  return arg0 == arg1->m_checkpoint;
++}
++
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
+@@ -37909,7 +37914,7 @@
+                   isBehind = true;
+                 }
+                 else
+-                  if (kart->m_checkpoint == other->m_checkpoint)
++                  if (inline_fn(kart->m_checkpoint, other))
+                 {
+                   if (kart->m_distance < other->m_distance)
+                   {

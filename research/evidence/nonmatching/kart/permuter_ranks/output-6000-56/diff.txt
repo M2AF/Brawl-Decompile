@@ -1,0 +1,69 @@
+--- before
++++ after
+@@ -37838,6 +37838,7 @@
+ void updateRanks(float deltaFrame)
+ {
+   stKartData *data = (stKartData *) m_stageData;
++  int new_var;
+   if (data)
+   {
+     m_bgState = 10;
+@@ -37850,7 +37851,7 @@
+       {
+         stKartRecord *kart = &m_karts[i];
+         kart->m_rank = 0;
+-        if (kart->m_lap < 10)
++        if (kart->m_lap < ((0, 10)))
+         {
+           allOnFinalLap = false;
+         }
+@@ -37870,7 +37871,7 @@
+ 
+     }
+     {
+-      u8 i = 0;
++      u8 i = (0, new_var = 0);
+       u8 kartNum = data->m_kartNum;
+       for (; i != kartNum; i++)
+       {
+@@ -37883,13 +37884,13 @@
+ 
+     }
+     {
+-      u8 i = 0;
++      u8 i = new_var;
+       u8 kartNum = data->m_kartNum;
+       for (; i != kartNum; i++)
+       {
+         stKartRecord *kart = &m_karts[i];
+         {
+-          u8 j = 0;
++          u8 j = new_var;
+           u8 otherNum = data->m_kartNum;
+           for (; j != otherNum; j++)
+           {
+@@ -37897,7 +37898,7 @@
+             {
+               stKartRecord *other = &m_karts[j];
+               bool isBehind = false;
+-              if (kart->m_lap < other->m_lap)
++              if (((new_var, kart))->m_lap < other->m_lap)
+               {
+                 isBehind = true;
+               }
+@@ -37928,13 +37929,13 @@
+       }
+ 
+     }
+-    if ((m_isZoomedOut == true) && (m_warningState != 0))
++    if ((m_isZoomedOut == true) && (m_warningState != new_var))
+     {
+       zoomInCamera();
+       m_isZoomedOut = false;
+     }
+     else
+-      if ((m_isZoomedOut == false) && (m_warningState == 0))
++      if ((m_isZoomedOut == ((0, false))) && (m_warningState == new_var))
+     {
+       zoomOutCamera(225.0f, 275.0f);
+       m_isZoomedOut = true;

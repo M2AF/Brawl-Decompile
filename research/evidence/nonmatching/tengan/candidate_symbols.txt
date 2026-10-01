@@ -1,0 +1,233 @@
+
+build/RSBE01_01/src/mo_stage/st_tengan/gr_tengan.o:     file format elf32-powerpc
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 gr_tengan.cpp
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l    d  .data	00000000 .data
+00000000 l     O .data	00000001 @14988
+00000000 l       .data	00000000 ...data.0
+00000004 l     O .data	0000000f @15007
+00000014 l     O .data	0000000b @15008
+00000020 l     O .data	0000000d @15009
+00000030 l     O .data	0000000c @15010
+0000003c l     O .data	0000000e @15011
+00000000 l     O .rodata	00000004 @15018
+00000000 l       .rodata	00000000 ...rodata.0
+00000004 l     O .rodata	00000004 @15053
+00000008 l     O .rodata	00000008 @15160
+00000010 l     O .rodata	00000004 @15225
+00000014 l     O .rodata	00000004 @15226
+00000220 l     O .data	0000000f @14490
+00000230 l     O .data	0000002c @14491
+00000448 l     O .data	0000000e @14492
+00000458 l     O .data	00000024 @14493
+00000658 l     O .data	0000000b @14494
+00000664 l     O .data	0000002c @14495
+00000860 l     O .data	00000009 @14496
+0000086c l     O .data	00000024 @14497
+00000898 l     O .data	0000000b @14498
+000008a4 l     O .data	0000001c @14499
+000008c8 l     O .data	0000000a @14500
+000008d4 l     O .data	00000014 @14501
+000008f0 l     O .data	00000007 @14502
+000008f8 l     O .data	0000000c @14503
+00000910 l     O .data	00000007 @14561
+00000698 g     O .data	000001c8 __vt__8grTengan
+00000000 g     F .text	000000d4 create__8grTenganFiPCcPCc
+00000000         *UND*	00000000 __nw__FUlQ25Heaps8HeapType
+00000000         *UND*	00000000 __ct__10grYakumonoFPCc
+00000000         *UND*	00000000 memset
+000000d4  w    F .text	00000008 setMdlIndex__6GroundFi
+000000dc g     F .text	00000058 __dt__8grTenganFv
+00000000         *UND*	00000000 __dt__10grYakumonoFv
+00000000         *UND*	00000000 __dl__FPv
+00000134 g     F .text	00000004 update__8grTenganFf
+00000000         *UND*	00000000 update__9grGimmickFf
+00000138 g     F .text	0000005c setTgtNode__8grTenganFPCc
+00000000         *UND*	00000000 strcpy
+00000000         *UND*	00000000 strncpy
+00000488 g     O .data	000001d0 __vt__10grTenganBg
+00000194 g     F .text	000000ec create__10grTenganBgFiPCcPCc
+00000280 g     F .text	0000005c __dt__10grTenganBgFv
+000002dc g     F .text	00000108 update__10grTenganBgFf
+00000268 g     O .data	000001e0 __vt__13grTenganFloor
+000003e4 g     F .text	00000104 create__13grTenganFloorFiPCcPCc
+000004e8 g     F .text	00000058 __dt__13grTenganFloorFv
+00000540 g     F .text	00000074 update__13grTenganFloorFf
+00000000         *UND*	00000000 g_ecMgr
+00000000         *UND*	00000000 g_sndSystem
+000005b4 g     F .text	00000340 updateFloor__13grTenganFloorFf
+00000000         *UND*	00000000 setEffect__5ecMgrF4EfID
+00000000         *UND*	00000000 setParent__5ecMgrFUlPQ34nw4r3g3d6ScnMdlUlb
+00000000         *UND*	00000000 setEnableCollisionStatus__6GroundFb
+00000000         *UND*	00000000 playSE__9sndSystemF5SndIDiiii
+000008f4  w    F .text	00000008 getStageData__6GroundFv
+000008fc g     F .text	00000030 updateVisibility__13grTenganFloorFf
+0000092c g     F .text	00000004 fn_60_6D28
+00000000         *UND*	00000000 _savegpr_25
+00000000         *UND*	00000000 _restgpr_25
+00000930 g     F .text	0000040c changeAnimation__13grTenganFloorFUlbbPf
+00000000         *UND*	00000000 unbindNodeAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
+00000000         *UND*	00000000 unbindVisibleAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
+00000000         *UND*	00000000 unbindTexAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
+00000000         *UND*	00000000 unbindTexSrtAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
+00000000         *UND*	00000000 unbindMatColAnim__16gfModelAnimationFPQ34nw4r3g3d6ScnMdl
+00000000         *UND*	00000000 GetResAnmChrNumEntries__Q34nw4r3g3d7ResFileFv
+00000000         *UND*	00000000 fn_8018D6D8
+00000000         *UND*	00000000 getMEMAllocator__13gfHeapManagerFQ25Heaps8HeapType
+00000000         *UND*	00000000 Construct__Q34nw4r3g3d12AnmObjChrResFP12MEMAllocatorPiQ34nw4r3g3d9ResAnmChrQ34nw4r3g3d6ResMdlb
+00000000         *UND*	00000000 Destroy__Q34nw4r3g3d6G3dObjFv
+00000000         *UND*	00000000 GetResAnmVisNumEntries__Q34nw4r3g3d7ResFileFv
+00000000         *UND*	00000000 fn_8018D8E0
+00000000         *UND*	00000000 Construct__Q34nw4r3g3d12AnmObjVisResFP12MEMAllocatorPiQ34nw4r3g3d9ResAnmVisQ34nw4r3g3d6ResMdl
+00000000         *UND*	00000000 GetResAnmTexPatNumEntries__Q34nw4r3g3d7ResFileFv
+00000000         *UND*	00000000 fn_8018DCF0
+00000000         *UND*	00000000 Construct__Q34nw4r3g3d15AnmObjTexPatResFP12MEMAllocatorPiQ34nw4r3g3d12ResAnmTexPatQ34nw4r3g3d6ResMdlb
+00000000         *UND*	00000000 GetResAnmTexSrtNumEntries__Q34nw4r3g3d7ResFileFv
+00000000         *UND*	00000000 fn_8018DEF8
+00000000         *UND*	00000000 Construct__Q34nw4r3g3d15AnmObjTexSrtResFP12MEMAllocatorPiQ34nw4r3g3d12ResAnmTexSrtQ34nw4r3g3d6ResMdlb
+00000000         *UND*	00000000 GetResAnmClrNumEntries__Q34nw4r3g3d7ResFileFv
+00000000         *UND*	00000000 fn_8018DAE8
+00000000         *UND*	00000000 Construct__Q34nw4r3g3d15AnmObjMatClrResFP12MEMAllocatorPiQ34nw4r3g3d9ResAnmClrQ34nw4r3g3d6ResMdlb
+00000000         *UND*	00000000 bind__16gfModelAnimationFPQ34nw4r3g3d6ScnMdlP16gfModelAnimation
+00000000         *UND*	00000000 setFrame__16gfModelAnimationFd
+00000000         *UND*	00000000 setUpdateRate__16gfModelAnimationFf
+00000000         *UND*	00000000 setLoop__16gfModelAnimationFd
+00000000         *UND*	00000000 getFrameCount__16gfModelAnimationFd
+00000d3c g     F .text	000000bc create__14grTenganAshibaFiPCcPCc
+00000df8 g     F .text	000000d0 __ct__14grTenganAshibaFPCc
+0000004c g     O .data	000001d4 __vt__14grTenganAshiba
+00000ec8 g     F .text	0000005c __dt__14grTenganAshibaFv
+00000f24 g     F .text	00000074 update__14grTenganAshibaFf
+00000f98 g     F .text	00000354 updatePlatform__14grTenganAshibaFf
+00000000         *UND*	00000000 randf__Fv
+000012ec g     F .text	000000b0 updatePosition__14grTenganAshibaFf
+00000000         *UND*	00000000 EnableScnMdlCallbackTiming__Q34nw4r3g3d12ScnMdlSimpleFUl
+0000139c  w    F .text	00000008 adventureEventGetItem__6GroundFiP13stTriggerData
+000013a4  w    F .text	00000008 getInitializeInfo__6GroundFi
+000013ac  w    F .text	00000004 setInitializeInfo__6GroundFi
+000013b0  w    F .text	00000004 setInitializeFlag__6GroundFv
+000013b4  w    F .text	00000010 disableCalcCollision__6GroundFv
+000013c4  w    F .text	00000010 enableCalcCollision__6GroundFv
+000013d4  w    F .text	0000000c isEnableCalcCollision__6GroundFv
+000013e0  w    F .text	00000008 getMdlIndex__6GroundFv
+000013e8  w    F .text	00000004 initStageData__6GroundFv
+000013ec  w    F .text	00000008 setStageData__6GroundFPv
+000013f4  w    F .text	0000001c getModelCount__6GroundFv
+00000000         *UND*	00000000 GetResMdlNumEntries__Q34nw4r3g3d7ResFileCFv
+00001410  w    F .text	00000008 getTransparencyFlag__9grGimmickFv
+00001418  w    F .text	00000008 getGimmickData__9grGimmickFv
+00001420  w    F .text	00000008 setGimmickData__9grGimmickFPv
+00001428  w    F .text	00000008 getTgtNode__8grTenganFv
+00001430  w    F .text	00000008 setBounds__14grTenganAshibaFPf
+00000260  w    O .data	00000008 __RTTI__14grTenganAshiba
+00000000         *UND*	00000000 init__6gfTaskFv
+00000000         *UND*	00000000 processDebug__6gfTaskFv
+00000000         *UND*	00000000 renderXlu__6gfTaskFv
+00000000         *UND*	00000000 renderOpa__6gfTaskFv
+00000000         *UND*	00000000 processEnd__6gfTaskFv
+00000000         *UND*	00000000 processEffect__6gfTaskFv
+00000000         *UND*	00000000 processFixCamera__6gfTaskFv
+00000000         *UND*	00000000 processCamera__6gfTaskFv
+00000000         *UND*	00000000 processHit__6gfTaskFv
+00000000         *UND*	00000000 processCatch__6gfTaskFv
+00000000         *UND*	00000000 processCollision__6gfTaskFv
+00000000         *UND*	00000000 processPreCollision__6gfTaskFv
+00000000         *UND*	00000000 processFixPosition__6gfTaskFv
+00000000         *UND*	00000000 processMapCorrection__6gfTaskFv
+00000000         *UND*	00000000 processPreMapCorrection__6gfTaskFv
+00000000         *UND*	00000000 processBegin__6gfTaskFv
+00000000         *UND*	00000000 processDefault__6gfTaskFv
+00000000         *UND*	00000000 updateG3dProcCalcWorld__6GroundFv
+00000000         *UND*	00000000 setMatAlpha__6GroundFUlUl
+00000000         *UND*	00000000 setMatAlphaMul__6GroundFUlUl
+00000000         *UND*	00000000 setMotionLoop__6GroundFbUl
+00000000         *UND*	00000000 getMotionFrame__6GroundFUl
+00000000         *UND*	00000000 setMotionFrame__6GroundFfUl
+00000000         *UND*	00000000 getNodeScale__6GroundFP5Vec3fUlUl
+00000000         *UND*	00000000 getNodeScale__6GroundFP5Vec3fUlPCc
+00000000         *UND*	00000000 setNodeCollision__6GroundFbUlUlb
+00000000         *UND*	00000000 setNodeCollision__6GroundFbUlPCcb
+00000000         *UND*	00000000 isNodeVisible__6GroundFUlUl
+00000000         *UND*	00000000 setNodeVisibilityAll__6GroundFbUl
+00000000         *UND*	00000000 setNodeVisibility__6GroundFbUlUlbb
+00000000         *UND*	00000000 setNodeVisibility__6GroundFbUlPCcbb
+00000000         *UND*	00000000 getNodeMatrix__6GroundFP6MatrixUlUl
+00000000         *UND*	00000000 getNodeMatrix__6GroundFP6MatrixUlPCc
+00000000         *UND*	00000000 getNodePosition__6GroundFP5Vec3fUlUl
+00000000         *UND*	00000000 getNodePosition__6GroundFP5Vec3fUlPCc
+00000000         *UND*	00000000 getNodeIndex__6GroundFUlPCc
+00000000         *UND*	00000000 unloadData__6GroundFv
+00000000         *UND*	00000000 receiveCollMsg_Attack__6GroundFP12grCollStatusP16grCollisionJoint
+00000000         *UND*	00000000 receiveCollMsg_Wall__6GroundFP12grCollStatusP16grCollisionJointb
+00000000         *UND*	00000000 receiveCollMsg_Heading__6GroundFP12grCollStatusP16grCollisionJointb
+00000000         *UND*	00000000 receiveCollMsg_Landing__6GroundFP12grCollStatusP16grCollisionJointb
+00000000         *UND*	00000000 receiveCollMsg__6GroundFiP12grCollStatusP16grCollisionJoint
+00000000         *UND*	00000000 setVisibilityByClipping__6GroundFUl
+00000000         *UND*	00000000 setVisibility__6GroundFUl
+00000000         *UND*	00000000 setupMelee__6GroundFv
+00000000         *UND*	00000000 loadGroundData__6GroundFQ34nw4r3g3d7ResFileUlQ211gfSceneRoot9LayerType
+00000000         *UND*	00000000 renderPre__6GroundFv
+00000000         *UND*	00000000 processGameProc__6GroundFv
+00000000         *UND*	00000000 processAnim__6GroundFv
+00000000         *UND*	00000000 dbDispInvalidatedByCameraClippingSphere__9grGimmickFv
+00000000         *UND*	00000000 setSimpleEffectVisibleProduction__9grGimmickFv
+00000000         *UND*	00000000 createEffectVisibleProductionForExcel__9grGimmickFPQ29grGimmick16SimpleEffectDataPUlPP19grVisibleProduction
+00000000         *UND*	00000000 createSoundEffectVisibleProductionForExcel__9grGimmickFUlUlUl
+00000000         *UND*	00000000 createFadeVisibleProduction__9grGimmickFf
+00000000         *UND*	00000000 changeNodeAnim__9grGimmickFUlUl
+00000000         *UND*	00000000 fixedPosition__9grGimmickFf
+00000000         *UND*	00000000 updateCallback__9grGimmickFUl
+00000000         *UND*	00000000 setTransparencyFlag__9grGimmickFc
+00000000         *UND*	00000000 invalidatedByCameraClipping__9grGimmickFv
+00000000         *UND*	00000000 setMotionRatio__9grGimmickFf
+00000000         *UND*	00000000 setNode__9grGimmickFv
+00000000         *UND*	00000000 setVisibilityAttachedEffect__9grGimmickFUl
+00000000         *UND*	00000000 bindData__9grGimmickFP9gfArchive
+00000000         *UND*	00000000 renderDebug__9grGimmickFv
+00000000         *UND*	00000000 isEnableAttackAttribute__10grYakumonoFUlUl
+00000000         *UND*	00000000 isEnableAttackPersonAttacked__10grYakumonoFUlUlUl
+00000000         *UND*	00000000 setAttackGimmickDetails__10grYakumonoFP21soCollisionAttackDataffffiP5Vec3fiiiiUlUlUlbUlQ221soCollisionAttackData9AttributeQ221soCollisionAttackData10SoundLevelQ221soCollisionAttackData14SoundAttributebbbbbbUlUlbbbQ221soCollisionAttackData7LrCheckbbbbbQ221soCollisionAttackData6Regionb
+00000000         *UND*	00000000 setSoCollisionAttackData__10grYakumonoFP21soCollisionAttackDataPQ29grGimmick10AttackDataPQ29grGimmick13AttackDetails
+00000000         *UND*	00000000 setAttackGimmick__10grYakumonoFiiUlPQ29grGimmick10AttackDataPQ29grGimmick13AttackDetails
+00000000         *UND*	00000000 setAreaGimmick__10grYakumonoFP10soAreaDataP19soSet<10soAreaData>P10ykAreaDatab
+00000000         *UND*	00000000 setOffsetAttack__10grYakumonoFP5Vec3fi
+00000000         *UND*	00000000 getTeamYakumono__10grYakumonoFPi
+00000000         *UND*	00000000 setTeamYakumono__10grYakumonoFUlUl
+00000000         *UND*	00000000 setTeamYakumonoOwnerId__10grYakumonoFUl
+00000000         *UND*	00000000 setSleepArea__10grYakumonoFb
+00000000         *UND*	00000000 disableArea__10grYakumonoFv
+00000000         *UND*	00000000 enableArea__10grYakumonoFv
+00000000         *UND*	00000000 disableAttack__10grYakumonoFUl
+00000000         *UND*	00000000 disableHit__10grYakumonoFUlUl
+00000000         *UND*	00000000 enableHit__10grYakumonoFUlUl
+00000000         *UND*	00000000 disableYakumono__10grYakumonoFUlUl
+00000000         *UND*	00000000 enableYakumono__10grYakumonoFUl
+00000000         *UND*	00000000 onGimmickEvent__10grYakumonoFP18soGimmickEventArgsPi
+00000000         *UND*	00000000 onInflictEach__10grYakumonoFP14soCollisionLogf
+00000000         *UND*	00000000 onInflict__10grYakumonoFP14soCollisionLogUlf
+00000000         *UND*	00000000 onDamage__10grYakumonoFiP8soDamageP20soDamageAttackerInfo
+00000000         *UND*	00000000 setTransparency__10grYakumonoFUlUl
+00000000         *UND*	00000000 preExit__10grYakumonoFv
+00000000         *UND*	00000000 setValidAttachedEffect__10grYakumonoFUl
+00000000         *UND*	00000000 setValid__10grYakumonoFUl
+00000000         *UND*	00000000 startup__10grYakumonoFP9gfArchiveUlQ211gfSceneRoot9LayerType
+00000000         *UND*	00000000 processUpdate__10grYakumonoFv
+00000890  w    O .data	00000008 __RTTI__8grTengan
+000008c0  w    O .data	00000008 __RTTI__10grYakumono
+000008e8  w    O .data	00000008 __RTTI__9grGimmick
+00000908  w    O .data	00000008 __RTTI__6Ground
+00000918  w    O .data	00000008 __RTTI__6gfTask
+00001438  w    F .text	00000008 setKind__13grTenganFloorFUc
+00001440  w    F .text	00000008 setEventFlags__13grTenganFloorFPUc
+00001448  w    F .text	00000008 setEventTime__13grTenganFloorFPf
+00000480  w    O .data	00000008 __RTTI__13grTenganFloor
+00000000         *UND*	00000000 getTgtNode__9grGimmickFv
+00000000         *UND*	00000000 setTgtNode__9grGimmickFPCc
+00001450  w    F .text	00000008 setPlatformPositions__10grTenganBgFP5Vec3f
+00001458  w    F .text	00000008 setDialgaPosition__10grTenganBgFP5Vec3f
+00000690  w    O .data	00000008 __RTTI__10grTenganBg
+
+

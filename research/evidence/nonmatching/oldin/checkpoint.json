@@ -1,0 +1,18 @@
+{
+  "root": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex4",
+  "branch": "codex/stages",
+  "instruction_diagnostics": "41/53; not byte/relocation acceptance",
+  "source_linked_additions": 0,
+  "full_rel_match": false,
+  "original_sha1": "905f78be9ff518c881f446ef8c9d667252db0782",
+  "source_rel_sha1": "89eb72deac66fa49957ac9e65161b681747c4143",
+  "sha256": {
+    "src/mo_stage/st_oldin/st_oldin.cpp": "7a0d20d604d6dce74dc87a77584047426614965834fd7be6c889a7329bf396c5",
+    "include/st_oldin/st_oldin.h": "264d180b7e5268b18a0e3fb4bfea567eca26ddd9471e6e99e7760b30452ef9b2",
+    "include/st_oldin/gr_oldin.h": "b9d003162f4cbf522cd0a53cb804cd63e1463bb3b2b62c52f03152a435baefaf",
+    "config/RSBE01_01/rels/st_oldin/splits.txt": "891b2fb645d18f028c8eeeaf11541558838514f47ded3c84c2475fd48cf98498",
+    "config/RSBE01_01/rels/st_oldin/symbols.txt": "99ea6d80b94d0577f77dd39e81b204469aad22da4d398293ced7efb053938d5b",
+    "config/RSBE01_01/symbols.txt": "779c05096e812448489c0f1f1367ae8a9e646ccf54236626035358bb3cd3b732",
+    "build\\RSBE01_01\\src\\mo_stage\\st_oldin\\st_oldin.o": "0f55e6d9cd659ce8527a488816860f745803ce356fa74f1540ee554927fded98"
+  }
+}

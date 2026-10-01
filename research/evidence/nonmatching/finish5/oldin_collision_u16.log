@@ -1,0 +1,51 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex5 (codex/finish)
+DIFF __dt__7stOldinFv                         __dt__7stOldinFv                              48 52
+DIFF createObj__7stOldinFv                    createObj__7stOldinFv                         925 961
+DIFF fn_53_129C                               fn_53_129C                                    192 204
+DIFF fn_53_159C                               fn_53_159C                                    571 583
+DIFF fn_53_1E88                               fn_53_1E88                                    361 349
+DIFF fn_53_242C                               fn_53_242C                                    632 602
+DIFF fn_53_2E0C                               fn_53_2E0C                                    345 356
+DIFF fn_53_3370                               fn_53_3370                                    515 540
+DIFF fn_53_3B7C                               fn_53_3B7C                                    73 94
+DIFF fn_53_3CA0                               fn_53_3CA0                                    67 91
+DIFF fn_53_3DAC                               fn_53_3DAC                                    70 95
+DIFF fn_53_3EC4                               fn_53_3EC4                                    36 37
+    --- target
+    +++ candidate
+    @@ -8,14 +8,14 @@
+     cmpwi   r3,0
+     beq <addr>
+    -lwz     r29,76(r3)
+    -cmpwi   r29,0
+    +lwz     r28,76(r3)
+    +cmpwi   r28,0
+     beq <addr>
+    -lhz     r27,6(r29)
+    -li      r28,0
+    +lhz     r29,6(r28)
+    +li      r27,0
+     li      r31,24576
+     li      r30,0
+     b <addr>
+    -mr      r3,r29
+    -mr      r4,r28
+    +mr      r3,r28
+    +clrlwi  r4,r27,16
+     bl <addr>
+     cmpwi   r3,0
+    @@ -26,6 +26,7 @@
+     b <addr>
+     sth     r31,82(r3)
+    -addi    r28,r28,1
+    -cmplw   r28,r27
+    +addi    r27,r27,1
+    +clrlwi  r0,r27,16
+    +cmplw   r0,r29
+     bne <addr>
+     addi    r11,r1,32
+Candidate-only functions (often unreferenced weak inlines the linker strips): __dt__15stOldinOpaque84Fv, __dt__Q34nw4r2ut5ColorFv
+SAME section .rodata: target 228 bytes, candidate 228 bytes
+SAME section .data: target 1728 bytes, candidate 1728 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 41/53. Section contents match. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
