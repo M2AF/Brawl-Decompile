@@ -1,0 +1,6 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+base                         fn_81_25C4__11stDxBigBlueFf: 26 diff lines, functions matching 92/101
+lower_bound                  fn_81_25C4__11stDxBigBlueFf: 39 diff lines, functions matching 92/101
+divisor_first                fn_81_25C4__11stDxBigBlueFf: 35 diff lines, functions matching 92/101
+numbers_first                fn_81_25C4__11stDxBigBlueFf: 35 diff lines, functions matching 92/101
+Best: base (26), divisor_first (35), numbers_first (35)

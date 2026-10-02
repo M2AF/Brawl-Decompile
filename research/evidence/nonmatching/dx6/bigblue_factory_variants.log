@@ -1,0 +1,6 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+base                         fn_81_130C__11stDxBigBlueFi: 42 diff lines, functions matching 85/101
+ground_decl_first            fn_81_130C__11stDxBigBlueFi: 0 diff lines, functions matching 86/101
+collision_int                fn_81_130C__11stDxBigBlueFi: 42 diff lines, functions matching 85/101
+collision_byte               fn_81_130C__11stDxBigBlueFi: 42 diff lines, functions matching 85/101
+Best: ground_decl_first (0), base (42), collision_byte (42)

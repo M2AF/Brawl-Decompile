@@ -1,0 +1,5 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+base                         fn_81_1714__11stDxBigBlueFf: 11 diff lines, functions matching 92/101
+index_int                    fn_81_1714__11stDxBigBlueFf: 5 diff lines, functions matching 92/101
+index_end_label              fn_81_1714__11stDxBigBlueFf: 2 diff lines, functions matching 92/101
+Best: index_end_label (2), index_int (5), base (11)

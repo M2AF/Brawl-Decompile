@@ -1,0 +1,23 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+DIFF __ct__11stDxBigBlueFv                    __ct__11stDxBigBlueFv                         273 273
+DIFF fn_81_11BC__11stDxBigBlueFv              fn_81_11BC__11stDxBigBlueFv                   84 84
+DIFF fn_81_130C__11stDxBigBlueFi              fn_81_130C__11stDxBigBlueFi                   87 89
+DIFF fn_81_1714__11stDxBigBlueFf              fn_81_1714__11stDxBigBlueFf                   130 132
+DIFF fn_81_19A8__11stDxBigBlueFf              fn_81_19A8__11stDxBigBlueFf                   183 179
+DIFF fn_81_1DE4__11stDxBigBlueFf              fn_81_1DE4__11stDxBigBlueFf                   258 261
+DIFF fn_81_21EC__11stDxBigBlueFf              fn_81_21EC__11stDxBigBlueFf                   60 63
+DIFF fn_81_22DC__11stDxBigBlueFf              fn_81_22DC__11stDxBigBlueFf                   96 96
+DIFF fn_81_245C__11stDxBigBlueFf              fn_81_245C__11stDxBigBlueFf                   90 92
+DIFF fn_81_25C4__11stDxBigBlueFf              fn_81_25C4__11stDxBigBlueFf                   222 222
+DIFF fn_81_2DB4__11stDxBigBlueFif             fn_81_2DB4__11stDxBigBlueFif                  259 261
+DIFF fn_81_31C0__11stDxBigBlueFf              fn_81_31C0__11stDxBigBlueFf                   163 160
+DIFF fn_81_344C__11stDxBigBlueFf              fn_81_344C__11stDxBigBlueFf                   229 235
+DIFF fn_81_3900__11stDxBigBlueFPQ34nw4r4math5_VEC3 fn_81_3900__11stDxBigBlueFPQ34nw4r4math5_VEC3 39 39
+DIFF fn_81_399C__11stDxBigBlueFPfPQ34nw4r4math5_VEC3Ul fn_81_399C__11stDxBigBlueFPfPQ34nw4r4math5_VEC3Ul 90 90
+DIFF fn_81_3B04__11stDxBigBlueFPfPQ34nw4r4math5_VEC3Ul fn_81_3B04__11stDxBigBlueFPfPQ34nw4r4math5_VEC3Ul 70 98
+DIFF fn_81_3C1C__11stDxBigBlueFUc             fn_81_3C1C__11stDxBigBlueFUc                  56 56
+Candidate-only functions (often unreferenced weak inlines the linker strips): __dt__Q44nw4r2ut26@unnamed@st_dxbigblue_cpp@11NonCopyableFv, __dt__Q34nw4r2ut12LinkListNodeFv, __dt__Q34nw4r2ut29LinkList<15stDxBigBlueNode,0>Fv
+DIFF section .rodata: target 144 bytes, candidate 140 bytes
+SAME section .data: target 1960 bytes, candidate 1960 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 84/101. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

@@ -1,0 +1,52 @@
+# Game images and disc dumps
+*.iso
+*.rvz
+*.wbfs
+*.gcm
+*.ciso
+*.wia
+*.gcz
+*.wad
+
+# Agent-only tools and coordination state
+/.claude/
+/.codex/
+/research/claude_tools/
+/research/codex_parallel/
+/research/HANDOFF.md
+/research/HANDOFF_LOG.md
+/research/HANDOFF_ARCHIVE.md
+/research/CLAUDE_HANDOFF.md
+/research/CLAUDE_STATUS.md
+/research/CODEX_RESUME.md
+/research/evidence/handoff_protocol_check.log
+
+# Separate working checkouts; each has its own Git repository
+/brawl/
+/brawl-codex6/
+/brawl-codex*/
+/decomp-permuter/
+
+# Local toolchain and generated build output
+/.venv/
+build/
+.ninja_*
+build.ninja
+objdiff.json
+compile_commands.json
+/*.log
+**/__pycache__/
+*.pyc
+.mypy_cache/
+.cache/
+
+# Local editor state
+.claude/
+.codex/
+.idea/
+.vs/
+.vscode/
+*.swp
+Thumbs.db
+desktop.ini
+Super Smash Bros. Brawl.iso

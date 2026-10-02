@@ -9,7 +9,7 @@ repo: ../brawl
 verify: cd ../brawl; ../.venv/Scripts/python.exe configure.py --version RSBE01_01; Remove-Item -LiteralPath build/RSBE01_01/ok -ErrorAction SilentlyContinue; ../.venv/Scripts/ninja.exe
 verified: 33d3f02 · promote gates 1-4 PASS at 33d3f02 · 2026-10-01T20:13-03:00
 head: 33d3f02 (rsbe01_01-support) clean
-updated: 2026-10-01T20:46-03:00 · codex
+updated: 2026-10-01T21:17-03:00 · codex
 
 ## Now
 - HEAD 9ec5405 on rsbe01_01-support, clean; local only. 193 source TUs; 127/127 (clean rebuild + independent via autopilot).

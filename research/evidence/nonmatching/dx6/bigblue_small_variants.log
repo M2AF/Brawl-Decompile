@@ -1,0 +1,7 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+base                         fn_81_245C__11stDxBigBlueFf: 50 diff lines, functions matching 90/101
+counter_first                fn_81_245C__11stDxBigBlueFf: 50 diff lines, functions matching 91/101
+ordinal_u32                  fn_81_245C__11stDxBigBlueFf: 0 diff lines, functions matching 91/101
+car_before_ordinal           fn_81_245C__11stDxBigBlueFf: 0 diff lines, functions matching 91/101
+combined                     fn_81_245C__11stDxBigBlueFf: 0 diff lines, functions matching 92/101
+Best: combined (0), car_before_ordinal (0), ordinal_u32 (0)

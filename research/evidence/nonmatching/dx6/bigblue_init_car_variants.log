@@ -1,0 +1,5 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+base                         fn_81_25C4__11stDxBigBlueFf: 94 diff lines, functions matching 92/101
+recover_width_reload         fn_81_25C4__11stDxBigBlueFf: 26 diff lines, functions matching 92/101
+wide_ordinals                fn_81_25C4__11stDxBigBlueFf: 61 diff lines, functions matching 92/101
+Best: recover_width_reload (26), wide_ordinals (61), base (94)

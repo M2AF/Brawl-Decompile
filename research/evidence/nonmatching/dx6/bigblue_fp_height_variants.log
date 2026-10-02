@@ -1,0 +1,7 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+base                         fn_81_3B04__11stDxBigBlueFPfP5Vec3fUl: 44 diff lines, functions matching 85/101
+decl_xy                      fn_81_3B04__11stDxBigBlueFPfP5Vec3fUl: 26 diff lines, functions matching 85/101
+decl_target                  fn_81_3B04__11stDxBigBlueFPfP5Vec3fUl: 26 diff lines, functions matching 85/101
+decl_height_last             fn_81_3B04__11stDxBigBlueFPfP5Vec3fUl: 44 diff lines, functions matching 85/101
+query_before_car             fn_81_3B04__11stDxBigBlueFPfP5Vec3fUl: 44 diff lines, functions matching 85/101
+Best: decl_target (26), decl_xy (26), base (44)

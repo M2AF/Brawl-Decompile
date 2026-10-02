@@ -1,0 +1,1565 @@
+{
+  "checkout": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex6",
+  "head": "147b9ca72c66e78181cc771760b5dfe5d7925636",
+  "branch": "codex/dx",
+  "unit": "mo_stage/st_dxbigblue/st_dxbigblue"
+}
+SAME create__11stDxBigBlueFv                  create__11stDxBigBlueFv                       13 13
+SAME __ct__11stDxBigBlueFv                    __ct__11stDxBigBlueFv                         273 273
+SAME __ct__16stDxBigBlueSoundFv               __ct__16stDxBigBlueSoundFv                    12 12
+SAME __dt__16stDxBigBlueSoundFv               __dt__16stDxBigBlueSoundFv                    22 22
+SAME __dt__11stDxBigBlueFv                    __dt__11stDxBigBlueFv                         42 42
+SAME loading__11stDxBigBlueFv                 loading__11stDxBigBlueFv                      2 2
+SAME createObj__11stDxBigBlueFv               createObj__11stDxBigBlueFv                    217 217
+SAME fn_81_984__11stDxBigBlueFi               fn_81_984__11stDxBigBlueFi                    70 70
+SAME setStageData__6GroundFPv                 setStageData__6GroundFPv                      2 2
+SAME set1CC__13grDxBigBlueBgFPv               set1CC__13grDxBigBlueBgFPv                    2 2
+SAME set1D0__13grDxBigBlueBgFPv               set1D0__13grDxBigBlueBgFPv                    2 2
+SAME set1D4__13grDxBigBlueBgFPv               set1D4__13grDxBigBlueBgFPv                    2 2
+SAME fn_81_ABC__11stDxBigBlueFi               fn_81_ABC__11stDxBigBlueFi                    78 78
+SAME set1D0__14grDxBigBlueFlyFPv              set1D0__14grDxBigBlueFlyFPv                   2 2
+SAME set1D4__14grDxBigBlueFlyFPv              set1D4__14grDxBigBlueFlyFPv                   2 2
+SAME fn_81_C04__11stDxBigBlueFi               fn_81_C04__11stDxBigBlueFi                    69 69
+SAME set1DC__24grDxBigBlueAshibaTrainerFPv    set1DC__24grDxBigBlueAshibaTrainerFPv         2 2
+SAME fn_81_D20__11stDxBigBlueFi               fn_81_D20__11stDxBigBlueFi                    55 55
+SAME fn_81_DFC__11stDxBigBlueFi               fn_81_DFC__11stDxBigBlueFi                    55 55
+SAME fn_81_ED8__11stDxBigBlueFUl              fn_81_ED8__11stDxBigBlueFUl                   171 171
+SAME set1D8__17grDxBigBlueCourseFPv           set1D8__17grDxBigBlueCourseFPv                2 2
+SAME set1DC__17grDxBigBlueCourseFPv           set1DC__17grDxBigBlueCourseFPv                2 2
+SAME set1E0__17grDxBigBlueCourseFPv           set1E0__17grDxBigBlueCourseFPv                2 2
+SAME set1E4__17grDxBigBlueCourseFPv           set1E4__17grDxBigBlueCourseFPv                2 2
+SAME set1E8__17grDxBigBlueCourseFUc           set1E8__17grDxBigBlueCourseFUc                2 2
+SAME set1EC__17grDxBigBlueCourseFPv           set1EC__17grDxBigBlueCourseFPv                2 2
+SAME set1F0__17grDxBigBlueCourseFPv           set1F0__17grDxBigBlueCourseFPv                2 2
+DIFF fn_81_11BC__11stDxBigBlueFv              fn_81_11BC__11stDxBigBlueFv                   84 84
+    --- target
+    +++ candidate
+    @@ -35,5 +35,5 @@
+     bl <addr>
+     stw     r29,12(r1)
+    -li      r4,29
+    +li      r0,29
+     stw     r30,8(r1)
+     lfd     f0,8(r1)
+    @@ -43,15 +43,15 @@
+     stfd    f0,16(r1)
+     lwz     r5,20(r1)
+    -clrlwi  r3,r5,24
+    -neg     r0,r3
+    -or      r0,r0,r3
+    -srawi   r0,r0,31
+    -and     r3,r5,r0
+    -clrlwi  r0,r3,24
+    -cmplwi  r0,29
+    +clrlwi  r4,r5,24
+    +neg     r3,r4
+    +or      r3,r3,r4
+    +srawi   r3,r3,31
+    +and     r3,r5,r3
+    +clrlwi  r3,r3,24
+    +cmplwi  r3,29
+     bge <addr>
+    -mr      r4,r3
+    +mr      r0,r3
+     clrlwi  r3,r28,24
+    -clrlwi  r0,r4,24
+    +clrlwi  r0,r0,24
+     add     r3,r31,r3
+     addi    r28,r28,1
+    @@ -63,13 +63,13 @@
+     stb     r5,2684(r4)
+     blt <addr>
+    -li      r29,0
+    +li      r28,0
+     lwz     r12,60(r31)
+     mr      r3,r31
+    -clrlwi  r4,r29,24
+    +clrlwi  r4,r28,24
+     lwz     r12,568(r12)
+     mtctr   r12
+     bctrl
+    -addi    r29,r29,1
+    -cmplwi  r29,30
+    +addi    r28,r28,1
+    +cmplwi  r28,30
+     blt <addr>
+     psq_l   f31,56(r1),0,0
+SAME fn_81_130C__11stDxBigBlueFi              fn_81_130C__11stDxBigBlueFi                   87 87
+SAME set1E0__14grDxBigBlueCarFPv              set1E0__14grDxBigBlueCarFPv                   2 2
+SAME set1E4__14grDxBigBlueCarFPv              set1E4__14grDxBigBlueCarFPv                   2 2
+SAME set1E8__14grDxBigBlueCarFi               set1E8__14grDxBigBlueCarFi                    2 2
+SAME set1EC__14grDxBigBlueCarFPv              set1EC__14grDxBigBlueCarFPv                   2 2
+SAME set1F0__14grDxBigBlueCarFPv              set1F0__14grDxBigBlueCarFPv                   2 2
+SAME set1F4__14grDxBigBlueCarFPv              set1F4__14grDxBigBlueCarFPv                   2 2
+SAME update__11stDxBigBlueFf                  update__11stDxBigBlueFf                       41 41
+SAME fn_81_153C__11stDxBigBlueFf              fn_81_153C__11stDxBigBlueFf                   23 23
+SAME fn_81_1598__11stDxBigBlueFf              fn_81_1598__11stDxBigBlueFf                   67 67
+SAME fn_81_16A4__11stDxBigBlueFf              fn_81_16A4__11stDxBigBlueFf                   28 28
+SAME fn_81_1714__11stDxBigBlueFf              fn_81_1714__11stDxBigBlueFf                   130 130
+SAME fn_81_191C__11stDxBigBlueFf              fn_81_191C__11stDxBigBlueFf                   35 35
+DIFF fn_81_19A8__11stDxBigBlueFf              fn_81_19A8__11stDxBigBlueFf                   183 179
+    --- target
+    +++ candidate
+    @@ -1,13 +1,13 @@
+    -stwu    r1,-144(r1)
+    +stwu    r1,-128(r1)
+     mflr    r0
+    -stw     r0,148(r1)
+    -stfd    f31,128(r1)
+    -xsmsubasp vs31,vs1,vs0
+    +stw     r0,132(r1)
+    +stfd    f31,112(r1)
+    +xxsel   vs31,vs1,vs0,vs33
+     fmr     f31,f1
+    -stw     r31,124(r1)
+    +stw     r31,108(r1)
+     lis     r31,0
+     addi    r31,r31,0
+    -stw     r30,120(r1)
+    -stw     r29,116(r1)
+    +stw     r30,104(r1)
+    +stw     r29,100(r1)
+     mr      r29,r3
+     lfs     f0,476(r3)
+    @@ -36,16 +36,16 @@
+     li      r4,0
+     lfs     f0,36(r31)
+    -stfs    f2,92(r1)
+    -stfs    f1,96(r1)
+    -stfs    f2,100(r1)
+     stfs    f2,80(r1)
+    -stfs    f0,84(r1)
+    +stfs    f1,84(r1)
+     stfs    f2,88(r1)
+    +stfs    f2,68(r1)
+    +stfs    f0,72(r1)
+    +stfs    f2,76(r1)
+     bl <addr>
+     mr      r8,r3
+    -addi    r3,r1,92
+    -addi    r4,r1,80
+    -addi    r5,r1,68
+    -addi    r6,r1,56
+    +addi    r3,r1,80
+    +addi    r4,r1,68
+    +addi    r5,r1,56
+    +addi    r6,r1,44
+     li      r7,1
+     li      r9,0
+    @@ -54,7 +54,7 @@
+     cmpwi   r3,0
+     beq <addr>
+    -lfs     f0,60(r1)
+    -lfs     f5,0(r31)
+    -fcmpo   cr0,f0,f5
+    +lfs     f0,48(r1)
+    +lfs     f3,0(r31)
+    +fcmpo   cr0,f0,f3
+     cror    eq,lt,eq
+     bne <addr>
+    @@ -65,42 +65,38 @@
+     li      r0,1
+     lfs     f0,512(r29)
+    -addi    r3,r1,20
+    +addi    r3,r1,8
+     fneg    f2,f1
+    +stb     r0,536(r29)
+     lfs     f1,0(r31)
+    -fneg    f4,f0
+    -stb     r0,536(r29)
+    +fneg    f3,f0
+    +lfs     f0,108(r30)
+     stfs    f1,40(r1)
+    -lfs     f3,108(r30)
+    -stfs    f1,52(r1)
+    +stfs    f1,28(r1)
+     psq_l   f5,40(r1),1,0
+    -lq      r0,-32720(r1)
+     stfs    f1,32(r1)
+    -vmsumshm v0,v0,v5,v0
+    +lq      r4,-32752(r1)
+     stfs    f2,36(r1)
+    -xxsldwi vs0,vs1,vs16,0
+    -lq      r2,32(r1)
+    -lfs     f0,16(r1)
+    -stfs    f3,44(r1)
+    -stfs    f4,48(r1)
+    -psq_l   f1,44(r1),0,0
+    -stfs    f0,28(r1)
+    -vmsumshm v0,v1,v2,v0
+    -xsmaddasp vs0,vs1,vs0
+    +stfs    f0,20(r1)
+    +psq_l   f1,32(r1),0,0
+    +stfs    f3,24(r1)
+    +lq      r0,16(r1)
+    +vmsumshm v0,v0,v1,v0
+    +vmsumshm v1,v4,v5,v0
+    +xsaddsp vs0,vs3,vs0
+    +xsmaddasp vs1,vs3,vs16
+    +bl <addr>
+     lfs     f1,8(r1)
+    -lfs     f0,12(r1)
+    -stfs    f1,20(r1)
+    -stfs    f0,24(r1)
+    -bl <addr>
+    -lfs     f3,124(r30)
+    -lfs     f2,20(r1)
+    -lfs     f1,24(r1)
+    -lfs     f0,28(r1)
+    -fmuls   f2,f2,f3
+    -fmuls   f1,f1,f3
+    -fmuls   f0,f0,f3
+    -stfs    f2,20(r1)
+    -stfs    f1,24(r1)
+    -stfs    f0,28(r1)
+    -stfs    f1,532(r29)
+    +lfs     f0,124(r30)
+    +lfs     f2,12(r1)
+    +fmuls   f0,f1,f0
+    +lfs     f1,16(r1)
+    +stfs    f0,8(r1)
+    +lfs     f0,124(r30)
+    +fmuls   f2,f2,f0
+    +stfs    f2,12(r1)
+    +lfs     f0,124(r30)
+    +fmuls   f0,f1,f0
+    +stfs    f0,16(r1)
+    +stfs    f2,532(r29)
+     lfs     f0,120(r30)
+     lfs     f1,508(r29)
+    @@ -114,7 +110,7 @@
+     stfs    f3,544(r29)
+     fmuls   f1,f4,f31
+    +stfs    f2,548(r29)
+    +fsubs   f0,f0,f1
+     stfs    f4,532(r29)
+    -fsubs   f0,f0,f1
+    -stfs    f2,548(r29)
+     stfs    f0,512(r29)
+     b <addr>
+    @@ -122,21 +118,21 @@
+     cmplwi  r0,1
+     bne <addr>
+    -lfs     f0,120(r30)
+    -lfs     f1,508(r29)
+    -fmuls   f4,f0,f31
+    -lfs     f0,532(r29)
+    +lfs     f1,120(r30)
+    +lfs     f0,508(r29)
+    +fmuls   f4,f1,f31
+    +lfs     f3,532(r29)
+    +lfs     f2,512(r29)
+    +lfs     f1,516(r29)
+    +fsubs   f4,f3,f4
+    +stfs    f0,540(r29)
+     lfs     f3,512(r29)
+    -lfs     f2,516(r29)
+    -fsubs   f4,f0,f4
+    -stfs    f1,540(r29)
+    -lfs     f0,512(r29)
+    -stfs    f3,544(r29)
+    -fmuls   f1,f4,f31
+    +stfs    f2,544(r29)
+    +fmuls   f0,f4,f31
+    +stfs    f1,548(r29)
+    +fsubs   f0,f3,f0
+     stfs    f4,532(r29)
+    -fsubs   f0,f0,f1
+    -stfs    f2,548(r29)
+     stfs    f0,512(r29)
+     fsubs   f1,f0,f3
+    -lfs     f0,72(r1)
+    +lfs     f0,60(r1)
+     lfs     f2,0(r30)
+     fadds   f0,f0,f1
+    @@ -146,21 +142,21 @@
+     stb     r0,536(r29)
+     lfs     f1,0(r30)
+    -lfs     f0,72(r1)
+    +lfs     f0,60(r1)
+     fsubs   f0,f1,f0
+     fadds   f0,f3,f0
+     stfs    f0,512(r29)
+     b <addr>
+    -lfs     f0,508(r29)
+    +lfs     f2,508(r29)
+    +lfs     f0,512(r29)
+    +lfs     f1,516(r29)
+    +stfs    f0,544(r29)
+     lfs     f4,512(r29)
+    -lfs     f2,516(r29)
+    -stfs    f0,540(r29)
+    -lfs     f1,512(r29)
+    -stfs    f4,544(r29)
+    +stfs    f2,540(r29)
+     lfs     f0,40(r31)
+    -stfs    f2,548(r29)
+    -lfs     f3,0(r30)
+    -lfs     f2,72(r1)
+    -fsubs   f2,f3,f2
+    -fadds   f2,f1,f2
+    +stfs    f1,548(r29)
+    +lfs     f2,0(r30)
+    +lfs     f1,60(r1)
+    +fsubs   f1,f2,f1
+    +fadds   f2,f4,f1
+     fsubs   f1,f2,f4
+     stfs    f2,512(r29)
+    @@ -168,16 +164,16 @@
+     ble <addr>
+     li      r0,1
+    -stfs    f5,532(r29)
+    +stfs    f3,532(r29)
+     stb     r0,536(r29)
+     stfs    f4,512(r29)
+     li      r0,1
+     stb     r0,2800(r29)
+    -psq_l   f31,136(r1),0,0
+    -lwz     r0,148(r1)
+    -lfd     f31,128(r1)
+    -lwz     r31,124(r1)
+    -lwz     r30,120(r1)
+    -lwz     r29,116(r1)
+    +psq_l   f31,120(r1),0,0
+    +lwz     r0,132(r1)
+    +lfd     f31,112(r1)
+    +lwz     r31,108(r1)
+    +lwz     r30,104(r1)
+    +lwz     r29,100(r1)
+     mtlr    r0
+    -addi    r1,r1,144
+    +addi    r1,r1,128
+     blr
+SAME fn_81_1C84__11stDxBigBlueFf              fn_81_1C84__11stDxBigBlueFf                   88 88
+DIFF fn_81_1DE4__11stDxBigBlueFf              fn_81_1DE4__11stDxBigBlueFf                   258 262
+    --- target
+    +++ candidate
+    @@ -1,74 +1,75 @@
+    -stwu    r1,-320(r1)
+    +stwu    r1,-304(r1)
+     mflr    r0
+    -stw     r0,324(r1)
+    -stfd    f31,304(r1)
+    -xxsel   vs31,vs1,vs0,vs36
+    -stfd    f30,288(r1)
+    -psq_st  f30,296(r1),0,0
+    -stfd    f29,272(r1)
+    -psq_st  f29,280(r1),0,0
+    -stfd    f28,256(r1)
+    -xsmaddadp vs28,vs1,vs0
+    -stfd    f27,240(r1)
+    -xxsel   vs27,vs1,vs0,vs35
+    -stfd    f26,224(r1)
+    -psq_st  f26,232(r1),0,0
+    -stfd    f25,208(r1)
+    -psq_st  f25,216(r1),0,0
+    -stfd    f24,192(r1)
+    -xsmsubmsp vs24,vs1,vs0
+    -stfd    f23,176(r1)
+    -xxsel   vs23,vs1,vs0,vs34
+    -stfd    f22,160(r1)
+    -psq_st  f22,168(r1),0,0
+    -stfd    f21,144(r1)
+    -xscmpgedp vs21,vs1,vs0
+    -stfd    f20,128(r1)
+    -xsmsubasp vs20,vs1,vs0
+    -addi    r11,r1,128
+    -bl <addr>
+    -lwz     r28,156(r3)
+    +stw     r0,308(r1)
+    +stfd    f31,288(r1)
+    +psq_st  f31,296(r1),0,0
+    +stfd    f30,272(r1)
+    +psq_st  f30,280(r1),0,0
+    +stfd    f29,256(r1)
+    +xsmaddadp vs29,vs1,vs0
+    +stfd    f28,240(r1)
+    +xxsel   vs28,vs1,vs0,vs35
+    +stfd    f27,224(r1)
+    +psq_st  f27,232(r1),0,0
+    +stfd    f26,208(r1)
+    +psq_st  f26,216(r1),0,0
+    +stfd    f25,192(r1)
+    +xsmsubmsp vs25,vs1,vs0
+    +stfd    f24,176(r1)
+    +xxsel   vs24,vs1,vs0,vs34
+    +stfd    f23,160(r1)
+    +psq_st  f23,168(r1),0,0
+    +stfd    f22,144(r1)
+    +xscmpgedp vs22,vs1,vs0
+    +stfd    f21,128(r1)
+    +xsmsubasp vs21,vs1,vs0
+    +stfd    f20,112(r1)
+    +xxsel   vs20,vs1,vs0,vs33
+    +addi    r11,r1,112
+    +bl <addr>
+    +lwz     r27,156(r3)
+     lis     r4,0
+    -fmr     f23,f1
+    -mr      r25,r3
+    -cmpwi   r28,0
+    +fmr     f21,f1
+    +mr      r24,r3
+    +cmpwi   r27,0
+     addi    r4,r4,0
+     beq <addr>
+    -lwz     r26,24(r28)
+    -li      r27,0
+    -lfs     f24,44(r4)
+    +lwz     r26,24(r27)
+    +addi    r28,r1,12
+    +lfs     f22,0(r4)
+    +li      r25,0
+    +lfs     f23,44(r4)
+     li      r30,1
+    -lfs     f25,0(r4)
+    +lfs     f24,48(r4)
+     li      r31,0
+    -lfs     f26,48(r4)
+    -lfs     f27,52(r4)
+    -lfs     f29,60(r4)
+    -lfs     f28,56(r4)
+    -lfs     f30,64(r4)
+    -lfs     f31,68(r4)
+    -lfs     f20,72(r4)
+    -lfs     f21,76(r4)
+    -lfs     f22,40(r4)
+    -b <addr>
+    -lbz     r0,2714(r25)
+    -add     r3,r0,r27
+    +lfs     f25,52(r4)
+    +lfs     f27,60(r4)
+    +lfs     f26,56(r4)
+    +lfs     f28,64(r4)
+    +lfs     f29,68(r4)
+    +lfs     f30,72(r4)
+    +lfs     f31,76(r4)
+    +lfs     f20,40(r4)
+    +b <addr>
+    +lbz     r0,2714(r24)
+    +add     r3,r0,r25
+     cmplwi  r3,30
+     blt <addr>
+     addi    r3,r3,-30
+    -add     r4,r25,r3
+    -lwz     r12,60(r25)
+    +add     r4,r24,r3
+    +lwz     r12,60(r24)
+     lbz     r6,2684(r4)
+    -mr      r3,r25
+    +mr      r3,r24
+     lwz     r12,640(r12)
+    -addi    r4,r1,72
+    +addi    r4,r1,60
+     mulli   r0,r6,60
+    -addi    r5,r1,60
+    -add     r29,r25,r0
+    +addi    r5,r1,48
+    +add     r29,r24,r0
+     mtctr   r12
+     bctrl
+     cmpwi   r3,0
+     beq <addr>
+    -lfs     f0,64(r1)
+    -fcmpo   cr0,f0,f25
+    +lfs     f0,52(r1)
+    +fcmpo   cr0,f0,f22
+     cror    eq,lt,eq
+     bne <addr>
+    @@ -76,42 +77,38 @@
+     cmpwi   r0,0
+     bne <addr>
+    -stfs    f25,44(r1)
+    -addi    r3,r1,24
+    -stfs    f25,56(r1)
+    +stb     r30,932(r29)
+    +mr      r3,r28
+    +lfs     f0,904(r29)
+    +lfs     f2,892(r29)
+    +lfs     f1,108(r27)
+    +stfs    f22,44(r1)
+    +stfs    f22,32(r1)
+     lq      r4,-32736(r1)
+    -stb     r30,932(r29)
+    -psq_l   f3,56(r1),1,0
+    -lfs     f0,904(r29)
+    -vmsumshm v3,v3,v4,v0
+    -lfs     f2,892(r29)
+    -lfs     f1,108(r28)
+    -stfs    f25,36(r1)
+    +stfs    f22,36(r1)
+    +psq_l   f3,32(r1),1,0
+     stfs    f0,40(r1)
+    -xxsldwi vs3,vs33,vs16,0
+    -psq_l   f3,36(r1),0,0
+    -lfs     f0,20(r1)
+    -stfs    f1,48(r1)
+    -stfs    f2,52(r1)
+    -psq_l   f1,48(r1),0,0
+    -stfs    f0,32(r1)
+    -vmsumshm v0,v1,v3,v0
+    -xsmaddasp vs0,vs33,vs0
+    +stfs    f1,24(r1)
+    +psq_l   f1,36(r1),0,0
+    +stfs    f2,28(r1)
+    +lq      r0,16(r1)
+    +vmsumshm v0,v0,v1,v0
+    +vmsumshm v1,v3,v4,v0
+    +xsaddsp vs0,vs28,vs0
+    +xsmaddasp vs1,vs28,vs16
+    +bl <addr>
+     lfs     f1,12(r1)
+    -lfs     f0,16(r1)
+    -stfs    f1,24(r1)
+    -stfs    f0,28(r1)
+    -bl <addr>
+    -lfs     f3,132(r28)
+    -lfs     f2,24(r1)
+    -lfs     f1,28(r1)
+    -lfs     f0,32(r1)
+    -fmuls   f2,f2,f3
+    -fmuls   f1,f1,f3
+    -fmuls   f0,f0,f3
+    -stfs    f2,24(r1)
+    -stfs    f1,28(r1)
+    -stfs    f0,32(r1)
+    -stfs    f1,924(r29)
+    -stfs    f25,924(r29)
+    +lfs     f0,132(r27)
+    +lfs     f2,16(r1)
+    +fmuls   f0,f1,f0
+    +lfs     f1,20(r1)
+    +stfs    f0,12(r1)
+    +lfs     f0,132(r27)
+    +fmuls   f2,f2,f0
+    +stfs    f2,16(r1)
+    +lfs     f0,132(r27)
+    +fmuls   f0,f1,f0
+    +stfs    f0,20(r1)
+    +stfs    f2,924(r29)
+    +stfs    f22,924(r29)
+     lfs     f0,888(r29)
+     stfs    f0,900(r29)
+    @@ -121,45 +118,51 @@
+     stfs    f0,908(r29)
+     lfs     f1,892(r29)
+    -fcmpo   cr0,f1,f25
+    +fcmpo   cr0,f1,f22
+     ble <addr>
+     lfs     f1,888(r29)
+    -fcmpo   cr0,f1,f25
+    -ble <addr>
+    -lfs     f0,492(r25)
+    +fcmpo   cr0,f1,f22
+    +ble <addr>
+    +lfs     f0,492(r24)
+     fdivs   f1,f1,f0
+     b <addr>
+    -lfs     f0,480(r25)
+    +lfs     f0,480(r24)
+     fdivs   f1,f1,f0
+    -fsubs   f0,f1,f25
+    -fsel    f1,f0,f1,f25
+    -fsubs   f0,f1,f24
+    -fsel    f0,f0,f24,f1
+    -fmuls   f0,f26,f0
+    +fcmpo   cr0,f1,f22
+    +cror    eq,gt,eq
+    +bne <addr>
+    +b <addr>
+    +fmr     f1,f22
+    +fsubs   f0,f1,f23
+    +fcmpo   cr0,f0,f22
+    +cror    eq,gt,eq
+    +bne <addr>
+    +fmr     f1,f23
+    +fmuls   f0,f24,f1
+     fctiwz  f0,f0
+    -stfd    f0,88(r1)
+    -lwz     r0,92(r1)
+    +stfd    f0,72(r1)
+    +lwz     r0,76(r1)
+     sth     r0,8(r1)
+    -lq      r0,-20480(r1)
+    -fmuls   f1,f27,f0
+    -bl <addr>
+    -fsubs   f1,f24,f1
+    -lfs     f0,892(r29)
+    -fmuls   f1,f28,f1
+    -fadds   f1,f28,f1
+    -fmuls   f1,f1,f23
+    +lq      r0,-12288(r1)
+    +fmuls   f1,f25,f0
+    +bl <addr>
+    +fsubs   f1,f23,f1
+    +lfs     f0,892(r29)
+    +fmuls   f1,f26,f1
+    +fadds   f1,f26,f1
+    +fmuls   f1,f1,f21
+     fsubs   f0,f0,f1
+    -fcmpo   cr0,f0,f25
+    +fcmpo   cr0,f0,f22
+     stfs    f0,892(r29)
+     bge <addr>
+    -stfs    f25,892(r29)
+    +stfs    f22,892(r29)
+     b <addr>
+     bge <addr>
+    -fmuls   f0,f29,f23
+    -fadds   f0,f1,f0
+    -fcmpo   cr0,f0,f25
+    -stfs    f0,892(r29)
+    -ble <addr>
+    -stfs    f25,892(r29)
+    -lfs     f0,88(r28)
+    +fmuls   f0,f27,f21
+    +fadds   f0,f1,f0
+    +fcmpo   cr0,f0,f22
+    +stfs    f0,892(r29)
+    +ble <addr>
+    +stfs    f22,892(r29)
+    +lfs     f0,88(r27)
+     stfs    f0,920(r29)
+     b <addr>
+    @@ -167,13 +170,13 @@
+     cmplwi  r0,1
+     bne <addr>
+    -lfs     f1,128(r28)
+    +lfs     f1,128(r27)
+     lfs     f0,924(r29)
+    -fmuls   f1,f30,f1
+    -fmuls   f1,f1,f23
+    +fmuls   f1,f28,f1
+    +fmuls   f1,f1,f21
+     fsubs   f0,f0,f1
+    -fcmpo   cr0,f0,f31
+    +fcmpo   cr0,f0,f29
+     stfs    f0,924(r29)
+     bge <addr>
+    -stfs    f31,924(r29)
+    +stfs    f29,924(r29)
+     lfs     f0,888(r29)
+     stfs    f0,900(r29)
+    @@ -184,15 +187,15 @@
+     lfs     f1,924(r29)
+     lfs     f0,892(r29)
+    -fmuls   f1,f1,f23
+    +fmuls   f1,f1,f21
+     fadds   f2,f0,f1
+     stfs    f2,892(r29)
+    -lfs     f1,76(r1)
+    -lfs     f0,44(r28)
+    +lfs     f1,64(r1)
+    +lfs     f0,44(r27)
+     fadds   f0,f1,f0
+     fcmpo   cr0,f0,f2
+     ble <addr>
+     stb     r31,932(r29)
+    -lfs     f1,76(r1)
+    -lfs     f0,44(r28)
+    +lfs     f1,64(r1)
+    +lfs     f0,44(r27)
+     fadds   f0,f1,f0
+     stfs    f0,892(r29)
+    @@ -204,13 +207,13 @@
+     lfs     f0,896(r29)
+     stfs    f0,908(r29)
+    -lfs     f1,76(r1)
+    -lfs     f0,44(r28)
+    -fadds   f0,f1,f0
+    -stfs    f0,892(r29)
+    -lfs     f2,60(r1)
+     lfs     f1,64(r1)
+    -bl <addr>
+    -fmuls   f0,f20,f1
+    -fsubs   f0,f0,f21
+    +lfs     f0,44(r27)
+    +fadds   f0,f1,f0
+    +stfs    f0,892(r29)
+    +lfs     f1,52(r1)
+    +lfs     f2,48(r1)
+    +bl <addr>
+    +fmuls   f0,f30,f1
+    +fsubs   f0,f0,f31
+     stfs    f0,920(r29)
+     lfs     f1,892(r29)
+    @@ -218,41 +221,42 @@
+     fsubs   f0,f1,f0
+     fabs    f0,f0
+    -fcmpo   cr0,f0,f22
+    +frsp    f0,f0
+    +fcmpo   cr0,f0,f20
+     ble <addr>
+     stb     r30,932(r29)
+    -stfs    f25,924(r29)
+    +stfs    f22,924(r29)
+     lfs     f0,904(r29)
+     stfs    f0,892(r29)
+    -addi    r27,r27,1
+    -cmplw   r27,r26
+    -bne <addr>
+    -psq_l   f31,312(r1),0,0
+    -lfd     f31,304(r1)
+    -lq      r30,288(r1)
+    -lfd     f30,288(r1)
+    -psq_l   f29,280(r1),0,0
+    -lfd     f29,272(r1)
+    -lq      r28,256(r1)
+    -lfd     f28,256(r1)
+    -psq_l   f27,248(r1),0,0
+    -lfd     f27,240(r1)
+    -lq      r26,224(r1)
+    -lfd     f26,224(r1)
+    -psq_l   f25,216(r1),0,0
+    -lfd     f25,208(r1)
+    -lq      r24,192(r1)
+    -lfd     f24,192(r1)
+    -psq_l   f23,184(r1),0,0
+    -lfd     f23,176(r1)
+    -lq      r22,160(r1)
+    -lfd     f22,160(r1)
+    -psq_l   f21,152(r1),0,0
+    -lfd     f21,144(r1)
+    -lq      r20,128(r1)
+    -addi    r11,r1,128
+    -lfd     f20,128(r1)
+    -bl <addr>
+    -lwz     r0,324(r1)
+    +addi    r25,r25,1
+    +cmplw   r25,r26
+    +bne <addr>
+    +psq_l   f31,296(r1),0,0
+    +lfd     f31,288(r1)
+    +lq      r30,272(r1)
+    +lfd     f30,272(r1)
+    +psq_l   f29,264(r1),0,0
+    +lfd     f29,256(r1)
+    +lq      r28,240(r1)
+    +lfd     f28,240(r1)
+    +psq_l   f27,232(r1),0,0
+    +lfd     f27,224(r1)
+    +lq      r26,208(r1)
+    +lfd     f26,208(r1)
+    +psq_l   f25,200(r1),0,0
+    +lfd     f25,192(r1)
+    +lq      r24,176(r1)
+    +lfd     f24,176(r1)
+    +psq_l   f23,168(r1),0,0
+    +lfd     f23,160(r1)
+    +lq      r22,144(r1)
+    +lfd     f22,144(r1)
+    +psq_l   f21,136(r1),0,0
+    +lfd     f21,128(r1)
+    +lq      r20,112(r1)
+    +addi    r11,r1,112
+    +lfd     f20,112(r1)
+    +bl <addr>
+    +lwz     r0,308(r1)
+     mtlr    r0
+    -addi    r1,r1,320
+    +addi    r1,r1,304
+     blr
+DIFF fn_81_21EC__11stDxBigBlueFf              fn_81_21EC__11stDxBigBlueFf                   60 57
+    --- target
+    +++ candidate
+    @@ -2,34 +2,31 @@
+     mflr    r0
+     stw     r0,36(r1)
+    -addi    r11,r1,32
+    -bl <addr>
+    +stw     r31,28(r1)
+    +stw     r30,24(r1)
+    +stw     r29,20(r1)
+    +stw     r28,16(r1)
+    +mr      r28,r3
+     lwz     r0,156(r3)
+    -mr      r27,r3
+     cmpwi   r0,0
+     beq <addr>
+    -li      r28,0
+    -li      r31,0
+    -li      r30,-1
+    -b <addr>
+    -add     r29,r27,r31
+    -lwz     r4,2728(r29)
+    -cmpwi   r4,-1
+    +addi    r30,r3,2720
+    +li      r29,0
+    +li      r31,-1
+    +lwz     r0,8(r30)
+    +cmpwi   r0,-1
+     beq <addr>
+    -addi    r3,r29,2720
+    +mr      r3,r30
+     bl <addr>
+     cmpwi   r3,0
+     bne <addr>
+    -stw     r30,2728(r29)
+    -lwz     r4,2728(r29)
+    +stw     r31,8(r30)
+    +lwz     r4,8(r30)
+     cmpwi   cr1,r4,-1
+    -bne     cr1,21ec
+    -addi    r28,r28,1
+    -addi    r31,r31,16
+    -b <addr>
+    -lbz     r0,2732(r29)
+    -add     r3,r27,r0
+    +beq     cr1,2308
+    +lbz     r0,12(r30)
+    +add     r3,r28,r0
+     lbz     r0,2684(r3)
+     mulli   r0,r0,60
+    -add     r5,r27,r0
+    +add     r5,r28,r0
+     lbz     r0,884(r5)
+     cmpwi   r0,8
+    @@ -39,21 +36,21 @@
+     bge <addr>
+     b <addr>
+    -beq     cr1,2244
+    -add     r3,r27,r31
+    -li      r5,120
+    -addi    r3,r3,2720
+    +mr      r3,r30
+    +addi    r4,r5,888
+     bl <addr>
+     b <addr>
+    -add     r3,r27,r31
+    -addi    r4,r5,888
+    -addi    r3,r3,2720
+    +beq     cr1,2308
+    +mr      r3,r30
+    +li      r5,120
+     bl <addr>
+    -addi    r28,r28,1
+    -addi    r31,r31,16
+    -cmplwi  r28,5
+    -bne <addr>
+    -addi    r11,r1,32
+    -bl <addr>
+    +addi    r29,r29,1
+    +addi    r30,r30,16
+    +cmplwi  r29,5
+    +blt <addr>
+     lwz     r0,36(r1)
+    +lwz     r31,28(r1)
+    +lwz     r30,24(r1)
+    +lwz     r29,20(r1)
+    +lwz     r28,16(r1)
+     mtlr    r0
+     addi    r1,r1,32
+SAME fn_81_22DC__11stDxBigBlueFf              fn_81_22DC__11stDxBigBlueFf                   96 96
+SAME fn_81_245C__11stDxBigBlueFf              fn_81_245C__11stDxBigBlueFf                   90 90
+DIFF fn_81_25C4__11stDxBigBlueFf              fn_81_25C4__11stDxBigBlueFf                   222 218
+    --- target
+    +++ candidate
+    @@ -25,11 +25,7 @@
+     clrlwi  r4,r3,24
+     stb     r3,2714(r29)
+    -neg     r3,r4
+    -or      r3,r3,r4
+    -srawi   r3,r3,31
+    -and     r3,r4,r3
+    -cmplwi  r3,29
+    +cmplwi  r4,29
+     bge <addr>
+    -mr      r0,r3
+    +mr      r0,r4
+     clrlwi  r28,r0,24
+     stb     r0,2714(r29)
+    @@ -156,6 +152,6 @@
+     lfs     f31,0(r31)
+     stb     r0,2716(r29)
+    -lwz     r25,24(r30)
+    -addi    r31,r25,1
+    +lwz     r27,24(r30)
+    +addi    r25,r27,1
+     b <addr>
+     lbz     r0,2714(r29)
+    @@ -176,11 +172,11 @@
+     lfd     f0,32(r1)
+     fmuls   f4,f29,f1
+    -stw     r31,44(r1)
+    -add     r27,r29,r0
+    +stw     r25,44(r1)
+    +add     r31,r29,r0
+     fsubs   f3,f0,f30
+     addi    r5,r1,8
+     stw     r28,40(r1)
+     lfd     f0,40(r1)
+    -stfs    f4,888(r27)
+    +stfs    f4,888(r31)
+     fsubs   f2,f0,f30
+     lfs     f1,28(r30)
+    @@ -189,6 +185,6 @@
+     fmuls   f1,f1,f2
+     fadds   f0,f0,f1
+    -stfs    f0,888(r27)
+    -stfs    f31,896(r27)
+    +stfs    f0,888(r31)
+    +stfs    f31,896(r31)
+     lwz     r12,60(r29)
+     lbz     r6,2684(r6)
+    @@ -205,7 +201,7 @@
+     lfs     f0,44(r30)
+     fadds   f0,f1,f0
+    -stfs    f0,892(r27)
+    +stfs    f0,892(r31)
+     addi    r26,r26,1
+    -cmplw   r26,r25
+    +cmplw   r26,r27
+     bne <addr>
+     psq_l   f31,120(r1),0,0
+SAME fn_81_293C__11stDxBigBlueFf              fn_81_293C__11stDxBigBlueFf                   217 217
+SAME fn_81_2CA0__11stDxBigBlueFf              fn_81_2CA0__11stDxBigBlueFf                   69 69
+DIFF fn_81_2DB4__11stDxBigBlueFif             fn_81_2DB4__11stDxBigBlueFif                  259 263
+    --- target
+    +++ candidate
+    @@ -18,17 +18,17 @@
+     beq <addr>
+     mulli   r0,r4,52
+    -lfs     f2,104(r30)
+    -lfs     f1,0(r30)
+    +lfs     f31,0(r30)
+    +lfs     f1,104(r30)
+     li      r4,0
+     lfs     f0,108(r30)
+     add     r31,r3,r0
+    -lfs     f4,2828(r31)
+    -lfs     f3,2820(r31)
+    -stfs    f3,52(r1)
+    -stfs    f2,56(r1)
+    -stfs    f4,60(r1)
+    -stfs    f1,40(r1)
+    +lfs     f3,2828(r31)
+    +lfs     f2,2820(r31)
+    +stfs    f2,52(r1)
+    +stfs    f1,56(r1)
+    +stfs    f3,60(r1)
+    +stfs    f31,40(r1)
+     stfs    f0,44(r1)
+    -stfs    f1,48(r1)
+    +stfs    f31,48(r1)
+     bl <addr>
+     mr      r8,r3
+    @@ -43,7 +43,7 @@
+     cmpwi   r3,0
+     beq <addr>
+    -lfs     f0,20(r1)
+    -lfs     f31,0(r30)
+    -fcmpo   cr0,f0,f31
+    +fmr     f0,f31
+    +lfs     f1,20(r1)
+    +fcmpo   cr0,f1,f0
+     cror    eq,lt,eq
+     bne <addr>
+    @@ -64,5 +64,4 @@
+     mtctr   r12
+     bctrl
+    -cmplwi  r3,1
+     lwz     r12,60(r28)
+     mr      r3,r28
+    @@ -73,49 +72,45 @@
+     mtctr   r12
+     bctrl
+    -cmplwi  r3,1
+    -lbz     r0,3024(r28)
+    -cmplwi  r0,10
+     lbz     r0,2865(r31)
+     lfs     f1,2824(r31)
+     lfs     f0,2860(r31)
+     cmplwi  r0,1
+    -lfs     f3,0(r30)
+    -fsubs   f0,f1,f0
+    -bne <addr>
+    -fcmpo   cr0,f0,f3
+    +fsubs   f1,f1,f0
+    +bne <addr>
+    +lfs     f0,0(r30)
+    +fcmpo   cr0,f1,f0
+     ble <addr>
+     lfs     f0,168(r29)
+     fmuls   f0,f0,f30
+    -fsubs   f3,f3,f0
+    +fneg    f0,f0
+     b <addr>
+     lfs     f0,172(r29)
+     fmuls   f0,f0,f30
+    -fadds   f3,f3,f0
+    -b <addr>
+    -fcmpo   cr0,f0,f3
+    -ble <addr>
+    -lfs     f0,152(r29)
+    -fmuls   f0,f0,f30
+    -fsubs   f3,f3,f0
+    -b <addr>
+    -lfs     f0,152(r29)
+    -fmuls   f0,f0,f30
+    -fadds   f3,f3,f0
+    -frsp    f2,f3
+    -stfs    f3,2856(r31)
+    -lfs     f0,80(r30)
+    -lfs     f1,2824(r31)
+    -fmuls   f2,f2,f30
+    -fadds   f3,f1,f2
+    -stfs    f3,2824(r31)
+    -lfs     f1,148(r29)
+    -lfs     f2,144(r29)
+    -lfs     f4,0(r29)
+    -fsubs   f1,f1,f2
+    -fabs    f4,f4
+    -fmuls   f0,f0,f1
+    -fadds   f0,f2,f0
+    -fadds   f0,f0,f4
+    -fcmpo   cr0,f3,f0
+    +b <addr>
+    +lfs     f0,0(r30)
+    +fcmpo   cr0,f1,f0
+    +ble <addr>
+    +lfs     f0,152(r29)
+    +fmuls   f0,f0,f30
+    +fneg    f0,f0
+    +b <addr>
+    +lfs     f0,152(r29)
+    +fmuls   f0,f0,f30
+    +stfs    f0,2856(r31)
+    +fmuls   f2,f0,f30
+    +lfs     f1,80(r30)
+    +lfs     f0,2824(r31)
+    +fadds   f4,f0,f2
+    +stfs    f4,2824(r31)
+    +lfs     f2,148(r29)
+    +lfs     f3,144(r29)
+    +lfs     f0,0(r29)
+    +fsubs   f2,f2,f3
+    +fabs    f0,f0
+    +fmuls   f1,f1,f2
+    +frsp    f0,f0
+    +fadds   f1,f3,f1
+    +fadds   f0,f1,f0
+    +fcmpo   cr0,f4,f0
+     bge <addr>
+     lfs     f1,2860(r31)
+    @@ -137,6 +132,5 @@
+     cmplwi  r3,1
+     bne <addr>
+    -lfs     f0,40(r30)
+    -fadds   f31,f31,f0
+    +lfs     f31,40(r30)
+     lwz     r12,60(r28)
+     mr      r3,r28
+    @@ -157,5 +151,4 @@
+     fadds   f31,f31,f0
+     lfs     f0,2820(r31)
+    -lfs     f2,0(r30)
+     stfs    f0,2832(r31)
+     lfs     f0,2824(r31)
+    @@ -170,7 +163,8 @@
+     cmplwi  r0,1
+     fadds   f1,f31,f1
+    -fsubs   f0,f0,f1
+    -bne <addr>
+    -fcmpo   cr0,f0,f2
+    +fsubs   f1,f0,f1
+    +bne <addr>
+    +lfs     f0,0(r30)
+    +fcmpo   cr0,f1,f0
+     ble <addr>
+     lfs     f1,80(r30)
+    @@ -178,5 +172,5 @@
+     fmuls   f0,f1,f0
+     fmuls   f0,f0,f30
+    -fsubs   f2,f2,f0
+    +fneg    f0,f0
+     b <addr>
+     lfs     f1,80(r30)
+    @@ -184,23 +178,21 @@
+     fmuls   f0,f1,f0
+     fmuls   f0,f0,f30
+    -fadds   f2,f2,f0
+    -b <addr>
+    -fcmpo   cr0,f0,f2
+    -ble <addr>
+    -lfs     f1,80(r30)
+    -lfs     f0,152(r29)
+    -fmuls   f0,f1,f0
+    -fmuls   f0,f0,f30
+    -fsubs   f2,f2,f0
+    -b <addr>
+    -lfs     f1,80(r30)
+    -lfs     f0,152(r29)
+    -fmuls   f0,f1,f0
+    -fmuls   f0,f0,f30
+    -fadds   f2,f2,f0
+    -frsp    f1,f2
+    -stfs    f2,2856(r31)
+    -lfs     f0,2824(r31)
+    -fmuls   f1,f1,f30
+    +b <addr>
+    +lfs     f0,0(r30)
+    +fcmpo   cr0,f1,f0
+    +ble <addr>
+    +lfs     f1,80(r30)
+    +lfs     f0,152(r29)
+    +fmuls   f0,f1,f0
+    +fmuls   f0,f0,f30
+    +fneg    f0,f0
+    +b <addr>
+    +lfs     f1,80(r30)
+    +lfs     f0,152(r29)
+    +fmuls   f0,f1,f0
+    +fmuls   f0,f0,f30
+    +stfs    f0,2856(r31)
+    +fmuls   f1,f0,f30
+    +lfs     f0,2824(r31)
+     fadds   f2,f0,f1
+     stfs    f2,2824(r31)
+    @@ -216,6 +208,6 @@
+     fadds   f0,f1,f0
+     stfs    f0,2824(r31)
+    +lfs     f1,20(r1)
+     lfs     f2,16(r1)
+    -lfs     f1,20(r1)
+     bl <addr>
+     lfs     f2,72(r30)
+    @@ -230,4 +222,5 @@
+     lfs     f0,2860(r31)
+     fabs    f1,f1
+    +frsp    f1,f1
+     fadds   f0,f0,f1
+     stfs    f0,2860(r31)
+    @@ -236,14 +229,25 @@
+     lfs     f0,2860(r31)
+     fabs    f1,f1
+    +frsp    f1,f1
+     fsubs   f0,f0,f1
+     stfs    f0,2860(r31)
+    -lfs     f1,144(r29)
+    -lfs     f0,2860(r31)
+    +lfs     f3,2860(r31)
+    +lfs     f2,144(r29)
+    +lfs     f0,0(r30)
+    +fsubs   f1,f3,f2
+    +fcmpo   cr0,f1,f0
+    +cror    eq,gt,eq
+    +bne <addr>
+    +b <addr>
+    +fmr     f3,f2
+     lfs     f2,148(r29)
+    -fsubs   f3,f0,f1
+    -fsel    f1,f3,f0,f1
+    -fsubs   f0,f1,f2
+    -fsel    f0,f0,f2,f1
+    -stfs    f0,2860(r31)
+    +lfs     f0,0(r30)
+    +fsubs   f1,f3,f2
+    +fcmpo   cr0,f1,f0
+    +cror    eq,gt,eq
+    +bne <addr>
+    +b <addr>
+    +fmr     f2,f3
+    +stfs    f2,2860(r31)
+     psq_l   f31,104(r1),0,0
+     lfd     f31,96(r1)
+DIFF fn_81_31C0__11stDxBigBlueFf              fn_81_31C0__11stDxBigBlueFf                   163 161
+    --- target
+    +++ candidate
+    @@ -56,22 +56,21 @@
+     fmuls   f0,f1,f0
+     fmuls   f0,f0,f31
+    -fsubs   f2,f2,f0
+    +fneg    f2,f0
+     b <addr>
+     lfs     f1,80(r31)
+     lfs     f0,208(r30)
+     fmuls   f0,f1,f0
+    -fmuls   f0,f0,f31
+    -fadds   f2,f2,f0
+    -frsp    f1,f2
+    +fmuls   f2,f0,f31
+    +fmuls   f1,f2,f31
+     lfs     f0,3032(r29)
+     stfs    f2,3064(r29)
+    -fmuls   f1,f1,f31
+    -fadds   f1,f0,f1
+    -stfs    f1,3032(r29)
+    -lfs     f2,0(r30)
+    +fadds   f2,f0,f1
+    +stfs    f2,3032(r29)
+    +lfs     f1,0(r30)
+     lfs     f0,204(r30)
+    -fabs    f2,f2
+    -fadds   f0,f0,f2
+    -fcmpo   cr0,f1,f0
+    +fabs    f1,f1
+    +frsp    f1,f1
+    +fadds   f0,f0,f1
+    +fcmpo   cr0,f2,f0
+     bge <addr>
+     lfs     f1,208(r30)
+    @@ -104,47 +103,46 @@
+     fmuls   f0,f1,f0
+     fmuls   f0,f0,f31
+    -fsubs   f1,f3,f0
+    +fneg    f2,f0
+     b <addr>
+     lfs     f1,80(r31)
+     lfs     f0,208(r30)
+     fmuls   f0,f1,f0
+    -fmuls   f0,f0,f31
+    -fadds   f1,f3,f0
+    -frsp    f2,f1
+    -stfs    f1,3064(r29)
+    +fmuls   f2,f0,f31
+    +fmuls   f1,f2,f31
+     lfs     f0,3032(r29)
+    -lfs     f1,3068(r29)
+    -fmuls   f2,f2,f31
+    -fadds   f2,f0,f2
+    -stfs    f2,3032(r29)
+    +stfs    f2,3064(r29)
+    +lfs     f2,3068(r29)
+    +fadds   f1,f0,f1
+    +stfs    f1,3032(r29)
+     lfs     f0,24(r1)
+    -fadds   f0,f0,f1
+    -fcmpo   cr0,f0,f2
+    +fadds   f0,f0,f2
+    +fcmpo   cr0,f0,f1
+     ble <addr>
+     li      r0,0
+     stb     r0,3072(r29)
+     lfs     f0,24(r1)
+    -fadds   f0,f0,f1
+    +fadds   f0,f0,f2
+     stfs    f0,3032(r29)
+    +lfs     f1,3064(r29)
+    +lfs     f0,3068(r29)
+    +fabs    f3,f1
+    +lfs     f1,12(r1)
+     lfs     f2,8(r1)
+    -lfs     f1,12(r1)
+    +frsp    f3,f3
+    +fsubs   f31,f0,f3
+     bl <addr>
+    -lfs     f0,72(r31)
+    -lfs     f2,3064(r29)
+    -fmuls   f4,f0,f1
+    -lfs     f1,76(r31)
+    -fabs    f3,f2
+    -lfs     f0,3068(r29)
+    -fsubs   f2,f4,f1
+    -fsubs   f1,f0,f3
+    -stfs    f2,3060(r29)
+    -stfs    f1,3068(r29)
+    +lfs     f2,72(r31)
+    +lfs     f0,76(r31)
+    +fmuls   f1,f2,f1
+    +stfs    f31,3068(r29)
+    +fsubs   f0,f1,f0
+    +stfs    f0,3060(r29)
+     lfs     f0,204(r30)
+    -fcmpo   cr0,f1,f0
+    +fcmpo   cr0,f31,f0
+     cror    eq,lt,eq
+     bne <addr>
+     stfs    f0,3068(r29)
+    +lfs     f1,12(r1)
+     lfs     f2,8(r1)
+    -lfs     f1,12(r1)
+     bl <addr>
+     lfs     f2,72(r31)
+DIFF fn_81_344C__11stDxBigBlueFf              fn_81_344C__11stDxBigBlueFf                   229 237
+    --- target
+    +++ candidate
+    @@ -16,16 +16,16 @@
+     cmpwi   r30,0
+     beq <addr>
+    -lfs     f4,3088(r3)
+    +lfs     f31,0(r31)
+     li      r4,0
+    -lfs     f3,3080(r3)
+    -lfs     f1,0(r31)
+    -lfs     f2,104(r31)
+    +lfs     f3,3088(r3)
+    +lfs     f2,3080(r3)
+    +lfs     f1,104(r31)
+     lfs     f0,108(r31)
+    -stfs    f3,52(r1)
+    -stfs    f2,56(r1)
+    -stfs    f4,60(r1)
+    -stfs    f1,40(r1)
+    +stfs    f2,52(r1)
+    +stfs    f1,56(r1)
+    +stfs    f3,60(r1)
+    +stfs    f31,40(r1)
+     stfs    f0,44(r1)
+    -stfs    f1,48(r1)
+    +stfs    f31,48(r1)
+     bl <addr>
+     mr      r8,r3
+    @@ -40,7 +40,7 @@
+     cmpwi   r3,0
+     beq <addr>
+    -lfs     f0,20(r1)
+    -lfs     f31,0(r31)
+    -fcmpo   cr0,f0,f31
+    +fmr     f0,f31
+    +lfs     f1,20(r1)
+    +fcmpo   cr0,f1,f0
+     cror    eq,lt,eq
+     bne <addr>
+    @@ -52,5 +52,4 @@
+     addi    r4,r29,3080
+     stb     r0,3124(r29)
+    -lfs     f31,0(r31)
+     stfs    f2,3092(r29)
+     stfs    f1,3096(r29)
+    @@ -62,6 +61,5 @@
+     cmplwi  r3,1
+     bne <addr>
+    -lfs     f0,40(r31)
+    -fadds   f31,f31,f0
+    +lfs     f31,40(r31)
+     lwz     r12,60(r29)
+     mr      r3,r29
+    @@ -81,32 +79,32 @@
+     lfs     f0,3032(r29)
+     fadds   f31,f31,f0
+    -lfs     f1,3120(r29)
+    -lfs     f0,3084(r29)
+    -fadds   f1,f1,f31
+    -lfs     f2,0(r31)
+    -fsubs   f0,f0,f1
+    -fcmpo   cr0,f0,f2
+    +lfs     f0,3120(r29)
+    +lfs     f1,3084(r29)
+    +fadds   f2,f0,f31
+    +lfs     f0,0(r31)
+    +fsubs   f1,f1,f2
+    +fcmpo   cr0,f1,f0
+     ble <addr>
+     lfs     f0,3116(r29)
+     fmuls   f0,f0,f30
+    -fadds   f2,f2,f0
+    -b <addr>
+    -lfs     f0,3116(r29)
+    -fmuls   f0,f0,f30
+    -fsubs   f2,f2,f0
+    -fmuls   f1,f2,f30
+    +b <addr>
+    +lfs     f0,3116(r29)
+    +fmuls   f0,f0,f30
+    +fneg    f0,f0
+    +fmuls   f1,f0,f30
+     lfs     f0,3084(r29)
+     lfs     f3,80(r31)
+    -fadds   f2,f0,f1
+    -stfs    f2,3084(r29)
+    -lfs     f0,248(r30)
+    -lfs     f1,244(r30)
+    -lfs     f4,0(r30)
+    -fsubs   f0,f0,f1
+    -fabs    f4,f4
+    -fmuls   f0,f3,f0
+    +fadds   f4,f0,f1
+    +stfs    f4,3084(r29)
+    +lfs     f1,248(r30)
+    +lfs     f2,244(r30)
+    +lfs     f0,0(r30)
+    +fsubs   f1,f1,f2
+    +fabs    f0,f0
+    +fmuls   f1,f3,f1
+    +frsp    f0,f0
+    +fadds   f1,f2,f1
+     fadds   f0,f1,f0
+    -fadds   f0,f0,f4
+    -fcmpo   cr0,f2,f0
+    +fcmpo   cr0,f4,f0
+     bge <addr>
+     lfs     f2,264(r30)
+    @@ -136,6 +134,5 @@
+     cmplwi  r3,1
+     bne <addr>
+    -lfs     f0,40(r31)
+    -fadds   f31,f31,f0
+    +lfs     f31,40(r31)
+     lwz     r12,60(r29)
+     mr      r3,r29
+    @@ -155,18 +152,18 @@
+     lfs     f0,3032(r29)
+     fadds   f31,f31,f0
+    -lfs     f1,3080(r29)
+    -lfs     f0,3084(r29)
+    -lfs     f2,3088(r29)
+    -stfs    f1,3092(r29)
+    -lfs     f1,3120(r29)
+    -stfs    f0,3096(r29)
+    -lfs     f0,3084(r29)
+    -stfs    f2,3100(r29)
+    -lfs     f3,0(r31)
+    -lfs     f2,32(r1)
+    -fadds   f1,f2,f1
+    -fadds   f1,f31,f1
+    -fsubs   f0,f0,f1
+    -fcmpo   cr0,f0,f3
+    +lfs     f2,3080(r29)
+    +lfs     f1,3084(r29)
+    +lfs     f0,3088(r29)
+    +stfs    f2,3092(r29)
+    +lfs     f2,3120(r29)
+    +stfs    f1,3096(r29)
+    +lfs     f1,3084(r29)
+    +stfs    f0,3100(r29)
+    +lfs     f0,0(r31)
+    +lfs     f3,32(r1)
+    +fadds   f2,f3,f2
+    +fadds   f2,f31,f2
+    +fsubs   f1,f1,f2
+    +fcmpo   cr0,f1,f0
+     ble <addr>
+     lfs     f1,80(r31)
+    @@ -174,5 +171,4 @@
+     fmuls   f0,f1,f0
+     fmuls   f0,f0,f30
+    -fadds   f3,f3,f0
+     b <addr>
+     lfs     f1,80(r31)
+    @@ -180,41 +176,53 @@
+     fmuls   f0,f1,f0
+     fmuls   f0,f0,f30
+    -fsubs   f3,f3,f0
+    -fmuls   f2,f3,f30
+    +fneg    f0,f0
+    +fmuls   f1,f0,f30
+     lfs     f0,3084(r29)
+    -lfs     f1,3120(r29)
+    -fadds   f2,f0,f2
+    -stfs    f2,3084(r29)
+    +lfs     f2,3120(r29)
+    +fadds   f1,f0,f1
+    +stfs    f1,3084(r29)
+     lfs     f0,32(r1)
+    -fadds   f0,f0,f1
+    -fcmpo   cr0,f0,f2
+    +fadds   f0,f0,f2
+    +fcmpo   cr0,f0,f1
+     ble <addr>
+     li      r0,0
+     stb     r0,3124(r29)
+     lfs     f0,32(r1)
+    +fadds   f0,f0,f2
+    +stfs    f0,3084(r29)
+    +lfs     f0,0(r31)
+    +fcmpu   cr0,f0,f31
+    +beq <addr>
+    +lfs     f1,3116(r29)
+    +lfs     f0,3120(r29)
+    +fabs    f1,f1
+    +frsp    f1,f1
+     fadds   f0,f0,f1
+    -stfs    f0,3084(r29)
+    -lfs     f0,0(r31)
+    -fcmpu   cr0,f0,f31
+    -beq <addr>
+    +stfs    f0,3120(r29)
+    +b <addr>
+     lfs     f1,3116(r29)
+     lfs     f0,3120(r29)
+     fabs    f1,f1
+    -fadds   f0,f0,f1
+    -stfs    f0,3120(r29)
+    -b <addr>
+    -lfs     f1,3116(r29)
+    -lfs     f0,3120(r29)
+    -fabs    f1,f1
+    +frsp    f1,f1
+     fsubs   f0,f0,f1
+     stfs    f0,3120(r29)
+    -lfs     f1,244(r30)
+    -lfs     f0,3120(r29)
+    +lfs     f3,3120(r29)
+    +lfs     f2,244(r30)
+    +lfs     f0,0(r31)
+    +fsubs   f1,f3,f2
+    +fcmpo   cr0,f1,f0
+    +cror    eq,gt,eq
+    +bne <addr>
+    +b <addr>
+    +fmr     f3,f2
+     lfs     f2,248(r30)
+    -fsubs   f3,f0,f1
+    -fsel    f1,f3,f0,f1
+    -fsubs   f0,f1,f2
+    -fsel    f0,f0,f2,f1
+    -stfs    f0,3120(r29)
+    +lfs     f0,0(r31)
+    +fsubs   f1,f3,f2
+    +fcmpo   cr0,f1,f0
+    +cror    eq,gt,eq
+    +bne <addr>
+    +b <addr>
+    +fmr     f2,f3
+    +stfs    f2,3120(r29)
+     psq_l   f31,104(r1),0,0
+     lfd     f31,96(r1)
+SAME fn_81_37E0__11stDxBigBlueFP5Vec3fP5Vec3fi fn_81_37E0__11stDxBigBlueFP5Vec3fP5Vec3fi     39 39
+SAME fn_81_387C__11stDxBigBlueFUl             fn_81_387C__11stDxBigBlueFUl                  33 33
+SAME fn_81_3900__11stDxBigBlueFP5Vec3f        fn_81_3900__11stDxBigBlueFP5Vec3f             39 39
+SAME fn_81_399C__11stDxBigBlueFPfP5Vec3fUl    fn_81_399C__11stDxBigBlueFPfP5Vec3fUl         90 90
+SAME fn_81_3B04__11stDxBigBlueFPfP5Vec3fUl    fn_81_3B04__11stDxBigBlueFPfP5Vec3fUl         70 70
+SAME fn_81_3C1C__11stDxBigBlueFUc             fn_81_3C1C__11stDxBigBlueFUc                  56 56
+SAME fn_81_3CFC__11stDxBigBlueFUcPQ34nw4r2ut29LinkList<15stDxBigBlueNode,0> fn_81_3CFC__11stDxBigBlueFUcPQ34nw4r2ut29LinkList<15stDxBigBlueNode,0> 30 30
+SAME fn_81_3D74__11stDxBigBlueFUcPQ34nw4r2ut29LinkList<15stDxBigBlueNode,0> fn_81_3D74__11stDxBigBlueFUcPQ34nw4r2ut29LinkList<15stDxBigBlueNode,0> 30 30
+SAME fn_81_3DEC__11stDxBigBlueFUcPQ34nw4r2ut29LinkList<15stDxBigBlueNode,0> fn_81_3DEC__11stDxBigBlueFUcPQ34nw4r2ut29LinkList<15stDxBigBlueNode,0> 26 26
+SAME fn_81_3E54__11stDxBigBlueFPQ34nw4r2ut29LinkList<15stDxBigBlueNode,0> fn_81_3E54__11stDxBigBlueFPQ34nw4r2ut29LinkList<15stDxBigBlueNode,0> 31 31
+SAME fn_81_3ED0__11stDxBigBlueFUlPQ34nw4r2ut29LinkList<15stDxBigBlueNode,0> fn_81_3ED0__11stDxBigBlueFUlPQ34nw4r2ut29LinkList<15stDxBigBlueNode,0> 12 12
+SAME fn_81_3F00__11stDxBigBlueFPQ34nw4r2ut29LinkList<15stDxBigBlueNode,0> fn_81_3F00__11stDxBigBlueFPQ34nw4r2ut29LinkList<15stDxBigBlueNode,0> 2 2
+SAME fn_81_3F08__11stDxBigBlueFPQ34nw4r2ut29LinkList<15stDxBigBlueNode,0> fn_81_3F08__11stDxBigBlueFPQ34nw4r2ut29LinkList<15stDxBigBlueNode,0> 14 14
+SAME isEventEnd__11stDxBigBlueFiPiPi          isEventEnd__11stDxBigBlueFiPiPi               5 5
+SAME startFighterEvent__5StageFv              startFighterEvent__5StageFv                   1 1
+SAME initializeFighterAttackRatio__5StageFv   initializeFighterAttackRatio__5StageFv        2 2
+SAME helperStarWarp__5StageFv                 helperStarWarp__5StageFv                      2 2
+SAME isSimpleBossBattleMode__5StageFv         isSimpleBossBattleMode__5StageFv              2 2
+SAME isBossBattleMode__5StageFv               isBossBattleMode__5StageFv                    2 2
+SAME isCameraLocked__5StageFv                 isCameraLocked__5StageFv                      2 2
+SAME notifyTimmingGameStart__5StageFv         notifyTimmingGameStart__5StageFv              1 1
+SAME getFrameRuleTime__5StageFv               getFrameRuleTime__5StageFv                    2 2
+SAME setFrameRuleTime__5StageFf               setFrameRuleTime__5StageFf                    2 2
+SAME isNextStepBgmEqualNowStepBgmFromFlag__5StageFv isNextStepBgmEqualNowStepBgmFromFlag__5StageFv 2 2
+SAME getBgmPlayOffsetFrame__5StageFv          getBgmPlayOffsetFrame__5StageFv               3 3
+SAME getBgmVolume__5StageFv                   getBgmVolume__5StageFv                        3 3
+SAME setBgmChange__5StageFfbUl                setBgmChange__5StageFfbUl                     4 4
+SAME getBgmChangeID__5StageFPUlPf             getBgmChangeID__5StageFPUlPf                  5 5
+SAME isBgmChange__5StageFv                    isBgmChange__5StageFv                         2 2
+SAME getBgmOptionID__5StageFv                 getBgmOptionID__5StageFv                      2 2
+SAME getNowStepBgmID__5StageFv                getNowStepBgmID__5StageFv                     2 2
+SAME getBgmID__5StageFv                       getBgmID__5StageFv                            2 2
+SAME getBgmID__5StageCFv                      getBgmID__5StageCFv                           2 2
+SAME appearanceFighterLocal__5StageFv         appearanceFighterLocal__5StageFv              1 1
+SAME getScrollDir__5StageFP5Vec3f             getScrollDir__5StageFP5Vec3f                  7 7
+SAME getDefaultLightSetIndex__5StageFv        getDefaultLightSetIndex__5StageFv             2 2
+SAME getAIRange__5StageFv                     getAIRange__5StageFv                          2 2
+SAME isAdventureStage__5StageFv               isAdventureStage__5StageFv                    2 2
+SAME getPokeTrainerDrawLayer__5StageFv        getPokeTrainerDrawLayer__5StageFv             2 2
+SAME getPokeTrainerPositionZ__5StageFv        getPokeTrainerPositionZ__5StageFv             3 3
+SAME getPokeTrainerPointData__5StageFPii      getPokeTrainerPointData__5StageFPii           1 1
+SAME getPokeTrainerPointNum__5StageFv         getPokeTrainerPointNum__5StageFv              2 2
+SAME isReStartSamePoint__7stMeleeFv           isReStartSamePoint__7stMeleeFv                2 2
+SAME getWind2ndOnlyData__7stMeleeFv           getWind2ndOnlyData__7stMeleeFv                2 2
+SAME __sinit_\st_dxbigblue_cpp                __sinit_\st_dxbigblue_cpp                     25 25
+SAME __dt__33stClassInfoImpl<49,11stDxBigBlue>Fv __dt__33stClassInfoImpl<49,11stDxBigBlue>Fv   29 29
+SAME create__33stClassInfoImpl<49,11stDxBigBlue>Fv create__33stClassInfoImpl<49,11stDxBigBlue>Fv 13 13
+SAME preload__33stClassInfoImpl<49,11stDxBigBlue>Fv preload__33stClassInfoImpl<49,11stDxBigBlue>Fv 1 1
+Candidate-only functions (often unreferenced weak inlines the linker strips): __dt__Q44nw4r2ut26@unnamed@st_dxbigblue_cpp@11NonCopyableFv, __dt__Q34nw4r2ut12LinkListNodeFv, __dt__Q34nw4r2ut29LinkList<15stDxBigBlueNode,0>Fv
+DIFF section .rodata: target 144 bytes, candidate 140 bytes
+SAME section .data: target 1960 bytes, candidate 1960 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 93/101. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py st_dxbigblue mo_stage/st_dxbigblue/st_dxbigblue
+Original: 64688 5695b3367d19f8cc98c2a6582c0cd3fd34c20f74
+Source probe: 64672 1e28c718c3b7cc15cd891eb6b4d58193d114be73
+Full REL byte match: False
+First differing byte: 0x37
+FAIL: full-REL probe for st_dxbigblue (mo_stage/st_dxbigblue/st_dxbigblue)

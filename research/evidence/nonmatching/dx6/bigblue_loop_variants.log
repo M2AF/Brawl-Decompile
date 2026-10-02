@@ -1,0 +1,6 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+base                         fn_81_3B04__11stDxBigBlueFPfP5Vec3fUl: 110 diff lines, functions matching 85/101
+signed_continue              fn_81_3B04__11stDxBigBlueFPfP5Vec3fUl: 110 diff lines, functions matching 85/101
+goto_switch                  fn_81_3B04__11stDxBigBlueFPfP5Vec3fUl: 48 diff lines, functions matching 85/101
+goto_case_variables          fn_81_3B04__11stDxBigBlueFPfP5Vec3fUl: 44 diff lines, functions matching 85/101
+Best: goto_case_variables (44), goto_switch (48), base (110)

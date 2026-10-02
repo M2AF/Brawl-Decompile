@@ -1,0 +1,5 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+base                         fn_81_1714__11stDxBigBlueFf: 82 diff lines, functions matching 92/101
+explicit_vec                 fn_81_1714__11stDxBigBlueFf: 21 diff lines, functions matching 92/101
+explicit_vec_predeclare      fn_81_1714__11stDxBigBlueFf: 11 diff lines, functions matching 92/101
+Best: explicit_vec_predeclare (11), explicit_vec (21), base (82)

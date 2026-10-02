@@ -1,0 +1,32 @@
+{
+  "text": {
+    "lengths": [
+      33572,
+      33584
+    ],
+    "same": false,
+    "differences": 22375,
+    "first": "0x87",
+    "last": "0x8323"
+  },
+  "rodata": {
+    "lengths": [
+      288,
+      288
+    ],
+    "same": true,
+    "differences": 0,
+    "first": null,
+    "last": null
+  },
+  "data": {
+    "lengths": [
+      14464,
+      14464
+    ],
+    "same": true,
+    "differences": 0,
+    "first": null,
+    "last": null
+  }
+}

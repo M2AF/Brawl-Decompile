@@ -1,0 +1,130 @@
+{
+  "checkout": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex6",
+  "head": "147b9ca72c66e78181cc771760b5dfe5d7925636",
+  "branch": "codex/dx",
+  "unit": "mo_stage/st_dxonett/st_dxonett"
+}
+SAME create__9stDxOnettFv                     create__9stDxOnettFv                          13 13
+SAME __ct__9stDxOnettFv                       __ct__9stDxOnettFv                            65 65
+SAME __dt__9stDxOnettFv                       __dt__9stDxOnettFv                            40 40
+SAME loading__9stDxOnettFv                    loading__9stDxOnettFv                         2 2
+SAME createObj__9stDxOnettFv                  createObj__9stDxOnettFv                       164 164
+SAME createCloud__9stDxOnettFi                createCloud__9stDxOnettFi                     43 43
+SAME setStageData__6GroundFPv                 setStageData__6GroundFPv                      2 2
+SAME createBackground__9stDxOnettFi           createBackground__9stDxOnettFi                55 55
+SAME set1C8__9grDxOnettFPv                    set1C8__9grDxOnettFPv                         2 2
+SAME set1D0__11grDxOnettBgFPv                 set1D0__11grDxOnettBgFPv                      2 2
+SAME createKanban__9stDxOnettFi               createKanban__9stDxOnettFi                    82 82
+SAME set1D8__15grDxOnettKanbanFPv             set1D8__15grDxOnettKanbanFPv                  2 2
+SAME set1DC__15grDxOnettKanbanFPv             set1DC__15grDxOnettKanbanFPv                  2 2
+SAME set1E0__15grDxOnettKanbanFPv             set1E0__15grDxOnettKanbanFPv                  2 2
+SAME set1E4__15grDxOnettKanbanFUc             set1E4__15grDxOnettKanbanFUc                  2 2
+SAME createAshiba__9stDxOnettFi               createAshiba__9stDxOnettFi                    62 62
+SAME set1D4__15grDxOnettAshibaFUc             set1D4__15grDxOnettAshibaFUc                  2 2
+SAME createCar__9stDxOnettFi                  createCar__9stDxOnettFi                       116 116
+SAME set1D0__12grDxOnettCarFPv                set1D0__12grDxOnettCarFPv                     2 2
+SAME set1D4__12grDxOnettCarFPv                set1D4__12grDxOnettCarFPv                     2 2
+SAME set1D8__12grDxOnettCarFPv                set1D8__12grDxOnettCarFPv                     2 2
+SAME set1DC__12grDxOnettCarFPv                set1DC__12grDxOnettCarFPv                     2 2
+SAME set1E0__12grDxOnettCarFPv                set1E0__12grDxOnettCarFPv                     2 2
+SAME set1E4__12grDxOnettCarFUc                set1E4__12grDxOnettCarFUc                     2 2
+SAME createAttack__9stDxOnettFi               createAttack__9stDxOnettFi                    61 61
+SAME set1E4__15grDxOnettAttackFPv             set1E4__15grDxOnettAttackFPv                  2 2
+SAME set1E0__15grDxOnettAttackFPv             set1E0__15grDxOnettAttackFPv                  2 2
+SAME createWarning__9stDxOnettFi              createWarning__9stDxOnettFi                   55 55
+SAME set1D8__16grDxOnettWarningFPv            set1D8__16grDxOnettWarningFPv                 2 2
+SAME createBeltConveyors__9stDxOnettFv        createBeltConveyors__9stDxOnettFv             91 91
+SAME update__9stDxOnettFf                     update__9stDxOnettFf                          79 79
+SAME updateCameraBounds__9stDxOnettFf         updateCameraBounds__9stDxOnettFf              23 23
+SAME updateCars__9stDxOnettFf                 updateCars__9stDxOnettFf                      85 85
+SAME updateKanban__9stDxOnettFf               updateKanban__9stDxOnettFf                    58 58
+SAME updateEmpty__9stDxOnettFf                updateEmpty__9stDxOnettFf                     1 1
+DIFF chooseCar__9stDxOnettFUl                 chooseCar__9stDxOnettFUl                      145 145
+    --- target
+    +++ candidate
+    @@ -106,28 +106,28 @@
+     addi    r3,r29,608
+     lfs     f0,0(r31)
+    -addi    r4,r1,8
+    +addi    r4,r1,24
+     stb     r5,601(r29)
+     lfs     f4,68(r31)
+    -stfs    f0,8(r1)
+    +stfs    f0,24(r1)
+     lfs     f3,72(r31)
+     lfs     f2,76(r31)
+     lfs     f1,80(r31)
+    -stfs    f0,12(r1)
+    -stfs    f0,16(r1)
+    +stfs    f0,28(r1)
+    +stfs    f0,32(r1)
+     lwz     r0,616(r29)
+    -stfs    f4,32(r1)
+    +stfs    f4,8(r1)
+     clrlwi  r0,r0,3
+    -stfs    f3,36(r1)
+    -stfs    f2,24(r1)
+    -stfs    f1,28(r1)
+    +stfs    f3,12(r1)
+    +stfs    f2,16(r1)
+    +stfs    f1,20(r1)
+     stw     r0,616(r29)
+     bl <addr>
+     lwz     r0,616(r29)
+     li      r3,0
+    -lfs     f3,24(r1)
+    -lfs     f2,28(r1)
+    +lfs     f3,16(r1)
+    +lfs     f2,20(r1)
+     rlwinm  r0,r0,0,6,2
+    -lfs     f1,32(r1)
+    -lfs     f0,36(r1)
+    +lfs     f1,8(r1)
+    +lfs     f0,12(r1)
+     stfs    f3,668(r29)
+     stfs    f2,672(r29)
+SAME startFighterEvent__5StageFv              startFighterEvent__5StageFv                   1 1
+SAME initializeFighterAttackRatio__5StageFv   initializeFighterAttackRatio__5StageFv        2 2
+SAME helperStarWarp__5StageFv                 helperStarWarp__5StageFv                      2 2
+SAME isSimpleBossBattleMode__5StageFv         isSimpleBossBattleMode__5StageFv              2 2
+SAME isBossBattleMode__5StageFv               isBossBattleMode__5StageFv                    2 2
+SAME isCameraLocked__5StageFv                 isCameraLocked__5StageFv                      2 2
+SAME notifyTimmingGameStart__5StageFv         notifyTimmingGameStart__5StageFv              1 1
+SAME getFrameRuleTime__5StageFv               getFrameRuleTime__5StageFv                    2 2
+SAME setFrameRuleTime__5StageFf               setFrameRuleTime__5StageFf                    2 2
+SAME isNextStepBgmEqualNowStepBgmFromFlag__5StageFv isNextStepBgmEqualNowStepBgmFromFlag__5StageFv 2 2
+SAME getBgmPlayOffsetFrame__5StageFv          getBgmPlayOffsetFrame__5StageFv               3 3
+SAME getBgmVolume__5StageFv                   getBgmVolume__5StageFv                        3 3
+SAME setBgmChange__5StageFfbUl                setBgmChange__5StageFfbUl                     4 4
+SAME getBgmChangeID__5StageFPUlPf             getBgmChangeID__5StageFPUlPf                  5 5
+SAME isBgmChange__5StageFv                    isBgmChange__5StageFv                         2 2
+SAME getBgmOptionID__5StageFv                 getBgmOptionID__5StageFv                      2 2
+SAME getNowStepBgmID__5StageFv                getNowStepBgmID__5StageFv                     2 2
+SAME getBgmID__5StageFv                       getBgmID__5StageFv                            2 2
+SAME getBgmID__5StageCFv                      getBgmID__5StageCFv                           2 2
+SAME appearanceFighterLocal__5StageFv         appearanceFighterLocal__5StageFv              1 1
+SAME getScrollDir__5StageFP5Vec3f             getScrollDir__5StageFP5Vec3f                  7 7
+SAME getDefaultLightSetIndex__5StageFv        getDefaultLightSetIndex__5StageFv             2 2
+SAME getAIRange__5StageFv                     getAIRange__5StageFv                          2 2
+SAME isAdventureStage__5StageFv               isAdventureStage__5StageFv                    2 2
+SAME getPokeTrainerDrawLayer__5StageFv        getPokeTrainerDrawLayer__5StageFv             2 2
+SAME getPokeTrainerPositionZ__5StageFv        getPokeTrainerPositionZ__5StageFv             3 3
+SAME getPokeTrainerPointData__5StageFPii      getPokeTrainerPointData__5StageFPii           1 1
+SAME getPokeTrainerPointNum__5StageFv         getPokeTrainerPointNum__5StageFv              2 2
+SAME isReStartSamePoint__7stMeleeFv           isReStartSamePoint__7stMeleeFv                2 2
+SAME getWind2ndOnlyData__7stMeleeFv           getWind2ndOnlyData__7stMeleeFv                2 2
+SAME isBamperVector__9stDxOnettFv             isBamperVector__9stDxOnettFv                  2 2
+SAME __sinit_\st_dxonett_cpp                  __sinit_\st_dxonett_cpp                       25 25
+SAME __dt__30stClassInfoImpl<44,9stDxOnett>Fv __dt__30stClassInfoImpl<44,9stDxOnett>Fv      29 29
+SAME create__30stClassInfoImpl<44,9stDxOnett>Fv create__30stClassInfoImpl<44,9stDxOnett>Fv    13 13
+SAME preload__30stClassInfoImpl<44,9stDxOnett>Fv preload__30stClassInfoImpl<44,9stDxOnett>Fv   1 1
+SAME section .rodata: target 88 bytes, candidate 88 bytes
+SAME section .data: target 1352 bytes, candidate 1352 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 70/71. Section contents match. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py st_dxonett mo_stage/st_dxonett/st_dxonett
+Original: 70568 babb129435fc4ef716395030c0c97fcd53e01066
+Source probe: 70568 c4897bebcf54ce7589763fed82cbacb85e79f93b
+Full REL byte match: False
+First differing byte: 0x148f
+FAIL: full-REL probe for st_dxonett (mo_stage/st_dxonett/st_dxonett)

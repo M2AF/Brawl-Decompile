@@ -1,0 +1,7 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+base                         __ct__11stDxBigBlueFv: 202 diff lines, functions matching 84/101
+direct_both                  __ct__11stDxBigBlueFv: 0 diff lines, functions matching 85/101
+direct_car                   __ct__11stDxBigBlueFv: 96 diff lines, functions matching 84/101
+direct_platform              __ct__11stDxBigBlueFv: 106 diff lines, functions matching 84/101
+pointer_both                 __ct__11stDxBigBlueFv: 202 diff lines, functions matching 84/101
+Best: direct_both (0), direct_car (96), direct_platform (106)

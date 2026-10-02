@@ -434,3 +434,15 @@ current checkpoint; top summaries are dated historical snapshots.
 
 ### 2026-10-01T20:46-03:00 · codex · note · 33d3f02 (rsbe01_01-support) clean
 - codex-parallel: brawl-codex6: Local review st_dxbigblue/mo_stage/st_dxbigblue/st_dxbigblue: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_dxbigblue\brawl-codex6\st_dxbigblue_20261001T234533.453340Z.
+
+### 2026-10-01T21:12-03:00 · codex · note · 33d3f02 (rsbe01_01-support) clean
+- codex-parallel: Big Blue source diagnostics93/101 after bounded constructor, factory, FP-local and loop-layout variants. Stage remains NonMatching; data1960/ctors4 raw bytes same, RO140vs144 requires linked padding review. Starting clean fallback build in brawl-codex6 before full-REL review, log evidence/nonmatching/dx6/bigblue_final_clean_build.log. Proven NW4R LinkListImpl import names need a fresh main.elf in this isolated checkout. No main edits, lease claim, sweep or permuter.
+
+### 2026-10-01T21:13-03:00 · codex · note · 33d3f02 (rsbe01_01-support) clean
+- codex-parallel: brawl-codex6: Local review st_dxbigblue/mo_stage/st_dxbigblue/st_dxbigblue: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_dxbigblue\brawl-codex6\st_dxbigblue_20261002T001323.008314Z.
+
+### 2026-10-01T21:15-03:00 · codex · note · 33d3f02 (rsbe01_01-support) clean
+- codex-parallel: brawl-codex6: Local review st_dxbigblue/mo_stage/st_dxbigblue/st_dxbigblue: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_dxbigblue\brawl-codex6\st_dxbigblue_20261002T001545.198279Z.
+
+### 2026-10-01T21:17-03:00 · codex · note · 33d3f02 (rsbe01_01-support) clean
+- codex-parallel: brawl-codex6: Local review st_dxonett/mo_stage/st_dxonett/st_dxonett: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_dxonett\brawl-codex6\st_dxonett_20261002T001746.794814Z.

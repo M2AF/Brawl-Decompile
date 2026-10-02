@@ -1,0 +1,178 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+DIFF __ct__11stDxBigBlueFv                    __ct__11stDxBigBlueFv                         273 273
+DIFF fn_81_11BC__11stDxBigBlueFv              fn_81_11BC__11stDxBigBlueFv                   84 71
+DIFF fn_81_130C__11stDxBigBlueFi              fn_81_130C__11stDxBigBlueFi                   87 89
+    --- target
+    +++ candidate
+    @@ -2,12 +2,13 @@
+     mflr    r0
+     lis     r5,0
+    -addi    r7,r4,30
+    +lis     r6,0
+     stw     r0,36(r1)
+    -addi    r0,r4,130
+    -lis     r6,0
+    +addi    r0,r4,30
+     addi    r5,r5,0
+     stw     r31,28(r1)
+    +clrlwi  r31,r0,24
+    +addi    r0,r4,130
+     stw     r30,24(r1)
+    -clrlwi  r30,r7,24
+    +mr      r7,r31
+     stw     r29,20(r1)
+     mr      r29,r4
+    @@ -15,14 +16,15 @@
+     stw     r28,16(r1)
+     mr      r28,r3
+    +mr      r6,r4
+     extsh   r3,r0
+     bl <addr>
+     cmpwi   r3,0
+    -mr      r31,r3
+    +mr      r30,r3
+     beq <addr>
+     mr      r3,r28
+    -mr      r4,r31
+    +mr      r4,r30
+     bl <addr>
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     lwz     r4,416(r28)
+     li      r5,0
+    @@ -31,42 +33,42 @@
+     mtctr   r12
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     lwz     r4,156(r28)
+     lwz     r12,164(r12)
+     mtctr   r12
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     addi    r4,r28,480
+     lwz     r12,480(r12)
+     mtctr   r12
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     addi    r4,r28,508
+     lwz     r12,484(r12)
+     mtctr   r12
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     mr      r4,r29
+     lwz     r12,488(r12)
+     mtctr   r12
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     addi    r4,r28,2714
+     lwz     r12,492(r12)
+     mtctr   r12
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     addi    r4,r28,2684
+     lwz     r12,496(r12)
+     mtctr   r12
+     bctrl
+    -lwz     r12,60(r31)
+    -mr      r3,r31
+    +lwz     r12,60(r30)
+    +mr      r3,r30
+     addi    r4,r28,884
+     lwz     r12,500(r12)
+    @@ -75,6 +77,6 @@
+     lwz     r4,416(r28)
+     mr      r3,r28
+    -mr      r5,r30
+    -mr      r6,r31
+    +mr      r5,r31
+    +mr      r6,r30
+     bl <addr>
+     lwz     r0,36(r1)
+DIFF fn_81_1714__11stDxBigBlueFf              fn_81_1714__11stDxBigBlueFf                   130 132
+DIFF fn_81_19A8__11stDxBigBlueFf              fn_81_19A8__11stDxBigBlueFf                   183 179
+DIFF fn_81_1DE4__11stDxBigBlueFf              fn_81_1DE4__11stDxBigBlueFf                   258 261
+DIFF fn_81_21EC__11stDxBigBlueFf              fn_81_21EC__11stDxBigBlueFf                   60 63
+DIFF fn_81_22DC__11stDxBigBlueFf              fn_81_22DC__11stDxBigBlueFf                   96 96
+DIFF fn_81_245C__11stDxBigBlueFf              fn_81_245C__11stDxBigBlueFf                   90 92
+DIFF fn_81_25C4__11stDxBigBlueFf              fn_81_25C4__11stDxBigBlueFf                   222 222
+DIFF fn_81_2DB4__11stDxBigBlueFif             fn_81_2DB4__11stDxBigBlueFif                  259 262
+DIFF fn_81_31C0__11stDxBigBlueFf              fn_81_31C0__11stDxBigBlueFf                   163 160
+DIFF fn_81_344C__11stDxBigBlueFf              fn_81_344C__11stDxBigBlueFf                   229 236
+DIFF fn_81_37E0__11stDxBigBlueFP5Vec3fP5Vec3fi fn_81_37E0__11stDxBigBlueFP5Vec3fP5Vec3fi     39 39
+DIFF fn_81_387C__11stDxBigBlueFUl             fn_81_387C__11stDxBigBlueFUl                  33 32
+    --- target
+    +++ candidate
+    @@ -21,9 +21,8 @@
+     add     r5,r3,r0
+     lbz     r0,884(r5)
+    -cmpwi   r0,10
+    +cmplwi  r0,10
+     bge <addr>
+    -cmpwi   r0,6
+    -bge <addr>
+    -b <addr>
+    +cmplwi  r0,6
+    +blt <addr>
+     li      r3,0
+     blr
+DIFF fn_81_3900__11stDxBigBlueFPQ34nw4r4math5_VEC3 fn_81_3900__11stDxBigBlueFPQ34nw4r4math5_VEC3 39 39
+    --- target
+    +++ candidate
+    @@ -10,5 +10,5 @@
+     lwz     r0,24(r5)
+     lis     r5,0
+    -lfs     f1,0(r5)
+    +lfs     f2,0(r5)
+     li      r6,0
+     mtctr   r0
+    @@ -21,15 +21,15 @@
+     addi    r5,r5,-30
+     add     r5,r3,r5
+    -lfs     f3,0(r4)
+    +lfs     f1,0(r4)
+     lbz     r0,2684(r5)
+     mulli   r0,r0,60
+     add     r5,r3,r0
+    -lfs     f2,888(r5)
+    -fsubs   f0,f2,f1
+    -fcmpo   cr0,f3,f0
+    +lfs     f3,888(r5)
+    +fsubs   f0,f3,f2
+    +fcmpo   cr0,f0,f1
+    +bge <addr>
+    +fadds   f0,f2,f3
+    +fcmpo   cr0,f0,f1
+     ble <addr>
+    -fadds   f0,f1,f2
+    -fcmpo   cr0,f3,f0
+    -bge <addr>
+     li      r3,1
+     blr
+DIFF fn_81_399C__11stDxBigBlueFPfPQ34nw4r4math5_VEC3Ul fn_81_399C__11stDxBigBlueFPfPQ34nw4r4math5_VEC3Ul 90 90
+DIFF fn_81_3B04__11stDxBigBlueFPfPQ34nw4r4math5_VEC3Ul fn_81_3B04__11stDxBigBlueFPfPQ34nw4r4math5_VEC3Ul 70 98
+DIFF fn_81_3C1C__11stDxBigBlueFUc             fn_81_3C1C__11stDxBigBlueFUc                  56 56
+Candidate-only functions (often unreferenced weak inlines the linker strips): __dt__Q44nw4r2ut26@unnamed@st_dxbigblue_cpp@11NonCopyableFv, __dt__Q34nw4r2ut12LinkListNodeFv, __dt__Q34nw4r2ut29LinkList<15stDxBigBlueNode,0>Fv
+DIFF section .rodata: target 144 bytes, candidate 140 bytes
+SAME section .data: target 1960 bytes, candidate 1960 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 82/101. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

@@ -1,0 +1,5 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+base                         fn_81_3B04__11stDxBigBlueFPfP5Vec3fUl: 26 diff lines, functions matching 86/101
+scale_local                  fn_81_3B04__11stDxBigBlueFPfP5Vec3fUl: 4 diff lines, functions matching 86/101
+scale_expr_y                 fn_81_3B04__11stDxBigBlueFPfP5Vec3fUl: 0 diff lines, functions matching 87/101
+Best: scale_expr_y (0), scale_local (4), base (26)

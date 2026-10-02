@@ -1,0 +1,5 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+base                         fn_81_1DE4__11stDxBigBlueFf: 295 diff lines, functions matching 93/101
+intrinsic_all                fn_81_1DE4__11stDxBigBlueFf: 335 diff lines, functions matching 90/101
+intrinsic_float_cast         fn_81_1DE4__11stDxBigBlueFf: 346 diff lines, functions matching 93/101
+Best: base (295), intrinsic_all (335), intrinsic_float_cast (346)
