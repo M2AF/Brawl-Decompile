@@ -1,0 +1,58 @@
+# Handoff board — Brawl RSBE01_01
+<!-- handoff v1. LIVE STATE ONLY: rewrite in place, keep under ~60 lines.
+     History goes in HANDOFF_LOG.md. Machine fields above the first ## are managed by handoff.py. -->
+
+owner: claude
+task: fighters (ft_*): recon + upstream NonMatching fighter TUs, then smallest fighter TUs
+lease_until: 2026-10-02T04:04-03:00
+repo: ../brawl
+verify: cd ../brawl; ../.venv/Scripts/python.exe configure.py --version RSBE01_01; Remove-Item -LiteralPath build/RSBE01_01/ok -ErrorAction SilentlyContinue; ../.venv/Scripts/ninja.exe
+verified: 8d3b44a · promote gates PASS at 8d3b44a; clean rebuild 127/127 · 2026-10-02T01:04-03:00
+head: 8d3b44a (rsbe01_01-support) clean
+updated: 2026-10-02T01:09-03:00 · codex
+
+## Now
+- HEAD 97ff63d on rsbe01_01-support, clean; local only. 127/127 (clean rebuild + independent verifier).
+- Since 9ec5405: upstream PR port (9171889: st_gw, st_mansion, small units), Marth special_hi WIP (8ad4139, 9/10),
+  Marth special_lw MATCHED (33d3f02, first fighter TU), Codex Onett/Big Blue parked (c5d8627, 97ff63d, NonMatching).
+- Parked NonMatching: st_dxgreens (65/69 regalloc), st_kart (61/63), st_tbreak, st_oldin, st_dxonett (70/71), st_dxbigblue (93/101), Battlefield x3, menu_pad (DOL), ft_marth special_hi (9/10).
+- Worktrees: only main (brawl-codex6 and the port scratch worktree removed after checks; branches kept).
+- Lease: Claude, fighter source work only. DECOMP_SPEEDUP_PLAN.md (tooling) is a separate track and waits for this lease per its own rule.
+
+## Next
+- Luigi special_s_ram, special_s_wall; then more fighters
+
+## Traps
+- Fighter units owning shared weak RTTI: emission = reverse class-declaration order; include per-class ft_kinetic_energy_*.h headers in the needed order (see special_s). Name shared RTTI labels (__RTTI__...) so emitted copies dedupe.
+- Since c472821 Stage::getZoneLightSetIndex takes Vec3f* (include/st/stage.h); sora_melee symbol renamed. Branches built before that must be rebuilt after cherry-pick.
+- One TU including data, full source REL probe then MatchingFor/allowlist and fresh 127/127.
+- Never push/upload; originals unchanged; target asm only evidence/nonmatching.
+- No flag sweeps; bounded permuter for understood near-misses only.
+- New shadowing headers: clear build/RSBE01_01/src (depfiles miss new files) and rebuild all before trusting 127/127.
+- Every grMadein stage body builds a {0xFF,0},{0xFF,1} static pair before class info: reuse stMadeinStaticPair (include/st_heal/st_heal.h), move to a shared header on second use.
+- MWCC: zero-initialised statics go to .bss unless #pragma explicit_zero_data; local aggregate templates go to .rodata; file-scope statics keep copy-before-store order.
+- Dxgarden B90 is an unreachable epilogue label in B08; 4 bytes of rodata padding come from linker.
+- Use probe_source_rel.py to compile before source probing; no stale object acceptance.
+- Preserve all journal history; report source-linked separately from function-only wins.
+
+## Pointers
+- BrawlTool: research/brawltool/README.md (use `brawltool-cli.bat build|check|diff|probe|promote|integrate|cleanup`).
+- Status page research/status/brawl_status.html; regenerate with claude_tools/mk_status_page.py after each promotion/integration.
+- PROJECT_STATE.md, CODEX_RESUME.md and newest HANDOFF_LOG.md entry.
+- evidence/nonmatching/heal/, dxgarden/, dxyorster/ (private evidence).
+- ../brawl/docs/RSBE01_01.md (matching/UB/lifetime details); config/RSBE01_01/verified_objects.txt.
+
+---- live checks
+lease: held by claude for 173 more min
+git:   8d3b44a (rsbe01_01-support) dirty 2  <-- DRIFT: board says 8d3b44a (rsbe01_01-support) clean
+journal: 145 entries  (run `rotate`)
+
+---- last 3 journal entries
+### 2026-10-02T01:09-03:00 · codex · note · 8d3b44a (rsbe01_01-support) clean
+- codex-parallel: brawl-codex7: Local review ft_ike/mo_fighter/ft_ike/ft_ike_status_uniq_process_special_hi: full source REL not accepted; no promotion. Evidence evidence\nonmatching\ft_ike\brawl-codex7\ft_ike_status_uniq_process_special_hi_20261002T040929.232107Z.
+
+### 2026-10-02T01:09-03:00 · codex · note · 8d3b44a (rsbe01_01-support) clean
+- codex-parallel: brawl-codex7: Local review ft_ike/mo_fighter/ft_ike/ft_ike_status_uniq_process_final: full source REL not accepted; no promotion. Evidence evidence\nonmatching\ft_ike\brawl-codex7\ft_ike_status_uniq_process_final_20261002T040935.371060Z.
+
+### 2026-10-02T01:09-03:00 · codex · note · 8d3b44a (rsbe01_01-support) clean
+- codex-parallel: brawl-codex7: Local review ft_ike/mo_fighter/ft_ike/ft_ike_status_uniq_process_special_s: full source REL not accepted; no promotion. Evidence evidence\nonmatching\ft_ike\brawl-codex7\ft_ike_status_uniq_process_special_s_20261002T040941.550235Z.

@@ -1,0 +1,86 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex7 (codex/ike)
+DIFF initStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser initStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser 450 446
+DIFF execStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser execStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser 437 439
+    --- target
+    +++ candidate
+    @@ -20,7 +20,7 @@
+     stw     r4,112(r1)
+     stw     r3,108(r1)
+    -stw     r3,124(r1)
+    -stw     r4,128(r1)
+    -lfs     f31,124(r1)
+    +stw     r3,132(r1)
+    +stw     r4,136(r1)
+    +lfs     f31,132(r1)
+     lwz     r3,216(r30)
+     lwz     r3,112(r3)
+    @@ -75,6 +75,6 @@
+     lwz     r3,216(r30)
+     lwz     r3,80(r3)
+    +fmr     f1,f0
+     mr      r4,r27
+    -fmr     f1,f0
+     li      r5,0
+     lwz     r12,0(r3)
+    @@ -125,5 +125,5 @@
+     lfs     f1,0(r31)
+     stfs    f1,104(r1)
+    -addi    r3,r1,180
+    +addi    r3,r1,188
+     fmr     f2,f1
+     fmr     f3,f1
+    @@ -152,5 +152,5 @@
+     lfs     f1,0(r31)
+     stfs    f1,88(r1)
+    -addi    r3,r1,168
+    +addi    r3,r1,176
+     fmr     f2,f1
+     fmr     f3,f1
+    @@ -258,11 +258,13 @@
+     mtctr   r12
+     bctrl
+    -stw     r4,56(r1)
+    -stw     r3,52(r1)
+    -lfs     f0,56(r1)
+    -stfs    f31,60(r1)
+    -stfs    f0,64(r1)
+    +stw     r4,64(r1)
+    +stw     r3,60(r1)
+    +stw     r3,124(r1)
+    +stw     r4,128(r1)
+    +lfs     f0,128(r1)
+    +stfs    f31,52(r1)
+    +stfs    f0,56(r1)
+     addi    r3,r27,8
+    -addi    r4,r1,60
+    +addi    r4,r1,52
+     bl <addr>
+     lwz     r3,216(r30)
+    @@ -344,5 +346,5 @@
+     lfs     f1,0(r31)
+     stfs    f1,40(r1)
+    -addi    r3,r1,156
+    +addi    r3,r1,164
+     fmr     f2,f1
+     fmr     f3,f1
+    @@ -361,5 +363,5 @@
+     stfs    f1,28(r1)
+     stfs    f0,32(r1)
+    -addi    r3,r1,144
+    +addi    r3,r1,152
+     fmr     f2,f1
+     fmr     f3,f1
+    @@ -382,5 +384,5 @@
+     lfs     f1,0(r31)
+     stfs    f1,24(r1)
+    -addi    r3,r1,132
+    +addi    r3,r1,140
+     fmr     f2,f1
+     fmr     f3,f1
+DIFF execFixPos__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser execFixPos__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser 44 44
+DIFF exitStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesseri exitStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesseri 32 30
+Candidate-only functions (often unreferenced weak inlines the linker strips): __dt__Q215soKineticEnergy13AttributeFlagFv, __ct__5Vec3fFfff, checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, __dt__19soStatusUniqProcessFv, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, execStatus__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+DIFF section .rodata: target 24 bytes, candidate 20 bytes
+DIFF section .data: target 120 bytes, candidate 540 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 4/8. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

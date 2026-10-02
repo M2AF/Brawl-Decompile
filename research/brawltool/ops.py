@@ -6,6 +6,7 @@ import hashlib
 import json
 import re
 import shutil
+import subprocess
 import webbrowser
 from datetime import datetime, timezone
 from collections import defaultdict
@@ -13,17 +14,24 @@ from pathlib import Path
 from typing import Optional
 
 from . import common
+from .apply_status_splits import ApplyStatusSplitsError, apply_status_splits as apply_status_split_files
+from .metrics import METRICS_FILE, summarize as summarize_metrics, timed_operation
+from .rename_status import RenameSymbolsError, rename_status_configs
+from .reference_status_splits import propose_status_splits, write_review_copy
 common.select_repo()  # Also validate launches through the existing GUI entry point.
 
-from .common import (BRAWL, BRANCH, BUILD, DRAFTS, DTK, HANDOFF, M2C, MAIN_DOL_SHA1, NINJA, OBJDUMP, PY, RESEARCH, TOOLS,
-                     WS, Runner, ToolError, git, journal, is_parallel, require_main, validate_unit)
+from .common import (BRAWL, BRANCH, BUILD, DRAFTS, DTK, HANDOFF, M2C, MAIN_DOL_SHA1, NINJA, OBJDUMP, PY, RESEARCH,
+                     TOOLS, VENV_SCRIPTS, WS, Runner, ToolError, git, journal, is_parallel, require_main, validate_unit)
 
 CONFIGURE = BRAWL / "configure.py"
 VERIFIED = BRAWL / "config" / "RSBE01_01" / "verified_objects.txt"
 STATUS_HTML = RESEARCH / "status" / "brawl_status.html"
+STATUS_SPLIT_REVIEW = RESEARCH / "brawltool" / "review" / "status_splits"
+OBJDIFF_RELEASES = "https://github.com/encounter/objdiff/releases/latest"
 
 
 # ----------------------------------------------------------------------------- build & verify
+@timed_operation("build")
 def build(r: Runner, clean: bool = False) -> None:
     """configure + remove the stamp + ninja; must print OK: 127/127."""
     if clean:
@@ -63,6 +71,42 @@ def status_page(r: Runner, open_it: bool = True) -> None:
     r.run([PY, TOOLS / "mk_status_page.py"])
     if open_it:
         webbrowser.open(STATUS_HTML.as_uri())
+
+
+def metrics(r: Runner) -> None:
+    summary = summarize_metrics()
+    r.log(f"Timing CSV: {METRICS_FILE}")
+    if not summary:
+        r.log("No timed BrawlTool commands recorded yet.")
+        return
+    r.log(f"{'command':<10} {'runs':>5} {'mean':>10} {'median':>10} {'max':>10} {'failed':>7}")
+    for command, stats in summary.items():
+        r.log(f"{command:<10} {stats['count']:5d} {stats['mean_seconds']:9.3f}s "
+              f"{stats['median_seconds']:9.3f}s {stats['max_seconds']:9.3f}s {stats['failures']:7d}")
+
+
+def open_objdiff(r: Runner) -> None:
+    """Launch ObjDiff for the active checkout, or open its official releases page."""
+    config = BRAWL / "objdiff.json"
+    if not config.is_file():
+        raise ToolError(f"ObjDiff configuration is missing: {config}. Run configure.py first.")
+
+    candidates = (VENV_SCRIPTS / "objdiff.exe", VENV_SCRIPTS / "objdiff-windows-x86_64.exe")
+    executable = next((path for path in candidates if path.is_file()), None)
+    if executable is None:
+        executable = shutil.which("objdiff.exe") or shutil.which("objdiff")
+    if executable is None:
+        r.log("ObjDiff is not installed. Opening the official Windows releases page.")
+        webbrowser.open(OBJDIFF_RELEASES)
+        r.log(f"Save the Windows GUI as {VENV_SCRIPTS / 'objdiff.exe'} and click Open ObjDiff again.")
+        return
+
+    try:
+        subprocess.Popen([str(executable)], cwd=BRAWL, env=r.env(), stdin=subprocess.DEVNULL,
+                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    except OSError as exc:
+        raise ToolError(f"Could not launch ObjDiff at {executable}: {exc}") from exc
+    r.log(f"Opened ObjDiff for {BRAWL}")
 
 
 # ----------------------------------------------------------------------------- configure helpers
@@ -190,6 +234,64 @@ def split(r: Runner, module: str, unit: str, ranges: dict[str, str], force_activ
     r.log(f"Added split + NonMatching object for {unit} in {module}. Next: 'draft', write the source, then 'diff'.")
 
 
+def status_splits(r: Runner, module: str, prefix: str = "ft", write_copy: bool = False) -> Optional[Path]:
+    """Propose status TU splits and optionally append them to a local review copy."""
+    try:
+        result = propose_status_splits(module, BRAWL / "build" / "RSBE01_01", prefix)
+    except (FileNotFoundError, ValueError) as exc:
+        raise ToolError(str(exc)) from exc
+    for warning in result.warnings:
+        r.log(warning)
+    r.log(result.render())
+    if not write_copy:
+        return None
+
+    source = BRAWL / "config" / "RSBE01_01" / "rels" / module / "splits.txt"
+    if not source.is_file():
+        raise ToolError(f"No source splits.txt for {module}: {source}")
+    destination = STATUS_SPLIT_REVIEW / module / "splits.txt"
+    try:
+        write_review_copy(source, destination, result.render(), BRAWL)
+    except (OSError, ValueError) as exc:
+        raise ToolError(str(exc)) from exc
+    r.log(f"Review copy written; real splits.txt was not changed: {destination}")
+    return destination
+
+
+def apply_status_splits(r: Runner, module: str, prefix: str) -> tuple[str, ...]:
+    """Generate and apply reviewed status proposals to both configs and configure.py."""
+    try:
+        result = propose_status_splits(module, BRAWL / "build" / "RSBE01_01", prefix)
+        for warning in result.warnings:
+            r.log(warning)
+        r.log(result.render())
+        split_files = {
+            version: BRAWL / "config" / version / "rels" / module / "splits.txt"
+            for version in ("RSBE01_01", "RSBE01_02")
+        }
+        units = apply_status_split_files(module, result.proposals, split_files, BRAWL / "configure.py")
+    except (FileNotFoundError, OSError, ValueError) as exc:
+        raise ToolError(str(exc)) from exc
+    for unit in units:
+        r.log(f"Added Object(NonMatching, \"{unit}\") to both version split sets.")
+    r.log(f"Applied {len(units)} status split(s) with cflags_fighter. Review both configs and configure.py.")
+    return units
+
+
+def rename_status(r: Runner, module: str, status_args: tuple[str, ...]) -> None:
+    """Apply the standard status symbol mapping to both version configs."""
+    configs = {
+        version: BRAWL / "config" / version / "rels" / module / "symbols.txt"
+        for version in ("RSBE01_01", "RSBE01_02")
+    }
+    try:
+        renames = rename_status_configs(module, status_args, configs)
+    except (OSError, RenameSymbolsError) as exc:
+        raise ToolError(str(exc)) from exc
+    for old, new in renames.items():
+        r.log(f"{old} -> {new}")
+
+
 # ----------------------------------------------------------------------------- draft (m2c)
 def draft(r: Runner, module: str, unit: str, functions: tuple[str, ...] = ()) -> Path:
     """Run m2c on the unit's split assembly (or an auto_ chunk name) and save a C draft."""
@@ -204,7 +306,10 @@ def draft(r: Runner, module: str, unit: str, functions: tuple[str, ...] = ()) ->
     cmd = [PY, M2C, "-t", "ppc-mwcc-c++", str(asm)]
     for f in functions:
         cmd += ["-f", f]
-    _, out = r.run(cmd, quiet=True, check=False)
+    code, out = r.run(cmd, quiet=True, check=False)
+    if code != 0:
+        detail = "\n".join(out.splitlines()[-20:])
+        raise ToolError(f"m2c failed with exit code {code}; no new draft was saved.\n{detail}".rstrip())
     DRAFTS.mkdir(parents=True, exist_ok=True)
     dest = DRAFTS / f"{module}__{Path(unit).name}.m2c.c"
     dest.write_text("// m2c draft (machine output, NOT source): rewrite by hand against the headers.\n" + out + "\n",
@@ -269,6 +374,7 @@ def _sections(obj: Path) -> dict[str, bytes]:
     return {k: bytes(v) for k, v in secs.items()}
 
 
+@timed_operation("errors")
 def errors(r: Runner, unit: str, max_errors: int = 30) -> bool:
     """Compile one unit with up to max_errors diagnostics (the build stops at 1) and print them compactly."""
     import subprocess
@@ -305,6 +411,7 @@ def errors(r: Runner, unit: str, max_errors: int = 30) -> bool:
     return ok
 
 
+@timed_operation("diff")
 def diff(r: Runner, module: str, unit: str, show: tuple[str, ...] = (), verbose: bool = False) -> bool:
     """Compile the candidate and compare it to the extracted target, function by function."""
     validate_unit(module, unit)
@@ -361,6 +468,7 @@ def diff(r: Runner, module: str, unit: str, show: tuple[str, ...] = (), verbose:
 
 
 # ----------------------------------------------------------------------------- variants
+@timed_operation("variants")
 def variants(r: Runner, module: str, unit: str, spec: Path, function: str = "") -> list[tuple[int, int, str]]:
     """Try source variants (spec defines VARIANTS = [(name, [(old, new), ...]), ...]) and rank them.
 
@@ -427,10 +535,46 @@ def _variant_score(r: Runner, module: str, unit: str, function: str) -> tuple[in
 
 
 # ----------------------------------------------------------------------------- probe
+def missing_probe_source_objects(root: Path, module: str, unit: str) -> list[Path]:
+    """Find linked source objects needed by the probe that are absent from the build tree."""
+    ninja_file = Path(root) / "build.ninja"
+    try:
+        ninja_text = ninja_file.read_text(encoding="utf-8").replace("$\n", "")
+    except OSError as exc:
+        raise ToolError(f"Cannot inspect {ninja_file}; configure the checkout before probing.") from exc
+    key = f"build build\\RSBE01_01\\{module}\\{module}.plf: link "
+    line = next((item for item in ninja_text.splitlines() if item.startswith(key)), None)
+    if line is None:
+        raise ToolError(f"No link rule for {module} in build.ninja; configure RSBE01_01 before probing.")
+
+    objects = line[len(key):].split(" | ", 1)[0].split()
+    target = f"build/RSBE01_01/{module}/obj/{unit}.o".replace("/", "\\")
+    candidate = f"build/RSBE01_01/src/{unit}.o".replace("/", "\\")
+    if (objects.count(target), objects.count(candidate)) not in ((1, 0), (0, 1)):
+        raise ToolError(f"Probe link inputs for {module}/{unit} do not contain exactly one target or source object.")
+
+    source_prefix = "build/RSBE01_01/src/"
+    missing = []
+    for obj in objects:
+        normalized = obj.replace("\\", "/")
+        if normalized.startswith(source_prefix) and normalized.endswith(".o") and obj != candidate:
+            path = Path(root) / normalized
+            if not path.is_file():
+                missing.append(path)
+    return missing
+
+
+@timed_operation("probe")
 def probe(r: Runner, module: str, unit: str) -> bool:
     validate_unit(module, unit)
     if not is_rel(module):
         raise ToolError(f"{module} is a main.dol library; the full-REL probe only works for REL modules.")
+    missing = missing_probe_source_objects(BRAWL, module, unit)
+    if missing:
+        examples = "\n".join(f"  {path}" for path in missing[:10])
+        remainder = f"\n  ... and {len(missing) - 10} more" if len(missing) > 10 else ""
+        raise ToolError(f"Full-REL probe for {module} needs {len(missing)} other source object(s) that are missing:\n"
+                        f"{examples}{remainder}\nRun a BrawlTool build first to restore them; probe will not build automatically.")
     code, out = r.run([PY, TOOLS / "probe_source_rel.py", module, unit], check=False)
     ok = code == 0 and "Full REL byte match: True" in out
     r.log(("PASS" if ok else "FAIL") + f": full-REL probe for {module} ({unit})")
@@ -501,6 +645,7 @@ def review(r: Runner, module: str, unit: str) -> bool:
     return bool(ok)
 
 
+@timed_operation("promote")
 def promote(r: Runner, unit: str, commit_message: Optional[str] = None) -> None:
     """All gates in order; edits configure.py + verified_objects.txt only after the probe passes."""
     validate_unit("main", unit)

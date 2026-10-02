@@ -1,0 +1,38 @@
+{
+  "special_lw": {
+    "commit_reviewed": "7a3f8c7",
+    "counts": {
+      "same": 8,
+      "total": 9
+    },
+    "full_rel_byte_match": false,
+    "review": "research\\evidence\\nonmatching\\ft_ike\\brawl-codex7\\ft_ike_status_uniq_process_special_lw_20261002T035112.040160Z"
+  },
+  "special_hi": {
+    "commit_reviewed": "7a3f8c7",
+    "counts": {
+      "same": 16,
+      "total": 18
+    },
+    "full_rel_byte_match": false,
+    "review": "research\\evidence\\nonmatching\\ft_ike\\brawl-codex7\\ft_ike_status_uniq_process_special_hi_20261002T035116.167835Z"
+  },
+  "final": {
+    "commit_reviewed": "7a3f8c7",
+    "counts": {
+      "same": 8,
+      "total": 10
+    },
+    "full_rel_byte_match": false,
+    "review": "research\\evidence\\nonmatching\\ft_ike\\brawl-codex7\\ft_ike_status_uniq_process_final_20261002T035120.592929Z"
+  },
+  "special_s": {
+    "commit_reviewed": "7a3f8c7",
+    "counts": {
+      "same": 4,
+      "total": 8
+    },
+    "full_rel_byte_match": false,
+    "review": "research\\evidence\\nonmatching\\ft_ike\\brawl-codex7\\ft_ike_status_uniq_process_special_s_20261002T035124.937810Z"
+  }
+}

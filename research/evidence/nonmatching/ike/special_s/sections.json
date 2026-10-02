@@ -1,0 +1,32 @@
+{
+  "text": {
+    "original_size": 81540,
+    "probe_size": 81516,
+    "contents_same": false
+  },
+  "ctors": {
+    "original_size": 28,
+    "probe_size": 28,
+    "contents_same": true
+  },
+  "dtors": {
+    "original_size": 12,
+    "probe_size": 12,
+    "contents_same": true
+  },
+  "rodata": {
+    "original_size": 192,
+    "probe_size": 192,
+    "contents_same": true
+  },
+  "data": {
+    "original_size": 33184,
+    "probe_size": 33184,
+    "contents_same": true
+  },
+  "bss": {
+    "original_size": 800,
+    "probe_size": 800,
+    "contents_same": null
+  }
+}

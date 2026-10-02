@@ -1,0 +1,41 @@
+{
+  "diagnostics": {
+    "same": 4,
+    "total": 8
+  },
+  "full_rel_byte_match": false,
+  "original_size": 146840,
+  "candidate_size": 146808,
+  "sections": {
+    "text": {
+      "original_size": 81540,
+      "candidate_size": 81516,
+      "contents_same": false
+    },
+    "ctors": {
+      "original_size": 28,
+      "candidate_size": 28,
+      "contents_same": true
+    },
+    "dtors": {
+      "original_size": 12,
+      "candidate_size": 12,
+      "contents_same": true
+    },
+    "rodata": {
+      "original_size": 192,
+      "candidate_size": 192,
+      "contents_same": true
+    },
+    "data": {
+      "original_size": 33184,
+      "candidate_size": 33184,
+      "contents_same": true
+    },
+    "bss": {
+      "original_size": 800,
+      "candidate_size": 800,
+      "contents_same": null
+    }
+  }
+}

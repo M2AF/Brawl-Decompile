@@ -1,0 +1,136 @@
+{
+  "__RTTI__15soKineticEnergy": {
+    "rtti_address": "0x1374",
+    "bases": [
+      {
+        "name": "soSuspendable",
+        "rtti_address": "0x138c"
+      },
+      {
+        "name": "soEnable",
+        "rtti_address": "0x1604"
+      },
+      {
+        "name": "soNullable",
+        "rtti_address": "0x1ee8"
+      }
+    ]
+  },
+  "__RTTI__19ftKineticEnergyStop": {
+    "rtti_address": "0x5c14",
+    "bases": [
+      {
+        "name": "soSuspendable",
+        "rtti_address": "0x138c"
+      },
+      {
+        "name": "soEnable",
+        "rtti_address": "0x1604"
+      },
+      {
+        "name": "soNullable",
+        "rtti_address": "0x1ee8"
+      },
+      {
+        "name": "soKineticEnergy",
+        "rtti_address": "0x1374"
+      },
+      {
+        "name": "soKineticEnergyNormal",
+        "rtti_address": "0x5c58"
+      }
+    ]
+  },
+  "__RTTI__22ftKineticEnergyGravity": {
+    "rtti_address": "0x5cf4",
+    "bases": [
+      {
+        "name": "soSuspendable",
+        "rtti_address": "0x138c"
+      },
+      {
+        "name": "soEnable",
+        "rtti_address": "0x1604"
+      },
+      {
+        "name": "soNullable",
+        "rtti_address": "0x1ee8"
+      },
+      {
+        "name": "soKineticEnergy",
+        "rtti_address": "0x1374"
+      }
+    ]
+  },
+  "__RTTI__21soKineticEnergyNormal": {
+    "rtti_address": "0x5c58",
+    "bases": [
+      {
+        "name": "soSuspendable",
+        "rtti_address": "0x138c"
+      },
+      {
+        "name": "soEnable",
+        "rtti_address": "0x1604"
+      },
+      {
+        "name": "soNullable",
+        "rtti_address": "0x1ee8"
+      },
+      {
+        "name": "soKineticEnergy",
+        "rtti_address": "0x1374"
+      }
+    ]
+  },
+  "__RTTI__25ftKineticEnergyController": {
+    "rtti_address": "0x5d44",
+    "bases": [
+      {
+        "name": "soSuspendable",
+        "rtti_address": "0x138c"
+      },
+      {
+        "name": "soEnable",
+        "rtti_address": "0x1604"
+      },
+      {
+        "name": "soNullable",
+        "rtti_address": "0x1ee8"
+      },
+      {
+        "name": "soKineticEnergy",
+        "rtti_address": "0x1374"
+      },
+      {
+        "name": "soKineticEnergyNormal",
+        "rtti_address": "0x5c58"
+      }
+    ]
+  },
+  "__RTTI__21ftKineticEnergyMotion": {
+    "rtti_address": "0x5d90",
+    "bases": [
+      {
+        "name": "soSuspendable",
+        "rtti_address": "0x138c"
+      },
+      {
+        "name": "soEnable",
+        "rtti_address": "0x1604"
+      },
+      {
+        "name": "soNullable",
+        "rtti_address": "0x1ee8"
+      },
+      {
+        "name": "soKineticEnergy",
+        "rtti_address": "0x1374"
+      },
+      {
+        "name": "soKineticEnergyNormal",
+        "rtti_address": "0x5c58"
+      }
+    ]
+  }
+}

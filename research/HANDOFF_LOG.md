@@ -97,352 +97,115 @@ current checkpoint; top summaries are dated historical snapshots.
 - Source object configure/build started. No source promotion or allowlist change. Baseline receiver passed 127/127.
 - Next: inspect object/diffs; rename defined symbols and shared weak emissions; isolated source REL probe. Private evidence/nonmatching/dxyorster.
 
-### 2026-10-01T14:59-03:00 · claude · verify · 88d8d3f (rsbe01_01-support) clean
-- verified: OK: 127/127 at 88d8d3f (Tengan + shared header integrated); st_tengan/st_heal/st_greenhill full-REL byte match
-- Clean source rebuild; independent --orig --dtk 127/127; verifier tests OK. 190 TUs.
+### 2026-10-02T01:16-03:00 · codex · note · 8d3b44a (rsbe01_01-support) dirty 4
+- codex-parallel: Rebased codex/ike onto requested0a48697, preserving article-interface superset and new inherited Normal brake20. Moved Controller vector18 into recovered Normal padding and kept derived vector28; Gravity preserves speed08 and1C while exposing Ike field18. Old earlier-base results need fresh validation. Clean rebuild starts next; main/Claude Luigi work untouched.
 
-### 2026-10-01T14:59-03:00 · claude · handoff · 88d8d3f (rsbe01_01-support) clean
-- Tengan integrated at 88d8d3f, clean, 127/127. Docs synced.
-- next: st_kart capped permuter, or next candidate (tengan Bg/Floor/Ashiba or rerank stage bodies).
+### 2026-10-02T01:18-03:00 · codex · note · 8d3b44a (rsbe01_01-support) dirty 8
+- codex-parallel: brawl-codex7: Local review ft_ike/mo_fighter/ft_ike/ft_ike_status_uniq_process_special_lw: full source REL not accepted; no promotion. Evidence evidence\nonmatching\ft_ike\brawl-codex7\ft_ike_status_uniq_process_special_lw_20261002T041855.523007Z.
 
-### 2026-10-01T15:01-03:00 · claude · claim · 88d8d3f (rsbe01_01-support) clean
-- task: st_kart capped permuter: getZoneLightSetIndex then updateRanks
-- lease until 2026-10-01T18:01-03:00
+### 2026-10-02T01:20-03:00 · codex · note · 8d3b44a (rsbe01_01-support) dirty 8
+- codex-parallel: Clean base0a build/check127/127; Ike Lw remains one-byte frsp mismatch after header placement fixes. Generator ranking excludes Claude-reserved Luigi; smallest clear candidate Pit SpecialHiFly (module112,text E148..E274,4 functions/300bytes). Reviewing owned data end: generator includes float25 at6A48 without a warning; class RTTI ends6A48, so reference ownership must be checked before source. Fox/Wolf proposals rejected by generator vtable-shape assumption. Main untouched.
 
-### 2026-10-01T15:01-03:00 · claude · note · 88d8d3f (rsbe01_01-support) clean
-- Codex given parallel prompt: worktree ../brawl-codex3, branch codex/tengan2 from 88d8d3f; remaining tengan grounds (Bg/Floor/Ashiba) one TU at a time.
+### 2026-10-02T01:20-03:00 · tool · verify · 8d3b44a (rsbe01_01-support) dirty 8
+- verified: OK: 127/127 with mo_fighter/ft_luigi/ft_luigi_status_uniq_process_special_s_wall promoted
+- Promoted mo_fighter/ft_luigi/ft_luigi_status_uniq_process_special_s_wall (ft_luigi): full-REL probe byte-identical, 127/127, independent check OK.
 
-### 2026-10-01T15:04-03:00 · claude · checkpoint · 88d8d3f (rsbe01_01-support) clean
-- Permuter run 1 STARTED: stKart::getZoneLightSetIndex. Input built by claude_tools/mk_perm_kart_zone.py into evidence/nonmatching/kart/permuter_zone (whole-TU context in PERM_IGNORE, clamp+function permutable, target.o = extracted st_kart.o).
-- Command: (decomp-permuter @059609d + local preprocess patch) timeout 1800 ../.venv/Scripts/python.exe permuter.py <dir> -j 12 --stop-on-zero; log <dir>/run.log. Cap 30 min. Base score 6000 (60 s trial: best 5955).
-- Stop condition: score 0 or cap. Any output is accepted only via full-REL probe + 127/127.
+### 2026-10-02T01:21-03:00 · codex · note · 8d3b44a (rsbe01_01-support) dirty 12
+- codex-parallel: Selected Pit SpecialHiFly for one-TU implementation. Proven ownership module112: textE148..E274, data69D0..6A48, bss1B0..1C0, ctors8..C, no rodata. Generator end6A4C was wrong: float25 at6A48 is referenced only by Hold functionE278 and stays extracted. Fly overrides exitStatus (vtable10), not execStatus. Source will use only that override/global instance; shared base methods/RTTI names will dedupe. No Luigi/main edits.
 
-### 2026-10-01T15:15-03:00 · codex · note · 88d8d3f (rsbe01_01-support) clean
-- codex-parallel: fresh brawl-codex3 on codex/tengan2 at 88d8d3f created; local ignored originals/toolchain and independent submodule metadata copied. Starting clean-source baseline configure+ninja, log evidence/nonmatching/tengan/session2/baseline.log; main checkout/Claude lease untouched.
+### 2026-10-02T01:23-03:00 · claude · verify · d4b3ec1 (rsbe01_01-support) clean
+- verified: verify_manifest 127/127; probes PASS for all 8 fighter units' affected set
+- MATCHED Luigi special_s_ram + special_s_wall (d4b3ec1); fighter units matched: 8 (Marth 2, Mario 3, Luigi 3; Luigi status set complete). CORRECTION: the never-called-function RTTI technique was wrong; real rule = unit .data starts 8-aligned + RTTI groups cast only by the next unit belong to it (emitted before its vtable; declare class before that header). Marth splits changed: special_s data ends 0x54E8, special_hi starts 0x54E8 (both configs); stand-in functions removed. New header overrides: so/ground/so_ground_module_impl.h (getTouchFlag/isAttachable u32), so/kinetic/so_kinetic_energy.h (AttributeMask s16). Generator updated with alignment+ownership rule. NOTE Copilot: brawltool port's Marth fixture (special_hi 0x5584) is now outdated -> 0x54E8.
+- next: next fighter via mk_status_splits (Pit/Wolf/Fox small sets)
 
-### 2026-10-01T15:18-03:00 · codex · note · 88d8d3f (rsbe01_01-support) clean
-- codex-parallel: brawl-codex3 baseline fresh-source build passed 127/127 at 88d8d3f. Selecting grTenganBg FIRST: .text 0x65BC..0x67EC (560 bytes/3 functions), .data 0xAB8..0xDD0 (792 bytes including stripped weak RTTI residue), no rodata/bss/ctors. Testing this inferred smallest boundary via separate-TU full REL probe before any promotion.
+### 2026-10-02T01:24-03:00 · codex · note · d4b3ec1 (rsbe01_01-support) clean
+- codex-parallel: brawl-codex7: Local review ft_pit/mo_fighter/ft_pit/ft_pit_status_uniq_process_special_hi_fly: full source REL matches; no promotion. Evidence evidence\nonmatching\ft_pit\brawl-codex7\ft_pit_status_uniq_process_special_hi_fly_20261002T042442.667797Z.
 
-### 2026-10-01T15:24-03:00 · codex · note · 88d8d3f (rsbe01_01-support) clean
-- codex-parallel: grTenganBg 3/3 instruction comparison and full-REL source byte identity pass. Separate TU naturally reproduces weak RTTI residue. Promotion build with removed ok stamp and post-promotion REL re-probe in flight in brawl-codex3; logs tengan/session2/bg_promoted_*. No next TU code written yet.
+### 2026-10-02T01:25-03:00 · codex · note · d4b3ec1 (rsbe01_01-support) clean
+- codex-parallel: Pit SpecialHiFly full REL probe PASS (182192bytes SHA1 80e6015eb3c8df3c0e14783c1c6a48a5340e67a2), 4/4 functions. Ownership corrected to data69D0..6A48, float25 left for Hold. Promotion gates begin in isolated worktree; logs evidence/nonmatching/ike/pit_fly_promote.log. Main and Claude Luigi files untouched.
 
-### 2026-10-01T15:25-03:00 · codex · note · 88d8d3f (rsbe01_01-support) clean
-- codex-parallel: grTenganBg accepted/committed 45388f8 on codex/tengan2; promoted 127/127 and re-probe st_tengan pass. Selecting grTenganAshiba NEXT before source edits: .text 0x7174..0x77B4 (1600 bytes/6 functions), .data 0xFF0..0x1208 (536 bytes), .rodata 0x108..0x114 (12 bytes), no bss/ctors. Larger Floor remains unstarted.
+### 2026-10-02T01:26-03:00 · claude · note · d4b3ec1 (rsbe01_01-support) clean
+- Fighter claims added to board Next: Claude = marth/mario/luigi (done), sonic, metaknight; Codex = ike, pit (+fox/wolf). mk_status_splits.py: rodata end is padded to 8 only over objects no other code references (Codex's ft_pit float case).
 
-### 2026-10-01T15:29-03:00 · codex · note · 88d8d3f (rsbe01_01-support) clean
-- codex-parallel: grTenganAshiba 6/6 normalized instruction comparison and full source REL byte identity pass. Starting removed-stamp promotion build and post-promotion st_tengan re-probe, logs tengan/session2/ashiba_promoted_*. Floor not started; main/Claude lease untouched.
+### 2026-10-02T01:26-03:00 · codex · note · d4b3ec1 (rsbe01_01-support) clean
+- codex-parallel: brawl-codex7: Promoted mo_fighter/ft_pit/ft_pit_status_uniq_process_special_hi_fly (ft_pit): full-REL probe byte-identical, 127/127, independent check OK.
 
-### 2026-10-01T15:32-03:00 · codex · note · 88d8d3f (rsbe01_01-support) clean
-- codex-parallel: grTenganAshiba accepted/committed eb439b1; promoted 127/127 and st_tengan full-REL re-probe pass. Selecting LAST TU grTenganFloor before edits: .text 0x67EC..0x7174 (2440 bytes/7 functions), .data 0xDD0..0xFF0 (544 bytes), .rodata 0xF8..0x108 (16 bytes), no bss/ctors. Bounded source pass: initial separate TU plus at most 8 understood layout/boolean variants, stop by 15:55 -03:00 if unresolved; no flag sweep. Logs tengan/session2/floor_*.
+### 2026-10-02T01:29-03:00 · codex · note · d4b3ec1 (rsbe01_01-support) dirty 3
+- codex-parallel: brawl-codex7: Local review ft_ike/mo_fighter/ft_ike/ft_ike_status_uniq_process_special_lw: full source REL not accepted; no promotion. Evidence evidence\nonmatching\ft_ike\brawl-codex7\ft_ike_status_uniq_process_special_lw_20261002T042927.708728Z.
 
-### 2026-10-01T15:34-03:00 · claude · checkpoint · 88d8d3f (rsbe01_01-support) clean
-- Permuter run 1 FINISHED (getZoneLightSetIndex): hit 30-min cap (timeout exit 124) at 15:34 after 22,833 iterations. Best 5880 vs base 6000; NO match. Best outputs (output-5880-1..3) only hoist the second clamp argument into a temp; not applied. Evidence: evidence/nonmatching/kart/permuter_zone (run.log, outputs, base.c, compile.sh, settings.toml, target.o; builder claude_tools/mk_perm_kart_zone.py).
-- Permuter run 2 STARTED 15:35: updateRanks, dir evidence/nonmatching/kart/permuter_ranks (builder mk_perm_kart_ranks.py; loops hoisted via hoist_for.py, verified identical codegen). Same command, timeout 1800, cap 30 min, stop on 0.
+### 2026-10-02T01:29-03:00 · codex · note · d4b3ec1 (rsbe01_01-support) dirty 3
+- codex-parallel: brawl-codex7: Local review ft_ike/mo_fighter/ft_ike/ft_ike_status_uniq_process_special_hi: full source REL not accepted; no promotion. Evidence evidence\nonmatching\ft_ike\brawl-codex7\ft_ike_status_uniq_process_special_hi_20261002T042932.159045Z.
 
-### 2026-10-01T15:36-03:00 · claude · note · 88d8d3f (rsbe01_01-support) clean
-- Permuter scoring note: decomp-permuter objdumps the WHOLE target/candidate object, so each run's score includes the other st_kart near-miss as a constant floor (both bases = 6000). A perfect updateRanks will not reach 0; evaluate best outputs in the real TU with kdiff/probe.
-- Run 2 (updateRanks) starting now, timeout 1800 (30 min cap), dir evidence/nonmatching/kart/permuter_ranks/run.log.
+### 2026-10-02T01:29-03:00 · codex · note · d4b3ec1 (rsbe01_01-support) dirty 5
+- codex-parallel: brawl-codex7: Local review ft_ike/mo_fighter/ft_ike/ft_ike_status_uniq_process_final: full source REL not accepted; no promotion. Evidence evidence\nonmatching\ft_ike\brawl-codex7\ft_ike_status_uniq_process_final_20261002T042936.384516Z.
 
-### 2026-10-01T15:49-03:00 · codex · note · 88d8d3f (rsbe01_01-support) clean
-- codex-parallel: Floor bounded pass complete: five of seven functions match diagnostic comparison; updateVisibility trailing blr and changeAnimation mask/stack-slot differences remain. Floor stays NonMatching. Final build, failed Floor full-REL probe and accepted Bg/Ashiba re-probes will be logged under evidence/nonmatching/tengan/session2/. No new matching trials or permuter; no main edits or lease claim.
+### 2026-10-02T01:29-03:00 · codex · note · d4b3ec1 (rsbe01_01-support) dirty 5
+- codex-parallel: brawl-codex7: Local review ft_ike/mo_fighter/ft_ike/ft_ike_status_uniq_process_special_s: full source REL not accepted; no promotion. Evidence evidence\nonmatching\ft_ike\brawl-codex7\ft_ike_status_uniq_process_special_s_20261002T042941.984087Z.
 
-### 2026-10-01T15:52-03:00 · codex · note · 88d8d3f (rsbe01_01-support) clean
-- codex-parallel: Tengan remaining grounds finished on clean isolated codex/tengan2 HEAD 6351813. Accepted source-linked TUs: Bg 45388f8 and Ashiba eb439b1, each full-REL/pro-motion 127/127 plus post-promotion probe. Floor WIP 6351813 stays NonMatching: 5/7 instruction diagnostics, failed source full-REL SHA1 f909ded2670caa7a47a9a1a531f4a09aa9940983. Final stamp-removed normal build + independent verifier pass 127/127, Bg/Ashiba final full-REL probes identical, 128 originals identical. Status/repro/integration order in codex_parallel/TENGAN_STATUS.md; all private evidence under evidence/nonmatching/tengan/session2/. No main edit, lease claim/release, integration or push. No Codex jobs running; all three requested grounds done or attempted.
+### 2026-10-02T01:29-03:00 · codex · note · d4b3ec1 (rsbe01_01-support) dirty 5
+- codex-parallel: brawl-codex7: Local review ft_pit/mo_fighter/ft_pit/ft_pit_status_uniq_process_special_hi_fly: full source REL matches; no promotion. Evidence evidence\nonmatching\ft_pit\brawl-codex7\ft_pit_status_uniq_process_special_hi_fly_20261002T042946.741249Z.
 
-### 2026-10-01T15:59-03:00 · claude · checkpoint · 6bf569c (rsbe01_01-support) clean
-- Cherry-picked codex/tengan2 45388f8 -> a29d1b2 (Bg), eb439b1 -> 625b4c8 (Ashiba), 6351813 -> 6bf569c (Floor NonMatching) onto 88d8d3f, no conflicts. Running clean rebuild + checks; log evidence/nonmatching/tengan2_integration.log. Permuter run 2 still running in parallel (unaffected: preprocessed input, private target copy).
+### 2026-10-02T01:31-03:00 · tool · verify · d4b3ec1 (rsbe01_01-support) dirty 6
+- verified: OK: 127/127 with mo_fighter/ft_sonic/ft_sonic_status_uniq_process_special_s_wall_end promoted
+- Promoted mo_fighter/ft_sonic/ft_sonic_status_uniq_process_special_s_wall_end (ft_sonic): full-REL probe byte-identical, 127/127, independent check OK.
 
-### 2026-10-01T16:07-03:00 · claude · checkpoint · fb2ad57 (rsbe01_01-support) clean
-- Permuter run 2 FINISHED (updateRanks): cap at 16:06 (exit 124), 22,545 iterations, best score 5630; in-TU check of 15 best outputs: best 13 diff lines vs 16 baseline, no match, nothing applied. st_kart stays NonMatching (parked). Notes appended to evidence/nonmatching/kart/NOTES.md.
-- Codex given next task: worktree ../brawl-codex4, branch codex/stages from fb2ad57 (tbreak, oldin stage bodies, then reranked madein-style).
+### 2026-10-02T01:32-03:00 · codex · note · d4b3ec1 (rsbe01_01-support) dirty 6
+- codex-parallel: Base corrected to0a48697, clean codex/ike HEADc98614a. Pit SpecialHiFly accepted/source-linked atc98614a: full REL byte-identical, normal127/127, independent127/127, post-promotion probe PASS. Source-linked additions1 (Pit), all4 Ike remain NonMatching; Lw still one-byte frsp/fmr. Rewritten Ike commitsbbfee4e/b7e2dc9/3e05e1d/4b19058 +73822c1. FIGHTERS_STATUS and NEXT_FIGHTER_QUEUE updated with exact ranges, current reviews and generator float25 ownership correction. Latest private evidence under evidence/nonmatching/ike/base0a/. Next clear candidate Pit LwHold; Claude-reserved Luigi untouched. No main/Marth edits, lease claim, push, merge or running jobs.
 
-### 2026-10-01T16:07-03:00 · claude · handoff · fb2ad57 (rsbe01_01-support) clean
-- fb2ad57 clean, 127/127. Tengan Bg/Ashiba integrated, worktrees cleaned, st_kart permuter runs done (no match, parked).
-- next: Integrate codex/stages when reported; main line: choose non-overlapping candidate.
+### 2026-10-02T01:38-03:00 · claude · verify · 3a192a8 (rsbe01_01-support) clean
+- verified: clean build + verify_manifest 127/127 at 3a192a8; 11/11 fighter probes byte-identical
+- Integrated codex/ike onto main (cherry-picks 8f219d1..3a192a8: Ike 5 NonMatching drafts + Pit SpecialHiFly MATCHED). Resolved docs appends, verified_objects union, controller header -> Codex's reconciled version (m_28 kept; Normal now has m_speed 0x08, m_18 0x18, m_brake 0x20; Stop m_28; Gravity m_18). Also committed 9c53020 (Sonic s_wall_end + final_end MATCHED; soMotionChangeParam ctor override). Clean rebuild 127/127 + independent verifier 127/127; full-REL probe byte-identical for all 11 matched fighter units. brawl-codex7 kept (Codex active): Codex must rebase codex/ike onto 3a192a8 before continuing. NOTE: research/brawltool currently fails to import (status_splits.py line 182 'from __future__' mid-file, Copilot edit in progress) - promote done manually with identical gates.
+- next: Claude: Sonic lw_hold, then dash; Codex: rebase onto 3a192a8 then Pit SpecialLwHold
 
-### 2026-10-01T16:11-03:00 · codex · note · fb2ad57 (rsbe01_01-support) clean
-- codex-parallel: Fresh brawl-codex4 codex/stages at fb2ad57 prepared with private local orig/toolchain copies and independent submodule metadata. Starting clean-source configure/ninja baseline; log evidence/nonmatching/stages/baseline.log. Main read only and no lease claim. Only stage bodies tbreak then oldin will be edited here.
+### 2026-10-02T01:44-03:00 · claude · verify · 3a192a8 (rsbe01_01-support) clean
+- verified: brawltool unittest 37/37; status-splits == reference for 5 fighters
+- Took over Copilot's unfinished BrawlTool step (Copilot out of credits). State verified: brawltool imports again; status-splits now imports the reference parser (brawltool/reference_status_splits.py adapter; duplicate port removed); output identical to claude_tools/mk_status_splits.py for marth/mario/luigi/sonic/pit. Added test_reference_proposals_match_committed_fighter_splits (reads local extracted asm, skips if absent; compares non-first proposals with committed splits.txt) - it caught a real generator gap: Pit hi_fly data end 0x6A4C vs Codex's verified 0x6A48 (a static .float used by the next class). Generalized ownership rule in mk_status_splits.py: trailing data objects used only by the next unit's code (or by other moved objects) move to the next unit. 37/37 tests pass. Restored tracked __pycache__ churn. Tooling changes in research/ are uncommitted (workspace repo), as before.
+- next: Claude: Sonic lw_hold then dash; Codex: rebase onto 3a192a8, Pit SpecialLwHold
 
-### 2026-10-01T16:12-03:00 · claude · note · fb2ad57 (rsbe01_01-support) clean
-- Removed worktree ../brawl-codex3 (codex/tengan2) after checks: clean, all 3 commits on main (a29d1b2/625b4c8/6bf569c), no code diff vs main, no junctions, orig copy real; main.dol SHA-1 unchanged. Branch kept. User granted standing permission to delete integrated Codex copies after such checks.
+### 2026-10-02T01:44-03:00 · codex · note · 3a192a8 (rsbe01_01-support) clean
+- codex-parallel: Resuming Pit SpecialLwHold in brawl-codex7 only. Rebasing codex/ike onto 3a192a8 and clearing source cache before baseline build. Main lease stays Claude; no main edits. Direct configure/probe path selected while tools settle.
 
-### 2026-10-01T16:16-03:00 · codex · note · fb2ad57 (rsbe01_01-support) clean
-- codex-parallel: Baseline fresh isolated fb2ad57 passes 127/127 (stages/baseline.log). Selecting stTargetBreak stage body before source edits: .text [0x70,0x1B64), .data [0,0xCE8), .rodata [0,0xA0), .bss [8,0x28), .ctors [0,4); no owned dtors. Includes module-local grTargetBreakGimmickSpring subclass/weak virtuals; gr_tbreak.cpp remains separate/source-linked. Initial implementation plus at most eight focused matching variants; no flag sweeps/permuter. Evidence only nonmatching/tbreak/.
+### 2026-10-02T01:48-03:00 · codex · note · 3a192a8 (rsbe01_01-support) dirty 2
+- codex-parallel: codex/ike rebased to3a192a8 (all prior patches already integrated); clean-cache direct build and independent original/built manifest checks127/127. Before coding Pit SpecialLwHold: module112 textE274..E4D4, rodata20..28, data6A48..6AC8, bss1C0..1D0, ctorsC..10. Seven functions; float25 belongs Hold. Latest generator agrees. Target/proposals saved privately under evidence/nonmatching/ike/pit_hold/. Main/lease untouched.
 
-### 2026-10-01T16:34-03:00 · codex · note · fb2ad57 (rsbe01_01-support) clean
-- codex-parallel: Tbreak corrected diagnostic 56/58; only createObj/update remain, including aggregate stack copies and scheduling differences. Full-REL probe first exposed Vec3f::lengthSq declaration-only lowering (replaced with typed inline arithmetic/SDK vector helpers), then a pre-existing grGimmickSpring startup mangling mismatch. Isolated RSBE01_01 sora_melee symbol at 0x26FFC4 is being corrected to header/base-virtual LayerType signature; no main edit. Starting full baseline rebuild and source probe; tbreak/final_build.log and final_probe.log. No promotion without full bytes/relocations.
+### 2026-10-02T01:50-03:00 · tool · verify · 3a192a8 (rsbe01_01-support) dirty 4
+- verified: OK: 127/127 with mo_fighter/ft_sonic/ft_sonic_status_uniq_process_special_lw_hold promoted
+- Promoted mo_fighter/ft_sonic/ft_sonic_status_uniq_process_special_lw_hold (ft_sonic): full-REL probe byte-identical, 127/127, independent check OK.
 
-### 2026-10-01T16:41-03:00 · claude · note · fb2ad57 (rsbe01_01-support) clean
-- Added status page research/status/brawl_status.html + generator claude_tools/mk_status_page.py (reads report.json etc.); verified by Edge headless screenshots at 1440px and 560px. Regenerate after each promotion/integration.
+### 2026-10-02T01:55-03:00 · tool · verify · f545e46 (rsbe01_01-support) dirty 6
+- verified: OK: 127/127 with mo_fighter/ft_metaknight/ft_metaknight_status_uniq_process_special_s_rush promoted
+- Promoted mo_fighter/ft_metaknight/ft_metaknight_status_uniq_process_special_s_rush (ft_metaknight): full-REL probe byte-identical, 127/127, independent check OK.
 
-### 2026-10-01T16:43-03:00 · codex · note · fb2ad57 (rsbe01_01-support) clean
-- codex-parallel: Tbreak NonMatching committed a3c9ef6, 56/58 instruction diagnostics; full-REL false 23816 vs 23744, hash d708ab6748f1adad495654a569d64f1af837f3ed. Normal build 127/127; no source-linked addition. Selecting stOldin stage body BEFORE source: .text [0x70,0x418C), .data [0,0x6C0), .rodata [0,0xE4), .bss [8,0x18), .ctors [0,4); no dtors. Evidence shows this module has NO static pair (initializer only registers class info at bss14); do not add a fabricated pair. Stage size608, four unnamed 0x84-byte DOL-managed members plus three snd3DGenerator members and large hazard state machines. Start with lifetime/layout recovery; evidence only nonmatching/oldin/. No optional candidate until Oldin assessment completed.
+### 2026-10-02T01:55-03:00 · codex · note · f545e46 (rsbe01_01-support) dirty 6
+- codex-parallel: brawl-codex7: Local review ft_pit/mo_fighter/ft_pit/ft_pit_status_uniq_process_special_lw_hold: full source REL matches; no promotion. Evidence evidence\nonmatching\ft_pit\brawl-codex7\ft_pit_status_uniq_process_special_lw_hold_20261002T045524.826563Z.
 
-### 2026-10-01T16:50-03:00 · claude · checkpoint · fb2ad57 (rsbe01_01-support) clean
-- Building local toolkit research/brawltool (CLI + tkinter GUI, launch BrawlTool.bat): build/verify, independent check, status page, rank, split, draft (m2c @708d2d2 cloned to research/tools/m2c), diff, probe, promote (all gates), integrate (cherry-pick + clean rebuild + probes), cleanup (worktree checks per user rule). No repo changes.
+### 2026-10-02T01:57-03:00 · claude · handoff · f545e46 (rsbe01_01-support) dirty 6
+- LOW CREDITS handoff. Since 3a192a8: f545e46 Sonic special_lw_hold MATCHED. Uncommitted->committing now: Meta Knight status splits (5 units, both configs), special_s_rush MATCHED+promoted (gates passed), special_s_end source written, diff 6/6 + rodata SAME but NOT yet probed/promoted (run: brawltool-cli.bat promote mo_fighter/ft_metaknight/ft_metaknight_status_uniq_process_special_s_end after ninja). Remaining Meta Knight: final_attack_gallery, final_end, final_hit_wait. Sonic special_s_dash deferred (contains soArrayContractibleTable<const acCmdArgConv> class + ~0x900 bytes helpers). Fighter units matched: 13 (+s_end pending). Tools: claude_tools/mk_status_splits.py (+apply_status_splits.py, rename_syms.py); brawltool status-splits/apply-status-splits/rename-status wrap them (37 tests). research/ tooling changes uncommitted (workspace repo).
+- next: Codex/next agent: promote MK special_s_end, then MK final_* units; Sonic dash later
 
-### 2026-10-01T16:56-03:00 · claude · checkpoint · fb2ad57 (rsbe01_01-support) clean
-- BrawlTool v1 ready: research/brawltool (README), launchers BrawlTool.bat (GUI) and brawltool-cli.bat. Tested: rank, diff (st_kart 61/63), probe (heal PASS), promote refusal (kart, no edits), integrate no-op, cleanup no-op, split (written + reverted), draft (m2c), status, build 127/127, check 127/127, GUI screenshot.
+### 2026-10-02T01:58-03:00 · codex · note · be62934 (rsbe01_01-support) clean
+- codex-parallel: COMPLETE Pit SpecialLwHold, new local commit055115f on clean codex/ike, base3a192a8 in brawl-codex7. Seven functions608text bytes plus owned rodata/data/BSS/ctors and relocations. Pre-promotion review and post-promotion full REL byte-identical (182192bytes SHA1 80e6015eb3c8df3c0e14783c1c6a48a5340e67a2); fresh promoted normal127/127 + independent original/built manifest127/127; verifier tests10/10. MatchingFor and allowlist updated. Evidence/matched.cpp/accepted.json private under evidence/nonmatching/ike/pit_hold; docs UB/lifetime/aliasing review written. FIGHTERS_STATUS and NEXT_FIGHTER_QUEUE updated. One new source-linked TU this session, no function-only promotions, no jobs/permuter. Main advanced independently tobe62934; not edited or verified by Codex, lease not claimed. Integrating agent should cherry-pick055115f only (old Ike/Pit commits already integrated), reconcile later config/docs changes and reverify127/127 plus full Pit probe. Nothing pushed, originals unchanged.
 
-### 2026-10-01T17:00-03:00 · claude · note · fb2ad57 (rsbe01_01-support) clean
-- BrawlTool: added ordered TU dropdown (our in-progress, upstream in-progress, ours matched, upstream matched; fills Module/Unit). Screenshot-verified.
+### 2026-10-02T02:01-03:00 · codex · claim · be62934 (rsbe01_01-support) clean
+- task: One-time local integration of Pit SpecialLwHold055115f and validation
+- lease until 2026-10-02T05:01-03:00
+- FORCED over held by claude for 175 more min
+- User explicitly authorized Codex to integrate tonight because Claude is out of credits. Main be62934 clean; no active Brawl build/compiler process. Scope: cherry-pick055115f, clean rebuild, independent check and Pit source probe; never push.
 
-### 2026-10-01T17:03-03:00 · tool · claim · fb2ad57 (rsbe01_01-support) clean
-- task: autopilot run
-- lease until 2026-10-01T19:03-03:00
+### 2026-10-02T02:01-03:00 · codex · checkpoint · be62934 (rsbe01_01-support) clean
+- Before baseline verification/integration: configure+forced Ninja on main be62934, then cherry-pick055115f and clear source cache for clean integration build. Private logs research/evidence/nonmatching/ike/pit_hold/integration_*; do not promote unrelated Meta Knight drafts.
 
-### 2026-10-01T17:03-03:00 · tool · verify · fb2ad57 (rsbe01_01-support) clean
-- verified: OK: 127/127 at fb2ad57 (autopilot)
-- Preflight build: 127/127
-- Promoted: none (docs entries pending for any promoted TU)
-- Still in progress (ours): cm_controller_menu_pad, gr_battle, gr_battle_ground, st_battle, st_kart, gr_tengan_floor
-- HEAD: fb2ad57 docs: record Tengan Bg/Ashiba integration and progress for RSBE01_01
+### 2026-10-02T02:02-03:00 · codex · verify · be62934 (rsbe01_01-support) clean
+- verified: be62934 baseline forced configure+Ninja OK127/127
+- User-authorized integration: main baseline is verified; applying only055115f.
 
-### 2026-10-01T17:03-03:00 · tool · handoff · fb2ad57 (rsbe01_01-support) clean
-- autopilot finished
-- next: see last tool entry
+### 2026-10-02T02:03-03:00 · codex · checkpoint · 9f4d31e (rsbe01_01-support) clean
+- Pit055115f integrated locally as9f4d31e on main; docs/allowlist append conflicts resolved preserving both Sonic/Meta Knight and Pit entries. Main clean. Source cache cleared by preserving src_before_pit_integration_055115f; starting full clean configure+Ninja at9f4d31e. Integration is not yet verified; log integration_clean_build.log.
 
-### 2026-10-01T17:04-03:00 · claude · checkpoint · fb2ad57 (rsbe01_01-support) clean
-- BrawlTool autopilot added (GUI 'Plan (dry run)' / 'Run autopilot'; CLI autopilot [--dry-run|--no-integrate|--no-promote]). Real run tested with --no-integrate: lease claimed/released as 'tool', 127/127, 6 WIP TUs diffed/probed (none match, nothing promoted), status + journal written, git clean. DOL units are diffed but never auto-promoted. codex/stages has 1 unintegrated commit (Codex still working). Journal rotated (48 entries archived).
+### 2026-10-02T02:06-03:00 · codex · verify · 9f4d31e (rsbe01_01-support) clean
+- verified: 9f4d31e clean rebuild127/127; independent127/127; verifier tests10/10; full Pit source REL byte-identical
+- User-authorized one-time local integration complete.055115f cherry-picked as9f4d31e; docs/allowlist append conflicts kept both sides. Only eight Pit files changed, MK special_s_end stillNonMatching. FIGHTERS_STATUS, PROJECT_STATE, queue and status page updated. Evidence: evidence/nonmatching/ike/pit_hold/integration_*. Nothing pushed; originals unchanged; both checkouts clean.
 
-### 2026-10-01T17:27-03:00 · codex · note · fb2ad57 (rsbe01_01-support) clean
-- codex-parallel: Oldin complete draft bodies now compile (constructor, dispatcher, six coroutine/helper bodies, attacks, collision). Typed parameter/name/sequence pools recovered; no fabricated static pair. 41/53 instruction diagnostics before final clean rebuild; none promoted. Found DOL gfModelAnimation mangling errors at800283BC/80028498/8002858C: evidence confirms u32 count(void), setFrame(float), getFrame(void); isolated rev1 symbols corrected. Next clean source-cache rebuild, full Oldin REL probe (including accepted ground), independent127 and original hash check. BrawlTool CLI currently hardcodes main checkout; using cwd-aware helpers directly. No jobs/permuter/main edits or lease claim.
-
-### 2026-10-01T17:39-03:00 · codex · note · fb2ad57 (rsbe01_01-support) clean
-- codex-parallel: Oldin draft committed 91b5438 on codex/stages (brawl-codex4), clean. All bodies compile, 41/53 instruction diagnostics; structural plus register differences remain. Full source REL FAILS: 34160 vs32744, SHA1 89eb72deac66fa49957ac9e65161b681747c4143 vs905f78be9ff518c881f446ef8c9d667252db0782. Kept NonMatching; no allowlist additions. Fresh source-cache fallback build127/127; independent --orig --dtk127/127; ten verifier tests pass. Best sources/commands/input hashes/private diffs frozen under evidence/nonmatching/oldin/. Target-break a3c9ef6 also NM. No new source-linked TUs. Main unchanged/no lease claim/push. Next: user-authorized BrawlTool isolated-worktree selection and local review logging; optional third stage deferred.
-
-### 2026-10-01T17:44-03:00 · codex · note · fb2ad57 (rsbe01_01-support) clean
-- codex-parallel: brawl-codex4: Local review st_oldin/mo_stage/st_oldin/st_oldin: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_oldin\brawl-codex4\st_oldin_20261001T204455.123970Z.
-
-### 2026-10-01T17:46-03:00 · codex · note · fb2ad57 (rsbe01_01-support) clean
-- codex-parallel: brawl-codex4: Local review st_heal/mo_stage/st_heal/st_heal: full source REL matches; no promotion. Evidence evidence\nonmatching\st_heal\brawl-codex4\st_heal_20261001T204607.909453Z.
-
-### 2026-10-01T17:46-03:00 · codex · note · fb2ad57 (rsbe01_01-support) clean
-- codex-parallel: brawl-codex4: Local review st_oldin/mo_stage/st_oldin/st_oldin: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_oldin\brawl-codex4\st_oldin_20261001T204657.416717Z.
-
-### 2026-10-01T17:47-03:00 · codex · note · fb2ad57 (rsbe01_01-support) clean
-- codex-parallel: brawl-codex4: Local review st_tbreak/mo_stage/st_tbreak/st_tbreak: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_tbreak\brawl-codex4\st_tbreak_20261001T204700.670712Z.
-
-### 2026-10-01T17:51-03:00 · codex · note · fb2ad57 (rsbe01_01-support) clean
-- codex-parallel: brawl-codex4: Local review st_heal/mo_stage/st_heal/st_heal: full source REL matches; no promotion. Evidence evidence\nonmatching\st_heal\brawl-codex4\st_heal_20261001T205136.489165Z.
-
-### 2026-10-01T17:55-03:00 · codex · note · fb2ad57 (rsbe01_01-support) clean
-- codex-parallel: Finished this pass. brawl-codex4 codex/stages clean91b5438; Target-break a3c9ef6 and Oldin91b5438 remain NonMatching. Diagnostic56/58 and41/53 respectively; full source RELs both fail; zero new source-linked TUs. Fresh source-cache normal build and independent --orig --dtk127/127; ten verifier tests pass. BrawlTool worktree --repo + private review command installed; 12 tool tests/static compile pass, actual heal review byte-identical, both WIPs correctly rejected. Parallel integrate/cleanup/autopilot blocked; no lease claims/verified-board updates; rollback preserves dirty bytes. Tool backup+patch+hashes evidence/nonmatching/brawltool_before_worktree_support. Main unchanged fb2ad57 clean; no merges/rebases/pushes. No jobs. Handoff codex_parallel/STAGES_STATUS.md + BRAWLTOOL_STATUS.md; optional fresh chunk ranking NEXT_STAGE_QUEUE.md, boundaries unproven so no third TU started.
-
-### 2026-10-01T18:24-03:00 · tool · claim · fb2ad57 (rsbe01_01-support) clean
-- task: autopilot run
-- lease until 2026-10-01T20:24-03:00
-
-### 2026-10-01T18:26-03:00 · tool · verify · fe9e4d6 (rsbe01_01-support) clean
-- verified: OK: 127/127 after integration
-- Integrated 2 commit(s) from codex/stages: clean rebuild 127/127, independent OK, probes OK for n/a.
-
-### 2026-10-01T18:26-03:00 · tool · verify · fe9e4d6 (rsbe01_01-support) clean
-- verified: OK: 127/127 at fe9e4d6 (autopilot)
-- Preflight build: 127/127
-- Integrated 2 commit(s) from codex/stages
-- Worktrees were NOT removed (Codex may still use them); use 'Clean up worktree' when Codex is done.
-- Promoted: none (docs entries pending for any promoted TU)
-- Still in progress (ours): cm_controller_menu_pad, gr_battle, gr_battle_ground, st_battle, st_kart, st_oldin, st_tbreak, gr_tengan_floor
-- HEAD: fe9e4d6 Add NonMatching Oldin stage body and reviewed layout evidence
-
-### 2026-10-01T18:26-03:00 · tool · handoff · fe9e4d6 (rsbe01_01-support) clean
-- autopilot finished
-- next: see last tool entry
-
-### 2026-10-01T18:26-03:00 · tool · note · fe9e4d6 (rsbe01_01-support) clean
-- Removed integrated worktree C:\Users\balla\Documents\Brawl Decompile\brawl-codex4 (codex/stages) after checks; branch kept; originals unchanged.
-
-### 2026-10-01T18:27-03:00 · claude · checkpoint · fe9e4d6 (rsbe01_01-support) clean
-- Integrated codex/stages via BrawlTool autopilot: a3c9ef6/91b5438 -> main (HEAD fe9e4d6), clean rebuild 127/127, independent OK, heal probe OK; tbreak/oldin remain NonMatching (probes FAIL, section sizes differ). Removed worktree brawl-codex4 after checks (main.dol SHA-1 unchanged). Fixed autopilot to refresh the WIP list after integration; Codex's 12 tool tests pass (run as python -m unittest brawltool.test_worktree).
-
-### 2026-10-01T18:28-03:00 · claude · claim · fe9e4d6 (rsbe01_01-support) clean
-- task: Melee stage bodies (st_dx*), one TU at a time
-- lease until 2026-10-01T21:28-03:00
-
-### 2026-10-01T18:29-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) clean
-- codex-parallel: Receiver mainfe9e4d6 clean, lease free; no claim. Created brawl-codex5/codex/finish from fe9e4d6. Local ignored originals/toolchains/headers copied; independent header Git metadata. Starting BrawlTool build --clean then check, private logs evidence/nonmatching/finish5/. First TU Target-break; verify section ownership/ordering before createObj/update. Main read-only, no merge/rebase/push.
-
-### 2026-10-01T18:29-03:00 · claude · checkpoint · fe9e4d6 (rsbe01_01-support) clean
-- Started st_dxgreens stage body (Green Greens, module 79): text 0x70..0x1998 (incl sinit 0x1888, classinfo 0x18EC-0x1998), rodata 0..0x10, data 0..0x490, bss 8..0x18, ctors 0..4 (ownership from label refs; no overlap with ground code). Stage size 0x804; ctor out of line (fn_79_A4); unnamed DOL callees fn_8015C238/fn_8015C2BC near nw4r LinkListImpl.
-
-### 2026-10-01T18:31-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Local review st_tbreak/mo_stage/st_tbreak/st_tbreak: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_tbreak\brawl-codex5\st_tbreak_20261001T213133.550657Z.
-
-### 2026-10-01T18:34-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Local review st_tbreak/mo_stage/st_tbreak/st_tbreak: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_tbreak\brawl-codex5\st_tbreak_20261001T213443.353999Z.
-
-### 2026-10-01T18:40-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Local review st_tbreak/mo_stage/st_tbreak/st_tbreak: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_tbreak\brawl-codex5\st_tbreak_20261001T214036.758113Z.
-
-### 2026-10-01T18:42-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Local review st_tbreak/mo_stage/st_tbreak/st_tbreak: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_tbreak\brawl-codex5\st_tbreak_20261001T214218.696656Z.
-
-### 2026-10-01T18:44-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Local review st_tbreak/mo_stage/st_tbreak/st_tbreak: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_tbreak\brawl-codex5\st_tbreak_20261001T214424.623611Z.
-
-### 2026-10-01T18:44-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: Target-break bounded pass complete before build/commit. Data3304 bytes raw identical after class declaration reorder + debug newline correction; packed attack101 byte corrected. Object RO156 vs160 is final4-byte alignment ownership, proved entire linked RO164 identical; no fake padding/global or split-boundary change. createObj848 vs851 instructions, update441 vs440; diagnostics56/58 still. Full REL rejects. Keeping NonMatching; no permuter/flags. Starting clean worktree build/check, logs finish5/tbreak_gate_*.log; then commit TU and take Floor.
-
-### 2026-10-01T18:47-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: Target-break parked/committed3432777 (check actual local hash if drift) on codex/finish. Clean build/check127/127; source remainsNonMatching/no allowlist. Linked RO164 exactly equals reference; rawdata3304 identical; code56/58, wholeREL23712 SHA1e5825a6a34db488ea86291e005077b380dd66d4f fails. No permuter/flags. Main has unrelated dxgreens WIP by other agent; left untouched. Next Floor text6A1C..71FC/dataDA8..10F0 (verify ranges against config), reproduce current source-probe and recover old model-import spellings before matching.
-
-### 2026-10-01T18:47-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Local review st_tengan/mo_stage/st_tengan/gr_tengan_floor: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_tengan\brawl-codex5\gr_tengan_floor_20261001T214711.617780Z.
-
-### 2026-10-01T18:47-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: Correction to immediately preceding note: actual Target-break commit is e5b5e9e, NOT3432777. That note also gave unverified Floor ranges; disregard them. Read the current split before edits; exact confirmed ranges follow in next checkpoint. No past entries edited.
-
-### 2026-10-01T18:51-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: Floor exact confirmed ownership text67EC..7174, rodataF8..108, dataDD0..FF0; no bss/ctors. On codex/finish only, correcting obsolete setFrame/getFrameCount imports to integrated Ff/Fv spellings before byte probe. Target-break parked commit e5b5e9e verified build/check127/127; STAGES_STATUS now current. Main/Claude lease untouched.
-
-### 2026-10-01T18:51-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Local review st_tengan/mo_stage/st_tengan/gr_tengan_floor: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_tengan\brawl-codex5\gr_tengan_floor_20261001T215139.896393Z.
-
-### 2026-10-01T18:57-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Local review st_tengan/mo_stage/st_tengan/gr_tengan_floor: full source REL matches; no promotion. Evidence evidence\nonmatching\st_tengan\brawl-codex5\gr_tengan_floor_20261001T215714.995835Z.
-
-### 2026-10-01T18:58-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: Floor full source REL PASS57504 SHA1 839c8054988ecf7f32862da78fc429daea8833b1; nested inline helpers + defined u8 unsigned comparison match changeAnimation, local epilogue label fixes visibility. Beginning promote/build/check gates in codex/finish only. Private review st_tengan/brawl-codex5/gr_tengan_floor_20261001T215714.995835Z. Main/lease untouched.
-
-### 2026-10-01T18:58-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Promoted mo_stage/st_tengan/gr_tengan_floor (st_tengan): full-REL probe byte-identical, 127/127, independent check OK.
-
-### 2026-10-01T18:59-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Local review st_tengan/mo_stage/st_tengan/gr_tengan_floor: full source REL matches; no promotion. Evidence evidence\nonmatching\st_tengan\brawl-codex5\gr_tengan_floor_20261001T215914.230414Z.
-
-### 2026-10-01T19:00-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: Tengan Floor accepted/source-linked on codex/finish; actual commit hash recorded in STAGES_STATUS (read git). Full REL byte-identical57504 SHA1 839c8054988ecf7f32862da78fc429daea8833b1, promotion gates + final build/check127/127 PASS, originals unchanged. One new source-linked TU; Target-break remains NonMatching e5b5e9e. Next bounded Oldin DATA audit: text70..418C, rodata0..E4, data0..6C0, bss8..18, ctors0..4. No main edits/lease claim/merge/rebase/push.
-
-### 2026-10-01T19:00-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Local review st_oldin/mo_stage/st_oldin/st_oldin: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_oldin\brawl-codex5\st_oldin_20261001T220009.695922Z.
-
-### 2026-10-01T19:05-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Local review st_oldin/mo_stage/st_oldin/st_oldin: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_oldin\brawl-codex5\st_oldin_20261001T220504.767039Z.
-
-### 2026-10-01T19:07-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Local review st_oldin/mo_stage/st_oldin/st_oldin: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_oldin\brawl-codex5\st_oldin_20261001T220756.584627Z.
-
-### 2026-10-01T19:08-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: Oldin data finishing complete; raw rodata228/data1728/bss16/ctors4 byte-equal, no split changes/padding. Corrected literal precision, function order and observed timer/bounds values. 41/53 functions; structural code/relocations still fail wholeREL34152 SHA1 2a40ccbe333d93caf7befdc426efb928716fee69 vs32744. Parking NonMatching after bounded pass; starting final fallback build/check and accepted Floor re-probe. No flags/permuter/main edits. Evidence finish5 and st_oldin/brawl-codex5.
-
-### 2026-10-01T19:08-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Local review st_oldin/mo_stage/st_oldin/st_oldin: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_oldin\brawl-codex5\st_oldin_20261001T220847.128207Z.
-
-### 2026-10-01T19:09-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: brawl-codex5: Local review st_tengan/mo_stage/st_tengan/gr_tengan_floor: full source REL matches; no promotion. Evidence evidence\nonmatching\st_tengan\brawl-codex5\gr_tengan_floor_20261001T220909.678440Z.
-
-### 2026-10-01T19:11-03:00 · codex · note · fe9e4d6 (rsbe01_01-support) dirty 3
-- codex-parallel: Finishing pass complete; brawl-codex5/codex/finish CLEAN at fd966e0. Local commits e5b5e9e Target-break parked56/58, 90d4a16 Floor ACCEPTED source-linked/fullREL57504 SHA1 839c8054988ecf7f32862da78fc429daea8833b1, fd966e0 Oldin parked41/53 with raw data sections recovered. Final build/check127/127 and Floor wholeREL re-probe PASS; originals unchanged. One new source-linked TU; no function-only promotions. STAGES_STATUS and finish5 README/snapshots/audit written; no jobs/permuter/flag sweep/main edits/lease claim/merge/rebase/push. Only lease owner integrates three commits and repeats clean gates, preserving Claude WIP.
-
-### 2026-10-01T19:30-03:00 · claude · handoff · 76d7147 (rsbe01_01-support) clean
-- st_dxgreens WIP committed 76d7147 (65/69, NonMatching); BrawlTool gained errors/variants commands.
-- next: Autopilot integrating codex/finish.
-
-### 2026-10-01T19:30-03:00 · tool · claim · 76d7147 (rsbe01_01-support) clean
-- task: autopilot run
-- lease until 2026-10-01T21:30-03:00
-
-### 2026-10-01T19:31-03:00 · tool · verify · 9ec5405 (rsbe01_01-support) clean
-- verified: OK: 127/127 after integration
-- Integrated 3 commit(s) from codex/finish: clean rebuild 127/127, independent OK, probes OK for mo_stage/st_tengan/gr_tengan.
-
-### 2026-10-01T19:31-03:00 · tool · verify · 9ec5405 (rsbe01_01-support) clean
-- verified: OK: 127/127 at 9ec5405 (autopilot)
-- Preflight build: 127/127
-- Integrated 3 commit(s) from codex/finish
-- Worktrees were NOT removed (Codex may still use them); use 'Clean up worktree' when Codex is done.
-- Promoted: none (docs entries pending for any promoted TU)
-- Still in progress (ours): cm_controller_menu_pad, gr_battle, gr_battle_ground, st_battle, st_dxgreens, st_kart, st_oldin, st_tbreak
-- HEAD: 9ec5405 Recover Oldin literal ordering and observed timer values
-
-### 2026-10-01T19:31-03:00 · tool · handoff · 9ec5405 (rsbe01_01-support) clean
-- autopilot finished
-- next: see last tool entry
-
-### 2026-10-01T19:32-03:00 · tool · note · 9ec5405 (rsbe01_01-support) clean
-- Removed integrated worktree C:\Users\balla\Documents\Brawl Decompile\brawl-codex5 (codex/finish) after checks; branch kept; originals unchanged.
-
-### 2026-10-01T19:32-03:00 · claude · checkpoint · 9ec5405 (rsbe01_01-support) clean
-- Committed st_dxgreens WIP 76d7147 (65/69, NonMatching). Autopilot integrated codex/finish -> 9ec5405 (Tengan Floor matched; tbreak/oldin improved NonMatching): clean rebuild 127/127, independent OK; floor full-REL probe PASS. Removed brawl-codex5 after checks.
-- BrawlTool: new errors + variants commands (README); integrate now detects every newly-promoted object on multi-object configure lines.
-
-### 2026-10-01T19:35-03:00 · claude · claim · 9ec5405 (rsbe01_01-support) clean
-- task: fighters (ft_*): recon + upstream NonMatching fighter TUs, then smallest fighter TUs
-- lease until 2026-10-01T22:35-03:00
-
-### 2026-10-01T19:35-03:00 · claude · note · 9ec5405 (rsbe01_01-support) clean
-- Work split agreed with user: Codex = stages (st_*), Claude = fighters (ft_*). Keep module areas separate to avoid conflicts.
-
-### 2026-10-01T19:35-03:00 · codex · note · 9ec5405 (rsbe01_01-support) clean
-- codex-parallel: Created brawl-codex6 branch codex/dx at9ec5405; isolated originals/compiler/tools/BrawlHeaders copies. Main clean receiver at9ec5405; lease not claimed. Beginning baseline build --clean + check, logs evidence/nonmatching/dx6/baseline_*.log. Next Onett boundary derivation, then Big Blue; one TU at a time.
-
-### 2026-10-01T19:38-03:00 · codex · note · 9ec5405 (rsbe01_01-support) clean
-- codex-parallel: Baseline build/check127/127 PASS. Chosen Onett stDxOnett size300, module78 stage text70..1684, rodata0..58, data0..548 (through base class-info RTTI), bss8..18, ctors0..4. Ground factory1684/constantpool58/stringpool548 onward stays extracted. Reference proof saved evidence/nonmatching/dx6/onett_ownership.json. Beginning split/draft in codex/dx; main/lease untouched.
-
-### 2026-10-01T19:55-03:00 · codex · note · 9ec5405 (rsbe01_01-support) dirty 6
-- codex-parallel: Onett source/header draft compiles; diagnostic63/71, raw rodata/data/ctors identical (not REL acceptance). Named81 owned function/metadata symbols after recovering vtable hierarchy. Added ABI-preserving camera field names; starting isolated clean build, evidence/nonmatching/dx6/onett_clean_build.log. Main and Claude lease untouched.
-
-### 2026-10-01T19:56-03:00 · claude · checkpoint · 9ec5405 (rsbe01_01-support) dirty 6
-- verified: ninja OK 127/127; brawltool diff 8/10; probe links (REL 16 bytes short due to the 2 near-misses)
-- Marth special_hi (first fighter TU) drafted: src/mo_fighter/ft_marth/ft_marth_status_uniq_process_special_hi.cpp + include/ft/ft_kinetic_energy.h + include/so/so_enable.h override (enable/unable setters). KEY FINDING: fighter RELs use cflags_fighter (-O2,s) like Purin; switched ft_marth to it (outlined Vec3f ctor / class ctor / 0x48 sinit match only at -O2,s). Techniques: reference dynamic_cast<T&> (isref=1), Vec2f::copy for getSumSpeed result (word copy), out-of-line static abs() under dont_inline, execStop/execFixPos defined out of class between execStatus and exitStatus. Symbol renames (both configs): ft_marth special_hi fns/vtable/RTTI, Vec3f ctor 77F4, soStatusUniqProcess base inlines B514-B53C, kinetic RTTI labels, g_ftMarthStatusUniqProcessSpecialHi (bss 1B4, referenced by ft_marth.cpp); sora_melee 89DAC/15CF90/15CF5C named ftKineticEnergyClearUnable/mulBrake/mulSpeedX (descriptive, originals unknown). Status 8/10 functions; initStatus = f30/f31 reg alloc around speed.x and 0.0f; execStatus = constant 11 held in r28. Build 127/127 OK. Not committed.
-- next: variants/permuter on initStatus (capped), then the 11; then probe + commit NonMatching WIP
-
-### 2026-10-01T20:02-03:00 · codex · note · 9171889 (rsbe01_01-support) dirty 6
-- codex-parallel: brawl-codex6: Local review st_dxonett/mo_stage/st_dxonett/st_dxonett: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_dxonett\brawl-codex6\st_dxonett_20261001T230203.282716Z.
-
-### 2026-10-01T20:04-03:00 · claude · checkpoint · 8ad4139 (rsbe01_01-support) clean
-- verified: ninja OK 127/127 at 8ad4139; diff 9/10; probe REL same length, .text -4
-- Committed 8ad4139: Marth special_hi WIP 9/10 (initStatus now matches via cached speedX + reused zero local). ft_marth on cflags_fighter (-O2,s). Remaining: execStatus 'li r28,11' held after controller dynamic_cast (same idiom in Dedede 0xE370/0xF77C) - ~30 source forms tried, all fold; documented in docs/RSBE01_01.md. Fighter recipe for other status TUs: -O2,s; ref dynamic_cast; Vec2f::copy for getSumSpeed; out-of-line helpers defined in text order; rename vtable/RTTI/instance (instance is global, referenced by ft_<char>.cpp).
-- next: special_lw / special_s with the same recipe; consider switching all ft_* modules to cflags_fighter after a 2nd fighter confirms
-
-### 2026-10-01T20:05-03:00 · codex · note · 8ad4139 (rsbe01_01-support) clean
-- codex-parallel: brawl-codex6: Local review st_dxonett/mo_stage/st_dxonett/st_dxonett: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_dxonett\brawl-codex6\st_dxonett_20261001T230507.618130Z.
-
-### 2026-10-01T20:05-03:00 · claude · verify · 8ad4139 (rsbe01_01-support) clean
-- verified: verify_manifest 127/127 at 8ad4139
-- Verified main after the other Claude session's upstream-PR port (9171889: st_gw, st_mansion, small PRs, tools/split_gaps.py) plus my Marth WIP (8ad4139) on top: build OK, tools/verify_manifest.py OK 127/127. Dropped stash 'marth WIP before upstream port' after confirming it was an older snapshot fully superseded by 8ad4139.
-- next: other session: status page regen + docs entries for the port; me: Marth special_lw/special_s
-
-### 2026-10-01T20:08-03:00 · claude · checkpoint · (rsbe01_01-support) clean
-- Finished the upstream-PR port bookkeeping: docs/RSBE01_01.md "Ported upstream PRs" section committed; status page regenerated (total 1.28%, 9 cards) from the 127/127 build at 8ad4139.
-- Port content (9171889): st_gw x5, st_mansion x4, __init_cpp_exceptions, nt_send, mu_adv_game_over, em_external_value_accesser fully matching on rev1; gf_task_scheduler 18/20 and st_emblem 54/55 stay NonMatching. Skipped #42/#127/#129/#130/#131/#132/#143 (reasons in the docs section).
-- Procedure for porting more upstream PRs: memory note upstream-pr-porting (config/RSBE01_02 edits must be mirrored by hand; check rev1 vs rev2 symbol differences first).
-- Before starting a new stage, check `gh pr list -R doldecomp/brawl` for an open PR on it (2gifts is working through stages).
-- next: Marth special_lw/special_s (other session). Nothing in flight from me.
-
-### 2026-10-01T20:07-03:00 · codex · note · 6675c8b (rsbe01_01-support) clean
-- codex-parallel: brawl-codex6: Local review st_dxonett/mo_stage/st_dxonett/st_dxonett: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_dxonett\brawl-codex6\st_dxonett_20261001T230705.107326Z.
-
-### 2026-10-01T20:07-03:00 · codex · note · 6675c8b (rsbe01_01-support) clean
-- codex-parallel: Onett parked NonMatching70/71 after bounded source variants. Full REL70568 bytes,12 differing bytes entirely chooseCar stack operands; data/relocation areas identical. Clean fallback build and check127/127 PASS. Private review st_dxonett/brawl-codex6/st_dxonett_20261001T230705.107326Z; DX_STATUS updated. Beginning Big Blue ownership; main/lease untouched.
-
-### 2026-10-01T20:09-03:00 · codex · note · 6675c8b (rsbe01_01-support) clean
-- codex-parallel: Onett local commit147b9ca parked70/71, normal127/127. Chosen Big Blue stDxBigBlue module81 sizeC3C: text70..4178, rodata0..90, data0..7A8, bss8..18, ctors0..4; class-info registration4068/methods40CC..4178/RTTI7A0..7A8 prove end. Existing gr_dxbigblue starts4178, stays separately source-linked. Proof evidence/nonmatching/dx6/bigblue_ownership.json; beginning isolated split/build/draft, no main edits.
-
-### 2026-10-01T20:13-03:00 · tool · verify · 6675c8b (rsbe01_01-support) dirty 6
-- verified: OK: 127/127 with mo_fighter/ft_marth/ft_marth_status_uniq_process_special_lw promoted
-- Promoted mo_fighter/ft_marth/ft_marth_status_uniq_process_special_lw (ft_marth): full-REL probe byte-identical, 127/127, independent check OK.
-
-### 2026-10-01T20:13-03:00 · claude · verify · 33d3f02 (rsbe01_01-support) clean
-- verified: promote gates 1-4 PASS at 33d3f02
-- MATCHED first fighter TU: mo_fighter/ft_marth/ft_marth_status_uniq_process_special_lw (33d3f02). Promoted via brawltool promote: full-REL probe byte-identical, 127/127, independent check OK; docs entry added. Recipe confirmed on a 2nd TU (first draft was 7/9; 3 small fixes). New tool: research/claude_tools/rename_syms.py (--status form names a status TU's dtor/vt/RTTI/sinit/ctor/instance/methods in both configs).
-- next: Marth special_s, special_final, if_marth_final; then other fighters' status TUs (need splits)
-
-### 2026-10-01T20:44-03:00 · codex · note · 33d3f02 (rsbe01_01-support) clean
-- codex-parallel: Big Blue complete typed source compiles; first instruction diagnostics81/101 with raw data1960/ctors4 matching, rodata148vs144 still unresolved. All stage/interface functions plus vtable/RTTI named in isolated codex/dx config. Named fallback build running, log evidence/nonmatching/dx6/bigblue_named_build.log. No promotion, main untouched; remaining gates full-REL review and127/127. No permuter/flag sweep.
-
-### 2026-10-01T20:46-03:00 · codex · note · 33d3f02 (rsbe01_01-support) clean
-- codex-parallel: brawl-codex6: Local review st_dxbigblue/mo_stage/st_dxbigblue/st_dxbigblue: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_dxbigblue\brawl-codex6\st_dxbigblue_20261001T234533.453340Z.
-
-### 2026-10-01T21:12-03:00 · codex · note · 33d3f02 (rsbe01_01-support) clean
-- codex-parallel: Big Blue source diagnostics93/101 after bounded constructor, factory, FP-local and loop-layout variants. Stage remains NonMatching; data1960/ctors4 raw bytes same, RO140vs144 requires linked padding review. Starting clean fallback build in brawl-codex6 before full-REL review, log evidence/nonmatching/dx6/bigblue_final_clean_build.log. Proven NW4R LinkListImpl import names need a fresh main.elf in this isolated checkout. No main edits, lease claim, sweep or permuter.
-
-### 2026-10-01T21:13-03:00 · codex · note · 33d3f02 (rsbe01_01-support) clean
-- codex-parallel: brawl-codex6: Local review st_dxbigblue/mo_stage/st_dxbigblue/st_dxbigblue: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_dxbigblue\brawl-codex6\st_dxbigblue_20261002T001323.008314Z.
-
-### 2026-10-01T21:15-03:00 · codex · note · 33d3f02 (rsbe01_01-support) clean
-- codex-parallel: brawl-codex6: Local review st_dxbigblue/mo_stage/st_dxbigblue/st_dxbigblue: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_dxbigblue\brawl-codex6\st_dxbigblue_20261002T001545.198279Z.
-
-### 2026-10-01T21:17-03:00 · codex · note · 33d3f02 (rsbe01_01-support) clean
-- codex-parallel: brawl-codex6: Local review st_dxonett/mo_stage/st_dxonett/st_dxonett: full source REL not accepted; no promotion. Evidence evidence\nonmatching\st_dxonett\brawl-codex6\st_dxonett_20261002T001746.794814Z.
+### 2026-10-02T02:06-03:00 · codex · handoff · 9f4d31e (rsbe01_01-support) clean
+- One-time Pit integration finished at9f4d31e, all gates pass, no running job. Released lease for Claude/next agent; brawl-codex7 retained. Journal rotated preserving148 historical entries in HANDOFF_ARCHIVE.md.
+- next: Receiver: run status and claim after checking current main; probe/review MK special_s_end, promote only after full REL match +127/127, then MK final_* units; Sonic dash deferred.

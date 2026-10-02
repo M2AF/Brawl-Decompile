@@ -1,0 +1,6 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex7 (codex/ike)
+base                         initStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser: 80 diff lines, functions matching 4/8
+scope_extra                  initStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser: 80 diff lines, functions matching 4/8
+scope_extra_before_speed     initStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser: 80 diff lines, functions matching 4/8
+keep_y_volatile              initStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser: 170 diff lines, functions matching 4/8
+Best: base (80), scope_extra (80), scope_extra_before_speed (80)

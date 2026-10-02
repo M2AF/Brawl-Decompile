@@ -2,31 +2,35 @@
 <!-- handoff v1. LIVE STATE ONLY: rewrite in place, keep under ~60 lines.
      History goes in HANDOFF_LOG.md. Machine fields above the first ## are managed by handoff.py. -->
 
-owner: claude
-task: fighters (ft_*): recon + upstream NonMatching fighter TUs, then smallest fighter TUs
-lease_until: 2026-10-01T23:13-03:00
+owner: none
+task: -
+lease_until: -
 repo: ../brawl
 verify: cd ../brawl; ../.venv/Scripts/python.exe configure.py --version RSBE01_01; Remove-Item -LiteralPath build/RSBE01_01/ok -ErrorAction SilentlyContinue; ../.venv/Scripts/ninja.exe
-verified: 33d3f02 · promote gates 1-4 PASS at 33d3f02 · 2026-10-01T20:13-03:00
-head: 33d3f02 (rsbe01_01-support) clean
-updated: 2026-10-01T21:17-03:00 · codex
+verified: 9f4d31e · 9f4d31e clean rebuild127/127; independent127/127; verifier tests10/10; full Pit source REL byte-identical · 2026-10-02T02:06-03:00
+head: 9f4d31e (rsbe01_01-support) clean
+updated: 2026-10-02T02:06-03:00 · codex
 
 ## Now
-- HEAD 9ec5405 on rsbe01_01-support, clean; local only. 193 source TUs; 127/127 (clean rebuild + independent via autopilot).
-- In progress (ours, NonMatching): st_dxgreens (65/69, regalloc only), st_kart (61/63), st_tbreak, st_oldin, Battlefield x3, menu_pad (DOL).
-- Worktrees: only main. codex/finish integrated (e5b5e9e, 90d4a16, fd966e0) and brawl-codex5 removed after checks.
-- No running jobs. Lease free.
+- Main rsbe01_01-support is clean at9f4d31e; local commits only, no push or original-file change.
+- Pit SpecialLwHold integrated from055115f: seven functions plus owned sections/relocations now source-linked.
+- Clean-cache main rebuild127/127; independent built/original manifest127/127; verifier tests10/10.
+- Full Pit source REL byte-identical (182192bytes, SHA1 80e6015eb3c8df3c0e14783c1c6a48a5340e67a2).
+- Integration is complete; no Codex build/permuter job running. Claude is out of credits tonight.
+- brawl-codex7 / codex/ike retained clean at055115f, already integrated; do not replay old commits.
+- MK special_s_end remains NonMatching; its normal source-probe/promotion gates are pending.
 
 ## Next
-- Marth special_s, special_final, if_marth_final; then other fighters' status TUs (need splits)
+- Receiver: run status and claim after checking current main; probe/review MK special_s_end, promote only after full REL match +127/127, then MK final_* units; Sonic dash deferred.
 
 ## Traps
+- Fighter units owning shared weak RTTI: emission = reverse class-declaration order; include per-class ft_kinetic_energy_*.h headers in the needed order (see special_s). Name shared RTTI labels (__RTTI__...) so emitted copies dedupe.
 - Since c472821 Stage::getZoneLightSetIndex takes Vec3f* (include/st/stage.h); sora_melee symbol renamed. Branches built before that must be rebuilt after cherry-pick.
 - One TU including data, full source REL probe then MatchingFor/allowlist and fresh 127/127.
 - Never push/upload; originals unchanged; target asm only evidence/nonmatching.
 - No flag sweeps; bounded permuter for understood near-misses only.
 - New shadowing headers: clear build/RSBE01_01/src (depfiles miss new files) and rebuild all before trusting 127/127.
-- Every grMadein stage body builds a {0xFF,0},{0xFF,1} static pair before class info: reuse stMadeinStaticPair (include/st_heal/st_heal.h), move to a shared header on second use.
+- Every grMadein stage body builds a {0xFF,0},{0xFF,1} static pair before class info: reuse stMadeinStaticPair in include/st/st_madein_static_pair.h.
 - MWCC: zero-initialised statics go to .bss unless #pragma explicit_zero_data; local aggregate templates go to .rodata; file-scope statics keep copy-before-store order.
 - Dxgarden B90 is an unreachable epilogue label in B08; 4 bytes of rodata padding come from linker.
 - Use probe_source_rel.py to compile before source probing; no stale object acceptance.

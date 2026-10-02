@@ -1,0 +1,58 @@
+[
+  {
+    "module": "ft_pit",
+    "unit": "mo_fighter/ft_pit/ft_pit_status_uniq_process_special_hi_fly.cpp",
+    "bytes": 300,
+    "functions": 4,
+    "warnings": [],
+    "reserved": false
+  },
+  {
+    "module": "ft_pit",
+    "unit": "mo_fighter/ft_pit/ft_pit_status_uniq_process_special_lw_hold.cpp",
+    "bytes": 608,
+    "functions": 7,
+    "warnings": [],
+    "reserved": false
+  },
+  {
+    "module": "ft_pit",
+    "unit": "mo_fighter/ft_pit/ft_pit_status_uniq_process_special_s_revolve.cpp",
+    "bytes": 872,
+    "functions": 20,
+    "warnings": [
+      "# WARN first unit: confirm text start (helpers/base inlines before it?)",
+      "# WARN first unit: RTTI/strings precede the vtable; check what it owns before 0x6938 (e.g. lbl_112_data_689C)"
+    ],
+    "reserved": false
+  },
+  {
+    "module": "ft_luigi",
+    "unit": "mo_fighter/ft_luigi/ft_luigi_status_uniq_process_special_s_wall.cpp",
+    "bytes": 676,
+    "functions": 4,
+    "warnings": [
+      "# WARN last unit: data end = end of trailing RTTI groups; check what follows"
+    ],
+    "reserved": true
+  },
+  {
+    "module": "ft_luigi",
+    "unit": "mo_fighter/ft_luigi/ft_luigi_status_uniq_process_special_s_ram.cpp",
+    "bytes": 876,
+    "functions": 5,
+    "warnings": [],
+    "reserved": true
+  },
+  {
+    "module": "ft_luigi",
+    "unit": "mo_fighter/ft_luigi/ft_luigi_status_uniq_process_special_lw.cpp",
+    "bytes": 920,
+    "functions": 17,
+    "warnings": [
+      "# WARN first unit: confirm text start (helpers/base inlines before it?)",
+      "# WARN first unit: RTTI/strings precede the vtable; check what it owns before 0x63a8 (e.g. lbl_99_data_6360)"
+    ],
+    "reserved": true
+  }
+]

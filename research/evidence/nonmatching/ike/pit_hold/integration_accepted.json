@@ -1,0 +1,12 @@
+{
+  "main_commit": "9f4d31e",
+  "source_commit": "055115f",
+  "main_parent": "be62934",
+  "full_rel_byte_match": true,
+  "size": 182192,
+  "sha1": "80e6015eb3c8df3c0e14783c1c6a48a5340e67a2",
+  "clean_build": "127/127",
+  "independent_built_original_manifest": "127/127",
+  "verifier_tests": "10/10",
+  "main_dirty": false
+}

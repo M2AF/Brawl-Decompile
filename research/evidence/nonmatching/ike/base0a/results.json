@@ -1,0 +1,47 @@
+{
+  "ft_ike/special_lw": {
+    "diagnostics": {
+      "same": 8,
+      "total": 9
+    },
+    "full_rel_byte_match": false,
+    "commit": "c98614a",
+    "configured_state": "nonmatching"
+  },
+  "ft_ike/special_hi": {
+    "diagnostics": {
+      "same": 16,
+      "total": 18
+    },
+    "full_rel_byte_match": false,
+    "commit": "c98614a",
+    "configured_state": "nonmatching"
+  },
+  "ft_ike/final": {
+    "diagnostics": {
+      "same": 8,
+      "total": 10
+    },
+    "full_rel_byte_match": false,
+    "commit": "c98614a",
+    "configured_state": "nonmatching"
+  },
+  "ft_ike/special_s": {
+    "diagnostics": {
+      "same": 4,
+      "total": 8
+    },
+    "full_rel_byte_match": false,
+    "commit": "c98614a",
+    "configured_state": "nonmatching"
+  },
+  "ft_pit/special_hi_fly": {
+    "diagnostics": {
+      "same": 4,
+      "total": 4
+    },
+    "full_rel_byte_match": true,
+    "commit": "c98614a",
+    "configured_state": "matching"
+  }
+}

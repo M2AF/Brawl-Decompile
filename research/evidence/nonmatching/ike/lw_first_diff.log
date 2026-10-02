@@ -1,0 +1,36 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex7 (codex/ike)
+DIFF initStatus__31ftIkeStatusUniqProcessSpecialLwFP16soModuleAccesser initStatus__31ftIkeStatusUniqProcessSpecialLwFP16soModuleAccesser 259 257
+    --- target
+    +++ candidate
+    @@ -74,6 +74,5 @@
+     cmpwi   r3,0
+     bne <addr>
+    -fmr     f0,f31
+    -stfs    f0,36(r1)
+    +stfs    f31,36(r1)
+     lis     r3,0
+     lfs     f1,0(r3)
+    @@ -138,6 +137,5 @@
+     bl <addr>
+     stfs    f1,20(r1)
+    -fmr     f0,f30
+    -stfs    f0,24(r1)
+    +stfs    f30,24(r1)
+     mr      r3,r28
+     addi    r4,r1,20
+DIFF execStatus__31ftIkeStatusUniqProcessSpecialLwFP16soModuleAccesser execStatus__31ftIkeStatusUniqProcessSpecialLwFP16soModuleAccesser 207 206
+    --- target
+    +++ candidate
+    @@ -89,6 +89,5 @@
+     cmpwi   r3,0
+     bne <addr>
+    -fmr     f0,f31
+    -stfs    f0,36(r1)
+    +stfs    f31,36(r1)
+     lis     r3,0
+     lfs     f1,0(r3)
+Candidate-only functions (often unreferenced weak inlines the linker strips): __dt__Q215soKineticEnergy13AttributeFlagFv, __ct__5Vec3fFfff, checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, __dt__19soStatusUniqProcessFv, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, execStatus__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+DIFF section .rodata: target 8 bytes, candidate 4 bytes
+DIFF section .data: target 120 bytes, candidate 540 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 7/9. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

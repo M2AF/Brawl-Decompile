@@ -1,0 +1,240 @@
+{
+  "checked_at_utc": "2026-10-02T02:40:32.207913+00:00",
+  "open_pr_count": 16,
+  "pulls": [
+    {
+      "number": 143,
+      "title": "Match fixed menu camera initialization and update",
+      "url": "https://github.com/doldecomp/brawl/pull/143",
+      "files": [
+        "config/RSBE01_02/symbols.txt",
+        "src/sora/cm/cm_controller_menu_fixed.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    },
+    {
+      "number": 142,
+      "title": "Match NtSend buffer initialization",
+      "url": "https://github.com/doldecomp/brawl/pull/142",
+      "files": [
+        "configure.py",
+        "src/sora/nt/nt_send.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    },
+    {
+      "number": 141,
+      "title": "Match task scheduler render and status loops",
+      "url": "https://github.com/doldecomp/brawl/pull/141",
+      "files": [
+        "src/sora/gf/gf_task_scheduler.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    },
+    {
+      "number": 140,
+      "title": "Match Castle Siege scene effects, sound, and object creation",
+      "url": "https://github.com/doldecomp/brawl/pull/140",
+      "files": [
+        "include/st_emblem/st_emblem.h",
+        "src/mo_stage/st_emblem/st_emblem.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    },
+    {
+      "number": 139,
+      "title": "Match enemy portrait lookup and link value accessor",
+      "url": "https://github.com/doldecomp/brawl/pull/139",
+      "files": [
+        "configure.py",
+        "src/mo_enemy/sora_enemy/em_external_value_accesser.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    },
+    {
+      "number": 137,
+      "title": "Match st_mansion ground objects",
+      "url": "https://github.com/doldecomp/brawl/pull/137",
+      "files": [
+        "config/RSBE01_02/rels/st_mansion/splits.txt",
+        "config/RSBE01_02/rels/st_mansion/symbols.txt",
+        "config/RSBE01_02/symbols.txt",
+        "configure.py",
+        "include/st_mansion/gr_mansion.h",
+        "include/st_mansion/gr_mansion_area.h",
+        "include/st_mansion/gr_mansion_area_break.h",
+        "include/st_mansion/gr_mansion_area_down.h",
+        "include/st_mansion/gr_mansion_area_up.h",
+        "include/st_mansion/gr_mansion_ground.h",
+        "src/mo_stage/st_mansion/gr_mansion.cpp",
+        "src/mo_stage/st_mansion/gr_mansion_area_break.cpp",
+        "src/mo_stage/st_mansion/gr_mansion_area_down.cpp",
+        "src/mo_stage/st_mansion/gr_mansion_area_up.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    },
+    {
+      "number": 136,
+      "title": "Match st_gw scene ground objects and grGWFireEtc",
+      "url": "https://github.com/doldecomp/brawl/pull/136",
+      "files": [
+        "config/RSBE01_02/rels/st_gw/splits.txt",
+        "config/RSBE01_02/rels/st_gw/symbols.txt",
+        "config/RSBE01_02/symbols.txt",
+        "configure.py",
+        "include/st_gw/gr_gw.h",
+        "include/st_gw/gr_gw_fire_etc.h",
+        "include/st_gw/gr_gw_scene.h",
+        "include/st_gw/gr_gw_scene_chef.h",
+        "include/st_gw/gr_gw_scene_lion.h",
+        "include/st_gw/gr_gw_scene_oil.h",
+        "src/mo_stage/st_gw/gr_gw_fire_etc.cpp",
+        "src/mo_stage/st_gw/gr_gw_scene.cpp",
+        "src/mo_stage/st_gw/gr_gw_scene_chef.cpp",
+        "src/mo_stage/st_gw/gr_gw_scene_lion.cpp",
+        "src/mo_stage/st_gw/gr_gw_scene_oil.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    },
+    {
+      "number": 132,
+      "title": "Decompile st_greenhill.cpp",
+      "url": "https://github.com/doldecomp/brawl/pull/132",
+      "files": [
+        "config/RSBE01_02/config.yml",
+        "config/RSBE01_02/rels/st_greenhill/splits.txt",
+        "config/RSBE01_02/rels/st_greenhill/symbols.txt",
+        "configure.py",
+        "include/st_greenhill/gr_greenhill.h",
+        "include/st_greenhill/st_greenhill.h",
+        "src/mo_stage/st_greenhill/st_greenhill.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    },
+    {
+      "number": 131,
+      "title": "Match and link st_battles.rel",
+      "url": "https://github.com/doldecomp/brawl/pull/131",
+      "files": [
+        "config/RSBE01_02/config.yml",
+        "config/RSBE01_02/rels/st_battles/splits.txt",
+        "config/RSBE01_02/rels/st_battles/symbols.txt",
+        "configure.py",
+        "include/st_battles/gr_battlefieldS.h",
+        "include/st_battles/st_battlefieldS.h",
+        "src/mo_stage/st_battles/gr_battlefieldS.cpp",
+        "src/mo_stage/st_battles/st_battlefieldS.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    },
+    {
+      "number": 130,
+      "title": "Start the ft_marth units",
+      "url": "https://github.com/doldecomp/brawl/pull/130",
+      "files": [
+        "src/mo_fighter/ft_marth/ft_marth_status_uniq_process_special_final.cpp",
+        "src/mo_fighter/ft_marth/ft_marth_status_uniq_process_special_hi.cpp",
+        "src/mo_fighter/ft_marth/ft_marth_status_uniq_process_special_lw.cpp",
+        "src/mo_fighter/ft_marth/ft_marth_status_uniq_process_special_s.cpp",
+        "src/mo_fighter/ft_marth/if_marth_final.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    },
+    {
+      "number": 129,
+      "title": "Match and link Spear Pillar ground objects",
+      "url": "https://github.com/doldecomp/brawl/pull/129",
+      "files": [
+        "config/RSBE01_02/rels/st_tengan/splits.txt",
+        "config/RSBE01_02/rels/st_tengan/symbols.txt",
+        "config/RSBE01_02/symbols.txt",
+        "configure.py",
+        "include/st_tengan/gr_tengan.h",
+        "include/st_tengan/gr_tengan_ashiba.h",
+        "include/st_tengan/gr_tengan_bg.h",
+        "include/st_tengan/gr_tengan_floor.h",
+        "include/st_tengan/st_tengan.h",
+        "include/st_tengan/st_tengan_data.h",
+        "src/mo_stage/st_tengan/gr_tengan.cpp",
+        "src/mo_stage/st_tengan/gr_tengan_ashiba.cpp",
+        "src/mo_stage/st_tengan/gr_tengan_bg.cpp",
+        "src/mo_stage/st_tengan/gr_tengan_floor.cpp",
+        "src/mo_stage/st_tengan/st_tengan.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    },
+    {
+      "number": 128,
+      "title": "Add tools/split_gaps.py",
+      "url": "https://github.com/doldecomp/brawl/pull/128",
+      "files": [
+        "tools/split_gaps.py"
+      ],
+      "ike_paths": [],
+      "ike_text": true
+    },
+    {
+      "number": 127,
+      "title": "Match cmMenuFixedController::init and update",
+      "url": "https://github.com/doldecomp/brawl/pull/127",
+      "files": [
+        "config/RSBE01_02/symbols.txt",
+        "configure.py",
+        "src/sora/cm/cm_controller_menu_fixed.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    },
+    {
+      "number": 126,
+      "title": "Decompile __init_cpp_exceptions.cpp",
+      "url": "https://github.com/doldecomp/brawl/pull/126",
+      "files": [
+        "config/RSBE01_02/config.yml",
+        "configure.py",
+        "src/Runtime.PPCEABI.H/__init_cpp_exceptions.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    },
+    {
+      "number": 97,
+      "title": "Match muAdvGameOverTask create",
+      "url": "https://github.com/doldecomp/brawl/pull/97",
+      "files": [
+        "config/RSBE01_02/rels/sora_adv_menu_game_over/splits.txt",
+        "configure.py",
+        "src/mo_adv_menu/sora_adv_menu_game_over/mu_adv_game_over.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    },
+    {
+      "number": 42,
+      "title": "Start decompiling st_pictochat.rel",
+      "url": "https://github.com/doldecomp/brawl/pull/42",
+      "files": [
+        "config/RSBE01_02/rels/st_pictchat/splits.txt",
+        "config/RSBE01_02/rels/st_pictchat/symbols.txt",
+        "configure.py",
+        "include/st_pictchat/gr_pictchat.h",
+        "include/st_pictchat/st_pictchat.h",
+        "src/mo_stage/st_pictchat/gr_pictchat.cpp",
+        "src/mo_stage/st_pictchat/st_pictchat.cpp"
+      ],
+      "ike_paths": [],
+      "ike_text": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex7 (codex/ike)
+base                         initStatus__31ftIkeStatusUniqProcessSpecialLwFP16soModuleAccesser: 3 diff lines, functions matching 8/9
+named_vec_ctor               initStatus__31ftIkeStatusUniqProcessSpecialLwFP16soModuleAccesser: 23 diff lines, functions matching 8/9
+named_vec_fields             initStatus__31ftIkeStatusUniqProcessSpecialLwFP16soModuleAccesser: 23 diff lines, functions matching 8/9
+named_vec_assign             initStatus__31ftIkeStatusUniqProcessSpecialLwFP16soModuleAccesser: 59 diff lines, functions matching 8/9
+float_y_after_value          initStatus__31ftIkeStatusUniqProcessSpecialLwFP16soModuleAccesser: 3 diff lines, functions matching 8/9
+alias_y                      initStatus__31ftIkeStatusUniqProcessSpecialLwFP16soModuleAccesser: 8 diff lines, functions matching 8/9
+const_alias_y                initStatus__31ftIkeStatusUniqProcessSpecialLwFP16soModuleAccesser: 8 diff lines, functions matching 8/9
+double_y                     initStatus__31ftIkeStatusUniqProcessSpecialLwFP16soModuleAccesser: 2 diff lines, functions matching 8/9
+rvalue_copy                  initStatus__31ftIkeStatusUniqProcessSpecialLwFP16soModuleAccesser: 73 diff lines, functions matching 8/9
+Best: double_y (2), base (3), float_y_after_value (3)

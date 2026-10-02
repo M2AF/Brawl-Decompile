@@ -1,0 +1,56 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex7 (codex/ike)
+Note: configure.py / verified_objects.txt already have uncommitted edits.
+Gate 1/4: full-REL probe of ft_pit with mo_fighter/ft_pit/ft_pit_status_uniq_process_special_hi_fly from source
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_pit mo_fighter/ft_pit/ft_pit_status_uniq_process_special_hi_fly
+Original: 182192 80e6015eb3c8df3c0e14783c1c6a48a5340e67a2
+Source probe: 182192 80e6015eb3c8df3c0e14783c1c6a48a5340e67a2
+Full REL byte match: True
+PASS: full-REL probe for ft_pit (mo_fighter/ft_pit/ft_pit_status_uniq_process_special_hi_fly)
+Gate 2/4: normal build with the stamp removed
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\ninja.exe
+[1/1] RUN configure.py
+[1/7] LINK build\RSBE01_01\ft_pit\ft_pit.preplf
+[2/7] LINK build\RSBE01_01\ft_pit\ft_pit.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   '__sinit_\ft_pit_status_uniq_process_special_hi_fly_cpp' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_112_data_6A10' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_112_data_6A34' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_112_bss_1B0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+[3/7] REL
+[4/7] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[5/7] REPORT
+[6/7] PROGRESS
+Progress:
+  All: 1.75% matched, 1.34% linked (544 / 4418 files)
+    Code: 276912 / 15833548 bytes (3375 / 92522 functions)
+    Data: 855604 / 5667436 bytes (15.10%)
+  DOL: 1.41% matched, 0.88% linked (67 / 1722 files)
+    Code: 58648 / 4170064 bytes (517 / 14278 functions)
+    Data: 6732 / 1724104 bytes (0.39%)
+  Modules: 1.87% matched, 1.51% linked (477 / 2696 files)
+    Code: 218264 / 11663484 bytes (2858 / 78244 functions)
+    Data: 848872 / 3943332 bytes (21.53%)
+PASS: OK: 127/127 binaries verified
+Gate 3/4: independent check against the originals
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe tools/verify_manifest.py config/RSBE01_01/binary-manifest.json --sha1-file config/RSBE01_01/build.sha1 --orig --dtk C:\Users\balla\Documents\Brawl Decompile\brawl-codex7\build\tools\dtk.exe
+127 files OK
+OK: 127/127 binaries verified
+PASS: independent check 127/127, verifier tests OK, originals unchanged
+Gate 4/4: re-probe after promotion
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_pit mo_fighter/ft_pit/ft_pit_status_uniq_process_special_hi_fly
+Original: 182192 80e6015eb3c8df3c0e14783c1c6a48a5340e67a2
+Source probe: 182192 80e6015eb3c8df3c0e14783c1c6a48a5340e67a2
+Full REL byte match: True
+PASS: full-REL probe for ft_pit (mo_fighter/ft_pit/ft_pit_status_uniq_process_special_hi_fly)
+Shared main status page unchanged. Use review for private worktree evidence.
+PROMOTED mo_fighter/ft_pit/ft_pit_status_uniq_process_special_hi_fly. Remember: add a docs/RSBE01_01.md entry (techniques + UB review).

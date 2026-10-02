@@ -1,0 +1,14 @@
+{
+  "commit": "055115f",
+  "base": "3a192a8",
+  "branch": "codex/ike",
+  "full_rel_byte_match": true,
+  "size": 182192,
+  "sha1": "80e6015eb3c8df3c0e14783c1c6a48a5340e67a2",
+  "source_sha256": "d419a2f14d227a28b741b17f0664e61628c7f34440ad4b13bcc7dd251db74407",
+  "normal_build": "127/127",
+  "independent_built_original_manifest": "127/127",
+  "verifier_tests": "10/10",
+  "function_diagnostics": "7/7",
+  "probe": "post-promotion"
+}

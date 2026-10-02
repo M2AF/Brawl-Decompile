@@ -54,6 +54,7 @@ class App:
         f = ttk.Labelframe(body, text="Project", padding=8); f.pack(fill="x", pady=4)
         self._btn(f, "Build && verify (127/127)", lambda r: ops.build(r))
         self._btn(f, "Clean rebuild", lambda r: ops.build(r, clean=True))
+        self._btn(f, "Open ObjDiff", ops.open_objdiff)
         self._btn(f, "Independent check", ops.independent_check)
         self._btn(f, "Status page", lambda r: ops.status_page(r))
         self._btn(f, "Rank candidates", lambda r: ops.rank(r))

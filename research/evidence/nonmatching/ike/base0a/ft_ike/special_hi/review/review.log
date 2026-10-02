@@ -1,0 +1,59 @@
+{
+  "checkout": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex7",
+  "head": "c98614adac511d3d92ba4382a133b2fdf03c3ee0",
+  "branch": "codex/ike",
+  "unit": "mo_fighter/ft_ike/ft_ike_status_uniq_process_special_hi"
+}
+SAME initStatus__31ftIkeStatusUniqProcessSpecialHiFP16soModuleAccesser initStatus__31ftIkeStatusUniqProcessSpecialHiFP16soModuleAccesser 250 250
+DIFF execStatus__31ftIkeStatusUniqProcessSpecialHiFP16soModuleAccesser execStatus__31ftIkeStatusUniqProcessSpecialHiFP16soModuleAccesser 311 310
+    --- target
+    +++ candidate
+    @@ -260,5 +260,4 @@
+     bl <addr>
+     mr      r28,r3
+    -li      r26,0
+     lfs     f1,0(r31)
+     stfs    f1,20(r1)
+    @@ -270,5 +269,5 @@
+     mr      r6,r3
+     mr      r3,r28
+    -mr      r4,r26
+    +li      r4,0
+     addi    r5,r1,20
+     mr      r7,r30
+SAME execStop__31ftIkeStatusUniqProcessSpecialHiFP16soModuleAccesser execStop__31ftIkeStatusUniqProcessSpecialHiFP16soModuleAccesser 1 1
+SAME execFixPos__31ftIkeStatusUniqProcessSpecialHiFP16soModuleAccesser execFixPos__31ftIkeStatusUniqProcessSpecialHiFP16soModuleAccesser 1 1
+DIFF exitStatus__31ftIkeStatusUniqProcessSpecialHiFP16soModuleAccesseri exitStatus__31ftIkeStatusUniqProcessSpecialHiFP16soModuleAccesseri 47 45
+    --- target
+    +++ candidate
+    @@ -13,6 +13,4 @@
+     beq <addr>
+     bge <addr>
+    -b <addr>
+    -b <addr>
+     lwz     r3,216(r4)
+     lwz     r3,132(r3)
+SAME checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi 2 2
+SAME leaveStop__19soStatusUniqProcessFP16soModuleAccesserib leaveStop__19soStatusUniqProcessFP16soModuleAccesserib 1 1
+SAME onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff 2 2
+SAME checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf 1 1
+SAME checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv 2 2
+SAME execFixCamera__19soStatusUniqProcessFP16soModuleAccesser execFixCamera__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME __dt__31ftIkeStatusUniqProcessSpecialHiFv __dt__31ftIkeStatusUniqProcessSpecialHiFv     16 16
+SAME execStop__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser execStop__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser 1 1
+SAME exitStatus__26wnIkeSwordStatusUniqProcessFP16soModuleAccesseri exitStatus__26wnIkeSwordStatusUniqProcessFP16soModuleAccesseri 1 1
+SAME __sinit_\ft_ike_status_uniq_process_special_hi_cpp __sinit_\ft_ike_status_uniq_process_special_hi_cpp 18 18
+SAME __ct__31ftIkeStatusUniqProcessSpecialHiFv __ct__31ftIkeStatusUniqProcessSpecialHiFv     4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): __ct__5Vec3fFfff, __dt__Q215soKineticEnergy13AttributeFlagFv, __dt__19soStatusUniqProcessFv, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, execStatus__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+DIFF section .rodata: target 16 bytes, candidate 12 bytes
+DIFF section .data: target 144 bytes, candidate 2948 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 16/18. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_ike mo_fighter/ft_ike/ft_ike_status_uniq_process_special_hi
+Original: 146840 2e7487b6b09ced85613bd79482dcd24a0efde1c3
+Source probe: 146840 061bd5a6dcd4f8ff128649fcb3392b854836761e
+Full REL byte match: False
+First differing byte: 0x37
+FAIL: full-REL probe for ft_ike (mo_fighter/ft_ike/ft_ike_status_uniq_process_special_hi)

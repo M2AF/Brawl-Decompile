@@ -1,0 +1,27 @@
+mo_fighter/ft_luigi/ft_luigi_status_uniq_process_special_lw.cpp:
+	.text       start:0x0000CA80 end:0x0000CE18
+	.ctors      start:0x00000004 end:0x00000008
+	.rodata     start:0x00000028 end:0x00000030
+	.data       start:0x000063A8 end:0x00006440
+	.bss        start:0x000001C0 end:0x000001D0
+	# WARN first unit: confirm text start (helpers/base inlines before it?)
+	# WARN first unit: RTTI/strings precede the vtable; check what it owns before 0x63a8 (e.g. lbl_99_data_6360)
+	# vtable lbl_99_data_63A8 rtti lbl_99_data_6418 ctor fn_99_CE08 sinit fn_99_CDC0 instance lbl_99_bss_1CC dtor fn_99_CD7C
+
+mo_fighter/ft_luigi/ft_luigi_status_uniq_process_special_s_ram.cpp:
+	.text       start:0x0000CE18 end:0x0000D184
+	.ctors      start:0x00000008 end:0x0000000C
+	.rodata     start:0x00000030 end:0x00000040
+	.data       start:0x00006440 end:0x00006504
+	.bss        start:0x000001D0 end:0x000001E0
+	# vtable lbl_99_data_6440 rtti lbl_99_data_64B0 ctor fn_99_D174 sinit fn_99_D12C instance lbl_99_bss_1DC dtor fn_99_D0EC
+
+mo_fighter/ft_luigi/ft_luigi_status_uniq_process_special_s_wall.cpp:
+	.text       start:0x0000D184 end:0x0000D428
+	.ctors      start:0x0000000C end:0x00000010
+	.rodata     start:0x00000040 end:0x00000058
+	.data       start:0x00006504 end:0x00006580
+	.bss        start:0x000001E0 end:0x000001F0
+	# WARN last unit: data end = end of trailing RTTI groups; check what follows
+	# vtable lbl_99_data_6504 rtti lbl_99_data_6578 ctor fn_99_D418 sinit fn_99_D3D0 instance lbl_99_bss_1EC dtor fn_99_D390
+

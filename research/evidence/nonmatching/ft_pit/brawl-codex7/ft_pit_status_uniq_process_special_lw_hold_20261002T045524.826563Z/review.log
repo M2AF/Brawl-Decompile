@@ -1,0 +1,23 @@
+{
+  "checkout": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex7",
+  "head": "3a192a82ea918122d498955177e3bcca0c6eadda",
+  "branch": "codex/ike",
+  "unit": "mo_fighter/ft_pit/ft_pit_status_uniq_process_special_lw_hold"
+}
+SAME initStatus__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser initStatus__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser 1 1
+SAME execStatus__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser execStatus__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser 85 85
+SAME updateModelScale__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser updateModelScale__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser 27 27
+SAME execStop__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser execStop__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser 1 1
+SAME __dt__35ftPitStatusUniqProcessSpecialLwHoldFv __dt__35ftPitStatusUniqProcessSpecialLwHoldFv 16 16
+SAME __sinit_\ft_pit_status_uniq_process_special_lw_hold_cpp __sinit_\ft_pit_status_uniq_process_special_lw_hold_cpp 18 18
+SAME __ct__35ftPitStatusUniqProcessSpecialLwHoldFv __ct__35ftPitStatusUniqProcessSpecialLwHoldFv 4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, __dt__19soStatusUniqProcessFv, execStop__19soStatusUniqProcessFP16soModuleAccesser, execStatus__19soStatusUniqProcessFP16soModuleAccesser, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+SAME section .rodata: target 8 bytes, candidate 8 bytes
+DIFF section .data: target 128 bytes, candidate 216 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 7/7. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_pit mo_fighter/ft_pit/ft_pit_status_uniq_process_special_lw_hold
+Original: 182192 80e6015eb3c8df3c0e14783c1c6a48a5340e67a2
+Source probe: 182192 80e6015eb3c8df3c0e14783c1c6a48a5340e67a2
+Full REL byte match: True
+PASS: full-REL probe for ft_pit (mo_fighter/ft_pit/ft_pit_status_uniq_process_special_lw_hold)

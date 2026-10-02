@@ -1,0 +1,314 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex7 (codex/ike)
+DIFF initStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser initStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser 450 447
+    --- target
+    +++ candidate
+    @@ -1,13 +1,11 @@
+    -stwu    r1,-256(r1)
+    +stwu    r1,-240(r1)
+     mflr    r0
+    -stw     r0,260(r1)
+    -stfd    f31,240(r1)
+    -xxsel   vs31,vs1,vs0,vs35
+    -stfd    f30,224(r1)
+    -psq_st  f30,232(r1),0,0
+    -stfd    f29,208(r1)
+    -psq_st  f29,216(r1),0,0
+    -stfd    f28,192(r1)
+    -xsmsubmsp vs28,vs1,vs0
+    +stw     r0,244(r1)
+    +stfd    f31,224(r1)
+    +psq_st  f31,232(r1),0,0
+    +stfd    f30,208(r1)
+    +psq_st  f30,216(r1),0,0
+    +stfd    f29,192(r1)
+    +xsmsubmsp vs29,vs1,vs0
+     addi    r11,r1,192
+     bl <addr>
+    @@ -56,6 +54,6 @@
+     stw     r3,92(r1)
+     stw     r4,96(r1)
+    -lfs     f29,92(r1)
+    -lfs     f28,96(r1)
+    +lfs     f30,92(r1)
+    +lfs     f29,96(r1)
+     lwz     r3,216(r29)
+     lwz     r3,12(r3)
+    @@ -64,5 +62,5 @@
+     mtctr   r12
+     bctrl
+    -fmr     f30,f1
+    +fmr     f31,f1
+     lwz     r3,216(r29)
+     lwz     r3,112(r3)
+    @@ -94,5 +92,5 @@
+     lis     r31,0
+     lfs     f0,0(r31)
+    -fcmpo   cr0,f28,f0
+    +fcmpo   cr0,f29,f0
+     bge <addr>
+     mr      r3,r29
+    @@ -100,8 +98,8 @@
+     li      r5,0
+     bl <addr>
+    -fmuls   f28,f28,f1
+    +fmuls   f29,f29,f1
+     lfs     f1,0(r31)
+     stfs    f1,76(r1)
+    -stfs    f28,80(r1)
+    +stfs    f29,80(r1)
+     addi    r3,r1,148
+     fmr     f2,f1
+    @@ -122,8 +120,9 @@
+     b <addr>
+     lwz     r3,216(r29)
+    +lwz     r28,100(r3)
+     lwz     r3,80(r3)
+     li      r4,5911
+     li      r5,0
+    -mr      r6,r5
+    +li      r6,0
+     li      r7,0
+     lwz     r12,0(r3)
+    @@ -132,9 +131,8 @@
+     bctrl
+     mr      r4,r3
+    -lwz     r3,216(r29)
+    -lwz     r3,100(r3)
+    +mr      r3,r28
+     lis     r5,8192
+     addi    r5,r5,4
+    -lwz     r12,0(r3)
+    +lwz     r12,0(r28)
+     lwz     r12,28(r12)
+     mtctr   r12
+    @@ -173,12 +171,12 @@
+     lfd     f0,160(r1)
+     fsubs   f0,f0,f2
+    -fmuls   f31,f0,f1
+    +fmuls   f29,f0,f1
+     mr      r3,r29
+     li      r4,4004
+     li      r5,0
+     bl <addr>
+    -fadds   f0,f1,f31
+    -fmuls   f29,f30,f0
+    -stfs    f29,68(r1)
+    +fadds   f0,f29,f1
+    +fmuls   f30,f31,f0
+    +stfs    f30,68(r1)
+     lis     r30,0
+     lfs     f1,0(r30)
+    @@ -228,12 +226,12 @@
+     lfd     f0,160(r1)
+     fsubs   f0,f0,f2
+    -fmuls   f31,f0,f1
+    +fmuls   f29,f0,f1
+     mr      r3,r29
+     li      r4,4003
+     li      r5,0
+     bl <addr>
+    -fadds   f0,f1,f31
+    -fmuls   f29,f30,f0
+    -stfs    f29,52(r1)
+    +fadds   f0,f29,f1
+    +fmuls   f30,f31,f0
+    +stfs    f30,52(r1)
+     lis     r30,0
+     lfs     f1,0(r30)
+    @@ -299,4 +297,6 @@
+     bl <addr>
+     fmr     f31,f1
+    +lwz     r3,216(r29)
+    +lwz     r27,28(r3)
+     mr      r3,r28
+     lis     r4,8192
+    @@ -314,8 +314,7 @@
+     lfd     f0,160(r1)
+     fsubs   f0,f0,f1
+    -fmuls   f1,f0,f31
+    -lwz     r3,216(r29)
+    -lwz     r3,28(r3)
+    -lwz     r12,0(r3)
+    +fmuls   f1,f31,f0
+    +mr      r3,r27
+    +lwz     r12,0(r27)
+     lwz     r12,188(r12)
+     mtctr   r12
+    @@ -341,5 +340,5 @@
+     li      r5,0
+     bl <addr>
+    -fmuls   f29,f29,f1
+    +fmuls   f30,f30,f1
+     b <addr>
+     mr      r3,r29
+    @@ -347,10 +346,10 @@
+     li      r5,0
+     bl <addr>
+    -fmuls   f29,f29,f1
+    -li      r28,6
+    +fmuls   f30,f30,f1
+    +li      r27,6
+     lis     r3,0
+     lfs     f1,0(r3)
+     stfs    f1,28(r1)
+    -stfs    f28,32(r1)
+    +stfs    f29,32(r1)
+     addi    r3,r1,112
+     fmr     f2,f1
+    @@ -382,5 +381,5 @@
+     li      r5,0
+     bl <addr>
+    -fmuls   f29,f29,f1
+    +fmuls   f30,f30,f1
+     b <addr>
+     mr      r3,r29
+    @@ -388,10 +387,10 @@
+     li      r5,0
+     bl <addr>
+    -fmuls   f29,f29,f1
+    -li      r28,0
+    +fmuls   f30,f30,f1
+    +li      r27,0
+     li      r3,1
+     mr      r4,r29
+     bl <addr>
+    -stfs    f29,20(r1)
+    +stfs    f30,20(r1)
+     lis     r30,0
+     lfs     f1,0(r30)
+    @@ -403,5 +402,5 @@
+     mr      r6,r3
+     mr      r3,r31
+    -mr      r4,r28
+    +mr      r4,r27
+     addi    r5,r1,20
+     mr      r7,r29
+    @@ -422,5 +421,5 @@
+     stb     r0,5(r31)
+     lwz     r3,216(r29)
+    -lwz     r28,100(r3)
+    +lwz     r27,100(r3)
+     lwz     r3,20(r3)
+     lwz     r12,0(r3)
+    @@ -429,22 +428,20 @@
+     bctrl
+     mr      r4,r3
+    -mr      r3,r28
+    +mr      r3,r27
+     lis     r5,8192
+    -lwz     r12,0(r28)
+    -lwz     r12,28(r12)
+    -mtctr   r12
+    -bctrl
+    -psq_l   f31,248(r1),0,0
+    -lfd     f31,240(r1)
+    -lq      r30,224(r1)
+    -lfd     f30,224(r1)
+    -psq_l   f29,216(r1),0,0
+    -lfd     f29,208(r1)
+    -lq      r28,192(r1)
+    -lfd     f28,192(r1)
+    +lwz     r12,0(r27)
+    +lwz     r12,28(r12)
+    +mtctr   r12
+    +bctrl
+    +psq_l   f31,232(r1),0,0
+    +lfd     f31,224(r1)
+    +lq      r30,208(r1)
+    +lfd     f30,208(r1)
+    +psq_l   f29,200(r1),0,0
+    +lfd     f29,192(r1)
+     addi    r11,r1,192
+     bl <addr>
+    -lwz     r0,260(r1)
+    +lwz     r0,244(r1)
+     mtlr    r0
+    -addi    r1,r1,256
+    +addi    r1,r1,240
+     blr
+DIFF execStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser execStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser 437 441
+    --- target
+    +++ candidate
+    @@ -20,7 +20,7 @@
+     stw     r4,112(r1)
+     stw     r3,108(r1)
+    -stw     r3,124(r1)
+    -stw     r4,128(r1)
+    -lfs     f31,124(r1)
+    +stw     r3,132(r1)
+    +stw     r4,136(r1)
+    +lfs     f31,132(r1)
+     lwz     r3,216(r30)
+     lwz     r3,112(r3)
+    @@ -75,6 +75,6 @@
+     lwz     r3,216(r30)
+     lwz     r3,80(r3)
+    +fmr     f1,f0
+     mr      r4,r27
+    -fmr     f1,f0
+     li      r5,0
+     lwz     r12,0(r3)
+    @@ -125,5 +125,5 @@
+     lfs     f1,0(r31)
+     stfs    f1,104(r1)
+    -addi    r3,r1,180
+    +addi    r3,r1,188
+     fmr     f2,f1
+     fmr     f3,f1
+    @@ -152,5 +152,5 @@
+     lfs     f1,0(r31)
+     stfs    f1,88(r1)
+    -addi    r3,r1,168
+    +addi    r3,r1,176
+     fmr     f2,f1
+     fmr     f3,f1
+    @@ -258,11 +258,15 @@
+     mtctr   r12
+     bctrl
+    -stw     r4,56(r1)
+    -stw     r3,52(r1)
+    -lfs     f0,56(r1)
+    -stfs    f31,60(r1)
+    -stfs    f0,64(r1)
+    +stw     r4,64(r1)
+    +stw     r3,60(r1)
+    +lfs     f0,60(r1)
+    +stfs    f0,124(r1)
+    +lfs     f0,64(r1)
+    +stfs    f0,128(r1)
+    +frsp    f0,f0
+    +stfs    f31,52(r1)
+    +stfs    f0,56(r1)
+     addi    r3,r27,8
+    -addi    r4,r1,60
+    +addi    r4,r1,52
+     bl <addr>
+     lwz     r3,216(r30)
+    @@ -344,5 +348,5 @@
+     lfs     f1,0(r31)
+     stfs    f1,40(r1)
+    -addi    r3,r1,156
+    +addi    r3,r1,164
+     fmr     f2,f1
+     fmr     f3,f1
+    @@ -361,5 +365,5 @@
+     stfs    f1,28(r1)
+     stfs    f0,32(r1)
+    -addi    r3,r1,144
+    +addi    r3,r1,152
+     fmr     f2,f1
+     fmr     f3,f1
+    @@ -382,5 +386,5 @@
+     lfs     f1,0(r31)
+     stfs    f1,24(r1)
+    -addi    r3,r1,132
+    +addi    r3,r1,140
+     fmr     f2,f1
+     fmr     f3,f1
+DIFF execFixPos__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser execFixPos__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesser 44 44
+DIFF exitStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesseri exitStatus__30ftIkeStatusUniqProcessSpecialSFP16soModuleAccesseri 32 30
+Candidate-only functions (often unreferenced weak inlines the linker strips): __dt__Q215soKineticEnergy13AttributeFlagFv, __ct__5Vec3fFfff, checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, __dt__19soStatusUniqProcessFv, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, execStatus__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+DIFF section .rodata: target 24 bytes, candidate 20 bytes
+DIFF section .data: target 120 bytes, candidate 540 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 4/8. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

@@ -1,0 +1,21 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex7 (codex/ike)
+DIFF initStatus__27ftIkeStatusUniqProcessFinalFP16soModuleAccesser initStatus__27ftIkeStatusUniqProcessFinalFP16soModuleAccesser 416 416
+    --- target
+    +++ candidate
+    @@ -139,7 +139,7 @@
+     lfd     f0,120(r1)
+     fsubs   f0,f0,f1
+    -lwz     r3,216(r30)
+    -lwz     r3,100(r3)
+     fneg    f1,f0
+    +lwz     r3,216(r30)
+    +lwz     r3,100(r3)
+     lis     r4,8448
+     addi    r4,r4,9
+DIFF fn_119_F4A4                              fn_119_F4A4                                   9 13
+DIFF execStatus__27ftIkeStatusUniqProcessFinalFP16soModuleAccesser execStatus__27ftIkeStatusUniqProcessFinalFP16soModuleAccesser 244 247
+Candidate-only functions (often unreferenced weak inlines the linker strips): __ct__5Vec3fFfff, checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, __dt__19soStatusUniqProcessFv, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, execStatus__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+DIFF section .rodata: target 40 bytes, candidate 36 bytes
+DIFF section .data: target 112 bytes, candidate 464 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 7/10. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

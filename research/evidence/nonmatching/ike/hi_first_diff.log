@@ -1,0 +1,8 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex7 (codex/ike)
+DIFF execStatus__31ftIkeStatusUniqProcessSpecialHiFP16soModuleAccesser execStatus__31ftIkeStatusUniqProcessSpecialHiFP16soModuleAccesser 311 310
+DIFF exitStatus__31ftIkeStatusUniqProcessSpecialHiFP16soModuleAccesseri exitStatus__31ftIkeStatusUniqProcessSpecialHiFP16soModuleAccesseri 47 63
+Candidate-only functions (often unreferenced weak inlines the linker strips): __ct__5Vec3fFfff, __dt__Q215soKineticEnergy13AttributeFlagFv, __dt__19soStatusUniqProcessFv, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, execStatus__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+DIFF section .rodata: target 16 bytes, candidate 12 bytes
+DIFF section .data: target 144 bytes, candidate 2956 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 16/18. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

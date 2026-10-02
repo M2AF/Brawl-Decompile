@@ -1,6 +1,8 @@
-# PROJECT_STATE — read this first (updated 2026-10-01)
+# PROJECT_STATE — read this first (updated 2026-10-02)
 
 Single pickup document for a fresh Claude or Codex session. Details live in the docs indexed at the bottom.
+
+Latest checkpoint: main `rsbe01_01-support` is clean at **9f4d31e**. At the user's explicit request, Codex integrated Pit SpecialLwHold (`055115f` -> `9f4d31e`) after Claude ran out of credits. Clean-source rebuild and independent built/original manifest checks both pass **127/127**; verifier tests **10/10**; full Pit source REL byte-identical. No pushes or original-file changes. See the live `HANDOFF.md` and newest journal entry before doing any work; the older inventory below is historical. Meta Knight special_s_end remains NonMatching and is the queued next task, followed by its final status units. Isolated `brawl-codex7` is retained at055115f; its changes are already integrated.
 
 ## Goal
 1. **Now:** a verified matching rebuild of the user's Super Smash Bros. Brawl **USA rev 1 (RSBE01_01)**, decompiling small translation units (TUs) one at a time on top of the upstream doldecomp/brawl project.
@@ -10,7 +12,7 @@ Never call fallback-object rebuilds a "completed decompilation". Originals stay 
 
 ## Repo, branch, build
 - Repo: `C:\Users\balla\Documents\Brawl Decompile\brawl` (fork of doldecomp/brawl, dtk-template).
-- Branch: `rsbe01_01-support`, HEAD `9ec5405`, clean. **Local commits only, never push.**
+- Branch: `rsbe01_01-support`, HEAD `9f4d31e`, clean. **Local commits only, never push.**
 - `research/` is NOT in the repo (private notes, tools, evidence; contains target asm).
 - Originals: `brawl/orig/RSBE01_01` (git-ignored). Frozen hashes: `config/RSBE01_01/binary-manifest.json`, `build.sha1`.
 - Build and verify (Windows; ninja is in the venv):
@@ -34,7 +36,7 @@ Never call fallback-object rebuilds a "completed decompilation". Originals stay 
 - Preserve best attempts, compile commands and diffs for difficult functions in `research/evidence/nonmatching/`.
 - Report source-linked TUs separately from function-only matches.
 
-## Source-linked TUs on rev1 (all verified 127/127)
+## Source-linked TUs on rev1 (historical inventory at 9ec5405)
 193 source-linked TUs: 175 upstream `Matching` plus 18 rev1 additions:
 
 | TU | Commit | Notes |

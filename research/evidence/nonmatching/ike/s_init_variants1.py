@@ -1,0 +1,1 @@
+VARIANTS = [('scope_extra', [('float speedX = speed.m_x;', 'float extra;\n    float speedX = speed.m_x;'), ('float extra = count *', 'extra = count *')]), ('scope_extra_before_speed', [('Vec2f speed;', 'float extra;\n    Vec2f speed;'), ('float extra = count *', 'extra = count *')]), ('keep_y_volatile', [('float speedY = speed.m_y;', 'volatile float speedY = speed.m_y;')])]

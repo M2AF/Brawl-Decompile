@@ -1,0 +1,50 @@
+[
+  {
+    "index": 1,
+    "target_size": 81540,
+    "candidate_size": 81528,
+    "diff_bytes": 24862,
+    "first": [
+      131,
+      167,
+      378,
+      379,
+      819,
+      935,
+      947,
+      1243,
+      1467,
+      1479,
+      1491,
+      1503
+    ]
+  },
+  {
+    "index": 2,
+    "target_size": 28,
+    "candidate_size": 28,
+    "diff_bytes": 0,
+    "first": []
+  },
+  {
+    "index": 3,
+    "target_size": 12,
+    "candidate_size": 12,
+    "diff_bytes": 0,
+    "first": []
+  },
+  {
+    "index": 4,
+    "target_size": 192,
+    "candidate_size": 192,
+    "diff_bytes": 0,
+    "first": []
+  },
+  {
+    "index": 5,
+    "target_size": 33184,
+    "candidate_size": 33184,
+    "diff_bytes": 0,
+    "first": []
+  }
+]

@@ -1,0 +1,39 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex7 (codex/ike)
+SAME initStatus__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser initStatus__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser 1 1
+DIFF execStatus__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser execStatus__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser 85 85
+    --- target
+    +++ candidate
+    @@ -49,5 +49,5 @@
+     bl <addr>
+     fsubs   f0,f30,f31
+    -fmuls   f0,f0,f1
+    +fmuls   f0,f1,f0
+     fadds   f30,f31,f0
+     mr      r3,r31
+DIFF updateModelRotation__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser updateModelRotation__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser 27 27
+    --- target
+    +++ candidate
+    @@ -11,6 +11,6 @@
+     lis     r3,0
+     lfs     f0,0(r3)
+    +stfs    f0,12(r1)
+     stfs    f0,16(r1)
+    -stfs    f0,12(r1)
+     lwz     r3,216(r31)
+     lwz     r3,4(r3)
+    @@ -18,5 +18,5 @@
+     addi    r5,r1,8
+     lwz     r12,8(r3)
+    -lwz     r12,104(r12)
+    +lwz     r12,124(r12)
+     mtctr   r12
+     bctrl
+SAME execStop__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser execStop__35ftPitStatusUniqProcessSpecialLwHoldFP16soModuleAccesser 1 1
+SAME __dt__35ftPitStatusUniqProcessSpecialLwHoldFv __dt__35ftPitStatusUniqProcessSpecialLwHoldFv 16 16
+SAME __sinit_\ft_pit_status_uniq_process_special_lw_hold_cpp __sinit_\ft_pit_status_uniq_process_special_lw_hold_cpp 18 18
+SAME __ct__35ftPitStatusUniqProcessSpecialLwHoldFv __ct__35ftPitStatusUniqProcessSpecialLwHoldFv 4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, __dt__19soStatusUniqProcessFv, execStop__19soStatusUniqProcessFP16soModuleAccesser, execStatus__19soStatusUniqProcessFP16soModuleAccesser, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+SAME section .rodata: target 8 bytes, candidate 8 bytes
+DIFF section .data: target 128 bytes, candidate 216 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 5/7. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

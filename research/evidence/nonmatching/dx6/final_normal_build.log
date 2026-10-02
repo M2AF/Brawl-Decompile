@@ -1,0 +1,20 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex6 (codex/dx)
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\ninja.exe
+[1/1] RUN configure.py
+[1/5] MWCC build\RSBE01_01\src\mo_stage\st_dxbigblue\st_dxbigblue.o
+[2/5] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[3/5] REPORT
+[4/5] PROGRESS
+Progress:
+  All: 1.53% matched, 1.19% linked (525 / 4390 files)
+    Code: 242804 / 15833548 bytes (3196 / 92522 functions)
+    Data: 847180 / 5667444 bytes (14.95%)
+  DOL: 1.37% matched, 0.85% linked (65 / 1722 files)
+    Code: 57172 / 4170064 bytes (511 / 14278 functions)
+    Data: 6720 / 1724104 bytes (0.39%)
+  Modules: 1.59% matched, 1.32% linked (460 / 2668 files)
+    Code: 185632 / 11663484 bytes (2685 / 78244 functions)
+    Data: 840460 / 3943340 bytes (21.31%)
+PASS: OK: 127/127 binaries verified

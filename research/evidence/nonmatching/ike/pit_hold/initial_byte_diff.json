@@ -1,0 +1,11 @@
+{
+  "original_size": 182192,
+  "candidate_size": 182192,
+  "different_bytes": [
+    "0xe40d",
+    "0xe40f",
+    "0xe4cb",
+    "0xe4cf",
+    "0xe4e7"
+  ]
+}

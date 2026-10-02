@@ -20,6 +20,7 @@ def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="brawltool", description="Local helpers for the Brawl RSBE01_01 matching decomp.")
     p.add_argument("--repo", help="Explicit Brawl checkout/worktree root (or BRAWLTOOL_REPO). Put before the command.")
     sub = p.add_subparsers(dest="cmd", required=True)
+    sub.add_parser("metrics", help="summarize local command wall-time samples")
     s = sub.add_parser("build", help="configure + ninja, must print 127/127"); s.add_argument("--clean", action="store_true")
     sub.add_parser("check", help="independent check against the originals + verifier tests")
     s = sub.add_parser("status", help="regenerate the status page"); s.add_argument("--no-open", action="store_true")
@@ -28,6 +29,14 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument("module"); s.add_argument("unit", help="e.g. mo_stage/st_ice/st_ice (no .cpp)")
     s.add_argument("--range", action="append", metavar="SEC=START-END", help="e.g. text=0x70-0x12D0 (repeat per section)")
     s.add_argument("--force-active", help="e.g. create__5stIceFv")
+    s = sub.add_parser("status-splits", help="propose fighter status splits from generated assembly")
+    s.add_argument("module"); s.add_argument("--prefix", default="ft", help="status-name prefix (default: ft)")
+    s.add_argument("--write-copy", action="store_true", help="append proposals to an ignored local review copy of splits.txt")
+    s = sub.add_parser("apply-status-splits", help="apply status proposals to both revisions and configure.py")
+    s.add_argument("module"); s.add_argument("--prefix", required=True, help="status-name prefix, e.g. ftMario")
+    s = sub.add_parser("rename-status", help="rename status symbols in both Brawl version configs")
+    s.add_argument("module"); s.add_argument("status_args", nargs=argparse.REMAINDER,
+                                                help="--status CLASS DTOR VT RTTI SINIT CTOR INSTANCE UNIT [OLD=METHOD[:SUFFIX] ...]")
     s = sub.add_parser("draft", help="m2c draft of a unit's assembly"); s.add_argument("module"); s.add_argument("unit"); s.add_argument("-f", "--function", nargs="*", default=[])
     s = sub.add_parser("diff", help="compare candidate vs target per function"); s.add_argument("module"); s.add_argument("unit")
     s.add_argument("-s", "--show", nargs="*", default=[], help="function names to print diffs for"); s.add_argument("-v", "--verbose", action="store_true")
@@ -48,11 +57,18 @@ def main(argv: list[str] | None = None) -> int:
         # Ops imports path constants, so selection must precede this import.
         from . import ops
         r.log(f"Checkout: {root} ({git(r, 'branch', '--show-current') or 'detached HEAD'})")
-        if a.cmd == "build": ops.build(r, clean=a.clean)
+        if a.cmd == "metrics": ops.metrics(r)
+        elif a.cmd == "build": ops.build(r, clean=a.clean)
         elif a.cmd == "check": ops.independent_check(r)
         elif a.cmd == "status": ops.status_page(r, open_it=not a.no_open)
         elif a.cmd == "rank": ops.rank(r, tuple(a.exclude), a.top, a.min)
         elif a.cmd == "split": ops.split(r, a.module, a.unit, _ranges(a.range), a.force_active)
+        elif a.cmd == "status-splits": ops.status_splits(r, a.module, a.prefix, a.write_copy)
+        elif a.cmd == "apply-status-splits": ops.apply_status_splits(r, a.module, a.prefix)
+        elif a.cmd == "rename-status":
+            if not a.status_args or a.status_args[0] != "--status":
+                raise ToolError("rename-status requires --status followed by class, dtor, vtable, RTTI, sinit, ctor, instance, and unit")
+            ops.rename_status(r, a.module, tuple(a.status_args[1:]))
         elif a.cmd == "draft": ops.draft(r, a.module, a.unit, tuple(a.function))
         elif a.cmd == "diff": return 0 if ops.diff(r, a.module, a.unit, tuple(a.show), a.verbose) else 1
         elif a.cmd == "errors": return 0 if ops.errors(r, a.unit, a.max) else 1

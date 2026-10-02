@@ -1,0 +1,278 @@
+{
+  "checkout": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex7",
+  "head": "7a3f8c76679d2aa6f5043e2b5d4544ccb0a2af2f",
+  "branch": "codex/ike",
+  "unit": "mo_fighter/ft_ike/ft_ike_status_uniq_process_final"
+}
+SAME initStatus__27ftIkeStatusUniqProcessFinalFP16soModuleAccesser initStatus__27ftIkeStatusUniqProcessFinalFP16soModuleAccesser 416 416
+DIFF fn_119_F4A4                              fn_119_F4A4                                   9 9
+    --- target
+    +++ candidate
+    @@ -1,9 +1,9 @@
+    -psq_l   f3,0(r4),0,0
+    +lq      r0,0(r4)
+     psq_l   f1,0(r5),0,0
+     lq      r2,-32768(r4)
+    -lq      r0,-32768(r5)
+    -vmsumshm v1,v3,v1,v0
+    -vmsumshm v0,v2,v0,v0
+    -xsaddsp vs1,vs3,vs0
+    -xsmaddasp vs0,vs3,vs16
+    +psq_l   f3,8(r5),1,0
+    +vmsumshm v0,v0,v1,v0
+    +vmsumshm v1,v2,v3,v0
+    +xsaddsp vs0,vs3,vs0
+    +xsmaddasp vs1,vs3,vs16
+     blr
+DIFF execStatus__27ftIkeStatusUniqProcessFinalFP16soModuleAccesser execStatus__27ftIkeStatusUniqProcessFinalFP16soModuleAccesser 244 247
+    --- target
+    +++ candidate
+    @@ -1,10 +1,10 @@
+    -stwu    r1,-144(r1)
+    +stwu    r1,-128(r1)
+     mflr    r0
+    -stw     r0,148(r1)
+    -stfd    f31,128(r1)
+    -xsmsubasp vs31,vs1,vs0
+    -stfd    f30,112(r1)
+    -xxsel   vs30,vs1,vs0,vs33
+    -addi    r11,r1,112
+    +stw     r0,132(r1)
+    +stfd    f31,112(r1)
+    +xxsel   vs31,vs1,vs0,vs33
+    +stfd    f30,96(r1)
+    +psq_st  f30,104(r1),0,0
+    +addi    r11,r1,96
+     bl <addr>
+     mr      r30,r4
+    @@ -46,5 +46,5 @@
+     bctrl
+     b <addr>
+    -addi    r3,r1,76
+    +addi    r3,r1,64
+     lwz     r4,216(r30)
+     lwz     r4,12(r4)
+    @@ -61,5 +61,5 @@
+     mtctr   r12
+     bctrl
+    -stfs    f1,64(r1)
+    +stfs    f1,52(r1)
+     lwz     r3,216(r30)
+     lwz     r3,100(r3)
+    @@ -69,12 +69,12 @@
+     mtctr   r12
+     bctrl
+    -stfs    f1,68(r1)
+    -lfs     f0,84(r1)
+    -stfs    f0,72(r1)
+    -addi    r3,r1,52
+    -addi    r4,r1,64
+    -addi    r5,r1,76
+    -bl <addr>
+    -addi    r3,r1,52
+    +stfs    f1,56(r1)
+    +lfs     f0,72(r1)
+    +stfs    f0,60(r1)
+    +addi    r3,r1,40
+    +addi    r4,r1,52
+    +addi    r5,r1,64
+    +bl <addr>
+    +addi    r3,r1,40
+     bl <addr>
+     fmr     f30,f1
+    @@ -87,13 +87,13 @@
+     bctrl
+     fmr     f31,f1
+    -fcmpo   cr0,f30,f31
+    +fcmpo   cr0,f30,f1
+     cror    eq,lt,eq
+     bne <addr>
+    -lfs     f0,64(r1)
+    -stfs    f0,76(r1)
+    -lfs     f0,68(r1)
+    -stfs    f0,80(r1)
+    -lfs     f0,72(r1)
+    -stfs    f0,84(r1)
+    +lfs     f0,52(r1)
+    +stfs    f0,64(r1)
+    +lfs     f0,56(r1)
+    +stfs    f0,68(r1)
+    +lfs     f0,60(r1)
+    +stfs    f0,72(r1)
+     lwz     r3,216(r30)
+     lwz     r3,100(r3)
+    @@ -105,19 +105,22 @@
+     bctrl
+     b <addr>
+    -addi    r3,r1,52
+    -bl <addr>
+    -lq      r0,48(r1)
+    -psq_l   f1,60(r1),1,0
+    -vextdubvlx v0,v0,v0,r31
+    -vextdubvlx v1,v1,v0,r31
+    -xscmpeqdp vs0,vs33,vs0
+    -psq_st  f1,36(r1),1,0
+    -lq      r2,64(r1)
+    -psq_l   f3,84(r1),1,0
+    -vsel    v0,v2,v0,v0
+    -vsel    v1,v3,v1,v0
+    -xsmaddmsp vs0,vs33,vs0
+    -xxmrghd vs1,vs33,vs16
+     addi    r3,r1,40
+    +bl <addr>
+    +lfs     f0,40(r1)
+    +fmuls   f1,f0,f31
+    +lfs     f0,64(r1)
+    +fadds   f0,f0,f1
+    +stfs    f0,64(r1)
+    +lfs     f0,44(r1)
+    +fmuls   f1,f0,f31
+    +lfs     f0,68(r1)
+    +fadds   f0,f0,f1
+    +stfs    f0,68(r1)
+    +lfs     f0,48(r1)
+    +fmuls   f1,f0,f31
+    +lfs     f0,72(r1)
+    +fadds   f0,f0,f1
+    +stfs    f0,72(r1)
+    +addi    r3,r1,28
+     lwz     r4,216(r30)
+     lwz     r4,4(r4)
+    @@ -127,7 +130,6 @@
+     mtctr   r12
+     bctrl
+    -lwz     r4,216(r30)
+    -lwz     r3,12(r4)
+    -lwz     r28,100(r4)
+    +lwz     r3,216(r30)
+    +lwz     r3,12(r3)
+     lwz     r12,0(r3)
+     lwz     r12,44(r12)
+    @@ -135,34 +137,35 @@
+     bctrl
+     fmr     f31,f1
+    -mr      r3,r28
+    +lwz     r3,216(r30)
+    +lwz     r3,100(r3)
+     addi    r4,r29,10
+    -lwz     r12,0(r28)
+    -lwz     r12,56(r12)
+    -mtctr   r12
+    -bctrl
+    -fmuls   f1,f1,f31
+    -lfs     f0,32(r31)
+    +lwz     r12,0(r3)
+    +lwz     r12,56(r12)
+    +mtctr   r12
+    +bctrl
+    +fmuls   f1,f31,f1
+    +lfs     f0,28(r31)
+     fsubs   f1,f1,f0
+    -lfs     f0,28(r31)
+    +lfs     f0,24(r31)
+     fadds   f2,f0,f1
+    -stfs    f2,40(r1)
+    +stfs    f2,28(r1)
+     frsp    f1,f2
+     lfs     f0,0(r31)
+     fcmpo   cr0,f1,f0
+     bge <addr>
+    -lfs     f0,36(r31)
+    +lfs     f0,32(r31)
+     fadds   f0,f1,f0
+    -stfs    f0,40(r1)
+    +stfs    f0,28(r1)
+     b <addr>
+     fmr     f0,f1
+    -lfs     f1,36(r31)
+    +lfs     f1,32(r31)
+     fcmpo   cr0,f0,f1
+     ble <addr>
+     fsubs   f0,f0,f1
+    -stfs    f0,40(r1)
+    +stfs    f0,28(r1)
+     lwz     r3,216(r30)
+     lwz     r3,4(r3)
+     li      r4,11
+    -addi    r5,r1,40
+    +addi    r5,r1,28
+     lwz     r12,8(r3)
+     lwz     r12,124(r12)
+    @@ -171,5 +174,5 @@
+     lwz     r3,216(r30)
+     lwz     r3,12(r3)
+    -addi    r4,r1,76
+    +addi    r4,r1,64
+     lwz     r12,0(r3)
+     lwz     r12,28(r12)
+    @@ -201,5 +204,5 @@
+     extsh   r7,r0
+     bl <addr>
+    -mr      r28,r3
+    +mr      r29,r3
+     mr      r3,r30
+     li      r4,4038
+    @@ -216,29 +219,29 @@
+     bl <addr>
+     mr      r6,r3
+    -mr      r3,r28
+    +mr      r3,r29
+     li      r4,0
+     addi    r5,r1,8
+     mr      r7,r30
+    -lwz     r12,0(r28)
+    +lwz     r12,0(r29)
+     lwz     r12,28(r12)
+     mtctr   r12
+     bctrl
+     lfs     f1,0(r31)
+    -stfs    f1,16(r28)
+    -stfs    f31,20(r28)
+    +stfs    f1,16(r29)
+    +stfs    f31,20(r29)
+     lfs     f0,12(r31)
+    -stfs    f0,28(r28)
+    -stfs    f1,24(r28)
+    -lbz     r0,5(r28)
+    +stfs    f0,28(r29)
+    +stfs    f1,24(r29)
+    +lbz     r0,5(r29)
+     ori     r0,r0,128
+    -stb     r0,5(r28)
+    -psq_l   f31,136(r1),0,0
+    -lfd     f31,128(r1)
+    -lq      r30,112(r1)
+    -lfd     f30,112(r1)
+    -addi    r11,r1,112
+    -bl <addr>
+    -lwz     r0,148(r1)
+    +stb     r0,5(r29)
+    +psq_l   f31,120(r1),0,0
+    +lfd     f31,112(r1)
+    +lq      r30,96(r1)
+    +lfd     f30,96(r1)
+    +addi    r11,r1,96
+    +bl <addr>
+    +lwz     r0,132(r1)
+     mtlr    r0
+    -addi    r1,r1,144
+    +addi    r1,r1,128
+     blr
+SAME execStop__27ftIkeStatusUniqProcessFinalFP16soModuleAccesser execStop__27ftIkeStatusUniqProcessFinalFP16soModuleAccesser 1 1
+SAME execFixPos__27ftIkeStatusUniqProcessFinalFP16soModuleAccesser execFixPos__27ftIkeStatusUniqProcessFinalFP16soModuleAccesser 72 72
+SAME exitStatus__27ftIkeStatusUniqProcessFinalFP16soModuleAccesseri exitStatus__27ftIkeStatusUniqProcessFinalFP16soModuleAccesseri 58 58
+SAME fn_119_FAA4                              fn_119_FAA4                                   34 34
+SAME __dt__27ftIkeStatusUniqProcessFinalFv    __dt__27ftIkeStatusUniqProcessFinalFv         16 16
+SAME __sinit_\ft_ike_status_uniq_process_final_cpp __sinit_\ft_ike_status_uniq_process_final_cpp 18 18
+SAME __ct__27ftIkeStatusUniqProcessFinalFv    __ct__27ftIkeStatusUniqProcessFinalFv         4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): __ct__5Vec3fFfff, checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, __dt__19soStatusUniqProcessFv, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, execStatus__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+DIFF section .rodata: target 40 bytes, candidate 36 bytes
+DIFF section .data: target 112 bytes, candidate 464 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 8/10. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_ike mo_fighter/ft_ike/ft_ike_status_uniq_process_final
+Original: 146840 2e7487b6b09ced85613bd79482dcd24a0efde1c3
+Source probe: 146872 ca6b036e33eeef78f376c52f941977f46c505826
+Full REL byte match: False
+First differing byte: 0x26
+FAIL: full-REL probe for ft_ike (mo_fighter/ft_ike/ft_ike_status_uniq_process_final)

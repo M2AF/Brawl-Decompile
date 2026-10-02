@@ -1,0 +1,139 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex7 (codex/ike)
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\ninja.exe
+[1/6] DOL build\RSBE01_01\main.dol
+[2/6] REL
+[3/6] MWCC build\RSBE01_01\src\mo_fighter\ft_ike\ft_ike_status_uniq_process_special_s.o
+### mwcceppc.exe Compiler:
+#    File: src\mo_fighter\ft_ike\ft_ike_status_uniq_process_special_s.cpp
+# -----------------------------------------------------------------------
+#      53:                 gravity->resetEnergy(0, &Vec2f(0.0f, speedY), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                             ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#      53: y->resetEnergy(0, &Vec2f(0.0f, speedY), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#      66:                 stop->resetEnergy(6, &Vec2f(speedX, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                          ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#      66: p->resetEnergy(6, &Vec2f(speedX, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#      67: ValueAccesser::getConstantFloat(moduleAccesser, 0xFA8, 0), 0.0f)); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#      72:                 stop->resetEnergy(0, &Vec2f(speedX, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                          ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#      72: p->resetEnergy(0, &Vec2f(speedX, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#      73: ValueAccesser::getConstantFloat(moduleAccesser, 0xFA7, 0), 0.0f)); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#      76:             fn_119_B6CC(&stop->m_28, &Vec2f(-1.0f, 0.0f)); 
+# Warning:                                                         ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#      97:                 gravity->resetEnergy(0, &Vec2f(0.0f, speedY), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                             ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#      97: y->resetEnergy(0, &Vec2f(0.0f, speedY), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     108:             stop->resetEnergy(resetType, &Vec2f(speedX, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                              ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     108: Energy(resetType, &Vec2f(speedX, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     109:             fn_119_B6CC(&stop->m_28, &Vec2f(-1.0f, 0.0f)); 
+# Warning:                                                         ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     135:                     stop->resetEnergy(6, &Vec2f(speedX, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                              ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     135: p->resetEnergy(6, &Vec2f(speedX, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     136: ValueAccesser::getConstantFloat(moduleAccesser, 0xFA8, 0), 0.0f)); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     138:                     stop->resetEnergy(0, &Vec2f(speedX, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                              ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     138: p->resetEnergy(0, &Vec2f(speedX, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     139: ValueAccesser::getConstantFloat(moduleAccesser, 0xFA7, 0), 0.0f)); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     141:                 fn_119_B6CC(&stop->m_28, &Vec2f(-1.0f, 0.0f)); 
+# Warning:                                                             ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     158:          fn_119_B6CC(&stop->m_speed, &Vec2f(speedX, current.m_y)); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     168:                   stop->resetEnergy(6, &Vec2f(current.m_x, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     168: setEnergy(6, &Vec2f(current.m_x, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     169:                gravity->resetEnergy(0, &Vec2f(0.0f, current.m_y), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     169: setEnergy(0, &Vec2f(0.0f, current.m_y), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     172:                   stop->resetEnergy(0, &Vec2f(current.m_x, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     172: setEnergy(0, &Vec2f(current.m_x, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), moduleAccesser); 
+# Warning:                                                                 ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#     175:                 fn_119_B6CC(&stop->m_28, &Vec2f(-1.0f, 0.0f)); 
+# Warning:                                                             ^
+#   (10142) not an lvalue
+[4/6] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[5/6] REPORT
+[6/6] PROGRESS
+Progress:
+  All: 1.71% matched, 1.30% linked (539 / 4415 files)
+    Code: 270812 / 15833548 bytes (3326 / 92522 functions)
+    Data: 855488 / 5667436 bytes (15.09%)
+  DOL: 1.41% matched, 0.88% linked (67 / 1722 files)
+    Code: 58648 / 4170064 bytes (517 / 14278 functions)
+    Data: 6732 / 1724104 bytes (0.39%)
+  Modules: 1.82% matched, 1.46% linked (472 / 2693 files)
+    Code: 212164 / 11663484 bytes (2809 / 78244 functions)
+    Data: 848756 / 3943332 bytes (21.52%)
+PASS: OK: 127/127 binaries verified

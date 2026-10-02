@@ -11,6 +11,7 @@ sessions only need to handle the actual matching.
 | **Run autopilot** / `autopilot` | the routine loop in order: claim lease → build 127/127 → integrate Codex branches with new commits → diff+probe our in-progress TUs and promote+commit any that now match → status page → summary + journal → release lease. Stops if another agent holds the lease. `--dry-run` (Plan button), `--no-integrate`, `--no-promote` | commits on main |
 | Build & verify / `build` | configure, remove the stamp, run ninja; must print `OK: 127/127` | build output only |
 | Clean rebuild / `build --clean` | same, after clearing the compiled-source cache (use after adding or shadowing headers) | build output only |
+| Open ObjDiff (window only) | launches ObjDiff for the active Brawl checkout; opens the official releases page if it is not installed | no |
 | Independent check / `check` | `verify_manifest --orig --dtk`, the verifier tests, and the original `main.dol` hash | no |
 | Status page / `status` | regenerates `research/status/brawl_status.html` and opens it | the page |
 | Rank candidates / `rank` | smallest remaining extracted text chunks (`--exclude`, `--min`, `--top`) | no |
@@ -32,6 +33,20 @@ Notes:
   carry no AI attribution.
 - Nothing is ever pushed. The original game files are only read; their hash is checked.
 - m2c is pinned at `research/tools/m2c` (commit 708d2d2).
+
+## Status split proposals
+
+`status-splits <module> [--prefix ftX]` imports the canonical `research/claude_tools/mk_status_splits.py` helper to propose status translation-unit ranges from generated assembly and print its review warnings. Add `--write-copy` to append proposals to an ignored copy under `research/brawltool/review/status_splits/`; the real Brawl `splits.txt` is never edited.
+
+`apply-status-splits <module> --prefix ftX` applies proposals to both revision `splits.txt` files and adds `Object(NonMatching, ...)` entries with `cflags_fighter` in `configure.py`. It refuses duplicate units or missing anchors. Review all WARN lines first; this command writes the selected checkout's configs.
+
+## Status symbol renames
+
+`rename-status <module> --status <ClassName> <dtor> <vtable> <rtti> <sinit> <ctor> <instance> <unit> [old=method[:suffix] ...]` applies the standard status-class names to both `RSBE01_01` and `RSBE01_02` symbol files. All symbols in both files are validated before either is written; full mangled method names pass through unchanged.
+
+## Local timings
+
+BrawlTool records wall time and outcome for `build`, `diff`, `probe`, `promote`, `variants`, and `errors` in the ignored local file `research/brawltool/metrics/timings.csv`. Run `brawltool metrics` to see sample count, mean, median, maximum, and failures by command. Nested operations are recorded individually, so a promotion may also contribute build and probe samples.
 
 ## Isolated worktrees (Codex parallel work)
 
