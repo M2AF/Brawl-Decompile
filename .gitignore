@@ -29,6 +29,7 @@
 
 # Local toolchain and generated build output
 /.venv/
+/research/tools/m2c/
 build/
 .ninja_*
 build.ninja
