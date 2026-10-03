@@ -1,0 +1,11 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex9 (codex/mk-finals)
+base                         initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 18 diff lines, functions matching 11/12
+own_left                     initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 18 diff lines, functions matching 11/12
+comparison_pointer           initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 47 diff lines, functions matching 11/12
+value_pointer                initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 39 diff lines, functions matching 11/12
+array_reference              initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 47 diff lines, functions matching 11/12
+volatile_continue            initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 18 diff lines, functions matching 11/12
+scoped_compare               initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 47 diff lines, functions matching 11/12
+unsigned_array               initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 5 diff lines, functions matching 11/12
+entries_alias                initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 47 diff lines, functions matching 11/12
+Best: unsigned_array (5), base (18), own_left (18)

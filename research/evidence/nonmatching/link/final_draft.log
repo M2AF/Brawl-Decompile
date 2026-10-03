@@ -1,0 +1,132 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex10 (codex/link)
+typedef struct gfTaskScheduler {
+    /* 0x00 */ char pad0[0xC];
+    /* 0x0C */ u32 unkC;                            /* inferred */
+    /* 0x10 */ f32 unk10;                           /* inferred */
+    /* 0x14 */ f32 unk14;                           /* inferred */
+} gfTaskScheduler;                                  /* size >= 0x18 */
+
+typedef struct soExternalValueAccesser {
+    /* 0x0 */ char pad0[5];
+    /* 0x5 */ u8 unk5;                              /* inferred */
+} soExternalValueAccesser;                          /* size >= 0x6 */
+
+typedef struct soValueAccesser {
+    /* 0x00 */ char pad0[8];
+    /* 0x08 */ void *unk8;                          /* inferred */
+    /* 0x0C */ char padC[0xCC];                     /* maybe part of unk8[0x34]? */
+    /* 0xD8 */ void *unkD8;                         /* inferred */
+} soValueAccesser;                                  /* size >= 0xDC */
+
+? __dl__FPv(void *arg0);                            /* extern */
+soExternalValueAccesser *__dynamic_cast(?, struct RTTI *, struct RTTI *, s32); /* extern */
+? __register_global_object(void *, void *(*)(void *, s16), ? *); /* extern */
+? fn_93_F174(f32 *, f32 *);                         /* extern */
+f32 getConstantFloat__15soValueAccesserFP16soModuleAccesserUlUl(soValueAccesser *this, soModuleAccesser *arg0, u32 arg1, u32 arg2); /* extern */
+s32 getConstantInt__15soValueAccesserFP16soModuleAccesserUlUl(soValueAccesser *this, soModuleAccesser *arg0, u32 arg1, u32 arg2); /* extern */
+gfTaskScheduler *getInstance__15gfTaskSchedulerFv(gfTaskScheduler *this); /* extern */
+void *getModuleAccesser__23soExternalValueAccesserFP11StageObject(soExternalValueAccesser *this, StageObject *arg0); /* extern */
+s32 getTaskById__15gfTaskSchedulerFQ26gfTask8CategoryUl(gfTaskScheduler *this, gfTask::Category arg0, u32 arg1); /* extern */
+? memset(f32 *, ?, ?);                              /* extern */
+f32 rsqrtf__Ff(f32 arg0);                           /* extern */
+void fn_93_10090(? *arg0);                          /* static */
+s32 fn_93_102D0(void *arg0);                        /* static */
+f32 fn_93_10424(f32 *, f32 *, f32 *);               /* static */
+void fn_93_1054C(f32 *arg0, void *arg1);            /* static */
+void fn_93_10BA0(void *arg0, ? *arg1, ? *arg2);     /* static */
+void fn_93_10C84(void *arg0, s32 arg1, ? arg_sp0);  /* static */
+void fn_93_10D18(void *arg0, s32 arg1, ? arg_sp0);  /* static */
+void *fn_93_10DEC(void *arg0, s16 arg1);            /* static */
+void *fn_93_10E2C(void *arg0, s16 arg1);            /* static */
+void *fn_93_10E6C(void *arg0, s16 arg1);            /* static */
+void fn_93_10F2C(? **arg0);                         /* static */
+void fn_93_10F3C(? **arg0);                         /* static */
+void fn_93_10F4C(? **arg0);                         /* static */
+f32 fn_93_FE68(f32 *arg0, f32);                     /* static */
+void fn_93_FF14(soValueAccesser *arg0);             /* static */
+extern struct RTTI __RTTI__11StageObject;
+extern struct RTTI __RTTI__6gfTask;
+extern struct RTTI lbl_93_data_3018;
+extern struct RTTI lbl_93_data_30FC;
+static ? lbl_93_data_83F8;                          /* unable to generate initializer: unknown type */
+static ? lbl_93_data_8470;                          /* unable to generate initializer: unknown type */
+static ? lbl_93_data_84E8;                          /* unable to generate initializer: unknown type */
+static ? lbl_93_bss_180;
+
+void fn_93_F998(void *arg1, ? arg_sp0) {
+    void **temp_r29;
+
+    temp_r29 = arg1->unkD8->unk64;
+    (*temp_r29)->unk1C(temp_r29, 0, 0x20000001);
+    (*temp_r29)->unk1C(temp_r29, 0, 0x20000002);
+    (*temp_r29)->unk54(temp_r29, 0x22000017);
+    (*temp_r29)->unk54(temp_r29, 0x22000018);
+    (*temp_r29)->unk1C(temp_r29, -1, 0x20000003);
+    (*temp_r29)->unk3C(temp_r29, 0x21000004, 999999.9f);
+    (*temp_r29)->unk54(temp_r29, 0x22000019);
+}
+
+void fn_93_FA94(soValueAccesser *arg1, ? arg_sp0) {
+    s32 sp1C;
+    s32 sp18;
+    f32 sp14;
+    f32 sp10;
+    f32 spC;
+    f32 sp8;
+    void **temp_r31;
+    void **temp_r3_2;
+    void *temp_r3;
+
+    temp_r31 = arg1->unkD8->unk64;
+    if (((*temp_r31)->unk4C(temp_r31, 0x22000017) != 0) && ((*temp_r31)->unk4C(temp_r31, 0x22000018) == 0)) {
+        (*temp_r31)->unk50(temp_r31, 0x22000018);
+        memset(&sp8, 0, 0x18);
+        temp_r3 = arg1->unkD8->unk4;
+        sp18 = (sp18 & ~0xFF800000) | (temp_r3->unk8->unk8C(temp_r3, 0x12C) << 0x17);
+        sp14 = getConstantFloat__15soValueAccesserFP16soModuleAccesserUlUl(arg1, (soModuleAccesser *)0xFAC, 0U, M2C_ERROR(/* Read from unset register $r6 */));
+        sp8 = 0.0f;
+        spC = 0.0f;
+        sp10 = getConstantFloat__15soValueAccesserFP16soModuleAccesserUlUl(arg1, (soModuleAccesser *)0xFAD, 0U, M2C_ERROR(/* Read from unset register $r6 */));
+        sp18 = ((((((sp18 & ~0x7F0000) | 0x20000) & ~0xFFC0) | 0x40) & ~0x38) | 0x18) & 0xFFFFFFFB;
+        sp1C = ((((((((sp1C & ~0xF0000000) | 0x90000000) & ~0x0F000000) | 0x01000000) & 0xFF7FFFFF) | 0x20) & 0xFF80003F) | 0x20) & 0xFFFFFFEF;
+        temp_r3_2 = arg1->unkD8->unk34;
+        (*temp_r3_2)->unk20(temp_r3_2, 0, 0, &sp8);
+    }
+    if ((*temp_r31)->unk4C(temp_r31, 0x22000019) != 0) {
+        (*temp_r31)->unk54(temp_r31, 0x22000019);
+        fn_93_FF14(arg1);
+    }
+}
+
+void fn_93_FC4C(void *arg1, s32 arg2, ? arg_sp0) {
+    if (arg2 < 0x11A) {
+        if (arg2 != 0x116) {
+            goto block_5;
+        }
+    } else if (arg2 < 0x11C) {
+
+    } else {
+block_5:
+        fn_93_10C84(arg1, 0x20000001);
+        fn_93_10C84(arg1, 0x20000002);
+    }
+    fn_93_10D18(arg1, arg2);
+}
+
+void fn_93_FCC8(gfTaskScheduler *arg0, void *arg1) {
+    f32 sp1C;
+    f32 sp10;
+    f32 spC;
+    f32 sp8;
+    f32 temp_f1;
+    f32 temp_f31;
+    soExternalValueAccesser *temp_r29;
+    void **temp_r30;
+    void *temp_r31;
+    void *temp_r3;
+    void *temp_r3_2;
+
+    if (getTaskById__15gfTaskSchedulerFQ26gfTask8CategoryUl(getInstance__15gfTaskSchedulerFv(arg0), (gfTask::Category) 0xA, arg0->unkC) != 0) {
+        temp_r29 = __dynamic_c
+... (truncated in log; full draft saved)
+Draft saved: C:\Users\balla\Documents\Brawl Decompile\research\evidence\nonmatching\tool_drafts\brawl-codex10\ft_link__ft_link_status_uniq_process_final.m2c.c

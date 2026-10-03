@@ -1,0 +1,7 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex10 (codex/link)
+base                         fn_93_FF14: 10 diff lines, functions matching 29/30
+status_reference             fn_93_FF14: 5 diff lines, functions matching 29/30
+get_both                     fn_93_FF14: 0 diff lines, functions matching 30/30
+status_inline_pointer        fn_93_FF14: 5 diff lines, functions matching 29/30
+get_both_return_status_last  fn_93_FF14: 6 diff lines, functions matching 29/30
+Best: get_both (0), status_inline_pointer (5), status_reference (5)

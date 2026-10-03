@@ -1,0 +1,55 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\ninja.exe
+[1/2] SPLIT config\RSBE01_01\config.yml
+[2/2] RUN configure.py
+[1/9] LINK build\RSBE01_01\ft_lucas\ft_lucas.preplf
+[2/9] LINK build\RSBE01_01\ft_lucas\ft_lucas.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_lucas_status_uniq_process_special_s_cpp' 
+#   is either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   '__sinit_\ft_lucas_status_uniq_process_special_hi_reflect_cpp' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_114_rodata_30' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_114_rodata_A8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_114_data_82A8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_114_data_82CC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_114_data_85B0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_114_data_85DC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_114_bss_1F0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_114_bss_230' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+[3/9] MWCC build\RSBE01_01\src\mo_fighter\ft_lucas\ft_lucas_status_uniq_process_special_lw.o
+[4/9] REL
+[5/9] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[6/9] REPORT
+[7/9] PROGRESS
+Progress:
+  All: 1.85% matched, 1.43% linked (564 / 4407 files)
+    Code: 292232 / 15833548 bytes (3539 / 92522 functions)
+    Data: 856180 / 5667436 bytes (15.11%)
+  DOL: 1.41% matched, 0.88% linked (67 / 1722 files)
+    Code: 58648 / 4170064 bytes (517 / 14278 functions)
+    Data: 6732 / 1724104 bytes (0.39%)
+  Modules: 2.00% matched, 1.62% linked (497 / 2685 files)
+    Code: 233584 / 11663484 bytes (3022 / 78244 functions)
+    Data: 849448 / 3943332 bytes (21.54%)
+PASS: OK: 127/127 binaries verified

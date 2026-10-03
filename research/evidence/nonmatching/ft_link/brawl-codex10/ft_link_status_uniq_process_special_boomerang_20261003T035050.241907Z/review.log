@@ -1,0 +1,22 @@
+{
+  "checkout": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex10",
+  "head": "fd06da12535520d6acd7ff73f14a00ee6c1d3a58",
+  "branch": "codex/link",
+  "unit": "mo_fighter/ft_link/ft_link_status_uniq_process_special_boomerang"
+}
+SAME initStatus__39ftLinkStatusUniqProcessSpecialBoomerangFP16soModuleAccesser initStatus__39ftLinkStatusUniqProcessSpecialBoomerangFP16soModuleAccesser 92 92
+SAME execStatus__39ftLinkStatusUniqProcessSpecialBoomerangFP16soModuleAccesser execStatus__39ftLinkStatusUniqProcessSpecialBoomerangFP16soModuleAccesser 1 1
+SAME exitStatus__39ftLinkStatusUniqProcessSpecialBoomerangFP16soModuleAccesseri exitStatus__39ftLinkStatusUniqProcessSpecialBoomerangFP16soModuleAccesseri 33 33
+SAME __dt__39ftLinkStatusUniqProcessSpecialBoomerangFv __dt__39ftLinkStatusUniqProcessSpecialBoomerangFv 16 16
+SAME __sinit_\ft_link_status_uniq_process_special_boomerang_cpp __sinit_\ft_link_status_uniq_process_special_boomerang_cpp 18 18
+SAME __ct__39ftLinkStatusUniqProcessSpecialBoomerangFv __ct__39ftLinkStatusUniqProcessSpecialBoomerangFv 4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, __dt__19soStatusUniqProcessFv, execStatus__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+SAME section .rodata: target 16 bytes, candidate 16 bytes
+DIFF section .data: target 128 bytes, candidate 2176 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 6/6. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_link mo_fighter/ft_link/ft_link_status_uniq_process_special_boomerang
+Original: 190320 cf0f6e708b6cfec180edcb614036f405d5861570
+Source probe: 190320 cf0f6e708b6cfec180edcb614036f405d5861570
+Full REL byte match: True
+PASS: full-REL probe for ft_link (mo_fighter/ft_link/ft_link_status_uniq_process_special_boomerang)

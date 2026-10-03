@@ -1,0 +1,20 @@
+data 3455..3458 gap_04_00003455_data
+.hidden gap_04_00003455_data
+	.byte 0x00, 0x00, 0x00
+
+data 3458..3460 lbl_114_data_3458
+	.4byte lbl_114_data_3430
+	.4byte 0x00000000
+
+data 3460..3469 lbl_114_data_3460
+	.string "soEnable"
+
+data 3469..346C gap_04_00003469_data
+.hidden gap_04_00003469_data
+	.byte 0x00, 0x00, 0x00
+
+data 346C..3474 lbl_114_data_346C
+	.4byte lbl_114_data_3460
+	.4byte 0x00000000
+
+

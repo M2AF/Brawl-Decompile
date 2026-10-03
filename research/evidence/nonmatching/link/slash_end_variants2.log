@@ -1,0 +1,11 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex10 (codex/link)
+base                         initStatus__39ftLinkStatusUniqProcessSpecialRSlashEndFP16soModuleAccesser: 8 diff lines, functions matching 4/5
+ratio_plus                   initStatus__39ftLinkStatusUniqProcessSpecialRSlashEndFP16soModuleAccesser: 2 diff lines, functions matching 4/5
+delta_plus                   initStatus__39ftLinkStatusUniqProcessSpecialRSlashEndFP16soModuleAccesser: 2 diff lines, functions matching 4/5
+nested_cast                  initStatus__39ftLinkStatusUniqProcessSpecialRSlashEndFP16soModuleAccesser: 2 diff lines, functions matching 4/5
+delta_alias                  initStatus__39ftLinkStatusUniqProcessSpecialRSlashEndFP16soModuleAccesser: 8 diff lines, functions matching 4/5
+ratio_alias                  initStatus__39ftLinkStatusUniqProcessSpecialRSlashEndFP16soModuleAccesser: 8 diff lines, functions matching 4/5
+one_result                   initStatus__39ftLinkStatusUniqProcessSpecialRSlashEndFP16soModuleAccesser: 14 diff lines, functions matching 4/5
+compound_outer               initStatus__39ftLinkStatusUniqProcessSpecialRSlashEndFP16soModuleAccesser: 15 diff lines, functions matching 4/5
+neg_sub                      initStatus__39ftLinkStatusUniqProcessSpecialRSlashEndFP16soModuleAccesser: 6 diff lines, functions matching 4/5
+Best: delta_plus (2), nested_cast (2), ratio_plus (2)

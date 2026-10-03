@@ -1,0 +1,72 @@
+{
+  "checkout": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex10",
+  "head": "fd06da12535520d6acd7ff73f14a00ee6c1d3a58",
+  "branch": "codex/link",
+  "unit": "mo_fighter/ft_link/ft_link_status_uniq_process_special_boomerang"
+}
+DIFF initStatus__39ftLinkStatusUniqProcessSpecialBoomerangFP16soModuleAccesser initStatus__39ftLinkStatusUniqProcessSpecialBoomerangFP16soModuleAccesser 92 96
+    --- target
+    +++ candidate
+    @@ -1,7 +1,9 @@
+    -stwu    r1,-64(r1)
+    +stwu    r1,-80(r1)
+     mflr    r0
+    -stw     r0,68(r1)
+    -stfd    f31,48(r1)
+    -xxsel   vs31,vs1,vs0,vs32
+    +stw     r0,84(r1)
+    +stfd    f31,64(r1)
+    +xsmaddmsp vs31,vs1,vs0
+    +stfd    f30,48(r1)
+    +xxsel   vs30,vs1,vs0,vs32
+     addi    r11,r1,48
+     bl <addr>
+    @@ -37,6 +39,6 @@
+     stw     r31,8(r1)
+     lfd     f0,8(r1)
+    -fsubs   f0,f0,f1
+    -fadds   f31,f0,f31
+    +fsubs   f30,f0,f1
+    +fadds   f30,f30,f31
+     mr      r3,r30
+     lwz     r12,0(r30)
+    @@ -51,5 +53,5 @@
+     lfd     f0,16(r1)
+     fsubs   f0,f0,f1
+    -fcmpo   cr0,f0,f31
+    +fcmpo   cr0,f0,f30
+     bge <addr>
+     lwz     r3,8(r29)
+    @@ -83,10 +85,12 @@
+     mtctr   r12
+     bctrl
+    -psq_l   f31,56(r1),0,0
+    -lfd     f31,48(r1)
+    +psq_l   f31,72(r1),0,0
+    +lfd     f31,64(r1)
+    +lq      r30,48(r1)
+    +lfd     f30,48(r1)
+     addi    r11,r1,48
+     bl <addr>
+    -lwz     r0,68(r1)
+    +lwz     r0,84(r1)
+     mtlr    r0
+    -addi    r1,r1,64
+    +addi    r1,r1,80
+     blr
+SAME execStatus__39ftLinkStatusUniqProcessSpecialBoomerangFP16soModuleAccesser execStatus__39ftLinkStatusUniqProcessSpecialBoomerangFP16soModuleAccesser 1 1
+SAME exitStatus__39ftLinkStatusUniqProcessSpecialBoomerangFP16soModuleAccesseri exitStatus__39ftLinkStatusUniqProcessSpecialBoomerangFP16soModuleAccesseri 33 33
+SAME __dt__39ftLinkStatusUniqProcessSpecialBoomerangFv __dt__39ftLinkStatusUniqProcessSpecialBoomerangFv 16 16
+SAME __sinit_\ft_link_status_uniq_process_special_boomerang_cpp __sinit_\ft_link_status_uniq_process_special_boomerang_cpp 18 18
+SAME __ct__39ftLinkStatusUniqProcessSpecialBoomerangFv __ct__39ftLinkStatusUniqProcessSpecialBoomerangFv 4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, __dt__19soStatusUniqProcessFv, execStatus__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+SAME section .rodata: target 16 bytes, candidate 16 bytes
+DIFF section .data: target 128 bytes, candidate 2176 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 5/6. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_link mo_fighter/ft_link/ft_link_status_uniq_process_special_boomerang
+Original: 190320 cf0f6e708b6cfec180edcb614036f405d5861570
+Source probe: 190336 07a57b081e4476d00f4ebad22dda7a26e94d3e1b
+Full REL byte match: False
+First differing byte: 0x27
+FAIL: full-REL probe for ft_link (mo_fighter/ft_link/ft_link_status_uniq_process_special_boomerang)

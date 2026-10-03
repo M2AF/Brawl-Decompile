@@ -1,0 +1,71 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex10 (codex/link)
+Gate 1/4: full-REL probe of ft_link with mo_fighter/ft_link/ft_link_status_uniq_process_wait from source
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_link mo_fighter/ft_link/ft_link_status_uniq_process_wait
+Original: 190320 cf0f6e708b6cfec180edcb614036f405d5861570
+Source probe: 190320 cf0f6e708b6cfec180edcb614036f405d5861570
+Full REL byte match: True
+PASS: full-REL probe for ft_link (mo_fighter/ft_link/ft_link_status_uniq_process_wait)
+Gate 2/4: normal build with the stamp removed
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\ninja.exe
+[1/1] RUN configure.py
+[1/8] LINK build\RSBE01_01\ft_link\ft_link.preplf
+[2/8] LINK build\RSBE01_01\ft_link\ft_link.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   '__sinit_\ft_link_status_uniq_process_special_r_slash_cpp' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_link_status_uniq_process_wait_cpp' is 
+#   either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_93_data_80F8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_93_data_8120' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_93_data_8134' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_93_data_85A0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_93_data_85BC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_93_bss_140' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_93_bss_1B0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+[3/8] MWCC build\RSBE01_01\src\mo_fighter\ft_link\ft_link_status_uniq_process_special_r_slash_end.o
+[4/8] REL
+[5/8] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[6/8] REPORT
+[7/8] PROGRESS
+Progress:
+  All: 1.96% matched, 1.52% linked (580 / 4403 files)
+    Code: 309752 / 15833548 bytes (3689 / 92521 functions)
+    Data: 856668 / 5667436 bytes (15.12%)
+  DOL: 1.41% matched, 0.88% linked (67 / 1722 files)
+    Code: 58648 / 4170064 bytes (517 / 14278 functions)
+    Data: 6732 / 1724104 bytes (0.39%)
+  Modules: 2.15% matched, 1.75% linked (513 / 2681 files)
+    Code: 251104 / 11663484 bytes (3172 / 78243 functions)
+    Data: 849936 / 3943332 bytes (21.55%)
+PASS: OK: 127/127 binaries verified
+Gate 3/4: independent check against the originals
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe tools/verify_manifest.py config/RSBE01_01/binary-manifest.json --sha1-file config/RSBE01_01/build.sha1 --orig --dtk C:\Users\balla\Documents\Brawl Decompile\brawl-codex10\build\tools\dtk.exe
+127 files OK
+OK: 127/127 binaries verified
+PASS: independent check 127/127, verifier tests OK, originals unchanged
+Gate 4/4: re-probe after promotion
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_link mo_fighter/ft_link/ft_link_status_uniq_process_wait
+Original: 190320 cf0f6e708b6cfec180edcb614036f405d5861570
+Source probe: 190320 cf0f6e708b6cfec180edcb614036f405d5861570
+Full REL byte match: True
+PASS: full-REL probe for ft_link (mo_fighter/ft_link/ft_link_status_uniq_process_wait)
+Shared main status page unchanged. Use review for private worktree evidence.
+PROMOTED mo_fighter/ft_link/ft_link_status_uniq_process_wait. Remember: add a docs/RSBE01_01.md entry (techniques + UB review).

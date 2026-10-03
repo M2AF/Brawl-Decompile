@@ -1,0 +1,109 @@
+{
+  "original_size": 251168,
+  "candidate_size": 251168,
+  "sections": [
+    {
+      "index": 0,
+      "offset": 0,
+      "size": 0,
+      "executable": false
+    },
+    {
+      "index": 1,
+      "offset": 204,
+      "size": 134976,
+      "executable": true
+    },
+    {
+      "index": 2,
+      "offset": 135180,
+      "size": 64,
+      "executable": false
+    },
+    {
+      "index": 3,
+      "offset": 135244,
+      "size": 12,
+      "executable": false
+    },
+    {
+      "index": 4,
+      "offset": 135256,
+      "size": 384,
+      "executable": false
+    },
+    {
+      "index": 5,
+      "offset": 135648,
+      "size": 52768,
+      "executable": false
+    },
+    {
+      "index": 6,
+      "offset": 0,
+      "size": 1296,
+      "executable": false
+    },
+    {
+      "index": 7,
+      "offset": 0,
+      "size": 0,
+      "executable": false
+    },
+    {
+      "index": 8,
+      "offset": 0,
+      "size": 0,
+      "executable": false
+    },
+    {
+      "index": 9,
+      "offset": 0,
+      "size": 0,
+      "executable": false
+    },
+    {
+      "index": 10,
+      "offset": 0,
+      "size": 0,
+      "executable": false
+    },
+    {
+      "index": 11,
+      "offset": 0,
+      "size": 0,
+      "executable": false
+    },
+    {
+      "index": 12,
+      "offset": 0,
+      "size": 0,
+      "executable": false
+    },
+    {
+      "index": 13,
+      "offset": 0,
+      "size": 0,
+      "executable": false
+    },
+    {
+      "index": 14,
+      "offset": 0,
+      "size": 0,
+      "executable": false
+    },
+    {
+      "index": 15,
+      "offset": 0,
+      "size": 0,
+      "executable": false
+    }
+  ],
+  "different_bytes": 41,
+  "first": "0x11be0",
+  "last": "0x11fef",
+  "different_bytes_by_section": {
+    "1": 41
+  },
+  "all_differences_within_fix_handler": true
+}

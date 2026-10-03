@@ -1,0 +1,115 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex9 (codex/mk-finals)
+Gate 1/4: full-REL probe of ft_metaknight with mo_fighter/ft_metaknight/ft_metaknight_status_uniq_process_final_end from source
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_metaknight mo_fighter/ft_metaknight/ft_metaknight_status_uniq_process_final_end
+Original: 133744 6a88d88fdf8dda6a2a719ac92d176e0cd6f79670
+Source probe: 133744 6a88d88fdf8dda6a2a719ac92d176e0cd6f79670
+Full REL byte match: True
+PASS: full-REL probe for ft_metaknight (mo_fighter/ft_metaknight/ft_metaknight_status_uniq_process_final_end)
+Gate 2/4: normal build with the stamp removed
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\ninja.exe
+[1/1] RUN configure.py
+[1/7] LINK build\RSBE01_01\ft_metaknight\ft_metaknight.preplf
+[2/7] LINK build\RSBE01_01\ft_metaknight\ft_metaknight.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   '__sinit_\ft_metaknight_status_uniq_process_special_s_rush_cpp' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   '__sinit_\ft_metaknight_status_uniq_process_special_s_end_cpp' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   '__sinit_\ft_metaknight_status_uniq_process_final_attack_gallery_cpp' is 
+#   either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   '__sinit_\ft_metaknight_status_uniq_process_final_end_cpp' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_rodata_10' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_rodata_20' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_rodata_24' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_rodata_28' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_rodata_30' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_rodata_40' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_data_5D70' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_data_5D9C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_data_5DB0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_data_5E10' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_data_5E3C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_data_5E90' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_data_5EC0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_data_5F18' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_data_5F40' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_bss_178' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_bss_188' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_bss_198' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_111_bss_1A8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+[3/7] REL
+[4/7] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[5/7] REPORT
+[6/7] PROGRESS
+Progress:
+  All: 1.94% matched, 1.52% linked (578 / 4405 files)
+    Code: 307736 / 15833548 bytes (3650 / 92521 functions)
+    Data: 856572 / 5667436 bytes (15.11%)
+  DOL: 1.41% matched, 0.88% linked (67 / 1722 files)
+    Code: 58648 / 4170064 bytes (517 / 14278 functions)
+    Data: 6732 / 1724104 bytes (0.39%)
+  Modules: 2.14% matched, 1.75% linked (511 / 2683 files)
+    Code: 249088 / 11663484 bytes (3133 / 78243 functions)
+    Data: 849840 / 3943332 bytes (21.55%)
+PASS: OK: 127/127 binaries verified
+Gate 3/4: independent check against the originals
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe tools/verify_manifest.py config/RSBE01_01/binary-manifest.json --sha1-file config/RSBE01_01/build.sha1 --orig --dtk C:\Users\balla\Documents\Brawl Decompile\brawl-codex9\build\tools\dtk.exe
+127 files OK
+OK: 127/127 binaries verified
+PASS: independent check 127/127, verifier tests OK, originals unchanged
+Gate 4/4: re-probe after promotion
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_metaknight mo_fighter/ft_metaknight/ft_metaknight_status_uniq_process_final_end
+Original: 133744 6a88d88fdf8dda6a2a719ac92d176e0cd6f79670
+Source probe: 133744 6a88d88fdf8dda6a2a719ac92d176e0cd6f79670
+Full REL byte match: True
+PASS: full-REL probe for ft_metaknight (mo_fighter/ft_metaknight/ft_metaknight_status_uniq_process_final_end)
+Shared main status page unchanged. Use review for private worktree evidence.
+PROMOTED mo_fighter/ft_metaknight/ft_metaknight_status_uniq_process_final_end. Remember: add a docs/RSBE01_01.md entry (techniques + UB review).

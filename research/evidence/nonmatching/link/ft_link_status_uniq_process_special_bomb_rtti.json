@@ -1,0 +1,260 @@
+[
+  {
+    "name": "BaseItem",
+    "old": "lbl_93_data_8318",
+    "new": "__RTTI__8BaseItem",
+    "address": "0x8318"
+  },
+  {
+    "name": "soArticle",
+    "old": "lbl_93_data_34EC",
+    "new": "__RTTI__9soArticle",
+    "address": "0x34ec"
+  },
+  {
+    "name": "Fighter",
+    "old": "__RTTI__7Fighter",
+    "new": "__RTTI__7Fighter",
+    "address": "0x337c"
+  },
+  {
+    "name": "StageObject",
+    "old": "__RTTI__11StageObject",
+    "new": "__RTTI__11StageObject",
+    "address": "0x3bf8"
+  },
+  {
+    "name": "gfTask",
+    "old": "__RTTI__6gfTask",
+    "new": "__RTTI__6gfTask",
+    "address": "0x3cf8"
+  },
+  {
+    "name": "soAnimCmdEventObserver",
+    "old": "__RTTI__22soAnimCmdEventObserver",
+    "new": "__RTTI__22soAnimCmdEventObserver",
+    "address": "0x3c7c"
+  },
+  {
+    "name": "soEventObserver<soAnimCmdEventObserver>",
+    "old": "__RTTI__41soEventObserver<22soAnimCmdEventObserver>",
+    "new": "__RTTI__41soEventObserver<22soAnimCmdEventObserver>",
+    "address": "0x3cac"
+  },
+  {
+    "name": "soLinkEventObserver",
+    "old": "__RTTI__19soLinkEventObserver",
+    "new": "__RTTI__19soLinkEventObserver",
+    "address": "0x3c20"
+  },
+  {
+    "name": "soEventObserver<soLinkEventObserver>",
+    "old": "__RTTI__38soEventObserver<19soLinkEventObserver>",
+    "new": "__RTTI__38soEventObserver<19soLinkEventObserver>",
+    "address": "0x3c50"
+  },
+  {
+    "name": "soStatusEventObserver",
+    "old": "__RTTI__21soStatusEventObserver",
+    "new": "__RTTI__21soStatusEventObserver",
+    "address": "0x36a8"
+  },
+  {
+    "name": "soEventObserver<soStatusEventObserver>",
+    "old": "__RTTI__40soEventObserver<21soStatusEventObserver>",
+    "new": "__RTTI__40soEventObserver<21soStatusEventObserver>",
+    "address": "0x36d8"
+  },
+  {
+    "name": "soSituationEventObserver",
+    "old": "__RTTI__24soSituationEventObserver",
+    "new": "__RTTI__24soSituationEventObserver",
+    "address": "0x39f8"
+  },
+  {
+    "name": "soEventObserver<soSituationEventObserver>",
+    "old": "__RTTI__43soEventObserver<24soSituationEventObserver>",
+    "new": "__RTTI__43soEventObserver<24soSituationEventObserver>",
+    "address": "0x3a2c"
+  },
+  {
+    "name": "soCollisionAttackEventObserver",
+    "old": "__RTTI__30soCollisionAttackEventObserver",
+    "new": "__RTTI__30soCollisionAttackEventObserver",
+    "address": "0x3934"
+  },
+  {
+    "name": "soEventObserver<soCollisionAttackEventObserver>",
+    "old": "__RTTI__49soEventObserver<30soCollisionAttackEventObserver>",
+    "new": "__RTTI__49soEventObserver<30soCollisionAttackEventObserver>",
+    "address": "0x396c"
+  },
+  {
+    "name": "soCollisionShieldEventObserver",
+    "old": "__RTTI__30soCollisionShieldEventObserver",
+    "new": "__RTTI__30soCollisionShieldEventObserver",
+    "address": "0x3860"
+  },
+  {
+    "name": "soEventObserver<soCollisionShieldEventObserver>",
+    "old": "__RTTI__49soEventObserver<30soCollisionShieldEventObserver>",
+    "new": "__RTTI__49soEventObserver<30soCollisionShieldEventObserver>",
+    "address": "0x3898"
+  },
+  {
+    "name": "soCollisionReflectorEventObserver",
+    "old": "__RTTI__33soCollisionReflectorEventObserver",
+    "new": "__RTTI__33soCollisionReflectorEventObserver",
+    "address": "0x37f0"
+  },
+  {
+    "name": "soEventObserver<soCollisionReflectorEventObserver>",
+    "old": "__RTTI__52soEventObserver<33soCollisionReflectorEventObserver>",
+    "new": "__RTTI__52soEventObserver<33soCollisionReflectorEventObserver>",
+    "address": "0x382c"
+  },
+  {
+    "name": "soCollisionSearchEventObserver",
+    "old": "__RTTI__30soCollisionSearchEventObserver",
+    "new": "__RTTI__30soCollisionSearchEventObserver",
+    "address": "0x370c"
+  },
+  {
+    "name": "soEventObserver<soCollisionSearchEventObserver>",
+    "old": "__RTTI__49soEventObserver<30soCollisionSearchEventObserver>",
+    "new": "__RTTI__49soEventObserver<30soCollisionSearchEventObserver>",
+    "address": "0x3744"
+  },
+  {
+    "name": "soGimmickEventObserver",
+    "old": "lbl_93_data_8344",
+    "new": "__RTTI__22soGimmickEventObserver",
+    "address": "0x8344"
+  },
+  {
+    "name": "soEventObserver<soGimmickEventObserver>",
+    "old": "lbl_93_data_8374",
+    "new": "__RTTI__41soEventObserver<22soGimmickEventObserver>",
+    "address": "0x8374"
+  },
+  {
+    "name": "soNullable",
+    "old": "lbl_93_data_3CCC",
+    "new": "__RTTI__10soNullable",
+    "address": "0x3ccc"
+  },
+  {
+    "name": "soEventPresenter<soArticleEventObserver>",
+    "old": "lbl_93_data_3520",
+    "new": "__RTTI__42soEventPresenter<22soArticleEventObserver>",
+    "address": "0x3520"
+  },
+  {
+    "name": "ftLinkStatusUniqProcessSpecialBomb",
+    "old": "__RTTI__34ftLinkStatusUniqProcessSpecialBomb",
+    "new": "__RTTI__34ftLinkStatusUniqProcessSpecialBomb",
+    "address": "0x83ec"
+  },
+  {
+    "name": "soStatusUniqProcess",
+    "old": "__RTTI__19soStatusUniqProcess",
+    "new": "__RTTI__19soStatusUniqProcess",
+    "address": "0x8148"
+  },
+  {
+    "name": "soCollisionHitEventObserver",
+    "old": "__RTTI__27soCollisionHitEventObserver",
+    "new": "__RTTI__27soCollisionHitEventObserver",
+    "address": "0x38c8"
+  },
+  {
+    "name": "soEventObserver<soCollisionHitEventObserver>",
+    "old": "__RTTI__46soEventObserver<27soCollisionHitEventObserver>",
+    "new": "__RTTI__46soEventObserver<27soCollisionHitEventObserver>",
+    "address": "0x3900"
+  },
+  {
+    "name": "soCollisionAbsorberEventObserver",
+    "old": "__RTTI__32soCollisionAbsorberEventObserver",
+    "new": "__RTTI__32soCollisionAbsorberEventObserver",
+    "address": "0x377c"
+  },
+  {
+    "name": "soEventObserver<soCollisionAbsorberEventObserver>",
+    "old": "__RTTI__51soEventObserver<32soCollisionAbsorberEventObserver>",
+    "new": "__RTTI__51soEventObserver<32soCollisionAbsorberEventObserver>",
+    "address": "0x37b8"
+  },
+  {
+    "name": "soCaptureEventObserver",
+    "old": "__RTTI__22soCaptureEventObserver",
+    "new": "__RTTI__22soCaptureEventObserver",
+    "address": "0x3998"
+  },
+  {
+    "name": "soEventObserver<soCaptureEventObserver>",
+    "old": "__RTTI__41soEventObserver<22soCaptureEventObserver>",
+    "new": "__RTTI__41soEventObserver<22soCaptureEventObserver>",
+    "address": "0x39c8"
+  },
+  {
+    "name": "soItemManageEventObserver",
+    "old": "__RTTI__25soItemManageEventObserver",
+    "new": "__RTTI__25soItemManageEventObserver",
+    "address": "0x3490"
+  },
+  {
+    "name": "soEventObserver<soItemManageEventObserver>",
+    "old": "__RTTI__44soEventObserver<25soItemManageEventObserver>",
+    "new": "__RTTI__44soEventObserver<25soItemManageEventObserver>",
+    "address": "0x34c4"
+  },
+  {
+    "name": "soMotionEventObserver",
+    "old": "__RTTI__21soMotionEventObserver",
+    "new": "__RTTI__21soMotionEventObserver",
+    "address": "0x3414"
+  },
+  {
+    "name": "soEventObserver<soMotionEventObserver>",
+    "old": "__RTTI__40soEventObserver<21soMotionEventObserver>",
+    "new": "__RTTI__40soEventObserver<21soMotionEventObserver>",
+    "address": "0x3444"
+  },
+  {
+    "name": "soDamageEventObserver",
+    "old": "__RTTI__21soDamageEventObserver",
+    "new": "__RTTI__21soDamageEventObserver",
+    "address": "0x3ab4"
+  },
+  {
+    "name": "soEventObserver<soDamageEventObserver>",
+    "old": "__RTTI__40soEventObserver<21soDamageEventObserver>",
+    "new": "__RTTI__40soEventObserver<21soDamageEventObserver>",
+    "address": "0x3ae4"
+  },
+  {
+    "name": "ftEntryEventObserver",
+    "old": "__RTTI__20ftEntryEventObserver",
+    "new": "__RTTI__20ftEntryEventObserver",
+    "address": "0x3a58"
+  },
+  {
+    "name": "soEventObserver<ftEntryEventObserver>",
+    "old": "__RTTI__39soEventObserver<20ftEntryEventObserver>",
+    "new": "__RTTI__39soEventObserver<20ftEntryEventObserver>",
+    "address": "0x3a88"
+  },
+  {
+    "name": "soTurnEventObserver",
+    "old": "__RTTI__19soTurnEventObserver",
+    "new": "__RTTI__19soTurnEventObserver",
+    "address": "0x33a4"
+  },
+  {
+    "name": "soEventObserver<soTurnEventObserver>",
+    "old": "__RTTI__38soEventObserver<19soTurnEventObserver>",
+    "new": "__RTTI__38soEventObserver<19soTurnEventObserver>",
+    "address": "0x33d4"
+  }
+]

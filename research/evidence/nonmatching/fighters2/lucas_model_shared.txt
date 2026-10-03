@@ -1,0 +1,32 @@
+data 3CD1..3CD4 gap_04_00003CD1_data
+.hidden gap_04_00003CD1_data
+	.byte 0x00, 0x00, 0x00
+
+data 3CD4..3CDC lbl_114_data_3CD4
+	.4byte lbl_114_data_3CAC
+	.4byte 0x00000000
+
+data 3CDC..3CF3 lbl_114_data_3CDC
+	.string "soAnimCmdEventObserver"
+
+data 3CF3..3CF4 gap_04_00003CF3_data
+.hidden gap_04_00003CF3_data
+	.byte 0x00
+
+data 3CF4..3D00 lbl_114_data_3CF4
+	.4byte lbl_114_data_3D30
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 3D00..3D08 lbl_114_data_3D00
+	.4byte lbl_114_data_3CDC
+	.4byte lbl_114_data_3CF4
+
+data 3D08..3D30 lbl_114_data_3D08
+	.string "soEventObserver<soAnimCmdEventObserver>"
+
+data 3D30..3D38 lbl_114_data_3D30
+	.4byte lbl_114_data_3D08
+	.4byte 0x00000000
+
+

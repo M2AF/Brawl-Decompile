@@ -1,0 +1,5 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl (rsbe01_01-support)
+Cherry-picking 3e62bb6 Match Pit side-special revolve status and shared inlines
+  resolved docs/allowlist conflict by keeping both sides
+Cherry-picking 59a8231 Match Ness side-special status and scaffold status units
+ERROR: Conflict in ['include/ft/ft_common_data_accesser.h'] while picking 59a8231; aborted that pick. Resolve by hand.

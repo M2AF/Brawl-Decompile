@@ -1,0 +1,18 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\ninja.exe
+[1/3] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[2/3] REPORT
+[3/3] PROGRESS
+Progress:
+  All: 1.84% matched, 1.42% linked (562 / 4412 files)
+    Code: 291172 / 15833548 bytes (3527 / 92522 functions)
+    Data: 856120 / 5667436 bytes (15.11%)
+  DOL: 1.41% matched, 0.88% linked (67 / 1722 files)
+    Code: 58648 / 4170064 bytes (517 / 14278 functions)
+    Data: 6732 / 1724104 bytes (0.39%)
+  Modules: 1.99% matched, 1.62% linked (495 / 2690 files)
+    Code: 232524 / 11663484 bytes (3010 / 78244 functions)
+    Data: 849388 / 3943332 bytes (21.54%)
+PASS: OK: 127/127 binaries verified

@@ -1,0 +1,65 @@
+mo_fighter/ft_link/ft_link_status_uniq_process_special_r_slash.cpp:
+	.text       start:0x0000F26C end:0x0000F348
+	.ctors      start:0x00000004 end:0x00000008
+	.data       start:0x000080B8 end:0x00008150
+	.bss        start:0x00000140 end:0x00000150
+	# WARN first unit: confirm text start (helpers/base inlines before it?)
+	# WARN first unit: RTTI/strings precede the vtable; check what it owns before 0x80b8 (e.g. lbl_93_data_8068)
+	# vtable lbl_93_data_80B8 rtti lbl_93_data_812C ctor fn_93_F338 sinit fn_93_F2F0 instance lbl_93_bss_14C dtor fn_93_F2AC
+
+mo_fighter/ft_link/ft_link_status_uniq_process_special_r_slash_end.cpp:
+	.text       start:0x0000F348 end:0x0000F4BC
+	.ctors      start:0x00000008 end:0x0000000C
+	.rodata     start:0x00000040 end:0x00000050
+	.data       start:0x00008150 end:0x000081D0
+	.bss        start:0x00000150 end:0x00000160
+	# vtable lbl_93_data_8150 rtti lbl_93_data_81C4 ctor fn_93_F4AC sinit fn_93_F464 instance lbl_93_bss_15C dtor fn_93_F424
+
+mo_fighter/ft_link/ft_link_status_uniq_process_special_boomerang.cpp:
+	.text       start:0x0000F4BC end:0x0000F74C
+	.ctors      start:0x0000000C end:0x00000010
+	.rodata     start:0x00000050 end:0x00000060
+	.data       start:0x000081D0 end:0x00008250
+	.bss        start:0x00000160 end:0x00000170
+	# WARN data 0x8250-0x837c (before the next vtable) is assigned to the next unit
+	# vtable lbl_93_data_81D0 rtti lbl_93_data_8244 ctor fn_93_F73C sinit fn_93_F6F4 instance lbl_93_bss_16C dtor fn_93_F6B4
+
+mo_fighter/ft_link/ft_link_status_uniq_process_special_bomb.cpp:
+	.text       start:0x0000F74C end:0x0000F998
+	.ctors      start:0x00000010 end:0x00000014
+	.data       start:0x00008250 end:0x000083F8
+	.bss        start:0x00000170 end:0x00000180
+	# vtable lbl_93_data_837C rtti lbl_93_data_83EC ctor fn_93_F988 sinit fn_93_F940 instance lbl_93_bss_17C dtor fn_93_F900
+
+mo_fighter/ft_link/ft_link_status_uniq_process_final_combo.cpp:
+	.text       start:0x0000F998 end:0x00010F5C
+	.ctors      start:0x00000014 end:0x00000018
+	.rodata     start:0x00000060 end:0x00000078
+	.data       start:0x000083F8 end:0x00008470
+	.bss        start:0x00000180 end:0x0000018C
+	# vtable lbl_93_data_83F8 rtti lbl_93_data_8468 ctor fn_93_10F4C sinit fn_93_10EAC instance lbl_93_bss_180 dtor fn_93_10DEC
+
+mo_fighter/ft_link/ft_link_status_uniq_process_final_dash.cpp:
+	.text       start:0x00010F5C end:0x00010F4C
+	.ctors      start:0x00000014 end:0x00000018
+	.data       start:0x00008470 end:0x000084E8
+	.bss        start:0x00000180 end:0x0000018C
+	# WARN unique fn at 0xfff8 before previous unit end 0x10f5c
+	# vtable lbl_93_data_8470 rtti lbl_93_data_84E0 ctor fn_93_10F3C sinit fn_93_10EAC instance lbl_93_bss_180 dtor fn_93_10E2C
+
+mo_fighter/ft_link/ft_link_status_uniq_process_final.cpp:
+	.text       start:0x00010F4C end:0x00010F3C
+	.ctors      start:0x00000014 end:0x00000018
+	.data       start:0x000084E8 end:0x00008560
+	.bss        start:0x00000180 end:0x0000018C
+	# WARN unique fn at 0xf998 before previous unit end 0x10f4c
+	# vtable lbl_93_data_84E8 rtti lbl_93_data_8554 ctor fn_93_10F2C sinit fn_93_10EAC instance lbl_93_bss_180 dtor fn_93_10E6C
+
+mo_fighter/ft_link/ft_link_status_uniq_process_wait.cpp:
+	.text       start:0x00010F3C end:0x00011084
+	.ctors      start:0x00000018 end:0x0000001C
+	.data       start:0x00008560 end:0x000085D0
+	.bss        start:0x000001B0 end:0x000001C0
+	# WARN last unit: data end = end of trailing RTTI groups; check what follows
+	# vtable lbl_93_data_8560 rtti lbl_93_data_85C8 ctor fn_93_11074 sinit fn_93_1102C instance lbl_93_bss_1BC dtor fn_93_10FEC
+

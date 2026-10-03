@@ -1,0 +1,20 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex10 (codex/link)
+DIFF initStatus__39ftLinkStatusUniqProcessSpecialRSlashEndFP16soModuleAccesser initStatus__39ftLinkStatusUniqProcessSpecialRSlashEndFP16soModuleAccesser 54 54
+    --- target
+    +++ candidate
+    @@ -39,5 +39,5 @@
+     fsubs   f0,f0,f2
+     fdivs   f0,f1,f0
+    -fmuls   f0,f0,f3
+    +fmuls   f0,f3,f0
+     fadds   f1,f4,f0
+     lwz     r3,216(r29)
+SAME execStatus__39ftLinkStatusUniqProcessSpecialRSlashEndFP16soModuleAccesser execStatus__39ftLinkStatusUniqProcessSpecialRSlashEndFP16soModuleAccesser 1 1
+SAME __dt__39ftLinkStatusUniqProcessSpecialRSlashEndFv __dt__39ftLinkStatusUniqProcessSpecialRSlashEndFv 16 16
+SAME __sinit_\ft_link_status_uniq_process_special_r_slash_end_cpp __sinit_\ft_link_status_uniq_process_special_r_slash_end_cpp 18 18
+SAME __ct__39ftLinkStatusUniqProcessSpecialRSlashEndFv __ct__39ftLinkStatusUniqProcessSpecialRSlashEndFv 4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, __dt__19soStatusUniqProcessFv, execStatus__19soStatusUniqProcessFP16soModuleAccesser, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+SAME section .rodata: target 16 bytes, candidate 16 bytes
+DIFF section .data: target 128 bytes, candidate 216 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 4/5. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

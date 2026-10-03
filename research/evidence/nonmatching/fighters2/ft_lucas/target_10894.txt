@@ -1,0 +1,212 @@
+data 80E8..8128 lbl_114_data_80E8
+	.4byte lbl_114_data_8160
+	.4byte 0x00000000
+	.4byte fn_114_109C4
+	.4byte initStatus__30ftStatusUniqProcessSmashAttackFP16soModuleAccesser
+	.4byte exitStatus__30ftStatusUniqProcessSmashAttackFP16soModuleAccesseri
+	.4byte fn_114_10894
+	.4byte execStop__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execFixPos__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execFixCamera__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv
+	.4byte checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf
+	.4byte onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff
+	.4byte leaveStop__19soStatusUniqProcessFP16soModuleAccesserib
+	.4byte checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi
+
+data 8128..8149 lbl_114_data_8128
+	.string "ftLucasStatusUniqProcessAttackS4"
+
+data 8149..814C gap_04_00008149_data
+.hidden gap_04_00008149_data
+	.byte 0x00, 0x00, 0x00
+
+data 814C..8160 lbl_114_data_814C
+	.4byte __RTTI__19soStatusUniqProcess
+	.4byte 0x00000000
+	.4byte __RTTI__30ftStatusUniqProcessSmashAttack
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 8160..8168 lbl_114_data_8160
+	.4byte lbl_114_data_8128
+	.4byte lbl_114_data_814C
+
+data 8168..8187 lbl_114_data_8168
+	.string "ftStatusUniqProcessSmashAttack"
+
+data 8187..8188 gap_04_00008187_data
+.hidden gap_04_00008187_data
+	.byte 0x00
+
+data 8188..8194 lbl_114_data_8188
+	.4byte __RTTI__19soStatusUniqProcess
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 8194..819C __RTTI__30ftStatusUniqProcessSmashAttack
+	.4byte lbl_114_data_8168
+	.4byte lbl_114_data_8188
+
+data 819C..81B0 lbl_114_data_819C
+	.string "soStatusUniqProcess"
+
+data 81B0..81B8 __RTTI__19soStatusUniqProcess
+	.4byte lbl_114_data_819C
+	.4byte 0x00000000
+
+text 10894..1098C fn_114_10894
+/* 00010894 00010960  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 00010898 00010964  7C 08 02 A6 */	mflr r0
+/* 0001089C 00010968  90 01 00 24 */	stw r0, 0x24(r1)
+/* 000108A0 0001096C  39 61 00 20 */	addi r11, r1, 0x20
+/* 000108A4 00010970  48 01 06 91 */	bl _savegpr_29
+/* 000108A8 00010974  7C 9D 23 78 */	mr r29, r4
+/* 000108AC 00010978  80 64 00 D8 */	lwz r3, 0xd8(r4)
+/* 000108B0 0001097C  83 C3 00 64 */	lwz r30, 0x64(r3)
+/* 000108B4 00010980  7F C3 F3 78 */	mr r3, r30
+/* 000108B8 00010984  3F E0 22 00 */	lis r31, 0x2200
+/* 000108BC 00010988  38 9F 00 10 */	addi r4, r31, 0x10
+/* 000108C0 0001098C  81 9E 00 00 */	lwz r12, 0x0(r30)
+/* 000108C4 00010990  81 8C 00 4C */	lwz r12, 0x4c(r12)
+/* 000108C8 00010994  7D 89 03 A6 */	mtctr r12
+/* 000108CC 00010998  4E 80 04 21 */	bctrl
+/* 000108D0 0001099C  2C 03 00 00 */	cmpwi r3, 0x0
+/* 000108D4 000109A0  41 82 00 40 */	beq .L_00010914
+/* 000108D8 000109A4  80 7D 00 D8 */	lwz r3, 0xd8(r29)
+/* 000108DC 000109A8  80 63 00 28 */	lwz r3, 0x28(r3)
+/* 000108E0 000109AC  38 80 00 00 */	li r4, 0x0
+/* 000108E4 000109B0  38 A0 00 01 */	li r5, 0x1
+/* 000108E8 000109B4  38 C0 00 02 */	li r6, 0x2
+/* 000108EC 000109B8  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 000108F0 000109BC  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 000108F4 000109C0  7D 89 03 A6 */	mtctr r12
+/* 000108F8 000109C4  4E 80 04 21 */	bctrl
+/* 000108FC 000109C8  7F C3 F3 78 */	mr r3, r30
+/* 00010900 000109CC  38 9F 00 10 */	addi r4, r31, 0x10
+/* 00010904 000109D0  81 9E 00 00 */	lwz r12, 0x0(r30)
+/* 00010908 000109D4  81 8C 00 54 */	lwz r12, 0x54(r12)
+/* 0001090C 000109D8  7D 89 03 A6 */	mtctr r12
+/* 00010910 000109DC  4E 80 04 21 */	bctrl
+.L_00010914:
+/* 00010914 000109E0  7F C3 F3 78 */	mr r3, r30
+/* 00010918 000109E4  3F E0 22 00 */	lis r31, 0x2200
+/* 0001091C 000109E8  38 9F 00 11 */	addi r4, r31, 0x11
+/* 00010920 000109EC  81 9E 00 00 */	lwz r12, 0x0(r30)
+/* 00010924 000109F0  81 8C 00 4C */	lwz r12, 0x4c(r12)
+/* 00010928 000109F4  7D 89 03 A6 */	mtctr r12
+/* 0001092C 000109F8  4E 80 04 21 */	bctrl
+/* 00010930 000109FC  2C 03 00 00 */	cmpwi r3, 0x0
+/* 00010934 00010A00  41 82 00 40 */	beq .L_00010974
+/* 00010938 00010A04  80 7D 00 D8 */	lwz r3, 0xd8(r29)
+/* 0001093C 00010A08  80 63 00 28 */	lwz r3, 0x28(r3)
+/* 00010940 00010A0C  38 80 00 00 */	li r4, 0x0
+/* 00010944 00010A10  38 A0 00 00 */	li r5, 0x0
+/* 00010948 00010A14  38 C0 00 02 */	li r6, 0x2
+/* 0001094C 00010A18  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 00010950 00010A1C  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 00010954 00010A20  7D 89 03 A6 */	mtctr r12
+/* 00010958 00010A24  4E 80 04 21 */	bctrl
+/* 0001095C 00010A28  7F C3 F3 78 */	mr r3, r30
+/* 00010960 00010A2C  38 9F 00 11 */	addi r4, r31, 0x11
+/* 00010964 00010A30  81 9E 00 00 */	lwz r12, 0x0(r30)
+/* 00010968 00010A34  81 8C 00 54 */	lwz r12, 0x54(r12)
+/* 0001096C 00010A38  7D 89 03 A6 */	mtctr r12
+/* 00010970 00010A3C  4E 80 04 21 */	bctrl
+.L_00010974:
+/* 00010974 00010A40  39 61 00 20 */	addi r11, r1, 0x20
+/* 00010978 00010A44  48 01 05 BD */	bl _restgpr_29
+/* 0001097C 00010A48  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 00010980 00010A4C  7C 08 03 A6 */	mtlr r0
+/* 00010984 00010A50  38 21 00 20 */	addi r1, r1, 0x20
+/* 00010988 00010A54  4E 80 00 20 */	blr
+
+text 1098C..10990 execStatus__19soStatusUniqProcessFP16soModuleAccesser
+/* 0001098C 00010A58  4E 80 00 20 */	blr
+
+text 10990..10998 checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi
+/* 00010990 00010A5C  38 60 00 01 */	li r3, 0x1
+/* 00010994 00010A60  4E 80 00 20 */	blr
+
+text 10998..1099C leaveStop__19soStatusUniqProcessFP16soModuleAccesserib
+/* 00010998 00010A64  4E 80 00 20 */	blr
+
+text 1099C..109A4 onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff
+/* 0001099C 00010A68  38 60 00 00 */	li r3, 0x0
+/* 000109A0 00010A6C  4E 80 00 20 */	blr
+
+text 109A4..109A8 checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf
+/* 000109A4 00010A70  4E 80 00 20 */	blr
+
+text 109A8..109B0 checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv
+/* 000109A8 00010A74  38 60 00 00 */	li r3, 0x0
+/* 000109AC 00010A78  4E 80 00 20 */	blr
+
+text 109B0..109B4 execFixCamera__19soStatusUniqProcessFP16soModuleAccesser
+/* 000109B0 00010A7C  4E 80 00 20 */	blr
+
+text 109B4..109B8 execFixPos__19soStatusUniqProcessFP16soModuleAccesser
+/* 000109B4 00010A80  4E 80 00 20 */	blr
+
+text 109B8..109BC execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser
+/* 000109B8 00010A84  4E 80 00 20 */	blr
+
+text 109BC..109C0 execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser
+/* 000109BC 00010A88  4E 80 00 20 */	blr
+
+text 109C0..109C4 execStop__19soStatusUniqProcessFP16soModuleAccesser
+/* 000109C0 00010A8C  4E 80 00 20 */	blr
+
+text 109C4..10A04 fn_114_109C4
+/* 000109C4 00010A90  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 000109C8 00010A94  7C 08 02 A6 */	mflr r0
+/* 000109CC 00010A98  90 01 00 14 */	stw r0, 0x14(r1)
+/* 000109D0 00010A9C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 000109D4 00010AA0  7C 7F 1B 78 */	mr r31, r3
+/* 000109D8 00010AA4  2C 03 00 00 */	cmpwi r3, 0x0
+/* 000109DC 00010AA8  41 82 00 10 */	beq .L_000109EC
+/* 000109E0 00010AAC  7C 80 07 35 */	extsh. r0, r4
+/* 000109E4 00010AB0  40 81 00 08 */	ble .L_000109EC
+/* 000109E8 00010AB4  48 01 05 4D */	bl __dl__FPv
+.L_000109EC:
+/* 000109EC 00010AB8  7F E3 FB 78 */	mr r3, r31
+/* 000109F0 00010ABC  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 000109F4 00010AC0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 000109F8 00010AC4  7C 08 03 A6 */	mtlr r0
+/* 000109FC 00010AC8  38 21 00 10 */	addi r1, r1, 0x10
+/* 00010A00 00010ACC  4E 80 00 20 */	blr
+
+text 10A04..10A08 exitStatus__19soStatusUniqProcessFP16soModuleAccesseri
+/* 00010A04 00010AD0  4E 80 00 20 */	blr
+
+text 10A08..10A0C initStatus__19soStatusUniqProcessFP16soModuleAccesser
+/* 00010A08 00010AD4  4E 80 00 20 */	blr
+
+text 10A0C..10A54 fn_114_10A0C
+/* 00010A0C 00010AD8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 00010A10 00010ADC  7C 08 02 A6 */	mflr r0
+/* 00010A14 00010AE0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 00010A18 00010AE4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 00010A1C 00010AE8  3F E0 00 00 */	lis r31, lbl_114_bss_1DC@ha
+/* 00010A20 00010AEC  38 7F 00 00 */	addi r3, r31, lbl_114_bss_1DC@l
+/* 00010A24 00010AF0  48 00 00 31 */	bl fn_114_10A54
+/* 00010A28 00010AF4  38 7F 00 00 */	addi r3, r31, lbl_114_bss_1DC@l
+/* 00010A2C 00010AF8  3C 80 00 00 */	lis r4, fn_114_109C4@ha
+/* 00010A30 00010AFC  38 84 00 00 */	addi r4, r4, fn_114_109C4@l
+/* 00010A34 00010B00  3C A0 00 00 */	lis r5, lbl_114_bss_1D0@ha
+/* 00010A38 00010B04  38 A5 00 00 */	addi r5, r5, lbl_114_bss_1D0@l
+/* 00010A3C 00010B08  4B FE F5 C5 */	bl __register_global_object
+/* 00010A40 00010B0C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 00010A44 00010B10  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 00010A48 00010B14  7C 08 03 A6 */	mtlr r0
+/* 00010A4C 00010B18  38 21 00 10 */	addi r1, r1, 0x10
+/* 00010A50 00010B1C  4E 80 00 20 */	blr
+
+text 10A54..10A64 fn_114_10A54
+/* 00010A54 00010B20  3C 80 00 00 */	lis r4, lbl_114_data_80E8@ha
+/* 00010A58 00010B24  38 84 00 00 */	addi r4, r4, lbl_114_data_80E8@l
+/* 00010A5C 00010B28  90 83 00 00 */	stw r4, 0x0(r3)
+/* 00010A60 00010B2C  4E 80 00 20 */	blr
+

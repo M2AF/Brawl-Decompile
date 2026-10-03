@@ -1,0 +1,10 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex10 (codex/link)
+base                         fn_93_FF14: 10 diff lines, functions matching 29/30
+taskid_getter                fn_93_FF14: 6 diff lines, functions matching 29/30
+taskid_accesser_getter       fn_93_FF14: 6 diff lines, functions matching 29/30
+capture_getter               fn_93_FF14: 9 diff lines, functions matching 29/30
+capture_void_local           fn_93_FF14: 9 diff lines, functions matching 29/30
+taskid_nested_argument       fn_93_FF14: 10 diff lines, functions matching 29/30
+id_signed                    fn_93_FF14: 10 diff lines, functions matching 29/30
+capture_pointer_after_call   fn_93_FF14: 9 diff lines, functions matching 29/30
+Best: taskid_accesser_getter (6), taskid_getter (6), capture_getter (9)

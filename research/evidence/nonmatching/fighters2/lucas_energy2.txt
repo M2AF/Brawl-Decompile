@@ -1,0 +1,97 @@
+data 7FAC..7FC2 lbl_114_data_7FAC
+	.string "ftKineticEnergyDamage"
+
+data 7FC2..7FC4 gap_04_00007FC2_data
+.hidden gap_04_00007FC2_data
+	.2byte 0x0000
+
+data 7FC4..7FF8 lbl_114_data_7FC4
+	.4byte lbl_114_data_31F4
+	.4byte 0x00000006
+	.4byte lbl_114_data_346C
+	.4byte 0x00000005
+	.4byte lbl_114_data_3D60
+	.4byte 0x00000000
+	.4byte lbl_114_data_31DC
+	.4byte 0x00000000
+	.4byte lbl_114_data_8084
+	.4byte 0x00000000
+	.4byte lbl_114_data_8040
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 7FF8..8000 lbl_114_data_7FF8
+	.4byte lbl_114_data_7FAC
+	.4byte lbl_114_data_7FC4
+
+data 8000..8014 lbl_114_data_8000
+	.string "ftKineticEnergyStop"
+
+data 8014..8040 lbl_114_data_8014
+	.4byte lbl_114_data_31F4
+	.4byte 0x00000006
+	.4byte lbl_114_data_346C
+	.4byte 0x00000005
+	.4byte lbl_114_data_3D60
+	.4byte 0x00000000
+	.4byte lbl_114_data_31DC
+	.4byte 0x00000000
+	.4byte lbl_114_data_8084
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 8040..8048 lbl_114_data_8040
+	.4byte lbl_114_data_8000
+	.4byte lbl_114_data_8014
+
+data 8048..805E lbl_114_data_8048
+	.string "soKineticEnergyNormal"
+
+data 805E..8060 gap_04_0000805E_data
+.hidden gap_04_0000805E_data
+	.2byte 0x0000
+
+data 8060..8084 lbl_114_data_8060
+	.4byte lbl_114_data_31F4
+	.4byte 0x00000006
+	.4byte lbl_114_data_346C
+	.4byte 0x00000005
+	.4byte lbl_114_data_3D60
+	.4byte 0x00000000
+	.4byte lbl_114_data_31DC
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 8084..808C lbl_114_data_8084
+	.4byte lbl_114_data_8048
+	.4byte lbl_114_data_8060
+
+data 808C..80A8 lbl_114_data_808C
+	.4byte lbl_114_data_80DC
+	.4byte 0x00000000
+	.4byte lbl_114_data_80DC
+	.4byte 0x00000000
+	.4byte fn_114_8BC0
+	.4byte fn_114_10630
+	.4byte fn_114_106B4
+
+data 80A8..80C5 lbl_114_data_80A8
+	.string "ftClassInfoImpl<26, ftLucas>"
+
+data 80C5..80C8 gap_04_000080C5_data
+.hidden gap_04_000080C5_data
+	.byte 0x00, 0x00, 0x00
+
+data 80C8..80DC lbl_114_data_80C8
+	.4byte lbl_114_data_3D60
+	.4byte 0x00000000
+	.4byte lbl_114_data_3C
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 80DC..80E8 lbl_114_data_80DC
+	.4byte lbl_114_data_80A8
+	.4byte lbl_114_data_80C8
+	.4byte 0x00000000
+
+

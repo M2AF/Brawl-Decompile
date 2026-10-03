@@ -1,0 +1,113 @@
+{
+  "checkout": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex8",
+  "head": "c23257b0116ab633bb6a5eb80b774af4d6e75082",
+  "branch": "codex/fighters2",
+  "unit": "mo_fighter/ft_ness/ft_ness_status_uniq_process_special_hi_attack"
+}
+SAME initStatus__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser initStatus__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser 177 177
+SAME execStatus__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser execStatus__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser 46 46
+SAME execStop__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser execStop__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser 4 4
+DIFF execFixPosCounter__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser execFixPosCounter__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser 571 571
+    --- target
+    +++ candidate
+    @@ -248,6 +248,6 @@
+     stfs    f0,124(r1)
+     addi    r3,r1,120
+    +mr      r4,r3
+     fmr     f1,f31
+    -mr      r4,r3
+     bl <addr>
+     lfs     f0,120(r1)
+    @@ -267,5 +267,5 @@
+     li      r22,1
+     mr      r3,r25
+    -li      r4,1
+    +mr      r4,r22
+     li      r5,0
+     lwz     r12,8(r25)
+    @@ -291,5 +291,5 @@
+     li      r22,4
+     mr      r3,r25
+    -li      r4,4
+    +mr      r4,r22
+     li      r5,0
+     lwz     r12,8(r25)
+    @@ -315,5 +315,5 @@
+     li      r22,2
+     mr      r3,r25
+    -li      r4,2
+    +mr      r4,r22
+     li      r5,0
+     lwz     r12,8(r25)
+    @@ -349,26 +349,26 @@
+     lfs     f1,20(r31)
+     bl <addr>
+    -stw     r4,20(r1)
+    -stw     r3,16(r1)
+    -addi    r3,r1,16
+    -fmr     f1,f30
+    -bl <addr>
+     stw     r4,28(r1)
+     stw     r3,24(r1)
+    +addi    r3,r1,24
+    +fmr     f1,f30
+    +bl <addr>
+    +stw     r4,36(r1)
+    +stw     r3,32(r1)
+     lfs     f1,120(r1)
+    -lfs     f0,24(r1)
+    +lfs     f0,32(r1)
+     fsubs   f0,f1,f0
+     stfs    f0,8(r1)
+     lfs     f1,124(r1)
+    -lfs     f0,28(r1)
+    +lfs     f0,36(r1)
+     fsubs   f0,f1,f0
+     stfs    f0,12(r1)
+     lwz     r3,8(r1)
+     lwz     r0,12(r1)
+    -stw     r3,32(r1)
+    -stw     r0,36(r1)
+    -lfs     f0,32(r1)
+    +stw     r3,40(r1)
+    +stw     r0,44(r1)
+    +lfs     f0,40(r1)
+     stfs    f0,120(r1)
+    -lfs     f0,36(r1)
+    +lfs     f0,44(r1)
+     stfs    f0,124(r1)
+     addi    r3,r23,8
+    @@ -473,6 +473,6 @@
+     fsubs   f31,f31,f0
+     addi    r3,r1,120
+    +mr      r4,r3
+     fsubs   f1,f31,f30
+    -mr      r4,r3
+     bl <addr>
+     addi    r3,r23,8
+    @@ -506,6 +506,6 @@
+     mtctr   r12
+     bctrl
+    -stw     r4,44(r1)
+    -stw     r3,40(r1)
+    +stw     r4,20(r1)
+    +stw     r3,16(r1)
+     stw     r3,96(r1)
+     stw     r4,100(r1)
+SAME lengthSq__5Vec2fFv                       lengthSq__5Vec2fFv                            6 6
+SAME __ml__FRC5Vec2ff                         __ml__FRC5Vec2ff                              11 11
+SAME exitStatus__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesseri exitStatus__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesseri 52 52
+SAME __dt__38ftNessStatusUniqProcessSpecialHiAttackFv __dt__38ftNessStatusUniqProcessSpecialHiAttackFv 16 16
+SAME __sinit_\ft_ness_status_uniq_process_special_hi_attack_cpp __sinit_\ft_ness_status_uniq_process_special_hi_attack_cpp 18 18
+SAME __ct__38ftNessStatusUniqProcessSpecialHiAttackFv __ct__38ftNessStatusUniqProcessSpecialHiAttackFv 4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): __as__5Vec2fFRC5Vec2f, checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, __dt__19soStatusUniqProcessFv, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, execStatus__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+SAME section .rodata: target 48 bytes, candidate 48 bytes
+DIFF section .data: target 192 bytes, candidate 540 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 9/10. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_ness mo_fighter/ft_ness/ft_ness_status_uniq_process_special_hi_attack
+Original: 277192 e61788578d9f18bc36bfb7349c43826cdf4f34d8
+Source probe: 277192 9dfa06e1a2975c619da1165e6c1d7a2ff77749c2
+Full REL byte match: False
+First differing byte: 0x125b4
+FAIL: full-REL probe for ft_ness (mo_fighter/ft_ness/ft_ness_status_uniq_process_special_hi_attack)

@@ -1,0 +1,9 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex10 (codex/link)
+base                         fn_93_FCC8: 22 diff lines, functions matching 27/30
+predeclare_work              fn_93_FCC8: 0 diff lines, functions matching 28/30
+predeclare_refs              fn_93_FCC8: 0 diff lines, functions matching 28/30
+target_const                 fn_93_FCC8: 22 diff lines, functions matching 27/30
+target_register              fn_93_FCC8: 22 diff lines, functions matching 27/30
+work_pointer                 fn_93_FCC8: 22 diff lines, functions matching 27/30
+late_target_declaration      fn_93_FCC8: 22 diff lines, functions matching 27/30
+Best: predeclare_refs (0), predeclare_work (0), base (22)

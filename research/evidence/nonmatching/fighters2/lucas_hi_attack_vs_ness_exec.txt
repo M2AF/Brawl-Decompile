@@ -1,0 +1,14 @@
+--- 
+
++++ 
+
+@@ -30,7 +30,7 @@
+
+ lfs f1, 0x14(r1)
+ bl MODULE_FN
+ mr r3, r30
+-li r4, 0x5
++li r4, 0x3
+ lis r5, LOCAL_DATA@ha
+ lfs f0, LOCAL_DATA@l(r5)
+ fmuls f1, f0, f1

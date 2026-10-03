@@ -1,8 +1,8 @@
-# PROJECT_STATE — read this first (updated 2026-10-02)
+# PROJECT_STATE — read this first (updated 2026-10-03)
 
 Single pickup document for a fresh Claude or Codex session. Details live in the docs indexed at the bottom.
 
-Latest checkpoint: main `rsbe01_01-support` is clean at **9f4d31e**. At the user's explicit request, Codex integrated Pit SpecialLwHold (`055115f` -> `9f4d31e`) after Claude ran out of credits. Clean-source rebuild and independent built/original manifest checks both pass **127/127**; verifier tests **10/10**; full Pit source REL byte-identical. No pushes or original-file changes. See the live `HANDOFF.md` and newest journal entry before doing any work; the older inventory below is historical. Meta Knight special_s_end remains NonMatching and is the queued next task, followed by its final status units. Isolated `brawl-codex7` is retained at055115f; its changes are already integrated.
+Latest checkpoint: main `rsbe01_01-support` is clean at **e7def40**. User authorized Codex takeover/local integration while Claude is out of credits. Link's eight worktree commits are integrated: **five source-linked TUs** (SpecialRSlash, Wait, SpecialBoomerang, SpecialBomb, combined Final/FinalDash/FinalCombo), and SpecialRSlashEnd parked NonMatching4/5. Clean-source main build127/127, independent verifier/tests/original comparison PASS; all five accepted whole-REL substitutions and Rest Area regression PASS. **583/4403 object instances source-linked** (DOL67/1722, REL516/2681). Link generator's overlapping finals were manually grouped under one initializer; both revisions have matching split/symbol scaffolding, but only rev1 source linkage is asserted. Previous fighters2 and MK work is already integrated; MK FinalHitWait remains parked11/12. No pushes/original edits. Retained clean worktree brawl-codex10/codex-link at4f193b8 is fully integrated; do not replay its commits. Exact commit map, evidence and pickup: codex_parallel/LINK_STATUS.md. BrawlTool missing-function score/exact source-byte restoration fix committed locally in the separate root workbench at709766f,41 tests PASS. Always read live HANDOFF before taking a lease.
 
 ## Goal
 1. **Now:** a verified matching rebuild of the user's Super Smash Bros. Brawl **USA rev 1 (RSBE01_01)**, decompiling small translation units (TUs) one at a time on top of the upstream doldecomp/brawl project.
@@ -12,7 +12,7 @@ Never call fallback-object rebuilds a "completed decompilation". Originals stay 
 
 ## Repo, branch, build
 - Repo: `C:\Users\balla\Documents\Brawl Decompile\brawl` (fork of doldecomp/brawl, dtk-template).
-- Branch: `rsbe01_01-support`, HEAD `9f4d31e`, clean. **Local commits only, never push.**
+- Branch: `rsbe01_01-support`, HEAD `e7def40`, clean. **Local commits only, never push.**
 - `research/` is NOT in the repo (private notes, tools, evidence; contains target asm).
 - Originals: `brawl/orig/RSBE01_01` (git-ignored). Frozen hashes: `config/RSBE01_01/binary-manifest.json`, `build.sha1`.
 - Build and verify (Windows; ninja is in the venv):
@@ -89,15 +89,14 @@ Other commits: f513af3 (rev1 support + strict verifier), 36ec973 (Codex: Battlef
 - Evidence: `research/evidence/nonmatching/` (per-unit diffs, permuter records).
 
 ## Current state and next step
-- Tree is clean at `fe9e4d6` (codex/stages tbreak+oldin NonMatching integrated), 127/127 verified (normal + independent, clean source rebuild); probes byte-identical for st_tengan, st_heal, st_greenhill. st_kart and gr_tengan_floor are NonMatching WIP. st_heal and st_greenhill full-REL probes byte-identical at f60af98.
-- Candidates #1 oldin, #2 tbreak, #3 dxcorneria, #4 newpork, #5 dxyorster, #6 dxgarden, #7 st_heal and #8 st_greenhill are complete.
-- #8 was done by Codex in worktree `../brawl-greenhill` (branch `codex/st_greenhill`, 3fc4040) and integrated by cherry-pick as f60af98. The worktree/branch are now redundant; remove only with the user's OK.
-- `stMadeinStaticPair` now lives in `include/st/st_madein_static_pair.h` (Codex b4ae09f); reuse it for grMadein-style stage bodies.
-- #10 tengan: base, Bg and Ashiba source-linked; Floor is a NonMatching draft (6bf569c, 5/7 functions) (Codex notes: codex_parallel/TENGAN_STATUS.md, evidence/nonmatching/tengan/).
-- Candidate #9 `st_kart` is split and committed as NonMatching (c472821): 61/63 functions + all data match; near-misses `updateRanks` (one scheduling reorder around __alloca) and `getZoneLightSetIndex` (fsel clamp registers + 1.0/55 constant order). Notes: `evidence/nonmatching/kart/NOTES.md`. Options: capped permuter on those two functions, or move on to #10.
-- Shared changes in c472821: `include/st/stage.h` override (getZoneLightSetIndex(Vec3f*)), sora_melee symbol renamed in RSBE01_01+02, DOL `CosFIdx` named. Any parallel branch based on f60af98 must be rebuilt after cherry-pick (vtables now reference getZoneLightSetIndex__5StageFP5Vec3f). Shared madein static pair is modelled as `stMadeinStaticPair` in `include/st_heal/st_heal.h`; move it to a common header when a second stage body needs it.
-- Read `HANDOFF.md` first for ownership/live state, then the last entry in `HANDOFF_LOG.md` for current checkpoints, dirty files, commands and exact next action. The log is append-only: write after promotions, before long runs, at session end and immediately on low credits/handoff; never edit old entries. Keep this state document synchronized.
-- Optional: finish Battlefield's three near-misses; when promoting it, consider the Codex callee names in `codex_parallel/CALLEE_NAMING.md` (apply only names a TU needs, after checking evidence, and re-verify 127/127).
+- Current main e7def40 clean; Link task accepted/parked and integrated as above. Lease released after final checkpoint; confirm live HANDOFF before resuming.
+- Five Link TUs source-linked; SlashEnd remains NonMatching4/5 (multiply operand order) after18 bounded variants. No permuter/flag sweeps. MK FinalHitWait optional entry-load near-miss remains parked.
+- No background build/permuter remains. Do not replay integrated worktree commits. Read codex_parallel/LINK_STATUS.md for exact main/worktree commit map and private evidence paths.
+- Next handed-over fallback candidates were Fox/Wolf, whose reflector vtables need manually reviewed splits; no Fox/Wolf code was started in this task. Check live claims before choosing another fighter.
+- Shared search-data header retains Ike names and adds MWCC-specific unsigned bitfield union views; new catch/capture headers are partial virtual interfaces. All affected linked source objects rebuilt cleanly and retain127/127. Full layout/UB review in docs/RSBE01_01.md.
+- BrawlTool variants now reject a missing -f name rather than reporting0 differences, and restore exact original source bytes including CRLF. Tests41/41 and live missing/known-function smoke checks PASS.
+- stMadeinStaticPair lives in include/st/st_madein_static_pair.h; reuse it. Stage::getZoneLightSetIndex takes Vec3f*. Earlier state inventories below/above are explicitly historical; use live config for candidate ranking.
+- HANDOFF_LOG.md is append-only via agent-handoff; keep PROJECT_STATE and per-task status synchronized.
 
 ## Document index
 - `research/HANDOFF_LOG.md`: **read its last entry right after this file.** Shared Claude ⇄ Codex append-only log. Add an entry after each TU, before long runs, at session end, and when credits run low.
@@ -111,6 +110,6 @@ Other commits: f513af3 (rev1 support + strict verifier), 36ec973 (Codex: Battlef
 - `research/codex_parallel/`: `CANDIDATE_QUEUE.md` (ranked next TUs), `CALLEE_NAMING.md` + `proposed_symbols.patch` + `callee_inventory.csv` (symbol proposals), `FIGHTER_LIMITS.md`.
 - `brawl/docs/RSBE01_01.md`: provenance and evidence table for every rev1 TU, including the matching techniques used.
 
-Current linked totals: 192 unique TUs; 524/4,407 instances (DOL 65/1,722; RELs 459/2,685). Stage registration merges reduce total units; corrected dxgarden epilogue reduces analysis function count by one.
+Historical linked totals (older checkpoint): 192 unique TUs; 524/4,407 instances (DOL 65/1,722; RELs 459/2,685). Stage registration merges reduce total units; corrected dxgarden epilogue reduces analysis function count by one.
 
 Dxyorster and dxgarden are fully source-linked, not function-only wins. Dxyorster ctor literal pool and dxgarden camera/water/SDK Color constructs documented in brawl/docs/RSBE01_01.md. Dxyorster has no near-misses; dxgarden preserves the target uninitialized state-byte behaviour (external initialization contract unresolved).

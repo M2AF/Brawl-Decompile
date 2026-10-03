@@ -1,0 +1,50 @@
+{
+  "checkout": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex8",
+  "head": "1f0beded7c35c33fccbdfec4fbdeb225da0b8881",
+  "branch": "codex/fighters2",
+  "unit": "mo_fighter/ft_lucas/ft_lucas_status_uniq_process_special_hi_attack_end"
+}
+DIFF initStatus__42ftLucasStatusUniqProcessSpecialHiAttackEndFP16soModuleAccesser initStatus__42ftLucasStatusUniqProcessSpecialHiAttackEndFP16soModuleAccesser 61 61
+    --- target
+    +++ candidate
+    @@ -44,5 +44,5 @@
+     fmuls   f1,f0,f31
+     lwz     r12,8(r30)
+    -lwz     r12,112(r12)
+    +lwz     r12,120(r12)
+     mtctr   r12
+     bctrl
+DIFF execStatus__42ftLucasStatusUniqProcessSpecialHiAttackEndFP16soModuleAccesser execStatus__42ftLucasStatusUniqProcessSpecialHiAttackEndFP16soModuleAccesser 83 83
+    --- target
+    +++ candidate
+    @@ -71,5 +71,5 @@
+     fmuls   f1,f0,f31
+     lwz     r12,8(r28)
+    -lwz     r12,112(r12)
+    +lwz     r12,120(r12)
+     mtctr   r12
+     bctrl
+DIFF exitStatus__42ftLucasStatusUniqProcessSpecialHiAttackEndFP16soModuleAccesseri exitStatus__42ftLucasStatusUniqProcessSpecialHiAttackEndFP16soModuleAccesseri 41 41
+    --- target
+    +++ candidate
+    @@ -19,5 +19,5 @@
+     lfs     f1,0(r31)
+     lwz     r12,8(r3)
+    -lwz     r12,112(r12)
+    +lwz     r12,120(r12)
+     mtctr   r12
+     bctrl
+SAME __dt__42ftLucasStatusUniqProcessSpecialHiAttackEndFv __dt__42ftLucasStatusUniqProcessSpecialHiAttackEndFv 16 16
+SAME __sinit_\ft_lucas_status_uniq_process_special_hi_attack_end_cpp __sinit_\ft_lucas_status_uniq_process_special_hi_attack_end_cpp 18 18
+SAME __ct__42ftLucasStatusUniqProcessSpecialHiAttackEndFv __ct__42ftLucasStatusUniqProcessSpecialHiAttackEndFv 4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, __dt__19soStatusUniqProcessFv, execStatus__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+DIFF section .rodata: target 16 bytes, candidate 12 bytes
+DIFF section .data: target 344 bytes, candidate 544 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 3/6. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_lucas mo_fighter/ft_lucas/ft_lucas_status_uniq_process_special_hi_attack_end
+Original: 251168 e66ee839135920d7c10298109b7e566ae7bb7eb3
+Source probe: 251168 03952c5b7f82b5ee0abf14403921674a1a6be64f
+Full REL byte match: False
+First differing byte: 0x124fb
+FAIL: full-REL probe for ft_lucas (mo_fighter/ft_lucas/ft_lucas_status_uniq_process_special_hi_attack_end)

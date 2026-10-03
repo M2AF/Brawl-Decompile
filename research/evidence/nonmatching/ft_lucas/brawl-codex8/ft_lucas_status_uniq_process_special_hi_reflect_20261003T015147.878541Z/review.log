@@ -1,0 +1,20 @@
+{
+  "checkout": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex8",
+  "head": "7cd3ebe1666f5f479feba8405a92387f9f7d7cf2",
+  "branch": "codex/fighters2",
+  "unit": "mo_fighter/ft_lucas/ft_lucas_status_uniq_process_special_hi_reflect"
+}
+SAME exitStatus__40ftLucasStatusUniqProcessSpecialHiReflectFP16soModuleAccesseri exitStatus__40ftLucasStatusUniqProcessSpecialHiReflectFP16soModuleAccesseri 29 29
+SAME __dt__40ftLucasStatusUniqProcessSpecialHiReflectFv __dt__40ftLucasStatusUniqProcessSpecialHiReflectFv 16 16
+SAME __sinit_\ft_lucas_status_uniq_process_special_hi_reflect_cpp __sinit_\ft_lucas_status_uniq_process_special_hi_reflect_cpp 18 18
+SAME __ct__40ftLucasStatusUniqProcessSpecialHiReflectFv __ct__40ftLucasStatusUniqProcessSpecialHiReflectFv 4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, execStatus__19soStatusUniqProcessFP16soModuleAccesser, initStatus__19soStatusUniqProcessFP16soModuleAccesser, __dt__19soStatusUniqProcessFv, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri
+DIFF section .rodata: target 8 bytes, candidate 4 bytes
+DIFF section .data: target 128 bytes, candidate 220 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 4/4. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_lucas mo_fighter/ft_lucas/ft_lucas_status_uniq_process_special_hi_reflect
+Original: 251168 e66ee839135920d7c10298109b7e566ae7bb7eb3
+Source probe: 251168 e66ee839135920d7c10298109b7e566ae7bb7eb3
+Full REL byte match: True
+PASS: full-REL probe for ft_lucas (mo_fighter/ft_lucas/ft_lucas_status_uniq_process_special_hi_reflect)

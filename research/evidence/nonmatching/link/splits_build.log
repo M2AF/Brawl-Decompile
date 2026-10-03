@@ -1,0 +1,23 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex10 (codex/link)
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\ninja.exe
+[1/2] SPLIT config\RSBE01_01\config.yml
+[2/2] RUN configure.py
+[1/8] LINK build\RSBE01_01\ft_link\ft_link.preplf
+[2/8] LINK build\RSBE01_01\ft_link\ft_link.plf
+[3/8] REL
+[4/8] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[5/8] REPORT
+[6/8] PROGRESS
+Progress:
+  All: 1.95% matched, 1.52% linked (578 / 4403 files)
+    Code: 309080 / 15833548 bytes (3661 / 92521 functions)
+    Data: 856592 / 5667436 bytes (15.11%)
+  DOL: 1.41% matched, 0.88% linked (67 / 1722 files)
+    Code: 58648 / 4170064 bytes (517 / 14278 functions)
+    Data: 6732 / 1724104 bytes (0.39%)
+  Modules: 2.15% matched, 1.75% linked (511 / 2681 files)
+    Code: 250432 / 11663484 bytes (3144 / 78243 functions)
+    Data: 849860 / 3943332 bytes (21.55%)
+PASS: OK: 127/127 binaries verified

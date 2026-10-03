@@ -1,0 +1,72 @@
+{
+  "checkout": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex8",
+  "head": "74ea81813fb7e0b433d0c0ce939e8b9ad1226c38",
+  "branch": "codex/fighters2",
+  "unit": "mo_fighter/ft_lucas/ft_lucas_status_uniq_process_air_lasso"
+}
+DIFF initStatus__32ftLucasStatusUniqProcessAirLassoFP16soModuleAccesser initStatus__32ftLucasStatusUniqProcessAirLassoFP16soModuleAccesser 85 85
+    --- target
+    +++ candidate
+    @@ -45,8 +45,8 @@
+     bgt <addr>
+     mr      r3,r30
+    +fmr     f1,f31
+    +lfs     f2,0(r31)
+     mr      r4,r29
+     li      r5,0
+    -fmr     f1,f31
+    -lfs     f2,0(r31)
+     lwz     r12,0(r30)
+     lwz     r12,140(r12)
+    @@ -60,18 +60,18 @@
+     bctrl
+     lwz     r3,216(r28)
+    -lwz     r3,124(r3)
+    +lwz     r3,112(r3)
+     li      r4,79
+     mr      r5,r28
+     lwz     r12,0(r3)
+    -lwz     r12,92(r12)
+    +lwz     r12,20(r12)
+     mtctr   r12
+     bctrl
+     b <addr>
+     lwz     r3,216(r28)
+    -lwz     r3,124(r3)
+    +lwz     r3,112(r3)
+     li      r4,19
+     mr      r5,r28
+     lwz     r12,0(r3)
+    -lwz     r12,92(r12)
+    +lwz     r12,20(r12)
+     mtctr   r12
+     bctrl
+DIFF execFixPos__32ftLucasStatusUniqProcessAirLassoFP16soModuleAccesser execFixPos__32ftLucasStatusUniqProcessAirLassoFP16soModuleAccesser 34 34
+    --- target
+    +++ candidate
+    @@ -15,9 +15,9 @@
+     beq <addr>
+     lwz     r3,216(r30)
+    -lwz     r3,124(r3)
+    +lwz     r3,112(r3)
+     li      r4,19
+     mr      r5,r30
+     lwz     r12,0(r3)
+    -lwz     r12,92(r12)
+    +lwz     r12,20(r12)
+     mtctr   r12
+     bctrl
+SAME __dt__32ftLucasStatusUniqProcessAirLassoFv __dt__32ftLucasStatusUniqProcessAirLassoFv    16 16
+SAME __sinit_\ft_lucas_status_uniq_process_air_lasso_cpp __sinit_\ft_lucas_status_uniq_process_air_lasso_cpp 18 18
+SAME __ct__32ftLucasStatusUniqProcessAirLassoFv __ct__32ftLucasStatusUniqProcessAirLassoFv    4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, execStatus__19soStatusUniqProcessFP16soModuleAccesser, __dt__27ftStatusUniqProcessAirLassoFv, __dt__19soStatusUniqProcessFv, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+SAME section .rodata: target 8 bytes, candidate 8 bytes
+DIFF section .data: target 176 bytes, candidate 268 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 3/5. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_lucas mo_fighter/ft_lucas/ft_lucas_status_uniq_process_air_lasso
+Original: 251168 e66ee839135920d7c10298109b7e566ae7bb7eb3
+Source probe: 251168 80d35609694afb86a80dd85997f44c15ec215ba9
+Full REL byte match: False
+First differing byte: 0x10be8
+FAIL: full-REL probe for ft_lucas (mo_fighter/ft_lucas/ft_lucas_status_uniq_process_air_lasso)

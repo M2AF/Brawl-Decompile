@@ -1,0 +1,12 @@
+data 3D54..3D5F lbl_114_data_3D54
+	.string "soNullable"
+
+data 3D5F..3D60 gap_04_00003D5F_data
+.hidden gap_04_00003D5F_data
+	.byte 0x00
+
+data 3D60..3D68 lbl_114_data_3D60
+	.4byte lbl_114_data_3D54
+	.4byte 0x00000000
+
+

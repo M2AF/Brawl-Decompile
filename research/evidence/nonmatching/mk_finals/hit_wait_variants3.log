@@ -1,0 +1,11 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex9 (codex/mk-finals)
+base                         initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 18 diff lines, functions matching 11/12
+count_ref                    initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 49 diff lines, functions matching 11/12
+own_ref                      initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 47 diff lines, functions matching 11/12
+own_then_count_decl          initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 18 diff lines, functions matching 11/12
+j_first                      initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 26 diff lines, functions matching 11/12
+j_ref                        initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 58 diff lines, functions matching 11/12
+array_first                  initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 18 diff lines, functions matching 11/12
+count_const                  initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 18 diff lines, functions matching 11/12
+own_const                    initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 18 diff lines, functions matching 11/12
+Best: array_first (18), base (18), count_const (18)

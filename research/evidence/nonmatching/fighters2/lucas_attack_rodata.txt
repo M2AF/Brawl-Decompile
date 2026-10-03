@@ -1,0 +1,5 @@
+60: 	.float 0
+64: 	.float 57.29578 	.float 0.017453292 	.float 90 	.float 1.5707964 	.float 2 	.float 6.2831855 	.float 3.1415927 	.float 0.000000000000000000000000000000000000011754944 	.float 0.0001 	.float 176 	.float -0 	.float 0.1 	.float 0
+98: 	.float -1
+9C: 	.float 57.29578
+A0: 	.float 0 	.float 0

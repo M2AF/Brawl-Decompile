@@ -1,0 +1,62 @@
+lbl_27_data_73A8 0x73a8 	.string "Catch"
+gap_04_000073AE_data 0x73ae .hidden gap_04_000073AE_data
+	.2byte 0x0000
+lbl_27_data_73B0 0x73b0 	.4byte lbl_27_data_7430
+	.4byte 0x00000000
+	.4byte processDefault__6gfTaskFv
+	.4byte fn_27_64C28
+	.4byte processAnim__6gfTaskFv
+	.4byte processUpdate__6gfTaskFv
+	.4byte processPreMapCorrection__6gfTaskFv
+	.4byte processMapCorrection__6gfTaskFv
+	.4byte processFixPosition__6gfTaskFv
+	.4byte processPreCollision__6gfTaskFv
+	.4byte processCollision__6gfTaskFv
+	.4byte fn_27_64C34
+	.4byte processHit__6gfTaskFv
+	.4byte processCamera__6gfTaskFv
+	.4byte processFixCamera__6gfTaskFv
+	.4byte processEffect__6gfTaskFv
+	.4byte processGameProc__6gfTaskFv
+	.4byte processEnd__6gfTaskFv
+	.4byte renderPre__6gfTaskFv
+	.4byte renderOpa__6gfTaskFv
+	.4byte renderXlu__6gfTaskFv
+	.4byte processDebug__6gfTaskFv
+	.4byte renderDebug__6gfTaskFv
+	.4byte init__6gfTaskFv
+	.4byte fn_27_64AF0
+lbl_27_data_7414 0x7414 	.string "soCatchManager"
+gap_04_00007423_data 0x7423 .hidden gap_04_00007423_data
+	.byte 0x00
+lbl_27_data_7424 0x7424 	.4byte __RTTI__6gfTask
+	.4byte 0x00000000
+	.4byte 0x00000000
+lbl_27_data_7430 0x7430 	.4byte lbl_27_data_7414
+	.4byte lbl_27_data_7424
+lbl_27_data_7438 0x7438 	.string "ThrowN"
+gap_04_0000743F_data 0x743f .hidden gap_04_0000743F_data
+	.byte 0x00
+lbl_27_data_7440 0x7440 	.4byte lbl_27_data_74D0
+	.4byte 0x00000000
+	.4byte fn_27_64D9C
+	.4byte fn_27_64E60
+	.4byte fn_27_64E74
+	.4byte fn_27_64E78
+	.4byte fn_27_64E88
+	.4byte fn_27_64E98
+	.4byte fn_27_64F80
+	.4byte fn_27_65018
+	.4byte fn_27_65024
+	.4byte fn_27_65030
+	.4byte fn_27_65438
+	.4byte fn_27_65528
+	.4byte fn_27_65690
+	.4byte fn_27_65910
+	.4byte fn_27_65ED0
+	.4byte fn_27_65A58
+	.4byte lbl_27_data_74D0
+	.4byte 0xFFFFFFFC
+	.4byte fn_27_65C94
+	.4byte fn_27_65EDC
+	.4byte fn_27_65BB8

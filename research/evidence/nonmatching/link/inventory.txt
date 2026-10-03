@@ -1,0 +1,167 @@
+bss 140..14C lbl_93_bss_140 | 	.skip 0xC
+bss 14C..150 lbl_93_bss_14C | 	.skip 0x4
+bss 150..15C lbl_93_bss_150 | 	.skip 0xC
+bss 15C..160 lbl_93_bss_15C | 	.skip 0x4
+bss 160..16C lbl_93_bss_160 | 	.skip 0xC
+bss 16C..170 lbl_93_bss_16C | 	.skip 0x4
+bss 170..17C lbl_93_bss_170 | 	.skip 0xC
+bss 17C..180 lbl_93_bss_17C | 	.skip 0x4
+bss 180..18C lbl_93_bss_180 | 	.skip 0xC
+bss 18C..19C lbl_93_bss_18C | 	.skip 0x10
+bss 19C..1AC lbl_93_bss_19C | 	.skip 0x10
+bss 1AC..1B0 lbl_93_bss_1AC | 	.skip 0x4
+bss 1B0..1BC lbl_93_bss_1B0 | 	.skip 0xC
+bss 1BC..1C0 lbl_93_bss_1BC | 	.skip 0x4
+bss 1C0..1CC lbl_93_bss_1C0 | 	.skip 0xC
+data 7FA0..7FA8 lbl_93_data_7FA0 | 	.4byte lbl_93_data_7F60 	.4byte lbl_93_data_7F74
+data 7FA8..7FBE lbl_93_data_7FA8 | 	.string "soKineticEnergyNormal"
+data 7FBE..7FC0 gap_04_00007FBE_data | .hidden gap_04_00007FBE_data 	.2byte 0x0000
+data 7FC0..7FE4 lbl_93_data_7FC0 | 	.4byte lbl_93_data_3114 	.4byte 0x00000006 	.4byte lbl_93_data_33E8 	.4byte 0x00000005 	.4byte lbl_93_data_3CCC 	.4byte 0x00000000 	.4byte lbl_93_data_30FC 	.4byte 0x00000000 	.4byte 0x00000000
+data 7FE4..7FEC lbl_93_data_7FE4 | 	.4byte lbl_93_data_7FA8 	.4byte lbl_93_data_7FC0
+data 7FEC..8008 lbl_93_data_7FEC | 	.4byte lbl_93_data_8038 	.4byte 0x00000000 	.4byte lbl_93_data_8038 	.4byte 0x00000000 	.4byte fn_93_22F8 	.4byte fn_93_EA5C 	.4byte fn_93_EAE0
+data 8008..8023 lbl_93_data_8008 | 	.string "ftClassInfoImpl<2, ftLink>"
+data 8023..8024 gap_04_00008023_data | .hidden gap_04_00008023_data 	.byte 0x00
+data 8024..8038 lbl_93_data_8024 | 	.4byte lbl_93_data_3CCC 	.4byte 0x00000000 	.4byte lbl_93_data_84 	.4byte 0x00000000 	.4byte 0x00000000
+data 8038..8040 lbl_93_data_8038 | 	.4byte lbl_93_data_8008 	.4byte lbl_93_data_8024
+data 8040..8068 jumptable_93_data_8040 | 	.4byte fn_93_ECC8+0x74 	.4byte fn_93_ECC8+0x94 	.4byte fn_93_ECC8+0xB4 	.4byte fn_93_ECC8+0xD4 	.4byte fn_93_ECC8+0xE0 	.4byte fn_93_ECC8+0xEC 	.4byte fn_93_ECC8+0xF8 	.4byte fn_93_ECC8+0x104 	.4byte fn_93_ECC8+0x110 	.4byte fn_93_ECC8+0x11C
+data 8068..8082 lbl_93_data_8068 | 	.string "ftKineticEnergyController"
+data 8082..8084 gap_04_00008082_data | .hidden gap_04_00008082_data 	.2byte 0x0000
+data 8084..80B0 lbl_93_data_8084 | 	.4byte lbl_93_data_3114 	.4byte 0x00000006 	.4byte lbl_93_data_33E8 	.4byte 0x00000005 	.4byte lbl_93_data_3CCC 	.4byte 0x00000000 	.4byte lbl_93_data_30FC 	.4byte 0x00000000 	.4byte lbl_93_data_7FE4 	.4byte 0x00000000 	.4byte 0x00000000
+data 80B0..80B8 lbl_93_data_80B0 | 	.4byte lbl_93_data_8068 	.4byte lbl_93_data_8084
+data 80B8..80F8 lbl_93_data_80B8 | 	.4byte lbl_93_data_812C 	.4byte 0x00000000 	.4byte fn_93_F2AC 	.4byte fn_93_F26C 	.4byte fn_93_F2A8 	.4byte fn_93_F270 	.4byte fn_93_F2A4 	.4byte fn_93_F2A0 	.4byte fn_93_F29C 	.4byte fn_93_F298 	.4byte fn_93_F294 	.4byte fn_93_F28C 	.4byte fn_93_F288 	.4byte fn_93_F280 	.4byte fn_93_F27C 	.4byte fn_93_F274
+data 80F8..811D lbl_93_data_80F8 | 	.string "ftLinkStatusUniqProcessSpecialRSlash"
+data 811D..8120 gap_04_0000811D_data | .hidden gap_04_0000811D_data 	.byte 0x00, 0x00, 0x00
+data 8120..812C lbl_93_data_8120 | 	.4byte lbl_93_data_8148 	.4byte 0x00000000 	.4byte 0x00000000
+data 812C..8134 lbl_93_data_812C | 	.4byte lbl_93_data_80F8 	.4byte lbl_93_data_8120
+data 8134..8148 lbl_93_data_8134 | 	.string "soStatusUniqProcess"
+data 8148..8150 lbl_93_data_8148 | 	.4byte lbl_93_data_8134 	.4byte 0x00000000
+data 8150..8190 lbl_93_data_8150 | 	.4byte lbl_93_data_81C4 	.4byte 0x00000000 	.4byte fn_93_F424 	.4byte fn_93_F348 	.4byte fn_93_F2A8 	.4byte fn_93_F420 	.4byte fn_93_F2A4 	.4byte fn_93_F2A0 	.4byte fn_93_F29C 	.4byte fn_93_F298 	.4byte fn_93_F294 	.4byte fn_93_F28C 	.4byte fn_93_F288 	.4byte fn_93_F280 	.4byte fn_93_F27C 	.4byte fn_93_F274
+data 8190..81B8 lbl_93_data_8190 | 	.string "ftLinkStatusUniqProcessSpecialRSlashEnd"
+data 81B8..81C4 lbl_93_data_81B8 | 	.4byte lbl_93_data_8148 	.4byte 0x00000000 	.4byte 0x00000000
+data 81C4..81D0 lbl_93_data_81C4 | 	.4byte lbl_93_data_8190 	.4byte lbl_93_data_81B8 	.4byte 0x00000000
+data 81D0..8210 lbl_93_data_81D0 | 	.4byte lbl_93_data_8244 	.4byte 0x00000000 	.4byte fn_93_F6B4 	.4byte fn_93_F4BC 	.4byte fn_93_F630 	.4byte fn_93_F62C 	.4byte fn_93_F2A4 	.4byte fn_93_F2A0 	.4byte fn_93_F29C 	.4byte fn_93_F298 	.4byte fn_93_F294 	.4byte fn_93_F28C 	.4byte fn_93_F288 	.4byte fn_93_F280 	.4byte fn_93_F27C 	.4byte fn_93_F274
+data 8210..8238 lbl_93_data_8210 | 	.string "ftLinkStatusUniqProcessSpecialBoomerang"
+data 8238..8244 lbl_93_data_8238 | 	.4byte lbl_93_data_8148 	.4byte 0x00000000 	.4byte 0x00000000
+data 8244..8250 lbl_93_data_8244 | 	.4byte lbl_93_data_8210 	.4byte lbl_93_data_8238 	.4byte 0x00000000
+data 8250..8259 lbl_93_data_8250 | 	.string "BaseItem"
+data 8259..825C gap_04_00008259_data | .hidden gap_04_00008259_data 	.byte 0x00, 0x00, 0x00
+data 825C..8318 lbl_93_data_825C | 	.4byte lbl_93_data_3520 	.4byte 0x000000C0 	.4byte lbl_93_data_3CCC 	.4byte 0x000000B8 	.4byte lbl_93_data_34EC 	.4byte 0x000000B8 	.4byte lbl_93_data_8374 	.4byte 0x000000AC 	.4byte lbl_93_data_8344 	.4byte 0x000000AC 	.4byte lbl_93_data_3744 	.4byte 0x000000A0 	.4byte lbl_93_data_370C 	.4byte 0x000000A0 	.4byte lbl_93_data_382C 	.4byte 0x00000094 	.4byte lbl_93_data_37F0 	.4byte 0x00000094 	.4byte lbl_93_data_3898 	.4byte 0x00000088 	.4byte lbl_93_data_3860 	.4byte 0x00000088 	.4byte lbl_93_data_396C 	.4byte 0x0000007C 	.4byte lbl_93_data_3934 	.4byte 0x0000007C 	.4byte lbl_93_data_3A2C 	.4byte 0x00000070 	.4byte lbl_93_data_39F8 	.4byte 0x00000070 	.4byte lbl_93_data_36D8 	.4byte 0x00000064 	.4byte lbl_93_data_36A8 	.4byte 0x00000064 	.4byte lbl_93_data_3C50 	.4byte 0x00000054 	.4byte lbl_93_data_3C20 	.4byte 0x00000054 	.4byte lbl_93_data_3CAC 	.4byte 0x00000048 	.4byte lbl_93_data_3C7C 	.4byte 0x00000048 	.4byte lbl_93_data_3CF8 	.4byte 0x00000000 	.4byte lbl_93_data_3BF8 	.4byte 0x00000000 	.4byte 0x00000000
+data 8318..8320 lbl_93_data_8318 | 	.4byte lbl_93_data_8250 	.4byte lbl_93_data_825C
+data 8320..8337 lbl_93_data_8320 | 	.string "soGimmickEventObserver"
+data 8337..8338 gap_04_00008337_data | .hidden gap_04_00008337_data 	.byte 0x00
+data 8338..8344 lbl_93_data_8338 | 	.4byte lbl_93_data_8374 	.4byte 0x00000000 	.4byte 0x00000000
+data 8344..834C lbl_93_data_8344 | 	.4byte lbl_93_data_8320 	.4byte lbl_93_data_8338
+data 834C..8374 lbl_93_data_834C | 	.string "soEventObserver<soGimmickEventObserver>"
+data 8374..837C lbl_93_data_8374 | 	.4byte lbl_93_data_834C 	.4byte 0x00000000
+data 837C..83BC lbl_93_data_837C | 	.4byte lbl_93_data_83EC 	.4byte 0x00000000 	.4byte fn_93_F900 	.4byte fn_93_F74C 	.4byte fn_93_F2A8 	.4byte fn_93_F2EC 	.4byte fn_93_F2A4 	.4byte fn_93_F2A0 	.4byte fn_93_F29C 	.4byte fn_93_F750 	.4byte fn_93_F294 	.4byte fn_93_F28C 	.4byte fn_93_F288 	.4byte fn_93_F280 	.4byte fn_93_F27C 	.4byte fn_93_F274
+data 83BC..83DF lbl_93_data_83BC | 	.string "ftLinkStatusUniqProcessSpecialBomb"
+data 83DF..83E0 gap_04_000083DF_data | .hidden gap_04_000083DF_data 	.byte 0x00
+data 83E0..83EC lbl_93_data_83E0 | 	.4byte lbl_93_data_8148 	.4byte 0x00000000 	.4byte 0x00000000
+data 83EC..83F8 lbl_93_data_83EC | 	.4byte lbl_93_data_83BC 	.4byte lbl_93_data_83E0 	.4byte 0x00000000
+data 83F8..8438 lbl_93_data_83F8 | 	.4byte lbl_93_data_8468 	.4byte 0x00000000 	.4byte fn_93_10DEC 	.4byte fn_93_10630 	.4byte fn_93_10A34 	.4byte fn_93_F2EC 	.4byte fn_93_F2A4 	.4byte fn_93_F2A0 	.4byte fn_93_F29C 	.4byte fn_93_106CC 	.4byte fn_93_F294 	.4byte fn_93_F28C 	.4byte fn_93_F288 	.4byte fn_93_F280 	.4byte fn_93_F27C 	.4byte fn_93_F274
+data 8438..845A lbl_93_data_8438 | 	.string "ftLinkStatusUniqProcessFinalCombo"
+data 845A..845C gap_04_0000845A_data | .hidden gap_04_0000845A_data 	.2byte 0x0000
+data 845C..8468 lbl_93_data_845C | 	.4byte lbl_93_data_8148 	.4byte 0x00000000 	.4byte 0x00000000
+data 8468..8470 lbl_93_data_8468 | 	.4byte lbl_93_data_8438 	.4byte lbl_93_data_845C
+data 8470..84B0 lbl_93_data_8470 | 	.4byte lbl_93_data_84E0 	.4byte 0x00000000 	.4byte fn_93_10E2C 	.4byte fn_93_FFF8 	.4byte fn_93_10448 	.4byte fn_93_100A8 	.4byte fn_93_F2A4 	.4byte fn_93_F2A0 	.4byte fn_93_F29C 	.4byte fn_93_10140 	.4byte fn_93_F294 	.4byte fn_93_F28C 	.4byte fn_93_F288 	.4byte fn_93_F280 	.4byte fn_93_F27C 	.4byte fn_93_F274
+data 84B0..84D1 lbl_93_data_84B0 | 	.string "ftLinkStatusUniqProcessFinalDash"
+data 84D1..84D4 gap_04_000084D1_data | .hidden gap_04_000084D1_data 	.byte 0x00, 0x00, 0x00
+data 84D4..84E0 lbl_93_data_84D4 | 	.4byte lbl_93_data_8148 	.4byte 0x00000000 	.4byte 0x00000000
+data 84E0..84E8 lbl_93_data_84E0 | 	.4byte lbl_93_data_84B0 	.4byte lbl_93_data_84D4
+data 84E8..8528 lbl_93_data_84E8 | 	.4byte lbl_93_data_8554 	.4byte 0x00000000 	.4byte fn_93_10E6C 	.4byte fn_93_F998 	.4byte fn_93_FC4C 	.4byte fn_93_F2EC 	.4byte fn_93_F2A4 	.4byte fn_93_F2A0 	.4byte fn_93_F29C 	.4byte fn_93_FA94 	.4byte fn_93_F294 	.4byte fn_93_F28C 	.4byte fn_93_F288 	.4byte fn_93_F280 	.4byte fn_93_F27C 	.4byte fn_93_F274
+data 8528..8545 lbl_93_data_8528 | 	.string "ftLinkStatusUniqProcessFinal"
+data 8545..8548 gap_04_00008545_data | .hidden gap_04_00008545_data 	.byte 0x00, 0x00, 0x00
+data 8548..8554 lbl_93_data_8548 | 	.4byte lbl_93_data_8148 	.4byte 0x00000000 	.4byte 0x00000000
+data 8554..8560 lbl_93_data_8554 | 	.4byte lbl_93_data_8528 	.4byte lbl_93_data_8548 	.4byte 0x00000000
+data 8560..85A0 lbl_93_data_8560 | 	.4byte lbl_93_data_85C8 	.4byte 0x00000000 	.4byte fn_93_10FEC 	.4byte fn_93_10F5C 	.4byte fn_93_F2A8 	.4byte fn_93_10F60 	.4byte fn_93_10FE8 	.4byte fn_93_F2A0 	.4byte fn_93_F29C 	.4byte fn_93_F298 	.4byte fn_93_F294 	.4byte fn_93_F28C 	.4byte fn_93_F288 	.4byte fn_93_F280 	.4byte fn_93_F27C 	.4byte fn_93_F274
+data 85A0..85BC lbl_93_data_85A0 | 	.string "ftLinkStatusUniqProcessWait"
+data 85BC..85C8 lbl_93_data_85BC | 	.4byte lbl_93_data_8148 	.4byte 0x00000000 	.4byte 0x00000000
+data 85C8..85D0 lbl_93_data_85C8 | 	.4byte lbl_93_data_85A0 	.4byte lbl_93_data_85BC
+data 85D0..85DE lbl_93_data_85D0 | 	.string "LinkBoomerang"
+data 85DE..85E0 gap_04_000085DE_data | .hidden gap_04_000085DE_data 	.2byte 0x0000
+data 85E0..85E4 lbl_93_data_85E0 | 	.4byte 0xFFFFFFFF
+data 85E4..85E8 lbl_93_data_85E4 | 	.4byte 0x00000000
+data 85E8..8854 lbl_93_data_85E8 | 	.4byte lbl_93_data_7B28 	.4byte 0x00000000 	.4byte processDefault__6gfTaskFv 	.4byte processBegin__6gfTaskFv 	.4byte fn_27_4A30 	.4byte fn_27_1D9FF8 	.4byte fn_27_53B8 	.4byte fn_27_53BC 	.4byte fn_27_1DA030 	.4byte fn_27_581C 	.4byte fn_27_5A78 	.4byte fn_27_5C04 	.4byte fn_27_1DA034 	.4byte processCamera__6gfTaskFv 	.4byte fn_27_1DA038 	.4byte processEffect__6gfTaskFv 	.4byte fn_93_AE40 	.4byte fn_27_60C8 	.4byte fn_27_60D4 	.4byte renderOpa__6gfTaskFv 	.4byte renderXlu__6gfTaskFv 	.4byte fn_27_60CC 	.4byte fn_27_60D0 	.4byte init__6gfTaskFv 	.4byte fn_93_13848 	.4byte lbl_93_data_7B28 	.4byte 0xFFFFFFC0 	.4byte fn_93_149FC 	.4byte lbl_93_data_7B28 	.4byte 0xFFFFFFB8 	.4byte fn_93_AE0C 	.4byte fn_93_14A0C 	.4byte fn_93_14A04 	.4byte lbl_93_data_7B28 	.4byte 0xFFFFFFAC 	.4byte fn_93_AE20 	.4byte fn_93_14A14 	.4byte fn_27_1D9DF4 	.4byte fn_27_5538 	.4byte fn_93_144C0 	.4byte fn_27_6764 	.4byte fn_93_145DC 	.4byte fn_93_145D4 	.4byte fn_93_AE38 	.4byte fn_93_144B8 	.4byte fn_93_13DC4 	.4byte fn_93_AE34 	.4byte fn_93_144B0 	.4byte fn_27_61A4 	.4byte fn_93_14434 	.4byte fn_93_13F5C 	.4byte fn_27_1DB0F0 	.4byte fn_27_6654 	.4byte fn_27_6678 	.4byte fn_27_669C 	.4byte lbl_93_data_7B28 	.4byte 0xFFFFFF9C 	.4byte fn_93_AE44 	.4byte fn_93_14A1C 	.4byte lbl_93_data_7B28 	.4byte 0xFFFFFF90 	.4byte fn_93_AE6C 	.4byte fn_93_14A2C 	.4byte fn_93_14A24 	.4byte lbl_93_data_7B28 	.4byte 0xFFFFFF84 	.4byte fn_93_AE88 	.4byte fn_93_14A3C 	.4byte fn_93_14A34 	.4byte fn_93_145C4 	.4byte lbl_93_data_7B28 	.4byte 0xFFFFFF78 	.4byte fn_93_22F8 	.4byte lbl_93_data_7B28 	.4byte 0xFFFFFF70 	.4byte fn_93_14A44 	.4byte fn_93_14B2C 	.4byte fn_93_14B24 	.4byte fn_93_14B1C 	.4byte fn_93_14B14 	.4byte fn_93_14B0C 	.4byte fn_93_14B04 	.4byte fn_93_14AFC 	.4byte fn_93_14AF4 	.4byte fn_93_14AEC 	.4byte fn_93_14AE4 	.4byte fn_93_14ADC 	.4byte fn_93_14AD4 	.4byte fn_93_145CC 	.4byte fn_93_14ACC 	.4byte fn_93_14AC4 	.4byte fn_93_14ABC 	.4byte fn_93_14AB4 	.4byte fn_93_14AAC 	.4byte fn_93_14AA4 	.4byte fn_93_14A9C 	.4byte fn_93_14A94 	.4byte fn_93_14A8C 	.4byte fn_93_14A84 	.4byte fn_93_14A7C 	.4byte fn_93_14A74 	.4byte fn_93_14A6C 	.4byte fn_93_14A64 	.4byte fn_93_14A5C 	.4byte fn_93_145C8 	.4byte fn_93_14A54 	.4byte fn_93_14A4C 	.4byte fn_27_1D90D4 	.4byte fn_27_1DA444 	.4byte fn_27_1DA4FC 	.4byte fn_27_1DA518 	.4byte fn_27_1DA534 	.4byte fn_27_1DA550 	.4byte fn_27_1DA56C 	.4byte fn_27_1DA588 	.4byte fn_27_1DA5A4 	.4byte fn_27_1DA5C4 	.4byte fn_27_1DA690 	.4byte fn_27_1DA1F4 	.4byte fn_93_AC04 	.4byte fn_27_1DA5E0 	.4byte fn_93_AA2C 	.4byte fn_27_1DB6E8 	.4byte fn_27_1DA5FC 	.4byte fn_27_1DA618 	.4byte fn_93_1447C 	.4byte fn_27_1D90E8 	.4byte fn_27_1DB674 	.4byte fn_93_1448C 	.4byte fn_93_144A0 	.4byte fn_27_1DA968 	.4byte fn_93_13F44 	.4byte fn_27_1DB0E8 	.4byte fn_27_1DB0EC 	.4byte fn_27_1DB16C 	.4byte fn_27_1D90FC 	.4byte fn_93_145D0 	.4byte fn_93_13EF0 	.4byte fn_27_1DAE14 	.4byte fn_27_1DAE7C 	.4byte fn_27_1D8FC8 	.4byte fn_27_1DB1E8 	.4byte fn_27_1DB270 	.4byte fn_27_1DB304 	.4byte fn_27_1DB794 	.4byte fn_27_1DB33C 	.4byte fn_27_1DB358 	.4byte fn_27_1DB3B4 	.4byte fn_27_1DB3CC 	.4byte fn_27_1DB5C4 	.4byte fn_27_1DB63C 	.4byte fn_27_1DB664 	.4byte fn_27_1DB66C 	.4byte fn_27_1DB6E0 	.4byte fn_93_14918
+rodata 30..40 lbl_93_rodata_30 | 	.float 0 	.float 0.000000000000000000000000000000000000011754944 	.float 0.00000011920929 	.float 0
+rodata 40..44 lbl_93_rodata_40 | 	.float 1
+rodata 48..50 lbl_93_rodata_48 | 	.double 4503601774854144
+rodata 50..58 lbl_93_rodata_50 | 	.double 4503601774854144
+rodata 58..60 lbl_93_rodata_58 | 	.double 4503599627370496
+rodata 60..64 lbl_93_rodata_60 | 	.float 999999.9
+rodata 64..68 lbl_93_rodata_64 | 	.float 0
+rodata 68..6C lbl_93_rodata_68 | 	.float 0.000000000000000000000000000000000000011754944
+rodata 6C..78 lbl_93_rodata_6C | 	.float 1 	.float -45 	.float 45
+rodata 78..80 lbl_93_rodata_78 | 	.float 1 	.float -1
+rodata 80..88 lbl_93_rodata_80 | 	.float 0 	.float 20
+text F190..F26C fn_93_F190 | refs=__dynamic_cast,_restgpr_29,_savegpr_29,fn_27_15FBC8,getConstantFloat__15soValueAccesserFP16soModuleAccesserUlUl,lbl_93_data_3018,lbl_93_data_30FC,lbl_93_rodata_30
+text F26C..F270 fn_93_F26C | refs=
+text F270..F274 fn_93_F270 | refs=
+text F274..F27C fn_93_F274 | refs=
+text F27C..F280 fn_93_F27C | refs=
+text F280..F288 fn_93_F280 | refs=
+text F288..F28C fn_93_F288 | refs=
+text F28C..F294 fn_93_F28C | refs=
+text F294..F298 fn_93_F294 | refs=
+text F298..F29C fn_93_F298 | refs=
+text F29C..F2A0 fn_93_F29C | refs=
+text F2A0..F2A4 fn_93_F2A0 | refs=
+text F2A4..F2A8 fn_93_F2A4 | refs=
+text F2A8..F2AC fn_93_F2A8 | refs=
+text F2AC..F2EC fn_93_F2AC | refs=__dl__FPv
+text F2EC..F2F0 fn_93_F2EC | refs=
+text F2F0..F338 fn_93_F2F0 | refs=__register_global_object,fn_93_F2AC,fn_93_F338,lbl_93_bss_140,lbl_93_bss_14C
+text F338..F348 fn_93_F338 | refs=lbl_93_data_80B8
+text F348..F420 fn_93_F348 | refs=_restgpr_29,_savegpr_29,getConstantFloat__15soValueAccesserFP16soModuleAccesserUlUl,getConstantInt__15soValueAccesserFP16soModuleAccesserUlUl,lbl_93_rodata_40,lbl_93_rodata_48
+text F420..F424 fn_93_F420 | refs=
+text F424..F464 fn_93_F424 | refs=__dl__FPv
+text F464..F4AC fn_93_F464 | refs=__register_global_object,fn_93_F424,fn_93_F4AC,lbl_93_bss_150,lbl_93_bss_15C
+text F4AC..F4BC fn_93_F4AC | refs=lbl_93_data_8150
+text F4BC..F62C fn_93_F4BC | refs=__dynamic_cast,_restgpr_29,_savegpr_29,fn_27_14548C,g_ftCommonDataAccesser,lbl_93_data_337C,lbl_93_data_3BF8,lbl_93_rodata_50,lbl_93_rodata_58
+text F62C..F630 fn_93_F62C | refs=
+text F630..F6B4 fn_93_F630 | refs=g_ftCommonDataAccesser,getData__20ftCommonDataAccesserCF6ftKind
+text F6B4..F6F4 fn_93_F6B4 | refs=__dl__FPv
+text F6F4..F73C fn_93_F6F4 | refs=__register_global_object,fn_93_F6B4,fn_93_F73C,lbl_93_bss_160,lbl_93_bss_16C
+text F73C..F74C fn_93_F73C | refs=lbl_93_data_81D0
+text F74C..F750 fn_93_F74C | refs=
+text F750..F900 fn_93_F750 | refs=__dynamic_cast,_restgpr_26,_savegpr_26,lbl_93_data_337C,lbl_93_data_34EC,lbl_93_data_3BF8,lbl_93_data_8318
+text F900..F940 fn_93_F900 | refs=__dl__FPv
+text F940..F988 fn_93_F940 | refs=__register_global_object,fn_93_F900,fn_93_F988,lbl_93_bss_170,lbl_93_bss_17C
+text F988..F998 fn_93_F988 | refs=lbl_93_data_837C
+text F998..FA94 fn_93_F998 | refs=_restgpr_29,_savegpr_29,lbl_93_rodata_60
+text FA94..FC4C fn_93_FA94 | refs=_restgpr_29,_savegpr_29,fn_93_FF14,getConstantFloat__15soValueAccesserFP16soModuleAccesserUlUl,lbl_93_rodata_64,memset
+text FC4C..FCC8 fn_93_FC4C | refs=.L_0000FC88,.L_0000FCA4,_restgpr_29,_savegpr_29,fn_93_10C84,fn_93_10D18
+text FCC8..FE68 fn_93_FCC8 | refs=__dynamic_cast,_restgpr_27,_savegpr_27,fn_93_F174,fn_93_FE68,getInstance__15gfTaskSchedulerFv,getTaskById__15gfTaskSchedulerFQ26gfTask8CategoryUl,lbl_93_data_3BF8,lbl_93_data_3CF8
+text FE68..FEDC fn_93_FE68 | refs=.L_0000FEC4,lbl_93_rodata_64,lbl_93_rodata_68,rsqrtf__Ff
+text FEDC..FF14 fn_93_FEDC | refs=
+text FF14..FFF8 fn_93_FF14 | refs=__dynamic_cast,getInstance__15gfTaskSchedulerFv,getModuleAccesser__23soExternalValueAccesserFP11StageObject,getTaskById__15gfTaskSchedulerFQ26gfTask8CategoryUl,lbl_93_data_3BF8,lbl_93_data_3CF8
+text FFF8..10090 fn_93_FFF8 | refs=fn_93_10090,getConstantInt__15soValueAccesserFP16soModuleAccesserUlUl
+text 10090..100A8 fn_93_10090 | refs=
+text 100A8..10140 fn_93_100A8 | refs=fn_93_102D0
+text 10140..102D0 fn_93_10140 | refs=_restgpr_28,_savegpr_28,fn_93_10090,fn_93_102D0,fn_93_10BA0,lbl_93_rodata_6C
+text 102D0..10424 fn_93_102D0 | refs=.L_000103EC,_restgpr_29,_savegpr_29,fn_93_10424,fn_93_1054C,fn_93_F174,fn_93_FE68,lbl_93_rodata_64,lbl_93_rodata_68,rsqrtf__Ff
+text 10424..10448 fn_93_10424 | refs=
+text 10448..104C4 fn_93_10448 | refs=.L_00010484,.L_000104A0,_restgpr_29,_savegpr_29,fn_93_10C84,fn_93_10D18
+text 104C4..1054C fn_93_104C4 | refs=fn_93_10090
+text 1054C..10630 fn_93_1054C | refs=_restgpr_28,_savegpr_28,fn_93_10424,fn_93_104C4,fn_93_F174,lbl_93_rodata_64
+text 10630..106CC fn_93_10630 | refs=fn_93_10090
+text 106CC..10A34 fn_93_106CC | refs=.L_00010A1C,__dynamic_cast,_restgpr_28,_savegpr_28,fn_93_10090,lbl_93_data_3018,lbl_93_data_30FC,lbl_93_rodata_6C
+text 10A34..10AB0 fn_93_10A34 | refs=.L_00010A70,.L_00010A8C,_restgpr_29,_savegpr_29,fn_93_10C84,fn_93_10D18
+text 10AB0..10BA0 fn_93_10AB0 | refs=_restgpr_28,_savegpr_28,fn_93_10BA0,fn_93_10C84,lbl_93_rodata_64,lbl_93_rodata_6C
+text 10BA0..10C84 fn_93_10BA0 | refs=.L_00010C64,_restgpr_26,_savegpr_26,lbl_93_rodata_60
+text 10C84..10D18 fn_93_10C84 | refs=_restgpr_29,_savegpr_29
+text 10D18..10DEC fn_93_10D18 | refs=_restgpr_29,_savegpr_29
+text 10DEC..10E2C fn_93_10DEC | refs=__dl__FPv
+text 10E2C..10E6C fn_93_10E2C | refs=__dl__FPv
+text 10E6C..10EAC fn_93_10E6C | refs=__dl__FPv
+text 10EAC..10F2C fn_93_10EAC | refs=__register_global_object,fn_93_10DEC,fn_93_10E2C,fn_93_10E6C,fn_93_10F2C,fn_93_10F3C,fn_93_10F4C,lbl_93_bss_180
+text 10F2C..10F3C fn_93_10F2C | refs=lbl_93_data_84E8
+text 10F3C..10F4C fn_93_10F3C | refs=lbl_93_data_8470
+text 10F4C..10F5C fn_93_10F4C | refs=lbl_93_data_83F8
+text 10F5C..10F60 fn_93_10F5C | refs=fn_93_10F64
+text 10F60..10F64 fn_93_10F60 | refs=fn_93_10F64
+text 10F64..10FE8 fn_93_10F64 | refs=getConstantFloat__15soValueAccesserFP16soModuleAccesserUlUl
+text 10FE8..10FEC fn_93_10FE8 | refs=fn_93_10F64
+text 10FEC..1102C fn_93_10FEC | refs=__dl__FPv
+text 1102C..11074 fn_93_1102C | refs=__register_global_object,fn_93_10FEC,fn_93_11074,lbl_93_bss_1B0,lbl_93_bss_1BC
+text 11074..11084 fn_93_11074 | refs=lbl_93_data_8560
+text 11084..12978 fn_93_11084 | refs=.L_000118B0,.L_000118E0,.L_00011E34,.L_00011E64,__ct__16soHeapModuleImplFQ25Heaps8HeapTypeQ25Heaps8HeapTypeQ25Heaps8HeapTypel,__ct__16soModuleAccesserFP11StageObjectP16soResourceModuleP13soModelModuleP14soMotionModuleP15soPostureModuleP14soGroundModuleP17soSituationModulePvP23soCollisionAttackModuleP20soCollisionHitModuleP23soCollisionShieldModuleP23soCollisionShieldModuleP23soCollisionShieldModulePvP23soCollisionSearchModuleP14soDamageModulePvPvP12soStopModulePvPvP13soSoundModuleP12soLinkModuleP18soVisibilityModuleP18soControllerModuleP14soCameraModuleP18soWorkManageModulePvP15soAnimCmdModuleP14soStatusModulePvPvP15soKineticModuleP19soEventManageModulePvP14soEffectModulePvP12soAreaModulePvPvPvPvP14soShadowModuleP18soItemManageModuleP18soColorBlendModulePvPvP12soSlowModulePvPvP22soParamCustomizeModulePv,__ct__16soStopModuleImplFP16soModuleAccesser,__ct__17soModelModuleImplFP16soModuleAccesserP27soArray<16soModelNodeSetUp>PvP29soArray<18soModelVirtualNode>P31soEventObserverRegistrationDescf,__ct__19soPostureModuleImplFP16soModuleAccesserP34soArray<23soInterpolation<5Vec3f>>P31soEventObserverRegistrationDesc,__ct__20soResourceModuleImplFUlP20soResourceIdAccesserUc,__ct__21soCollisionAttackPartFQ211soCollision8Categoryb,__ct__23soEventManageModuleImplFPv,__ct__27soCollisionAttackModuleImplFP16soModuleAccesseriQ26gfTask8CategoryP32soArray<21soCollisionAttackPart>P27soArray<16soCollisionGroup>P36soArray<25soCollisionAttackAbsolute>P31soEventObserverRegistrationDescb,__ct__49soEventUnitWithWorkArea<20soModelEventObserver,4>Fss,__ct__50soEventUnitWithWorkArea<21soDamageEventObserver,4>Fss,__ct__50soEventUnitWithWorkArea<21soMotionEventObserver,1>Fss,__ct__51soEventUnitWithWorkArea<22soCaptureEventObserver,4>Fss,__ct__53soEventUnitWithWorkArea<24soSituationEventObserver,4>Fss,__ct__54soEventUnitWithWorkArea<25soItemManageEventObserver,1>Fss,__ct__56soEventUnitWithWorkArea<27soCollisionHitEventObserver,4>Fss,__ct__59soEventUnitWithWorkArea<30soCollisionAttackEventObserver,4>Fss,__ct__59soEventUnitWithWorkArea<30soCollisionSearchEventObserver,4>Fss,__ct__59soEventUnitWithWorkArea<30soCollisionShieldEventObserver,4>Fss,__ct__61soEventUnitWithWorkArea<32soCollisionAbsorberEventObserver,4>Fss,__ct__62soEventUnitWithWorkArea<33soCollisionReflectorEventObserver,4>Fss,__ct__98soInstanceManagerSimpleEntity<P11soEventUnit,50soArrayVector<30soInstanceUnit<P11soEventUnit>,19>>Fv,__dt__21soCollisionAttackPartFv,__register_global_object,_restgpr_20,_savegpr_20,fn_27_13844,fn_27_197C08,fn_27_197C18,fn_27_197C28,fn_27_197C78,fn_27_19C940,fn_27_1A00F4,fn_27_1A1E04,fn_27_1A29F0,fn_27_1A4754,fn_27_1A9430,fn_27_1AA1F4,fn_27_1AA878,fn_27_1AC390,fn_27_1AEB6C,fn_27_1D7EF0,fn_27_1D8FC8,fn_27_1D90FC,fn_27_1DBA64,fn_27_1DBE08,fn_27_1DC5E8,fn_27_2556C,fn_27_561E0,fn_27_57FC8,fn_27_5C600,fn_27_63B94,fn_27_687F8,fn_27_6A244,fn_27_711E4,fn_27_73930,fn_27_82754,fn_27_82794,fn_27_82A14,fn_27_82A94,fn_27_82B14,fn_27_82C54,fn_27_9747C,fn_27_A1DA4,fn_27_AB15C,fn_27_AB18C,fn_27_B5048,fn_27_BEBB4,fn_27_C319C,fn_27_C7470,fn_27_C74BC,fn_27_C7744,fn_27_C948C,fn_27_C94AC,fn_27_C94E0,fn_27_C9FE4,fn_27_CB6E0,fn_27_CBAA0,fn_27_CBD88,fn_27_CBEC8,fn_27_CC060,fn_27_CD8C8,fn_27_D22D0,fn_27_D2A38,fn_27_D37BC,fn_27_D5878,fn_93_12C58,fn_93_12D0C,fn_93_1AC4,fn_93_2C68,fn_93_47AC,fn_93_8870,fn_93_888C,fn_93_AC0C,lbl_27_bss_170,lbl_27_bss_188,lbl_27_bss_298,lbl_27_bss_35C,lbl_27_bss_398,lbl_27_bss_3AC,lbl_27_bss_3BC,lbl_27_bss_3CC,lbl_27_bss_3DC,lbl_27_bss_3F4,lbl_27_bss_404,lbl_27_bss_424,lbl_27_bss_46C,lbl_27_bss_47C,lbl_27_bss_48C,lbl_27_bss_4BC,lbl_27_bss_55C,lbl_27_bss_584,lbl_27_bss_598,lbl_27_bss_5B0,lbl_27_bss_5D8,lbl_27_bss_5EC,lbl_27_bss_604,lbl_27_bss_614,lbl_27_bss_628,lbl_27_bss_654,lbl_27_bss_66C,lbl_27_bss_8C4,lbl_27_bss_9BC,lbl_27_bss_A48,lbl_27_bss_D8C,lbl_27_bss_DBC,lbl_27_data_13730,lbl_93_bss_1D8,lbl_93_bss_1E4,lbl_93_bss_1F0,lbl_93_bss_1FC,lbl_93_bss_208,lbl_93_bss_214,lbl_93_bss_238,lbl_93_bss_23C,lbl_93_bss_240,lbl_93_bss_244,lbl_93_bss_248,lbl_93_bss_24C,lbl_93_bss_250,lbl_93_bss_254,lbl_93_bss_258,lbl_93_bss_25C,lbl_93_bss_260,lbl_93_bss_264,lbl_93_bss_274,lbl_93_bss_284,lbl_93_data_85D0,lbl_93_data_85E0,lbl_93_data_85E4,lbl_93_data_85E8,lbl_93_data_8854,lbl_93_data_8AC0,lbl_93_data_8B74,lbl_93_data_8CA0,lbl_93_data_8CF8,lbl_93_rodata_78

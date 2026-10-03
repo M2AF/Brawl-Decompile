@@ -1,0 +1,37 @@
+data 5E50..5E90 __vt__47ftMetaknightStatusUniqProcessFinalAttackGallery
+	.4byte __RTTI__47ftMetaknightStatusUniqProcessFinalAttackGallery
+	.4byte 0x00000000
+	.4byte __dt__47ftMetaknightStatusUniqProcessFinalAttackGalleryFv
+	.4byte initStatus__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte exitStatus__47ftMetaknightStatusUniqProcessFinalAttackGalleryFP16soModuleAccesseri
+	.4byte execStatus__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execStop__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execFixPosCounter__47ftMetaknightStatusUniqProcessFinalAttackGalleryFP16soModuleAccesser
+	.4byte execFixPos__47ftMetaknightStatusUniqProcessFinalAttackGalleryFP16soModuleAccesser
+	.4byte execFixCamera__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv
+	.4byte checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf
+	.4byte onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff
+	.4byte leaveStop__19soStatusUniqProcessFP16soModuleAccesserib
+	.4byte checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi
+
+data 5E90..5EC0 lbl_111_data_5E90
+	.string "ftMetaknightStatusUniqProcessFinalAttackGallery"
+
+data 5EC0..5ECC lbl_111_data_5EC0
+	.4byte __RTTI__19soStatusUniqProcess
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 5ECC..5ED8 __RTTI__47ftMetaknightStatusUniqProcessFinalAttackGallery
+	.4byte lbl_111_data_5E90
+	.4byte lbl_111_data_5EC0
+	.4byte 0x00000000
+
+rodata 30..40 lbl_111_rodata_30
+	.float 1
+	.float 360
+	.float 0
+	.float 0.000000000000000000000000000000000000000000001
+

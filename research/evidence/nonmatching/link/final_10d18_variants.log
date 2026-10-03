@@ -1,0 +1,9 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex10 (codex/link)
+base                         fn_93_10D18: 2 diff lines, functions matching 27/30
+bool_local                   fn_93_10D18: 2 diff lines, functions matching 27/30
+unsigned_local               fn_93_10D18: 2 diff lines, functions matching 27/30
+bool_arguments               fn_93_10D18: 2 diff lines, functions matching 27/30
+short_local                  fn_93_10D18: 2 diff lines, functions matching 27/30
+inline_vtable_null           fn_93_10D18: 2 diff lines, functions matching 27/30
+enum_local                   fn_93_10D18: 2 diff lines, functions matching 27/30
+Best: base (2), bool_arguments (2), bool_local (2)

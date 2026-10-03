@@ -1,0 +1,60 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex9 (codex/mk-finals)
+DIFF initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser 78 78
+    --- target
+    +++ candidate
+    @@ -25,5 +25,5 @@
+     addi    r4,r1,8
+     bl <addr>
+    -mr      r30,r3
+    +mr      r29,r3
+     lwz     r3,216(r26)
+     lwz     r3,100(r3)
+    @@ -33,13 +33,13 @@
+     mtctr   r12
+     bctrl
+    -mr      r31,r3
+    +mr      r30,r3
+     li      r27,0
+     b <addr>
+    -slwi    r29,r27,2
+    -addi    r28,r1,8
+    -lwzx    r0,r28,r29
+    -cmpw    r31,r0
+    +slwi    r28,r27,2
+    +addi    r31,r1,8
+    +lwzx    r0,r31,r28
+    +cmpw    r30,r0
+     beq <addr>
+    -lwzx    r3,r28,r29
+    +lwzx    r3,r31,r28
+     mr      r4,r26
+     bl <addr>
+    @@ -53,5 +53,5 @@
+     lwz     r3,216(r26)
+     lwz     r3,100(r3)
+    -lwzx    r4,r28,r29
+    +lwzx    r4,r31,r28
+     lwz     r12,0(r3)
+     lwz     r12,28(r12)
+    @@ -67,5 +67,5 @@
+     bctrl
+     addi    r27,r27,1
+    -cmpw    r27,r30
+    +cmpw    r27,r29
+     blt <addr>
+     mr      r3,r26
+SAME execFixPos__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser execFixPos__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser 1 1
+SAME exitStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesseri exitStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesseri 18 18
+SAME ftMetaknightFinalFindUnusedEntry__FP16soModuleAccesser ftMetaknightFinalFindUnusedEntry__FP16soModuleAccesser 32 32
+SAME ftMetaknightFinalHasLinkedEntry__FiP16soModuleAccesser ftMetaknightFinalHasLinkedEntry__FiP16soModuleAccesser 56 56
+SAME ftMetaknightFinalSendLinkEvent__FP16soModuleAccesser ftMetaknightFinalSendLinkEvent__FP16soModuleAccesser 38 38
+SAME ftMetaknightFinalUnlink__FP16soModuleAccesser ftMetaknightFinalUnlink__FP16soModuleAccesser 33 33
+SAME ftMetaknightFinalUpdateCamera__FP16soModuleAccesser ftMetaknightFinalUpdateCamera__FP16soModuleAccesser 81 81
+SAME ftMetaknightFinalMergeCameraRect__FRC6Rect2DRC6Rect2D ftMetaknightFinalMergeCameraRect__FRC6Rect2DRC6Rect2D 39 39
+SAME __dt__41ftMetaknightStatusUniqProcessFinalHitWaitFv __dt__41ftMetaknightStatusUniqProcessFinalHitWaitFv 16 16
+SAME __sinit_\ft_metaknight_status_uniq_process_final_hit_wait_cpp __sinit_\ft_metaknight_status_uniq_process_final_hit_wait_cpp 18 18
+SAME __ct__41ftMetaknightStatusUniqProcessFinalHitWaitFv __ct__41ftMetaknightStatusUniqProcessFinalHitWaitFv 4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, execStatus__19soStatusUniqProcessFP16soModuleAccesser, __dt__19soStatusUniqProcessFv, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+DIFF section .data: target 128 bytes, candidate 220 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 11/12. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

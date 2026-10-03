@@ -1,0 +1,224 @@
+[
+  {
+    "name": "Fighter",
+    "old": "__RTTI__7Fighter",
+    "new": "__RTTI__7Fighter",
+    "address": "0x337c"
+  },
+  {
+    "name": "StageObject",
+    "old": "__RTTI__11StageObject",
+    "new": "__RTTI__11StageObject",
+    "address": "0x3bf8"
+  },
+  {
+    "name": "ftLinkStatusUniqProcessSpecialBoomerang",
+    "old": "__RTTI__39ftLinkStatusUniqProcessSpecialBoomerang",
+    "new": "__RTTI__39ftLinkStatusUniqProcessSpecialBoomerang",
+    "address": "0x8244"
+  },
+  {
+    "name": "soStatusUniqProcess",
+    "old": "__RTTI__19soStatusUniqProcess",
+    "new": "__RTTI__19soStatusUniqProcess",
+    "address": "0x8148"
+  },
+  {
+    "name": "gfTask",
+    "old": "lbl_93_data_3CF8",
+    "new": "__RTTI__6gfTask",
+    "address": "0x3cf8"
+  },
+  {
+    "name": "soAnimCmdEventObserver",
+    "old": "lbl_93_data_3C7C",
+    "new": "__RTTI__22soAnimCmdEventObserver",
+    "address": "0x3c7c"
+  },
+  {
+    "name": "soEventObserver<soAnimCmdEventObserver>",
+    "old": "lbl_93_data_3CAC",
+    "new": "__RTTI__41soEventObserver<22soAnimCmdEventObserver>",
+    "address": "0x3cac"
+  },
+  {
+    "name": "soLinkEventObserver",
+    "old": "lbl_93_data_3C20",
+    "new": "__RTTI__19soLinkEventObserver",
+    "address": "0x3c20"
+  },
+  {
+    "name": "soEventObserver<soLinkEventObserver>",
+    "old": "lbl_93_data_3C50",
+    "new": "__RTTI__38soEventObserver<19soLinkEventObserver>",
+    "address": "0x3c50"
+  },
+  {
+    "name": "soStatusEventObserver",
+    "old": "lbl_93_data_36A8",
+    "new": "__RTTI__21soStatusEventObserver",
+    "address": "0x36a8"
+  },
+  {
+    "name": "soEventObserver<soStatusEventObserver>",
+    "old": "lbl_93_data_36D8",
+    "new": "__RTTI__40soEventObserver<21soStatusEventObserver>",
+    "address": "0x36d8"
+  },
+  {
+    "name": "soSituationEventObserver",
+    "old": "lbl_93_data_39F8",
+    "new": "__RTTI__24soSituationEventObserver",
+    "address": "0x39f8"
+  },
+  {
+    "name": "soEventObserver<soSituationEventObserver>",
+    "old": "lbl_93_data_3A2C",
+    "new": "__RTTI__43soEventObserver<24soSituationEventObserver>",
+    "address": "0x3a2c"
+  },
+  {
+    "name": "soCollisionAttackEventObserver",
+    "old": "lbl_93_data_3934",
+    "new": "__RTTI__30soCollisionAttackEventObserver",
+    "address": "0x3934"
+  },
+  {
+    "name": "soEventObserver<soCollisionAttackEventObserver>",
+    "old": "lbl_93_data_396C",
+    "new": "__RTTI__49soEventObserver<30soCollisionAttackEventObserver>",
+    "address": "0x396c"
+  },
+  {
+    "name": "soCollisionHitEventObserver",
+    "old": "lbl_93_data_38C8",
+    "new": "__RTTI__27soCollisionHitEventObserver",
+    "address": "0x38c8"
+  },
+  {
+    "name": "soEventObserver<soCollisionHitEventObserver>",
+    "old": "lbl_93_data_3900",
+    "new": "__RTTI__46soEventObserver<27soCollisionHitEventObserver>",
+    "address": "0x3900"
+  },
+  {
+    "name": "soCollisionShieldEventObserver",
+    "old": "lbl_93_data_3860",
+    "new": "__RTTI__30soCollisionShieldEventObserver",
+    "address": "0x3860"
+  },
+  {
+    "name": "soEventObserver<soCollisionShieldEventObserver>",
+    "old": "lbl_93_data_3898",
+    "new": "__RTTI__49soEventObserver<30soCollisionShieldEventObserver>",
+    "address": "0x3898"
+  },
+  {
+    "name": "soCollisionReflectorEventObserver",
+    "old": "lbl_93_data_37F0",
+    "new": "__RTTI__33soCollisionReflectorEventObserver",
+    "address": "0x37f0"
+  },
+  {
+    "name": "soEventObserver<soCollisionReflectorEventObserver>",
+    "old": "lbl_93_data_382C",
+    "new": "__RTTI__52soEventObserver<33soCollisionReflectorEventObserver>",
+    "address": "0x382c"
+  },
+  {
+    "name": "soCollisionAbsorberEventObserver",
+    "old": "lbl_93_data_377C",
+    "new": "__RTTI__32soCollisionAbsorberEventObserver",
+    "address": "0x377c"
+  },
+  {
+    "name": "soEventObserver<soCollisionAbsorberEventObserver>",
+    "old": "lbl_93_data_37B8",
+    "new": "__RTTI__51soEventObserver<32soCollisionAbsorberEventObserver>",
+    "address": "0x37b8"
+  },
+  {
+    "name": "soCollisionSearchEventObserver",
+    "old": "lbl_93_data_370C",
+    "new": "__RTTI__30soCollisionSearchEventObserver",
+    "address": "0x370c"
+  },
+  {
+    "name": "soEventObserver<soCollisionSearchEventObserver>",
+    "old": "lbl_93_data_3744",
+    "new": "__RTTI__49soEventObserver<30soCollisionSearchEventObserver>",
+    "address": "0x3744"
+  },
+  {
+    "name": "soCaptureEventObserver",
+    "old": "lbl_93_data_3998",
+    "new": "__RTTI__22soCaptureEventObserver",
+    "address": "0x3998"
+  },
+  {
+    "name": "soEventObserver<soCaptureEventObserver>",
+    "old": "lbl_93_data_39C8",
+    "new": "__RTTI__41soEventObserver<22soCaptureEventObserver>",
+    "address": "0x39c8"
+  },
+  {
+    "name": "soItemManageEventObserver",
+    "old": "lbl_93_data_3490",
+    "new": "__RTTI__25soItemManageEventObserver",
+    "address": "0x3490"
+  },
+  {
+    "name": "soEventObserver<soItemManageEventObserver>",
+    "old": "lbl_93_data_34C4",
+    "new": "__RTTI__44soEventObserver<25soItemManageEventObserver>",
+    "address": "0x34c4"
+  },
+  {
+    "name": "soMotionEventObserver",
+    "old": "lbl_93_data_3414",
+    "new": "__RTTI__21soMotionEventObserver",
+    "address": "0x3414"
+  },
+  {
+    "name": "soEventObserver<soMotionEventObserver>",
+    "old": "lbl_93_data_3444",
+    "new": "__RTTI__40soEventObserver<21soMotionEventObserver>",
+    "address": "0x3444"
+  },
+  {
+    "name": "soDamageEventObserver",
+    "old": "lbl_93_data_3AB4",
+    "new": "__RTTI__21soDamageEventObserver",
+    "address": "0x3ab4"
+  },
+  {
+    "name": "soEventObserver<soDamageEventObserver>",
+    "old": "lbl_93_data_3AE4",
+    "new": "__RTTI__40soEventObserver<21soDamageEventObserver>",
+    "address": "0x3ae4"
+  },
+  {
+    "name": "ftEntryEventObserver",
+    "old": "lbl_93_data_3A58",
+    "new": "__RTTI__20ftEntryEventObserver",
+    "address": "0x3a58"
+  },
+  {
+    "name": "soEventObserver<ftEntryEventObserver>",
+    "old": "lbl_93_data_3A88",
+    "new": "__RTTI__39soEventObserver<20ftEntryEventObserver>",
+    "address": "0x3a88"
+  },
+  {
+    "name": "soTurnEventObserver",
+    "old": "lbl_93_data_33A4",
+    "new": "__RTTI__19soTurnEventObserver",
+    "address": "0x33a4"
+  },
+  {
+    "name": "soEventObserver<soTurnEventObserver>",
+    "old": "lbl_93_data_33D4",
+    "new": "__RTTI__38soEventObserver<19soTurnEventObserver>",
+    "address": "0x33d4"
+  }
+]

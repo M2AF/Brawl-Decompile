@@ -1,0 +1,8 @@
+Collecting pyelftools
+  Downloading pyelftools-0.33-py3-none-any.whl.metadata (1.0 kB)
+Downloading pyelftools-0.33-py3-none-any.whl (201 kB)
+Installing collected packages: pyelftools
+Successfully installed pyelftools-0.33
+
+[notice] A new release of pip is available: 26.1.2 -> 26.2.1
+[notice] To update, run: C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe -m pip install --upgrade pip

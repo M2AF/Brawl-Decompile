@@ -1,0 +1,14 @@
+{
+  "lbl_93_data_8318": "__RTTI__8BaseItem",
+  "lbl_93_data_34EC": "__RTTI__9soArticle",
+  "lbl_93_data_8344": "__RTTI__22soGimmickEventObserver",
+  "lbl_93_data_8374": "__RTTI__41soEventObserver<22soGimmickEventObserver>",
+  "lbl_93_data_3CCC": "__RTTI__10soNullable",
+  "lbl_93_data_3520": "__RTTI__42soEventPresenter<22soArticleEventObserver>"
+}
+lbl_93_data_8318 -> __RTTI__8BaseItem
+lbl_93_data_34EC -> __RTTI__9soArticle
+lbl_93_data_8344 -> __RTTI__22soGimmickEventObserver
+lbl_93_data_8374 -> __RTTI__41soEventObserver<22soGimmickEventObserver>
+lbl_93_data_3CCC -> __RTTI__10soNullable
+lbl_93_data_3520 -> __RTTI__42soEventPresenter<22soArticleEventObserver>

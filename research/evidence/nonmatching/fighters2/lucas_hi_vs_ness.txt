@@ -1,0 +1,65 @@
+--- 
+
++++ 
+
+@@ -6,7 +6,7 @@
+
+ lwz r31, 0x64(r3)
+ lis r3, g_ftCommonDataAccesser@ha
+ addi r3, r3, g_ftCommonDataAccesser@l
+-li r4, 0xa
++li r4, 0x1a
+ bl getData__20ftCommonDataAccesserCF6ftKind
+ mr r3, r31
+ li r4, 0x1
+@@ -52,7 +52,7 @@
+
+ beq LABEL
+ lis r3, g_ftCommonDataAccesser@ha
+ addi r3, r3, g_ftCommonDataAccesser@l
+-li r4, 0xa
++li r4, 0x1a
+ bl getData__20ftCommonDataAccesserCF6ftKind
+ lwz r23, 0x84(r3)
+ li r22, 0x0
+@@ -320,7 +320,7 @@
+
+ bne LABEL
+ lis r3, g_ftCommonDataAccesser@ha
+ addi r3, r3, g_ftCommonDataAccesser@l
+-li r4, 0xa
++li r4, 0x1a
+ bl getData__20ftCommonDataAccesserCF6ftKind
+ addi r11, r1, 0x20
+ bl _restgpr_29
+@@ -348,12 +348,12 @@
+
+ mflr r0
+ stw r0, 0x14(r1)
+ stw r31, 0xc(r1)
+-lis r31, g_ftFighterStatusUniqProcessSpecialHi@ha
+-addi r3, r31, g_ftFighterStatusUniqProcessSpecialHi@l
+-bl __ct__32ftFighterStatusUniqProcessSpecialHiFv
+-addi r3, r31, g_ftFighterStatusUniqProcessSpecialHi@l
+-lis r4, __dt__32ftFighterStatusUniqProcessSpecialHiFv@ha
+-addi r4, r4, __dt__32ftFighterStatusUniqProcessSpecialHiFv@l
++lis r31, BSS@ha
++addi r3, r31, BSS@l
++bl MODULE_FN
++addi r3, r31, BSS@l
++lis r4, MODULE_FN@ha
++addi r4, r4, MODULE_FN@l
+ lis r5, BSS@ha
+ addi r5, r5, BSS@l
+ bl __register_global_object
+@@ -362,7 +362,7 @@
+
+ mtlr r0
+ addi r1, r1, 0x10
+ blr
+-lis r4, __vt__32ftFighterStatusUniqProcessSpecialHi@ha
+-addi r4, r4, __vt__32ftFighterStatusUniqProcessSpecialHi@l
++lis r4, DATA@ha
++addi r4, r4, DATA@l
+ stw r4, 0x0(r3)
+ blr

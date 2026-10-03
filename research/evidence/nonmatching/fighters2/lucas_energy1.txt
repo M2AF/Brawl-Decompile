@@ -1,0 +1,69 @@
+data 31B0..31C0 lbl_114_data_31B0
+	.string "soKineticEnergy"
+
+data 31C0..31DC lbl_114_data_31C0
+	.4byte lbl_114_data_31F4
+	.4byte 0x00000006
+	.4byte lbl_114_data_346C
+	.4byte 0x00000005
+	.4byte lbl_114_data_3D60
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 31DC..31E4 lbl_114_data_31DC
+	.4byte lbl_114_data_31B0
+	.4byte lbl_114_data_31C0
+
+data 31E4..31F2 lbl_114_data_31E4
+	.string "soSuspendable"
+
+data 31F2..31F4 gap_04_000031F2_data
+.hidden gap_04_000031F2_data
+	.2byte 0x0000
+
+data 31F4..31FC lbl_114_data_31F4
+	.4byte lbl_114_data_31E4
+	.4byte 0x00000000
+
+data 31FC..320F lbl_114_data_31FC
+	.string "soInstancePoolRoot"
+
+data 320F..3210 gap_04_0000320F_data
+.hidden gap_04_0000320F_data
+	.byte 0x00
+
+data 3210..3218 lbl_114_data_3210
+	.4byte lbl_114_data_31FC
+	.4byte 0x00000000
+
+data 3218..3288 lbl_114_data_3218
+	.4byte lbl_114_data_32B0
+	.4byte 0x00000000
+	.4byte lbl_114_data_32B0
+	.4byte 0x00000000
+	.4byte fn_114_8BC0
+	.4byte fn_114_CF48
+	.4byte fn_114_CF38
+	.4byte fn_114_CF20
+	.4byte fn_114_CF08
+	.4byte fn_114_CEF0
+	.4byte fn_114_CED0
+	.4byte fn_114_CEB8
+	.4byte fn_114_CEA0
+	.4byte fn_114_CE98
+	.4byte fn_114_CE88
+	.4byte fn_114_CE78
+	.4byte fn_114_CE60
+	.4byte fn_114_CE48
+	.4byte fn_114_CE30
+	.4byte fn_114_CE08
+	.4byte fn_114_CE00
+	.4byte fn_114_CDE8
+	.4byte fn_114_CDBC
+	.4byte fn_114_CDD4
+	.4byte fn_114_CDA0
+	.4byte fn_114_CD2C
+	.4byte fn_114_CD24
+	.4byte fn_114_9E24
+
+

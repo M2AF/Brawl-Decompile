@@ -1,0 +1,6 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+base                         execFixPosCounter__39ftLucasStatusUniqProcessSpecialHiAttackFP16soModuleAccesser: 36 diff lines, functions matching 9/10
+assign_touch_after_normal    execFixPosCounter__39ftLucasStatusUniqProcessSpecialHiAttackFP16soModuleAccesser: 36 diff lines, functions matching 9/10
+explicit_reflection_temps    execFixPosCounter__39ftLucasStatusUniqProcessSpecialHiAttackFP16soModuleAccesser: 170 diff lines, functions matching 9/10
+reflection_reference         execFixPosCounter__39ftLucasStatusUniqProcessSpecialHiAttackFP16soModuleAccesser: 36 diff lines, functions matching 9/10
+Best: assign_touch_after_normal (36), base (36), reflection_reference (36)

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "StageObject",
+    "old": "__RTTI__11StageObject",
+    "new": "__RTTI__11StageObject",
+    "address": "0x3bf8"
+  },
+  {
+    "name": "gfTask",
+    "old": "__RTTI__6gfTask",
+    "new": "__RTTI__6gfTask",
+    "address": "0x3cf8"
+  },
+  {
+    "name": "ftKineticEnergyGravity",
+    "old": "lbl_93_data_3018",
+    "new": "__RTTI__22ftKineticEnergyGravity",
+    "address": "0x3018"
+  },
+  {
+    "name": "soKineticEnergy",
+    "old": "__RTTI__15soKineticEnergy",
+    "new": "__RTTI__15soKineticEnergy",
+    "address": "0x30fc"
+  },
+  {
+    "name": "ftLinkStatusUniqProcessFinalCombo",
+    "old": "__RTTI__33ftLinkStatusUniqProcessFinalCombo",
+    "new": "__RTTI__33ftLinkStatusUniqProcessFinalCombo",
+    "address": "0x8468"
+  },
+  {
+    "name": "soStatusUniqProcess",
+    "old": "__RTTI__19soStatusUniqProcess",
+    "new": "__RTTI__19soStatusUniqProcess",
+    "address": "0x8148"
+  },
+  {
+    "name": "ftLinkStatusUniqProcessFinalDash",
+    "old": "__RTTI__32ftLinkStatusUniqProcessFinalDash",
+    "new": "__RTTI__32ftLinkStatusUniqProcessFinalDash",
+    "address": "0x84e0"
+  },
+  {
+    "name": "ftLinkStatusUniqProcessFinal",
+    "old": "__RTTI__28ftLinkStatusUniqProcessFinal",
+    "new": "__RTTI__28ftLinkStatusUniqProcessFinal",
+    "address": "0x8554"
+  },
+  {
+    "name": "soNullable",
+    "old": "__RTTI__10soNullable",
+    "new": "__RTTI__10soNullable",
+    "address": "0x3ccc"
+  },
+  {
+    "name": "soEnable",
+    "old": "__RTTI__8soEnable",
+    "new": "__RTTI__8soEnable",
+    "address": "0x33e8"
+  },
+  {
+    "name": "soSuspendable",
+    "old": "__RTTI__13soSuspendable",
+    "new": "__RTTI__13soSuspendable",
+    "address": "0x3114"
+  },
+  {
+    "name": "soAnimCmdEventObserver",
+    "old": "__RTTI__22soAnimCmdEventObserver",
+    "new": "__RTTI__22soAnimCmdEventObserver",
+    "address": "0x3c7c"
+  },
+  {
+    "name": "soEventObserver<soAnimCmdEventObserver>",
+    "old": "__RTTI__41soEventObserver<22soAnimCmdEventObserver>",
+    "new": "__RTTI__41soEventObserver<22soAnimCmdEventObserver>",
+    "address": "0x3cac"
+  },
+  {
+    "name": "soLinkEventObserver",
+    "old": "__RTTI__19soLinkEventObserver",
+    "new": "__RTTI__19soLinkEventObserver",
+    "address": "0x3c20"
+  },
+  {
+    "name": "soEventObserver<soLinkEventObserver>",
+    "old": "__RTTI__38soEventObserver<19soLinkEventObserver>",
+    "new": "__RTTI__38soEventObserver<19soLinkEventObserver>",
+    "address": "0x3c50"
+  }
+]

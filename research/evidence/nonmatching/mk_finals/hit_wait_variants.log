@@ -1,0 +1,7 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex9 (codex/mk-finals)
+base                         initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 5 diff lines, functions matching 11/12
+continue_self                initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 5 diff lines, functions matching 11/12
+volatile_comparison_view     initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 18 diff lines, functions matching 11/12
+entry_reference              initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 5 diff lines, functions matching 11/12
+comparison_local             initStatus__41ftMetaknightStatusUniqProcessFinalHitWaitFP16soModuleAccesser: 5 diff lines, functions matching 11/12
+Best: base (5), comparison_local (5), continue_self (5)

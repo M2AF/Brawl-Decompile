@@ -1,0 +1,6 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+base                         initStatus__32ftLucasStatusUniqProcessAirLassoFP16soModuleAccesser: 4 diff lines, functions matching 4/5
+local_frame                  initStatus__32ftLucasStatusUniqProcessAirLassoFP16soModuleAccesser: 4 diff lines, functions matching 4/5
+volatile_frame               initStatus__32ftLucasStatusUniqProcessAirLassoFP16soModuleAccesser: 34 diff lines, functions matching 4/5
+local_rate                   initStatus__32ftLucasStatusUniqProcessAirLassoFP16soModuleAccesser: 4 diff lines, functions matching 4/5
+Best: base (4), local_frame (4), local_rate (4)

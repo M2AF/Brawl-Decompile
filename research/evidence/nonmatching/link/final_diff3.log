@@ -1,0 +1,283 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex10 (codex/link)
+SAME initStatus__28ftLinkStatusUniqProcessFinalFP16soModuleAccesser initStatus__28ftLinkStatusUniqProcessFinalFP16soModuleAccesser 63 63
+SAME execFixPos__28ftLinkStatusUniqProcessFinalFP16soModuleAccesser execFixPos__28ftLinkStatusUniqProcessFinalFP16soModuleAccesser 110 110
+SAME exitStatus__28ftLinkStatusUniqProcessFinalFP16soModuleAccesseri exitStatus__28ftLinkStatusUniqProcessFinalFP16soModuleAccesseri 31 31
+DIFF fn_93_FCC8                               fn_93_FCC8                                    104 104
+    --- target
+    +++ candidate
+    @@ -22,7 +22,7 @@
+     extsh   r7,r0
+     bl <addr>
+    -mr      r29,r3
+    +mr      r30,r3
+     lwz     r3,216(r28)
+    -lwz     r30,100(r3)
+    +lwz     r29,100(r3)
+     lwz     r31,4(r3)
+     mr      r3,r31
+    @@ -54,8 +54,8 @@
+     bl <addr>
+     fmr     f31,f1
+    -mr      r3,r30
+    +mr      r3,r29
+     lis     r31,8448
+     addi    r4,r31,4
+    -lwz     r12,0(r30)
+    +lwz     r12,0(r29)
+     lwz     r12,56(r12)
+     mtctr   r12
+    @@ -65,5 +65,5 @@
+     lwz     r3,216(r28)
+     lwz     r3,16(r3)
+    -mr      r4,r29
+    +mr      r4,r30
+     li      r5,0
+     lwz     r12,8(r3)
+    @@ -73,23 +73,23 @@
+     cmpwi   r3,0
+     bne <addr>
+    -mr      r3,r30
+    +mr      r3,r29
+     lwz     r4,12(r27)
+     lis     r5,8192
+     addi    r5,r5,3
+    -lwz     r12,0(r30)
+    +lwz     r12,0(r29)
+     lwz     r12,28(r12)
+     mtctr   r12
+     bctrl
+    -mr      r3,r30
+    +mr      r3,r29
+     fmr     f1,f31
+     addi    r4,r31,4
+    -lwz     r12,0(r30)
+    +lwz     r12,0(r29)
+     lwz     r12,60(r12)
+     mtctr   r12
+     bctrl
+    -mr      r3,r30
+    +mr      r3,r29
+     lis     r4,8704
+     addi    r4,r4,25
+    -lwz     r12,0(r30)
+    +lwz     r12,0(r29)
+     lwz     r12,80(r12)
+     mtctr   r12
+SAME fn_93_FE68                               fn_93_FE68                                    29 29
+SAME fn_93_FEDC                               fn_93_FEDC                                    14 14
+DIFF fn_93_FF14                               fn_93_FF14                                    57 57
+    --- target
+    +++ candidate
+    @@ -33,7 +33,7 @@
+     bl <addr>
+     mr      r5,r3
+    -lwz     r4,216(r3)
+    -lwz     r3,112(r4)
+    -lwz     r31,64(r4)
+    +lwz     r3,216(r3)
+    +lwz     r31,64(r3)
+    +lwz     r3,112(r3)
+     li      r4,237
+     lwz     r12,0(r3)
+    @@ -41,7 +41,7 @@
+     mtctr   r12
+     bctrl
+    -lwz     r3,8(r30)
+    -lwz     r4,40(r3)
+     mr      r3,r31
+    +lwz     r4,8(r30)
+    +lwz     r4,40(r4)
+     li      r5,237
+     li      r6,0
+SAME initStatus__32ftLinkStatusUniqProcessFinalDashFP16soModuleAccesser initStatus__32ftLinkStatusUniqProcessFinalDashFP16soModuleAccesser 38 38
+SAME __ct__14LinkFinalEventFv                 __ct__14LinkFinalEventFv                      6 6
+SAME execStatus__32ftLinkStatusUniqProcessFinalDashFP16soModuleAccesser execStatus__32ftLinkStatusUniqProcessFinalDashFP16soModuleAccesser 38 38
+DIFF execFixPos__32ftLinkStatusUniqProcessFinalDashFP16soModuleAccesser execFixPos__32ftLinkStatusUniqProcessFinalDashFP16soModuleAccesser 100 100
+    --- target
+    +++ candidate
+    @@ -48,6 +48,6 @@
+     lwz     r29,136(r3)
+     mr      r3,r28
+    -addi    r4,r1,16
+    -addi    r5,r1,28
+    +addi    r4,r1,28
+    +addi    r5,r1,16
+     bl <addr>
+     li      r0,-1
+    @@ -57,6 +57,6 @@
+     addi    r4,r4,2
+     li      r5,0
+    -addi    r6,r1,16
+    -addi    r7,r1,28
+    +addi    r6,r1,28
+    +addi    r7,r1,16
+     lis     r8,0
+     lfs     f1,0(r8)
+DIFF fn_93_102D0                              fn_93_102D0                                   85 85
+    --- target
+    +++ candidate
+    @@ -9,11 +9,11 @@
+     lwz     r3,216(r3)
+     lwz     r29,100(r3)
+    -addi    r3,r1,40
+    +addi    r3,r1,76
+     mr      r4,r30
+     bl <addr>
+    -addi    r3,r1,76
+    -addi    r4,r1,40
+    +addi    r3,r1,64
+    +addi    r4,r1,76
+     bl <addr>
+    -addi    r3,r1,28
+    +addi    r3,r1,52
+     lwz     r4,216(r30)
+     lwz     r4,12(r4)
+    @@ -22,17 +22,17 @@
+     mtctr   r12
+     bctrl
+    -addi    r3,r1,64
+    -addi    r4,r1,28
+    +addi    r3,r1,40
+    +addi    r4,r1,52
+    +bl <addr>
+    +addi    r3,r1,28
+    +addi    r4,r1,64
+    +addi    r5,r1,40
+     bl <addr>
+     addi    r3,r1,16
+    -addi    r4,r1,76
+    -addi    r5,r1,64
+    -bl <addr>
+    -addi    r3,r1,52
+    -addi    r4,r1,16
+    +addi    r4,r1,28
+     bl <addr>
+     lis     r30,0
+     lfs     f0,0(r30)
+    -stfs    f0,60(r1)
+    +stfs    f0,24(r1)
+     mr      r3,r29
+     lis     r31,4352
+    @@ -50,9 +50,9 @@
+     bctrl
+     stfs    f1,12(r1)
+    -lfs     f0,60(r1)
+    +lfs     f0,24(r1)
+     fmuls   f2,f0,f0
+    -lfs     f0,52(r1)
+    +lfs     f0,16(r1)
+     fmuls   f1,f0,f0
+    -lfs     f0,56(r1)
+    +lfs     f0,20(r1)
+     fmuls   f0,f0,f0
+     fadds   f0,f1,f0
+SAME fn_93_10424                              fn_93_10424                                   9 9
+SAME exitStatus__32ftLinkStatusUniqProcessFinalDashFP16soModuleAccesseri exitStatus__32ftLinkStatusUniqProcessFinalDashFP16soModuleAccesseri 31 31
+DIFF fn_93_104C4                              fn_93_104C4                                   34 34
+    --- target
+    +++ candidate
+    @@ -21,10 +21,10 @@
+     mtctr   r12
+     bctrl
+    -lwz     r3,24(r1)
+    -lwz     r0,28(r1)
+    -stw     r3,0(r30)
+    -stw     r0,4(r30)
+    -lwz     r0,32(r1)
+    -stw     r0,8(r30)
+    +lfs     f0,24(r1)
+    +stfs    f0,0(r30)
+    +lfs     f0,28(r1)
+    +stfs    f0,4(r30)
+    +lfs     f0,32(r1)
+    +stfs    f0,8(r30)
+     lwz     r31,44(r1)
+     lwz     r30,40(r1)
+DIFF fn_93_1054C                              fn_93_1054C                                   57 57
+    --- target
+    +++ candidate
+    @@ -23,5 +23,5 @@
+     mtctr   r12
+     bctrl
+    -fmuls   f0,f1,f31
+    +fmuls   f0,f31,f1
+     stfs    f0,44(r1)
+     mr      r3,r30
+    @@ -35,12 +35,12 @@
+     lfs     f0,0(r3)
+     stfs    f0,52(r1)
+    -addi    r3,r1,20
+    +addi    r3,r1,32
+     mr      r4,r29
+     bl <addr>
+    -addi    r3,r1,32
+    -addi    r4,r1,20
+    +addi    r3,r1,20
+    +addi    r4,r1,32
+     bl <addr>
+     addi    r3,r1,8
+    -addi    r4,r1,32
+    +addi    r4,r1,20
+     addi    r5,r1,44
+     bl <addr>
+SAME initStatus__33ftLinkStatusUniqProcessFinalComboFP16soModuleAccesser initStatus__33ftLinkStatusUniqProcessFinalComboFP16soModuleAccesser 39 39
+SAME execFixPos__33ftLinkStatusUniqProcessFinalComboFP16soModuleAccesser execFixPos__33ftLinkStatusUniqProcessFinalComboFP16soModuleAccesser 218 218
+SAME exitStatus__33ftLinkStatusUniqProcessFinalComboFP16soModuleAccesseri exitStatus__33ftLinkStatusUniqProcessFinalComboFP16soModuleAccesseri 31 31
+DIFF fn_93_10AB0                              fn_93_10AB0                                   60 60
+    --- target
+    +++ candidate
+    @@ -23,10 +23,10 @@
+     bl <addr>
+     mr      r3,r28
+    -addi    r4,r1,16
+    -addi    r5,r1,28
+    +addi    r4,r1,28
+    +addi    r5,r1,16
+     bl <addr>
+     lis     r3,0
+     lfs     f0,0(r3)
+    -stfs    f0,32(r1)
+    +stfs    f0,20(r1)
+     li      r0,-1
+     stw     r0,8(r1)
+    @@ -35,6 +35,6 @@
+     addi    r4,r4,4
+     li      r5,0
+    -addi    r6,r1,16
+    -addi    r7,r1,28
+    +addi    r6,r1,28
+    +addi    r7,r1,16
+     lis     r8,0
+     lfs     f1,0(r8)
+SAME fn_93_10BA0                              fn_93_10BA0                                   57 57
+SAME fn_93_10C84                              fn_93_10C84                                   37 37
+DIFF fn_93_10D18                              fn_93_10D18                                   53 54
+    --- target
+    +++ candidate
+    @@ -32,5 +32,6 @@
+     bne <addr>
+     cmpwi   r30,283
+    -beq <addr>
+    +bne <addr>
+    +b <addr>
+     mr      r3,r31
+     li      r4,1
+    @@ -41,5 +42,5 @@
+     mr      r3,r31
+     li      r4,0
+    -mr      r5,r4
+    +li      r5,0
+     lwz     r12,0(r31)
+     lwz     r12,44(r12)
+SAME __dt__33ftLinkStatusUniqProcessFinalComboFv __dt__33ftLinkStatusUniqProcessFinalComboFv   16 16
+SAME __dt__32ftLinkStatusUniqProcessFinalDashFv __dt__32ftLinkStatusUniqProcessFinalDashFv    16 16
+SAME __dt__28ftLinkStatusUniqProcessFinalFv   __dt__28ftLinkStatusUniqProcessFinalFv        16 16
+SAME __sinit_\ft_link_status_uniq_process_final_cpp __sinit_\ft_link_status_uniq_process_final_cpp 32 32
+SAME __ct__28ftLinkStatusUniqProcessFinalFv   __ct__28ftLinkStatusUniqProcessFinalFv        4 4
+SAME __ct__32ftLinkStatusUniqProcessFinalDashFv __ct__32ftLinkStatusUniqProcessFinalDashFv    4 4
+SAME __ct__33ftLinkStatusUniqProcessFinalComboFv __ct__33ftLinkStatusUniqProcessFinalComboFv   4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi, leaveStop__19soStatusUniqProcessFP16soModuleAccesserib, onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff, checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf, checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv, execFixCamera__19soStatusUniqProcessFP16soModuleAccesser, execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser, execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser, execStop__19soStatusUniqProcessFP16soModuleAccesser, execStatus__19soStatusUniqProcessFP16soModuleAccesser, __dt__19soStatusUniqProcessFv, execFixPos__19soStatusUniqProcessFP16soModuleAccesser, exitStatus__19soStatusUniqProcessFP16soModuleAccesseri, initStatus__19soStatusUniqProcessFP16soModuleAccesser
+SAME section .rodata: target 24 bytes, candidate 24 bytes
+DIFF section .data: target 360 bytes, candidate 892 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 22/30. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
