@@ -51,6 +51,64 @@ def _write_status_asm(root, module, data, text, bss, sinits, ctor_start=0x800020
 
 
 class WorktreeTests(unittest.TestCase):
+    def test_variant_score_rejects_unknown_function(self):
+        root = Path(tempfile.gettempdir()) / "brawl-variant-score"
+        runner = common.Runner(lambda _: None)
+        functions = (["actual"], {"actual": ["blr"]})
+        with patch.object(ops, "BRAWL", root), patch.object(ops, "BUILD", root / "build"), \
+             patch.object(runner, "run"), patch.object(ops, "_funcs", return_value=functions):
+            with self.assertRaisesRegex(common.ToolError, "No corresponding target/candidate function"):
+                ops._variant_score(runner, "ft_test", "status", "mistyped")
+
+    def test_variant_score_accepts_candidate_name_of_paired_function(self):
+        root = Path(tempfile.gettempdir()) / "brawl-variant-score"
+        runner = common.Runner(lambda _: None)
+        target = (["unnamed"], {"unnamed": ["li r3,0", "blr"]})
+        candidate = (["recovered"], {"recovered": ["li r3,1", "blr"]})
+        with patch.object(ops, "BRAWL", root), patch.object(ops, "BUILD", root / "build"), \
+             patch.object(runner, "run"), patch.object(ops, "_funcs", side_effect=[target, candidate]):
+            self.assertEqual(ops._variant_score(runner, "ft_test", "status", "recovered"), (2, 1, "0/1"))
+
+    def test_variants_invalid_baseline_aborts_and_restores_source(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            unit = "status"
+            source = root / "src/status.cpp"
+            source.parent.mkdir()
+            source.write_bytes(b"original source\r\n")
+            spec = root / "spec.py"
+            spec.write_text("VARIANTS = [('rewrite', [('original', 'changed')])]", encoding="utf-8")
+            with patch.object(ops, "BRAWL", root), patch.object(metrics, "METRICS_FILE", root / "metrics.csv"), \
+                 patch.object(ops, "_variant_score", side_effect=common.ToolError("missing function")) as score:
+                with self.assertRaisesRegex(common.ToolError, "missing function"):
+                    ops.variants(common.Runner(lambda _: None), "ft_test", unit, spec, "mistyped")
+                score.assert_called_once()
+                self.assertEqual(source.read_bytes(), b"original source\r\n")
+
+    def test_variants_failed_edit_restores_original_crlf_bytes(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            source = root / "src/status.cpp"
+            source.parent.mkdir()
+            original = b"original source\r\n"
+            source.write_bytes(original)
+            spec = root / "spec.py"
+            spec.write_text("VARIANTS = [('rewrite', [('original', 'changed')])]", encoding="utf-8")
+            seen = []
+
+            def score(*args):
+                seen.append(source.read_bytes())
+                if len(seen) == 1:
+                    return (0, 0, "1/1")
+                raise common.ToolError("candidate failed")
+
+            with patch.object(ops, "BRAWL", root), patch.object(metrics, "METRICS_FILE", root / "metrics.csv"), \
+                 patch.object(ops, "_variant_score", side_effect=score):
+                result = ops.variants(common.Runner(lambda _: None), "ft_test", "status", spec, "actual")
+            self.assertEqual(seen, [b"original source\n", b"changed source\n"])
+            self.assertEqual(source.read_bytes(), original)
+            self.assertEqual(result, [(0, 0, "base")])
+
     @staticmethod
     def _apply_status_fixture(root):
         split_files = {}

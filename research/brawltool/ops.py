@@ -476,7 +476,8 @@ def variants(r: Runner, module: str, unit: str, spec: Path, function: str = "") 
     Ranked by (diff lines in `function`, then fewer mismatching functions)."""
     import runpy
     src = BRAWL / "src" / f"{unit}.cpp"
-    base = src.read_text(encoding="utf-8")
+    base_bytes = src.read_bytes()
+    base = base_bytes.decode("utf-8").replace("\r\n", "\n")
     table = [("base", [])] + list(runpy.run_path(str(spec))["VARIANTS"])
     results = []
     quiet = Runner(lambda line: None)
@@ -493,12 +494,14 @@ def variants(r: Runner, module: str, unit: str, spec: Path, function: str = "") 
             try:
                 score = _variant_score(quiet, module, unit, function)
             except ToolError as e:
+                if name == "base":
+                    raise
                 r.log(f"{name:28s} BUILD FAILED: {str(e).splitlines()[0][:80]}")
                 continue
             results.append((score[0], score[1], name))
             r.log(f"{name:28s} {function or 'all'}: {score[0]} diff lines, functions matching {score[2]}")
     finally:
-        src.write_text(base, encoding="utf-8", newline="\n")
+        src.write_bytes(base_bytes)
     results.sort()
     if results:
         r.log("Best: " + ", ".join(f"{n} ({a})" for a, _, n in results[:3]))
@@ -512,6 +515,7 @@ def _variant_score(r: Runner, module: str, unit: str, function: str) -> tuple[in
     t_order, T = _funcs(tgt)
     c_order, C = _funcs(cand)
     lines, bad, good = 0, 0, 0
+    function_found = False
     c_rest = [c for c in c_order if c not in T]
     pairs = {}
     for t in t_order:
@@ -528,7 +532,10 @@ def _variant_score(r: Runner, module: str, unit: str, function: str) -> tuple[in
         good += same
         bad += not same
         if function and function in (t, c) and c is not None:
+            function_found = True
             lines = sum(1 for l in difflib.unified_diff(T[t], C[c], lineterm="", n=0) if l[:1] in "+-" and not l.startswith(("---", "+++")))
+    if function and not function_found:
+        raise ToolError(f"No corresponding target/candidate function named {function!r}; no score computed.")
     if not function:
         lines = bad
     return lines, bad, f"{good}/{len(t_order)}"

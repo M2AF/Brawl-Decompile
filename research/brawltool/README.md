@@ -48,6 +48,12 @@ Notes:
 
 BrawlTool records wall time and outcome for `build`, `diff`, `probe`, `promote`, `variants`, and `errors` in the ignored local file `research/brawltool/metrics/timings.csv`. Run `brawltool metrics` to see sample count, mean, median, maximum, and failures by command. Nested operations are recorded individually, so a promotion may also contribute build and probe samples.
 
+`variants -f` requires an exact target or paired candidate function name. A
+missing name aborts the baseline before trying edits; it cannot report a
+zero-difference score for a function it did not find. Original source bytes,
+including CRLF line endings, are restored on success or failure. Function
+scores remain diagnostics; full-REL review is the gate.
+
 ## Isolated worktrees (Codex parallel work)
 
 Use **--repo before the command**; it applies to configure, Ninja, objects,
