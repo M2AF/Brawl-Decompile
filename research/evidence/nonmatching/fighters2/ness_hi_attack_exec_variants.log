@@ -1,0 +1,5 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+base                         execStatus__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser: 8 diff lines, functions matching 8/10
+module_getters               execStatus__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser: 0 diff lines, functions matching 9/10
+kinetic_pointer              execStatus__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser: 8 diff lines, functions matching 8/10
+Best: module_getters (0), base (8), kinetic_pointer (8)

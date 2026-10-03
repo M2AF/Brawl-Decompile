@@ -1,0 +1,81 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_hi4_start.cpp:
+	.text       start:0x00011034 end:0x000113E4
+	.ctors      start:0x00000004 end:0x00000008
+	.data       start:0x000088F0 end:0x00008988
+	.bss        start:0x000001D0 end:0x000001E0
+	# WARN first unit: confirm text start (helpers/base inlines before it?)
+	# WARN first unit: RTTI/strings precede the vtable; check what it owns before 0x88f0 (e.g. lbl_101_data_8854)
+	# vtable lbl_101_data_88F0 rtti lbl_101_data_8964 ctor fn_101_113D4 sinit fn_101_1138C instance lbl_101_bss_1DC dtor fn_101_11344
+
+mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_hi4.cpp:
+	.text       start:0x000113E4 end:0x0001151C
+	.ctors      start:0x00000008 end:0x0000000C
+	.data       start:0x00008988 end:0x00008A40
+	.bss        start:0x000001E0 end:0x000001F0
+	# vtable lbl_101_data_8988 rtti lbl_101_data_8A00 ctor fn_101_1150C sinit fn_101_114C4 instance lbl_101_bss_1EC dtor fn_101_11484
+
+mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_s4.cpp:
+	.text       start:0x0001151C end:0x000116AC
+	.ctors      start:0x0000000C end:0x00000010
+	.data       start:0x00008A40 end:0x00008AC0
+	.bss        start:0x000001F0 end:0x00000200
+	# vtable lbl_101_data_8A40 rtti lbl_101_data_8AB4 ctor fn_101_1169C sinit fn_101_11654 instance lbl_101_bss_1FC dtor fn_101_11614
+
+mo_fighter/ft_ness/ft_ness_status_uniq_process_special_s.cpp:
+	.text       start:0x000116AC end:0x000117B8
+	.ctors      start:0x00000010 end:0x00000014
+	.rodata     start:0x00000028 end:0x00000030
+	.data       start:0x00008AC0 end:0x00008B38
+	.bss        start:0x00000200 end:0x00000210
+	# vtable lbl_101_data_8AC0 rtti lbl_101_data_8B2C ctor fn_101_117A8 sinit fn_101_11760 instance lbl_101_bss_20C dtor fn_101_11720
+
+mo_fighter/ft_ness/ft_ness_status_uniq_process_special_hi.cpp:
+	.text       start:0x000117B8 end:0x00011D78
+	.ctors      start:0x00000014 end:0x00000018
+	.rodata     start:0x00000030 end:0x00000058
+	.data       start:0x00008B38 end:0x00008BB0
+	.bss        start:0x00000210 end:0x00000220
+	# WARN data 0x8bb0-0x8bf4 is used only by the next unit; assigned to it
+	# vtable lbl_101_data_8B38 rtti lbl_101_data_8BA8 ctor fn_101_11D68 sinit fn_101_11D20 instance lbl_101_bss_21C dtor fn_101_11CE0
+
+mo_fighter/ft_ness/ft_ness_status_uniq_process_special_hi_attack.cpp:
+	.text       start:0x00011D78 end:0x00012B9C
+	.ctors      start:0x00000018 end:0x0000001C
+	.rodata     start:0x00000058 end:0x00000088
+	.data       start:0x00008BB0 end:0x00008C70
+	.bss        start:0x00000220 end:0x00000230
+	# vtable lbl_101_data_8BF4 rtti lbl_101_data_8C68 ctor fn_101_12B8C sinit fn_101_12B44 instance lbl_101_bss_22C dtor fn_101_12B04
+
+mo_fighter/ft_ness/ft_ness_status_uniq_process_special_hi_reflect.cpp:
+	.text       start:0x00012B9C end:0x00012CA8
+	.ctors      start:0x0000001C end:0x00000020
+	.rodata     start:0x00000088 end:0x00000090
+	.data       start:0x00008C70 end:0x00008CF0
+	.bss        start:0x00000230 end:0x00000240
+	# vtable lbl_101_data_8C70 rtti lbl_101_data_8CE4 ctor fn_101_12C98 sinit fn_101_12C50 instance lbl_101_bss_23C dtor fn_101_12C10
+
+mo_fighter/ft_ness/ft_ness_status_uniq_process_special_lw.cpp:
+	.text       start:0x00012CA8 end:0x00012EB4
+	.ctors      start:0x00000020 end:0x00000024
+	.data       start:0x00008CF0 end:0x00008D68
+	.bss        start:0x00000240 end:0x00000250
+	# vtable lbl_101_data_8CF0 rtti lbl_101_data_8D60 ctor fn_101_12EA4 sinit fn_101_12E5C instance lbl_101_bss_24C dtor fn_101_12E1C
+
+mo_fighter/ft_ness/ft_ness_status_uniq_process_special_lw_hold.cpp:
+	.text       start:0x00012EB4 end:0x000131FC
+	.ctors      start:0x00000024 end:0x00000028
+	.rodata     start:0x00000090 end:0x000000A0
+	.data       start:0x00008D68 end:0x00008DE8
+	.bss        start:0x00000250 end:0x00000260
+	# vtable lbl_101_data_8D68 rtti lbl_101_data_8DDC ctor fn_101_131EC sinit fn_101_131A4 instance lbl_101_bss_25C dtor fn_101_13164
+Added Object(NonMatching, "mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_hi4_start.cpp") to both version split sets.
+Added Object(NonMatching, "mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_hi4.cpp") to both version split sets.
+Added Object(NonMatching, "mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_s4.cpp") to both version split sets.
+Added Object(NonMatching, "mo_fighter/ft_ness/ft_ness_status_uniq_process_special_s.cpp") to both version split sets.
+Added Object(NonMatching, "mo_fighter/ft_ness/ft_ness_status_uniq_process_special_hi.cpp") to both version split sets.
+Added Object(NonMatching, "mo_fighter/ft_ness/ft_ness_status_uniq_process_special_hi_attack.cpp") to both version split sets.
+Added Object(NonMatching, "mo_fighter/ft_ness/ft_ness_status_uniq_process_special_hi_reflect.cpp") to both version split sets.
+Added Object(NonMatching, "mo_fighter/ft_ness/ft_ness_status_uniq_process_special_lw.cpp") to both version split sets.
+Added Object(NonMatching, "mo_fighter/ft_ness/ft_ness_status_uniq_process_special_lw_hold.cpp") to both version split sets.
+Applied 9 status split(s) with cflags_fighter. Review both configs and configure.py.

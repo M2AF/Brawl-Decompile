@@ -1,0 +1,119 @@
+data 8358..836F lbl_114_data_8358
+	.string "ftKineticEnergyGravity"
+
+data 836F..8370 gap_04_0000836F_data
+.hidden gap_04_0000836F_data
+	.byte 0x00
+
+data 8370..8394 lbl_114_data_8370
+	.4byte lbl_114_data_31F4
+	.4byte 0x00000006
+	.4byte lbl_114_data_346C
+	.4byte 0x00000005
+	.4byte lbl_114_data_3D60
+	.4byte 0x00000000
+	.4byte lbl_114_data_31DC
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 8394..839C lbl_114_data_8394
+	.4byte lbl_114_data_8358
+	.4byte lbl_114_data_8370
+
+data 839C..83DC lbl_114_data_839C
+	.4byte lbl_114_data_8410
+	.4byte 0x00000000
+	.4byte fn_114_122E0
+	.4byte fn_114_113A4
+	.4byte fn_114_12060
+	.4byte fn_114_11668
+	.4byte fn_114_11720
+	.4byte fn_114_109BC
+	.4byte fn_114_11730
+	.4byte fn_114_109B4
+	.4byte fn_114_109B0
+	.4byte fn_114_109A8
+	.4byte fn_114_109A4
+	.4byte fn_114_1099C
+	.4byte fn_114_10998
+	.4byte fn_114_10990
+
+data 83DC..8404 lbl_114_data_83DC
+	.string "ftLucasStatusUniqProcessSpecialHiAttack"
+
+data 8404..8410 lbl_114_data_8404
+	.4byte lbl_114_data_81B0
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 8410..8418 lbl_114_data_8410
+	.4byte lbl_114_data_83DC
+	.4byte lbl_114_data_8404
+
+data 8418..842A lbl_114_data_8418
+	.string "soModelModuleImpl"
+
+data 842A..842C gap_04_0000842A_data
+.hidden gap_04_0000842A_data
+	.2byte 0x0000
+
+data 842C..8460 lbl_114_data_842C
+	.4byte lbl_114_data_8490
+	.4byte 0x00000020
+	.4byte lbl_114_data_3D30
+	.4byte 0x00000014
+	.4byte lbl_114_data_3D00
+	.4byte 0x00000014
+	.4byte lbl_114_data_3D60
+	.4byte 0x00000000
+	.4byte lbl_114_data_84E4
+	.4byte 0x00000000
+	.4byte lbl_114_data_84C0
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 8460..8468 lbl_114_data_8460
+	.4byte lbl_114_data_8418
+	.4byte lbl_114_data_842C
+
+data 8468..848F lbl_114_data_8468
+	.string "soEventPresenter<soModelEventObserver>"
+
+data 848F..8490 gap_04_0000848F_data
+.hidden gap_04_0000848F_data
+	.byte 0x00
+
+data 8490..8498 lbl_114_data_8490
+	.4byte lbl_114_data_8468
+	.4byte 0x00000000
+
+data 8498..84AC lbl_114_data_8498
+	.string "soModelModuleSimple"
+
+data 84AC..84C0 lbl_114_data_84AC
+	.4byte lbl_114_data_3D60
+	.4byte 0x00000000
+	.4byte lbl_114_data_84E4
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 84C0..84C8 lbl_114_data_84C0
+	.4byte lbl_114_data_8498
+	.4byte lbl_114_data_84AC
+
+data 84C8..84D6 lbl_114_data_84C8
+	.string "soModelModule"
+
+data 84D6..84D8 gap_04_000084D6_data
+.hidden gap_04_000084D6_data
+	.2byte 0x0000
+
+data 84D8..84E4 lbl_114_data_84D8
+	.4byte lbl_114_data_3D60
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 84E4..84EC lbl_114_data_84E4
+	.4byte lbl_114_data_84C8
+	.4byte lbl_114_data_84D8
+

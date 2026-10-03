@@ -209,3 +209,134 @@ current checkpoint; top summaries are dated historical snapshots.
 ### 2026-10-02T02:06-03:00 · codex · handoff · 9f4d31e (rsbe01_01-support) clean
 - One-time Pit integration finished at9f4d31e, all gates pass, no running job. Released lease for Claude/next agent; brawl-codex7 retained. Journal rotated preserving148 historical entries in HANDOFF_ARCHIVE.md.
 - next: Receiver: run status and claim after checking current main; probe/review MK special_s_end, promote only after full REL match +127/127, then MK final_* units; Sonic dash deferred.
+
+### 2026-10-02T21:30-03:00 · tool · verify · 9f4d31e (rsbe01_01-support) dirty 2
+- verified: OK: 127/127 with mo_fighter/ft_metaknight/ft_metaknight_status_uniq_process_special_s_end promoted
+- Promoted mo_fighter/ft_metaknight/ft_metaknight_status_uniq_process_special_s_end (ft_metaknight): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T21:30-03:00 · claude · claim · 8a3ffb1 (rsbe01_01-support) clean
+- task: fighters: Meta Knight final_* status units, then next fighter
+- lease until 2026-10-03T01:30-03:00
+
+### 2026-10-02T21:31-03:00 · claude · note · 8a3ffb1 (rsbe01_01-support) clean
+- 8a3ffb1: MK special_s_end MATCHED (fighter units: Claude 14 + Codex Pit 2 = 16 on main incl. Marth/Mario/Luigi/Sonic/MK/Pit). Removed brawl-codex7 after checks (clean; 055115f content identical to 9f4d31e; main.dol unchanged); branch codex/ike kept. mk_status_splits.py: dedupe classes by vtable (Pit lw_hold was listed twice). Assignments: Claude = MK final_attack_gallery/final_end/final_hit_wait, then ft_snake; Codex = new worktree brawl-codex8 from 8a3ffb1: Pit special_s_revolve, then ft_ness, ft_lucas.
+
+### 2026-10-02T21:35-03:00 · codex · note · 8a3ffb1 (rsbe01_01-support) dirty 5
+- codex-parallel: Created brawl-codex8 / codex/fighters2 from8a3ffb1; originals copied locally/ignored. Main Claude-owned with active Zelda edits; no main build/edit or lease claim. Before clean baseline build: logs evidence/nonmatching/fighters2/. Tasks Pit Revolve then Ness/Lucas, one TU at a time.
+
+### 2026-10-02T21:36-03:00 · tool · verify · 8a3ffb1 (rsbe01_01-support) dirty 6
+- verified: OK: 127/127 with mo_fighter/ft_zelda/ft_zelda_status_uniq_process_special_s promoted
+- Promoted mo_fighter/ft_zelda/ft_zelda_status_uniq_process_special_s (ft_zelda): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T21:39-03:00 · tool · verify · 4bd6ae6 (rsbe01_01-support) dirty 5
+- verified: OK: 127/127 with mo_fighter/ft_zelda/ft_zelda_status_uniq_process_special_hi promoted
+- Promoted mo_fighter/ft_zelda/ft_zelda_status_uniq_process_special_hi (ft_zelda): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T21:40-03:00 · claude · checkpoint · 49c5a3d (rsbe01_01-support) clean
+- verified: promote gates PASS; clean build 127/127
+- Zelda special_s (4bd6ae6) + special_hi (latest) MATCHED; MK finals deferred (heavy). ftData gains unk84 (ft_common_data_accesser.h). Fighter units on main: Claude 16 + Codex Pit 2 = 18. Next: Zelda special_lw, hi3, hi2, final.
+
+### 2026-10-02T21:40-03:00 · codex · note · 49c5a3d (rsbe01_01-support) clean
+- codex-parallel: brawl-codex8 baseline127/127 and independent127/127. Initialized pinned BrawlHeaders/OpenRVL submodules after initial missing-header build; originals ignored. Pit Revolve ownership proved: textDDE0..E148 starts after ftPit adjustor thunks throughDDD8; data6938..69D0 starts after ftPit class-info RTTI692C..6938. Leading energy RTTI6854..68E0 and ftPit classinfo68E0..6938 stay extracted, no casts in Revolve. Owned BSS1A0..1B0/ctors4..8, no rodata. Evidence fighters2/ft_pit/. Coding NonMatching now.
+
+### 2026-10-02T21:42-03:00 · tool · verify · 49c5a3d (rsbe01_01-support) dirty 5
+- verified: OK: 127/127 with mo_fighter/ft_zelda/ft_zelda_status_uniq_process_special_lw promoted
+- Promoted mo_fighter/ft_zelda/ft_zelda_status_uniq_process_special_lw (ft_zelda): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T21:43-03:00 · codex · note · 36528f6 (rsbe01_01-support) clean
+- codex-parallel: brawl-codex8: Local review ft_pit/mo_fighter/ft_pit/ft_pit_status_uniq_process_special_s_revolve: full source REL not accepted; no promotion. Evidence evidence\nonmatching\ft_pit\brawl-codex8\ft_pit_status_uniq_process_special_s_revolve_20261003T004319.464049Z.
+
+### 2026-10-02T21:43-03:00 · codex · note · 36528f6 (rsbe01_01-support) clean
+- codex-parallel: brawl-codex8: Local review ft_pit/mo_fighter/ft_pit/ft_pit_status_uniq_process_special_s_revolve: full source REL not accepted; no promotion. Evidence evidence\nonmatching\ft_pit\brawl-codex8\ft_pit_status_uniq_process_special_s_revolve_20261003T004346.408937Z.
+
+### 2026-10-02T21:44-03:00 · codex · note · 36528f6 (rsbe01_01-support) clean
+- codex-parallel: brawl-codex8: Promoted mo_fighter/ft_pit/ft_pit_status_uniq_process_special_s_revolve (ft_pit): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T21:45-03:00 · codex · note · 36528f6 (rsbe01_01-support) dirty 2
+- codex-parallel: Pit Revolve accepted/source-linked in brawl-codex8 (codex/fighters2); full REL byte-identical, promote normal127/127+independent127/127+postprobePASS. Local commit recorded in worktree log. One source-linked TU so far; no main edits/lease claim/push. Next Ness, WARN review confirmed first start11034 afterftNess thunk1102C, data88F0 afterclassinfoRTTI88E4; Gravity data8BB0..8BF4 used by next attack unit. Private fighters2/ft_pit evidence. Preparing reviewed Ness splits only.
+
+### 2026-10-02T21:47-03:00 · codex · note · 36528f6 (rsbe01_01-support) dirty 2
+- codex-parallel: Pit accepted commit3e62bb6 (amended to add explicit rev2 split; brawltool split only writes current revision). Now Ness nine splits mirrored/NonMatching; first starts and Gravity-next-unit ownership reviewed. One active TU SpecialS: text116AC..117B8, rodata28..30, data8AC0..8B38, bss200..210, ctors10..14. Extending existing ft_common_data_accesser override with proven pointers80/84 and float18/2C, no BrawlHeaders fork. Before clean-cache build/header review; evidence fighters2/.
+
+### 2026-10-02T21:48-03:00 · tool · verify · 36528f6 (rsbe01_01-support) dirty 4
+- verified: OK: 127/127 with mo_fighter/ft_zelda/ft_zelda_status_uniq_process_special_hi3 promoted
+- Promoted mo_fighter/ft_zelda/ft_zelda_status_uniq_process_special_hi3 (ft_zelda): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T21:52-03:00 · codex · note · 2c1c48e (rsbe01_01-support) clean
+- codex-parallel: Tool caveat found during NessS: brawltool rename-status METHOD_SUFFIXES exitStatus=i omits FP16soModuleAccesser (unlike canonical rename_syms). Corrected only worktree symbol files to full exitStatus__31ftNessStatusUniqProcessSpecialSFP16soModuleAccesseri. For remaining override renames pass explicit full suffix or canonical helper redirected to brawl-codex8; shared BrawlTool left untouched while Claude active. Clean header build127/127; named build/promote running, logs fighters2/ness_*.
+
+### 2026-10-02T21:52-03:00 · codex · note · 2c1c48e (rsbe01_01-support) clean
+- codex-parallel: brawl-codex8: Promoted mo_fighter/ft_ness/ft_ness_status_uniq_process_special_s (ft_ness): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T21:54-03:00 · codex · note · 2c1c48e (rsbe01_01-support) dirty 2
+- codex-parallel: Ness SpecialS accepted/source-linked (module101 REL277192 bytes SHA1 e61788578d9f18bc36bfb7349c43826cdf4f34d8), brawltool promote all gatesPASS: normal127/127 independent127/127 postprobeTrue. Header cachecleared/allsource rebuilt. Committed locally in codex/fighters2; nine Ness splits scaffolded (eight remainNonMatching). Next one TU SpecialHiReflect: text12B9C..12CA8, rodata88..90, data8C70..8CF0, bss230..240, ctors1C..20; body directdata84/float2C. No main edits or leaseclaim.
+
+### 2026-10-02T21:56-03:00 · codex · note · 2c1c48e (rsbe01_01-support) dirty 2
+- codex-parallel: brawl-codex8: Promoted mo_fighter/ft_ness/ft_ness_status_uniq_process_special_hi_reflect (ft_ness): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T21:59-03:00 · codex · note · 2c1c48e (rsbe01_01-support) dirty 2
+- codex-parallel: Ness SpecialHiReflect accepted and committed754b7cf on codex/fighters2. Full REL identity plus fresh127/127 and independent checks PASS. Main untouched. Next investigate Ness AttackS4 inheritance from RTTI/vtable before coding.
+
+### 2026-10-02T22:00-03:00 · codex · note · 2c1c48e (rsbe01_01-support) dirty 2
+- codex-parallel: Next TU Ness AttackS4: module101 text1151C..116AC data8A40..8AC0 bss1F0..200 ctorsC..10 no rodata. RTTI base list proves ftStatusUniqProcessSmashAttack; inherited init/exit vtable relocations prove sora_melee fn_27_169554/fn_27_1696D0 signatures. Add minimal shared base header in isolated worktree, name those methods in both configs, clear source cache. Private asm fighters2/ft_ness/target_1151C.txt.
+
+### 2026-10-02T22:03-03:00 · tool · verify · 2c1c48e (rsbe01_01-support) dirty 5
+- verified: OK: 127/127 with mo_fighter/ft_zelda/ft_zelda_status_uniq_process_special_hi2 promoted
+- Promoted mo_fighter/ft_zelda/ft_zelda_status_uniq_process_special_hi2 (ft_zelda): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T22:03-03:00 · claude · checkpoint · f778235 (rsbe01_01-support) clean
+- verified: f778235 OK 127/127 + independent verifier
+- Zelda special_hi3 (2c1c48e) and special_hi2 (f778235) matched: full ft_zelda REL byte-identical, fresh 127/127, independent check OK. hi3's 2nd override is execFixPosCounter (vtable +0x20), not exitStatus. hi2: MSL atan2f copy needs '#pragma scheduling on' (optimization_level is ignored); ternary FLT_MIN length; getTouchNormal mask widened to u32 in include/so/ground override; split exitStatus tail blr merged. Docs updated.
+- next: Claude: Zelda final, then Link (manual splits). Codex: Pit special_s_revolve / ness / lucas in brawl-codex8.
+
+### 2026-10-02T22:04-03:00 · codex · note · f778235 (rsbe01_01-support) clean
+- codex-parallel: brawl-codex8: Promoted mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_s4 (ft_ness): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T22:04-03:00 · codex · note · f778235 (rsbe01_01-support) clean
+- codex-parallel: Ness AttackS4 accepted/source-linked, fullREL identity, cleanheader127/127, independent check and postprobePASS. Local commit on codex/fighters2. Next Ness AttackHi4 text113E4..1151C data8988..8A40 bss1E0..1F0 ctors8..C noRO; inherited SmashAttack base and power-event constructor derived from stores/slotB8 and sendEventParents. No main code/header edits.
+
+### 2026-10-02T22:06-03:00 · claude · claim · f778235 (rsbe01_01-support) clean
+- task: fighters: absolute-attack-data bitfield pattern -> Zelda final, MK finals
+- lease until 2026-10-03T02:06-03:00
+
+### 2026-10-02T22:06-03:00 · codex · note · f778235 (rsbe01_01-support) clean
+- codex-parallel: brawl-codex8: Promoted mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_hi4 (ft_ness): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T22:07-03:00 · codex · note · f778235 (rsbe01_01-support) clean
+- codex-parallel: Ness AttackHi4 accepted/source-linked, brawltool promote all gatesPASS. Next Ness SpecialLw: text12CA8..12EB4 data8CF0..8D68 bss240..250 ctors20..24 noRO; source will use existing Stop layout and ref cast, opaque module-local fn_101_B640 remains extern C. Shared RTTI labels named from records for dedupe. No main edit/build/leaseclaim.
+
+### 2026-10-02T22:09-03:00 · codex · note · f778235 (rsbe01_01-support) clean
+- codex-parallel: brawl-codex8: Promoted mo_fighter/ft_ness/ft_ness_status_uniq_process_special_lw (ft_ness): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T22:10-03:00 · codex · note · f778235 (rsbe01_01-support) clean
+- codex-parallel: Ness SpecialLw accepted/source-linked after fullREL+normal127/127+independent check+postprobe. Next SpecialLwHold text12EB4..131FC rodata90..A0 data8D68..8DE8 bss250..260 ctors24..28. Six functions including Vec3f ctor; name shared ctor fn_101_1303C. Target effect and sound handles/slots verified against headers. Private evidence fighters2/ft_ness/target_12EB4.txt. No main mutation.
+
+### 2026-10-02T22:13-03:00 · codex · note · f778235 (rsbe01_01-support) dirty 4
+- codex-parallel: brawl-codex8: Promoted mo_fighter/ft_ness/ft_ness_status_uniq_process_special_lw_hold (ft_ness): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T22:13-03:00 · codex · note · f778235 (rsbe01_01-support) dirty 4
+- codex-parallel: Ness SpecialLwHold accepted/source-linked all promotion gatesPASS. Next AttackHi4Start text11034..113E4 data88F0..8988 bss1D0..1E0 ctors4..8 noRO;20 funcs includes base inlines and eventctor11260. Earlier ftNess adjustor ends11034/classInfoRTTIends88F0; boundaries proved. Extend existing article-manage interface slots14/30/3C, shadow so_article.h only to expose existing methods publicly. Clean source rebuild required; no main edits.
+
+### 2026-10-02T22:16-03:00 · tool · verify · f778235 (rsbe01_01-support) dirty 6
+- verified: OK: 127/127 with mo_fighter/ft_zelda/ft_zelda_status_uniq_process_final promoted
+- Promoted mo_fighter/ft_zelda/ft_zelda_status_uniq_process_final (ft_zelda): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T22:17-03:00 · codex · note · 0bdbf95 (rsbe01_01-support) clean
+- codex-parallel: brawl-codex8: Promoted mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_hi4_start (ft_ness): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T22:19-03:00 · codex · note · 0bdbf95 (rsbe01_01-support) clean
+- codex-parallel: Ness AttackHi4Start accepted/source-linked; all19 diagnostics and fullREL+fresh127/127+independent check+postprobePASS. Next SpecialHi text117B8..11D78 rodata30..58 data8B38..8BB0 bss210..220 ctors14..18. Recover cached modules and positional/link/ground logic; common data84float24 added preserving offsets; unnamed math DOL/module helpers stay extern C. Bounded matching next. Main untouched.
+
+### 2026-10-02T22:23-03:00 · codex · note · 0bdbf95 (rsbe01_01-support) dirty 5
+- codex-parallel: brawl-codex8: Promoted mo_fighter/ft_ness/ft_ness_status_uniq_process_special_hi (ft_ness): full-REL probe byte-identical, 127/127, independent check OK.
+
+### 2026-10-02T22:23-03:00 · claude · checkpoint · fa9a359 (rsbe01_01-support) clean
+- verified: build OK 127/127 after WIP commit
+- Zelda final matched (0bdbf95): recovered soCollisionAttackAbsoluteData bitfields; attack-data copy fields now unsigned bitfields (gr_oldin/gr_newpork still match). All 6 Zelda status units done. MK final_attack_gallery WIP committed NonMatching: 8/8 functions match; only gap is a trailing rodata word 0x00000001 (scratch test: 'extern const int k = 1;' emits it, but BEFORE the float pool - target has it AFTER; try defining it after the functions). Stopped: weekly credits ~99%.
+- next: Claude/Codex: finish MK gallery rodata word, then MK final_end and final_hit_wait (define ftMetaknightFinalSendLinkEvent/Unlink there; see include/ft/ft_metaknight_final.h).
+
+### 2026-10-02T22:24-03:00 · codex · note · fa9a359 (rsbe01_01-support) clean
+- codex-parallel: Ness SpecialHi accepted/source-linked all six funcs/fullREL plus promotion checksPASS. Last Ness TU SpecialHiAttack text11D78..12B9C rodata58..88 data8BB0..8C70 bss220..230 ctors18..1C. Gravity directbase proven by RTTI8BC8; include its header after statusclass to emit prefix. Shared Vec2f lengthSq/multiply/assignment helpers named from bodies; unnamedmath helpers remain extern C. Private m2c/asm fighters2/. Cleanheaderbuild before diffs. Main untouched.
+
+### 2026-10-02T22:32-03:00 · codex · note · fa9a359 (rsbe01_01-support) clean
+- codex-parallel: Ness SpecialHiAttack firstdiff6/10; corrected collision-occurrence virtualslot4C (not isChanged58), exact float minimum, operand temporaries and cached posture. DOL8003DC64 reads Vec2f this, rotates by angle via matrix, writes Vec2f out; signature/semantics agree with pinned Vec2f::rot. Named rot__5Vec2fFP5Vec2ff both configs in isolated worktree and use member call to recover argument schedule. Next symbol rebuild/diff; original target asm remains private fighters2/vector_rotate_proof.txt.

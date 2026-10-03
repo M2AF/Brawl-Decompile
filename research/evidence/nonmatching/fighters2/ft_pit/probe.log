@@ -1,0 +1,6 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_pit mo_fighter/ft_pit/ft_pit_status_uniq_process_special_s_revolve
+Original: 182192 80e6015eb3c8df3c0e14783c1c6a48a5340e67a2
+Source probe: 182192 80e6015eb3c8df3c0e14783c1c6a48a5340e67a2
+Full REL byte match: True
+PASS: full-REL probe for ft_pit (mo_fighter/ft_pit/ft_pit_status_uniq_process_special_s_revolve)

@@ -1,0 +1,108 @@
+data 8C70..8CB0 lbl_101_data_8C70
+	.4byte lbl_101_data_8CE4
+	.4byte 0x00000000
+	.4byte fn_101_12C10
+	.4byte fn_101_11388
+	.4byte fn_101_12B9C
+	.4byte fn_101_1133C
+	.4byte fn_101_11338
+	.4byte fn_101_11334
+	.4byte fn_101_11330
+	.4byte fn_101_11384
+	.4byte fn_101_1132C
+	.4byte fn_101_11324
+	.4byte fn_101_11320
+	.4byte fn_101_11318
+	.4byte fn_101_11314
+	.4byte fn_101_1130C
+
+data 8CB0..8CD8 lbl_101_data_8CB0
+	.string "ftNessStatusUniqProcessSpecialHiReflect"
+
+data 8CD8..8CE4 lbl_101_data_8CD8
+	.4byte lbl_101_data_8980
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 8CE4..8CF0 lbl_101_data_8CE4
+	.4byte lbl_101_data_8CB0
+	.4byte lbl_101_data_8CD8
+	.4byte 0x00000000
+
+text 12B9C..12C10 fn_101_12B9C
+/* 00012B9C 00012C68  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 00012BA0 00012C6C  7C 08 02 A6 */	mflr r0
+/* 00012BA4 00012C70  90 01 00 14 */	stw r0, 0x14(r1)
+/* 00012BA8 00012C74  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 00012BAC 00012C78  7C 9F 23 78 */	mr r31, r4
+/* 00012BB0 00012C7C  2C 05 00 10 */	cmpwi r5, 0x10
+/* 00012BB4 00012C80  40 82 00 48 */	bne .L_00012BFC
+/* 00012BB8 00012C84  3C 60 00 00 */	lis r3, g_ftCommonDataAccesser@ha
+/* 00012BBC 00012C88  38 63 00 00 */	addi r3, r3, g_ftCommonDataAccesser@l
+/* 00012BC0 00012C8C  38 80 00 0A */	li r4, 0xa
+/* 00012BC4 00012C90  48 01 1F F5 */	bl getData__20ftCommonDataAccesserCF6ftKind
+/* 00012BC8 00012C94  80 63 00 84 */	lwz r3, 0x84(r3)
+/* 00012BCC 00012C98  C0 23 00 2C */	lfs f1, 0x2c(r3)
+/* 00012BD0 00012C9C  3C 60 00 00 */	lis r3, lbl_101_rodata_88@ha
+/* 00012BD4 00012CA0  C0 03 00 00 */	lfs f0, lbl_101_rodata_88@l(r3)
+/* 00012BD8 00012CA4  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 00012BDC 00012CA8  40 81 00 20 */	ble .L_00012BFC
+/* 00012BE0 00012CAC  80 7F 00 D8 */	lwz r3, 0xd8(r31)
+/* 00012BE4 00012CB0  80 63 00 64 */	lwz r3, 0x64(r3)
+/* 00012BE8 00012CB4  3C 80 11 00 */	lis r4, 0x1100
+/* 00012BEC 00012CB8  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 00012BF0 00012CBC  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 00012BF4 00012CC0  7D 89 03 A6 */	mtctr r12
+/* 00012BF8 00012CC4  4E 80 04 21 */	bctrl
+.L_00012BFC:
+/* 00012BFC 00012CC8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 00012C00 00012CCC  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 00012C04 00012CD0  7C 08 03 A6 */	mtlr r0
+/* 00012C08 00012CD4  38 21 00 10 */	addi r1, r1, 0x10
+/* 00012C0C 00012CD8  4E 80 00 20 */	blr
+
+text 12C10..12C50 fn_101_12C10
+/* 00012C10 00012CDC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 00012C14 00012CE0  7C 08 02 A6 */	mflr r0
+/* 00012C18 00012CE4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 00012C1C 00012CE8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 00012C20 00012CEC  7C 7F 1B 78 */	mr r31, r3
+/* 00012C24 00012CF0  2C 03 00 00 */	cmpwi r3, 0x0
+/* 00012C28 00012CF4  41 82 00 10 */	beq .L_00012C38
+/* 00012C2C 00012CF8  7C 80 07 35 */	extsh. r0, r4
+/* 00012C30 00012CFC  40 81 00 08 */	ble .L_00012C38
+/* 00012C34 00012D00  48 01 1F 85 */	bl __dl__FPv
+.L_00012C38:
+/* 00012C38 00012D04  7F E3 FB 78 */	mr r3, r31
+/* 00012C3C 00012D08  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 00012C40 00012D0C  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 00012C44 00012D10  7C 08 03 A6 */	mtlr r0
+/* 00012C48 00012D14  38 21 00 10 */	addi r1, r1, 0x10
+/* 00012C4C 00012D18  4E 80 00 20 */	blr
+
+text 12C50..12C98 fn_101_12C50
+/* 00012C50 00012D1C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 00012C54 00012D20  7C 08 02 A6 */	mflr r0
+/* 00012C58 00012D24  90 01 00 14 */	stw r0, 0x14(r1)
+/* 00012C5C 00012D28  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 00012C60 00012D2C  3F E0 00 00 */	lis r31, lbl_101_bss_23C@ha
+/* 00012C64 00012D30  38 7F 00 00 */	addi r3, r31, lbl_101_bss_23C@l
+/* 00012C68 00012D34  48 00 00 31 */	bl fn_101_12C98
+/* 00012C6C 00012D38  38 7F 00 00 */	addi r3, r31, lbl_101_bss_23C@l
+/* 00012C70 00012D3C  3C 80 00 00 */	lis r4, fn_101_12C10@ha
+/* 00012C74 00012D40  38 84 00 00 */	addi r4, r4, fn_101_12C10@l
+/* 00012C78 00012D44  3C A0 00 00 */	lis r5, lbl_101_bss_230@ha
+/* 00012C7C 00012D48  38 A5 00 00 */	addi r5, r5, lbl_101_bss_230@l
+/* 00012C80 00012D4C  4B FE D3 81 */	bl __register_global_object
+/* 00012C84 00012D50  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 00012C88 00012D54  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 00012C8C 00012D58  7C 08 03 A6 */	mtlr r0
+/* 00012C90 00012D5C  38 21 00 10 */	addi r1, r1, 0x10
+/* 00012C94 00012D60  4E 80 00 20 */	blr
+
+text 12C98..12CA8 fn_101_12C98
+/* 00012C98 00012D64  3C 80 00 00 */	lis r4, lbl_101_data_8C70@ha
+/* 00012C9C 00012D68  38 84 00 00 */	addi r4, r4, lbl_101_data_8C70@l
+/* 00012CA0 00012D6C  90 83 00 00 */	stw r4, 0x0(r3)
+/* 00012CA4 00012D70  4E 80 00 20 */	blr
+

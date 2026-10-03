@@ -1,0 +1,43 @@
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s:116:.fn fn_8003DC64, global
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-117-/* 8003DC64 000339E4  94 21 FF B0 */	stwu r1, -0x50(r1)
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-118-/* 8003DC68 000339E8  7C 08 02 A6 */	mflr r0
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-119-/* 8003DC6C 000339EC  C0 43 00 00 */	lfs f2, 0x0(r3)
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-120-/* 8003DC70 000339F0  38 A0 00 00 */	li r5, 0x0
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-121-/* 8003DC74 000339F4  90 01 00 54 */	stw r0, 0x54(r1)
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-122-/* 8003DC78 000339F8  38 00 00 00 */	li r0, 0x0
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-123-/* 8003DC7C 000339FC  FC 40 12 10 */	fabs f2, f2
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-124-/* 8003DC80 00033A00  C0 02 83 E8 */	lfs f0, lbl_805A1708@sda21(r0)
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-125-/* 8003DC84 00033A04  93 E1 00 4C */	stw r31, 0x4c(r1)
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-126-/* 8003DC88 00033A08  7C 9F 23 78 */	mr r31, r4
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-127-/* 8003DC8C 00033A0C  FC 40 10 18 */	frsp f2, f2
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-128-/* 8003DC90 00033A10  FC 02 00 40 */	fcmpo cr0, f2, f0
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-129-/* 8003DC94 00033A14  40 80 00 08 */	bge .L_8003DC9C
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-130-/* 8003DC98 00033A18  38 00 00 01 */	li r0, 0x1
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-131-.L_8003DC9C:
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-132-/* 8003DC9C 00033A1C  2C 00 00 00 */	cmpwi r0, 0x0
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-133-/* 8003DCA0 00033A20  41 82 00 30 */	beq .L_8003DCD0
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-134-/* 8003DCA4 00033A24  C0 43 00 04 */	lfs f2, 0x4(r3)
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-135-/* 8003DCA8 00033A28  38 00 00 00 */	li r0, 0x0
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-136-/* 8003DCAC 00033A2C  C0 02 83 E8 */	lfs f0, lbl_805A1708@sda21(r0)
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-137-/* 8003DCB0 00033A30  FC 40 12 10 */	fabs f2, f2
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-138-/* 8003DCB4 00033A34  FC 40 10 18 */	frsp f2, f2
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-139-/* 8003DCB8 00033A38  FC 02 00 40 */	fcmpo cr0, f2, f0
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-140-/* 8003DCBC 00033A3C  40 80 00 08 */	bge .L_8003DCC4
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-141-/* 8003DCC0 00033A40  38 00 00 01 */	li r0, 0x1
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-142-.L_8003DCC4:
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-143-/* 8003DCC4 00033A44  2C 00 00 00 */	cmpwi r0, 0x0
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-144-/* 8003DCC8 00033A48  41 82 00 08 */	beq .L_8003DCD0
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-145-/* 8003DCCC 00033A4C  38 A0 00 01 */	li r5, 0x1
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-146-.L_8003DCD0:
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-147-/* 8003DCD0 00033A50  28 05 00 01 */	cmplwi r5, 0x1
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-148-/* 8003DCD4 00033A54  40 82 00 1C */	bne .L_8003DCF0
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-149-/* 8003DCD8 00033A58  C0 02 83 EC */	lfs f0, lbl_805A170C@sda21(r0)
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-150-/* 8003DCDC 00033A5C  D0 01 00 08 */	stfs f0, 0x8(r1)
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-151-/* 8003DCE0 00033A60  D0 01 00 0C */	stfs f0, 0xc(r1)
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-152-/* 8003DCE4 00033A64  D0 04 00 00 */	stfs f0, 0x0(r4)
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-153-/* 8003DCE8 00033A68  D0 04 00 04 */	stfs f0, 0x4(r4)
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-154-/* 8003DCEC 00033A6C  48 00 00 D0 */	b .L_8003DDBC
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-155-.L_8003DCF0:
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-156-/* 8003DCF0 00033A70  FC 40 0A 10 */	fabs f2, f1
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-157-/* 8003DCF4 00033A74  C0 02 83 E8 */	lfs f0, lbl_805A1708@sda21(r0)
+brawl-codex8/build/RSBE01_01/asm\auto_03_8003DB08_text.s-158-/* 8003DCF8 00033A78  38 00 00 00 */	li r0, 0x0

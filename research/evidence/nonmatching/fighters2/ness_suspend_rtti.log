@@ -1,0 +1,12 @@
+data 3898..38A6 lbl_101_data_3898
+	.string "soSuspendable"
+
+data 38A6..38A8 gap_04_000038A6_data
+.hidden gap_04_000038A6_data
+	.2byte 0x0000
+
+data 38A8..38B0 lbl_101_data_38A8
+	.4byte lbl_101_data_3898
+	.4byte 0x00000000
+
+

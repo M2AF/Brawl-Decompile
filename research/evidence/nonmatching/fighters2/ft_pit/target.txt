@@ -1,0 +1,486 @@
+data 6854..6868 lbl_112_data_6854
+	.string "ftKineticEnergyStop"
+
+data 6868..6894 lbl_112_data_6868
+	.4byte lbl_112_data_1D04
+	.4byte 0x00000006
+	.4byte lbl_112_data_1F7C
+	.4byte 0x00000005
+	.4byte lbl_112_data_2898
+	.4byte 0x00000000
+	.4byte lbl_112_data_1CEC
+	.4byte 0x00000000
+	.4byte lbl_112_data_68D8
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 6894..689C lbl_112_data_6894
+	.4byte lbl_112_data_6854
+	.4byte lbl_112_data_6868
+
+data 689C..68B2 lbl_112_data_689C
+	.string "soKineticEnergyNormal"
+
+data 68B2..68B4 gap_04_000068B2_data
+.hidden gap_04_000068B2_data
+	.2byte 0x0000
+
+data 68B4..68D8 lbl_112_data_68B4
+	.4byte lbl_112_data_1D04
+	.4byte 0x00000006
+	.4byte lbl_112_data_1F7C
+	.4byte 0x00000005
+	.4byte lbl_112_data_2898
+	.4byte 0x00000000
+	.4byte lbl_112_data_1CEC
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 68D8..68E0 lbl_112_data_68D8
+	.4byte lbl_112_data_689C
+	.4byte lbl_112_data_68B4
+
+data 68E0..68FC lbl_112_data_68E0
+	.4byte lbl_112_data_692C
+	.4byte 0x00000000
+	.4byte lbl_112_data_692C
+	.4byte 0x00000000
+	.4byte fn_112_774C
+	.4byte fn_112_DB74
+	.4byte fn_112_DBF8
+
+data 68FC..6917 lbl_112_data_68FC
+	.string "ftClassInfoImpl<23, ftPit>"
+
+data 6917..6918 gap_04_00006917_data
+.hidden gap_04_00006917_data
+	.byte 0x00
+
+data 6918..692C lbl_112_data_6918
+	.4byte lbl_112_data_2898
+	.4byte 0x00000000
+	.4byte lbl_112_data_20
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 692C..6938 lbl_112_data_692C
+	.4byte lbl_112_data_68FC
+	.4byte lbl_112_data_6918
+	.4byte 0x00000000
+
+data 6938..6978 lbl_112_data_6938
+	.4byte lbl_112_data_69AC
+	.4byte 0x00000000
+	.4byte fn_112_E0A4
+	.4byte fn_112_DDE0
+	.4byte exitStatus__19soStatusUniqProcessFP16soModuleAccesseri
+	.4byte fn_112_DE84
+	.4byte fn_112_E06C
+	.4byte execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execFixPos__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execFixCamera__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv
+	.4byte checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf
+	.4byte onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff
+	.4byte leaveStop__19soStatusUniqProcessFP16soModuleAccesserib
+	.4byte checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi
+
+data 6978..699E lbl_112_data_6978
+	.string "ftPitStatusUniqProcessSpecialSRevolve"
+
+data 699E..69A0 gap_04_0000699E_data
+.hidden gap_04_0000699E_data
+	.2byte 0x0000
+
+data 69A0..69AC lbl_112_data_69A0
+	.4byte __RTTI__19soStatusUniqProcess
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 69AC..69B4 lbl_112_data_69AC
+	.4byte lbl_112_data_6978
+	.4byte lbl_112_data_69A0
+
+data 69B4..69C8 lbl_112_data_69B4
+	.string "soStatusUniqProcess"
+
+data 69C8..69D0 __RTTI__19soStatusUniqProcess
+	.4byte lbl_112_data_69B4
+	.4byte 0x00000000
+
+text DD00..DD08 fn_112_DD00
+/* 0000DD00 0000DDCC  38 63 FF 6C */	subi r3, r3, 0x94
+/* 0000DD04 0000DDD0  4B FF BE 30 */	b fn_112_9B34
+
+text DD08..DD10 fn_112_DD08
+/* 0000DD08 0000DDD4  38 63 FF 6C */	subi r3, r3, 0x94
+/* 0000DD0C 0000DDD8  48 00 8F B0 */	b fn_27_135A54
+
+text DD10..DD18 fn_112_DD10
+/* 0000DD10 0000DDDC  38 63 FF 6C */	subi r3, r3, 0x94
+/* 0000DD14 0000DDE0  4B FF BC D4 */	b fn_112_99E8
+
+text DD18..DD20 fn_112_DD18
+/* 0000DD18 0000DDE4  38 63 FF 60 */	subi r3, r3, 0xa0
+/* 0000DD1C 0000DDE8  4B FF C0 84 */	b fn_112_9DA0
+
+text DD20..DD28 fn_112_DD20
+/* 0000DD20 0000DDEC  38 63 FF 60 */	subi r3, r3, 0xa0
+/* 0000DD24 0000DDF0  48 00 8F 98 */	b fn_27_135D90
+
+text DD28..DD30 fn_112_DD28
+/* 0000DD28 0000DDF4  38 63 FF 60 */	subi r3, r3, 0xa0
+/* 0000DD2C 0000DDF8  4B FF BF 9C */	b fn_112_9CC8
+
+text DD30..DD38 fn_112_DD30
+/* 0000DD30 0000DDFC  38 63 FF 54 */	subi r3, r3, 0xac
+/* 0000DD34 0000DE00  48 00 8F 88 */	b fn_27_135EAC
+
+text DD38..DD40 fn_112_DD38
+/* 0000DD38 0000DE04  38 63 FF 54 */	subi r3, r3, 0xac
+/* 0000DD3C 0000DE08  48 00 8F 80 */	b fn_27_135EA8
+
+text DD40..DD48 fn_112_DD40
+/* 0000DD40 0000DE0C  38 63 FF 48 */	subi r3, r3, 0xb8
+/* 0000DD44 0000DE10  48 00 8F 78 */	b fn_27_135EE0
+
+text DD48..DD50 fn_112_DD48
+/* 0000DD48 0000DE14  38 63 FF 48 */	subi r3, r3, 0xb8
+/* 0000DD4C 0000DE18  48 00 8F 70 */	b fn_27_135EDC
+
+text DD50..DD58 fn_112_DD50
+/* 0000DD50 0000DE1C  38 63 FF 3C */	subi r3, r3, 0xc4
+/* 0000DD54 0000DE20  48 00 8F 68 */	b fn_27_135EB4
+
+text DD58..DD60 fn_112_DD58
+/* 0000DD58 0000DE24  38 63 FF 30 */	subi r3, r3, 0xd0
+/* 0000DD5C 0000DE28  48 00 8F 60 */	b fn_27_13C428
+
+text DD60..DD68 fn_112_DD60
+/* 0000DD60 0000DE2C  38 63 FF 30 */	subi r3, r3, 0xd0
+/* 0000DD64 0000DE30  48 00 8F 58 */	b fn_27_13BDCC
+
+text DD68..DD70 fn_112_DD68
+/* 0000DD68 0000DE34  38 63 FF 30 */	subi r3, r3, 0xd0
+/* 0000DD6C 0000DE38  48 00 8F 50 */	b fn_27_13BB54
+
+text DD70..DD78 fn_112_DD70
+/* 0000DD70 0000DE3C  38 63 FF 30 */	subi r3, r3, 0xd0
+/* 0000DD74 0000DE40  48 00 8F 48 */	b fn_27_13B998
+
+text DD78..DD80 fn_112_DD78
+/* 0000DD78 0000DE44  38 63 FF 30 */	subi r3, r3, 0xd0
+/* 0000DD7C 0000DE48  48 00 8F 40 */	b fn_27_13B96C
+
+text DD80..DD88 fn_112_DD80
+/* 0000DD80 0000DE4C  38 63 FF 30 */	subi r3, r3, 0xd0
+/* 0000DD84 0000DE50  48 00 8F 38 */	b fn_27_13B5AC
+
+text DD88..DD90 fn_112_DD88
+/* 0000DD88 0000DE54  38 63 FF 30 */	subi r3, r3, 0xd0
+/* 0000DD8C 0000DE58  48 00 8F 30 */	b fn_27_13ACC4
+
+text DD90..DD98 fn_112_DD90
+/* 0000DD90 0000DE5C  38 63 FF 30 */	subi r3, r3, 0xd0
+/* 0000DD94 0000DE60  48 00 8F 28 */	b fn_27_13A89C
+
+text DD98..DDA0 fn_112_DD98
+/* 0000DD98 0000DE64  38 63 FF 30 */	subi r3, r3, 0xd0
+/* 0000DD9C 0000DE68  48 00 8F 20 */	b fn_27_13A4A0
+
+text DDA0..DDA8 fn_112_DDA0
+/* 0000DDA0 0000DE6C  38 63 FF 30 */	subi r3, r3, 0xd0
+/* 0000DDA4 0000DE70  48 00 8F 18 */	b fn_27_13A418
+
+text DDA8..DDB0 fn_112_DDA8
+/* 0000DDA8 0000DE74  38 63 FF 18 */	subi r3, r3, 0xe8
+/* 0000DDAC 0000DE78  48 00 8F 10 */	b fn_27_1362E4
+
+text DDB0..DDB8 fn_112_DDB0
+/* 0000DDB0 0000DE7C  38 63 FF 18 */	subi r3, r3, 0xe8
+/* 0000DDB4 0000DE80  48 00 8F 08 */	b fn_27_13604C
+
+text DDB8..DDC0 fn_112_DDB8
+/* 0000DDB8 0000DE84  38 63 FF 0C */	subi r3, r3, 0xf4
+/* 0000DDBC 0000DE88  48 00 8F 00 */	b fn_27_13DD00
+
+text DDC0..DDC8 fn_112_DDC0
+/* 0000DDC0 0000DE8C  38 63 FF 0C */	subi r3, r3, 0xf4
+/* 0000DDC4 0000DE90  48 00 8E F8 */	b fn_27_13C7D0
+
+text DDC8..DDD0 fn_112_DDC8
+/* 0000DDC8 0000DE94  38 63 FF 0C */	subi r3, r3, 0xf4
+/* 0000DDCC 0000DE98  48 00 8E F0 */	b fn_27_13CAF8
+
+text DDD0..DDD8 fn_112_DDD0
+/* 0000DDD0 0000DE9C  38 63 FF 0C */	subi r3, r3, 0xf4
+/* 0000DDD4 0000DEA0  48 00 8E E8 */	b fn_27_13C724
+
+text DDD8..DDE0 fn_112_DDD8
+/* 0000DDD8 0000DEA4  38 63 FF 00 */	subi r3, r3, 0x100
+/* 0000DDDC 0000DEA8  48 00 8E E0 */	b fn_27_136528
+
+text DDE0..DE84 fn_112_DDE0
+/* 0000DDE0 0000DEAC  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 0000DDE4 0000DEB0  7C 08 02 A6 */	mflr r0
+/* 0000DDE8 0000DEB4  90 01 00 34 */	stw r0, 0x34(r1)
+/* 0000DDEC 0000DEB8  39 61 00 30 */	addi r11, r1, 0x30
+/* 0000DDF0 0000DEBC  48 00 8E CD */	bl _savegpr_29
+/* 0000DDF4 0000DEC0  7C 9D 23 78 */	mr r29, r4
+/* 0000DDF8 0000DEC4  38 61 00 08 */	addi r3, r1, 0x8
+/* 0000DDFC 0000DEC8  80 84 00 D8 */	lwz r4, 0xd8(r4)
+/* 0000DE00 0000DECC  80 84 00 08 */	lwz r4, 0x8(r4)
+/* 0000DE04 0000DED0  38 A0 00 48 */	li r5, 0x48
+/* 0000DE08 0000DED4  81 84 00 00 */	lwz r12, 0x0(r4)
+/* 0000DE0C 0000DED8  81 8C 01 48 */	lwz r12, 0x148(r12)
+/* 0000DE10 0000DEDC  7D 89 03 A6 */	mtctr r12
+/* 0000DE14 0000DEE0  4E 80 04 21 */	bctrl
+/* 0000DE18 0000DEE4  80 7D 00 D8 */	lwz r3, 0xd8(r29)
+/* 0000DE1C 0000DEE8  80 63 00 64 */	lwz r3, 0x64(r3)
+/* 0000DE20 0000DEEC  C0 21 00 08 */	lfs f1, 0x8(r1)
+/* 0000DE24 0000DEF0  3F E0 21 00 */	lis r31, 0x2100
+/* 0000DE28 0000DEF4  38 9F 00 04 */	addi r4, r31, 0x4
+/* 0000DE2C 0000DEF8  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 0000DE30 0000DEFC  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 0000DE34 0000DF00  7D 89 03 A6 */	mtctr r12
+/* 0000DE38 0000DF04  4E 80 04 21 */	bctrl
+/* 0000DE3C 0000DF08  80 7D 00 D8 */	lwz r3, 0xd8(r29)
+/* 0000DE40 0000DF0C  83 C3 00 64 */	lwz r30, 0x64(r3)
+/* 0000DE44 0000DF10  7F A3 EB 78 */	mr r3, r29
+/* 0000DE48 0000DF14  38 80 0F A3 */	li r4, 0xfa3
+/* 0000DE4C 0000DF18  38 A0 00 00 */	li r5, 0x0
+/* 0000DE50 0000DF1C  48 00 8E 6D */	bl getConstantFloat__15soValueAccesserFP16soModuleAccesserUlUl
+/* 0000DE54 0000DF20  7F C3 F3 78 */	mr r3, r30
+/* 0000DE58 0000DF24  38 9F 00 05 */	addi r4, r31, 0x5
+/* 0000DE5C 0000DF28  81 9E 00 00 */	lwz r12, 0x0(r30)
+/* 0000DE60 0000DF2C  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 0000DE64 0000DF30  7D 89 03 A6 */	mtctr r12
+/* 0000DE68 0000DF34  4E 80 04 21 */	bctrl
+/* 0000DE6C 0000DF38  39 61 00 30 */	addi r11, r1, 0x30
+/* 0000DE70 0000DF3C  48 00 8E 4D */	bl _restgpr_29
+/* 0000DE74 0000DF40  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 0000DE78 0000DF44  7C 08 03 A6 */	mtlr r0
+/* 0000DE7C 0000DF48  38 21 00 30 */	addi r1, r1, 0x30
+/* 0000DE80 0000DF4C  4E 80 00 20 */	blr
+
+text DE84..E00C fn_112_DE84
+/* 0000DE84 0000DF50  94 21 FF D0 */	stwu r1, -0x30(r1)
+/* 0000DE88 0000DF54  7C 08 02 A6 */	mflr r0
+/* 0000DE8C 0000DF58  90 01 00 34 */	stw r0, 0x34(r1)
+/* 0000DE90 0000DF5C  DB E1 00 20 */	stfd f31, 0x20(r1)
+/* 0000DE94 0000DF60  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
+/* 0000DE98 0000DF64  39 61 00 20 */	addi r11, r1, 0x20
+/* 0000DE9C 0000DF68  48 00 8E 21 */	bl _savegpr_28
+/* 0000DEA0 0000DF6C  7C 7C 1B 78 */	mr r28, r3
+/* 0000DEA4 0000DF70  7C 9D 23 78 */	mr r29, r4
+/* 0000DEA8 0000DF74  80 64 00 D8 */	lwz r3, 0xd8(r4)
+/* 0000DEAC 0000DF78  80 63 00 64 */	lwz r3, 0x64(r3)
+/* 0000DEB0 0000DF7C  3C 80 21 00 */	lis r4, 0x2100
+/* 0000DEB4 0000DF80  38 84 00 05 */	addi r4, r4, 0x5
+/* 0000DEB8 0000DF84  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 0000DEBC 0000DF88  81 8C 00 38 */	lwz r12, 0x38(r12)
+/* 0000DEC0 0000DF8C  7D 89 03 A6 */	mtctr r12
+/* 0000DEC4 0000DF90  4E 80 04 21 */	bctrl
+/* 0000DEC8 0000DF94  FF E0 08 90 */	fmr f31, f1
+/* 0000DECC 0000DF98  80 7D 00 D8 */	lwz r3, 0xd8(r29)
+/* 0000DED0 0000DF9C  83 C3 00 5C */	lwz r30, 0x5c(r3)
+/* 0000DED4 0000DFA0  38 60 00 01 */	li r3, 0x1
+/* 0000DED8 0000DFA4  48 00 8D E5 */	bl getButtonMask__12soControllerFQ212soController9PadButton
+/* 0000DEDC 0000DFA8  7C 7F 1B 78 */	mr r31, r3
+/* 0000DEE0 0000DFAC  7F C3 F3 78 */	mr r3, r30
+/* 0000DEE4 0000DFB0  81 9E 00 00 */	lwz r12, 0x0(r30)
+/* 0000DEE8 0000DFB4  81 8C 00 A0 */	lwz r12, 0xa0(r12)
+/* 0000DEEC 0000DFB8  7D 89 03 A6 */	mtctr r12
+/* 0000DEF0 0000DFBC  4E 80 04 21 */	bctrl
+/* 0000DEF4 0000DFC0  7C 60 F8 39 */	and. r0, r3, r31
+/* 0000DEF8 0000DFC4  41 82 00 18 */	beq .L_0000DF10
+/* 0000DEFC 0000DFC8  7F A3 EB 78 */	mr r3, r29
+/* 0000DF00 0000DFCC  38 80 0F A6 */	li r4, 0xfa6
+/* 0000DF04 0000DFD0  38 A0 00 00 */	li r5, 0x0
+/* 0000DF08 0000DFD4  48 00 8D B5 */	bl getConstantFloat__15soValueAccesserFP16soModuleAccesserUlUl
+/* 0000DF0C 0000DFD8  EF FF 08 2A */	fadds f31, f31, f1
+.L_0000DF10:
+/* 0000DF10 0000DFDC  7F A3 EB 78 */	mr r3, r29
+/* 0000DF14 0000DFE0  38 80 0F A4 */	li r4, 0xfa4
+/* 0000DF18 0000DFE4  38 A0 00 00 */	li r5, 0x0
+/* 0000DF1C 0000DFE8  48 00 8D A1 */	bl getConstantFloat__15soValueAccesserFP16soModuleAccesserUlUl
+/* 0000DF20 0000DFEC  EF FF 08 28 */	fsubs f31, f31, f1
+/* 0000DF24 0000DFF0  7F A3 EB 78 */	mr r3, r29
+/* 0000DF28 0000DFF4  38 80 0F A8 */	li r4, 0xfa8
+/* 0000DF2C 0000DFF8  38 A0 00 00 */	li r5, 0x0
+/* 0000DF30 0000DFFC  48 00 8D 8D */	bl getConstantFloat__15soValueAccesserFP16soModuleAccesserUlUl
+/* 0000DF34 0000E000  FC 1F 08 40 */	fcmpo cr0, f31, f1
+/* 0000DF38 0000E004  4C 40 13 82 */	cror eq, lt, eq
+/* 0000DF3C 0000E008  40 82 00 28 */	bne .L_0000DF64
+/* 0000DF40 0000E00C  80 7D 00 D8 */	lwz r3, 0xd8(r29)
+/* 0000DF44 0000E010  80 63 00 70 */	lwz r3, 0x70(r3)
+/* 0000DF48 0000E014  38 80 01 1C */	li r4, 0x11c
+/* 0000DF4C 0000E018  7F A5 EB 78 */	mr r5, r29
+/* 0000DF50 0000E01C  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 0000DF54 0000E020  81 8C 00 14 */	lwz r12, 0x14(r12)
+/* 0000DF58 0000E024  7D 89 03 A6 */	mtctr r12
+/* 0000DF5C 0000E028  4E 80 04 21 */	bctrl
+/* 0000DF60 0000E02C  48 00 00 8C */	b .L_0000DFEC
+.L_0000DF64:
+/* 0000DF64 0000E030  7F A3 EB 78 */	mr r3, r29
+/* 0000DF68 0000E034  38 80 0F A5 */	li r4, 0xfa5
+/* 0000DF6C 0000E038  38 A0 00 00 */	li r5, 0x0
+/* 0000DF70 0000E03C  48 00 8D 4D */	bl getConstantFloat__15soValueAccesserFP16soModuleAccesserUlUl
+/* 0000DF74 0000E040  FC 1F 08 40 */	fcmpo cr0, f31, f1
+/* 0000DF78 0000E044  40 81 00 08 */	ble .L_0000DF80
+/* 0000DF7C 0000E048  FF E0 08 90 */	fmr f31, f1
+.L_0000DF80:
+/* 0000DF80 0000E04C  80 7D 00 D8 */	lwz r3, 0xd8(r29)
+/* 0000DF84 0000E050  80 63 00 64 */	lwz r3, 0x64(r3)
+/* 0000DF88 0000E054  FC 20 F8 90 */	fmr f1, f31
+/* 0000DF8C 0000E058  3F E0 21 00 */	lis r31, 0x2100
+/* 0000DF90 0000E05C  38 9F 00 05 */	addi r4, r31, 0x5
+/* 0000DF94 0000E060  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 0000DF98 0000E064  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 0000DF9C 0000E068  7D 89 03 A6 */	mtctr r12
+/* 0000DFA0 0000E06C  4E 80 04 21 */	bctrl
+/* 0000DFA4 0000E070  80 7D 00 D8 */	lwz r3, 0xd8(r29)
+/* 0000DFA8 0000E074  80 63 00 64 */	lwz r3, 0x64(r3)
+/* 0000DFAC 0000E078  38 9F 00 04 */	addi r4, r31, 0x4
+/* 0000DFB0 0000E07C  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 0000DFB4 0000E080  81 8C 00 38 */	lwz r12, 0x38(r12)
+/* 0000DFB8 0000E084  7D 89 03 A6 */	mtctr r12
+/* 0000DFBC 0000E088  4E 80 04 21 */	bctrl
+/* 0000DFC0 0000E08C  EC 21 F8 2A */	fadds f1, f1, f31
+/* 0000DFC4 0000E090  80 7D 00 D8 */	lwz r3, 0xd8(r29)
+/* 0000DFC8 0000E094  80 63 00 64 */	lwz r3, 0x64(r3)
+/* 0000DFCC 0000E098  38 9F 00 04 */	addi r4, r31, 0x4
+/* 0000DFD0 0000E09C  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 0000DFD4 0000E0A0  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 0000DFD8 0000E0A4  7D 89 03 A6 */	mtctr r12
+/* 0000DFDC 0000E0A8  4E 80 04 21 */	bctrl
+/* 0000DFE0 0000E0AC  7F 83 E3 78 */	mr r3, r28
+/* 0000DFE4 0000E0B0  7F A4 EB 78 */	mr r4, r29
+/* 0000DFE8 0000E0B4  48 00 00 25 */	bl fn_112_E00C
+.L_0000DFEC:
+/* 0000DFEC 0000E0B8  E3 E1 00 28 */	psq_l f31, 0x28(r1), 0, qr0
+/* 0000DFF0 0000E0BC  CB E1 00 20 */	lfd f31, 0x20(r1)
+/* 0000DFF4 0000E0C0  39 61 00 20 */	addi r11, r1, 0x20
+/* 0000DFF8 0000E0C4  48 00 8C C5 */	bl _restgpr_28
+/* 0000DFFC 0000E0C8  80 01 00 34 */	lwz r0, 0x34(r1)
+/* 0000E000 0000E0CC  7C 08 03 A6 */	mtlr r0
+/* 0000E004 0000E0D0  38 21 00 30 */	addi r1, r1, 0x30
+/* 0000E008 0000E0D4  4E 80 00 20 */	blr
+
+text E00C..E06C fn_112_E00C
+/* 0000E00C 0000E0D8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 0000E010 0000E0DC  7C 08 02 A6 */	mflr r0
+/* 0000E014 0000E0E0  90 01 00 14 */	stw r0, 0x14(r1)
+/* 0000E018 0000E0E4  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 0000E01C 0000E0E8  80 64 00 D8 */	lwz r3, 0xd8(r4)
+/* 0000E020 0000E0EC  83 E3 00 04 */	lwz r31, 0x4(r3)
+/* 0000E024 0000E0F0  80 63 00 64 */	lwz r3, 0x64(r3)
+/* 0000E028 0000E0F4  3C 80 21 00 */	lis r4, 0x2100
+/* 0000E02C 0000E0F8  38 84 00 04 */	addi r4, r4, 0x4
+/* 0000E030 0000E0FC  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 0000E034 0000E100  81 8C 00 38 */	lwz r12, 0x38(r12)
+/* 0000E038 0000E104  7D 89 03 A6 */	mtctr r12
+/* 0000E03C 0000E108  4E 80 04 21 */	bctrl
+/* 0000E040 0000E10C  7F E3 FB 78 */	mr r3, r31
+/* 0000E044 0000E110  38 80 00 48 */	li r4, 0x48
+/* 0000E048 0000E114  81 9F 00 08 */	lwz r12, 0x8(r31)
+/* 0000E04C 0000E118  81 8C 00 70 */	lwz r12, 0x70(r12)
+/* 0000E050 0000E11C  7D 89 03 A6 */	mtctr r12
+/* 0000E054 0000E120  4E 80 04 21 */	bctrl
+/* 0000E058 0000E124  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 0000E05C 0000E128  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 0000E060 0000E12C  7C 08 03 A6 */	mtlr r0
+/* 0000E064 0000E130  38 21 00 10 */	addi r1, r1, 0x10
+/* 0000E068 0000E134  4E 80 00 20 */	blr
+
+text E06C..E070 fn_112_E06C
+/* 0000E06C 0000E138  4B FF FF A0 */	b fn_112_E00C
+
+text E070..E078 checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi
+/* 0000E070 0000E13C  38 60 00 01 */	li r3, 0x1
+/* 0000E074 0000E140  4E 80 00 20 */	blr
+
+text E078..E07C leaveStop__19soStatusUniqProcessFP16soModuleAccesserib
+/* 0000E078 0000E144  4E 80 00 20 */	blr
+
+text E07C..E084 onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff
+/* 0000E07C 0000E148  38 60 00 00 */	li r3, 0x0
+/* 0000E080 0000E14C  4E 80 00 20 */	blr
+
+text E084..E088 checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf
+/* 0000E084 0000E150  4E 80 00 20 */	blr
+
+text E088..E090 checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv
+/* 0000E088 0000E154  38 60 00 00 */	li r3, 0x0
+/* 0000E08C 0000E158  4E 80 00 20 */	blr
+
+text E090..E094 execFixCamera__19soStatusUniqProcessFP16soModuleAccesser
+/* 0000E090 0000E15C  4E 80 00 20 */	blr
+
+text E094..E098 execFixPos__19soStatusUniqProcessFP16soModuleAccesser
+/* 0000E094 0000E160  4E 80 00 20 */	blr
+
+text E098..E09C execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser
+/* 0000E098 0000E164  4E 80 00 20 */	blr
+
+text E09C..E0A0 execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser
+/* 0000E09C 0000E168  4E 80 00 20 */	blr
+
+text E0A0..E0A4 exitStatus__19soStatusUniqProcessFP16soModuleAccesseri
+/* 0000E0A0 0000E16C  4E 80 00 20 */	blr
+
+text E0A4..E0E4 fn_112_E0A4
+/* 0000E0A4 0000E170  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 0000E0A8 0000E174  7C 08 02 A6 */	mflr r0
+/* 0000E0AC 0000E178  90 01 00 14 */	stw r0, 0x14(r1)
+/* 0000E0B0 0000E17C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 0000E0B4 0000E180  7C 7F 1B 78 */	mr r31, r3
+/* 0000E0B8 0000E184  2C 03 00 00 */	cmpwi r3, 0x0
+/* 0000E0BC 0000E188  41 82 00 10 */	beq .L_0000E0CC
+/* 0000E0C0 0000E18C  7C 80 07 35 */	extsh. r0, r4
+/* 0000E0C4 0000E190  40 81 00 08 */	ble .L_0000E0CC
+/* 0000E0C8 0000E194  48 00 8B F5 */	bl __dl__FPv
+.L_0000E0CC:
+/* 0000E0CC 0000E198  7F E3 FB 78 */	mr r3, r31
+/* 0000E0D0 0000E19C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 0000E0D4 0000E1A0  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 0000E0D8 0000E1A4  7C 08 03 A6 */	mtlr r0
+/* 0000E0DC 0000E1A8  38 21 00 10 */	addi r1, r1, 0x10
+/* 0000E0E0 0000E1AC  4E 80 00 20 */	blr
+
+text E0E4..E0E8 execStop__19soStatusUniqProcessFP16soModuleAccesser
+/* 0000E0E4 0000E1B0  4E 80 00 20 */	blr
+
+text E0E8..E0EC execStatus__19soStatusUniqProcessFP16soModuleAccesser
+/* 0000E0E8 0000E1B4  4E 80 00 20 */	blr
+
+text E0EC..E0F0 initStatus__19soStatusUniqProcessFP16soModuleAccesser
+/* 0000E0EC 0000E1B8  4E 80 00 20 */	blr
+
+text E0F0..E138 fn_112_E0F0
+/* 0000E0F0 0000E1BC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 0000E0F4 0000E1C0  7C 08 02 A6 */	mflr r0
+/* 0000E0F8 0000E1C4  90 01 00 14 */	stw r0, 0x14(r1)
+/* 0000E0FC 0000E1C8  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 0000E100 0000E1CC  3F E0 00 00 */	lis r31, lbl_112_bss_1AC@ha
+/* 0000E104 0000E1D0  38 7F 00 00 */	addi r3, r31, lbl_112_bss_1AC@l
+/* 0000E108 0000E1D4  48 00 00 31 */	bl fn_112_E138
+/* 0000E10C 0000E1D8  38 7F 00 00 */	addi r3, r31, lbl_112_bss_1AC@l
+/* 0000E110 0000E1DC  3C 80 00 00 */	lis r4, fn_112_E0A4@ha
+/* 0000E114 0000E1E0  38 84 00 00 */	addi r4, r4, fn_112_E0A4@l
+/* 0000E118 0000E1E4  3C A0 00 00 */	lis r5, lbl_112_bss_1A0@ha
+/* 0000E11C 0000E1E8  38 A5 00 00 */	addi r5, r5, lbl_112_bss_1A0@l
+/* 0000E120 0000E1EC  4B FF 1E E1 */	bl __register_global_object
+/* 0000E124 0000E1F0  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 0000E128 0000E1F4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 0000E12C 0000E1F8  7C 08 03 A6 */	mtlr r0
+/* 0000E130 0000E1FC  38 21 00 10 */	addi r1, r1, 0x10
+/* 0000E134 0000E200  4E 80 00 20 */	blr
+
+text E138..E148 fn_112_E138
+/* 0000E138 0000E204  3C 80 00 00 */	lis r4, lbl_112_data_6938@ha
+/* 0000E13C 0000E208  38 84 00 00 */	addi r4, r4, lbl_112_data_6938@l
+/* 0000E140 0000E20C  90 83 00 00 */	stw r4, 0x0(r3)
+/* 0000E144 0000E210  4E 80 00 20 */	blr
+

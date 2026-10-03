@@ -1,0 +1,453 @@
+? __dl__FPv(void *arg0);                            /* extern */
+void *__dynamic_cast(?, struct RTTI *, struct RTTI *, s32); /* extern */
+? __register_global_object(? **, void *(*)(void *, s16), ? *); /* extern */
+f64 cos(f32);                                       /* extern */
+f32 fn_101_BD7C(f32, f32);                          /* extern */
+? fn_101_FE5C(void *, f32 *, f32);                  /* extern */
+? fn_8003DC00(? *, s32 *);                          /* extern */
+? fn_8003DC64(f32 *, f32 *, f32);                   /* extern */
+f32 fn_8003DDD0(? *, f32 *);                        /* extern */
+void *getData__20ftCommonDataAccesserCF6ftKind(ftCommonDataAccesser *this, ftKind arg0); /* extern */
+f32 rsqrtf__Ff(f32 arg0);                           /* extern */
+f64 sin(f32);                                       /* extern */
+f32 fn_101_129F0(s32 *arg0);                        /* static */
+u64 fn_101_12A08(f32 *arg0, f32 farg0, f32);        /* static */
+void *fn_101_12B04(void *arg0, s16 arg1);           /* static */
+void fn_101_12B8C(? **arg0);                        /* static */
+extern struct RTTI __RTTI__15soKineticEnergy;
+extern struct RTTI __RTTI__19ftKineticEnergyStop;
+extern ftCommonDataAccesser g_ftCommonDataAccesser;
+static struct RTTI lbl_101_data_8BEC;               /* unable to generate initializer: cannot parse lbl_101_data_8BB0 as integer */
+static ? lbl_101_data_8BF4;                         /* unable to generate initializer: unknown type */
+static ? lbl_101_bss_220;
+static ? *lbl_101_bss_22C;
+
+void fn_101_11D78(void *arg1) {
+    f32 spC;
+    f32 sp8;
+    f32 temp_f30;
+    f32 temp_f31;
+    void **temp_r26;
+    void **temp_r27;
+    void **temp_r28;
+    void **temp_r29;
+    void *temp_r24;
+    void *temp_r25;
+    void *temp_r29_2;
+    void *temp_r30;
+    void *temp_r30_2;
+    void *temp_r3;
+    void *temp_r3_2;
+
+    temp_r3 = arg1->unkD8;
+    temp_r28 = temp_r3->unk64;
+    temp_r27 = temp_r3->unk14;
+    temp_r26 = temp_r3->unk7C;
+    temp_r29 = temp_r3->unkC;
+    temp_r30 = temp_r3->unk10;
+    temp_r25 = temp_r3->unk4;
+    temp_r24 = getData__20ftCommonDataAccesserCF6ftKind(&g_ftCommonDataAccesser, (ftKind) 0xA)->unk84;
+    temp_f31 = (*temp_r29)->unk2C(temp_r29);
+    temp_f30 = (*temp_r28)->unk38(temp_r28, 0x21000004);
+    if ((*temp_r28)->unk4C(temp_r28, 0x22000011) != 0) {
+        temp_r30->unk8->unk54(temp_r30, 5, 0);
+        (*temp_r27)->unk20(temp_r27, 2, 0);
+        sp8 = temp_f31 * (temp_r24->unk18 * (f32) cos(temp_f30));
+        spC = temp_r24->unk18 * (f32) sin(temp_f30);
+    } else {
+        temp_r30->unk8->unk54(temp_r30, 1, 0);
+        (*temp_r27)->unk20(temp_r27, 0, 0);
+        sp8 = temp_r24->unk18 * temp_f31;
+        spC = 0.0f;
+    }
+    (*temp_r26)->unk20(temp_r26, 3);
+    temp_r29_2 = __dynamic_cast(0, &__RTTI__19ftKineticEnergyStop, &__RTTI__15soKineticEnergy, 1);
+    (*temp_r26)->unk20(temp_r26, 1);
+    temp_r30_2 = __dynamic_cast(0, &lbl_101_data_8BEC, &__RTTI__15soKineticEnergy, 1);
+    fn_101_FE5C(temp_r29_2 + 8, &sp8);
+    temp_r30_2->unkC = 0.0f;
+    if ((*temp_r27)->unk14(temp_r27) == 0) {
+        (*temp_r26)->unk5C(temp_r26, 0x67, arg1);
+    } else {
+        (*temp_r26)->unk5C(temp_r26, 0x68, arg1);
+    }
+    temp_r25->unk8->unk78(temp_r25, 5, &lbl_101_rodata_5C, 57.29578f * fn_101_BD7C(spC, sp8 * temp_f31));
+    temp_r3_2 = arg1->unk8;
+    temp_r3_2->unk3C->unkB4(temp_r3_2);
+}
+
+void fn_101_1203C(void *arg1) {
+    u32 sp14;
+    s32 sp10;
+    u32 spC;
+    s32 sp8;
+    s32 temp_r3_2;
+    u32 temp_r4_2;
+    u64 temp_ret;
+    void **temp_r31;
+    void **temp_r3;
+    void *temp_r30;
+    void *temp_r4;
+
+    temp_r4 = arg1->unkD8;
+    temp_r3 = temp_r4->unk7C;
+    temp_r31 = temp_r4->unkC;
+    temp_r30 = temp_r4->unk4;
+    temp_ret = (*(*temp_r3)->unk20(temp_r3, 3))->unk10();
+    temp_r3_2 = temp_ret;
+    temp_r4_2 = (u32) temp_ret;
+    spC = temp_r4_2;
+    sp8 = temp_r3_2;
+    sp10 = temp_r3_2;
+    sp14 = temp_r4_2;
+    temp_r30->unk8->unk78(temp_r30, 5, &lbl_101_rodata_5C, 57.29578f * fn_101_BD7C((bitwise f32) sp14, (bitwise f32) sp10 * (*temp_r31)->unk2C(temp_r31)));
+}
+
+/*
+Decompilation failure in function fn_101_120F4:
+
+Unable to determine jump table for bctr instruction at ft_ness_status_uniq_process_special_hi_attack.s line 248.
+
+There must be a read of a variable before the instruction
+which has a name starting with with "jtbl"/"jpt_"/"lbl_"/"jumptable_".
+*/
+
+void fn_101_12104(void *arg1) {
+    u32 sp7C;                                       /* compiler-managed */
+    s32 sp78;                                       /* compiler-managed */
+    ? sp70;
+    f32 sp6C;
+    f32 sp68;
+    u32 sp64;                                       /* compiler-managed */
+    s32 sp60;                                       /* compiler-managed */
+    u32 sp5C;
+    s32 sp58;
+    u32 sp54;
+    s32 sp50;
+    u32 sp4C;
+    s32 sp48;
+    u32 sp44;
+    s32 sp40;
+    u32 sp3C;
+    s32 sp38;
+    u32 sp34;
+    s32 sp30;
+    u32 sp2C;
+    s32 sp28;
+    f32 sp24;
+    f32 sp20;
+    u32 sp1C;
+    s32 sp18;
+    u32 sp14;
+    s32 sp10;
+    f32 spC;
+    f32 sp8;
+    f32 temp_f0;
+    f32 temp_f1;
+    f32 temp_f1_2;
+    f32 temp_f1_3;
+    f32 temp_f29;
+    f32 temp_f2;
+    f32 temp_f2_2;
+    f32 temp_f2_3;
+    f32 temp_f30;
+    f32 temp_f31;
+    f32 var_f1;
+    f32 var_f1_2;
+    f32 var_f30;
+    f32 var_f30_2;
+    f32 var_f31;
+    f32 var_f31_2;
+    f32 var_f31_3;
+    s32 temp_r3_3;
+    s32 temp_r3_4;
+    s32 var_r0;
+    s32 var_r22;
+    u32 temp_r4;
+    u32 temp_r4_2;
+    u64 temp_ret;
+    u64 temp_ret_2;
+    u64 temp_ret_3;
+    u64 temp_ret_4;
+    u64 temp_ret_5;
+    u64 temp_ret_6;
+    u64 temp_ret_7;
+    u64 temp_ret_8;
+    u64 temp_ret_9;
+    void **temp_r26;
+    void **temp_r27;
+    void **temp_r28;
+    void **temp_r29;
+    void **temp_r30;
+    void *temp_r24;
+    void *temp_r25;
+    void *temp_r3;
+    void *temp_r3_2;
+
+    temp_r3 = arg1->unkD8;
+    temp_r30 = temp_r3->unk64;
+    temp_r29 = temp_r3->unk14;
+    temp_r28 = temp_r3->unk7C;
+    temp_r27 = temp_r3->unk70;
+    temp_r26 = temp_r3->unkC;
+    temp_r25 = temp_r3->unk10;
+    temp_r24 = getData__20ftCommonDataAccesserCF6ftKind(&g_ftCommonDataAccesser, (ftKind) 0xA)->unk84;
+    (*temp_r28)->unk20(temp_r28, 3);
+    temp_r3_2 = __dynamic_cast(0, &__RTTI__19ftKineticEnergyStop, &__RTTI__15soKineticEnergy, 1);
+    var_r22 = 0;
+    temp_ret = temp_r3_2->unk0->unk10();
+    temp_r3_3 = temp_ret;
+    temp_r4 = (u32) temp_ret;
+    sp5C = temp_r4;
+    sp58 = temp_r3_3;
+    sp78 = temp_r3_3;
+    sp7C = temp_r4;
+    fn_8003DC00(&sp70, &sp78);
+    if ((*temp_r29)->unk1C(temp_r29) != 0) {
+        if ((*temp_r29)->unk14(temp_r29) == 0) {
+            temp_ret_2 = temp_r25->unk8->unkEC(temp_r25, 8, 0);
+            sp54 = (u32) temp_ret_2;
+            sp50 = temp_ret_2;
+            sp68 = (bitwise f32) sp50;
+            sp6C = (bitwise f32) sp54;
+            if (fn_8003DDD0(&sp70, &sp68) > (lbl_101_rodata_58.unk8 * (lbl_101_rodata_58.unkC + temp_r24->unk28))) {
+                (*temp_r27)->unk14(temp_r27, 0x4A, arg1);
+                return;
+            }
+            temp_r25->unk8->unk54(temp_r25, 1, 0);
+            (*temp_r28)->unk5C(temp_r28, 0x67, arg1);
+            goto block_12;
+        }
+        if (temp_r25->unk8->unkE4(temp_r25, 4, 0) != 0) {
+            var_r22 = 4;
+        } else if (temp_r25->unk8->unkE4(temp_r25, 2, 0) != 0) {
+            var_r22 = 2;
+        }
+        if (var_r22 != 0) {
+            (*temp_r27)->unk14(temp_r27, 0x11B, arg1);
+            return;
+        }
+        temp_r25->unk8->unk54(temp_r25, 5, 0);
+        (*temp_r28)->unk5C(temp_r28, 0x68, arg1);
+        goto block_12;
+    }
+block_12:
+    if ((*temp_r29)->unk14(temp_r29) == 0) {
+        if (temp_r25->unk8->unkE4(temp_r25, 1, 0) != 0) {
+            var_r22 = 1;
+        } else if (temp_r25->unk8->unkE4(temp_r25, 4, 0) != 0) {
+            var_r22 = 4;
+        } else if (temp_r25->unk8->unkE4(temp_r25, 2, 0) != 0) {
+            var_r22 = 2;
+        }
+        if (var_r22 != 0) {
+            (*temp_r27)->unk14(temp_r27, 0x4A, arg1);
+        } else {
+            temp_ret_3 = temp_r25->unk8->unkEC(temp_r25, 8, 0);
+            sp4C = (u32) temp_ret_3;
+            sp48 = temp_ret_3;
+            temp_f2 = (bitwise f32) sp48;
+            sp68 = temp_f2;
+            temp_f0 = (bitwise f32) sp4C;
+            sp6C = temp_f0;
+            temp_f31 = fn_101_BD7C((f32) temp_f0, (f32) temp_f2) - lbl_101_rodata_58.unk10;
+            temp_f1 = fn_101_129F0(&sp78);
+            temp_f2_2 = temp_f1 * rsqrtf__Ff(temp_f1);
+            if ((bitwise f32) sp78 < 0.0f) {
+                var_r0 = -1;
+            } else {
+                var_r0 = 1;
+            }
+            sp78 = temp_f2_2 * (f32) var_r0;
+            sp7C = 0.0f;
+            fn_8003DC64(&sp78, &sp78, temp_f31);
+            temp_r3_2->unk8 = sp78;
+            temp_r3_2->unkC = sp7C;
+        }
+    } else {
+        if (temp_r25->unk8->unkE4(temp_r25, 1, 0) != 0) {
+            var_r22 = 1;
+            temp_ret_4 = temp_r25->unk8->unkEC(temp_r25, 1, 0);
+            sp44 = (u32) temp_ret_4;
+            sp40 = temp_ret_4;
+            sp68 = (bitwise f32) sp40;
+            sp6C = (bitwise f32) sp44;
+        } else if (temp_r25->unk8->unkE4(temp_r25, 4, 0) != 0) {
+            var_r22 = 4;
+            temp_ret_5 = temp_r25->unk8->unkEC(temp_r25, 4, 0);
+            sp3C = (u32) temp_ret_5;
+            sp38 = temp_ret_5;
+            sp68 = (bitwise f32) sp38;
+            sp6C = (bitwise f32) sp3C;
+        } else if (temp_r25->unk8->unkE4(temp_r25, 2, 0) != 0) {
+            var_r22 = 2;
+            temp_ret_6 = temp_r25->unk8->unkEC(temp_r25, 2, 0);
+            sp34 = (u32) temp_ret_6;
+            sp30 = temp_ret_6;
+            sp68 = (bitwise f32) sp30;
+            sp6C = (bitwise f32) sp34;
+        }
+        if (var_r22 != 0) {
+            if (fn_8003DDD0(&sp70, &sp68) > (lbl_101_rodata_58.unk8 * (lbl_101_rodata_58.unkC + temp_r24->unk28))) {
+                temp_f2_3 = sp68 * sp78;
+                temp_ret_7 = fn_101_12A08(&sp68, lbl_101_rodata_58.unk14, temp_f2_3);
+                sp14 = (u32) temp_ret_7;
+                sp10 = temp_ret_7;
+                temp_ret_8 = fn_101_12A08((f32 *) &sp10, temp_f2_3 + (sp6C * sp7C));
+                sp1C = (u32) temp_ret_8;
+                sp18 = temp_ret_8;
+                sp8 = sp78 - (bitwise f32) sp18;
+                temp_f1_2 = sp7C;
+                spC = temp_f1_2 - (bitwise f32) sp1C;
+                sp20 = sp8;
+                sp24 = spC;
+                sp78 = sp20;
+                sp7C = sp24;
+                fn_101_FE5C(temp_r3_2 + 8, &sp78, temp_f1_2);
+                (*temp_r27)->unk14(temp_r27, 0x11D, arg1);
+            } else if (((u32) var_r22 == 4U) || ((u32) var_r22 == 2U)) {
+                var_f31 = fn_101_BD7C(sp6C, sp68);
+loop_38:
+                if (var_f31 < 0.0f) {
+                    var_f31 += lbl_101_rodata_58.unk18;
+                    goto loop_38;
+                }
+loop_41:
+                if (var_f31 > lbl_101_rodata_58.unk18) {
+                    var_f31 -= lbl_101_rodata_58.unk18;
+                    goto loop_41;
+                }
+                var_f30 = (*temp_r30)->unk38(temp_r30, 0x21000004);
+loop_44:
+                if (var_f30 < 0.0f) {
+                    var_f30 += lbl_101_rodata_58.unk18;
+                    goto loop_44;
+                }
+loop_47:
+                if (var_f30 > lbl_101_rodata_58.unk18) {
+                    var_f30 -= lbl_101_rodata_58.unk18;
+                    goto loop_47;
+                }
+                if ((u32) var_r22 == 4U) {
+                    var_f1 = lbl_101_rodata_58.unk1C + var_f30;
+loop_51:
+                    if (var_f1 < 0.0f) {
+                        var_f1 += lbl_101_rodata_58.unk18;
+                        goto loop_51;
+                    }
+loop_54:
+                    if (var_f1 > lbl_101_rodata_58.unk18) {
+                        var_f1 -= lbl_101_rodata_58.unk18;
+                        goto loop_54;
+                    }
+                    if ((var_f1 - var_f31) < 0.0f) {
+                        var_f31_2 = var_f31 + lbl_101_rodata_58.unk10;
+                    } else {
+                        var_f31_2 = var_f31 - lbl_101_rodata_58.unk10;
+                    }
+                } else {
+                    var_f1_2 = lbl_101_rodata_58.unk1C + var_f31;
+loop_60:
+                    if (var_f1_2 < 0.0f) {
+                        var_f1_2 += lbl_101_rodata_58.unk18;
+                        goto loop_60;
+                    }
+loop_63:
+                    if (var_f1_2 > lbl_101_rodata_58.unk18) {
+                        var_f1_2 -= lbl_101_rodata_58.unk18;
+                        goto loop_63;
+                    }
+                    if ((var_f30 - var_f1_2) < 0.0f) {
+                        var_f31_2 = var_f31 + lbl_101_rodata_58.unk10;
+                    } else {
+                        var_f31_2 = var_f31 - lbl_101_rodata_58.unk10;
+                    }
+                }
+                fn_8003DC64(&sp78, &sp78, var_f31_2 - var_f30);
+                fn_101_FE5C(temp_r3_2 + 8, &sp78);
+                (*temp_r28)->unk5C(temp_r28, 0x68, arg1);
+                (*temp_r30)->unk3C(temp_r30, 0x21000004, var_f30);
+            }
+        }
+    }
+    if ((*temp_r27)->unk4C(temp_r27) != 0) {
+        temp_ret_9 = temp_r3_2->unk0->unk10(temp_r3_2);
+        temp_r3_4 = temp_ret_9;
+        temp_r4_2 = (u32) temp_ret_9;
+        sp2C = temp_r4_2;
+        sp28 = temp_r3_4;
+        sp60 = temp_r3_4;
+        sp64 = temp_r4_2;
+        temp_f1_3 = fn_101_129F0(&sp60);
+        M2C_ERROR(/* unknown instruction: cror eq, lt, eq */);
+        if ((f32) fabs(temp_f1_3) == lbl_101_rodata_58.unk20) {
+            var_f30_2 = 0.0f;
+        } else {
+            var_f30_2 = temp_f1_3 * rsqrtf__Ff(temp_f1_3);
+        }
+        temp_f29 = fn_101_BD7C((bitwise f32) sp64, (bitwise f32) sp60 * (*temp_r26)->unk2C(temp_r26));
+        var_f31_3 = var_f30_2 - temp_r24->unk20;
+        if (var_f31_3 < lbl_101_rodata_58.unk24) {
+            var_f31_3 = lbl_101_rodata_58.unk24;
+        }
+        temp_f30 = (f32) cos(temp_f29);
+        sp60 = var_f31_3 * temp_f30 * (*temp_r26)->unk2C(temp_r26);
+        sp64 = var_f31_3 * (f32) sin(temp_f29);
+        fn_101_FE5C(temp_r3_2 + 8, &sp60);
+    }
+}
+
+f32 fn_101_129F0(s32 *arg0) {
+    f32 temp_f0;
+    f32 temp_f0_2;
+
+    temp_f0 = arg0->unk0;
+    temp_f0_2 = arg0->unk4;
+    return (temp_f0 * temp_f0) + (temp_f0_2 * temp_f0_2);
+}
+
+u64 fn_101_12A08(f32 *arg0, f32 farg0) {
+    f32 spC;
+    f32 sp8;
+
+    sp8 = arg0->unk0 * farg0;
+    spC = arg0->unk4 * farg0;
+    return (bitwise u64) sp8;
+}
+
+void fn_101_12A34(void *arg1, s32 arg2, ? arg_sp0) {
+    f32 sp10;
+    f32 spC;
+    f32 sp8;
+    void **temp_r3_2;
+    void **temp_r3_3;
+    void *temp_r3;
+
+    temp_r3 = arg1->unkD8->unk4;
+    temp_r3->unk8->unk78(temp_r3, 5, 0.0f);
+    temp_r3_2 = arg1->unkD8->unkC;
+    sp8 = 0.0f;
+    spC = 0.0f;
+    sp10 = 0.0f;
+    (*temp_r3_2)->unk44(temp_r3_2, &sp8, 0);
+    if ((arg2 == 0x19) && (getData__20ftCommonDataAccesserCF6ftKind(&g_ftCommonDataAccesser, (ftKind) 0xA)->unk84->unk2C > 0.0f)) {
+        temp_r3_3 = arg1->unkD8->unk64;
+        (*temp_r3_3)->unk3C(temp_r3_3, 0x11000000);
+    }
+}
+
+void *fn_101_12B04(void *arg0, s16 arg1) {
+    if ((arg0 != NULL) && (arg1 > 0)) {
+        __dl__FPv(arg0);
+    }
+    return arg0;
+}
+
+void fn_101_12B44(void) {
+    fn_101_12B8C(&lbl_101_bss_22C);
+    __register_global_object(&lbl_101_bss_22C, fn_101_12B04, &lbl_101_bss_220);
+}
+
+void fn_101_12B8C(? **arg0) {
+    *arg0 = &lbl_101_data_8BF4;
+}

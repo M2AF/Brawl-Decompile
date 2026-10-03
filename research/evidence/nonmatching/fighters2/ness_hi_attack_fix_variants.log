@@ -1,0 +1,6 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+base                         execFixPosCounter__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser: 64 diff lines, functions matching 9/10
+decl_order_abs_expr          execFixPosCounter__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser: 44 diff lines, functions matching 9/10
+reference_reflection         execFixPosCounter__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser: 178 diff lines, functions matching 9/10
+explicit_subtract            execFixPosCounter__38ftNessStatusUniqProcessSpecialHiAttackFP16soModuleAccesser: 36 diff lines, functions matching 9/10
+Best: explicit_subtract (36), decl_order_abs_expr (44), base (64)

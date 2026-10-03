@@ -1,0 +1,58 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\ninja.exe
+[1/2] SPLIT config\RSBE01_01\config.yml
+[2/2] RUN configure.py
+[1/4] SPLIT config\RSBE01_01\config.yml
+[2/4] RUN configure.py
+[1/11] LINK build\RSBE01_01\ft_pit\ft_pit.preplf
+[2/11] LINK build\RSBE01_01\ft_pit\ft_pit.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   '__sinit_\ft_pit_status_uniq_process_special_hi_fly_cpp' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   '__sinit_\ft_pit_status_uniq_process_special_lw_hold_cpp' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_112_rodata_20' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_112_rodata_24' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_112_data_6A10' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_112_data_6A34' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_112_data_6A8C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_112_data_6AB0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_112_bss_1B0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_112_bss_1C0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+[3/11] MWCC build\RSBE01_01\src\mo_fighter\ft_pit\ft_pit_status_uniq_process_special_s_revolve.o
+[4/11] REL
+[5/11] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[6/11] REPORT
+[7/11] PROGRESS
+Progress:
+  All: 1.80% matched, 1.39% linked (553 / 4417 files)
+    Code: 284416 / 15833548 bytes (3466 / 92522 functions)
+    Data: 855892 / 5667436 bytes (15.10%)
+  DOL: 1.41% matched, 0.88% linked (67 / 1722 files)
+    Code: 58648 / 4170064 bytes (517 / 14278 functions)
+    Data: 6732 / 1724104 bytes (0.39%)
+  Modules: 1.94% matched, 1.57% linked (486 / 2695 files)
+    Code: 225768 / 11663484 bytes (2949 / 78244 functions)
+    Data: 849160 / 3943332 bytes (21.53%)
+PASS: OK: 127/127 binaries verified

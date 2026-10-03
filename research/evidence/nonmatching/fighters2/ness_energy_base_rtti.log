@@ -1,0 +1,36 @@
+data 3838..3840 lbl_101_data_3838
+	.4byte lbl_101_data_37B4
+	.4byte lbl_101_data_37BC
+
+data 3840..3850 lbl_101_data_3840
+	.string "soParamAccesser"
+
+data 3850..385C lbl_101_data_3850
+	.4byte lbl_101_data_4414
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 385C..3864 lbl_101_data_385C
+	.4byte lbl_101_data_3840
+	.4byte lbl_101_data_3850
+
+data 3864..3874 lbl_101_data_3864
+	.string "soKineticEnergy"
+
+data 3874..3890 lbl_101_data_3874
+	.4byte lbl_101_data_38A8
+	.4byte 0x00000006
+	.4byte lbl_101_data_3B20
+	.4byte 0x00000005
+	.4byte lbl_101_data_4414
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 3890..3898 lbl_101_data_3890
+	.4byte lbl_101_data_3864
+	.4byte lbl_101_data_3874
+
+data 3898..38A6 lbl_101_data_3898
+	.string "soSuspendable"
+
+

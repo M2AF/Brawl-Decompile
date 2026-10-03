@@ -1,0 +1,63 @@
+data 8BB0..8BC7 lbl_101_data_8BB0
+	.string "ftKineticEnergyGravity"
+
+data 8BC7..8BC8 gap_04_00008BC7_data
+.hidden gap_04_00008BC7_data
+	.byte 0x00
+
+data 8BC8..8BEC lbl_101_data_8BC8
+	.4byte __RTTI__13soSuspendable
+	.4byte 0x00000006
+	.4byte __RTTI__8soEnable
+	.4byte 0x00000005
+	.4byte __RTTI__10soNullable
+	.4byte 0x00000000
+	.4byte __RTTI__15soKineticEnergy
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 8BEC..8BF4 lbl_101_data_8BEC
+	.4byte lbl_101_data_8BB0
+	.4byte lbl_101_data_8BC8
+
+data 8BF4..8C34 lbl_101_data_8BF4
+	.4byte lbl_101_data_8C68
+	.4byte 0x00000000
+	.4byte fn_101_12B04
+	.4byte fn_101_11D78
+	.4byte fn_101_12A34
+	.4byte fn_101_1203C
+	.4byte fn_101_120F4
+	.4byte execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte fn_101_12104
+	.4byte execFixPos__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execFixCamera__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv
+	.4byte checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf
+	.4byte onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff
+	.4byte leaveStop__19soStatusUniqProcessFP16soModuleAccesserib
+	.4byte checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi
+
+data 8C34..8C5B lbl_101_data_8C34
+	.string "ftNessStatusUniqProcessSpecialHiAttack"
+
+data 8C5B..8C5C gap_04_00008C5B_data
+.hidden gap_04_00008C5B_data
+	.byte 0x00
+
+data 8C5C..8C68 lbl_101_data_8C5C
+	.4byte __RTTI__19soStatusUniqProcess
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 8C68..8C70 lbl_101_data_8C68
+	.4byte lbl_101_data_8C34
+	.4byte lbl_101_data_8C5C
+
+text 120F4..12104 fn_101_120F4
+/* 000120F4 000121C0  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 000120F8 000121C4  81 8C 00 14 */	lwz r12, 0x14(r12)
+/* 000120FC 000121C8  7D 89 03 A6 */	mtctr r12
+/* 00012100 000121CC  4E 80 04 20 */	bctr
+
+

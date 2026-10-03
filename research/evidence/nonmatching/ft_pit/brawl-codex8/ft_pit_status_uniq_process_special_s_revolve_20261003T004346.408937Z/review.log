@@ -1,0 +1,45 @@
+{
+  "checkout": "C:\\Users\\balla\\Documents\\Brawl Decompile\\brawl-codex8",
+  "head": "8a3ffb1de6c9a23123fc58d7f3a3750f5ef666fb",
+  "branch": "codex/fighters2",
+  "unit": "mo_fighter/ft_pit/ft_pit_status_uniq_process_special_s_revolve"
+}
+SAME initStatus__37ftPitStatusUniqProcessSpecialSRevolveFP16soModuleAccesser initStatus__37ftPitStatusUniqProcessSpecialSRevolveFP16soModuleAccesser 41 41
+DIFF execStatus__37ftPitStatusUniqProcessSpecialSRevolveFP16soModuleAccesser execStatus__37ftPitStatusUniqProcessSpecialSRevolveFP16soModuleAccesser 98 98
+    --- target
+    +++ candidate
+    @@ -78,5 +78,5 @@
+     mtctr   r12
+     bctrl
+    -fadds   f1,f1,f31
+    +fadds   f1,f31,f1
+     lwz     r3,216(r29)
+     lwz     r3,100(r3)
+SAME updateModelRotation__37ftPitStatusUniqProcessSpecialSRevolveFP16soModuleAccesser updateModelRotation__37ftPitStatusUniqProcessSpecialSRevolveFP16soModuleAccesser 24 24
+SAME execStop__37ftPitStatusUniqProcessSpecialSRevolveFP16soModuleAccesser execStop__37ftPitStatusUniqProcessSpecialSRevolveFP16soModuleAccesser 1 1
+SAME checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi 2 2
+SAME leaveStop__19soStatusUniqProcessFP16soModuleAccesserib leaveStop__19soStatusUniqProcessFP16soModuleAccesserib 1 1
+SAME onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff 2 2
+SAME checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf 1 1
+SAME checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv 2 2
+SAME execFixCamera__19soStatusUniqProcessFP16soModuleAccesser execFixCamera__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME execFixPos__19soStatusUniqProcessFP16soModuleAccesser execFixPos__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME exitStatus__19soStatusUniqProcessFP16soModuleAccesseri exitStatus__19soStatusUniqProcessFP16soModuleAccesseri 1 1
+SAME __dt__37ftPitStatusUniqProcessSpecialSRevolveFv __dt__37ftPitStatusUniqProcessSpecialSRevolveFv 16 16
+SAME execStop__19soStatusUniqProcessFP16soModuleAccesser execStop__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME execStatus__19soStatusUniqProcessFP16soModuleAccesser execStatus__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME initStatus__19soStatusUniqProcessFP16soModuleAccesser initStatus__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME __sinit_\ft_pit_status_uniq_process_special_s_revolve_cpp __sinit_\ft_pit_status_uniq_process_special_s_revolve_cpp 18 18
+SAME __ct__37ftPitStatusUniqProcessSpecialSRevolveFv __ct__37ftPitStatusUniqProcessSpecialSRevolveFv 4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): __dt__19soStatusUniqProcessFv
+DIFF section .data: target 152 bytes, candidate 216 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 19/20. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_pit mo_fighter/ft_pit/ft_pit_status_uniq_process_special_s_revolve
+Original: 182192 80e6015eb3c8df3c0e14783c1c6a48a5340e67a2
+Source probe: 182192 895a9badab2d47e9bc237f3b61902387a07d61d8
+Full REL byte match: False
+First differing byte: 0xe08d
+FAIL: full-REL probe for ft_pit (mo_fighter/ft_pit/ft_pit_status_uniq_process_special_s_revolve)

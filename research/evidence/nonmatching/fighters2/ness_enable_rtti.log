@@ -1,0 +1,12 @@
+data 3B14..3B1D lbl_101_data_3B14
+	.string "soEnable"
+
+data 3B1D..3B20 gap_04_00003B1D_data
+.hidden gap_04_00003B1D_data
+	.byte 0x00, 0x00, 0x00
+
+data 3B20..3B28 lbl_101_data_3B20
+	.4byte lbl_101_data_3B14
+	.4byte 0x00000000
+
+

@@ -1,0 +1,25 @@
+mo_fighter/ft_pit/ft_pit_status_uniq_process_special_s_revolve.cpp:
+	.text       start:0x0000DDE0 end:0x0000E148
+	.ctors      start:0x00000004 end:0x00000008
+	.data       start:0x00006938 end:0x000069D0
+	.bss        start:0x000001A0 end:0x000001B0
+	# WARN first unit: confirm text start (helpers/base inlines before it?)
+	# WARN first unit: RTTI/strings precede the vtable; check what it owns before 0x6938 (e.g. lbl_112_data_689C)
+	# vtable lbl_112_data_6938 rtti lbl_112_data_69AC ctor fn_112_E138 sinit fn_112_E0F0 instance lbl_112_bss_1AC dtor fn_112_E0A4
+
+mo_fighter/ft_pit/ft_pit_status_uniq_process_special_hi_fly.cpp:
+	.text       start:0x0000E148 end:0x0000E274
+	.ctors      start:0x00000008 end:0x0000000C
+	.data       start:0x000069D0 end:0x00006A48
+	.bss        start:0x000001B0 end:0x000001C0
+	# WARN data 0x6a48-0x6a4c is used only by the next unit; assigned to it
+	# vtable __vt__34ftPitStatusUniqProcessSpecialHiFly rtti __RTTI__34ftPitStatusUniqProcessSpecialHiFly ctor __ct__34ftPitStatusUniqProcessSpecialHiFlyFv sinit "__sinit_\ft_pit_status_uniq_process_special_hi_fly_cpp" instance g_ftPitStatusUniqProcessSpecialHiFly dtor __dt__34ftPitStatusUniqProcessSpecialHiFlyFv
+
+mo_fighter/ft_pit/ft_pit_status_uniq_process_special_lw_hold.cpp:
+	.text       start:0x0000E274 end:0x0000E4D4
+	.ctors      start:0x0000000C end:0x00000010
+	.rodata     start:0x00000020 end:0x00000028
+	.data       start:0x00006A48 end:0x00006AC8
+	.bss        start:0x000001C0 end:0x000001D0
+	# vtable __vt__35ftPitStatusUniqProcessSpecialLwHold rtti __RTTI__35ftPitStatusUniqProcessSpecialLwHold ctor __ct__35ftPitStatusUniqProcessSpecialLwHoldFv sinit "__sinit_\ft_pit_status_uniq_process_special_lw_hold_cpp" instance g_ftPitStatusUniqProcessSpecialLwHold dtor __dt__35ftPitStatusUniqProcessSpecialLwHoldFv
+

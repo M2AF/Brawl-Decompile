@@ -1,0 +1,5 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe tools/verify_manifest.py config/RSBE01_01/binary-manifest.json --sha1-file config/RSBE01_01/build.sha1 --orig --dtk C:\Users\balla\Documents\Brawl Decompile\brawl-codex8\build\tools\dtk.exe
+127 files OK
+OK: 127/127 binaries verified
+PASS: independent check 127/127, verifier tests OK, originals unchanged

@@ -1,0 +1,130 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+DIFF initStatus__37ftNessStatusUniqProcessAttackHi4StartFP16soModuleAccesser initStatus__37ftNessStatusUniqProcessAttackHi4StartFP16soModuleAccesser 139 141
+    --- target
+    +++ candidate
+    @@ -16,11 +16,12 @@
+     bne <addr>
+     lwz     r3,216(r28)
+    -lwz     r31,132(r3)
+    -lwz     r30,84(r3)
+    -mr      r3,r31
+    +lwz     r30,132(r3)
+    +lwz     r3,216(r28)
+    +lwz     r31,84(r3)
+    +mr      r3,r30
+     li      r4,5
+     li      r5,0
+     mr      r6,r5
+    -lwz     r12,0(r31)
+    +lwz     r12,0(r30)
+     lwz     r12,20(r12)
+     mtctr   r12
+    @@ -33,15 +34,15 @@
+     cmpwi   r3,0
+     bne <addr>
+    -mr      r3,r31
+    +mr      r3,r30
+     mr      r4,r29
+    -lwz     r12,0(r31)
+    +lwz     r12,0(r30)
+     lwz     r12,60(r12)
+     mtctr   r12
+     bctrl
+    -mr      r3,r31
+    +mr      r3,r30
+     li      r4,4
+     li      r5,0
+     mr      r6,r5
+    -lwz     r12,0(r31)
+    +lwz     r12,0(r30)
+     lwz     r12,20(r12)
+     mtctr   r12
+    @@ -54,7 +55,7 @@
+     cmpwi   r3,0
+     bne <addr>
+    -mr      r3,r31
+    +mr      r3,r30
+     mr      r4,r28
+    -lwz     r12,0(r31)
+    +lwz     r12,0(r30)
+     lwz     r12,60(r12)
+     mtctr   r12
+    @@ -84,8 +85,8 @@
+     bctrl
+     mr      r5,r3
+    -mr      r3,r30
+    +mr      r3,r31
+     li      r4,-1
+     addi    r6,r1,24
+    -lwz     r12,0(r30)
+    +lwz     r12,0(r31)
+     lwz     r12,76(r12)
+     mtctr   r12
+    @@ -97,8 +98,8 @@
+     bctrl
+     mr      r5,r3
+    -mr      r3,r30
+    +mr      r3,r31
+     li      r4,-1
+     addi    r6,r1,8
+    -lwz     r12,0(r30)
+    +lwz     r12,0(r31)
+     lwz     r12,76(r12)
+     mtctr   r12
+    @@ -110,23 +111,24 @@
+     bctrl
+     mr      r5,r3
+    -mr      r3,r30
+    +mr      r3,r31
+     li      r4,7
+    -lwz     r12,0(r30)
+    +lwz     r12,0(r31)
+     lwz     r12,24(r12)
+     mtctr   r12
+     bctrl
+    -mr      r3,r31
+    +mr      r3,r30
+     li      r4,5
+    -li      r5,0
+    -li      r6,0
+    -lwz     r12,0(r31)
+    +li      r31,0
+    +mr      r5,r31
+    +mr      r6,r31
+    +lwz     r12,0(r30)
+     lwz     r12,48(r12)
+     mtctr   r12
+     bctrl
+    -mr      r3,r31
+    +mr      r3,r30
+     li      r4,4
+    -li      r5,0
+    -li      r6,0
+    -lwz     r12,0(r31)
+    +mr      r5,r31
+    +mr      r6,r31
+    +lwz     r12,0(r30)
+     lwz     r12,48(r12)
+     mtctr   r12
+SAME __ct__22NessArticleStatusEventFii        __ct__22NessArticleStatusEventFii             7 7
+SAME execFixPos__37ftNessStatusUniqProcessAttackHi4StartFP16soModuleAccesser execFixPos__37ftNessStatusUniqProcessAttackHi4StartFP16soModuleAccesser 36 36
+SAME checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi 2 2
+SAME leaveStop__19soStatusUniqProcessFP16soModuleAccesserib leaveStop__19soStatusUniqProcessFP16soModuleAccesserib 1 1
+SAME onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff 2 2
+SAME checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf 1 1
+SAME checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv 2 2
+SAME execFixCamera__19soStatusUniqProcessFP16soModuleAccesser execFixCamera__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME execStop__19soStatusUniqProcessFP16soModuleAccesser execStop__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME execStatus__19soStatusUniqProcessFP16soModuleAccesser execStatus__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME exitStatus__19soStatusUniqProcessFP16soModuleAccesseri exitStatus__19soStatusUniqProcessFP16soModuleAccesseri 1 1
+SAME __dt__37ftNessStatusUniqProcessAttackHi4StartFv __dt__37ftNessStatusUniqProcessAttackHi4StartFv 16 16
+SAME execFixPos__19soStatusUniqProcessFP16soModuleAccesser execFixPos__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME initStatus__19soStatusUniqProcessFP16soModuleAccesser initStatus__19soStatusUniqProcessFP16soModuleAccesser 1 1
+SAME __sinit_\ft_ness_status_uniq_process_attack_hi4_start_cpp __sinit_\ft_ness_status_uniq_process_attack_hi4_start_cpp 18 18
+SAME __ct__37ftNessStatusUniqProcessAttackHi4StartFv __ct__37ftNessStatusUniqProcessAttackHi4StartFv 4 4
+Candidate-only functions (often unreferenced weak inlines the linker strips): isNull__10soNullableCFv, __dt__19soStatusUniqProcessFv
+DIFF section .data: target 152 bytes, candidate 216 bytes
+SAME section .ctors: target 4 bytes, candidate 4 bytes
+Instruction diagnostics: 18/19. Section contents differ. Branches/relocations are normalized; BSS size is not covered. This is not byte-match acceptance. Final word is always the full-REL probe.

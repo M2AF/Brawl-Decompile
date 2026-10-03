@@ -1,0 +1,111 @@
+data 8268..82A8 lbl_114_data_8268
+	.4byte lbl_114_data_82D8
+	.4byte 0x00000000
+	.4byte fn_114_10D4C
+	.4byte fn_114_10A08
+	.4byte fn_114_10CD8
+	.4byte fn_114_1098C
+	.4byte fn_114_109C0
+	.4byte fn_114_109BC
+	.4byte fn_114_109B8
+	.4byte fn_114_109B4
+	.4byte fn_114_109B0
+	.4byte fn_114_109A8
+	.4byte fn_114_109A4
+	.4byte fn_114_1099C
+	.4byte fn_114_10998
+	.4byte fn_114_10990
+
+data 82A8..82C9 lbl_114_data_82A8
+	.string "ftLucasStatusUniqProcessSpecialS"
+
+data 82C9..82CC gap_04_000082C9_data
+.hidden gap_04_000082C9_data
+	.byte 0x00, 0x00, 0x00
+
+data 82CC..82D8 lbl_114_data_82CC
+	.4byte lbl_114_data_81B0
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 82D8..82E0 lbl_114_data_82D8
+	.4byte lbl_114_data_82A8
+	.4byte lbl_114_data_82CC
+
+text 10CD8..10D4C fn_114_10CD8
+/* 00010CD8 00010DA4  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 00010CDC 00010DA8  7C 08 02 A6 */	mflr r0
+/* 00010CE0 00010DAC  90 01 00 14 */	stw r0, 0x14(r1)
+/* 00010CE4 00010DB0  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 00010CE8 00010DB4  7C 9F 23 78 */	mr r31, r4
+/* 00010CEC 00010DB8  2C 05 00 19 */	cmpwi r5, 0x19
+/* 00010CF0 00010DBC  40 82 00 48 */	bne .L_00010D38
+/* 00010CF4 00010DC0  3C 60 00 00 */	lis r3, g_ftCommonDataAccesser@ha
+/* 00010CF8 00010DC4  38 63 00 00 */	addi r3, r3, g_ftCommonDataAccesser@l
+/* 00010CFC 00010DC8  38 80 00 1A */	li r4, 0x1a
+/* 00010D00 00010DCC  48 01 02 35 */	bl getData__20ftCommonDataAccesserCF6ftKind
+/* 00010D04 00010DD0  80 63 00 80 */	lwz r3, 0x80(r3)
+/* 00010D08 00010DD4  C0 23 00 18 */	lfs f1, 0x18(r3)
+/* 00010D0C 00010DD8  3C 60 00 00 */	lis r3, lbl_114_rodata_30@ha
+/* 00010D10 00010DDC  C0 03 00 00 */	lfs f0, lbl_114_rodata_30@l(r3)
+/* 00010D14 00010DE0  FC 01 00 40 */	fcmpo cr0, f1, f0
+/* 00010D18 00010DE4  40 81 00 20 */	ble .L_00010D38
+/* 00010D1C 00010DE8  80 7F 00 D8 */	lwz r3, 0xd8(r31)
+/* 00010D20 00010DEC  80 63 00 64 */	lwz r3, 0x64(r3)
+/* 00010D24 00010DF0  3C 80 11 00 */	lis r4, 0x1100
+/* 00010D28 00010DF4  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 00010D2C 00010DF8  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 00010D30 00010DFC  7D 89 03 A6 */	mtctr r12
+/* 00010D34 00010E00  4E 80 04 21 */	bctrl
+.L_00010D38:
+/* 00010D38 00010E04  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 00010D3C 00010E08  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 00010D40 00010E0C  7C 08 03 A6 */	mtlr r0
+/* 00010D44 00010E10  38 21 00 10 */	addi r1, r1, 0x10
+/* 00010D48 00010E14  4E 80 00 20 */	blr
+
+text 10D4C..10D8C fn_114_10D4C
+/* 00010D4C 00010E18  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 00010D50 00010E1C  7C 08 02 A6 */	mflr r0
+/* 00010D54 00010E20  90 01 00 14 */	stw r0, 0x14(r1)
+/* 00010D58 00010E24  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 00010D5C 00010E28  7C 7F 1B 78 */	mr r31, r3
+/* 00010D60 00010E2C  2C 03 00 00 */	cmpwi r3, 0x0
+/* 00010D64 00010E30  41 82 00 10 */	beq .L_00010D74
+/* 00010D68 00010E34  7C 80 07 35 */	extsh. r0, r4
+/* 00010D6C 00010E38  40 81 00 08 */	ble .L_00010D74
+/* 00010D70 00010E3C  48 01 01 C5 */	bl __dl__FPv
+.L_00010D74:
+/* 00010D74 00010E40  7F E3 FB 78 */	mr r3, r31
+/* 00010D78 00010E44  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 00010D7C 00010E48  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 00010D80 00010E4C  7C 08 03 A6 */	mtlr r0
+/* 00010D84 00010E50  38 21 00 10 */	addi r1, r1, 0x10
+/* 00010D88 00010E54  4E 80 00 20 */	blr
+
+text 10D8C..10DD4 fn_114_10D8C
+/* 00010D8C 00010E58  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 00010D90 00010E5C  7C 08 02 A6 */	mflr r0
+/* 00010D94 00010E60  90 01 00 14 */	stw r0, 0x14(r1)
+/* 00010D98 00010E64  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 00010D9C 00010E68  3F E0 00 00 */	lis r31, lbl_114_bss_1FC@ha
+/* 00010DA0 00010E6C  38 7F 00 00 */	addi r3, r31, lbl_114_bss_1FC@l
+/* 00010DA4 00010E70  48 00 00 31 */	bl fn_114_10DD4
+/* 00010DA8 00010E74  38 7F 00 00 */	addi r3, r31, lbl_114_bss_1FC@l
+/* 00010DAC 00010E78  3C 80 00 00 */	lis r4, fn_114_10D4C@ha
+/* 00010DB0 00010E7C  38 84 00 00 */	addi r4, r4, fn_114_10D4C@l
+/* 00010DB4 00010E80  3C A0 00 00 */	lis r5, lbl_114_bss_1F0@ha
+/* 00010DB8 00010E84  38 A5 00 00 */	addi r5, r5, lbl_114_bss_1F0@l
+/* 00010DBC 00010E88  4B FE F2 45 */	bl __register_global_object
+/* 00010DC0 00010E8C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 00010DC4 00010E90  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 00010DC8 00010E94  7C 08 03 A6 */	mtlr r0
+/* 00010DCC 00010E98  38 21 00 10 */	addi r1, r1, 0x10
+/* 00010DD0 00010E9C  4E 80 00 20 */	blr
+
+text 10DD4..10DE4 fn_114_10DD4
+/* 00010DD4 00010EA0  3C 80 00 00 */	lis r4, lbl_114_data_8268@ha
+/* 00010DD8 00010EA4  38 84 00 00 */	addi r4, r4, lbl_114_data_8268@l
+/* 00010DDC 00010EA8  90 83 00 00 */	stw r4, 0x0(r3)
+/* 00010DE0 00010EAC  4E 80 00 20 */	blr
+

@@ -1,0 +1,99 @@
+data 8A40..8A80 lbl_101_data_8A40
+	.4byte lbl_101_data_8AB4
+	.4byte 0x00000000
+	.4byte fn_101_11614
+	.4byte fn_27_169554
+	.4byte fn_27_1696D0
+	.4byte fn_101_1151C
+	.4byte execStop__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execMapCorrection__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execFixPosCounter__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execFixPos__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte execFixCamera__19soStatusUniqProcessFP16soModuleAccesser
+	.4byte checkDamage__19soStatusUniqProcessFP16soModuleAccesserPv
+	.4byte checkAttack__19soStatusUniqProcessFP16soModuleAccesserPvf
+	.4byte onChangeLr__19soStatusUniqProcessFP16soModuleAccesserff
+	.4byte leaveStop__19soStatusUniqProcessFP16soModuleAccesserib
+	.4byte checkTransitionPrecede__19soStatusUniqProcessFP16soModuleAccesserPi
+
+data 8A80..8AA0 lbl_101_data_8A80
+	.string "ftNessStatusUniqProcessAttackS4"
+
+data 8AA0..8AB4 lbl_101_data_8AA0
+	.4byte __RTTI__19soStatusUniqProcess
+	.4byte 0x00000000
+	.4byte lbl_101_data_8A34
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 8AB4..8AC0 lbl_101_data_8AB4
+	.4byte lbl_101_data_8A80
+	.4byte lbl_101_data_8AA0
+	.4byte 0x00000000
+
+text 1151C..11614 fn_101_1151C
+/* 0001151C 000115E8  94 21 FF E0 */	stwu r1, -0x20(r1)
+/* 00011520 000115EC  7C 08 02 A6 */	mflr r0
+/* 00011524 000115F0  90 01 00 24 */	stw r0, 0x24(r1)
+/* 00011528 000115F4  39 61 00 20 */	addi r11, r1, 0x20
+/* 0001152C 000115F8  48 01 36 8D */	bl _savegpr_29
+/* 00011530 000115FC  7C 9D 23 78 */	mr r29, r4
+/* 00011534 00011600  80 64 00 D8 */	lwz r3, 0xd8(r4)
+/* 00011538 00011604  83 C3 00 64 */	lwz r30, 0x64(r3)
+/* 0001153C 00011608  7F C3 F3 78 */	mr r3, r30
+/* 00011540 0001160C  3F E0 22 00 */	lis r31, 0x2200
+/* 00011544 00011610  38 9F 00 10 */	addi r4, r31, 0x10
+/* 00011548 00011614  81 9E 00 00 */	lwz r12, 0x0(r30)
+/* 0001154C 00011618  81 8C 00 4C */	lwz r12, 0x4c(r12)
+/* 00011550 0001161C  7D 89 03 A6 */	mtctr r12
+/* 00011554 00011620  4E 80 04 21 */	bctrl
+/* 00011558 00011624  2C 03 00 00 */	cmpwi r3, 0x0
+/* 0001155C 00011628  41 82 00 40 */	beq .L_0001159C
+/* 00011560 0001162C  80 7D 00 D8 */	lwz r3, 0xd8(r29)
+/* 00011564 00011630  80 63 00 28 */	lwz r3, 0x28(r3)
+/* 00011568 00011634  38 80 00 00 */	li r4, 0x0
+/* 0001156C 00011638  38 A0 00 01 */	li r5, 0x1
+/* 00011570 0001163C  38 C0 00 02 */	li r6, 0x2
+/* 00011574 00011640  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 00011578 00011644  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 0001157C 00011648  7D 89 03 A6 */	mtctr r12
+/* 00011580 0001164C  4E 80 04 21 */	bctrl
+/* 00011584 00011650  7F C3 F3 78 */	mr r3, r30
+/* 00011588 00011654  38 9F 00 10 */	addi r4, r31, 0x10
+/* 0001158C 00011658  81 9E 00 00 */	lwz r12, 0x0(r30)
+/* 00011590 0001165C  81 8C 00 54 */	lwz r12, 0x54(r12)
+/* 00011594 00011660  7D 89 03 A6 */	mtctr r12
+/* 00011598 00011664  4E 80 04 21 */	bctrl
+.L_0001159C:
+/* 0001159C 00011668  7F C3 F3 78 */	mr r3, r30
+/* 000115A0 0001166C  3F E0 22 00 */	lis r31, 0x2200
+/* 000115A4 00011670  38 9F 00 11 */	addi r4, r31, 0x11
+/* 000115A8 00011674  81 9E 00 00 */	lwz r12, 0x0(r30)
+/* 000115AC 00011678  81 8C 00 4C */	lwz r12, 0x4c(r12)
+/* 000115B0 0001167C  7D 89 03 A6 */	mtctr r12
+/* 000115B4 00011680  4E 80 04 21 */	bctrl
+/* 000115B8 00011684  2C 03 00 00 */	cmpwi r3, 0x0
+/* 000115BC 00011688  41 82 00 40 */	beq .L_000115FC
+/* 000115C0 0001168C  80 7D 00 D8 */	lwz r3, 0xd8(r29)
+/* 000115C4 00011690  80 63 00 28 */	lwz r3, 0x28(r3)
+/* 000115C8 00011694  38 80 00 00 */	li r4, 0x0
+/* 000115CC 00011698  38 A0 00 00 */	li r5, 0x0
+/* 000115D0 0001169C  38 C0 00 02 */	li r6, 0x2
+/* 000115D4 000116A0  81 83 00 00 */	lwz r12, 0x0(r3)
+/* 000115D8 000116A4  81 8C 00 3C */	lwz r12, 0x3c(r12)
+/* 000115DC 000116A8  7D 89 03 A6 */	mtctr r12
+/* 000115E0 000116AC  4E 80 04 21 */	bctrl
+/* 000115E4 000116B0  7F C3 F3 78 */	mr r3, r30
+/* 000115E8 000116B4  38 9F 00 11 */	addi r4, r31, 0x11
+/* 000115EC 000116B8  81 9E 00 00 */	lwz r12, 0x0(r30)
+/* 000115F0 000116BC  81 8C 00 54 */	lwz r12, 0x54(r12)
+/* 000115F4 000116C0  7D 89 03 A6 */	mtctr r12
+/* 000115F8 000116C4  4E 80 04 21 */	bctrl
+.L_000115FC:
+/* 000115FC 000116C8  39 61 00 20 */	addi r11, r1, 0x20
+/* 00011600 000116CC  48 01 35 B9 */	bl _restgpr_29
+/* 00011604 000116D0  80 01 00 24 */	lwz r0, 0x24(r1)
+/* 00011608 000116D4  7C 08 03 A6 */	mtlr r0
+/* 0001160C 000116D8  38 21 00 20 */	addi r1, r1, 0x20
+/* 00011610 000116DC  4E 80 00 20 */	blr
+

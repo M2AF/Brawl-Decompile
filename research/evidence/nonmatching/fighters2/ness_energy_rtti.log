@@ -1,0 +1,86 @@
+data 87D0..8804 lbl_101_data_87D0
+	.4byte lbl_101_data_38A8
+	.4byte 0x00000006
+	.4byte lbl_101_data_3B20
+	.4byte 0x00000005
+	.4byte lbl_101_data_4414
+	.4byte 0x00000000
+	.4byte lbl_101_data_3890
+	.4byte 0x00000000
+	.4byte lbl_101_data_8890
+	.4byte 0x00000000
+	.4byte lbl_101_data_884C
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 8804..880C lbl_101_data_8804
+	.4byte lbl_101_data_87B8
+	.4byte lbl_101_data_87D0
+
+data 880C..8820 lbl_101_data_880C
+	.string "ftKineticEnergyStop"
+
+data 8820..884C lbl_101_data_8820
+	.4byte lbl_101_data_38A8
+	.4byte 0x00000006
+	.4byte lbl_101_data_3B20
+	.4byte 0x00000005
+	.4byte lbl_101_data_4414
+	.4byte 0x00000000
+	.4byte lbl_101_data_3890
+	.4byte 0x00000000
+	.4byte lbl_101_data_8890
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 884C..8854 lbl_101_data_884C
+	.4byte lbl_101_data_880C
+	.4byte lbl_101_data_8820
+
+data 8854..886A lbl_101_data_8854
+	.string "soKineticEnergyNormal"
+
+data 886A..886C gap_04_0000886A_data
+.hidden gap_04_0000886A_data
+	.2byte 0x0000
+
+data 886C..8890 lbl_101_data_886C
+	.4byte lbl_101_data_38A8
+	.4byte 0x00000006
+	.4byte lbl_101_data_3B20
+	.4byte 0x00000005
+	.4byte lbl_101_data_4414
+	.4byte 0x00000000
+	.4byte lbl_101_data_3890
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 8890..8898 lbl_101_data_8890
+	.4byte lbl_101_data_8854
+	.4byte lbl_101_data_886C
+
+data 8898..88B4 lbl_101_data_8898
+	.4byte lbl_101_data_88E4
+	.4byte 0x00000000
+	.4byte lbl_101_data_88E4
+	.4byte 0x00000000
+	.4byte fn_101_92E8
+	.4byte fn_101_10DD0
+	.4byte fn_101_10E54
+
+data 88B4..88D0 lbl_101_data_88B4
+	.string "ftClassInfoImpl<10, ftNess>"
+
+data 88D0..88E4 lbl_101_data_88D0
+	.4byte lbl_101_data_4414
+	.4byte 0x00000000
+	.4byte lbl_101_data_20
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 88E4..88F0 lbl_101_data_88E4
+	.4byte lbl_101_data_88B4
+	.4byte lbl_101_data_88D0
+	.4byte 0x00000000
+
+

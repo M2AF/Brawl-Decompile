@@ -2,14 +2,14 @@
 <!-- handoff v1. LIVE STATE ONLY: rewrite in place, keep under ~60 lines.
      History goes in HANDOFF_LOG.md. Machine fields above the first ## are managed by handoff.py. -->
 
-owner: none
-task: -
-lease_until: -
+owner: claude
+task: fighters: absolute-attack-data bitfield pattern -> Zelda final, MK finals
+lease_until: 2026-10-03T01:23-03:00
 repo: ../brawl
 verify: cd ../brawl; ../.venv/Scripts/python.exe configure.py --version RSBE01_01; Remove-Item -LiteralPath build/RSBE01_01/ok -ErrorAction SilentlyContinue; ../.venv/Scripts/ninja.exe
-verified: 9f4d31e · 9f4d31e clean rebuild127/127; independent127/127; verifier tests10/10; full Pit source REL byte-identical · 2026-10-02T02:06-03:00
-head: 9f4d31e (rsbe01_01-support) clean
-updated: 2026-10-02T02:06-03:00 · codex
+verified: fa9a359 · build OK 127/127 after WIP commit · 2026-10-02T22:23-03:00
+head: fa9a359 (rsbe01_01-support) clean
+updated: 2026-10-02T22:32-03:00 · codex
 
 ## Now
 - Main rsbe01_01-support is clean at9f4d31e; local commits only, no push or original-file change.
@@ -21,7 +21,7 @@ updated: 2026-10-02T02:06-03:00 · codex
 - MK special_s_end remains NonMatching; its normal source-probe/promotion gates are pending.
 
 ## Next
-- Receiver: run status and claim after checking current main; probe/review MK special_s_end, promote only after full REL match +127/127, then MK final_* units; Sonic dash deferred.
+- Claude/Codex: finish MK gallery rodata word, then MK final_end and final_hit_wait (define ftMetaknightFinalSendLinkEvent/Unlink there; see include/ft/ft_metaknight_final.h).
 
 ## Traps
 - Fighter units owning shared weak RTTI: emission = reverse class-declaration order; include per-class ft_kinetic_energy_*.h headers in the needed order (see special_s). Name shared RTTI labels (__RTTI__...) so emitted copies dedupe.

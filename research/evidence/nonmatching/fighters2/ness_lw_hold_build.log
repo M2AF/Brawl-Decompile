@@ -1,0 +1,107 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\ninja.exe
+[1/2] SPLIT config\RSBE01_01\config.yml
+[2/2] RUN configure.py
+[1/9] LINK build\RSBE01_01\ft_ness\ft_ness.preplf
+[2/9] LINK build\RSBE01_01\ft_ness\ft_ness.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_ness_status_uniq_process_attack_hi4_cpp' 
+#   is either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_ness_status_uniq_process_attack_s4_cpp' is 
+#   either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_ness_status_uniq_process_special_s_cpp' is 
+#   either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   '__sinit_\ft_ness_status_uniq_process_special_hi_reflect_cpp' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_ness_status_uniq_process_special_lw_cpp' 
+#   is either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_rodata_28' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_rodata_88' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_89C8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_89EC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8A08' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8A28' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8A80' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8AA0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8B00' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8B20' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8CB0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8CD8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8D30' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8D54' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_1E0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_1F0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_200' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_230' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_240' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+[3/9] MWCC build\RSBE01_01\src\mo_fighter\ft_ness\ft_ness_status_uniq_process_special_lw_hold.o
+### mwcceppc.exe Compiler:
+#    File: src\mo_fighter\ft_ness\ft_ness_status_uniq_process_special_lw_hold.cpp
+# -----------------------------------------------------------------------------
+#      20:             &Vec3f(0.0f, 6.5f, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), 0.9f, false, 0, 0, -1); 
+# Warning:                                     ^
+#   (10142) not an lvalue
+### mwcceppc.exe Compiler:
+#      20:             &Vec3f(0.0f, 6.5f, 0.0f), &Vec3f(0.0f, 0.0f, 0.0f), 0.9f, false, 0, 0, -1); 
+# Warning:                                                               ^
+#   (10142) not an lvalue
+[4/9] REL
+[5/9] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[6/9] REPORT
+[7/9] PROGRESS
+Progress:
+  All: 1.81% matched, 1.40% linked (559 / 4412 files)
+    Code: 287140 / 15833548 bytes (3492 / 92522 functions)
+    Data: 856012 / 5667436 bytes (15.10%)
+  DOL: 1.41% matched, 0.88% linked (67 / 1722 files)
+    Code: 58648 / 4170064 bytes (517 / 14278 functions)
+    Data: 6732 / 1724104 bytes (0.39%)
+  Modules: 1.96% matched, 1.59% linked (492 / 2690 files)
+    Code: 228492 / 11663484 bytes (2975 / 78244 functions)
+    Data: 849280 / 3943332 bytes (21.54%)
+PASS: OK: 127/127 binaries verified

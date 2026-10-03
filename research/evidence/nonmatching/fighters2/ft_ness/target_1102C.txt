@@ -1,0 +1,32 @@
+data 8890..8898 lbl_101_data_8890
+	.4byte lbl_101_data_8854
+	.4byte lbl_101_data_886C
+
+data 8898..88B4 lbl_101_data_8898
+	.4byte lbl_101_data_88E4
+	.4byte 0x00000000
+	.4byte lbl_101_data_88E4
+	.4byte 0x00000000
+	.4byte fn_101_92E8
+	.4byte fn_101_10DD0
+	.4byte fn_101_10E54
+
+data 88B4..88D0 lbl_101_data_88B4
+	.string "ftClassInfoImpl<10, ftNess>"
+
+data 88D0..88E4 lbl_101_data_88D0
+	.4byte lbl_101_data_4414
+	.4byte 0x00000000
+	.4byte lbl_101_data_20
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 88E4..88F0 lbl_101_data_88E4
+	.4byte lbl_101_data_88B4
+	.4byte lbl_101_data_88D0
+	.4byte 0x00000000
+
+text 1102C..11034 fn_101_1102C
+/* 0001102C 000110F8  38 63 FF 00 */	subi r3, r3, 0x100
+/* 00011030 000110FC  48 01 3B 88 */	b fn_27_136528
+

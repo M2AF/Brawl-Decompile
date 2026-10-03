@@ -1,0 +1,36 @@
+data 8084..808C lbl_114_data_8084
+	.4byte lbl_114_data_8048
+	.4byte lbl_114_data_8060
+
+data 808C..80A8 lbl_114_data_808C
+	.4byte lbl_114_data_80DC
+	.4byte 0x00000000
+	.4byte lbl_114_data_80DC
+	.4byte 0x00000000
+	.4byte fn_114_8BC0
+	.4byte fn_114_10630
+	.4byte fn_114_106B4
+
+data 80A8..80C5 lbl_114_data_80A8
+	.string "ftClassInfoImpl<26, ftLucas>"
+
+data 80C5..80C8 gap_04_000080C5_data
+.hidden gap_04_000080C5_data
+	.byte 0x00, 0x00, 0x00
+
+data 80C8..80DC lbl_114_data_80C8
+	.4byte lbl_114_data_3D60
+	.4byte 0x00000000
+	.4byte lbl_114_data_3C
+	.4byte 0x00000000
+	.4byte 0x00000000
+
+data 80DC..80E8 lbl_114_data_80DC
+	.4byte lbl_114_data_80A8
+	.4byte lbl_114_data_80C8
+	.4byte 0x00000000
+
+text 1088C..10894 fn_114_1088C
+/* 0001088C 00010958  38 63 FF 00 */	subi r3, r3, 0x100
+/* 00010890 0001095C  48 01 06 A4 */	b fn_27_136528
+

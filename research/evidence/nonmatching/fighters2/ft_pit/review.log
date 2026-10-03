@@ -1,0 +1,4 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+Review running locally; private log: C:\Users\balla\Documents\Brawl Decompile\research\evidence\nonmatching\ft_pit\brawl-codex8\ft_pit_status_uniq_process_special_s_revolve_20261003T004319.464049Z\review.log
+FAIL: ft_pit/ft_pit_status_uniq_process_special_s_revolve full source REL. Summary: C:\Users\balla\Documents\Brawl Decompile\research\evidence\nonmatching\ft_pit\brawl-codex8\ft_pit_status_uniq_process_special_s_revolve_20261003T004319.464049Z\summary.json
+ERROR: Review failed: Missing objdump: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8\build\binutils\powerpc-eabi-objdump.exe. Evidence: C:\Users\balla\Documents\Brawl Decompile\research\evidence\nonmatching\ft_pit\brawl-codex8\ft_pit_status_uniq_process_special_s_revolve_20261003T004319.464049Z

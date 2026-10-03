@@ -1,0 +1,1315 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\ninja.exe
+[1/2] SPLIT config\RSBE01_01\config.yml
+[2/2] RUN configure.py
+[1/4] SPLIT config\RSBE01_01\config.yml
+[2/4] RUN configure.py
+[1/29] LINK build\RSBE01_01\ft_donkey\ft_donkey.preplf
+[2/29] LINK build\RSBE01_01\ft_yoshi\ft_yoshi.preplf
+[3/29] LINK build\RSBE01_01\ft_ness\ft_ness.preplf
+[4/29] LINK build\RSBE01_01\ft_pikmin\ft_pikmin.preplf
+[5/29] LINK build\RSBE01_01\ft_lucas\ft_lucas.preplf
+[6/29] LINK build\RSBE01_01\ft_diddy\ft_diddy.preplf
+[7/29] LINK build\RSBE01_01\ft_wario\ft_wario.preplf
+[8/29] LINK build\RSBE01_01\ft_donkey\ft_donkey.plf
+[9/29] LINK build\RSBE01_01\ft_yoshi\ft_yoshi.plf
+[10/29] LINK build\RSBE01_01\ft_pikmin\ft_pikmin.plf
+[11/29] LINK build\RSBE01_01\ft_ness\ft_ness.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   '__sinit_\ft_ness_status_uniq_process_attack_hi4_start_cpp' is either not 
+#   a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_ness_status_uniq_process_attack_hi4_cpp' 
+#   is either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_ness_status_uniq_process_attack_s4_cpp' is 
+#   either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_ness_status_uniq_process_special_s_cpp' is 
+#   either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_ness_status_uniq_process_special_hi_cpp' 
+#   is either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   '__sinit_\ft_ness_status_uniq_process_special_hi_reflect_cpp' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_ness_status_uniq_process_special_lw_cpp' 
+#   is either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   '__sinit_\ft_ness_status_uniq_process_special_lw_hold_cpp' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_rodata_28' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_rodata_30' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_rodata_88' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_rodata_90' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8930' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8958' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_896C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_89C8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_89EC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8A08' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8A28' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8A80' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8AA0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8B00' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8B20' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8B78' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8B9C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8CB0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8CD8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8D30' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8D54' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8DA8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8DD0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_1D0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_1E0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_1F0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_200' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_210' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_230' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_240' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_250' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+[12/29] LINK build\RSBE01_01\ft_lucas\ft_lucas.plf
+[13/29] LINK build\RSBE01_01\ft_diddy\ft_diddy.plf
+[14/29] LINK build\RSBE01_01\ft_wario\ft_wario.plf
+[15/29] LINK build\RSBE01_01\sora_enemy\sora_enemy.preplf
+[16/29] MWCC build\RSBE01_01\src\mo_fighter\ft_ness\ft_ness_status_uniq_process_special_hi_attack.o
+[17/29] LINK build\RSBE01_01\sora_enemy\sora_enemy.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emKuriboParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emPopperamParam>(void)' is either not 
+#   a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emPacciParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emJyakeelParam>(void)' is either not 
+#   a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emAroarosParam>(void)' is either not 
+#   a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emCymalParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emDeathpodParam>(void)' is either not 
+#   a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emBoobasParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emDekakuriboParam>(void)' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emBotronParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emBucyulusParam>(void)' is either not 
+#   a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emGyraanParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emSiralamosParam>(void)' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emKillerParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emRoadaParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emSparParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emMiteParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emTeckinParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emTautauParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emHammerbrosParam>(void)' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emBitanParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emFlowsParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emKokkonParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emPrimParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emShellyParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emPatapataParam>(void)' is either not 
+#   a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emJdusParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emBombheadParam>(void)' is either not 
+#   a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emNgagogParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emFaulongParam>(void)' is either not 
+#   a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emGhamghaParam>(void)' is either not 
+#   a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emRobobeamParam>(void)' is either not 
+#   a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emRobodistanceParam>(void)' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emRobohomingParam>(void)' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emRobopunchParam>(void)' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emCataguardParam>(void)' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emArmanParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emGalfireParam>(void)' is either not 
+#   a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emBosspackunParam>(void)' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emGhamghabaseParam>(void)' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emGalleomParam>(void)' is either not 
+#   a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emRidleyParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emRayquazaParam>(void)' is either not 
+#   a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emDuonParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emPorkyParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emMetaridleyParam>(void)' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emFalconflyerParam>(void)' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emTabooParam>(void)' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emMasterhandParam>(void)' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   'emResourceModuleImpl::DeleteExParam<emCrazyhandParam>(void)' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'emInfo::isInvalidKind(emKind)' is either not a global 
+#   symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'emInfo::getMotionNum(emKind)' is either not a global 
+#   symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'emInfo::getStatusNum(emKind)' is either not a global 
+#   symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'emInfo::getNamePtr()' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\em_info_cpp' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\em_robopunch_param_accesser_cpp' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_BD8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_D88' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_D90' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_E88' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_E90' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_E98' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_EA0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_EB0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_EB8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_EC0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_ED0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_ED8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_EE0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_EE8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_EF8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_F08' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_F20' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_F28' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_F30' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_F70' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1038' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1040' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1048' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1050' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1058' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1060' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1070' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1078' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1090' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1098' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_10A0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_10A8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_10B0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_10C0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_10C8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_10D8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_10E0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_10E8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_10F0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_10F8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1108' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1110' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1118' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1128' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1130' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1140' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1148' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1150' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1160' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1178' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1180' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_1190' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_11A0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_11A8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_11B8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_rodata_11C8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1954' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_195C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1970' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_198C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_2C18' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_2C23' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_2C60' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_2C78' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_2C9C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_2CB4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_2CD0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_2CE4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_3224' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_323C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_3258' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_3268' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_36CC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_36E0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_36F4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_3EE0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_3EF8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_6CFC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_6D10' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_6D2C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_6D3C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_7194' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_71AC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_7F54' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_7F70' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_8228' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_8240' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_84DC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_84F4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_8F7C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_8F94' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_922C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_9244' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_94DC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_94F4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_978C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_97A4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_9A3C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_9A54' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_A53C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_A554' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_A7F4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_A810' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_AACC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_AAE4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_B424' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_B43C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_BD60' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_BD78' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_C050' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_C064' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_D0A8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_D0BC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_E498' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_E4B4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_EFAC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_EFC4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_F278' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_F290' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_F54C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_F564' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_F7FC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_F814' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_FAAC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_FAC4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_10400' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_10414' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_11140' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1115C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_11BBC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_11BD4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_12838' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_12850' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_12B30' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_12B48' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_12DE4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_12DFC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_130C0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_130D8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_13390' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_133A8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1366C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_13680' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_140D8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_140F0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_14B48' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_14B60' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_15364' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_15380' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_15DC4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_15DE0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_16098' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_160B4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_16FF4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1700C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_17030' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_17050' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_17073' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_17092' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1732C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_17344' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_17C04' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_17C20' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_17EC4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_17EE0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_18984' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1899C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_18D14' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_18D2C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_197D4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_197EC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_19810' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_19837' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_19862' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1A7FC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1A810' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1B3F0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1B408' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1C71C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1C738' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1CA9C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1CAB8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1DE9C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1DEB4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1DED8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1DF02' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1DF32' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1DF58' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1EAC0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1EADC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1FE04' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_data_1FE20' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_38' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_260' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_2A8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_2C0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_2D8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_2F0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_2FC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_318' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_330' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_348' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_370' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_388' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_3A0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_3B8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_3D0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_3E8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_410' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_428' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_440' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_458' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_538' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_550' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_568' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_580' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_598' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_5B0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_5C8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_5E0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_5F8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_610' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_628' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_634' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_640' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_668' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_680' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_698' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_6B0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_6C8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_6E0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_6F8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_710' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_728' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_740' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_758' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_770' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_788' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_7A0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_7B8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_7D0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_7E8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_800' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_818' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_830' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_41_bss_848' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+[18/29] LINK build\RSBE01_01\sora_melee\sora_melee.preplf
+[19/29] LINK build\RSBE01_01\sora_melee\sora_melee.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\so_general_work_cpp' is either not a global 
+#   symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\so_general_work_abstract_cpp' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\so_general_work_simple_cpp' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\so_common_data_accesser_cpp' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\mo_melee_cpp' is either not a global symbol 
+#   or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_rodata_318' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_rodata_31C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_rodata_360' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_rodata_364' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_rodata_368' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_rodata_748' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_rodata_74C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_rodata_C10' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_rodata_C18' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_rodata_C20' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_rodata_26A8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_rodata_26AC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_7D0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_C14' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_C30' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_6004' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_6020' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_734C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_7360' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_7380' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_7390' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_78B0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_8060' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_8078' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_80D0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_80E4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_13B08' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_13B0C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_13B80' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_13B90' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_13BB0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_13BC8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_13CC0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_13CD4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_15470' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_1548C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_154A0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_29230' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_29240' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_2927C' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_29288' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_2BC00' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_2BC20' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_2BC68' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_2BC80' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_32AD8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_32AF8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_32BA4' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_32BB8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_32BD0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_4C748' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_data_4C758' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_bss_1B30' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_bss_1B58' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_bss_1B70' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_bss_2CD0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_27_bss_5040' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'g_ftGroundConditionCheckerImpl' is either not a global 
+#   symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '@unnamed@mo_melee_cpp@::bss_loc_8cc0' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+[20/29] LINK build\RSBE01_01\main.elf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\gf_shutdown_manager_cpp' is either not a 
+#   global symbol or doesn't exist.  Ignored.
+[21/29] DOL build\RSBE01_01\main.dol
+[22/29] REL
+[23/29] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[24/29] REPORT
+[25/29] PROGRESS
+Progress:
+  All: 1.84% matched, 1.42% linked (562 / 4412 files)
+    Code: 290988 / 15833548 bytes (3526 / 92522 functions)
+    Data: 856120 / 5667436 bytes (15.11%)
+  DOL: 1.41% matched, 0.88% linked (67 / 1722 files)
+    Code: 58648 / 4170064 bytes (517 / 14278 functions)
+    Data: 6732 / 1724104 bytes (0.39%)
+  Modules: 1.99% matched, 1.62% linked (495 / 2690 files)
+    Code: 232340 / 11663484 bytes (3009 / 78244 functions)
+    Data: 849388 / 3943332 bytes (21.54%)
+PASS: OK: 127/127 binaries verified

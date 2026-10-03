@@ -1,0 +1,103 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+Gate 1/4: full-REL probe of ft_ness with mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_hi4 from source
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_ness mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_hi4
+Original: 277192 e61788578d9f18bc36bfb7349c43826cdf4f34d8
+Source probe: 277192 e61788578d9f18bc36bfb7349c43826cdf4f34d8
+Full REL byte match: True
+PASS: full-REL probe for ft_ness (mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_hi4)
+Gate 2/4: normal build with the stamp removed
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\ninja.exe
+[1/1] RUN configure.py
+[1/7] LINK build\RSBE01_01\ft_ness\ft_ness.preplf
+[2/7] LINK build\RSBE01_01\ft_ness\ft_ness.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_ness_status_uniq_process_attack_hi4_cpp' 
+#   is either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_ness_status_uniq_process_attack_s4_cpp' is 
+#   either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_ness_status_uniq_process_special_s_cpp' is 
+#   either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 
+#   '__sinit_\ft_ness_status_uniq_process_special_hi_reflect_cpp' is either 
+#   not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_rodata_28' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_rodata_88' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_89C8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_89EC' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8A08' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8A28' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8A80' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8AA0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8B00' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8B20' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8CB0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8CD8' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_1E0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_1F0' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_200' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_230' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+[3/7] REL
+[4/7] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[5/7] REPORT
+[6/7] PROGRESS
+Progress:
+  All: 1.81% matched, 1.40% linked (558 / 4412 files)
+    Code: 286056 / 15833548 bytes (3483 / 92522 functions)
+    Data: 855972 / 5667436 bytes (15.10%)
+  DOL: 1.41% matched, 0.88% linked (67 / 1722 files)
+    Code: 58648 / 4170064 bytes (517 / 14278 functions)
+    Data: 6732 / 1724104 bytes (0.39%)
+  Modules: 1.95% matched, 1.59% linked (491 / 2690 files)
+    Code: 227408 / 11663484 bytes (2966 / 78244 functions)
+    Data: 849240 / 3943332 bytes (21.54%)
+PASS: OK: 127/127 binaries verified
+Gate 3/4: independent check against the originals
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe tools/verify_manifest.py config/RSBE01_01/binary-manifest.json --sha1-file config/RSBE01_01/build.sha1 --orig --dtk C:\Users\balla\Documents\Brawl Decompile\brawl-codex8\build\tools\dtk.exe
+127 files OK
+OK: 127/127 binaries verified
+PASS: independent check 127/127, verifier tests OK, originals unchanged
+Gate 4/4: re-probe after promotion
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\python.exe C:\Users\balla\Documents\Brawl Decompile\research\claude_tools\probe_source_rel.py ft_ness mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_hi4
+Original: 277192 e61788578d9f18bc36bfb7349c43826cdf4f34d8
+Source probe: 277192 e61788578d9f18bc36bfb7349c43826cdf4f34d8
+Full REL byte match: True
+PASS: full-REL probe for ft_ness (mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_hi4)
+Shared main status page unchanged. Use review for private worktree evidence.
+PROMOTED mo_fighter/ft_ness/ft_ness_status_uniq_process_attack_hi4. Remember: add a docs/RSBE01_01.md entry (techniques + UB review).

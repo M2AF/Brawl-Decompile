@@ -1,0 +1,74 @@
+mo_fighter/ft_lucas/ft_lucas_status_uniq_process_attack_s4.cpp:
+	.text       start:0x00010894 end:0x00010A64
+	.ctors      start:0x00000004 end:0x00000008
+	.data       start:0x000080E8 end:0x000081B8
+	.bss        start:0x000001D0 end:0x000001E0
+	# WARN first unit: confirm text start (helpers/base inlines before it?)
+	# WARN first unit: RTTI/strings precede the vtable; check what it owns before 0x80e8 (e.g. lbl_114_data_8048)
+	# vtable lbl_114_data_80E8 rtti lbl_114_data_8160 ctor fn_114_10A54 sinit fn_114_10A0C instance lbl_114_bss_1DC dtor fn_114_109C4
+
+mo_fighter/ft_lucas/ft_lucas_status_uniq_process_air_lasso.cpp:
+	.text       start:0x00010A64 end:0x00010CD8
+	.ctors      start:0x00000008 end:0x0000000C
+	.rodata     start:0x00000028 end:0x00000030
+	.data       start:0x000081B8 end:0x00008268
+	.bss        start:0x000001E0 end:0x000001F0
+	# vtable lbl_114_data_81B8 rtti lbl_114_data_8230 ctor fn_114_10CC8 sinit fn_114_10C80 instance lbl_114_bss_1EC dtor fn_114_10C40
+
+mo_fighter/ft_lucas/ft_lucas_status_uniq_process_special_s.cpp:
+	.text       start:0x00010CD8 end:0x00010DE4
+	.ctors      start:0x0000000C end:0x00000010
+	.rodata     start:0x00000030 end:0x00000038
+	.data       start:0x00008268 end:0x000082E0
+	.bss        start:0x000001F0 end:0x00000200
+	# vtable lbl_114_data_8268 rtti lbl_114_data_82D8 ctor fn_114_10DD4 sinit fn_114_10D8C instance lbl_114_bss_1FC dtor fn_114_10D4C
+
+mo_fighter/ft_lucas/ft_lucas_status_uniq_process_special_hi.cpp:
+	.text       start:0x00010DE4 end:0x000113A4
+	.ctors      start:0x00000010 end:0x00000014
+	.rodata     start:0x00000038 end:0x00000060
+	.data       start:0x000082E0 end:0x00008358
+	.bss        start:0x00000200 end:0x00000210
+	# WARN data 0x8358-0x839c is used only by the next unit; assigned to it
+	# vtable lbl_114_data_82E0 rtti lbl_114_data_8350 ctor fn_114_11394 sinit fn_114_1134C instance lbl_114_bss_20C dtor fn_114_1130C
+
+mo_fighter/ft_lucas/ft_lucas_status_uniq_process_special_hi_attack.cpp:
+	.text       start:0x000113A4 end:0x00012378
+	.ctors      start:0x00000014 end:0x00000018
+	.rodata     start:0x00000060 end:0x00000098
+	.data       start:0x00008358 end:0x00008418
+	.bss        start:0x00000210 end:0x00000220
+	# WARN data 0x8418-0x84ec is used only by the next unit; assigned to it
+	# vtable lbl_114_data_839C rtti lbl_114_data_8410 ctor fn_114_12368 sinit fn_114_12320 instance lbl_114_bss_21C dtor fn_114_122E0
+
+mo_fighter/ft_lucas/ft_lucas_status_uniq_process_special_hi_attack_end.cpp:
+	.text       start:0x00012378 end:0x000126F4
+	.ctors      start:0x00000018 end:0x0000001C
+	.rodata     start:0x00000098 end:0x000000A8
+	.data       start:0x00008418 end:0x00008570
+	.bss        start:0x00000220 end:0x00000230
+	# vtable lbl_114_data_84EC rtti lbl_114_data_8564 ctor fn_114_126E4 sinit fn_114_1269C instance lbl_114_bss_22C dtor fn_114_1265C
+
+mo_fighter/ft_lucas/ft_lucas_status_uniq_process_special_hi_reflect.cpp:
+	.text       start:0x000126F4 end:0x00012800
+	.ctors      start:0x0000001C end:0x00000020
+	.rodata     start:0x000000A8 end:0x000000B0
+	.data       start:0x00008570 end:0x000085F0
+	.bss        start:0x00000230 end:0x00000240
+	# vtable lbl_114_data_8570 rtti lbl_114_data_85E8 ctor fn_114_127F0 sinit fn_114_127A8 instance lbl_114_bss_23C dtor fn_114_12768
+
+mo_fighter/ft_lucas/ft_lucas_status_uniq_process_special_lw.cpp:
+	.text       start:0x00012800 end:0x00012A0C
+	.ctors      start:0x00000020 end:0x00000024
+	.data       start:0x000085F0 end:0x00008668
+	.bss        start:0x00000240 end:0x00000250
+	# vtable lbl_114_data_85F0 rtti lbl_114_data_8660 ctor fn_114_129FC sinit fn_114_129B4 instance lbl_114_bss_24C dtor fn_114_12974
+
+mo_fighter/ft_lucas/ft_lucas_status_uniq_process_special_lw_hold.cpp:
+	.text       start:0x00012A0C end:0x00012D54
+	.ctors      start:0x00000024 end:0x00000028
+	.rodata     start:0x000000B0 end:0x000000C0
+	.data       start:0x00008668 end:0x000086E8
+	.bss        start:0x00000250 end:0x00000260
+	# vtable lbl_114_data_8668 rtti lbl_114_data_86DC ctor fn_114_12D44 sinit fn_114_12CFC instance lbl_114_bss_25C dtor fn_114_12CBC
+

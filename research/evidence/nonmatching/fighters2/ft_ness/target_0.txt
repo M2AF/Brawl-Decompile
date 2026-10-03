@@ -1,0 +1,11 @@
+data 4408..4413 lbl_101_data_4408
+	.string "soNullable"
+
+data 4413..4414 gap_04_00004413_data
+.hidden gap_04_00004413_data
+	.byte 0x00
+
+data 4414..441C lbl_101_data_4414
+	.4byte lbl_101_data_4408
+	.4byte 0x00000000
+

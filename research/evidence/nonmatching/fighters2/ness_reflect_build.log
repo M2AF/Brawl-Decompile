@@ -1,0 +1,39 @@
+Checkout: C:\Users\balla\Documents\Brawl Decompile\brawl-codex8 (codex/fighters2)
+$ C:\Users\balla\Documents\Brawl Decompile\.venv\Scripts\ninja.exe
+[1/2] SPLIT config\RSBE01_01\config.yml
+[2/2] RUN configure.py
+[1/9] LINK build\RSBE01_01\ft_ness\ft_ness.preplf
+[2/9] LINK build\RSBE01_01\ft_ness\ft_ness.plf
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol '__sinit_\ft_ness_status_uniq_process_special_s_cpp' is 
+#   either not a global symbol or doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_rodata_28' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8B00' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_data_8B20' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+### build\compilers\GC\3.0a5.2\mwldeppc.exe Linker Warning:
+#   FORCEACTIVE symbol 'lbl_101_bss_200' is either not a global symbol or 
+#   doesn't exist.  Ignored.
+[3/9] MWCC build\RSBE01_01\src\mo_fighter\ft_ness\ft_ness_status_uniq_process_special_hi_reflect.o
+[4/9] REL
+[5/9] CHECK config\RSBE01_01\binary-manifest.json
+127 files OK
+OK: 127/127 binaries verified
+[6/9] REPORT
+[7/9] PROGRESS
+Progress:
+  All: 1.80% matched, 1.39% linked (555 / 4412 files)
+    Code: 285344 / 15833548 bytes (3475 / 92522 functions)
+    Data: 855932 / 5667436 bytes (15.10%)
+  DOL: 1.41% matched, 0.88% linked (67 / 1722 files)
+    Code: 58648 / 4170064 bytes (517 / 14278 functions)
+    Data: 6732 / 1724104 bytes (0.39%)
+  Modules: 1.94% matched, 1.58% linked (488 / 2690 files)
+    Code: 226696 / 11663484 bytes (2958 / 78244 functions)
+    Data: 849200 / 3943332 bytes (21.54%)
+PASS: OK: 127/127 binaries verified

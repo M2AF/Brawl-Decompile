@@ -1,0 +1,2 @@
+cd /d "C:\Users\balla\Documents\Brawl Decompile"
+research\brawltool-cli.bat status

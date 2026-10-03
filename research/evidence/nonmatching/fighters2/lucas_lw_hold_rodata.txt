@@ -1,0 +1,8 @@
+brawl-codex8/build/RSBE01_01/ft_lucas/asm\auto_03_00000000_rodata.s:120:.obj lbl_114_rodata_B0, global
+brawl-codex8/build/RSBE01_01/ft_lucas/asm\auto_03_00000000_rodata.s-121-	.float 0
+brawl-codex8/build/RSBE01_01/ft_lucas/asm\auto_03_00000000_rodata.s-122-	.float 6.5
+brawl-codex8/build/RSBE01_01/ft_lucas/asm\auto_03_00000000_rodata.s-123-	.float 10
+brawl-codex8/build/RSBE01_01/ft_lucas/asm\auto_03_00000000_rodata.s-124-	.float 0.9
+brawl-codex8/build/RSBE01_01/ft_lucas/asm\auto_03_00000000_rodata.s-125-.endobj lbl_114_rodata_B0
+brawl-codex8/build/RSBE01_01/ft_lucas/asm\auto_03_00000000_rodata.s-126-
+brawl-codex8/build/RSBE01_01/ft_lucas/asm\auto_03_00000000_rodata.s-127-# .rodata:0xC0 | 0xC0 | size: 0x8
