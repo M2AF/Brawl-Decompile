@@ -1,6 +1,6 @@
 # Brawl Decompile Project
 
-A Windows-first workbench for matching decompilation of **Super Smash Bros. Brawl, USA revision 1 (RSBE01_01)**. It combines the BrawlTool workflow helpers, progress reporting, and project documentation with a separately maintained checkout of the [doldecomp/brawl](https://github.com/doldecomp/brawl) decompilation project.
+A Windows-first workbench for matching decompilation of **Super Smash Bros. Brawl, USA revision 1 (RSBE01_01)**. It combines the BrawlTool workflow helpers, progress reporting. 
 
 The goal is to replace original PowerPC code with recovered C/C++ that compiles to byte-identical output. A successful 127/127 executable build verifies the build and its original-object fallbacks; it does **not** mean every executable has been decompiled from source. Source-linked translation units are tracked separately from function-level matches and near-misses.
 
